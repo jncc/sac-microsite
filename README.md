@@ -60,5 +60,5 @@ The Jenkins build command will probably run:
 This 
 
 1. builds the site
-2. upserts the index entries in ElasticSearch
+2. upserts (all) the index entries in ElasticSearch
 3. pushes to Github Pages
