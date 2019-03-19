@@ -51,7 +51,7 @@ To deploy the microsite,
 Notes for devs
 --------------
 
-The build/dev commands might be a provided by the static site generator. 
+The build/dev commands might be a provided by a static site generator. 
 
 The Jenkins build command will probably run:
 
@@ -62,3 +62,6 @@ This
 1. builds the site
 2. upserts (all) the index entries in ElasticSearch
 3. pushes to Github Pages
+
+If we need to deploy beta versions, investigate Surge.
+https://medium.com/onfido-tech/travis-surge-github-auto-deploy-every-pr-branch-and-tag-a6c8c790831f
