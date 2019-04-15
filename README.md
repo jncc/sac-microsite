@@ -10,6 +10,17 @@ The data manager can `git clone` clone the site on their local PC, and use the r
 
 The PC will only need Node and Git installed; both are available as Windows MSI installers. A text editor such as VS Code is recommended. Github Desktop is very helpful too. 
 
+Requirements
+------------
+
+The data extractor part of this project requires the x64 Microsoft Access drivers to be installed for this to work, the drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This however means updating the data files will **ONLY** work on Windows.
+
+If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run;
+
+```
+AccessDatabaseEngine_X64.exe /passive
+```
+
 Local development
 -----------------
 
