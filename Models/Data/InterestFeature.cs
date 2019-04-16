@@ -11,6 +11,10 @@ namespace JNCC.Microsite.SAC.Models.Data
         public double SectionNumber { get; set; }
         public string SectionTitle { get; set; }
         public string InterestGroup { get; set; }
+        public string FeatureDescription { get; set; }
+        public string EUStatus { get; set; }
+        public string UKStatus { get; set; }
+        public string Rationale { get; set; }
         public bool Priority { get; set; }
         public int Total { get; set; }
         public List<InterestFeatureOccurrence> Occurrences { get; set; }

@@ -196,9 +196,25 @@ namespace JNCC.Microsite.SAC.Data
                 }
             }
 
-
             foreach (var feature in features)
             {
+                using (DatabaseConnection conn = GetDatabaseconnection())
+                {
+                    OdbcCommand cmd = conn.CreateCommand(String.Format("SELECT FEATURE_DESCRIPTION, EU_STATUS, UK_STATUS, RATIONALE FROM ASP_INTEREST_FEATURES WHERE INT_CODE LIKE '{0}'", feature.Code));
+
+                    using (OdbcDataReader reader = cmd.ExecuteReader())
+                    {
+                        // Single result expected
+                        reader.Read();
+
+                        feature.FeatureDescription = reader.GetString(0);
+                        feature.EUStatus = reader.GetString(1);
+                        feature.UKStatus = reader.GetString(2);
+                        feature.Rationale = reader.IsDBNull(3) ? null : reader.GetString(3);
+                    }
+
+                }
+
                 using (DatabaseConnection conn = GetDatabaseconnection())
                 {
                     // Oddity from the way the query works, this covers species and habitat interest

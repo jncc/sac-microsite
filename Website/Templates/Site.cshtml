@@ -1,0 +1,91 @@
+@page
+@model JNCC.Microsite.SAC.Models.Website.Site
+
+@using JNCC.Microsite.SAC.Models.Data
+@using JNCC.Microsite.SAC.Website.Helpers
+
+@{
+    ViewData["Breadcrumb"] = Model.Breadcrumb;
+    var AnnexIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, true);
+    var AnnexISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, false);
+    var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, true, true);
+    var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, false);
+}
+
+<h2>@(Model.Name)</h2>
+<h4>Site Details</h4>
+<div class="row">
+    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Country</td>
+                    <td>@(Model.CountryFull)</td>
+                </tr>
+                <tr>
+                    <td>Unitary Authority</td>
+                    <td>@(Model.LocalAuthority)</td>
+                </tr>
+                <tr>
+                    <td>Centroid*</td>
+                    <td>@(Model.GridReference)</td>
+                </tr>
+                <tr>
+                    <td>Latitude</td>
+                    <td>@(Model.XCoord)</td>
+                </tr>
+                <tr>
+                    <td>Longitude</td>
+                    <td>@(Model.YCoord)</td>
+                </tr>
+                <tr>
+                    <td>SAC EU Code</td>
+                    <td>@(Model.EUCode)</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>@(Model.StatusLong)</td>
+                </tr>
+                <tr>
+                    <td>Area (ha)</td>
+                    <td>@(Model.Area)</td>
+                </tr>
+                <tr>
+                    <td cospan="2" style="font-size:small;">
+                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+        <figure>
+            <img src="/images/sites/@(Model.EUCode))thumb.GIF" />
+            <figcaption style="font-size: small;">Location of @(Model.Name) @(Model.StatusShort)</figcaption>
+        </figure>
+    </div>
+    <h4>General Site Character</h4>
+    <p>
+        @foreach (SiteCharacter item in Model.Character) 
+        {
+            @(item.Character) @(SiteHelpers.GetCoverageString(item.Coverage))<br />
+        }
+    </p>
+    <p><a href="/n2kforms/@(Model.EUCode).pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
+    <div class="callout secondary">
+        <p><b>Note:</b></p>
+        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+    </div>
+    <div>
+        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
+        @(Html.Raw(InformationFeatureHelpers.GetAnnexHtml(AnnexIPrimary)))
+        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+        @(Html.Raw(InformationFeatureHelpers.GetAnnexHtml(AnnexISecondary)))
+        <h4>Annex II species that are a primary reason for selection of this site</h4>
+        @(Html.Raw(InformationFeatureHelpers.GetAnnexHtml(AnnexIIPrimary)))
+        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
+        @(Html.Raw(InformationFeatureHelpers.GetAnnexHtml(AnnexIISecondary)))
+        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+    </div>
+</div>
+
