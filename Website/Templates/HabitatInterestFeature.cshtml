@@ -1,0 +1,8 @@
+@page
+@model JNCC.Microsite.SAC.Models.Data.InterestFeature
+@using JNCC.Microsite.SAC.Website.Helpers;
+
+@{
+    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
+    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
+}

@@ -22,5 +22,13 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 
             throw new ArgumentException(String.Format("{0} is not a valid code, expected habitat (Hxxxx) | species (Sxxxx)"));
         }
+
+        public static List<InterestFeatureOccurrence> GetInterestFeatures(List<InterestFeatureOccurrence> features, bool primary)
+        {
+            if (primary) {
+                return features.FindAll(f => f.GlobalGrade == "A" || f.GlobalGrade == "B");
+            }
+            return features.FindAll(f => f.GlobalGrade == "C");
+        }        
     }
 }

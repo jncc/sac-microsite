@@ -3,8 +3,8 @@
 @using JNCC.Microsite.SAC.Website.Helpers;
 
 @{
-    var primaryOccurences = SpeciesInterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
-    var secondaryOccurences = SpeciesInterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
+    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
+    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
 }
 
 <h2>@(Model.SectionTitle)</h2>
