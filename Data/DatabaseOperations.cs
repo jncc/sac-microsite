@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
-using JNCC.Microsite.SAC.Models;
+using JNCC.Microsite.SAC.Models.Data;
 
 namespace JNCC.Microsite.SAC.Data
 {

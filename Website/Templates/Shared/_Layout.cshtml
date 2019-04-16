@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Special Areas of Conservation</title>
+        <link rel="stylesheet" href="/css/app.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script>window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js" defer><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
+        <script src="/js/app.js" defer></script>        
+    </head>
+    <body>
+        <noscript>
+            <div>Javascript must be enabled for the correct page display</div>
+        </noscript>
+        <div id="wrapper">
+            <a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
+            <header id="header">
+                <div class="container">
+                    <strong class="logo">
+                        <a href="#" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
+                    </strong>
+                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
+                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>
+                    <form action="#" role="search" class="top-bar search-form input-group" id="search-form" data-animate="hinge-in-from-top spin-out">
+                        <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
+                        <input type="search" placeholder="Search" class="input-group-field" id="search-field">
+                        <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
+                    </form>
+                    <div class="show-for-small-only">
+                        <div class="title-bar" data-responsive-toggle="search-form" data-hide-for="medium">
+                            <button type="button" class="search-opener" data-toggle="search-form" aria-label="search-opener">
+                                <i class="icon-search"></i>
+                            </button>
+                        </div>
+                        <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+                            <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu" aria-label="navigation-opener">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                @{Html.RenderPartial("/Website/Templates/Shared/_Navbar", "CURRENT_SITE");}
+            </header>
+            <main id="main">
+                @{Html.RenderPartial("/Website/Templates/Shared/_Breadcrumb", null);}
+                @RenderBody()
+            </main>
+            @{Html.RenderPartial("/Website/Templates/Shared/_Footer");}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+@page
+@model JNCC.Microsite.SAC.Models.Website.Search
+
+<div class="two-columns">
+    <div id="content">
+        <div class="callout secondary">
+            <p><b>List all SACs:</b> <a href="#">England</a> | <a href="#">Northern Ireland</a> | <a href="#">Scotland</a> | <a href="#">Wales</a> | <a href="#">Offshore</a> | <a href="#">Full UK List</a></p>
+        </div>
+        <div class="callout secondary">
+            <p>List all <a href="#">Habitat</a> or  <a href="#">Species</a> interest features</p>
+        </div>
+        <div class="callout secondary">
+            <p><b>Select a specific SAC by name</b></p>
+            <div>
+                <select name="EUCode" class="medium-8">
+                    <option selected="" value="">Choose an SAC from the drop down list</option>
+                    @foreach ((string Code, string Name) in Model.Sites)
+                    {               
+                        <option value=@(Code)>@(Name)</option>
+                    }
+                </select>
+                <a href="#" class="button primary medium medium-expanded" class="medium-3">View Site</a>
+            </div>
+        </div>
+    </div>
+</div>
+

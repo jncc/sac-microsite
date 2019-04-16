@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace JNCC.Microsite.SAC.Models
+namespace JNCC.Microsite.SAC.Models.Data
 {
     public class InterestFeature
     {

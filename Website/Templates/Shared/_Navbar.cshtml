@@ -1,0 +1,11 @@
+<nav class="top-bar nav" id="menu" data-animate="hinge-in-from-top spin-out" aria-label="main-navigation">
+    <div class="container">
+        <ul class="vertical medium-horizontal menu dropdown">
+            <li class=@((ViewData["PageType"].ToString() == "Search" ? "active" : ""))><a href="#">Search</a></li>
+            <li class=@((ViewData["PageType"].ToString() == "Site" ? "active" : ""))><a href="#">Sites</a></li>
+            <li class=@((ViewData["PageType"].ToString() == "Species" ? "active" : ""))><a href="#">Species</a></li>
+            <li class=@((ViewData["PageType"].ToString() == "Habitat" ? "active" : ""))><a href="#">Habitats</a></li>
+            <li class=@((ViewData["PageType"].ToString() == "Contact" ? "active" : ""))><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,9 @@
+@model JNCC.Microsite.SAC.Models.Website.Breadcrumb
+<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+    <ul class="breadcrumbs">
+        @foreach ((string href, string text, bool current) in Model.Breadcrumbs)
+        {
+            <li><a class=@(current ? "show-for-sr" : "") href=@(href)>@(text)</a></li>
+        }
+    </ul>
+</nav>
