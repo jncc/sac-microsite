@@ -1,4 +1,41 @@
 @page
 @model JNCC.Microsite.SAC.Models.Data.InterestFeature
+@using JNCC.Microsite.SAC.Website.Helpers;
+
+@{
+    var primaryOccurences = SpeciesInterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
+    var secondaryOccurences = SpeciesInterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
+}
 
 <h2>@(Model.SectionTitle)</h2>
+<h4>@(Model.Code.Substring(1)) @(Model.LayTitle) [@(Html.Raw(Model.Name))]</h4>
+<h4>Background Selection</h4>
+<a href="/species/@(Model.Code)/distribution/uk">UK resource for this species</a>
+<a href="/species/@(Model.Code)/distribution/compare">Compare with UK distribution</a>
+
+<h5>Description and ecological characteristics</h5>
+<p>@(Html.Raw(Model.FeatureDescription))</p>
+
+<h5>European status and distribution</h5>
+<p>@(Html.Raw(Model.EUStatus))</p>
+
+<h5>UK status and distribtution</h5> 
+<p>Click <a href="/species/@(Model.Code)/distribution/uk">here</a> view UK distribution of this species</p>
+<p>@(Html.Raw(Model.UKStatus))</p>
+
+@if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
+    Html.Raw("<h5>Site Selection Rationale</h5>");
+    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
+}
+
+<h4>Site Accounts</h4>
+@foreach (var site in primaryOccurences) {
+    Html.Partial("_SpeciesInterestFeaturePrimarySite", site);
+}
+
+<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
+@foreach (var site in secondaryOccurences) {
+    Html.Partial("_SpeciesInterestFeatureSecondarySite", site);
+}
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>

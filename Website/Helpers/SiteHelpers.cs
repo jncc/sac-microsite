@@ -6,9 +6,22 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 {
     public static class SiteHelpers
     {
+        public static string GetSiteURLFromCode(string code)
+        {
+            return String.Format("/site/{0}", code);
+        }
         public static string GetCoverageString(double? coverage)
         {
             return (coverage != null && coverage != double.NaN) ? coverage.ToString() : "Unknown";
+        }
+
+        public static string IsPriorityFeature(bool priority)
+        {
+            if (priority)
+            {
+                return "&nbsp;<span style=\"font-size:small;\"> * Priority feature</span>";
+            }
+            return "";
         }
 
         public static List<SiteFeature> GetAnnexInterestFeature(List<SiteFeature> features, bool species = true, bool primary = true)
@@ -37,7 +50,7 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 
                 return features
                     .FindAll(f => f.Code.StartsWith("H"))
-                    .FindAll(f => f.GlobalGrade == "C");                
+                    .FindAll(f => f.GlobalGrade == "C");
             }
         }
     }

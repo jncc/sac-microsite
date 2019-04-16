@@ -1,0 +1,7 @@
+@model JNCC.Microsite.SAC.Models.Data.InterestFeatureOccurrence
+@using JNCC.Microsite.SAC.Website.Helpers
+
+<div class="columns">
+    <div class="small-6"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
+    <div class="small-6"><b>@(Model.LocalAuthority)</b></div>
+</div>
