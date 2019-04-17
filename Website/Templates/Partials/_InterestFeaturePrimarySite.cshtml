@@ -6,5 +6,11 @@
     <div class="small-6"><b>@(Model.LocalAuthority)</b></div>
     @if(!String.IsNullOrWhiteSpace(Model.PrimaryText)) {
         Html.Raw(String.Format("<div class=\"small-12\">{0}</div>", Model.PrimaryText));
+    } else {
+        if (Model.IsHabitat) {
+            Html.Raw("<p>Habitat occurrence description not yet available.</p>");
+        } else if (Model.IsSpecies) {
+            Html.Raw("<p>Species occurrence description not yet available.</p>");    
+        }
     }
 </div>

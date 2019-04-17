@@ -30,12 +30,13 @@
 
 <h4>Site Accounts</h4>
 @foreach (var site in primaryOccurences) {
-    Html.Partial("_SpeciesInterestFeaturePrimarySite", site);
+    site.IsSpecies = true;
+    Html.Partial("_InterestFeaturePrimarySite", site);
 }
 
 <h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 @foreach (var site in secondaryOccurences) {
-    Html.Partial("_SpeciesInterestFeatureSecondarySite", site);
+    Html.Partial("_InterestFeatureSecondarySite", site);
 }
 
 <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>

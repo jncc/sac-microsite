@@ -30,5 +30,7 @@ namespace JNCC.Microsite.SAC.Models.Data
         public string PrimaryText { get; set; }
         public string SecondaryText { get; set; }
         public string LocalAuthority { get; set; }
+        public bool IsHabitat { get; set; }
+        public bool IsSpecies { get; set; }
     }
 }
