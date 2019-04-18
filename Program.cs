@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Dynamic;
 using System.Collections.Generic;
 using System.Data.Odbc;
 using System.IO;
+using System.Threading.Tasks;
+using System.Linq;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Data;
 using JNCC.Microsite.SAC.Models.Data;
 using Mono.Options;
+using RazorLight;
+using JNCC.Microsite.SAC.Website;
 
 namespace JNCC.Microsite.SAC
 {
@@ -91,6 +96,47 @@ namespace JNCC.Microsite.SAC
                 }
                 Console.WriteLine(String.Format("Extracted {0} Species Information Features", species.Count));
             }
+
+            var s = GetRender().Result;
+            Console.WriteLine(s);
+            // Builder b = new Builder();
+            // b.BuildSearch();
+        }
+
+        private static async Task<string> GetRender()
+        {
+            // var engine = new RazorLightEngineBuilder()
+            //     .UseEmbeddedResourcesProject(typeof(Program))
+            //     .UseMemoryCachingProvider()
+            //     .Build();
+
+            Console.WriteLine(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+            var engine = new RazorLightEngineBuilder()
+                .UseFilesystemProject("D:/Development/sac-microsite/Website/Templates")
+                .UseMemoryCachingProvider()
+                .Build();
+
+            using (StreamReader r = new StreamReader("output/json/sites.json"))
+            {
+                string json = r.ReadToEnd();
+                List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(json);
+
+                var m = new JNCC.Microsite.SAC.Models.Website.Search
+                {
+                    Sites = sites.Select(s => (s.EUCode, s.Name)).ToList()
+                };
+
+                dynamic viewBag = new ExpandoObject();
+                viewBag.CurrentSection = "Search";
+                viewBag.Breadcrumbs = new List<(string, string, bool)> { ("/Search", "Search", true) };
+
+                var rendered = await engine.CompileRenderAsync("Search", m, viewBag);
+
+                return rendered;
+            }
         }
     }
+
+
 }

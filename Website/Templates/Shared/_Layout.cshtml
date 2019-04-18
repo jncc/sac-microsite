@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+@using RazorLight
+@inherits RazorLight.TemplatePage<JNCC.Microsite.SAC.Models.Website.Page>
+
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Special Areas of Conservation</title>
-        <link rel="stylesheet" href="/css/app.css">
+        <title>Example JNCC microsite</title>
+        <link rel="stylesheet" href="frontend/css/app.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/js/jquery-3.3.1.min.js" defer><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
-        <script src="/js/app.js" defer></script>        
+        <script src="js/app.js" defer></script>
     </head>
     <body>
         <noscript>
@@ -43,13 +46,17 @@
                         </div>
                     </div>
                 </div>
-                @{Html.RenderPartial("/Website/Templates/Shared/_Navbar", "CURRENT_SITE");}
+                @{ 
+                    await IncludeAsync("Shared/_Navbar", ViewBag.CurrentSection); 
+                }
             </header>
             <main id="main">
-                @{Html.RenderPartial("/Website/Templates/Shared/_Breadcrumb", null);}
+                @{ 
+                    await IncludeAsync("Shared/_Breadcrumb", ViewBag.Breadcrumbs); 
+                }
                 @RenderBody()
             </main>
-            @{Html.RenderPartial("/Website/Templates/Shared/_Footer");}
+            @{ await IncludeAsync("Shared/_Footer"); }
         </div>
     </body>
 </html>

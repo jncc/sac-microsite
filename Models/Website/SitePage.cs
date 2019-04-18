@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using JNCC.Microsite.SAC.Models.Data;
 
 namespace JNCC.Microsite.SAC.Models.Website
 {
-    public class Search : Page
+    public class SitePage : JNCC.Microsite.SAC.Models.Data.Site
     {
-        public List<(string EUCode, string Name)> Sites { get; set; }
+
     }
 }
