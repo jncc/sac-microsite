@@ -1,7 +1,5 @@
-@using RazorLight
-@inherits RazorLight.TemplatePage<JNCC.Microsite.SAC.Models.Website.Page>
-
-<!doctype html>
+@model JNCC.Microsite.SAC.Models.Website.Page
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -46,17 +44,19 @@
                         </div>
                     </div>
                 </div>
-                @{ 
-                    await IncludeAsync("Shared/_Navbar", ViewBag.CurrentSection); 
+                @{
+                    await Html.RenderPartialAsync("Shared/_Navbar", Model.CurrentSection);
                 }
             </header>
             <main id="main">
-                @{ 
-                    await IncludeAsync("Shared/_Breadcrumb", ViewBag.Breadcrumbs); 
+                @{
+                    await Html.RenderPartialAsync("Shared/_Breadcrumb", Model.Breadcrumbs);
                 }
                 @RenderBody()
             </main>
-            @{ await IncludeAsync("Shared/_Footer"); }
+            @{
+                await Html.RenderPartialAsync("Shared/_Footer");
+            }
         </div>
     </body>
 </html>

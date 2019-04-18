@@ -1,6 +1,4 @@
-@using RazorLight
-@inherits RazorLight.TemplatePage<JNCC.Microsite.SAC.Models.Website.Search> 
-@namespace JNCC.Microsite.SAC.Website.Templates
+@model JNCC.Microsite.SAC.Models.Website.Search
 @{
     Layout = "Shared/_Layout.cshtml";
 }
@@ -18,9 +16,9 @@
             <div>
                 <select name="EUCode" class="medium-8">
                     <option selected="" value="">Choose an SAC from the drop down list</option>
-                    @foreach ((string Code, string Name) in Model.Sites)
+                    @foreach ((string EUCode, string Name) in Model.Sites)
                     {               
-                        <option value=@(Code)>@(Name)</option>
+                        <option value=@(EUCode)>@(Name)</option>
                     }
                 </select>
                 <a href="#" class="button primary medium medium-expanded" class="medium-3">View Site</a>
@@ -28,4 +26,3 @@
         </div>
     </div>
 </div>
-

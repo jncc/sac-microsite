@@ -1,11 +1,8 @@
-@using RazorLight
+@model JNCC.Microsite.SAC.Models.Data.Site
 @using JNCC.Microsite.SAC.Models.Data
 @using JNCC.Microsite.SAC.Website.Helpers
 
-@inherits RazorLight.TemplatePage<JNCC.Microsite.SAC.Models.Data.Site>
-
 @{
-    //ViewData["Breadcrumb"] = Model.Breadcrumb;
     var AnnexIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, true);
     var AnnexISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, false);
     var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, true, true);
@@ -68,7 +65,7 @@
     <p>
         @foreach (SiteCharacter item in Model.Character) 
         {
-            Raw(String.Format("{0} {1} <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
+            Html.Raw(String.Format("{0} {1} <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
         }
     </p>
     <p><a href="/n2kforms/@(Model.EUCode).pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -77,46 +74,7 @@
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-        @if (AnnexIPrimary.Count == 0) {
-            Raw("<p>Not Applicable</p>");
-        } else {
-            foreach (var habitat in AnnexIPrimary)
-            {
-                habitat.isPrimary = true;
-                await IncludeAsync("_SiteSelectionAnnexI", habitat);
-            }
-        }
-        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-        @if (AnnexISecondary.Count == 0) {
-            Raw("<p>Not Applicable</p>");
-        } else {
-            foreach (var habitat in AnnexIPrimary)
-            {
-                habitat.isPrimary = false;
-                await IncludeAsync("_SiteSelectionAnnexI", habitat);
-            }
-        }
-        <h4>Annex II species that are a primary reason for selection of this site</h4>
-        @if (AnnexIIPrimary.Count == 0) {
-            Raw("<p>Not Applicable</p>");
-        } else {
-            foreach (var species in AnnexIIPrimary) 
-            {
-                species.isPrimary = true;
-                await IncludeAsync("_SiteSelectionAnnexII", species);
-            }
-        }
-        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-        @if (AnnexIISecondary.Count == 0) {
-            Raw("<p>Not Applicable</p>");
-        } else {
-            foreach (var species in AnnexIISecondary) 
-            {
-                species.isPrimary = false;
-                await IncludeAsync("_SiteSelectionAnnexII", species);
-            }
-        }
+
         <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
     </div>
 </div>

@@ -1,7 +1,5 @@
-@using RazorLight
+@model JNCC.Microsite.SAC.Models.Data.InterestFeature
 @using JNCC.Microsite.SAC.Website.Helpers
-
-@inherits RazorLight.TemplatePage<JNCC.Microsite.SAC.Models.Data.InterestFeature>
 
 @{
     var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
@@ -15,34 +13,34 @@
 <a href=@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.Code, true))>Compare with UK distribution</a>
 	
 <h5>Description and ecological characteristics</h5>
-<p>@(Raw(Model.FeatureDescription))</p>
+<p>@Html.Raw(Model.FeatureDescription)</p>
 
 <h5>European status and distribution</h5>
-<p>@(Raw(Model.EUStatus))</p>
+<p>@Html.Raw(Model.EUStatus)</p>
 
 <h5>UK status and distribtution</h5> 
 <p>Click <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.Code, true))>here</a> view UK distribution of this species</p>
-<p>@(Raw(Model.UKStatus))</p>
+<p>@Html.Raw(Model.UKStatus)</p>
 
 @if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
-    Raw("<h5>Site Selection Rationale</h5>");
-    Raw(String.Format("<p>{0}</p>", Model.Rationale));
+    Html.Raw("<h5>Site Selection Rationale</h5>");
+    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
 }
 
 @if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
-    Raw("<h5>Site Selection Rationale</h5>");
-    Raw(String.Format("<p>{0}</p>", Model.Rationale));
+    Html.Raw("<h5>Site Selection Rationale</h5>");
+    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
 }
 
 <h4>Site Accounts</h4>
 @foreach (var site in primaryOccurences) {
     site.IsHabitat = true;
-    await IncludeAsync("Partials/_InterestFeaturePrimarySite", site);
+    await Html.RenderPartialAsync("Partials/_InterestFeaturePrimarySite", site);
 }
 
 <h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 @foreach (var site in secondaryOccurences) {
-    await IncludeAsync("Partials/_InterestFeatureSecondarySite", site);
+    await Html.RenderPartialAsync("Partials/_InterestFeatureSecondarySite", site);
 }
 
 <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
