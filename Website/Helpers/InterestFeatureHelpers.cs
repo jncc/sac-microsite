@@ -15,9 +15,9 @@ namespace JNCC.Microsite.SAC.Website.Helpers
         {
             if (code.StartsWith("H"))
             {
-                return String.Format("/habitat/{1}", code);
+                return String.Format("/habitat/{0}", code);
             } else if (code.StartsWith("S")) {
-                return String.Format("/species/{1}", code);
+                return String.Format("/species/{0}", code);
             }
 
             throw new ArgumentException(String.Format("{0} is not a valid code, expected habitat (Hxxxx) | species (Sxxxx)"));

@@ -1,30 +1,31 @@
-@model JNCC.Microsite.SAC.Models.Data.InterestFeature
+@model JNCC.Microsite.SAC.Models.Website.InterestFeaturePage
 @using JNCC.Microsite.SAC.Website.Helpers;
 
 @{
-    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
-    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
+    Layout = "Shared/_Layout.cshtml";
+    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, true);
+    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, false);
 }
 
-<h2>@(Model.SectionTitle)</h2>
-<h4>@(Model.Code.Substring(1)) @(Model.LayTitle) [@(Html.Raw(Model.Name))]</h4>
+<h2>@(Model.InterestFeature.SectionTitle)</h2>
+<h4>@(Model.InterestFeature.Code.Substring(1)) @(Model.InterestFeature.LayTitle) [@(Html.Raw(Model.InterestFeature.Name))]</h4>
 <h4>Background Selection</h4>
-<a href="/species/@(Model.Code)/distribution/uk">UK resource for this species</a>
-<a href="/species/@(Model.Code)/distribution/compare">Compare with UK distribution</a>
+<a href="/species/@(Model.InterestFeature.Code)/distribution/uk">UK resource for this species</a>
+<a href="/species/@(Model.InterestFeature.Code)/distribution/compare">Compare with UK distribution</a>
 
 <h5>Description and ecological characteristics</h5>
-<p>@Html.Raw(Model.FeatureDescription)</p>
+<p>@Html.Raw(Model.InterestFeature.FeatureDescription)</p>
 
 <h5>European status and distribution</h5>
-<p>@Html.Raw(Model.EUStatus)</p>
+<p>@Html.Raw(Model.InterestFeature.EUStatus)</p>
 
 <h5>UK status and distribtution</h5> 
-<p>Click <a href="/species/@(Model.Code)/distribution/uk">here</a> view UK distribution of this species</p>
-<p>@Html.Raw(Model.UKStatus)</p>
+<p>Click <a href="/species/@(Model.InterestFeature.Code)/distribution/uk">here</a> view UK distribution of this species</p>
+<p>@Html.Raw(Model.InterestFeature.UKStatus)</p>
 
-@if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
+@if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {
     Html.Raw("<h5>Site Selection Rationale</h5>");
-    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
+    Html.Raw(String.Format("<p>{0}</p>", Model.InterestFeature.Rationale));
 }
 
 <h4>Site Accounts</h4>

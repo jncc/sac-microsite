@@ -36,7 +36,7 @@ namespace JNCC.Microsite.SAC.Models.Data
         public string LocalAuthority { get; set; }
         public string LayTitle { get; set; }
         public bool Priority { get; set; }
-        public bool isPrimary { get; set; }
+        public bool IsPrimary { get; set; }
     }
 
     public class SiteCharacter

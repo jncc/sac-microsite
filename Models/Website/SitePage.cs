@@ -4,8 +4,8 @@ using JNCC.Microsite.SAC.Models.Data;
 
 namespace JNCC.Microsite.SAC.Models.Website
 {
-    public class SitePage : JNCC.Microsite.SAC.Models.Data.Site
+    public class SitePage : Page
     {
-
+        public Site Site { get; set; }
     }
 }

@@ -4,13 +4,13 @@
 <div class="columns">
     <div class="small-6"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
     <div class="small-6"><b>@(Model.LocalAuthority)</b></div>
-    @if(!String.IsNullOrWhiteSpace(Model.PrimaryText)) {
-        Html.Raw(String.Format("<div class=\"small-12\">{0}</div>", Model.PrimaryText));
-    } else {
+    @if(String.IsNullOrWhiteSpace(Model.PrimaryText)) {
         if (Model.IsHabitat) {
-            Html.Raw("<p>Habitat occurrence description not yet available.</p>");
+            @Html.Raw("<p>Habitat occurrence description not yet available.</p>");
         } else if (Model.IsSpecies) {
-            Html.Raw("<p>Species occurrence description not yet available.</p>");    
-        }
+            @Html.Raw("<p>Species occurrence description not yet available.</p>");
+        }        
+    } else {
+        @Html.Raw(String.Format("<div class=\"small-12\">{0}</div>", Model.PrimaryText))
     }
 </div>

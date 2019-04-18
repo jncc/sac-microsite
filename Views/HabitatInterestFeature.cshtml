@@ -1,35 +1,36 @@
-@model JNCC.Microsite.SAC.Models.Data.InterestFeature
+@model JNCC.Microsite.SAC.Models.Website.InterestFeaturePage
 @using JNCC.Microsite.SAC.Website.Helpers
 
 @{
-    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, true);
-    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.Occurrences, false);
+    Layout = "Shared/_Layout.cshtml";
+    var primaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, true);
+    var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, false);
 }
 
-<h2>Habitat account - @(Model.SectionTitle)</h2>
-<h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code)) @(Model.Name)</h4>
+<h2>Habitat account - @(Model.InterestFeature.SectionTitle)</h2>
+<h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Model.InterestFeature.Name)</h4>
 <h4>Background to selection</h4>
-<a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.Code, true))>UK resource for this habitat</a>
-<a href=@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.Code, true))>Compare with UK distribution</a>
+<a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code, true))>UK resource for this habitat</a>
+<a href=@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.InterestFeature.Code, true))>Compare with UK distribution</a>
 	
 <h5>Description and ecological characteristics</h5>
-<p>@Html.Raw(Model.FeatureDescription)</p>
+<p>@Html.Raw(Model.InterestFeature.FeatureDescription)</p>
 
 <h5>European status and distribution</h5>
-<p>@Html.Raw(Model.EUStatus)</p>
+<p>@Html.Raw(Model.InterestFeature.EUStatus)</p>
 
 <h5>UK status and distribtution</h5> 
-<p>Click <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.Code, true))>here</a> view UK distribution of this species</p>
-<p>@Html.Raw(Model.UKStatus)</p>
+<p>Click <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code, true))>here</a> view UK distribution of this species</p>
+<p>@Html.Raw(Model.InterestFeature.UKStatus)</p>
 
-@if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
+@if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {
     Html.Raw("<h5>Site Selection Rationale</h5>");
-    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
+    Html.Raw(String.Format("<p>{0}</p>", Model.InterestFeature.Rationale));
 }
 
-@if (!String.IsNullOrWhiteSpace(Model.Rationale)) {
+@if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {
     Html.Raw("<h5>Site Selection Rationale</h5>");
-    Html.Raw(String.Format("<p>{0}</p>", Model.Rationale));
+    Html.Raw(String.Format("<p>{0}</p>", Model.InterestFeature.Rationale));
 }
 
 <h4>Site Accounts</h4>

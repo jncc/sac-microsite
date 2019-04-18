@@ -1,15 +1,16 @@
-@model JNCC.Microsite.SAC.Models.Data.Site
+@model JNCC.Microsite.SAC.Models.Website.SitePage
 @using JNCC.Microsite.SAC.Models.Data
 @using JNCC.Microsite.SAC.Website.Helpers
 
 @{
-    var AnnexIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, true);
-    var AnnexISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, false);
-    var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Features, true, true);
-    var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Features, false, false);
+    Layout = "Shared/_Layout.cshtml";
+    var AnnexIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, true);
+    var AnnexISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, false);
+    var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, true);
+    var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, false);
 }
 
-<h2>@(Model.Name)</h2>
+<h2>@(Model.Site.Name)</h2>
 <h4>Site Details</h4>
 <div class="row">
     <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
@@ -17,35 +18,35 @@
             <tbody>
                 <tr>
                     <td>Country</td>
-                    <td>@(Model.CountryFull)</td>
+                    <td>@(Model.Site.CountryFull)</td>
                 </tr>
                 <tr>
                     <td>Unitary Authority</td>
-                    <td>@(Model.LocalAuthority)</td>
+                    <td>@(Model.Site.LocalAuthority)</td>
                 </tr>
                 <tr>
                     <td>Centroid*</td>
-                    <td>@(Model.GridReference)</td>
+                    <td>@(Model.Site.GridReference)</td>
                 </tr>
                 <tr>
                     <td>Latitude</td>
-                    <td>@(Model.XCoord)</td>
+                    <td>@(Model.Site.XCoord)</td>
                 </tr>
                 <tr>
                     <td>Longitude</td>
-                    <td>@(Model.YCoord)</td>
+                    <td>@(Model.Site.YCoord)</td>
                 </tr>
                 <tr>
                     <td>SAC EU Code</td>
-                    <td>@(Model.EUCode)</td>
+                    <td>@(Model.Site.EUCode)</td>
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>@(Model.StatusLong)</td>
+                    <td>@(Model.Site.StatusLong)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
-                    <td>@(Model.Area)</td>
+                    <td>@(Model.Site.Area)</td>
                 </tr>
                 <tr>
                     <td cospan="2" style="font-size:small;">
@@ -57,23 +58,67 @@
     </div>
     <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/@(Model.EUCode))thumb.GIF" />
-            <figcaption style="font-size: small;">Location of @(Model.Name) @(Model.StatusShort)</figcaption>
+            <img src="/images/sites/@(Model.Site.EUCode))thumb.GIF" />
+            <figcaption style="font-size: small;">Location of @(Model.Site.Name) @(Model.Site.StatusShort)</figcaption>
         </figure>
     </div>
     <h4>General Site Character</h4>
     <p>
-        @foreach (SiteCharacter item in Model.Character) 
+        @foreach (SiteCharacter item in Model.Site.Character) 
         {
-            Html.Raw(String.Format("{0} {1} <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
+            @Html.Raw(String.Format("{0} {1} <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
         }
     </p>
-    <p><a href="/n2kforms/@(Model.EUCode).pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
+    <p><a href="/n2kforms/@(Model.Site.EUCode).pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
     <div class="callout secondary">
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
     <div>
+        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
+        @{
+            if (AnnexIPrimary.Count > 0) {
+                foreach (var feature in AnnexIPrimary) {
+                    feature.IsPrimary = true;
+                    await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
+                }
+            } else {
+                @Html.Raw("<p>Not Applicable</p>");
+            }
+        }
+        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+        @{
+            if (AnnexISecondary.Count > 0) {
+                foreach (var feature in AnnexISecondary) {
+                    feature.IsPrimary = false;
+                    await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
+                }
+            } else {
+                @Html.Raw("<p>Not Applicable</p>");
+            }
+        }
+        <h4>Annex II species that are a primary reason for selection of this site</h4>
+        @{
+            if (AnnexIIPrimary.Count > 0) {
+                foreach (var feature in AnnexIIPrimary) {
+                    feature.IsPrimary = true;
+                    await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
+                }
+            } else {
+                @Html.Raw("<p>Not Applicable</p>");
+            }
+        }
+        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
+        @{
+            if (AnnexIISecondary.Count > 0) {
+                foreach (var feature in AnnexIISecondary) {
+                    feature.IsPrimary = false;
+                    await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
+                }
+            } else {
+                @Html.Raw("<p>Not Applicable</p>");
+            }
+        }        
 
         <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
     </div>

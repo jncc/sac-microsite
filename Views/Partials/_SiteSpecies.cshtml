@@ -1,0 +1,15 @@
+@model JNCC.Microsite.SAC.Models.Data.SiteFeature
+@using JNCC.Microsite.SAC.Website.Helpers
+
+<div>
+    <p><b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.Name)</a></p>
+    @{
+        if (Model.IsPrimary) {
+            if (!String.IsNullOrWhiteSpace(Model.PrimaryText)) {
+                @Html.Raw(String.Format("<p>{0}</p>", Model.PrimaryText));
+            } else {
+                @Html.Raw("<p>Habitat occurrence description not yet available.</p>");
+            }
+        }
+    }
+</div>
