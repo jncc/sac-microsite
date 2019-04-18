@@ -97,13 +97,12 @@ namespace JNCC.Microsite.SAC
                 Console.WriteLine(String.Format("Extracted {0} Species Information Features", species.Count));
             }
 
-            var s = GetRender().Result;
-            Console.WriteLine(s);
+            var s = GetRender();
             // Builder b = new Builder();
             // b.BuildSearch();
         }
 
-        private static async Task<string> GetRender()
+        private static async Task GetRender()
         {
             // var engine = new RazorLightEngineBuilder()
             //     .UseEmbeddedResourcesProject(typeof(Program))
@@ -122,7 +121,7 @@ namespace JNCC.Microsite.SAC
                 string json = r.ReadToEnd();
                 List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(json);
 
-                var m = new JNCC.Microsite.SAC.Models.Website.Search
+                var searchModel = new JNCC.Microsite.SAC.Models.Website.Search
                 {
                     Sites = sites.Select(s => (s.EUCode, s.Name)).ToList()
                 };
@@ -131,9 +130,24 @@ namespace JNCC.Microsite.SAC
                 viewBag.CurrentSection = "Search";
                 viewBag.Breadcrumbs = new List<(string, string, bool)> { ("/Search", "Search", true) };
 
-                var rendered = await engine.CompileRenderAsync("Search", m, viewBag);
+                var rendered = await engine.CompileRenderAsync("Search", searchModel, viewBag);
 
-                return rendered;
+                using (StreamWriter output = new StreamWriter("output/search.html"))
+                {
+                    output.Write(rendered);
+                }
+
+                foreach (var site in sites)
+                {
+                    viewBag = new ExpandoObject();
+                    viewBag.CurrentSection = "Site";
+                    viewBag.Breadcrumbs = new List<(string, string, bool)> { ("/Site", "Site", false), (String.Format("/Site/{0}", site.EUCode), site.Name, true) };
+
+                    using (StreamWriter output = new StreamWriter(String.Format("output/site/{0}.html", site.EUCode)))
+                    {
+                        output.Write(await engine.CompileRenderAsync("Site", site, viewBag));
+                    }
+                }
             }
         }
     }
