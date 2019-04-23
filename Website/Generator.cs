@@ -16,7 +16,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 
-namespace JNCC.Microsite.SAC.Website.Helpers
+namespace JNCC.Microsite.SAC.Website
 {
     public static class Generator
     {

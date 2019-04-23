@@ -20,6 +20,7 @@ using System.Collections.Generic;
 
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Renderers;
+using JNCC.Microsite.SAC.Website;
 
 namespace JNCC.Microsite.SAC
 {
@@ -82,7 +83,7 @@ namespace JNCC.Microsite.SAC
 
             if (generate)
             {
-                
+                Generator.MakeSite();
             }
         }        
     }
