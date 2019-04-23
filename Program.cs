@@ -1,10 +1,8 @@
-﻿using System.Data.Odbc;
-using System.Linq;
+﻿using System.Linq;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Data;
 using JNCC.Microsite.SAC.Models.Data;
 using Mono.Options;
-using JNCC.Microsite.SAC.Website;
 using System.Diagnostics;
 
 using System;
@@ -23,7 +21,6 @@ using System.Collections.Generic;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Renderers;
 
-
 namespace JNCC.Microsite.SAC
 {
     class Program
@@ -37,80 +34,17 @@ namespace JNCC.Microsite.SAC
             p.WriteOptionDescriptions(Console.Out);
         }
 
-        /// Original code from https://github.com/aspnet/Entropy/tree/master/samples/Mvc.RenderViewToString
-        private static void ConfigureDefaultServices(IServiceCollection services, string customApplicationBasePath)
-        {
-            string applicationName;
-            IFileProvider fileProvider;
-            if (!string.IsNullOrEmpty(customApplicationBasePath))
-            {
-                applicationName = Path.GetFileName(customApplicationBasePath);
-                fileProvider = new PhysicalFileProvider(customApplicationBasePath);
-            }
-            else
-            {
-                applicationName = Assembly.GetEntryAssembly().GetName().Name;
-                fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
-            }
-
-            services.AddSingleton<IHostingEnvironment>(new HostingEnvironment
-            {
-                ApplicationName = applicationName,
-                WebRootFileProvider = fileProvider,
-            });
-            services.Configure<RazorViewEngineOptions>(options =>
-            {
-                options.FileProviders.Clear();
-                options.FileProviders.Add(fileProvider);
-            });
-            var diagnosticSource = new DiagnosticListener("Microsoft.AspNetCore");
-            services.AddSingleton<ObjectPoolProvider, DefaultObjectPoolProvider>();
-            services.AddSingleton<DiagnosticSource>(diagnosticSource);
-            services.AddLogging();
-            services.AddMvc();
-            services.AddTransient<RazorViewToStringRenderer>();
-        }
-
-        /// Original code from https://github.com/aspnet/Entropy/tree/master/samples/Mvc.RenderViewToString
-        public static IServiceScopeFactory InitializeServices(string customApplicationBasePath = null)
-        {
-            // Initialize the necessary services
-            var services = new ServiceCollection();
-            ConfigureDefaultServices(services, customApplicationBasePath);
-
-            // Add a custom service that is used in the view.
-            //services.AddSingleton<EmailReportGenerator>();
-
-            var serviceProvider = services.BuildServiceProvider();
-            return serviceProvider.GetRequiredService<IServiceScopeFactory>();
-        }
-
-        public static Task<string> RenderViewSearch(IServiceScopeFactory scopeFactory, IEnumerable<(string EUCode, string Name)> sites)
-        {
-            using (var serviceScope = scopeFactory.CreateScope())
-            {
-                var helper = serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
-
-                var model = new Search
-                {
-                    Breadcrumbs = new List<(string href, string text, bool current)> {("/Search","Search",true)},
-                    CurrentSection = "Search",
-                    Sites = sites.ToList()
-                };
-
-                return helper.RenderViewToStringAsync("Views/Search.cshtml", model);
-            }
-        }
-
         public static void Main(string[] args)
         {
             var showHelp = false;
             string accessDbPath = "";
             bool update = false;
+            bool generate = false;
 
             var options = new OptionSet {
                 { "a|accessdb=", "path to the Access DB containg SAC info", a => accessDbPath = a},
                 { "u|update", "run data update from Database", u => update = true},
+                { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
@@ -138,49 +72,17 @@ namespace JNCC.Microsite.SAC
                 if (String.IsNullOrWhiteSpace(accessDbPath))
                 {
                     Console.Write("-a | --accessdb option must not be blank if running with -u | --update");
-                    return;
+                    
                 }
-
-                Console.WriteLine(String.Format("Updating data files using: {0}", accessDbPath));
-
-                DatabaseOperations dbOps = new DatabaseOperations(accessDbPath);
-                JsonSerializer serializer = new JsonSerializer();
-
-                Console.WriteLine("Extracting main SAC list");
-                List<Site> sites = dbOps.GetFullSACList();
-                using (StreamWriter sw = new StreamWriter("./output/json/sites.json"))
-                using (JsonWriter writer = new JsonTextWriter(sw))
+                else 
                 {
-                    serializer.Serialize(writer, sites);
+                    DatabaseExtractor.ExtractData(accessDbPath);
                 }
-                Console.WriteLine(String.Format("Extracted {0} SAC sites", sites.Count));
-
-                Console.WriteLine("Extracting habitat information feature list");
-                List<InterestFeature> habitats = dbOps.GetHabitatInformationFeatureList();
-                using (StreamWriter sw = new StreamWriter("./output/json/habitats.json"))
-                using (JsonWriter writer = new JsonTextWriter(sw))
-                {
-                    serializer.Serialize(writer, habitats);
-                }
-                Console.WriteLine(String.Format("Extracted {0} Habitat Information Features", habitats.Count));
-
-                Console.WriteLine("Extracting species information feature list");
-                List<InterestFeature> species = dbOps.GetSpeciesInformationFeatureList();
-                using (StreamWriter sw = new StreamWriter("./output/json/species.json"))
-                using (JsonWriter writer = new JsonTextWriter(sw))
-                {
-                    serializer.Serialize(writer, species);
-                }
-                Console.WriteLine(String.Format("Extracted {0} Species Information Features", species.Count));
             }
 
-            var serviceScopeFactory = InitializeServices();
-
-            using (StreamReader fileReader = new StreamReader("output/json/sites.json")) {
-                List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(fileReader.ReadToEnd());
-                var searchPageContent = RenderViewSearch(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
-
-                Console.WriteLine(searchPageContent);
+            if (generate)
+            {
+                
             }
         }        
     }
