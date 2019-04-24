@@ -91,7 +91,11 @@ namespace JNCC.Microsite.SAC
 
             if (view)
             {
-                CreateWebHostBuilder(args).Build().Run();
+                CreateWebHostBuilder(args)
+                    .UseStartup<Startup>()
+                    .UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "output/html"))
+                    .Build()
+                    .Run();
             }
         }
 
@@ -99,7 +103,6 @@ namespace JNCC.Microsite.SAC
         {
             return WebHost.CreateDefaultBuilder(args);
                      
-        }
-                   
+        }   
     }
 }
