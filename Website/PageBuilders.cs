@@ -16,7 +16,7 @@ namespace JNCC.Microsite.SAC.Website
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
-                var helper = serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
+                var helper = GetRendererHelper(serviceScope);
 
                 var model = new Search
                 {
@@ -33,7 +33,7 @@ namespace JNCC.Microsite.SAC.Website
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
-                var helper = serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
+                var helper = GetRendererHelper(serviceScope);
 
                 var model = new SitePage
                 {
@@ -50,7 +50,7 @@ namespace JNCC.Microsite.SAC.Website
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
-                var helper = serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
+                var helper = GetRendererHelper(serviceScope);
 
                 var model = new InterestFeaturePage
                 {
@@ -67,7 +67,7 @@ namespace JNCC.Microsite.SAC.Website
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
-                var helper = serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
+                var helper = GetRendererHelper(serviceScope);
 
                 var model = new InterestFeaturePage
                 {
@@ -78,6 +78,24 @@ namespace JNCC.Microsite.SAC.Website
 
                 return helper.RenderViewToStringAsync("Views/SpeciesInterestFeature.cshtml", model);
             }
+        }
+
+        public static Task<string> RenderErrorPage(IServiceScopeFactory scopeFactory, int error)
+        {
+            using (var serviceScope = scopeFactory.CreateScope())
+            {
+                var helper = GetRendererHelper(serviceScope);
+
+                return helper.RenderViewToStringAsync("Views/Error/404.cshtml", new Page{
+                    Breadcrumbs = new List<(string href, string text, bool current)>{ ("/", "Home", false), ("/404.html", "Page Not Found", true)},
+                    CurrentSection = null
+                });
+            }
+        }
+
+        private static RazorViewToStringRenderer GetRendererHelper(IServiceScope serviceScope)
+        {
+            return serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
         }
     }
 }

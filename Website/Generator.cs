@@ -98,7 +98,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var searchPageContent = PageBuilders.RenderSearchPage(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
 
-                using (StreamWriter writer = new StreamWriter("output/html/search.html"))
+                using (StreamWriter writer = new StreamWriter("output/html/index.html"))
                 {
                     writer.Write(searchPageContent);
                 }
@@ -142,7 +142,13 @@ namespace JNCC.Microsite.SAC.Website
                         writer.Write(habitatPageContent);
                     }
                 }
-            }            
+            }
+
+            using (StreamWriter writer = new StreamWriter(String.Format("output/html/404.html")))
+            {
+                var notFoundContent = PageBuilders.RenderErrorPage(serviceScopeFactory, 404).Result;
+                writer.Write(notFoundContent);
+            }                
         }
     }
 }

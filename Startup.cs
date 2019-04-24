@@ -30,13 +30,16 @@ namespace JNCC.Microsite.SAC
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            app.UseStaticFiles()
+            app.UseDefaultFiles()
+                .UseStatusCodePagesWithRedirects("/{0}.html")
+                .UseStaticFiles()
                 .UseStaticFiles(new StaticFileOptions
                 {
                     FileProvider = new PhysicalFileProvider(
                         Path.Combine(Directory.GetCurrentDirectory(), "output/images")),
                     RequestPath = "/images"
                 });
+            
         }
     }
 }
