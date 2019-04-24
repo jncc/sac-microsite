@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Renderers;
 using JNCC.Microsite.SAC.Website;
+using Microsoft.AspNetCore;
 
 namespace JNCC.Microsite.SAC
 {
@@ -41,11 +42,13 @@ namespace JNCC.Microsite.SAC
             string accessDbPath = "";
             bool update = false;
             bool generate = false;
+            bool view = false;
 
             var options = new OptionSet {
                 { "a|accessdb=", "path to the Access DB containg SAC info", a => accessDbPath = a},
                 { "u|update", "run data update from Database", u => update = true},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
+                { "v|view", "veiw the static web site", v => view = true},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
@@ -85,6 +88,18 @@ namespace JNCC.Microsite.SAC
             {
                 Generator.MakeSite();
             }
-        }        
+
+            if (view)
+            {
+                CreateWebHostBuilder(args).Build().Run();
+            }
+        }
+
+        static IWebHostBuilder CreateWebHostBuilder(string[] args) 
+        {
+            return WebHost.CreateDefaultBuilder(args);
+                     
+        }
+                   
     }
 }
