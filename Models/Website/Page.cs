@@ -5,7 +5,7 @@ namespace JNCC.Microsite.SAC.Models.Website
 {
     public class Page
     {
-        public List<(string href, string text, bool current)> Breadcrumbs { get; set; }
+        public List<(string href, string text, bool display)> Breadcrumbs { get; set; }
         public string CurrentSection { get; set; }
     }
 }

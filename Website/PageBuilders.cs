@@ -20,7 +20,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new Search
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/search", "Search", true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
                     CurrentSection = "Search",
                     Sites = sites.ToList()
                 };
@@ -37,7 +37,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new SitePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/site", "Site", false), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Site", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
                     CurrentSection = "Site",
                     Site = site
                 };
@@ -54,7 +54,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new InterestFeaturePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/habitat", "Habitat", false), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitat", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Habitat",
                     InterestFeature = feature
                 };
@@ -71,7 +71,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new InterestFeaturePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/species", "Species", false), (string.Format("/species/{0}", feature.Code), feature.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/species", "Species", true), (string.Format("/species/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Species",
                     InterestFeature = feature
                 };
@@ -87,7 +87,7 @@ namespace JNCC.Microsite.SAC.Website
                 var helper = GetRendererHelper(serviceScope);
 
                 return helper.RenderViewToStringAsync("Views/Error/404.cshtml", new Page{
-                    Breadcrumbs = new List<(string href, string text, bool current)>{ ("/", "Home", false), ("/404.html", "Page Not Found", true)},
+                    Breadcrumbs = new List<(string href, string text, bool current)>{ ("/", "Home", true), ("/404.html", "Page Not Found", true)},
                     CurrentSection = null
                 });
             }

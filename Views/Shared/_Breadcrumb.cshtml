@@ -1,9 +1,9 @@
 @model List<(string, string, bool)>
 <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
     <ul class="breadcrumbs">
-        @foreach ((string href, string text, bool current) in Model)
+        @foreach ((string href, string text, bool display) in Model)
         {
-            <li><a class=@(current ? "show-for-sr" : "") href=@(href)>@(text)</a></li>
+            <li><a class="@(display ? "" : "show-for-sr")" href=@(href)>@(text)</a></li>
         }
     </ul>
 </nav>

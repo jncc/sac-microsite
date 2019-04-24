@@ -32,14 +32,7 @@ namespace JNCC.Microsite.SAC
         {
             app.UseDefaultFiles()
                 .UseStatusCodePagesWithRedirects("/{0}.html")
-                .UseStaticFiles()
-                .UseStaticFiles(new StaticFileOptions
-                {
-                    FileProvider = new PhysicalFileProvider(
-                        Path.Combine(Directory.GetCurrentDirectory(), "output/images")),
-                    RequestPath = "/images"
-                });
-            
+                .UseStaticFiles();            
         }
     }
 }
