@@ -92,12 +92,57 @@ namespace JNCC.Microsite.SAC.Website
         {
             var serviceScopeFactory = InitializeServices();
 
-            using (StreamReader fileReader = new StreamReader("output/json/sites.json")) {
+            using (StreamReader fileReader = new StreamReader("output/json/sites.json"))
+            {
                 List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(fileReader.ReadToEnd());
-                var searchPageContent = RenderViewSearch(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
 
-                Console.WriteLine(searchPageContent);
+                var searchPageContent = PageBuilders.RenderSearchPage(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
+
+                using (StreamWriter writer = new StreamWriter("output/html/search.html"))
+                {
+                    writer.Write(searchPageContent);
+                }
+
+                foreach (var site in sites)
+                {
+                    var sitePageContent = PageBuilders.RenderSitePage(serviceScopeFactory, site).Result;
+
+                    using (StreamWriter writer = new StreamWriter(String.Format("output/html/site/{0}.html", site.EUCode)))
+                    {
+                        writer.Write(sitePageContent);
+                    }
+                }
             }
+
+            using (StreamReader fileReader = new StreamReader("output/json/habitats.json"))
+            {
+                List<InterestFeature> habitats = JsonConvert.DeserializeObject<List<InterestFeature>>(fileReader.ReadToEnd());
+
+                foreach (var habitat in habitats) 
+                {
+                    var habitatPageContent = PageBuilders.RenderHabitatPage(serviceScopeFactory, habitat).Result;
+
+                    using (StreamWriter writer = new StreamWriter(String.Format("output/html/habitat/{0}.html", habitat.Code)))
+                    {
+                        writer.Write(habitatPageContent);
+                    }
+                }
+            }
+
+            using (StreamReader fileReader = new StreamReader("output/json/species.json"))
+            {
+                List<InterestFeature> speciesList = JsonConvert.DeserializeObject<List<InterestFeature>>(fileReader.ReadToEnd());
+
+                foreach (var species in speciesList) 
+                {
+                    var habitatPageContent = PageBuilders.RenderHabitatPage(serviceScopeFactory, species).Result;
+
+                    using (StreamWriter writer = new StreamWriter(String.Format("output/html/species/{0}.html", species.Code)))
+                    {
+                        writer.Write(habitatPageContent);
+                    }
+                }
+            }            
         }
     }
 }
