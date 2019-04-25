@@ -88,14 +88,14 @@ namespace JNCC.Microsite.SAC
                 Generator.MakeSite();
             }
 
-            // if (view)
-            // {
+            if (view)
+            {
                 CreateWebHostBuilder(args)
                     .UseStartup<Startup>()
                     .UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "output/html"))
                     .Build()
                     .Run();
-            // }
+            }
         }
 
         static IWebHostBuilder CreateWebHostBuilder(string[] args)
