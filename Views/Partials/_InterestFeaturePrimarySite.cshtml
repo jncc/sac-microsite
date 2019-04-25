@@ -1,9 +1,11 @@
 @model JNCC.Microsite.SAC.Models.Data.InterestFeatureOccurrence
 @using JNCC.Microsite.SAC.Website.Helpers
 
-<div class="columns">
-    <div class="small-6"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
-    <div class="small-6"><b>@(Model.LocalAuthority)</b></div>
+<div class="row">
+    <div class="column large-6 small-12" style="padding-left: 0; padding-right: 0;"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
+    <div class="column large-6 small-12" style="padding-left: 0; padding-right: 0;"><b>@(Model.LocalAuthority)</b></div>
+</div>
+<div class="row">
     @if(String.IsNullOrWhiteSpace(Model.PrimaryText)) {
         if (Model.IsHabitat) {
             @Html.Raw("<p>Habitat occurrence description not yet available.</p>");
@@ -11,6 +13,6 @@
             @Html.Raw("<p>Species occurrence description not yet available.</p>");
         }        
     } else {
-        @Html.Raw(String.Format("<div class=\"small-12\">{0}</div>", Model.PrimaryText))
+        @Html.Raw(String.Format("<div class=\"column\" style=\"padding-left: 0; padding-right: 0; padding-bottom: 1.5rem\">{0}</div>", Model.PrimaryText))
     }
 </div>

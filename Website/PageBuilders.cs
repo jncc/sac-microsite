@@ -1,4 +1,5 @@
 using System;
+using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
@@ -49,9 +50,8 @@ namespace JNCC.Microsite.SAC.Website
         public static Task<string> RenderHabitatPage(IServiceScopeFactory scopeFactory, InterestFeature feature)
         {
             using (var serviceScope = scopeFactory.CreateScope())
-            {
+            {   
                 var helper = GetRendererHelper(serviceScope);
-
                 var model = new InterestFeaturePage
                 {
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitats", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },

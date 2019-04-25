@@ -8,28 +8,28 @@
 }
 
 <h2>Habitat account - @(Model.InterestFeature.SectionTitle)</h2>
-<h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Model.InterestFeature.Name)</h4>
+<h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @Html.Raw(Model.InterestFeature.Name)</h4>
 <h4>Background to selection</h4>
 <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code, true))>UK resource for this habitat</a>
 <a href=@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.InterestFeature.Code, true))>Compare with UK distribution</a>
 	
-<h5>Description and ecological characteristics</h5>
+<h4>Description and ecological characteristics</h4>
 <p>@Html.Raw(Model.InterestFeature.FeatureDescription)</p>
 
-<h5>European status and distribution</h5>
+<h4>European status and distribution</h4>
 <p>@Html.Raw(Model.InterestFeature.EUStatus)</p>
 
-<h5>UK status and distribtution</h5> 
+<h4>UK status and distribtution</h4> 
 <p>Click <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code, true))>here</a> view UK distribution of this species</p>
 <p>@Html.Raw(Model.InterestFeature.UKStatus)</p>
 
 @if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {
-    Html.Raw("<h5>Site Selection Rationale</h5>");
+    Html.Raw("<h4>Site Selection Rationale</h4>");
     Html.Raw(String.Format("<p>{0}</p>", Model.InterestFeature.Rationale));
 }
 
 @if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {
-    Html.Raw("<h5>Site Selection Rationale</h5>");
+    Html.Raw("<h4>Site Selection Rationale</h4>");
     Html.Raw(String.Format("<p>{0}</p>", Model.InterestFeature.Rationale));
 }
 
@@ -39,9 +39,11 @@
     await Html.RenderPartialAsync("Partials/_InterestFeaturePrimarySite", site);
 }
 
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
+<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
 @foreach (var site in secondaryOccurences) {
     await Html.RenderPartialAsync("Partials/_InterestFeatureSecondarySite", site);
 }
 
-<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="container" style="padding-left: 0; padding-right: 0">
+    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+</div>

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Renderers;
@@ -244,6 +245,8 @@ namespace JNCC.Microsite.SAC.Website
 
                 foreach (var habitat in habitats)
                 {
+                    habitat.FeatureDescription = Regex.Replace(habitat.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
+                    habitat.EUStatus = Regex.Replace(habitat.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);                    
                     var habitatPageContent = PageBuilders.RenderHabitatPage(serviceScopeFactory, habitat).Result;
 
                     using (StreamWriter writer = new StreamWriter(String.Format("output/html/habitat/{0}.html", habitat.Code)))
@@ -259,7 +262,9 @@ namespace JNCC.Microsite.SAC.Website
 
                 foreach (var species in speciesList)
                 {
-                    var habitatPageContent = PageBuilders.RenderHabitatPage(serviceScopeFactory, species).Result;
+                    species.FeatureDescription = Regex.Replace(species.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
+                    species.EUStatus = Regex.Replace(species.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
+                    var habitatPageContent = PageBuilders.RenderSpeciesPage(serviceScopeFactory, species).Result;
 
                     using (StreamWriter writer = new StreamWriter(String.Format("output/html/species/{0}.html", species.Code)))
                     {
