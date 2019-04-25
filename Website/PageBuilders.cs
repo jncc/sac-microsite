@@ -86,11 +86,35 @@ namespace JNCC.Microsite.SAC.Website
             {
                 var helper = GetRendererHelper(serviceScope);
 
-                return helper.RenderViewToStringAsync("Views/Error/404.cshtml", new Page{
-                    Breadcrumbs = new List<(string href, string text, bool current)>{ ("/", "Home", true), ("/404.html", "Page Not Found", true)},
+                return helper.RenderViewToStringAsync("Views/Error/404.cshtml", new Page
+                {
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/404.html", "Page Not Found", true) },
                     CurrentSection = null
                 });
             }
+        }
+
+        public static Task<string> RenderSiteListPage(IServiceScopeFactory scopeFactory, string header, string subject, (string href, string text, bool display)? breadcrumb, List<RegionalSites> sites)
+        {
+            using (var serviceScope = scopeFactory.CreateScope())
+            {
+                var helper = GetRendererHelper(serviceScope);
+                
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true)};
+                if (breadcrumb != null) {
+                    breadcrumbs.Add(breadcrumb.Value);
+                }
+
+                return helper.RenderViewToStringAsync("Views/SiteList.cshtml", new SiteList
+                {
+                    Breadcrumbs = breadcrumbs,
+                    CurrentSection = "Site",
+                    HeaderText = header,
+                    SubjectHTML = subject,
+                    RegionalSites = sites
+                });
+            }
+
         }
 
         private static RazorViewToStringRenderer GetRendererHelper(IServiceScope serviceScope)

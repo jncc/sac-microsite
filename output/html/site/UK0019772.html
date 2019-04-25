@@ -8,9 +8,9 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
-        <script src="/frontend/js/app.js" defer></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
+        <script src="/frontend/js/app.js"></script>
     </head>
     <body>
         <noscript>
@@ -24,22 +24,18 @@
                         <a href="#" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
                     <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>
-                    <form action="#" role="search" class="top-bar search-form input-group" id="search-form" data-animate="hinge-in-from-top spin-out">
+                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
+                    <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
-                        <input type="search" placeholder="Search" class="input-group-field" id="search-field">
+                        <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
                         <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
                     </form>
                     <div class="show-for-small-only">
                         <div class="title-bar" data-responsive-toggle="search-form" data-hide-for="medium">
-                            <button type="button" class="search-opener" data-toggle="search-form" aria-label="search-opener">
-                                <i class="icon-search"></i>
-                            </button>
+                            <button type="button" class="search-opener" data-toggle="search-form" aria-label="search-opener"><i class="icon-search"></i></button>
                         </div>
                         <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
-                            <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu" aria-label="navigation-opener">
-                                <span></span>
-                            </button>
+                            <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu" aria-label="navigation-opener"><span></span></button>
                         </div>
                     </div>
                 </div>
@@ -59,9 +55,9 @@
 <div class="row">
     <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
         <ul class="breadcrumbs">
-                <li><a class="" href=/>Home</a></li>
-                <li><a class="" href=/site>Sites</a></li>
-                <li><a class="" href=/site/UK0019772>Coladoir Bog</a></li>
+                <li><a class="" href="/">Home</a></li>
+                <li><a class="" href="/site">Sites</a></li>
+                <li><a class="" href="/site/UK0019772">Coladoir Bog</a></li>
         </ul>
     </nav>
 </div>                    

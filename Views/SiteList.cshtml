@@ -1,0 +1,21 @@
+@model JNCC.Microsite.SAC.Models.Website.SiteList
+@{
+    Layout = "Shared/_Layout.cshtml";
+}
+
+<h1>@(Model.HeaderText)</h1>
+
+@{
+    await Html.RenderPartialAsync("Shared/_CountryList.cshtml");
+}
+
+@Html.Raw(Model.SubjectHTML)
+
+@foreach (var region in Model.RegionalSites)
+{   
+    @Html.Raw("<table><tr><th width=\"8\">EU Code</th><th width=\"30\">Name</th><th width=\"8\">Country</th><th width=\"30\">Local Authority</th><th width=\"8\">Area (ha)</th><th width=\"8\">Status</th></tr>")
+    foreach(var site in region.Sites) {
+        @Html.Raw(String.Format("<tr><td><a href=\"/site/{0}\">{1}</a></td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>", site.EUCode, site.EUCode, site.Name, site.Country, site.LocalAuthority, site.Area, site.StatusShort))
+    }
+    @Html.Raw("</table>")
+}
