@@ -9,6 +9,12 @@
 
 <h2>Habitat account - @(Model.InterestFeature.SectionTitle)</h2>
 <h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @Html.Raw(Model.InterestFeature.Name)</h4>
+<div class="cell large-4 small-12 float-right">
+    <figure>
+        <img src="/images/maps/features/thumbnails/@(Model.InterestFeature.Code)_thumb.GIF" />
+        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code))</b> @(Html.Raw(Model.InterestFeature.Name)). Click image for enlarged map.</figcaption>
+    </figure>
+</div>
 <h4>Background to selection</h4>
 <a href=@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code, true))>UK resource for this habitat</a>
 <a href=@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.InterestFeature.Code, true))>Compare with UK distribution</a>

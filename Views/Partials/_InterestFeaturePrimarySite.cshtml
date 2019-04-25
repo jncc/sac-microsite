@@ -2,8 +2,8 @@
 @using JNCC.Microsite.SAC.Website.Helpers
 
 <div class="row">
-    <div class="column large-6 small-12" style="padding-left: 0; padding-right: 0;"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
-    <div class="column large-6 small-12" style="padding-left: 0; padding-right: 0;"><b>@(Model.LocalAuthority)</b></div>
+    <div class="cell large-6 small-12"><a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode))>@(Model.SiteName)</a></div>
+    <div class="cell large-6 small-12"><b>@(Model.LocalAuthority)</b></div>
 </div>
 <div class="row">
     @if(String.IsNullOrWhiteSpace(Model.PrimaryText)) {
@@ -13,6 +13,6 @@
             @Html.Raw("<p>Species occurrence description not yet available.</p>");
         }        
     } else {
-        @Html.Raw(String.Format("<div class=\"column\" style=\"padding-left: 0; padding-right: 0; padding-bottom: 1.5rem\">{0}</div>", Model.PrimaryText))
+        @Html.Raw(String.Format("<div class=\"cell large-12 small-12\" style=\"padding-bottom: 1.5em\">{0}</div>", Model.PrimaryText))
     }
 </div>

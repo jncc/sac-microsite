@@ -9,6 +9,12 @@
 
 <h2>@(Model.InterestFeature.SectionTitle)</h2>
 <h4>@(Model.InterestFeature.Code.Substring(1)) @Html.Raw(Model.InterestFeature.LayTitle) [@(Html.Raw(Model.InterestFeature.Name))]</h4>
+<div class="cell large-4 small-12 float-right">
+    <figure>
+        <img src="/images/maps/features/thumbnails/@(Model.InterestFeature.Code)_thumb.GIF" />
+        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code))</b> @(Html.Raw(Model.InterestFeature.Name)). Click image for enlarged map.</figcaption>
+    </figure>
+</div>
 <h4>Background Selection</h4>
 <a href="/species/@(Model.InterestFeature.Code)/distribution/uk">UK resource for this species</a>
 <a href="/species/@(Model.InterestFeature.Code)/distribution/compare">Compare with UK distribution</a>
