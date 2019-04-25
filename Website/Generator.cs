@@ -254,6 +254,12 @@ namespace JNCC.Microsite.SAC.Website
                         writer.Write(habitatPageContent);
                     }
                 }
+
+                using (StreamWriter writer = new StreamWriter("output/html/habitat/index.html"))
+                {
+                    var habitatListContent = PageBuilders.RenderInterestFeatureListPage(serviceScopeFactory, true, habitats).Result;
+                    writer.Write(habitatListContent);
+                }
             }
 
             using (StreamReader fileReader = new StreamReader("output/json/species.json"))
@@ -271,6 +277,12 @@ namespace JNCC.Microsite.SAC.Website
                         writer.Write(habitatPageContent);
                     }
                 }
+
+                using (StreamWriter writer = new StreamWriter("output/html/species/index.html"))
+                {
+                    var speciesListContent = PageBuilders.RenderInterestFeatureListPage(serviceScopeFactory, false, speciesList).Result;
+                    writer.Write(speciesListContent);
+                }                
             }
 
             using (StreamWriter writer = new StreamWriter(String.Format("output/html/404.html")))

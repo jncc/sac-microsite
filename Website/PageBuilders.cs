@@ -117,6 +117,28 @@ namespace JNCC.Microsite.SAC.Website
 
         }
 
+        public static Task<string> RenderInterestFeatureListPage(IServiceScopeFactory scopeFactory, bool habitat, List<InterestFeature> features)
+        {
+            using (var serviceScope = scopeFactory.CreateScope())
+            {
+                var helper = GetRendererHelper(serviceScope);
+                
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), habitat ? ("/habitat", "Habitats", true) : ("/species", "Species", true)};
+
+                return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
+                {
+                    Breadcrumbs = breadcrumbs,
+                    CurrentSection = habitat ? "Habitats" : "Species",
+                    Type = habitat ? "Habitats" : "Species",
+                    InterestFeatureSections = features.GroupBy(s => s.SectionTitle).Select(s => new InterestFeatureSection {
+                        SectionTitle = s.Key,
+                        InterestFeatures = s.ToList()
+                    }).ToList()
+                });
+            }
+
+        }
+
         private static RazorViewToStringRenderer GetRendererHelper(IServiceScope serviceScope)
         {
             return serviceScope.ServiceProvider.GetRequiredService<RazorViewToStringRenderer>();
