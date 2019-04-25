@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012870>Rannoch Moor</a></li>
-    </ul>
-</nav>                
-
-<h2>Rannoch Moor</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012870>Rannoch Moor</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Rannoch Moor</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>10113.57</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012870)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012870_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Rannoch Moor SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 10 <br />Bogs, Marshes, Water fringed vegetation, Fens 72 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 15 <br />Dry grassland, Steppes 0.5 <br />Humid grassland, Mesophile grassland 2 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 0.5 <br />    </p>
     <p><a href="/n2kforms/UK0012870.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 10 <br />Bogs, Marshes, Wate
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -134,7 +144,7 @@ Inland water bodies (Standing water, Running water) 10 <br />Bogs, Marshes, Wate
     <p><b>3160</b> <a href=/habitat/H3160>Acid peat-stained lakes and ponds</a>&nbsp; <b>Natural dystrophic lakes and ponds</b></p>
 <p>Rannoch Moor in the southern Scottish Highlands is representative of dystrophic pools formed in upland <b>7130 Blanket bogs</b>. The dystrophic lochans of this site exhibit considerable diversity in size, depth and shoreline type, including those with mineral shorelines, a relatively uncommon variant. These upland dystrophic waters are characteristically shallow and base-poor, with an impoverished flora and fauna. </p></div>
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Rannoch Moor lies in a high-level basin at about 300 m altitude. Its central location in Scotland is reflected in the gradient of variation in vegetation types that occurs across it. In the west of the site the vegetation has a high proportion of purple moor-grass <i>Molinia caerulea</i>, but further east this decreases while the proportion of woody dwarf-shrubs rises. Rannoch is a complex <b>Blanket bog</b> because much of the active peat is broken up between rocky knolls and small valleys, and there are many small ladder fens, which separate the ombrotrophic units into relatively small compartments. This is the only site in Britain at which Rannoch-rush <i>Scheuchzeria palustris</i> is found.</p></div>
 <div>
     <p><b>7140</b> <a href=/habitat/H7140>Very wet mires often identified by an unstable `quaking` surface</a>&nbsp; <b>Transition mires and quaking bogs</b></p>
@@ -165,6 +175,7 @@ Inland water bodies (Standing water, Running water) 10 <br />Bogs, Marshes, Wate
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

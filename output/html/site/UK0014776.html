@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014776>Craven Limestone Complex</a></li>
-    </ul>
-</nav>                
-
-<h2>Craven Limestone Complex</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014776>Craven Limestone Complex</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Craven Limestone Complex</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>5326.09</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014776)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014776_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Craven Limestone Complex SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water fringed vegetation, Fens 3 <br />Dry grassland, Steppes 85 <br />Broad-leaved deciduous woodland 1 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 10 <br />    </p>
     <p><a href="/n2kforms/UK0014776.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -137,23 +147,23 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
     <p><b>6410</b> <a href=/habitat/H6410>Purple moor-grass meadows</a>&nbsp; <b>Molinia meadows on calcareous, peaty or clayey-silt-laden soils (Molinion caeruleae)</b></p>
 <p>Craven is one of three sites representing <b><i>Molinia</i> meadows</b> in the northern England centre of distribution. This site contains what are believed to be the largest expanses of M26 <i>Molinia caerulea</i> – <i>Crepis paludosa</i> mire in the UK, amidst <b>7230 Alkaline fens</b> and <b>7110 active raised bog</b> communities of the Malham Tarn area; smaller fragments are associated with meadows, wood edges and river banks elsewhere on the site.</p></div>
 <div>
-    <p><b>7110</b> <a href=/habitat/H7110>Active raised bogs</a>&nbsp; <b>Active raised bogs</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7110</b> <a href=/habitat/H7110>Active raised bogs</a>&nbsp; <b>Active raised bogs</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Malham Tarn Moss represents <b>Active raised bogs</b> in central northern England, in an area overlying limestone where wetlands are more typically base-rich fens. It displays a classic raised dome with transition from raised bog (base-poor) to base-rich conditions at the bog margin where it interfaces with land influenced by water from the limestone. It has an unusual mixture of bog-moss <i>Sphagnum</i>-rich and hair-grass <i>Deschampsia</i>-dominated vegetation. </p></div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Craven is one of three Carboniferous limestone sites in northern England selected for <b>petrifying springs with tufa formation</b>. The site contains extensive complexes of tufa-forming springs associated with a wide range of other habitats, including <b>7230 Alkaline fens</b>, calcareous grasslands, <b>8240 Limestone pavements</b>, cliffs and screes. Locally calcareous springs emerge within areas of acid drift supporting heath and acid grassland. The flora of these habitat mosaics is outstandingly species-rich and includes many rare northern species, such as alpine bartsia <i>Bartsia alpina</i> and bird’s-eye primrose <i>Primula farinosa</i>.</p></div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 <p>There are large fen systems at Great Close and Ha Mire, principally of the NVC type M10b <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire, <i>Briza media</i> – <i>Primula farinosa</i> sub-community. They are exceptionally species-rich types with frequent bird’s-eye primrose <i>Primula farinosa</i> and grass-of-Parnassus <i>Parnassia palustris</i> alongside rarities such as broad-leaved cottongrass <i>Eriophorum latifolium</i>, hair sedge <i>Carex capillaris</i>, alpine bartsia <i>Bartsia alpina</i> and dwarf milkwort <i>Polygala amarella</i>. Where irrigation is more extensive there are transitions to M9a <i>Carex rostrata</i> – <i>Calliergon cuspidatum</i>/ <i>giganteum</i> mire, <i>Campylium stellatum</i> – <i>Scorpidium scorpioides</i> sub-community. This community is also developed extensively around the lagg of Tarn Moss, where there are transitions with M26b <i>Molinia caerulea</i> – <i>Crepis paludosa</i> mire, <i>Festuca rubra</i> sub-community and W3 <i>Salix pentandra</i> – <i>Carex rostrata</i> fen carr woodland. There are also extensive M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> spring-fed flush fens throughout the site, typically associated with calcareous grassland and limestone scars.</p></div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Craven is one of four sites representing <b>Limestone pavements</b> in northern England. It is selected on the basis of its size and as an example of mid-altitude pavement. There is a wide range of transitions to other habitats, including <b>6210 semi-natural dry grasslands</b>, <b>7230 Alkaline fens</b> and <b>9180 <i>Tilio-Acerion</i> forests</b>. Despite being accessible to grazing sheep, these pavements provide a refuge for downy currant <i>Ribes spicatum</i> and, occasionally, alpine cinquefoil <i>Potentilla crantzii</i> and baneberry <i>Actaea spicata</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
     <p><b>6130</b> <a href=/habitat/H6130>Grasslands on soils rich in heavy metals</a>&nbsp; <b>Calaminarian grasslands of the Violetalia calaminariae</b></p>
 </div>
 <div>
-    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 
 <div>
@@ -177,6 +187,7 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

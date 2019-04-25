@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0013044>Barry Links</a></li>
-    </ul>
-</nav>                
-
-<h2>Barry Links</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0013044>Barry Links</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Barry Links</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>770.44</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0013044)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0013044_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Barry Links SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Salt marshes, Salt pastures, Salt steppes 1 <br />Coastal sand dunes, Sand beaches, Machair 87.3 <br />Inland water bodies (Standing water, Running water) 0.2 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 2.7 <br />Broad-leaved deciduous woodland 1.3 <br />Coniferous woodland 2.5 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 5 <br />    </p>
     <p><a href="/n2kforms/UK0013044.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Salt marshes, Salt pastures, Salt steppes 1 <br />Coastal sand dunes, Sand beach
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -134,10 +144,10 @@ Salt marshes, Salt pastures, Salt steppes 1 <br />Coastal sand dunes, Sand beach
     <p><b>2120</b> <a href=/habitat/H2120>Shifting dunes with marram</a>&nbsp; <b>&quot;Shifting dunes along the shoreline with Ammophila arenaria (&quot;&quot;white dunes&quot;&quot;)&quot;</b></p>
 <p><b>Shifting dunes along the shoreline</b> are found as an identifiable band along the coastal edge of Barry Links on the east coast of Scotland. The site is mostly undisturbed and there are active coastal processes along the undefended seaward edge resulting in areas of dune accretion, particularly along the southern edge of the site. Where dunes are accreting, they are dominated by marram <i>Ammophila arenaria</i>, and there are well-developed transitions to dune grassland and heath.</p></div>
 <div>
-    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Barry Links is one of the largest dune systems in eastern Scotland. The site is known for its very fine parabolic dunes but these and the system as a whole are now quite stable. Most of the area is occupied by acid <b>fixed dune</b> grassland, though there is heather <i>Calluna</i> heath locally, some of it rich in <i>Cladonia</i> lichens. Such extensive areas of comparatively unmodified fixed dune are now rare in eastern Scotland.</p></div>
 <div>
-    <p><b>2150</b> <a href=/habitat/H2150>Coastal dune heathland</a>&nbsp; <b>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2150</b> <a href=/habitat/H2150>Coastal dune heathland</a>&nbsp; <b>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Barry Links is a large site on the east coast of Scotland and has a relatively extensive area of <b>Atlantic decalcified fixed dunes</b> (<b><i>Calluno-Ulicetea</i></b>). The dunes are part of a full successional transition from embryonic foredune to heath on fixed dune. There is a complex of dune grassland on <b>Atlantic decalcified fixed dunes</b>. The pattern of development of <i>Calluna</i> heath suggests that decalcification has occurred through leaching of the sand over an extended period of time. This is in contrast to most other sites with extensive dune heath. Usually these sites are composed of sand with an extremely low initial calcium carbonate content, and decalcification is a relatively rapid process. In addition there are transitions to wet heath, which in turn grades into dune slack. </p></div>
 <div>
     <p><b>2190</b> <a href=/habitat/H2190>Humid dune slacks</a>&nbsp; <b>Humid dune slacks</b></p>
@@ -150,6 +160,7 @@ Salt marshes, Salt pastures, Salt steppes 1 <br />Coastal sand dunes, Sand beach
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

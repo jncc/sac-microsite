@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012785>Strath</a></li>
-    </ul>
-</nav>                
-
-<h2>Strath</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012785>Strath</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Strath</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>1388.34</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012785)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012785_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Strath SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Bogs, Marshes, Water fringed vegetation, Fens 38 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 31 <br />Dry grassland, Steppes 15 <br />Broad-leaved deciduous woodland 1 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 15 <br />    </p>
     <p><a href="/n2kforms/UK0012785.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Bogs, Marshes, Water fringed vegetation, Fens 38 <br />Heath, Scrub, Maquis and 
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -137,20 +147,20 @@ Bogs, Marshes, Water fringed vegetation, Fens 38 <br />Heath, Scrub, Maquis and 
     <p><b>8210</b> <a href=/habitat/H8210>Plants in crevices in base-rich rocks</a>&nbsp; <b>Calcareous rocky slopes with chasmophytic vegetation</b></p>
 <p>Strath represents low-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in northern Scotland. This is one of the few sites in this area with a markedly calcareous chasmophytic flora, associated with outcrops of Dalradian Durness limestone. The crevice flora is moderately well-developed but is less extensive and diverse than those at higher altitudes. There are only a few rare arctic-alpine species, including rock sedge <i>Carex rupestris</i> and alpine cinquefoil <i>Potentilla crantzii</i>. However, the communities contain an unusual assemblage of species characteristic of both a northern and a more southerly distribution. Northern species include dark-red helleborine <i>Epipactis atrorubens</i>, green spleenwort <i>Asplenium viride</i> and holly-fern <i>Polystichum lonchitis</i>, while southern species include hart’s-tongue <i>Phyllitis scolopendrium</i>.</p></div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Strath is one of four sites representing <b>Limestone pavements</b> on Cambro–Ordovician Durness limestone in north-west Scotland. It is the most extensive and floristically rich limestone pavement in Scotland and represents a more maritime variant of the habitat type. The pavements are found at a range of altitudes from close to sea level up to 280 m. There is a maritime influence across the whole site. Some of the species on this site, including tutsan <i>Hypericum androsaemum</i>, dark-red helleborine <i>Epipactis atrorubens</i>, herb-Paris <i>Paris quadrifolia</i>, burnet rose <i>Rosa pimpinellifolia</i>, stone bramble <i>Rubus saxatilis</i>, wood-sage <i>Teucrium scorodonia</i> and black spleenwort <i>Asplenium adiantum-nigrum</i>, are more southern species, characteristic of Morecambe Bay Pavements near the coast. Indeed, one pavement supports the characteristic southern scrub woodland of hazel <i>Corylus avellana</i>. Other characteristic species, such as melancholy thistle <i>Cirsium heterophyllum</i>, globeflower <i>Trollius europaeus</i> and mountain avens <i>Dryas octopetala</i>, are distinctly northern. Perhaps as a result of their more northerly latitude, vernal species such as ramsons <i>Allium ursinum</i>, wood anemone <i>Anemone nemorosa</i>, primrose <i>Primula vulgaris</i> and common dog-violet <i>Viola riviniana</i> are more common here than in southern coastal pavements. </p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
     <p><b>4010</b> <a href=/habitat/H4010>Wet heathland with cross-leaved heath</a>&nbsp; <b>Northern Atlantic wet heaths with Erica tetralix</b></p>
 </div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 </div>
 <div>
-    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 <p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
 
@@ -171,6 +181,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 38 <br />Heath, Scrub, Maquis and 
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

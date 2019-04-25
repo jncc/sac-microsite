@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014787>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></li>
-    </ul>
-</nav>                
-
-<h2>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014787>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>1583.86</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014787)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014787_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) 15 <br />Coastal sand dunes, Sand beaches, Machair 27 <br />Shingle, Sea cliffs, Islets 22 <br />Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water fringed vegetation, Fens 1 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 14 <br />Dry grassland, Steppes 2 <br />Humid grassland, Mesophile grassland 10 <br />Broad-leaved deciduous woodland 1 <br />Coniferous woodland 1 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 6 <br />    </p>
     <p><a href="/n2kforms/UK0014787.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -131,7 +141,7 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
     <p><b>1230</b> <a href=/habitat/H1230>Vegetated sea cliffs</a>&nbsp; <b>Vegetated sea cliffs of the Atlantic and Baltic Coasts</b></p>
 <p>The extensive cliffs of south-west Wales represent hard calcareous cliffs in the south-west of the UK. The nature of the rock and the warm south-facing slopes have resulted in the occurrence of a sequence of important species-rich plant communities. At the base of the cliff, on rock platforms, characteristic maritime communities with thrift <i>Armeria maritima</i>, rock samphire <i>Crithmum maritimum</i> and buck’s-horn plantain <i>Plantago coronopus</i> occur. These grade into calcareous grasslands and heathlands, which support a rich assortment of rare species. These include the yellow whitlowgrass <i>Draba aizoides</i>, a Mediterranean species restricted in the UK to south Wales, where it grows with more characteristic coastal species such as spring squill <i>Scilla verna</i>. Other rarities include small restharrow <i>Ononis reclinata</i>, <b>1654 Early gentian <i>Gentianella anglica</i></b>, goldilocks aster <i>Aster linosyris</i> and the endemic rock sea-lavenders <i>Limonium parvum</i>, <i>L. transwallianum</i> and <i>L. procerum</i> ssp. <i>cambrense</i>. Important lichen communities occur, with good populations of <i>Fulgensia fulgens</i>.</p></div>
 <div>
-    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>The sand dunes within this site are confined to the Castlemartin Peninsula in Pembrokeshire and include Broomhill, Brownslade, Kilpaison, Linney and Stackpole Burrows. The area includes extensive stands of short, species-rich, fixed dune grassland, which is being maintained by populations of rabbits <i>Oryctolagus cuniculus</i>, aided by sheep and cattle. Deposited on limestone, these dunes are extremely base-rich, and the fixed dune grasslands have much in common with calcicolous grasslands. They therefore support a number of ‘lime-loving’ species including the rare lichen <i>Fulgensia fulgens</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -171,6 +181,7 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

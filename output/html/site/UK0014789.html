@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014789>Coedydd Derw a Safleoedd Ystlumod Meirion/ Meirionnydd Oakwoods and Bat Sites</a></li>
-    </ul>
-</nav>                
-
-<h2>Coedydd Derw a Safleoedd Ystlumod Meirion/ Meirionnydd Oakwoods and Bat Sites</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014789>Coedydd Derw a Safleoedd Ystlumod Meirion/ Meirionnydd Oakwoods and Bat Sites</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Coedydd Derw a Safleoedd Ystlumod Meirion/ Meirionnydd Oakwoods and Bat Sites</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>2812.79</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014789)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014789_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Coedydd Derw a Safleoedd Ystlumod Meirion/ Meirionnydd Oakwoods and Bat Sites SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water fringed vegetation, Fens 0.1 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 0.9 <br />Improved grassland 0.1 <br />Broad-leaved deciduous woodland 93.9 <br />Mixed woodland 2 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 1 <br />    </p>
     <p><a href="/n2kforms/UK0014789.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -131,7 +141,7 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
     <p><b>91A0</b> <a href=/habitat/H91A0>Western acidic oak woodland</a>&nbsp; <b>Old sessile oak woods with Ilex and Blechnum in the British Isles</b></p>
 <p>Meirionnydd Oakwoods are a very large example of <b>old sessile oak woods</b> in north Wales, with an outstanding Atlantic flora of bryophytes and lichens. Notable bryophyte species include the endangered <i>Sematophyllum demissum</i> and the nationally scarce <i>Campylopus setifolius</i> and <i>Leptoscyphus cuneifolius</i>. The woods – primarily of sessile oak <i>Quercus petraea</i> with an acidic ground flora – extend along a series of inter-connected valleys, with a wide variety of slopes and aspects, and include many narrow ravines and gorges. Management is diverse, including grazed and ungrazed areas, and stands managed silviculturally, or as minimum intervention. This wide range of environmental, topographic and management conditions contributes to the high biological diversity of this exceptional site. The woods extend into the adjacent Rhinog cSAC.</p></div>
 <div>
-    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Meirionnydd Oakwoods and Bat Sites includes probably the most extensive area of alder <i>Alnus glutinosa</i> <b>alluvial forest</b> in north Wales. The woodland occurs on a dynamic floodplain, allowing cyclical regeneration and decay of alder stands, and the development of a natural structure, rich in dead wood. There is a rich ground flora, with notable plant species including globe-flower <i>Trollius europaeus</i> and creeping-jenny <i>Lysimachia nummularia</i>. The woodland occurs in a mosaic with species-rich marsh and wet grassland, and is continuous with stands of <b>91A0 Old sessile oak woods with <i>Ilex</i> and <i>Blechnum</i> in the British Isles</b>. The site is also important for wildfowl.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -144,10 +154,10 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 </div>
 <div>
-    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>
 <div>
-    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 
 <div>
@@ -174,6 +184,7 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

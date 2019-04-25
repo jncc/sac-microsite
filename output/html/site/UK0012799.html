@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012799>The Lizard</a></li>
-    </ul>
-</nav>                
-
-<h2>The Lizard</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012799>The Lizard</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>The Lizard</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>3083.23</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012799)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012799_thumb.GIF" />
             <figcaption style="font-size: small;">Location of The Lizard SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Shingle, Sea cliffs, Islets 15 <br />Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water fringed vegetation, Fens 2 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 73 <br />Dry grassland, Steppes 2 <br />Improved grassland 2 <br />Broad-leaved deciduous woodland 1 <br />Coniferous woodland 2 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 1 <br />    </p>
     <p><a href="/n2kforms/UK0012799.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Shingle, Sea cliffs, Islets 15 <br />Inland water bodies (Standing water, Runnin
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -134,7 +144,7 @@ Shingle, Sea cliffs, Islets 15 <br />Inland water bodies (Standing water, Runnin
     <p><b>3140</b> <a href=/habitat/H3140>Calcium-rich nutrient-poor lakes, lochs and pools</a>&nbsp; <b>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</b></p>
 <p>The coastal peninsula of the Lizard in south-west England supports a nationally unique series of oligo-mesotrophic waterbodies in which high base-status is not due to limestone or shell-sand. The Lizard is partly underlain by igneous serpentine rock which gives rise to calcium-deficient ground waters that are rich in magnesium. Groundwater drains from adjoining wet and dry serpentine heaths to feed the oligo-mesotrophic waterbodies in which another unusual feature is the occurrence of stoneworts <i>Chara</i> species typical of calcareous lakes, together with species normally associated with acid conditions, such as bog pondweed <i>Potamogeton polygonifolius</i>. Stoneworts present include three Red Data Book species – <i>Chara baltica</i>, <i>C. curta</i> and <i>C. fragifera</i>.</p></div>
 <div>
-    <p><b>3170</b> <a href=/habitat/H3170>Mediterranean temporary ponds</a>&nbsp; <b>Mediterranean temporary ponds</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>3170</b> <a href=/habitat/H3170>Mediterranean temporary ponds</a>&nbsp; <b>Mediterranean temporary ponds</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>There are widespread examples of the serpentine variant of <b>Mediterranean temporary ponds</b> on the Lizard heaths. A number of rare species, including chives <i>Allium schoenoprasum</i>, dwarf rush <i>Juncus capitatus</i> and land quillwort <i>Isoetes histrix</i>, occur in this habitat type. The acid pool type is the main locality on the Lizard for an important assemblage of rare species, including pigmy rush <i>Juncus pygmaeus</i>, three-lobed crowfoot <i>Ranunculus tripartitus</i> and yellow centaury <i>Cicendia filiformis</i>. A number of these pools support important invertebrate populations, including the water beetles <i>Graptodytes flavipes</i> and <i>Dryops striatellus</i>. However, in many areas the habitat type is much reduced, as trackways that once ensured the creation of the pools have fallen into disuse.</p></div>
 <div>
     <p><b>4010</b> <a href=/habitat/H4010>Wet heathland with cross-leaved heath</a>&nbsp; <b>Northern Atlantic wet heaths with Erica tetralix</b></p>
@@ -143,7 +153,7 @@ Shingle, Sea cliffs, Islets 15 <br />Inland water bodies (Standing water, Runnin
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 <p>The typical inland, dry heathland on the Lizard is NVC type H4 <i>Ulex gallii</i> – <i>Agrostis curtisii</i> heath, sometimes called ‘short heath’, which differs from other dry heaths in the area which are Annex I type <b>4040 Dry Atlantic coastal heaths with <i>Erica vagans</i></b>. These heathlands are dominated by heather <i>Calluna vulgaris</i> and bell heather <i>Erica cinerea</i>. Western gorse <i>Ulex gallii</i>, Cornish heath <i>Erica vagans</i>, cross-leaved heath <i>Erica tetralix</i> purple moor-grass <i>Molinia caerulea</i> and bristle bent <i>Agrostis curtisii</i> can be locally dominant. Good stands of this vegetation type are found on extensive loess deposits.</p></div>
 <div>
-    <p><b>4040</b> <a href=/habitat/H4040>Dry coastal heaths with Cornish heath</a>&nbsp; <b>Dry Atlantic coastal heaths with Erica vagans</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>4040</b> <a href=/habitat/H4040>Dry coastal heaths with Cornish heath</a>&nbsp; <b>Dry Atlantic coastal heaths with Erica vagans</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>All good-quality areas of <b>dry Atlantic coastal heaths with <i>Erica vagans</i></b> on the Lizard peninsula in south-west England are included in this site. The full range of structural and floristic variation within NVC type H6 <i>Erica vagans</i> – <i>Ulex europaeus</i> heath is covered, ranging from cliff-top heaths rich in maritime species, such as spring squill <i>Scilla verna</i>, to more inland heaths containing abundant bristle bent <i>Agrostis curtisii</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 <p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 <p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
@@ -153,6 +163,7 @@ Shingle, Sea cliffs, Islets 15 <br />Inland water bodies (Standing water, Runnin
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

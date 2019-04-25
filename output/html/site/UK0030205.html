@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0030205>Migneint-Arenig-Dduallt</a></li>
-    </ul>
-</nav>                
-
-<h2>Migneint-Arenig-Dduallt</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0030205>Migneint-Arenig-Dduallt</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Migneint-Arenig-Dduallt</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>19966.12</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0030205)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0030205_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Migneint-Arenig-Dduallt SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 0.8 <br />Bogs, Marshes, Water fringed vegetation, Fens 51.9 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 16.3 <br />Dry grassland, Steppes 14.8 <br />Humid grassland, Mesophile grassland 12.9 <br />Improved grassland 0.1 <br />Broad-leaved deciduous woodland 0.4 <br />Coniferous woodland 2.2 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 0.4 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 0.2 <br />    </p>
     <p><a href="/n2kforms/UK0030205.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 0.8 <br />Bogs, Marshes, Wat
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -131,7 +141,7 @@ Inland water bodies (Standing water, Running water) 0.8 <br />Bogs, Marshes, Wat
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 <p>Upland <b>European dry heath</b> at Migneint–Arenig–Dduallt is predominantly referable to NVC type H12 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> heath. Locally at higher altitudes this shows the effects of wind-pruning, and is lichen-rich in places. Other forms of heath present include H18 <i>Vaccinium myrtillus</i> – <i>Deschampsia flexuosa</i> heath, H21 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> – <i>Sphagnum capillifolium</i> heath on damp north- to north-east facing cliffs, and H8 <i>Calluna vulgaris</i> – <i>Ulex gallii</i> heath at lower altitudes. The <i>Calluna</i> – <i>Vaccinium</i> – <i>Sphagnum</i> heath supports the Red Data Book liverwort <i>Gymnocolea acutiloba</i>.</p></div>
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Migneint and Dduallt mark the limits of a large upland block located along the eastern fringe of Snowdonia National Park. The site supports the largest area of blanket bog in north Wales after Berwyn and is particularly significant for the extent and quality of comparatively <i>Sphagnum</i>-rich M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire. M18 <i>Erica tetralix</i> – <i>Sphagnum papillosum</i> blanket mire is also widespread, with localised representation of the bog-moss <i>Sphagnum magellanicum</i> and, rarely, <i>S. imbricatum</i> ssp. <i>affine</i>. Other notable species found at the site include lesser twayblade <i>Listera cordata</i>, tall bog-sedge <i>Carex magellanica</i> and few-flowered sedge <i>C. pauciflora</i>, here approaching the southern limit of its British distribution. The significant representation of more degraded vegetation types, including M20 <i>Eriophorum vaginatum</i> blanket mire, attests to a long history of anthropogenic modification including burning, grazing and moor-gripping – significant parts of the site were formerly managed as grouse moor. Large areas of dry and wet heath are also present, while soligenous mire communities feature as widespread and extensive components of the blanket mire.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -165,6 +175,7 @@ Inland water bodies (Standing water, Running water) 0.8 <br />Bogs, Marshes, Wat
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

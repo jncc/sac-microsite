@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012884>Corsydd M&#xF4;n/ Anglesey Fens</a></li>
-    </ul>
-</nav>                
-
-<h2>Corsydd M&#xF4;n/ Anglesey Fens</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012884>Corsydd M&#xF4;n/ Anglesey Fens</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Corsydd M&#xF4;n/ Anglesey Fens</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>465.04</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012884)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012884_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Corsydd M&#xF4;n/ Anglesey Fens SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water fringed vegetation, Fens 85 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 5 <br />Dry grassland, Steppes 1 <br />Humid grassland, Mesophile grassland 5 <br />Mixed woodland 2 <br />    </p>
     <p><a href="/n2kforms/UK0012884.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -131,7 +141,7 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
     <p><b>3140</b> <a href=/habitat/H3140>Calcium-rich nutrient-poor lakes, lochs and pools</a>&nbsp; <b>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</b></p>
 <p>Within Anglesey Fens, Llyn Yr Wyth Eidion is a small active marl-producing lake in north Wales and is an example of a lake on limestone. It is surrounded by the extensive calcareous valley mire of Cors Erddreiniog, which overlies limestone and protects the lake against nutrient enrichment, resulting in water of high quality. Hedgehog stonewort <i>Chara pedunculata</i> and the rare rugged stonewort <i>C. rudis</i> have been recorded at this site.</p></div>
 <div>
-    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>The Anglesey Fens complex supports the second-largest area of <b>calcareous fens</b> in the UK. In some parts the low vigour of <i>Cladium</i> accounts for the species-richness of the vegetation, but elsewhere management prevents the development of monodominant stands, enabling the persistence of communities referable to the <i>Caricion davallianae</i>. The juxtaposition between species-poor stands of <i>Cladium</i> and areas with a more diverse floristic composition and structure is widespread, with characteristically species-rich contact zones between the two. Anthropogenic disturbance is believed to have been instrumental in the develop of various facies of a <i>Cladium</i> – <i>Molinia</i> community, a particular feature of the rich fens of north-west Wales.</p></div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
@@ -159,6 +169,7 @@ Inland water bodies (Standing water, Running water) 2 <br />Bogs, Marshes, Water
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

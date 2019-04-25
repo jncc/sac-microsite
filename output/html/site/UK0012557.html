@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012557>The New Forest</a></li>
-    </ul>
-</nav>                
-
-<h2>The New Forest</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012557>The New Forest</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>The New Forest</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>29213.57</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012557)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012557_thumb.GIF" />
             <figcaption style="font-size: small;">Location of The New Forest SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Bogs, Marshes, Water fringed vegetation, Fens 7 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 34 <br />Dry grassland, Steppes 10 <br />Humid grassland, Mesophile grassland 3 <br />Broad-leaved deciduous woodland 29 <br />Coniferous woodland 17 <br />    </p>
     <p><a href="/n2kforms/UK0012557.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Bogs, Marshes, Water fringed vegetation, Fens 7 <br />Heath, Scrub, Maquis and G
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -155,10 +165,10 @@ Bogs, Marshes, Water fringed vegetation, Fens 7 <br />Heath, Scrub, Maquis and G
     <p><b>9190</b> <a href=/habitat/H9190>Dry oak-dominated woodland</a>&nbsp; <b>Old acidophilous oak woods with Quercus robur on sandy plains</b></p>
 <p>The New Forest is representative of <B>old acidophilous oak woods</B> in the southern part of its UK range. It is the most extensive area of active wood-pasture with old oak <I>Quercus</I> spp. and beech <I>Fagus sylvatica</I> in north-west Europe and has outstanding invertebrate and lichen populations. This site was preferred over other sites that lack a succession of age-classes because, although scattered over a wide area, the oak stands are found within a predominantly semi-natural landscape with a more balanced age-structure of trees. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system. The New Forest has been identified as of potential international importance for its saproxylic invertebrate fauna by the <A href=&quot;http://www.nature.coe.int/english/cadres/acc_en.htm&quot;>Council of Europe</A> (Speight 1989).</p></div>
 <div>
-    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Within the New Forest, in southern England, birch – willow <i>Betula</i> – <i>Salix</i> stands occur over valley bog vegetation, with fringing alder <i>Alnus</i> – <i>Sphagnum</i> stands where there is some water movement. These stands appear to have persisted for long periods in stable association with the underlying <i>Sphagnum</i> bog-moss communities. The rich epiphytic lichen communities and pollen record provide evidence for the persistence of this association. The <b>Bog woodland</b> occurs in association with a range of other habitats for which the site has also been selected.</p></div>
 <div>
-    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>The New Forest contains many streams and some small rivers that are less affected by drainage and canalisation than those in any other comparable area in the lowlands of England. Associated with many of the streams, particularly those with alkaline and neutral groundwater, are strips of alder <i>Alnus glutinosa</i> woodland which, collectively, form an extensive resource with a rich flora. In places there are examples of transitions from open water through reedswamp and fen to alder woodland. The small rivers show natural meanders and debris dams, features that are otherwise rare in the lowlands, with fragmentary ash <i>Fraxinus excelsior</i> stands as well as the alder strips. In other places there are transitions to <b>9190 Old acidophilous oak woods with <i>Quercus robur</i> on sandy plains</b> and <b>9120 Atlantic acidophilous beech forests with <i>Ilex</i> and sometimes also <i>Taxus</i> in the shrublayer</b> (<b><i>Quercion robori-petraeae</i> or <i>Ilici-Fagenion</i></b>), for which this site has also been selected.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -186,6 +196,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 7 <br />Heath, Scrub, Maquis and G
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

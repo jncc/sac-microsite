@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014774>Moor House  - Upper Teesdale</a></li>
-    </ul>
-</nav>                
-
-<h2>Moor House  - Upper Teesdale</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014774>Moor House  - Upper Teesdale</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Moor House  - Upper Teesdale</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>38803.22</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014774)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014774_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Moor House  - Upper Teesdale SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water fringed vegetation, Fens 50 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 5.5 <br />Dry grassland, Steppes 39 <br />Humid grassland, Mesophile grassland 1 <br />Broad-leaved deciduous woodland 0.5 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 2 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 1 <br />    </p>
     <p><a href="/n2kforms/UK0014774.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -155,16 +165,16 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
     <p><b>6520</b> <a href=/habitat/H6520>Mountain hay meadows</a>&nbsp; <b>Mountain hay meadows</b></p>
 <p>Upper Teesdale contains actively-managed <b>Mountain hay meadows</b> at their highest altitude in the UK. Though representing a smaller proportion of the national resource than the North Pennine Dales Meadows, the meadows of this site have been managed at an extremely low level of agricultural intensification and show good conservation of habitat structure and function. There are important populations of an extensive suite of hay meadows species, including several rare species of lady’s-mantle (<i>Alchemilla acutiloba</i>, <i>A. monticola</i> and <i>A. subcrenata</i>) and abundant globeflower <i>Trollius europaeus</i></p></div>
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This site in the northern Pennines represents <b>Blanket bogs</b> in the north of England. The site includes the least damaged and most extensive tracts of typical M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire in England and shows this community type up to its highest altitude in England. This large expanse of peat displays the full range of features typical of the Pennines, with extensive erosion, mainly on higher areas, interspersed with large swathes of bog dominated by heather <i>Calluna vulgaris</i> or cottongrasses <i>Eriophorum</i> spp. A few areas display small-scale surface patterning, with distinct <i>Sphagnum</i> hollows and intervening ridges. Some parts of the site show characteristics of the western-type Scottish <b>Blanket bogs</b>, whereas the lichen-rich areas are a feature of bogs in Fennoscandia.</p></div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This is one of three sites in northern England that have extensive series of <b>petrifying springs with tufa formation</b>. At this site Carboniferous limestones are thinly-bedded amidst shales, sandstones and slates. Tufa springs often occur at the junction between limestone and these other, less permeable, rocks at a range of altitudes. Tufa springs are associated with calcareous glacial drift and can be found in calcareous grasslands, in fen systems of grazed pastures, associated with limestone scar cliffs and screes and amidst acid heathland and grassland. The flora is exceptionally rich and includes rare northern species such as bird’s-eye primrose <i>Primula farinosa</i> and Scottish asphodel <i>Tofieldia pusilla</i>.</p></div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 <p>This is one of two upland sites in northern England selected for <b>Alkaline fens</b>. Spring-fed flush fens of NVC type M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire are widespread on the moors amidst calcareous grassland, limestone scars, heath and bog, in enclosed pastures amidst a range of acid and calcareous grasslands and in meadows, often as part of complex vegetation mosaics. The site has an exceptionally important rare plant flora associated with flush vegetation, including species such as bird’s-eye primrose <i>Primula farinosa</i> and Scottish asphodel <i>Tofieldia pusilla</i>. On the highest and coldest parts of the site fen grades into Annex I type <b>7240 Alpine pioneer formations of the <i>Caricion bicoloris-atrofuscae</i></b>, and intermediate examples occur.</p></div>
 <div>
-    <p><b>7240</b> <a href=/habitat/H7240>High-altitude plant communities associated with areas of water seepage</a>&nbsp; <b>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7240</b> <a href=/habitat/H7240>High-altitude plant communities associated with areas of water seepage</a>&nbsp; <b>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This site in northern England is the largest and most diverse example of <b>Alpine pioneer formations of the <i>Caricion bicoloris-atrofuscae</i></b> south of the Highlands. It is a southern outlier with an extensive area of the habitat type, and is a southern outpost for many of the rarer arctic-alpine plants characteristic of this habitat type, with a unique relict mountain flora. Teesdale sandwort <i>Minuartia stricta</i> is restricted to Upper Teesdale, and other rare species found in this habitat type include false sedge <i>Kobresia simpliciuscula</i>, hair sedge <i>Carex capillaris</i> and Scottish asphodel <i>Tofieldia pusilla</i>. The NVC types represented are M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire and M11 <i>Carex demissa</i> – <i>Saxifraga aizoides</i> mire.</p></div>
 <div>
     <p><b>8110</b> <a href=/habitat/H8110>Acidic scree</a>&nbsp; <b>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</b></p>
@@ -183,7 +193,7 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 </div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 
 <div>
@@ -204,6 +214,7 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

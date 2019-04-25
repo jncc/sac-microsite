@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -51,18 +50,21 @@
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
             <li class=><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
-            <li class=><a href="/habitat">Habitats</a></li>
+            <li class=active><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/habitat>Habitat</a></li>
-            <li><a class="" href=/habitat/S1099>&lt;I&gt;Lampetra fluviatilis&lt;/I&gt;</a></li>
-    </ul>
-</nav>                
+                <div class="container">
+<div class="row">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/habitat>Habitats</a></li>
+                <li><a class="" href=/habitat/S1099>&lt;I&gt;Lampetra fluviatilis&lt;/I&gt;</a></li>
+        </ul>
+    </nav>
+</div>                    
 
 <h2>Habitat account - Vertebrate species: fish</h2>
 <h4>1099 &lt;I&gt;Lampetra fluviatilis&lt;/I&gt;</h4>
@@ -174,6 +176,7 @@
     <div class="small-6"><b>Northumberland and Tyne and Wear</b></div>
 </div>
 <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

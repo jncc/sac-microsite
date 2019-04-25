@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012923>Border Mires, Kielder - Butterburn</a></li>
-    </ul>
-</nav>                
-
-<h2>Border Mires, Kielder - Butterburn</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012923>Border Mires, Kielder - Butterburn</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Border Mires, Kielder - Butterburn</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>11811.42</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012923)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012923_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Border Mires, Kielder - Butterburn SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Bogs, Marshes, Water fringed vegetation, Fens 80 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 18 <br />Coniferous woodland 1 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 1 <br />    </p>
     <p><a href="/n2kforms/UK0012923.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,11 +132,13 @@ Bogs, Marshes, Water fringed vegetation, Fens 80 <br />Heath, Scrub, Maquis and 
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This complex is part of what was once the largest continuous tract of <b>Blanket bogs</b> across northern England and is particularly important for the quality of the transition it represents between blanket bog and raised mire. Although much of the land has been afforested, significant areas of the original bog remain throughout the forested expanse and these have been selected to represent this habitat type in northern England. The climate is wetter here than in some other parts of northern England, and this is reflected in the composition of the vegetation, which is dominated by species of cottongrass <i>Eriophorum</i> and a reduced cover of heather <i>Calluna vulgaris</i>. At Butterburn Flow the wetter climate is also emphasised by quite distinct surface patterning of <i>Sphagnum</i> hollows separated by <i>Sphagnum</i> ridges in the largest of the open areas. It is a very good example of the <i>Sphagnum</i>-rich cross-leaved heath <i>Erica tetralix</i> and <i>Sphagnum papillosum</i> vegetation type.</p></div>
 <div>
     <p><b>7140</b> <a href=/habitat/H7140>Very wet mires often identified by an unstable `quaking` surface</a>&nbsp; <b>Transition mires and quaking bogs</b></p>
@@ -141,7 +151,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 80 <br />Heath, Scrub, Maquis and 
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 </div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 <p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
 
@@ -159,6 +169,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 80 <br />Heath, Scrub, Maquis and 
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

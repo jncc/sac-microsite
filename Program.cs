@@ -75,9 +75,9 @@ namespace JNCC.Microsite.SAC
                 if (String.IsNullOrWhiteSpace(accessDbPath))
                 {
                     Console.Write("-a | --accessdb option must not be blank if running with -u | --update");
-                    
+
                 }
-                else 
+                else
                 {
                     DatabaseExtractor.ExtractData(accessDbPath);
                 }
@@ -88,20 +88,19 @@ namespace JNCC.Microsite.SAC
                 Generator.MakeSite();
             }
 
-            if (view)
-            {
+            // if (view)
+            // {
                 CreateWebHostBuilder(args)
                     .UseStartup<Startup>()
                     .UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "output/html"))
                     .Build()
                     .Run();
-            }
+            // }
         }
 
-        static IWebHostBuilder CreateWebHostBuilder(string[] args) 
+        static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args);
-                     
-        }   
+        }
     }
 }

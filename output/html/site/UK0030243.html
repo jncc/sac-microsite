@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0030243>Rassal</a></li>
-    </ul>
-</nav>                
-
-<h2>Rassal</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0030243>Rassal</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Rassal</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>1018.89</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0030243)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0030243_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Rassal SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Bogs, Marshes, Water fringed vegetation, Fens 5 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 25 <br />Alpine and sub-Alpine grassland 20 <br />Broad-leaved deciduous woodland 5 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 45 <br />    </p>
     <p><a href="/n2kforms/UK0030243.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Bogs, Marshes, Water fringed vegetation, Fens 5 <br />Heath, Scrub, Maquis and G
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -131,10 +141,10 @@ Bogs, Marshes, Water fringed vegetation, Fens 5 <br />Heath, Scrub, Maquis and G
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 <p>Rassal in the north-west Highlands is representative of <b>Alkaline fens</b> developed from flushing through Durness limestone. The main type of fen are the more closed mires rich in Carices and other calcicolous small herbs (M10 <i>Carex dioica</i> – <i>Pinguicula</i> vulgaris mire). Open, stony flushes (M11 <i>Carex demissa</i> – <i>Saxifraga aizoides</i> mire) also occur, and are transitional in flora to <b>7240 Alpine pioneer formations of the <i>Caricion bicoloris-atrofuscae</i></b>. These are spring-fed mires and are numerous across the site. Black bog-rush <i>Schoenus nigricans</i>, broad-leaved cottongrass <i>Eriophorum latifolium</i> and the moss <i>Scorpidium scorpioides</i> are abundant locally in the fens.</p></div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Rassal is one of four sites representing <b>Limestone pavements</b> on Cambro–Ordovician Durness limestone in north-west Scotland. In terms of the extent of the pavements, within Scotland Rassal is second only to Strath. Although the pavements are less well-developed structurally than on Strath, they occur up to a higher altitude (230-380 m) and have a more montane flora, similar to that at Inchnadamph. Notable northern and montane species occurring in the grikes include holly-fern <i>Polystichum lonchitis</i> (especially abundant), whortle-leaved willow <i>Salix myrsinites</i>, stone bramble <i>Rubus saxatilis</i>, green spleenwort <i>Asplenium viride</i>, globe-flower <i>Trollius europaeus</i> and rock sedge <i>Carex rupestris</i>. Stunted trees and shrubs, mostly downy birch <i>Betula pubescens</i>, rowan <i>Sorbus aucuparia</i>, ash <i>Fraxinus excelsior</i> and holly <i>Ilex aquifolium</i> are confined to rock crevices by browsing. Mountain avens <i>Dryas octopetala</i> occurs on thin soil on the clints and grades into <b>6170 Alpine and subalpine calcareous grasslands</b>. Patches of <i>S. myrsinites</i> scrub are referable to <b>4080 Sub-Arctic <i>Salix</i> spp. scrub</b>, while <b>9180 <i>Tilio-Acerion</i> forests of slopes</b>, <b>screes and ravines</b> is also developed on part of the same exposure of limestone pavement. These are all Annex I habitats for which the site is also selected.</p></div>
 <div>
-    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Rassal is unique in Scotland as the only large ash <i>Fraxinus excelsior</i> wood on limestone, and is important in representing <b><i>Tilio-Acerion</i> forest</b> at the extreme north-western limit of its range. The site also encompasses the adjacent Allt Mór Gorge which contains further examples of the habitat. The wood is nationally important, particularly for its lichens, and the ground flora is species-rich with a number of plants of very restricted distribution, such as dark-red helleborine <i>Epipactis atrorubens</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -144,7 +154,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 5 <br />Heath, Scrub, Maquis and G
     <p><b>6170</b> <a href=/habitat/H6170>Alpine and subalpine calcareous grasslands</a>&nbsp; <b>Alpine and subalpine calcareous grasslands</b></p>
 </div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>
 <div>
     <p><b>8210</b> <a href=/habitat/H8210>Plants in crevices in base-rich rocks</a>&nbsp; <b>Calcareous rocky slopes with chasmophytic vegetation</b></p>
@@ -168,6 +178,7 @@ Bogs, Marshes, Water fringed vegetation, Fens 5 <br />Heath, Scrub, Maquis and G
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

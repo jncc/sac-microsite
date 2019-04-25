@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0013577>The Broads</a></li>
-    </ul>
-</nav>                
-
-<h2>The Broads</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0013577>The Broads</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>The Broads</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>5889.43</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0013577)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0013577_thumb.GIF" />
             <figcaption style="font-size: small;">Location of The Broads SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 16 <br />Bogs, Marshes, Water fringed vegetation, Fens 19 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 1 <br />Dry grassland, Steppes 1 <br />Humid grassland, Mesophile grassland 39 <br />Broad-leaved deciduous woodland 24 <br />    </p>
     <p><a href="/n2kforms/UK0013577.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 16 <br />Bogs, Marshes, Wate
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -137,13 +147,13 @@ Inland water bodies (Standing water, Running water) 16 <br />Bogs, Marshes, Wate
     <p><b>7140</b> <a href=/habitat/H7140>Very wet mires often identified by an unstable `quaking` surface</a>&nbsp; <b>Transition mires and quaking bogs</b></p>
 <p>The Broads contain examples of <b>transition mire</b> in a flood plain in the south-eastern part of the UK, where the habitat is rare. The areas of transition mire, mainly of M5 <i>Carex rostrata</i> – <i>Sphagnum squarrosum</i> mire, M9 <i>Carex rostrata</i> – <i>Calliergon cuspidatum</i>/<i>giganteum</i> mire and S27 <i>Carex rostrata</i> – <i>Potentilla palustris</i> tall-herb fen, are relatively small, having developed in re-vegetated peat-cuttings as part of a complex habitat mosaic of fen, carr and open water.</p></div>
 <div>
-    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This flood plain mire site in East Anglia has the largest example of <b>calcareous fens</b> in the UK and possibly the largest occurrence in the EU outside Sweden. The <i>Cladium</i> habitat occurs in a diverse set of conditions that maintain its species-richness, including managed <i>Cladium</i> fen, contacts between <i>Cladium</i> beds and small sedge mires, and situations where <i>Cladium</i> occurs at the limits of its ecological range. The habitat type forms large-scale mosaics with other fen types, open water and woodland, and important associated plant species are the Annex II <b>1903 Fen orchid <i>Liparis loeselii</i></b> (found at Upton Fen), marsh helleborine <i>Epipactis palustris</i>, lesser tussock-sedge <i>Carex diandra</i>, slender sedge <i>C. lasiocarpa</i> and fibrous tussock-sedge <i>C. appropinquata</i>.</p></div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 <p>The Broads is one of two sites selected for <b>Alkaline fens</b> in East Anglia, in eastern England, where a main concentration of lowland fen occurs. There are areas of short sedge fen (both M13 <i>Schoenus nigricans</i> – <i>Juncus subnodulosus</i> mire and M9 <i>Carex rostrata</i> – <i>Calliergon cuspidatum</i>/<i>giganteum</i> mire), which in places form a mosaic with S24 <i>Phragmites australis</i> – <i>Peucedanum palustris</i> fen. There are complex zonations present and many differences exist between the individual fens that comprise the site. The fens are principally of the flood plain mire type. The site contains a range of rare and local plant species, including the Annex II <b>1903 Fen orchid <i>Liparis loeselii</i></b>, lesser tussock-sedge <i>Carex diandra</i> and slender sedge <i>C. lasiocarpa</i>.</p></div>
 <div>
-    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>The complex of sites in the Broads of East Anglia contains the largest blocks of alder <i>Alnus glutinosa</i> wood in England. Within the complex complete successional sequences occur from open water through reedswamp to alder woodland, which has developed on fen peat. There is a correspondingly wide range of flora, including a number of uncommon species such as marsh fern <i>Thelypteris palustris</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -168,6 +178,7 @@ Inland water bodies (Standing water, Running water) 16 <br />Bogs, Marshes, Wate
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

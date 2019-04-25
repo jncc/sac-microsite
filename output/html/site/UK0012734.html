@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012734>Avon Gorge Woodlands</a></li>
-    </ul>
-</nav>                
-
-<h2>Avon Gorge Woodlands</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012734>Avon Gorge Woodlands</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Avon Gorge Woodlands</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>151.07</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012734)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012734_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Avon Gorge Woodlands SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Heath, Scrub, Maquis and Garrigue, Phygrana 4 <br />Dry grassland, Steppes 4 <br />Humid grassland, Mesophile grassland 2 <br />Broad-leaved deciduous woodland 70 <br />Coniferous woodland 5 <br />Mixed woodland 5 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 10 <br />    </p>
     <p><a href="/n2kforms/UK0012734.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,11 +132,13 @@ Heath, Scrub, Maquis and Garrigue, Phygrana 4 <br />Dry grassland, Steppes 4 <br
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
 <div>
-    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>9180</b> <a href=/habitat/H9180>Mixed woodland on base-rich soils associated with rocky slopes</a>&nbsp; <b>Tilio-Acerion forests of slopes, screes and ravines</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Avon Gorge is representative of <b><i>Tilio-Acerion</i> forests</b> in south-west England on the limestone cliffs and screes of a large river gorge. It is important because of the high concentration of small-leaved lime <i>Tilia cordata</i>, compared with other sites in the region, the presence of rare whitebeams <i>Sorbus</i> spp., including two unique to the Avon Gorge (<i>S. bristoliensis</i> and <i>S. wilmottiana</i>), and other uncommon plants, such as green hellebore <i>Helleborus viridis</i>. Other characteristic species include soft shield-fern <i>Polystichum setiferum</i> and hart’s-tongue <i>Phyllitis scolopendrium</i>. Species-rich transitions to scrub and grasslands are associated with the woodland. Small groves of yew <i>Taxus baccata</i> also occur on some of the stonier situations.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -144,6 +154,7 @@ Heath, Scrub, Maquis and Garrigue, Phygrana 4 <br />Dry grassland, Steppes 4 <br
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

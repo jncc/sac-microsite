@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
 namespace JNCC.Microsite.SAC
 {
@@ -31,8 +33,43 @@ namespace JNCC.Microsite.SAC
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseDefaultFiles()
-                .UseStatusCodePagesWithRedirects("/{0}.html")
-                .UseStaticFiles();            
+                .UseStaticFiles()
+                .UseRequestInterceptorMiddleware();
+        }
+    }
+
+    public class RequestInterceptorMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public RequestInterceptorMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task Invoke(HttpContext context)
+        {
+            await _next(context);
+
+            if (context.Response.StatusCode == 404)
+            {
+                if (context.Request.Path.ToString().EndsWith(".html"))
+                {
+                    context.Response.Redirect("/404.html", false);
+                }
+                else
+                {
+                    context.Response.Redirect(context.Request.Path + ".html", false);
+                }
+            }
+        }
+    }
+
+    public static class RequestInterceptorMiddlewareExtensions
+    {
+        public static IApplicationBuilder UseRequestInterceptorMiddleware(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<RequestInterceptorMiddleware>();
         }
     }
 }

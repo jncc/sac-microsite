@@ -1,9 +1,11 @@
 @model List<(string, string, bool)>
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-        @foreach ((string href, string text, bool display) in Model)
-        {
-            <li><a class="@(display ? "" : "show-for-sr")" href=@(href)>@(text)</a></li>
-        }
-    </ul>
-</nav>
+<div class="row">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+            @foreach ((string href, string text, bool display) in Model)
+            {
+                <li><a class="@(display ? "" : "show-for-sr")" href=@(href)>@(text)</a></li>
+            }
+        </ul>
+    </nav>
+</div>

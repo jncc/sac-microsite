@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0012786>Durness</a></li>
-    </ul>
-</nav>                
-
-<h2>Durness</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0012786>Durness</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Durness</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>1213.8</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0012786)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0012786_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Durness SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Coastal sand dunes, Sand beaches, Machair 39 <br />Shingle, Sea cliffs, Islets 8 <br />Inland water bodies (Standing water, Running water) 7 <br />Bogs, Marshes, Water fringed vegetation, Fens 6 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 19 <br />Dry grassland, Steppes 3 <br />Humid grassland, Mesophile grassland 6 <br />Alpine and sub-Alpine grassland 8 <br />Improved grassland 0.5 <br />Coniferous woodland 0.5 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 2.5 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 0.5 <br />    </p>
     <p><a href="/n2kforms/UK0012786.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,11 +132,13 @@ Coastal sand dunes, Sand beaches, Machair 39 <br />Shingle, Sea cliffs, Islets 8
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
 <div>
-    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Durness contains one of the largest sand dune systems in the north of Scotland. It is an example of an extreme northern variant of <b>fixed dunes with herbaceous vegetation</b>. The site is maintained by very active physical and biological processes. Fixed dune vegetation at this site occurs on an extensive and diverse sequence of dunes and on soils covered with blown sand. A rich variety of calcareous dune grassland species grow here in association with arctic-alpine plants such as mountain avens <i>Dryas octopetala</i>. </p></div>
 <div>
     <p><b>3140</b> <a href=/habitat/H3140>Calcium-rich nutrient-poor lakes, lochs and pools</a>&nbsp; <b>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</b></p>
@@ -137,7 +147,7 @@ Coastal sand dunes, Sand beaches, Machair 39 <br />Shingle, Sea cliffs, Islets 8
     <p><b>6170</b> <a href=/habitat/H6170>Alpine and subalpine calcareous grasslands</a>&nbsp; <b>Alpine and subalpine calcareous grasslands</b></p>
 <p>Durness is one of four sites representing the low-altitude <B>Alpine and subalpine calcareous grasslands</B> that are restricted to the north-west mainland of Scotland. Durness contains the largest stands of CG13&nbsp;<I>Dryas octopetala</I> – <I>Carex flacca</I> heath in the UK, developed on dolomitic limestone at 0<FONT size=2>–</FONT>60&nbsp;m. The site has an outstanding representation of characteristic species, including wild thyme <I>Thymus polytrichus</I>, ribwort plantain <I>Plantago lanceolata</I>, sea plantain <I>Plantago maritima</I>, purging flax <I>Linum catharticum</I> and common bird’s-foot-trefoil <I>Lotus corniculatus</I>. The endemic Scottish primrose <I>Primula scotica</I> is present, and other uncommon species include mountain everlasting <I>Antennaria dioica</I>, hair sedge <I>Carex capillaris</I>, lesser meadow-rue <I>Thalictrum minus</I>, frog orchid <I>Coeloglossum viride</I> and hart’s-tongue <I>Phyllitis scolopendrium</I>. Locally, the calcifuge species crowberry <I>Empetrum nigrum</I> occurs, giving rise to an unusual sub-type of <I>Dryas</I> heath. There are transitions to a wide range of other communities, including coastal dunes, other types of base-rich grasslands, and a range of dwarf-shrub heaths.</p></div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This site on Cambro–Ordovician Durness limestone is the most north-westerly occurrence of <b>Limestone pavements</b> in the UK. It is one of five sites representing the northern variant of this habitat type. Because of its location it supports a diverse flora rich in northern and arctic-alpine species. The site supports communities with a maritime element, similar to those on Strath, with burnet rose <i>Rosa pimpinellifolia</i>, stone bramble <i>Rubus saxatilis</i>, mountain avens <i>Dryas octopetala</i>, dark-red helleborine <i>Epipactis atrorubens</i> and black spleenwort <i>Asplenium adiantum-nigrum</i>. Both lesser meadow-rue <i>Thalictrum minus</i> and alpine meadow-rue <i>Thalictrum alpinum</i> occur here. Further inland, brittle bladder-fern <i>Cystopteris fragilis</i> and hard shield-fern <i>Polystichum aculeatum</i> flourish.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -183,6 +193,7 @@ Coastal sand dunes, Sand beaches, Machair 39 <br />Shingle, Sea cliffs, Islets 8
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

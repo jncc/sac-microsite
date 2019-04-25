@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014739>Strathglass Complex</a></li>
-    </ul>
-</nav>                
-
-<h2>Strathglass Complex</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014739>Strathglass Complex</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Strathglass Complex</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>23591.92</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014739)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014739_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Strathglass Complex SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water fringed vegetation, Fens 17 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 15 <br />Dry grassland, Steppes 4 <br />Humid grassland, Mesophile grassland 15 <br />Alpine and sub-Alpine grassland 22 <br />Broad-leaved deciduous woodland 9.5 <br />Coniferous woodland 11 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 5 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 0.5 <br />    </p>
     <p><a href="/n2kforms/UK0014739.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -140,13 +150,13 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
     <p><b>6150</b> <a href=/habitat/H6150>Montane acid grasslands</a>&nbsp; <b>Siliceous alpine and boreal grasslands</b></p>
 <p>The Affric-Cannich Hills within Strathglass Complex have the second-largest extent of <b>Siliceous alpine and boreal grasslands</b> in the UK, and are representative of the habitat type in the north-west Highlands. The rocks are generally acidic, with small areas of moderately base-rich rock. The dominant sub-types present are species-poor U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath and U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath. Small areas of U8 <i>Carex bigelowii</i> – <i>Polytrichum alpinum</i> sedge-heath and U9 <i>Juncus trifidus</i> – <i>Racomitrium lanuginosum</i> rush-heath are also represented. There are extensive areas of the rarer species-rich <i>Carex</i> – <i>Racomitrium</i> moss-heath chiefly associated with the disturbed ground of solifluction terracing. This is enriched with arctic-alpine vascular plants and rare montane calcicole mosses. Associated communities include the most extensive areas of U13 <i>Deschampsia cespitosa</i> – <i>Galium saxatile</i> grassland in Britain.The moss- and dwarf-herb-dominated late-lie snow-beds (U11 <i>Polytrichum sexangulare</i> – <i>Kiaeria starkei</i> snow-bed, U12 <i>Salix herbacea</i> – <i>Racomitrium heterostichum</i> snow-bed and U14 <i>Alchemilla alpina</i> – <i>Sibbaldia procumbens</i> dwarf-herb community) are well-represented.</p></div>
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Strathglass Complex encompasses much of the east–west gradient that occurs in <b>blanket bog</b> north of the Great Glen. Both wet, oceanic M17 <i>Scirpus cespitosus</i> – <i>Eriophorum vaginatum</i> blanket mire and the drier, more upland M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire occur extensively. Bog vegetation is at its most extensive on the lower slopes of these high hills, extending up glacial troughs and in to high corries and on to ridges. The blanket bog grades into a diversity of heathlands and grasslands on the better-drained upper slopes. The wetter M17 blanket mire forms part of typical west Highland complexes of bog, wet heath and dry heath but, unusually, also occurs within <b>91C0 Caledonian forest</b>. At high altitudes <i>Calluna vulgaris</i> in M19 is replaced by other dwarf-shrubs such as crowberry <i>Vaccinium vitis-idaea</i>, cowberry <i>Empetrum nigrum</i> ssp. <i>hermaphroditum</i> and bog bilberry <i>Vaccinium uliginosum</i>. Notably, these include the scarce dwarf birch <i>Betula nana</i> and alpine bearberry <i>Arctostaphylos alpinus</i> at one of their few known locations in blanket bog outside Ben Wyvis.</p></div>
 <div>
     <p><b>8220</b> <a href=/habitat/H8220>Plants in crevices on acid rocks</a>&nbsp; <b>Siliceous rocky slopes with chasmophytic vegetation</b></p>
 <p>Strathglass Complex has some of the most extensive outcrops of siliceous rock in the UK. This is one of eight sites representing this habitat in the western Highlands between Glen Coe in the south and Foinaven in the far north. A characteristic flora occurs up to very high altitude including parsley fern <i>Cryptogramma crispa</i>, three-leaved rush <i>Juncus trifidus</i>, least willow <i>Salix herbacea</i>, starry saxifrage <i>Saxifraga stellaris</i>, beech fern <i>Phegopteris connectilis</i> and the nationally rare Highland cudweed <i>Gnaphalium norvegicum</i>. Crevices in the more shady rocks support a flora of Atlantic mosses and liverworts.</p></div>
 <div>
-    <p><b>91C0</b> <a href=/habitat/H91C0>Caledonian forest</a>&nbsp; <b>Caledonian forest</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91C0</b> <a href=/habitat/H91C0>Caledonian forest</a>&nbsp; <b>Caledonian forest</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>The <b>Caledonian forest</b> areas in Strathglass Complex are representative of the North Central biochemical region and are intermediate in type between the western and eastern geographic variants. The individual woodlands within the complex are some of the largest remaining intact stands of native pinewood in Scotland. Glens Strathfarrar and Affric are the most important pinewoods in the UK for the epiphytic lichen communities they support. A number of nationally rare lichen species occur in the woods, including <i>Bryoria furcellata</i> and <i>Pannaria ignobilis</i>. Birds typical of Caledonian forest, including capercaillie <i>Tetrao urogallus</i> and Scottish crossbill <i>Loxia scotica</i>, are represented. Interspersed amongst the forest habitat, areas of wetter peatland with scattered pine <b>91D0 Bog woodland</b> are found. </p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -165,7 +175,7 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
     <p><b>8210</b> <a href=/habitat/H8210>Plants in crevices in base-rich rocks</a>&nbsp; <b>Calcareous rocky slopes with chasmophytic vegetation</b></p>
 </div>
 <div>
-    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 <p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
 
@@ -192,6 +202,7 @@ Inland water bodies (Standing water, Running water) 1 <br />Bogs, Marshes, Water
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

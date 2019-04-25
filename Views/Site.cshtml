@@ -9,11 +9,14 @@
     var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, true);
     var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, false);
 }
-
-<h2>@(Model.Site.Name)</h2>
-<h4>Site Details</h4>
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <h2>@(Model.Site.Name)</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -49,20 +52,23 @@
                     <td>@(Model.Site.Area)</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/@(Model.Site.EUCode))thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/@(Model.Site.EUCode)_thumb.GIF" />
             <figcaption style="font-size: small;">Location of @(Model.Site.Name) @(Model.Site.StatusShort)</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
         @foreach (SiteCharacter item in Model.Site.Character) 
         {
@@ -74,6 +80,8 @@
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
         @{

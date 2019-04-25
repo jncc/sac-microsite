@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0014778>Asby Complex</a></li>
-    </ul>
-</nav>                
-
-<h2>Asby Complex</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0014778>Asby Complex</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Asby Complex</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>3134.01</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0014778)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0014778_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Asby Complex SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 0.3 <br />Bogs, Marshes, Water fringed vegetation, Fens 3 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 42.5 <br />Dry grassland, Steppes 41 <br />Humid grassland, Mesophile grassland 0.5 <br />Broad-leaved deciduous woodland 1 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 11 <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) 0.7 <br />    </p>
     <p><a href="/n2kforms/UK0014778.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 0.3 <br />Bogs, Marshes, Wat
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -134,13 +144,13 @@ Inland water bodies (Standing water, Running water) 0.3 <br />Bogs, Marshes, Wat
     <p><b>6410</b> <a href=/habitat/H6410>Purple moor-grass meadows</a>&nbsp; <b>Molinia meadows on calcareous, peaty or clayey-silt-laden soils (Molinion caeruleae)</b></p>
 <p>Asby is one of three sites in northern England selected for <b><i>Molinia</i> meadows</b>, and contains examples of M26 <i>Molinia caerulea</i> – <i>Crepis paludosa</i> mire. The community occurs in extensive pastures in association with <b>7230 alkaline fen</b> and <b>6210 semi-natural dry grassland</b> communities, as well as locally in hydroseral transitions on lake margins.</p></div>
 <div>
-    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7220</b> <a href=/habitat/H7220>Hard-water springs depositing lime</a>&nbsp; <b>Petrifying springs with tufa formation (Cratoneurion)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Asby is one of three sites selected on Carboniferous limestone in northern England. Sunbiggin Tarn and Moors is considered to be the most important site in Britain for <b>petrifying springs with tufa formation</b>, owing to the extent of the habitat type and the degree of conservation of spring-head structures. Nearby, Crosby Gill has areas of tufa with transitions to <b>7230 Alkaline fens</b> and holds good populations of alpine bartsia <i>Bartsia alpina</i>. Large tufa mounds formed around spring-heads are frequent. There are transitions to a range of <b>7230 Alkaline fens</b>, calcareous grasslands and acid heath.</p></div>
 <div>
     <p><b>7230</b> <a href=/habitat/H7230>Calcium-rich springwater-fed fens</a>&nbsp; <b>Alkaline fens</b></p>
 <p>Asby is one of two upland sites in northern England where there are extensive flushes of M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire amidst moorland and grassland. An important example in the fen SAC series of hydroseral fen community occurs on the lake margins in the vicinity of Sunbiggin Tarn. There are also lake-side transitions to reedswamp vegetation. Away from the lake the site has an exceptionally rich flora and contains a number of rare and local northern plant species, such as bird’s-eye primrose <i>Primula farinosa</i>.</p></div>
 <div>
-    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>8240</b> <a href=/habitat/H8240>Limestone pavements</a>&nbsp; <b>Limestone pavements</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Asby is one of four sites representing <b>Limestone pavements</b> in the north of England. It has been selected because of its size and its well-developed flora of species typical of more montane pavements and sheep-grazed pastures. Most of the pavements contain dog’s mercury <i>Mercurialis perennis</i> and wall lettuce <i>Mycelis muralis</i>, but in the main the herb flora is restricted, perhaps reflecting exposure to grazing sheep over many decades. The grikes provide a niche for a varied assemblage of ferns. Green spleenwort <i>Asplenium viride</i>, wall-rue <i>Asplenium ruta-muraria</i>, maidenhair spleenwort <i>Asplenium trichomanes</i>, brittle bladder-fern <i>Cystopteris fragilis</i>, male-fern <i>Dryopteris filix-mas</i>, hard shield-fern <i>Polystichum aculeatum</i> and hart’s-tongue <i>Phyllitis scolopendrium</i> occur in most pavements, with limestone fern <i>Gymnocarpium robertianum</i> and rigid buckler-fern <i>Dryopteris submontana</i> in some pavements. Where grazing is less intensive, the flora is more diverse and trees and shrubs grow beyond the confines of the grikes.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -150,7 +160,7 @@ Inland water bodies (Standing water, Running water) 0.3 <br />Bogs, Marshes, Wat
     <p><b>4030</b> <a href=/habitat/H4030>Dry heaths</a>&nbsp; <b>European dry heaths</b></p>
 </div>
 <div>
-    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7210</b> <a href=/habitat/H7210>Calcium-rich fen dominated by great fen sedge (saw sedge)</a>&nbsp; <b>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 
 <div>
@@ -174,6 +184,7 @@ Inland water bodies (Standing water, Running water) 0.3 <br />Bogs, Marshes, Wat
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

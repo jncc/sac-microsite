@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0013597>Loch Maree Complex</a></li>
-    </ul>
-</nav>                
-
-<h2>Loch Maree Complex</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0013597>Loch Maree Complex</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Loch Maree Complex</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>15753.97</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0013597)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0013597_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Loch Maree Complex SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Water fringed vegetation, Fens 15 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 47 <br />Alpine and sub-Alpine grassland 10 <br />Broad-leaved deciduous woodland 2 <br />Coniferous woodland 2.5 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 6 <br />    </p>
     <p><a href="/n2kforms/UK0013597.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,6 +132,8 @@ Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Wa
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
@@ -149,7 +159,7 @@ Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Wa
     <p><b>91A0</b> <a href=/habitat/H91A0>Western acidic oak woodland</a>&nbsp; <b>Old sessile oak woods with Ilex and Blechnum in the British Isles</b></p>
 <p>The Loch Maree area in north-west Scotland is representative of <b>old sessile oak woods</b> of the north-west Highlands bryophyte zone. The ground flora communities range from those favouring base-rich areas through to those dominated by dwarf shrubs in more acidic areas. A distinct feature of parts of this site is the juxtaposition of oakwood and the Annex I type <b>91C0 Caledonian forest</b>, for which this site is also selected. Oak-dominated woodland on the lower slopes grades through a series of transition communities to Scots pine <i>Pinus sylvestris</i> and birch <i>Betula</i> spp. communities at higher altitudes.</p></div>
 <div>
-    <p><b>91C0</b> <a href=/habitat/H91C0>Caledonian forest</a>&nbsp; <b>Caledonian forest</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91C0</b> <a href=/habitat/H91C0>Caledonian forest</a>&nbsp; <b>Caledonian forest</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Loch Maree Complex comprises four <b>Caledonian forest</b> areas, and is representative of the North West Zone. The pinewoods in this region are considered to be genetically distinct from those elsewhere in Scotland, though their origins are believed to be similar to those of the South West Zone. Genetic variation is high and the woods have affinities with the pinewoods of Spain and southern France. Pollen records from peat bogs in the area suggest that these pines may be the descendants of trees which survived the last Ice Age somewhere off the present west coast of Scotland when sea level was much lower. Together, these woods show a strong oceanic influence and mostly fall within NVC type W18 <i>Pinus sylvestris</i> – <i>Hylocomium splendens</i> woodland, sub-types W18d <i>Sphagnum capillifolium</i>/<i>quinquefarium</i> and W18e <i>Scapania gracilis</i>. The woodland at Beinn Eighe is scattered and of variable canopy structure and shows a mixed range of age groups. The diversity of Atlantic bryophytes is a major feature of the site, and several national rarities are present, including <i>Daltonia splachnoides</i>. The Loch Maree islands support one of the least-disturbed remnants of native pinewood in Scotland. In the wettest areas within the woodland there are small-scale examples of <b>91D0 Bog woodland</b>. At Shieldaig there is the most westerly pinewood remnant in the UK and one of the most extensive blocks of woodland in this biochemical region.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
 
 <div>
@@ -159,7 +169,7 @@ Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Wa
     <p><b>6430</b> <a href=/habitat/H6430>Tall herb communities</a>&nbsp; <b>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b></p>
 </div>
 <div>
-    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>7130</b> <a href=/habitat/H7130>Blanket bog</a>&nbsp; <b>Blanket bogs (* if active bog)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>
 <div>
     <p><b>7150</b> <a href=/habitat/H7150>Depressions on peat substrates</a>&nbsp; <b>Depressions on peat substrates of the Rhynchosporion</b></p>
@@ -168,10 +178,10 @@ Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Wa
     <p><b>8210</b> <a href=/habitat/H8210>Plants in crevices in base-rich rocks</a>&nbsp; <b>Calcareous rocky slopes with chasmophytic vegetation</b></p>
 </div>
 <div>
-    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91D0</b> <a href=/habitat/H91D0>Bog woodland</a>&nbsp; <b>Bog woodland</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>
 <div>
-    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>91E0</b> <a href=/habitat/H91E0>Alder woodland on floodplains</a>&nbsp; <b>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 </div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
 
 <div>
@@ -204,6 +214,7 @@ Inland water bodies (Standing water, Running water) 17.5 <br />Bogs, Marshes, Wa
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">

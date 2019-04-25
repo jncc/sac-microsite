@@ -37,7 +37,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new SitePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Site", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
                     CurrentSection = "Site",
                     Site = site
                 };
@@ -54,7 +54,7 @@ namespace JNCC.Microsite.SAC.Website
 
                 var model = new InterestFeaturePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitat", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitats", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Habitat",
                     InterestFeature = feature
                 };

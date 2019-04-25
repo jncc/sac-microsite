@@ -6,10 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Example JNCC microsite</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-        <script>window.jQuery || document.write('<script src="/frontend/js/jquery-3.3.1.min.js" defer><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js" defer></script>
         <script src="/frontend/js/app.js" defer></script>
     </head>
@@ -49,25 +48,31 @@
         <ul class="vertical medium-horizontal menu dropdown">
             <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
             <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
-            <li class=><a href="/site">Sites</a></li>
+            <li class=active><a href="/site">Sites</a></li>
             <li class=><a href="/species">Species</a></li>
             <li class=><a href="/habitat">Habitats</a></li>
         </ul>
     </div>
 </nav>            </header>
             <main id="main">
-<nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
-    <ul class="breadcrumbs">
-            <li><a class="" href=/>Home</a></li>
-            <li><a class="" href=/site>Site</a></li>
-            <li><a class="" href=/site/UK0013041>Invernaver</a></li>
-    </ul>
-</nav>                
-
-<h2>Invernaver</h2>
-<h4>Site Details</h4>
+                <div class="container">
 <div class="row">
-    <div class="columns small-8" style="padding-left: 0; padding-right: 0;">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href=/>Home</a></li>
+                <li><a class="" href=/site>Sites</a></li>
+                <li><a class="" href=/site/UK0013041>Invernaver</a></li>
+        </ul>
+    </nav>
+</div>                    
+<div class="row">
+    <h2>Invernaver</h2>
+</div>
+<div class="row">
+    <h4>Site Details</h4>
+</div>
+<div class="row">
+    <div class="columns small-12 large-8" style="padding-left: 0; padding-right: 0;">
         <table>
             <tbody>
                 <tr>
@@ -103,20 +108,23 @@
                     <td>287.67</td>
                 </tr>
                 <tr>
-                    <td cospan="2" style="font-size:small;">
+                    <td colspan="2" style="font-size:small;">
                         <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="columns small-4" style="padding-left: 0; padding-right: 0; text-align: center;">
+    <div class="columns small-12 large-4"  style="padding-left: 0; padding-right: 0; text-align: center;">
         <figure>
-            <img src="/images/sites/UK0013041)thumb.GIF" />
+            <img src="/images/maps/sites/thumbnails/UK0013041_thumb.GIF" />
             <figcaption style="font-size: small;">Location of Invernaver SAC</figcaption>
         </figure>
-    </div>
+</div>
+<div class="row">
     <h4>General Site Character</h4>
+</div>
+<div class="row">
     <p>
 Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) 37.2 <br />Coastal sand dunes, Sand beaches, Machair 20.2 <br />Inland water bodies (Standing water, Running water) 0.5 <br />Bogs, Marshes, Water fringed vegetation, Fens 2 <br />Heath, Scrub, Maquis and Garrigue, Phygrana 17.9 <br />Dry grassland, Steppes 3.2 <br />Alpine and sub-Alpine grassland 9.8 <br />Broad-leaved deciduous woodland 0.3 <br />Inland rocks, Screes, Sands, Permanent Snow and ice 8.9 <br />    </p>
     <p><a href="/n2kforms/UK0013041.pdf" target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
@@ -124,20 +132,22 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
     </div>
+</div>   
+<div class="row"> 
     <div>
         <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
 <div>
-    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2130</b> <a href=/habitat/H2130>Dune grassland</a>&nbsp; <b>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Invernaver is one of the two largest dune sites in north Scotland, and it is actively accreting owing to its exposed location. Dunes merge into areas of sand that have been blown up and over the cliffs by strong winds as so-called ‘climbing dunes’, giving mosaics of fixed dune with grassland or heathland communities. Transitions from calcareous grassland to heath are well-developed. The presence of a number of arctic-alpine species such as mountain avens <i>Dryas octopetala</i> and purple oxytropis <i>Oxytropis halleri</i>, as part of the fixed dune vegetation, is particularly important. The nationally scarce endemic Scottish primrose <i>Primula scotica</i> is also present.</p></div>
 <div>
-    <p><b>2150</b> <a href=/habitat/H2150>Coastal dune heathland</a>&nbsp; <b>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2150</b> <a href=/habitat/H2150>Coastal dune heathland</a>&nbsp; <b>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>This very exposed and active dune system is an extensive representative of <b>Atlantic decalcified fixed dunes</b> (<b><i>Calluno-Ulicetea</i></b>) on the north coast of Scotland and is an extreme northern variant of the habitat type. Areas of sand have been blown up and over cliffs by strong winds to form ‘climbing dunes’. This situation is functionally similar to the blown sand of Penhale Dunes, although the communities present are very different because of climate and location. These dunes support a highly complex mosaic of fixed dune grassland and heathland communities. <b>Atlantic decalcified fixed dunes</b> exist in a matrix of other dune heath communities that include a number of arctic-alpine species. This is the largest example of an extreme northern variant of this vegetation type and is of interest because it forms a transition between the typical northern acidic dune heath vegetation and the arctic vegetation that is widespread further north. It is therefore considered to be particularly important in the European range of ecological variation of dune vegetation.</p></div>
 <div>
     <p><b>2170</b> <a href=/habitat/H2170>Dunes with creeping willow</a>&nbsp; <b>Dunes with Salix repens ssp. argentea (Salicion arenariae)</b></p>
 <p>Invernaver is the only Scottish site that can be confidently allocated to <b>dunes with <i>Salix repens</i> ssp. <i>argentea</i></b>, because of the relative density of creeping willow. The site is an extreme northern variant of the habitat type and contains a wide range of sand dune habitats. <b>Dunes with <i>Salix repens</i> ssp. <i>argentea</i></b> occurs in hollows among hummocky dunes and within narrow blow outs in two main areas and extends into areas of ‘climbing dunes’ where sand has been blown up onto cliffs.</p></div>
 <div>
-    <p><b>2250</b> <a href=/habitat/H2250>Dunes with juniper thickets</a>&nbsp; <b>Coastal dunes with Juniperus spp.</b>&amp;nbsp;&lt;span style=&quot;font-size:small;&quot;&gt; * Priority feature&lt;/span&gt;</p>
+    <p><b>2250</b> <a href=/habitat/H2250>Dunes with juniper thickets</a>&nbsp; <b>Coastal dunes with Juniperus spp.</b>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
 <p>Invernaver contains a high density of dune habitats in a relatively small area, with an extensive transition zone to non-dune conditions. Dune juniper thickets occur in their more dispersed form, with scattered individuals occurring relatively widely. Of particular interest is the occurrence of the scattered form of <b>Coastal dunes with <i>Juniperus</i> spp</b>. on ‘climbing dunes’ found where sand has been blown onto cliff slopes, giving complex transitions from dune to cliff habitats and mountain avens <i>Dryas octopetala</i> heath. Juniper is also found as more discrete areas of low scrub in the dunes, extending as more scattered individuals into the non-dune habitats of this site. </p></div>
 <div>
     <p><b>4060</b> <a href=/habitat/H4060>Alpine and subalpine heaths</a>&nbsp; <b>Alpine and Boreal heaths</b></p>
@@ -165,6 +175,7 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
 </div>
 
 
+                </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
     <div class="container">
