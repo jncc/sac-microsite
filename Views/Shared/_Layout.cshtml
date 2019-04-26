@@ -41,13 +41,15 @@
                     </div>
                 </div>
                 @{
-                    await Html.RenderPartialAsync("Shared/_Navbar", Model.CurrentSection);
+                    await Html.RenderPartialAsync("Shared/_Navbar", Model);
                 }
             </header>
             <main id="main">
                 <div class="container">
                     @{
-                        await Html.RenderPartialAsync("Shared/_Breadcrumb", Model.Breadcrumbs);
+                        if (Model.DisplayBreadcrumb) {
+                            await Html.RenderPartialAsync("Shared/_Breadcrumb", Model.Breadcrumbs);
+                        }
                     }
                     @RenderBody()
                 </div>

@@ -19,7 +19,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 return helper.RenderViewToStringAsync("Views/Error/404.cshtml", new Page
                 {
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/404.html", "Page Not Found", true) },
-                    CurrentSection = null
+                    CurrentSection = null,
+                    DisplayBreadcrumb = false
                 });
             }
         }
