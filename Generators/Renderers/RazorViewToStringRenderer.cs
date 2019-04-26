@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
 
-namespace JNCC.Microsite.SAC.Renderers
+namespace JNCC.Microsite.SAC.Generators.Renderers
 {
     /// Original code from https://github.com/aspnet/Entropy/tree/master/samples/Mvc.RenderViewToString
     public class RazorViewToStringRenderer
