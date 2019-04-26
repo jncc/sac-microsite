@@ -16,6 +16,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Generators.Helpers;
 
 namespace JNCC.Microsite.SAC.Generators
 {
@@ -23,12 +24,8 @@ namespace JNCC.Microsite.SAC.Generators
     {
         public static void Generate(IServiceScopeFactory serviceScopeFactory)
         {
-            using (StreamWriter writer = new StreamWriter(String.Format("output/html/404.html")))
-            {
-                var notFoundContent = ErrorPageBuilder.RenderPage(serviceScopeFactory, 404).Result;
-                writer.Write(notFoundContent);
-            }
-        
+            var notFoundContent = ErrorPageBuilder.RenderPage(serviceScopeFactory, 404).Result;
+            RenderHelper.WriteToFile("output/html/404.html", notFoundContent);
         }
     }
 }
