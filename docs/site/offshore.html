@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example JNCC microsite</title>
+        <link rel="stylesheet" href="/frontend/css/app.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
+        <script src="/frontend/js/app.js"></script>
+    </head>
+    <body>
+        <noscript>
+            <div>Javascript must be enabled for the correct page display</div>
+        </noscript>
+        <div id="wrapper">
+            <a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
+            <header id="header">
+                <div class="container">
+                    <strong class="logo">
+                        <a href="#" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
+                    </strong>
+                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
+                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
+                    <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
+                        <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
+                        <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
+                        <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
+                    </form>
+                    <div class="show-for-small-only">
+                        <div class="title-bar" data-responsive-toggle="search-form" data-hide-for="medium">
+                            <button type="button" class="search-opener" data-toggle="search-form" aria-label="search-opener"><i class="icon-search"></i></button>
+                        </div>
+                        <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+                            <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu" aria-label="navigation-opener"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+<nav class="top-bar nav" id="menu" data-animate="hinge-in-from-top spin-out" aria-label="main-navigation">
+    <div class="container">
+        <ul class="vertical medium-horizontal menu dropdown">
+            <li><a href="http://jncc.gov.uk"><i class="fas fa-chevron-left fa-fw"></i> Main site</a></li>
+            <li class=><a href="/"><i class="fas fa-database fa-fw"></i> Special Areas of Conservation</a></li>
+            <li class=active><a href="/site">Sites</a></li>
+            <li class=><a href="/species">Species</a></li>
+            <li class=><a href="/habitat">Habitats</a></li>
+        </ul>
+    </div>
+</nav>            </header>
+            <main id="main">
+                <div class="container">
+<div class="row">
+    <nav aria-label="breadcrumbs" style="padding-top:2.5rem;">
+        <ul class="breadcrumbs">
+                <li><a class="" href="/">Home</a></li>
+                <li><a class="" href="/site">Sites</a></li>
+                <li><a class="" href="/offshore">Offshore</a></li>
+        </ul>
+    </nav>
+</div>                    
+<h1>SACs in UK offshore waters</h1>
+
+<div class="row callout secondary">
+    <p><b>List all SACs:</b> <a href="/site/england">England</a> | <a href="/site/northern-ireland">Northern Ireland</a> | <a href="/site/scotland">Scotland</a> | <a href="/site/wales">Wales</a> | <a href="/site/offshore">Offshore</a> | <a href="/site">Full UK List</a></p>
+</div>
+<p>There are 25 SACs, SCIs or cSACs in <b>UK offshore waters including those that cross the 12 mile limit</b>. Sites are sorted alphabetically.</p>
+
+<table><tr><th width="8">EU Code</th><th width="30">Name</th><th width="8">Country</th><th width="30">Local Authority</th><th width="8">Area (ha)</th><th width="8">Status</th></tr><tr><td><a href="/site/UK0030387">UK0030387</a></td><td>Anton Dohrn Seamount</td><td>OF</td><td>Extra-Regio</td><td>142861</td><td>SAC</td></tr><tr><td><a href="/site/UK0030368">UK0030368</a></td><td>Bassurelle Sandbank</td><td>OF</td><td>Extra-Regio</td><td>6709</td><td>SAC</td></tr><tr><td><a href="/site/UK0030357">UK0030357</a></td><td>Braemar Pockmarks</td><td>OF</td><td>Extra-Regio</td><td>1143</td><td>SAC</td></tr><tr><td><a href="/site/UK0030396">UK0030396</a></td><td>Bristol Channel Approaches / Dynesfeydd Môr Hafren</td><td>EWO</td><td>Extra-Regio</td><td>584994</td><td>SAC</td></tr><tr><td><a href="/site/UK0030381">UK0030381</a></td><td>Croker Carbonate Slabs</td><td>OF</td><td>Extra-Regio</td><td>11599</td><td>SCI</td></tr><tr><td><a href="/site/UK0030317">UK0030317</a></td><td>Darwin Mounds</td><td>OF</td><td>Extra-Regio</td><td>137726</td><td>SAC</td></tr><tr><td><a href="/site/UK0030352">UK0030352</a></td><td>Dogger Bank</td><td>OF</td><td>Extra-Regio</td><td>1233115</td><td>SAC</td></tr><tr><td><a href="/site/UK0030389">UK0030389</a></td><td>East Rockall Bank</td><td>OF</td><td>Extra-Regio</td><td>369489</td><td>SAC</td></tr><tr><td><a href="/site/UK0030353">UK0030353</a></td><td>Haig Fras</td><td>OF</td><td>Extra-Regio</td><td>47569.38</td><td>SAC</td></tr><tr><td><a href="/site/UK0030369">UK0030369</a></td><td>Haisborough, Hammond and Winterton</td><td>EO</td><td>Extra-Regio</td><td>146759</td><td>SAC</td></tr><tr><td><a href="/site/UK0030388">UK0030388</a></td><td>Hatton Bank</td><td>OF</td><td>Extra-Regio</td><td>1569433</td><td>Candidate</td></tr><tr><td><a href="/site/UK0030370">UK0030370</a></td><td>Inner Dowsing, Race Bank and North Ridge</td><td>EO</td><td>Extra-Regio</td><td>84514</td><td>SAC</td></tr><tr><td><a href="/site/UK0030398">UK0030398</a></td><td>North Anglesey Marine / Gogledd Môn Forol</td><td>WO</td><td>Extra-Regio</td><td>324949</td><td>SAC</td></tr><tr><td><a href="/site/UK0030399">UK0030399</a></td><td>North Channel</td><td>NIO</td><td>Extra-Regio</td><td>160367</td><td>SAC</td></tr><tr><td><a href="/site/UK0030358">UK0030358</a></td><td>North Norfolk Sandbanks and Saturn Reef</td><td>OF</td><td>Extra-Regio</td><td>360341</td><td>SAC</td></tr><tr><td><a href="/site/UK0030363">UK0030363</a></td><td>North West Rockall Bank</td><td>OF</td><td>Extra-Regio</td><td>436526</td><td>SAC</td></tr><tr><td><a href="/site/UK0030379">UK0030379</a></td><td>Pisces Reef Complex</td><td>OF</td><td>Extra-Regio</td><td>873</td><td>SAC</td></tr><tr><td><a href="/site/UK0030385">UK0030385</a></td><td>Pobie Bank Reef</td><td>SO</td><td>Extra-Regio</td><td>96575</td><td>SAC</td></tr><tr><td><a href="/site/UK0030354">UK0030354</a></td><td>Scanner Pockmark</td><td>OF</td><td>Extra-Regio</td><td>674</td><td>SAC</td></tr><tr><td><a href="/site/UK0030386">UK0030386</a></td><td>Solan Bank Reef</td><td>SO</td><td>Extra-Regio</td><td>85593</td><td>SAC</td></tr><tr><td><a href="/site/UK0030395">UK0030395</a></td><td>Southern North Sea</td><td>EO</td><td>Extra-Regio</td><td>3695054</td><td>SAC</td></tr><tr><td><a href="/site/UK0030359">UK0030359</a></td><td>Stanton Banks</td><td>OF</td><td>Extra-Regio</td><td>81727</td><td>SAC</td></tr><tr><td><a href="/site/UK0030397">UK0030397</a></td><td>West Wales Marine / Gorllewin Cymru Forol</td><td>WO</td><td>Extra-Regio</td><td>737614</td><td>SAC</td></tr><tr><td><a href="/site/UK0030380">UK0030380</a></td><td>Wight-Barfleur Reef</td><td>OF</td><td>Extra-Regio</td><td>137344</td><td>SAC</td></tr><tr><td><a href="/site/UK0030355">UK0030355</a></td><td>Wyville Thomson Ridge</td><td>OF</td><td>Extra-Regio</td><td>173995</td><td>SAC</td></tr></table>
+                </div>
+            </main>
+<footer id="footer" class="text-center medium-text-left">
+    <div class="container">
+        <div class="row">
+            <div class="columns small-12 medium-4">
+                <nav class="holder" id="footer-nav" aria-label="footer-navigation">
+                    <h3>About Us</h3>
+                    <ul class="footer-nav no-bullet">
+                        <li><a href="#" accesskey="2">News</a></li>
+                        <li><a href="#">Procurement</a></li>
+                        <li><a href="#">Consultations</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#" accesskey="9">Contact Us</a></li>
+                        <li><a href="#">More About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="columns small-12 medium-4">
+                <nav class="holder" aria-label="footer-navigation">
+                    <h3>OUR Science</h3>
+                    <ul class="footer-nav no-bullet">
+                        <li><a href="https://hub.jncc.gov.uk">Resource Hub</a></li>
+                        <li><a href="https://mhc.jncc.gov.uk">MHC</a></li>
+                        <li><a href="https://sac.jncc.gov.uk">SAC</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="columns small-12 medium-4">
+                <nav class="holder" aria-label="footer-navigation">
+                    <h3>Our Services</h3>
+                    <ul class="footer-nav no-bullet">
+                        <li><a href="#">Valuing the Environment</a></li>
+                        <li><a href="#">Advice</a></li>
+                        <li><a href="#">Monitoring</a></li>
+                        <li><a href="#">Pressures</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <ul class="social-media no-bullet">
+            <li><a href="#"><span class="show-for-sr">Facebook</span><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><span class="show-for-sr">Twitter</span><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><span class="show-for-sr">Youtube</span><i class="icon-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <ul class="footer-bottom-list no-bullet">
+                <li><a href="#">Join Nature Conservation Commitee</a></li>
+                <li>Press Office<a href="tel:01733868888"> 01733 868888</a></li>
+            </ul>
+            <ul class="footer-bottom-list no-bullet info">
+                <li><a href="#" accesskey="8">Terms of use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookie policy</a></li>
+                <li><a href="#">Accessability</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>        </div>
+    </body>
+</html>
