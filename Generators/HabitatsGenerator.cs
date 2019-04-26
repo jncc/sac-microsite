@@ -16,6 +16,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Generators.Helpers;
 
 namespace JNCC.Microsite.SAC.Generators
 {
@@ -31,19 +32,19 @@ namespace JNCC.Microsite.SAC.Generators
                 {
                     habitat.FeatureDescription = Regex.Replace(habitat.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
                     habitat.EUStatus = Regex.Replace(habitat.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);                    
+                    
                     var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/index.html", habitat.Code), habitatPageContent);
 
-                    using (StreamWriter writer = new StreamWriter(String.Format("output/html/habitat/{0}.html", habitat.Code)))
-                    {
-                        writer.Write(habitatPageContent);
-                    }
+                    var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/comparison.html", habitat.Code), habitatMapCompareContent);
+
+                    var habitatMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/map.html", habitat.Code), habitatMapContent);
                 }
 
-                using (StreamWriter writer = new StreamWriter("output/html/habitat/index.html"))
-                {
-                    var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, true, habitats).Result;
-                    writer.Write(habitatListContent);
-                }
+                var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, true, habitats).Result;
+                RenderHelper.WriteToFile("output/html/habitat/index.html", habitatListContent);
             }
 
         }

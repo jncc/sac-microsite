@@ -16,8 +16,8 @@
     </figure>
 </div>
 <h4>Background Selection</h4>
-<a href="/species/@(Model.InterestFeature.Code)/distribution/uk">UK resource for this species</a>
-<a href="/species/@(Model.InterestFeature.Code)/distribution/compare">Compare with UK distribution</a>
+<a href="@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code))">UK resource for this species</a>
+<a href="@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.InterestFeature.Code))">Compare with UK distribution</a>
 
 <h4>Description and ecological characteristics</h4>
 <p>@Html.Raw(Model.InterestFeature.FeatureDescription)</p>

@@ -11,33 +11,93 @@ namespace JNCC.Microsite.SAC.Website.Helpers
             return code.Substring(1);
         }
 
-        public static string GetFeatureUrl(string code)
+        public static bool IsHabitatCode(string code)
         {
             if (code.StartsWith("H"))
             {
-                return String.Format("/habitat/{0}", code);
-            } else if (code.StartsWith("S")) {
-                return String.Format("/species/{0}", code);
+                return true;
+            }
+
+            if (code.StartsWith("S"))
+            {
+                return false;
             }
 
             throw new ArgumentException(String.Format("{0} is not a valid code, expected habitat (Hxxxx) | species (Sxxxx)"));
         }
 
-        public static string GetUkResourceURL(string code, bool habitat) {
-            return String.Format("/{0}/{1}/distribution/uk", habitat ? "habitat": "species", code);
+        public static string GetFeatureUrl(string code)
+        {
+            if (IsHabitatCode(code))
+            {
+                return String.Format("/habitat/{0}", code);
+            }
+            else
+            {
+                return String.Format("/species/{0}", code);
+            }
         }
 
-        public static string GetCompareUKDistributionURL(string code, bool habitat) {
-            return String.Format("/{0}/{1}/distribution/compare", habitat ? "habitat" : "species", code);
+        public static string GetAnnexString(string code)
+        {
+            if (IsHabitatCode(code))
+            {
+                return "Annex I habitat";
+            }
+            return "Annex II species";
         }
-        
+
+        public static string GetUKDistributionAltImageText(string code, string layTitle, string Name) {
+            string template = "UK Distribution of {0} {1} {2} {3}. Click image to view detailed UK distribution and {4}.";
+
+            if (IsHabitatCode(code)) {
+                return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "extent information for this habitat");
+            }
+
+            return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "population size information for this species");
+        }
+
+        public static string GetSACDistributionAltImageText(string code, string layTitle, string Name) {
+            string template = "Distribution of SACs with {0} {1} {2} ({3}). Click image to view detailed information on SACs selected for this {4}.";
+
+            if (IsHabitatCode(code)) {
+                return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "habitat");
+            }
+
+            return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "species");
+        }
+
+        public static string GetUkResourceURL(string code)
+        {
+            if (IsHabitatCode(code)) {
+                return String.Format("/habitat/{0}/uk", code);
+            }
+            return String.Format("/species/{0}/uk", code);
+        }
+
+        public static string GetCompareUKDistributionURL(string code)
+        {
+            if (IsHabitatCode(code)) {
+                return String.Format("/habitat/{0}/comparison", code);
+            }
+            return String.Format("/species/{0}/comparison", code);
+        }
+
+        public static string GetMapURL(string code)
+        {
+            if (IsHabitatCode(code)) {
+                return String.Format("/habitat/{0}/map", code);
+            }
+            return String.Format("/species/{0}/map", code);
+        }        
 
         public static List<InterestFeatureOccurrence> GetInterestFeatures(List<InterestFeatureOccurrence> features, bool primary)
         {
-            if (primary) {
+            if (primary)
+            {
                 return features.FindAll(f => f.GlobalGrade == "A" || f.GlobalGrade == "B");
             }
             return features.FindAll(f => f.GlobalGrade == "C");
-        }        
+        }
     }
 }
