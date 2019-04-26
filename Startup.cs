@@ -34,6 +34,14 @@ namespace JNCC.Microsite.SAC
         {
             app.UseDefaultFiles()
                 .UseStaticFiles()
+                .UseStaticFiles(new StaticFileOptions{
+                    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "docs/images")),
+                    RequestPath = "/images"
+                })
+                .UseStaticFiles(new StaticFileOptions{
+                    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "docs/frontend")),
+                    RequestPath = "/frontend"
+                })
                 .UseRequestInterceptorMiddleware();
         }
     }
