@@ -6,7 +6,7 @@
 
 <h1>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @Html.Raw(Model.InterestFeature.Name)</h1>
 <h2>SAC/SCI/cSAC distribution</h2>
-<p>Distribution of SACs/SCIs/cSACs containing species <a href="@(InterestFeatureHelpers.GetFeatureUrl(Model.InterestFeature.Code))">@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Model.InterestFeature.Name)</a>.</p>
+<p>Distribution of SACs/SCIs/cSACs containing species <a href="@(InterestFeatureHelpers.GetFeatureUrl(Model.InterestFeature.Code))">@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.Name))</a>.</p>
 <div class="column large-8 large-centered medium-8 medium-centered small-12">
     <img src="/images/maps/features/@(Model.InterestFeature.Code).gif" alt="Distribution of SACs/SCIs/cSACs containing species @(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Model.InterestFeature.Name)." class="small-12 center"/>
 </div>

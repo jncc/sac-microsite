@@ -16,6 +16,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Generators.Helpers;
 
 namespace JNCC.Microsite.SAC.Generators
 {
@@ -32,18 +33,17 @@ namespace JNCC.Microsite.SAC.Generators
                     species.FeatureDescription = Regex.Replace(species.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
                     species.EUStatus = Regex.Replace(species.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
                     var habitatPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/index.html", species.Code), habitatPageContent);
 
-                    using (StreamWriter writer = new StreamWriter(String.Format("output/html/species/{0}.html", species.Code)))
-                    {
-                        writer.Write(habitatPageContent);
-                    }
+                    var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/comparison.html", species.Code), speciesMapCompareContent);
+
+                    var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/map.html", species.Code), speciesMapContent);
                 }
 
-                using (StreamWriter writer = new StreamWriter("output/html/species/index.html"))
-                {
-                    var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, false, speciesList).Result;
-                    writer.Write(speciesListContent);
-                }                
+                var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, false, speciesList).Result;
+                RenderHelper.WriteToFile("output/html/species/index.html", speciesListContent);
             }
         }
     }

@@ -5,6 +5,7 @@ using JNCC.Microsite.SAC.Generators.Helpers;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
 using Microsoft.Extensions.DependencyInjection;
+using JNCC.Microsite.SAC.Website.Helpers;
 
 namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
@@ -16,10 +17,27 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             using (var serviceScope = scopeFactory.CreateScope())
             {   
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
+                var isHabitat = InterestFeatureHelpers.IsHabitatCode(feature.Code);
+
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true) };
+                
+                if (isHabitat)
+                {
+                    breadcrumbs.Add(("/habitat", "Habitats", true));
+                    breadcrumbs.Add((string.Format("/habitat/{0}", feature.Code), feature.Name, true));
+                    breadcrumbs.Add((string.Format("/habitat/{0}/map", feature.Code), "Map", true));
+                }
+                else
+                {
+                    breadcrumbs.Add(("/species", "Species", true));
+                    breadcrumbs.Add((string.Format("/species/{0}", feature.Code), feature.Name, true));
+                    breadcrumbs.Add((string.Format("/species/{0}/map", feature.Code), "Map", true));
+                }
+
                 var model = new InterestFeaturePage
                 {
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitats", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true), (string.Format("/habitat/{0}/map", feature.Code), "Map", true) },
-                    CurrentSection = "Habitat",
+                    Breadcrumbs = breadcrumbs,
+                    CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature
                 };
 
