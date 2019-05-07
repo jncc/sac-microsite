@@ -11,17 +11,26 @@
         <div class="callout secondary">
             <p>List all <a href="/habitat">Habitat</a> or  <a href="/species">Species</a> interest features</p>
         </div>
+        <script type="text/javascript">
+            function goToSite(selected) {
+                if (selected.value !== "") {
+                    window.open("/site/" + selected.value);
+                }
+            }
+        </script>
         <div class="callout secondary">
             <p><b>Select a specific SAC by name</b></p>
             <div class="row">
-                <select name="EUCode" class="column small-12 large-8">
-                    <option selected="" value="">Choose an SAC from the drop down list</option>
-                    @foreach ((string EUCode, string Name) in Model.Sites)
-                    {               
-                        <option value=@(EUCode)>@(Name)</option>
-                    }
-                </select>
-                <a href="#" class="button primary column small-12 large-4 end">View Site</a>
+                <form name="sites">
+                    <select name="EUCode" class="column small-12 large-8">
+                        <option selected="" value="">Choose an SAC from the drop down list</option>
+                        @foreach ((string EUCode, string Name) in Model.Sites)
+                        {               
+                            <option value=@(EUCode)>@(Name)</option>
+                        }
+                    </select>
+                    <a href="#" class="button primary column small-12 large-4 end" onclick="goToSite(document.sites.EUCode)">View Site</a>
+                </form>
             </div>
         </div>
     </div>
