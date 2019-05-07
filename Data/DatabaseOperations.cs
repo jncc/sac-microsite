@@ -32,15 +32,6 @@ namespace JNCC.Microsite.SAC.Data
                     // Basic SAC List
                     while (reader.Read())
                     {
-                        // var EUCode = reader.GetString(1);
-                        // var Country = reader.GetString(2);
-                        // var Name = reader.GetString(3);
-                        // var CountryFull = reader.GetString(4);
-                        // var Area = reader.GetDouble(5);
-                        // var GridReference = reader.IsDBNull(6) ? null : reader.GetString(6);
-                        // var LocalAuthority = reader.GetString(7);
-                        // var StatusCode = reader.GetInt32(8);
-                        // var StatusShort = reader.GetString(9);
                         sacs.Add(new Site
                         {
                             EUCode = reader.GetString(1),
@@ -171,15 +162,6 @@ namespace JNCC.Microsite.SAC.Data
                     // Basic Feature List
                     while (reader.Read())
                     {
-                        var Code = reader.GetString(0);
-                        var Name = reader.GetString(1);
-                        var LayTitle = reader.GetString(2);
-                        var SectionNumber = reader.GetDouble(3);
-                        var SectionTitle = reader.GetString(4);
-                        var InterestGroup = reader.IsDBNull(5) ? null : reader.GetString(5);
-                        var Priority = reader.GetBoolean(6);
-                        var Total = reader.GetInt32(8);
-
                         features.Add(new InterestFeature
                         {
                             Code = reader.GetString(0),
@@ -229,15 +211,6 @@ namespace JNCC.Microsite.SAC.Data
                     {
                         while (reader.Read())
                         {
-                            var SiteName = reader.GetString(2);
-                            var SiteCode = reader.GetString(3);
-                            var InterestStatus = reader.GetString(4);
-                            var InterestStatusLong = reader.GetString(5);
-                            var GlobalGrade = reader.GetString(6);
-                            var PrimaryText = reader.IsDBNull(7) ? null : reader.GetString(7);
-                            var SecondaryText = reader.IsDBNull(8) ? null : reader.GetString(8);
-                            var LocalAuthority = reader.GetString(9);
-
                             occurences.Add(new InterestFeatureOccurrence
                             {
                                 SiteName = reader.GetString(2),
