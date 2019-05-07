@@ -47,20 +47,24 @@ namespace JNCC.Microsite.SAC.Website.Helpers
             return "Annex II species";
         }
 
-        public static string GetUKDistributionAltImageText(string code, string layTitle, string Name) {
+        public static string GetUKDistributionAltImageText(string code, string layTitle, string Name)
+        {
             string template = "UK Distribution of {0} {1} {2} {3}. Click image to view detailed UK distribution and {4}.";
 
-            if (IsHabitatCode(code)) {
+            if (IsHabitatCode(code))
+            {
                 return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "extent information for this habitat");
             }
 
             return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "population size information for this species");
         }
 
-        public static string GetSACDistributionAltImageText(string code, string layTitle, string Name) {
+        public static string GetSACDistributionAltImageText(string code, string layTitle, string Name)
+        {
             string template = "Distribution of SACs with {0} {1} {2} ({3}). Click image to view detailed information on SACs selected for this {4}.";
 
-            if (IsHabitatCode(code)) {
+            if (IsHabitatCode(code))
+            {
                 return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "habitat");
             }
 
@@ -69,7 +73,8 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 
         public static string GetCompareDistributionURL(string code)
         {
-            if (IsHabitatCode(code)) {
+            if (IsHabitatCode(code))
+            {
                 return String.Format("/habitat/{0}/comparison", code);
             }
             return String.Format("/species/{0}/comparison", code);
@@ -77,11 +82,12 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 
         public static string GetMapURL(string code)
         {
-            if (IsHabitatCode(code)) {
+            if (IsHabitatCode(code))
+            {
                 return String.Format("/habitat/{0}/map", code);
             }
             return String.Format("/species/{0}/map", code);
-        }        
+        }
 
         public static List<InterestFeatureOccurrence> GetInterestFeatures(List<InterestFeatureOccurrence> features, bool primary)
         {
