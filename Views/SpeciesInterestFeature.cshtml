@@ -18,8 +18,8 @@
     </figure>
 </div>
 <h4>Background Selection</h4>
-<a href="@(InterestFeatureHelpers.GetUkResourceURL(Model.InterestFeature.Code))">UK resource for this species</a>
-<a href="@(InterestFeatureHelpers.GetCompareUKDistributionURL(Model.InterestFeature.Code))">Compare with UK distribution</a>
+<a href="@(InterestFeatureHelpers.GetMapURL(Model.InterestFeature.Code))">UK resource for this species</a>
+<a href="@(InterestFeatureHelpers.GetCompareDistributionURL(Model.InterestFeature.Code))">Compare with UK distribution</a>
 
 <h4>Description and ecological characteristics</h4>
 <p>@Html.Raw(Model.InterestFeature.FeatureDescription)</p>
@@ -28,7 +28,7 @@
 <p>@Html.Raw(Model.InterestFeature.EUStatus)</p>
 
 <h4>UK status and distribtution</h4> 
-<p>Click <a href="/species/@(Model.InterestFeature.Code)/distribution/uk">here</a> view UK distribution of this species</p>
+<p>Click <a href=@(InterestFeatureHelpers.GetMapURL(Model.InterestFeature.Code))>here</a> view UK distribution of this species</p>
 <p>@Html.Raw(Model.InterestFeature.UKStatus)</p>
 
 @if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale)) {

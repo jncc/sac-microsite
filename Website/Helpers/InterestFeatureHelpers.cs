@@ -67,15 +67,7 @@ namespace JNCC.Microsite.SAC.Website.Helpers
             return String.Format(template, GetAnnexString(code), GetPlainIntegerCode(code), layTitle, Name, "species");
         }
 
-        public static string GetUkResourceURL(string code)
-        {
-            if (IsHabitatCode(code)) {
-                return String.Format("/habitat/{0}/uk", code);
-            }
-            return String.Format("/species/{0}/uk", code);
-        }
-
-        public static string GetCompareUKDistributionURL(string code)
+        public static string GetCompareDistributionURL(string code)
         {
             if (IsHabitatCode(code)) {
                 return String.Format("/habitat/{0}/comparison", code);

@@ -33,8 +33,6 @@ namespace JNCC.Microsite.SAC.Generators
             HabitatsGenerator.Generate(serviceScopeFactory);
 
             SpeciesGenerator.Generate(serviceScopeFactory);
-
-            
         }
     }
 }

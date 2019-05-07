@@ -10,6 +10,7 @@ namespace JNCC.Microsite.SAC.Website.Helpers
         {
             return String.Format("/site/{0}", code);
         }
+        
         public static string GetCoverageString(double? coverage)
         {
             return (coverage != null && coverage != double.NaN) ? coverage.ToString() : "Unknown";
