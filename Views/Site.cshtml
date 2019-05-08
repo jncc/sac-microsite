@@ -73,7 +73,7 @@
     <p>
         @foreach (SiteCharacter item in Model.Site.Character) 
         {
-            @Html.Raw(String.Format("{0} {1} <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
+            @Html.Raw(String.Format("{0} ({1}%) <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
         }
     </p>
     <p><a href=@(SiteHelpers.GetSitePDFResourceURL(Model.Site.EUCode)) target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
