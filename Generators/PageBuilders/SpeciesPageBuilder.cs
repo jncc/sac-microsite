@@ -21,7 +21,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/species", "Species", true), (string.Format("/species/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Species",
                     InterestFeature = feature,
-                    Title = String.Format("{0} ({1}) - Special Areas of Conservation", feature.LayTitle, feature.Name)
+                    Title = String.Format("{0} ({1}) - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)
                 };
 
                 return helper.RenderViewToStringAsync("Views/SpeciesInterestFeature.cshtml", model);

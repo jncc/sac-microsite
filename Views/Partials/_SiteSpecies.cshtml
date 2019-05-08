@@ -2,7 +2,7 @@
 @using JNCC.Microsite.SAC.Website.Helpers
 
 <div>
-    <p><b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.Name)</a></p>
+    <p><b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.LayTitle)</a> <b>@(Model.Name)</b></p>
     @{
         if (Model.IsPrimary) {
             if (!String.IsNullOrWhiteSpace(Model.PrimaryText)) {

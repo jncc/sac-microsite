@@ -7,7 +7,7 @@
     var AnnexIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, true);
     var AnnexISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, false);
     var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, true);
-    var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, false, false);
+    var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, false);
 }
 <div class="row">
     <h2>@(Model.Site.Name)</h2>
@@ -33,11 +33,11 @@
                 </tr>
                 <tr>
                     <td>Latitude</td>
-                    <td>@(Model.Site.XCoord)</td>
+                    <td>@(Model.Site.Latitude)</td>
                 </tr>
                 <tr>
                     <td>Longitude</td>
-                    <td>@(Model.Site.YCoord)</td>
+                    <td>@(Model.Site.Longitude)</td>
                 </tr>
                 <tr>
                     <td>SAC EU Code</td>
