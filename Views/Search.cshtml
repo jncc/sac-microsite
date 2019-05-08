@@ -5,6 +5,7 @@
 
 <div class="two-columns">
     <div id="content">
+        <h1>Under Development - For the current official guidelines go <a href="http://jncc.defra.gov.uk/protectedsites/SACselection/">here</a></h1>
         @{
             await Html.RenderPartialAsync("Shared/_CountryList.cshtml");
         }
@@ -14,7 +15,7 @@
         <script type="text/javascript">
             function goToSite(selected) {
                 if (selected.value !== "") {
-                    window.open("/site/" + selected.value);
+                    window.location.href("/site/" + selected.value);
                 }
             }
         </script>

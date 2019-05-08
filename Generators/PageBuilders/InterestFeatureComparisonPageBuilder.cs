@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -39,7 +40,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 {
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
-                    InterestFeature = feature
+                    InterestFeature = feature,
+                    Title = String.Format("{0} ({1}) Distribution Comparison - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)
                 };
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureMapCompare.cshtml", model);

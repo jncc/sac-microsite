@@ -20,7 +20,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 {
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
                     CurrentSection = "Site",
-                    Site = site
+                    Site = site,
+                    Title = String.Format("{0} - Special Areas of Conservation", site.Name)
                 };
 
                 return helper.RenderViewToStringAsync("Views/Site.cshtml", model);

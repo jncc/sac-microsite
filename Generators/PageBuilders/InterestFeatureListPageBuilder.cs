@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -26,7 +27,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     InterestFeatureSections = features.GroupBy(s => s.SectionTitle).Select(s => new InterestFeatureSection {
                         SectionTitle = s.Key,
                         InterestFeatures = s.ToList()
-                    }).ToList()
+                    }).ToList(),
+                    Title = String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle)
                 });
             }
 

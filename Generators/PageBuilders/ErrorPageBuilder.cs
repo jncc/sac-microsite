@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,7 +21,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 {
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/404.html", "Page Not Found", true) },
                     CurrentSection = null,
-                    DisplayBreadcrumb = false
+                    DisplayBreadcrumb = false,
+                    Title = String.Format("Page not found - {0}", Page.DefaultTitle)
                 });
             }
         }
