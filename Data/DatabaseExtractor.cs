@@ -15,6 +15,7 @@ namespace JNCC.Microsite.SAC.Data
 
             DatabaseOperations dbOps = new DatabaseOperations(accessDbPath);
             JsonSerializer serializer = new JsonSerializer();
+            serializer.Formatting = Formatting.Indented;
 
             Console.WriteLine("Extracting main SAC list");
             List<Site> sites = dbOps.GetFullSACList();

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
+using System.Text.RegularExpressions;
 using JNCC.Microsite.SAC.Models.Data;
 
 namespace JNCC.Microsite.SAC.Data
@@ -189,8 +190,8 @@ namespace JNCC.Microsite.SAC.Data
                         // Single result expected
                         reader.Read();
 
-                        feature.FeatureDescription = reader.GetString(0);
-                        feature.EUStatus = reader.GetString(1);
+                        feature.FeatureDescription = Regex.Replace(reader.GetString(0), @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
+                        feature.EUStatus = Regex.Replace(reader.GetString(1), @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
                         feature.UKStatus = reader.GetString(2);
                         feature.Rationale = reader.IsDBNull(3) ? null : reader.GetString(3);
                     }

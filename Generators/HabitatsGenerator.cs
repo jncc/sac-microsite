@@ -29,10 +29,7 @@ namespace JNCC.Microsite.SAC.Generators
                 List<InterestFeature> habitats = JsonConvert.DeserializeObject<List<InterestFeature>>(fileReader.ReadToEnd());
 
                 foreach (var habitat in habitats)
-                {
-                    habitat.FeatureDescription = Regex.Replace(habitat.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
-                    habitat.EUStatus = Regex.Replace(habitat.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);                    
-                    
+                {                    
                     var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/index.html", habitat.Code), habitatPageContent);
 

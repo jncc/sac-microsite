@@ -30,8 +30,6 @@ namespace JNCC.Microsite.SAC.Generators
 
                 foreach (var species in speciesList)
                 {
-                    species.FeatureDescription = Regex.Replace(species.FeatureDescription, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
-                    species.EUStatus = Regex.Replace(species.EUStatus, @"<(font|\/font|FONT|\/FONT)[^>]{0,}>", string.Empty);
                     var habitatPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/species/{0}/index.html", species.Code), habitatPageContent);
 

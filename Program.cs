@@ -45,8 +45,7 @@ namespace JNCC.Microsite.SAC
             bool view = false;
 
             var options = new OptionSet {
-                { "a|accessdb=", "path to the Access DB containg SAC info", a => accessDbPath = a},
-                { "u|update", "run data update from Database", u => update = true},
+                { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "v|view", "view the static web site", v => view = true},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
@@ -75,7 +74,7 @@ namespace JNCC.Microsite.SAC
             {
                 if (String.IsNullOrWhiteSpace(accessDbPath))
                 {
-                    Console.Write("-a | --accessdb option must not be blank if running with -u | --update");
+                    Console.Write("-u | --update option must have a non blank value");
 
                 }
                 else
@@ -84,7 +83,7 @@ namespace JNCC.Microsite.SAC
                 }
             }
 
-            if (generate)
+            if (update || generate)
             {
                 Generator.MakeSite();
             }
