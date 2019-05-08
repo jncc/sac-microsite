@@ -11,7 +11,7 @@
 
 @Html.Raw(Model.SubjectHTML)
 
-<div class="row">
+<div class="row table-scroll">
 @foreach (var region in Model.RegionalSites)
 {   
     @Html.Raw("<table class=\"columns\"><tr><th class=\"small-1\">EU Code</th><th class=\"small-4\">Name</th><th class=\"small-1\">Country</th><th class=\"small-4\">Local Authority</th><th class=\"small-1\">Area (ha)</th><th class=\"small-1\">Status</th></tr>")

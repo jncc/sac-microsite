@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -27,7 +28,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = "Site",
                     HeaderText = header,
                     SubjectHTML = subject,
-                    RegionalSites = sites
+                    RegionalSites = sites,
+                    Title = String.Format("List of {0} - {1}", header, Page.DefaultTitle)
                 });
             }
 

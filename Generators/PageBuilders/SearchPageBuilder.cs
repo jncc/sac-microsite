@@ -20,7 +20,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 {
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
                     CurrentSection = "Search",
-                    Sites = sites.ToList()
+                    Sites = sites.ToList(),
+                    Title = Page.DefaultTitle
                 };
 
                 return helper.RenderViewToStringAsync("Views/Search.cshtml", model);
