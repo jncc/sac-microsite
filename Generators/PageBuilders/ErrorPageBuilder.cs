@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using JNCC.Microsite.SAC.Generators.Helpers;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
+using JNCC.Microsite.SAC.Website.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JNCC.Microsite.SAC.Generators.PageBuilders
@@ -22,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/404.html", "Page Not Found", true) },
                     CurrentSection = null,
                     DisplayBreadcrumb = false,
-                    Title = String.Format("Page not found - {0}", Page.DefaultTitle)
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("Page not found - {0}", Page.DefaultTitle))
                 });
             }
         }

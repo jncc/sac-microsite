@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using JNCC.Microsite.SAC.Generators.Helpers;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
+using JNCC.Microsite.SAC.Website.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JNCC.Microsite.SAC.Generators.PageBuilders
@@ -21,7 +22,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
                     CurrentSection = "Search",
                     Sites = sites.ToList(),
-                    Title = Page.DefaultTitle
+                    Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle)
                 };
 
                 return helper.RenderViewToStringAsync("Views/Search.cshtml", model);

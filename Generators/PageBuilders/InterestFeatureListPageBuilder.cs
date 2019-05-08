@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using JNCC.Microsite.SAC.Generators.Helpers;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
+using JNCC.Microsite.SAC.Website.Helpers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JNCC.Microsite.SAC.Generators.PageBuilders
@@ -28,7 +29,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                         SectionTitle = s.Key,
                         InterestFeatures = s.ToList()
                     }).ToList(),
-                    Title = String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle)
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle))
                 });
             }
 

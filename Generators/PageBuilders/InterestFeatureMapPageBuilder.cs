@@ -40,7 +40,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature,
-                    Title = String.Format("{0} ({1}) SAC/SCI/cSAC distribution map - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) SAC/SCI/cSAC distribution map - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle))
                 };
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureMap.cshtml", model);
