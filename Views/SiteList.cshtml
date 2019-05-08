@@ -31,7 +31,6 @@
             <td class="text-center">@(site.Area)</td>
             <td class="text-center">@(site.StatusShort)</td>
         </tr>
-        //@Html.Raw(String.Format("<tr><td><a href=\"/site/{0}\">{1}</a></td><td>{2}</td><td>{3}</td><td>{4}</td><td>{5}</td><td>{6}</td></tr>\n", site.EUCode, site.EUCode, site.Name, site.Country, site.LocalAuthority, site.Area, site.StatusShort))
     }
     @(Html.Raw("</table></div>"))
 }
