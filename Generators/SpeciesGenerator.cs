@@ -38,6 +38,9 @@ namespace JNCC.Microsite.SAC.Generators
 
                     var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, species).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/species/{0}/map.html", species.Code), speciesMapContent);
+
+                    var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/distribution.html", species.Code), speciesDistributionContent);
                 }
 
                 var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, false, speciesList).Result;

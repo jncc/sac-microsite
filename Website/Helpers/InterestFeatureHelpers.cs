@@ -11,6 +11,21 @@ namespace JNCC.Microsite.SAC.Website.Helpers
             return code.Substring(1);
         }
 
+        public static bool IsSpeciesCode(string code)
+        {
+            if (code.StartsWith("S"))
+            {
+                return true;
+            }
+
+            if (code.StartsWith("H"))
+            {
+                return false;
+            }
+
+            throw new ArgumentException(String.Format("{0} is not a valid code, expected habitat (Hxxxx) | species (Sxxxx)"));
+        }
+
         public static bool IsHabitatCode(string code)
         {
             if (code.StartsWith("H"))

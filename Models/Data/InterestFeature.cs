@@ -17,6 +17,7 @@ namespace JNCC.Microsite.SAC.Models.Data
         public string Rationale { get; set; }
         public bool Priority { get; set; }
         public int Total { get; set; }
+        public InterestFeatureMapData MapData {get; set; }
         public List<InterestFeatureOccurrence> Occurrences { get; set; }
     }
 
@@ -32,5 +33,18 @@ namespace JNCC.Microsite.SAC.Models.Data
         public string LocalAuthority { get; set; }
         public bool IsHabitat { get; set; }
         public bool IsSpecies { get; set; }
+    }
+
+    public class InterestFeatureMapData
+    {
+        public string MapSources { get; set; }
+        public string MapExplanation { get; set; }
+        public string Units { get; set; }
+        public string England { get; set; }
+        public string Scotland { get; set; }
+        public string Wales { get; set; }
+        public string NorthernIreland { get; set; }
+        public string UKOffshoreWaters { get; set; }
+        public string TotalUkPopulation { get; set; }
     }
 }
