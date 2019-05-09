@@ -54,10 +54,9 @@
 
 }
 
-<!-- Finish this link after merge from master -->
-<div>
-    <b>Data source:</b>
-    The sources of this data can be found in the supporting information for Harbour porpoise Phocoena phocoena from the Article 17 Habitats Directive Report.
+<h2>Data source</h2>
+<div class="row"> 
+    The sources of this data can be found in the<a href="@(InterestFeatureHelpers.GetInterestFeaturePDFResourceURL(Model.InterestFeature.Code))">&nbsp;supporting information for @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))&nbsp;</a>from the Article 17 Habitats Directive Report.
 </div>
 
 

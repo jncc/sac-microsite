@@ -200,6 +200,32 @@ namespace JNCC.Microsite.SAC.Data
 
                 using (DatabaseConnection conn = GetDatabaseconnection())
                 {
+                    OdbcCommand cmd = conn.CreateCommand("{CALL ASP312_feature_detail(?)}");
+                    OdbcParameter prm = cmd.Parameters.Add("FeatureIntCode", OdbcType.Char, 5);
+                    prm.Value = feature.Code;
+
+                    using (OdbcDataReader reader = cmd.ExecuteReader())
+                    {
+                        reader.Read();
+
+                        feature.MapData = new InterestFeatureMapData()
+                        {
+                            MapSources = reader.IsDBNull(5) ? null : reader.GetString(5),
+                            MapExplanation = reader.IsDBNull(6) ? null : reader.GetString(6),
+                            Units = reader.IsDBNull(7) ? null : reader.GetString(7),
+                            England = reader.IsDBNull(8) ? null : reader.GetString(8),
+                            Scotland = reader.IsDBNull(9) ? null : reader.GetString(9),
+                            Wales = reader.IsDBNull(10) ? null : reader.GetString(10),
+                            NorthernIreland = reader.IsDBNull(11) ? null : reader.GetString(11),
+                            UKOffshoreWaters = reader.IsDBNull(12) ? null : reader.GetString(12),
+                            TotalUkPopulation = reader.IsDBNull(13) ? null : reader.GetString(13)
+                        };
+                    }
+
+                }
+
+                using (DatabaseConnection conn = GetDatabaseconnection())
+                {
                     // Oddity from the way the query works, this covers species and habitat interest
                     // features, not just species as the query name implies
                     OdbcCommand cmd = conn.CreateCommand("{CALL Occurrences_by_Feature_INT_CODE(?)}");

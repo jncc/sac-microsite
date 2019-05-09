@@ -41,6 +41,11 @@ namespace JNCC.Microsite.SAC.Website.Helpers
             throw new ArgumentException(String.Format("{0} is not a valid code, expected habitat (Hxxxx) | species (Sxxxx)"));
         }
 
+        public static string GetInterestFeaturePDFResourceURL(string code)
+        {
+            return String.Format("https://jncc.gov.uk/assets/REPORT-312/{0}.pdf", code);
+        }        
+
         public static string GetFeatureUrl(string code)
         {
             if (IsHabitatCode(code))
