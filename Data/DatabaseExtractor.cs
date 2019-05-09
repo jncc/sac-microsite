@@ -12,7 +12,13 @@ namespace JNCC.Microsite.SAC.Data
         public static void ExtractData(string accessDbPath) 
         {
             Console.WriteLine(String.Format("Updating data files using: {0}", accessDbPath));
-
+            
+            var outputPath = "./output/json";
+            if (!Directory.Exists(outputPath))
+            {
+                Directory.CreateDirectory(outputPath);
+            }
+            
             DatabaseOperations dbOps = new DatabaseOperations(accessDbPath);
             JsonSerializer serializer = new JsonSerializer();
             serializer.Formatting = Formatting.Indented;
