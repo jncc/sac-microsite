@@ -26,7 +26,7 @@ namespace JNCC.Microsite.SAC.Helpers
 
         public static void EnsureDirectoryExists(string path)
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(path));
+            Directory.CreateDirectory(path);
         }
 
         public static void WriteToFile(string path, string content)
