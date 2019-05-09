@@ -12,6 +12,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series includes large sublittoral <B>sandbanks</B> showing good habitat structure and function. The selected sites represent the range of variation within the four main sub-types (gravelly and clean sands, muddy sands, eelgrass beds, and maerl beds), which are often associated with different physiographic features (e.g. estuaries, open coast, bays, sea lochs). The differing character of this habitat around the UK coast has also been taken into account.</P>\r\n<P>Most of the sites selected for sublittoral <B>sandbanks</B> also include a range of other qualifying interest features, such as marine and coastal habitats, migratory fish, and seals.</P><FONT color=#000080 size=3>\r\n<P><FONT color=black size=2>Potential sandbank sites in UK offshore waters (between 12 and 200 nautical miles from the coast) are currently being considered for recommendation to Defra. Areas will be identified to represent the different sub-types (linear tidal sandbanks and sandy mounds composed of muddy sand, sand and gravelly sand) in each relevant biogeographic region of UK waters.</FONT></FONT></P></FONT>",
     "Priority": false,
     "Total": 36,
+    "MapData": {
+      "MapSources": "NCC map produced from combination of point and polygon data",
+      "MapExplanation": "this map does not show offshore locations of this habitat",
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "733100"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030368",
@@ -460,6 +471,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The selection of <B>estuary</B> sites has taken account of the UK’s EU responsibility for this habitat type, and the SAC series contains a high proportion of the total UK resource. Sites have been selected to represent the geographical range of estuaries in the UK, and to encompass examples of the four geomorphological sub-types (coastal plain, bar-built, complex, and ria estuaries) and the associated range of communities. Selection has generally favoured larger estuaries, as they display a wider variety of habitats, but smaller estuaries have also been selected where they have specific features of interest, such as undisturbed transitions from marine to terrestrial habitats, or are representative of a particular geomorphological sub-type.</P>\r\n<P>Sites have generally been selected as entire units, extending from the tidal limit or extent of brackish influence to the estuary mouth, and including all habitats that are important to the integrity of the site. In particular, the water column has been included because of its importance not only in the biological functioning of the system, but also as the means by which sediment is mobilised and transported. Many estuary sites have also been selected as SACs for associated coastal habitats, including sand dunes and saltmarshes.</P>\r\n<P>No sites have been selected in Northern Ireland because estuaries are very poorly developed here – all the major sea loughs have a negligible freshwater influence.</P></FONT>",
     "Priority": false,
     "Total": 18,
+    "MapData": {
+      "MapSources": "NCC map of estuaries  produced from Seamap and Davidson et al 1991 (NI only)",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "308355"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030076",
@@ -692,6 +714,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the range of geographical, physical and ecological variation shown by this habitat type in the UK. Examples of clean sands, muddy sands, and mudflats have all been included. Sites with large areas of intertidal flats, as well as a range of environmental conditions and an associated diversity of communities, were favoured.</P></FONT>",
     "Priority": false,
     "Total": 30,
+    "MapData": {
+      "MapSources": "JNCC map produced from Marine Recorder and polygon data from CCW",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "290000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030076",
@@ -1068,6 +1101,17 @@
     "Rationale": "<FONT size=2><B><FONT size=2>\r\n<P>Coastal lagoons</B> are a priority habitat type and are relatively uncommon in the UK. Additionally some of the lagoon sub-types found in the UK are rare elsewhere in Europe. Consequently a high proportion of the total UK extent of lagoons has been included within the SAC series. Site selection has aimed to represent the range of physiographic sub-types, and to provide good geographical coverage across the UK.</P>\r\n<P>Lagoons may be clustered together on particular stretches of coast, where they are dependent on local physical processes, such as sediment transport systems. Such clusters have been considered particularly important for the conservation of lagoon structure and function, and site selection has reflected this distribution. </P>\r\n<P>Only near-natural lagoon sites have been selected. Sites that are entirely artificial in origin, e.g. some docks, have been excluded, even though in some cases the communities present may be similar to those of more natural sites.</P>\r\n<P></FONT>.</P></FONT>",
     "Priority": true,
     "Total": 20,
+    "MapData": {
+      "MapSources": "JNCC map of saline lagoons compiled from various sources (NE, EA, EHS, SEPA",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "5500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030114",
@@ -1324,6 +1368,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the range of sub-types, geographical range and ecological variation of this highly variable Annex&nbsp;I type. Selection has favoured larger sites, which tend to encompass the greatest variety of constituent habitats. Particular attention has been paid to the selection of rias and fjardic sea lochs, sub-types of the habitat for which the UK has a high proportion of the total EU resource. </P></FONT>",
     "Priority": false,
     "Total": 14,
+    "MapData": {
+      "MapSources": "JNCC map of large shallow inlets and Bays produced for FCS",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "764560"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0017072",
@@ -1508,6 +1563,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Selection of <B>reefs </B>has favoured extensive examples with diverse community structure. Sites have been selected to represent the ecological range of this extremely variable habitat type, and the SAC series reflects the variation in rock type, topography, and exposure to waves and tidal streams. Various forms of biogenic reef have also been selected. Biogeographical variation has been accounted for, and the selected sites include examples of both northern and southern fauna and flora. Site selection has taken account of the relative importance of the UK’s chalk reefs and reef types in conditions of extreme wave and tidal stream exposure.</P><FONT color=#000080 size=3><FONT color=black size=2>\r\n<P>Potential reef sites in UK offshore waters (between 12 and 200 nautical miles from the coast) are currently being considered for recommendation to Defra. Areas will be identified to represent the different sub-types (stony, bedrock and biogenic) in each relevant biogeographic region of UK waters.</P></FONT></FONT></FONT>",
     "Priority": false,
     "Total": 59,
+    "MapData": {
+      "MapSources": "The map contains the known area of Reefs H1170 in the UK. It was derived from Reef data taken from Marine Recorder (reef biotopes only), as well as distribution data for  'potential reefs'. The iceberg ploughmarks were removed and Wyville Thompson ridge was added.",
+      "MapExplanation": "This map is based on an extended OS 10-km square grid map. As the grid has\r\nbeen extended North and West it has been distorted due to the projection. The\r\nmap should therefore be taken as indicative only.",
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "5723600"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030387",
@@ -2232,6 +2298,17 @@
     "Rationale": null,
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": "JNCC map produced from Seep Areas shapefile with Holden's Reef added",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "offshore",
+      "Scotland": "offshore",
+      "Wales": "offshore",
+      "NorthernIreland": "offshore",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030357",
@@ -2284,6 +2361,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The ephemeral nature of this habitat type has been taken into account during site selection. Sites have been selected to reflect the more constant occurrences of drift-line vegetation found in association with larger, more stable areas of shingle structures. The selected sites represent the majority of the more persistent examples of this habitat type in the UK. They all exhibit good conservation of structure and function (i.e. they are relatively unmodified and are less prone to human disturbance) and represent the range of variation in substrate type and physical structure.</P></FONT>",
     "Priority": false,
     "Total": 13,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0017076",
@@ -2456,6 +2544,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The selection of SACs reflects the UK’s special responsibility for conservation of this habitat type, and covers its geographical and ecological range. All the largest examples with good conservation of structure and function have been included in the SAC series, together with additional smaller sites to complete the coverage of range. Site selection has also favoured shingle structures which support vegetation sequences ranging from pioneer communities to heath and scrub.</P>\r\n<P>The selected sites represent a substantial proportion of the European resource.</P></FONT>",
     "Priority": false,
     "Total": 12,
+    "MapData": {
+      "MapSources": "Alastair Church, (pers. comm.) 2007. Environmental Heritage Service; British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Sneddon, PE & Randall, RE. 1993 -1994. Coastal vegetated shingle structures of Great Britain.",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "5160"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030114",
@@ -2616,6 +2715,17 @@
     "Rationale": "<FONT size=2>\r\n<P>All the selected sites are extensive and have an exceptionally well-developed zonation of vegetation. They reflect the very wide ecological variation of the habitat type across the UK arising from the variability of cliff structure, geology and levels of maritime exposure. The SAC series includes rock types that range from unconsolidated drift or clay through soft shales, mudstones, limestones and chalk, to acid igneous formations. In addition, both sheltered east-facing sites and exposed west-facing sites are included. The European importance of the UK’s maritime cliffs (in particular, coastal chalk exposures) has also influenced site selection.</P></FONT>",
     "Priority": false,
     "Total": 40,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; English Nature Science Report. 1993. No. 13; JNCC International Designations Database. Joint Nature Conservation Committee; Phase I Habitat Survey of Wales. 1979 - 1997. Countryside Council for Wales; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "22000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012958",
@@ -3112,6 +3222,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to cover the geographical range of the habitat type. Generally, the largest areas of the habitat type have been selected, and since it occurs as an integral part of a sequence of habitats, from sand/mudflats to more stable saltmarsh vegetation, preference has been given to sites where it forms part of well-developed successional sequences.</P></FONT>",
     "Priority": false,
     "Total": 13,
+    "MapData": {
+      "MapSources": "Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee; Larne Lough and Carlingford Lough SPA grid refs . 2007. Environmental Heritage Service",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "2370"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0020020",
@@ -3284,6 +3405,17 @@
     "Rationale": "<FONT size=2>\r\n<P>In the UK stands of this Annex&nbsp;I type have only been considered for selection as SACs where they are dominated by <I>Spartina maritima</I>, <I>S.&nbsp;alterniflora</I>, or support the rare and local hybrid <I>S.&nbsp;</I>x <I>townsendii</I>. The two significant stands of these species known in the UK have both been included within the SAC series. Monoculture swards of the widely-planted invasive <I>S.&nbsp;anglica</I> have not been considered for SAC selection.</P></FONT>",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; New atlas of the British and Irish flora. Oxford University Press, Oxford.",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "less than 100"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013690",
@@ -3324,6 +3456,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to cover the geographical range and ecological variation of <B>Atlantic salt meadows</B> in the UK. The sites selected are for the most part the largest examples of this habitat type, with good structure and function, and which support a well-developed zonation of plant communities within the saltmarsh. There are transitions to other high-quality habitat assemblages at many of the sites that have been selected. Sites with complete sequences of vegetation and transitions to other habitats, such as sand dunes, represent the range of variation of the habitat type, and this has been an important consideration in site selection.</P></FONT>",
     "Priority": false,
     "Total": 26,
+    "MapData": {
+      "MapSources": "Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "less than 29230"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030076",
@@ -3652,6 +3795,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The single known remaining natural site in the UK has been selected.</P></FONT>",
     "Priority": true,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Inland salt meadows: Congleton/Middlewich. Nature Conservancy Council ; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "0.5"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012789",
@@ -3680,6 +3834,17 @@
     "Rationale": "<FONT size=2>\r\n<P>All sites known to support extensive examples of this very rare habitat type have been selected. Isolated, fragmentary stands have not been included within the SAC series. </P></FONT>",
     "Priority": false,
     "Total": 4,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "105"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0017076",
@@ -3744,6 +3909,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Owing to the small total extent of the habitat type in the UK, site selection has ensured that a high proportion of the resource is included within the SAC series. Although very localised, the habitat type has a broad geographical range, and this is reflected in the selected sites. By comparison with many other habitats, ecological variation is limited, but the variation that does occur is covered by the SACs. The habitat type is associated with developing (prograding) dunes, which are generally the largest and most structurally and functionally intact dunes in the UK. The distribution of such dunes is not even, and more than one example has been selected in some parts of the UK to reflect this uneven distribution.</P></FONT>",
     "Priority": false,
     "Total": 24,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "295"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030084",
@@ -4048,6 +4224,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to cover the geographical range of the habitat type and its ecological variation. The selected sites are generally those with the largest expanses of the habitat type, and with active dune processes which maintain the structure and function of the habitat type. Sites that exhibit zonations related to the stability of the dune system have been particularly favoured, as such zonations are seen as indicative of good conservation of structure and function.</P>\r\n<P>The distribution of high-quality shifting dunes is not even, and more than one example has been selected in some parts of the UK to reflect this uneven distribution.</P>\r\n<P>Well-developed shifting dune vegetation is almost always associated with a number of other dune habitats and the sites selected contain a range of such transitions to fixed dune, dune heath and dune slack habitats.</P></FONT>",
     "Priority": false,
     "Total": 34,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "2220"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030084",
@@ -4472,6 +4659,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to ensure adequate coverage of the geographical range and wide ecological variation of this habitat type. The sites selected are for the most part the largest examples in the UK and have the best conserved structure and function. Transitions to landward vegetation were also important deciding factors in site selection. A substantial proportion of the national resource occurs on a relatively small number of sites, and these have been selected. The UK is particularly important for Atlantic dune (<I>Mesobromion</I>) grasslands, and the SAC series reflects this.</P></FONT>",
     "Priority": true,
     "Total": 32,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "22300"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030084",
@@ -4872,6 +5070,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the range of geographic and ecological variation within the habitat type. A substantial proportion of the national resource of <B>Decalcified fixed dunes with <I>Empetrum nigrum</B></I> occurs on a relatively small number of sites, and the largest and most important examples of this priority habitat type have been selected. For the most part, sites selected are also those least-modified by human activities, so that they are inherently stable in terms of structure and function. </P></FONT>",
     "Priority": true,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "338"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0019806",
@@ -4912,6 +5121,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the ecological variability and geographic range of this habitat type. Sites selected tend to be the largest examples, in which substantial areas of dune heath occur in a mosaic of dune habitats. These sites are the least-modified and tend to be inherently stable in terms of structure and function. A relatively small number of sites, supporting a large proportion of the total national resource, has been included in the SAC series. </P></FONT>",
     "Priority": true,
     "Total": 10,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "900"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013044",
@@ -5048,6 +5268,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The distribution and ecological variation of native stands in the UK is limited, so one site in eastern England has been selected to represent the native occurrence of the habitat. Stands resulting from introductions are not considered eligible for site selection in the UK. </P></FONT>",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; New atlas of the British and Irish flora. Oxford University Press, Oxford.",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "only present as an introduced habitat",
+      "Wales": "only present as an introduced habitat",
+      "NorthernIreland": "only present as an introduced habitat",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "235"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030170",
@@ -5088,6 +5319,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the rarity of this habitat type in the UK. The largest examples have generally been treated as priorities for selection, and the SAC series contains a high proportion of the total UK resource. Site selection has also taken account of the habitat’s wide geographical range.</P></FONT>",
     "Priority": false,
     "Total": 14,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee; Paul Corbett (pers. comm.) 2000. Environmental Heritage Service; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "642"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012570",
@@ -5272,6 +5514,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has taken account of the wide geographical range and considerable ecological variation of this habitat type. Humid dune slacks are a more prominent feature of dunes in the UK than in many other European countries, and a high proportion of the total UK resource is included within the selected sites.</P>\r\n<P>In selecting sites, preference has been given to the specialist plant communities of wetter and more frequently flooded slacks, and those at an early successional stage. Successional and hydrological processes are crucial to the maintenance of the structure and function of <B>Humid dune slacks</B>. Sites where these two processes are least restricted have special value in terms of long-term conservation and so have been favoured for selection as SACs.</P></FONT>",
     "Priority": false,
     "Total": 26,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Pete Jones (pers. comm.) Countryside Council for Wales; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1812"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013044",
@@ -5600,6 +5853,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has taken account of the wide range of variation in physical type shown by Scottish machairs and has also been influenced by the UK’s special responsibility for machair conservation. (<B>Machair</B> is a priority habitat in Ireland but not in the UK). The largest sites have been selected, as these demonstrate the best structure and function and include the most diverse examples of transitions to other habitats. Sites have been selected from across the range of machair in the Outer and Inner Hebrides and on the Scottish mainland.</P></FONT>",
     "Priority": false,
     "Total": 8,
+    "MapData": {
+      "MapSources": "Angus, S. 1999. The state of the maritime natural heritage: machair in Scotland. In Baxter, J.M., Duncan, K., Atkins, S.M. & Lees, G. (Eds). Scotland's living coastline, 166-172. The Stationery Office, London.; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "13300"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014728",
@@ -5712,6 +5976,17 @@
     "Rationale": "<B><FONT size=2>\r\n<P>Coastal dunes with juniper <I>Juniperus</I> spp.</B> is a very rare habitat type in the UK, and the SAC series contains the only localities known to hold moderately extensive stands. </P></FONT>",
     "Priority": true,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "20"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0019806",
@@ -5752,6 +6027,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The only known UK example has been selected; the site includes the few small remnants of the inland sand dunes that once occurred over a wider area of Breckland.</P></FONT>",
     "Priority": false,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "120"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0019865",
@@ -5780,6 +6066,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Only four sites have been identified in the UK that are considered to represent high-quality examples of this habitat type. All four sites have been selected.</P></FONT>",
     "Priority": false,
     "Total": 4,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; UK Lakes Database (compiled by the Inter-agency Freshwater Specialist Working Group). Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030038",
@@ -5844,6 +6141,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the geographical and ecological range of this type in the UK. Preference has been given to sites where the characteristic plant species are abundant and water quality is high. The presence of glacial relict fish and invertebrate populations has also been viewed as a positive factor in site selection. </P>\r\n<P>Waterbodies of this type are extremely widespread in upland parts of the UK, but many examples are small, and many larger lakes have been substantially modified by human influences. Consequently the SAC series contains a relatively low proportion of the total UK resource. </P></FONT>",
     "Priority": false,
     "Total": 47,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; UK Lakes Database (compiled by the Inter-agency Freshwater Specialist Working Group). Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "150000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030046",
@@ -6424,6 +6732,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The sites selected represent the wide geographical range of the habitat and the variety of topographical and ecological situations in which it is found. Most of the selected sites are lakes on limestone, but one machair loch site and one serpentine site have also been selected to cover the range of ecological variation. Selection has favoured examples with high water quality, particularly those likely to be unaffected by nutrient enrichment. The selected sites each contain a number of rare and local <I>Chara</I> species.</P></FONT>",
     "Priority": false,
     "Total": 15,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; UK Lakes Database (compiled by the Inter-agency Freshwater Specialist Working Group). Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "5880"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -6620,6 +6939,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Lakes which are naturally eutrophic are very rare in the UK, and the SAC series contains a high proportion of the total UK resource. Sites have been selected to encompass the ecological variation and geographical range shown by the habitat, and all three sub-types are represented in the list of sites selected. The sites selected are among the largest examples, but selection has particularly favoured those lakes that are least-modified by human activity, particularly with regard to water quality, although few lakes of this type remain totally unaffected by artificial nutrient enrichment. The UK selection was based largely on the presence of remnants of the <I>Hydrocharition</I> (mainly duckweeds <I>Lemna </I>spp<I>.</I>) and a good representation of the <I>Magnopotamion</I>. Wider countryside measures, such as </FONT><A href=&quot;http://www.defra.gov.uk/erdp/default.htm&quot;>agri-environment schemes</A><FONT size=2> and river basin management plans prepared under the </FONT><A href=&quot;http://europa.eu.int/smartapi/cgi/sga_doc?smartapi!celexapi!prod!CELEXnumdoc&amp;lg=EN&amp;numdoc=32000L0060&amp;model=guichett&quot;>Water Framework Directive</A><FONT size=2> will make a substantial contribution to attaining favourable conservation status for this habitat.</P></FONT>",
     "Priority": false,
     "Total": 16,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; UK Lakes Database (compiled by the Inter-agency Freshwater Specialist Working Group). Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0019865",
@@ -6828,6 +7158,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has taken account of the UK distribution of dystrophic water bodies and reflects the narrow range of ecological variation exhibited by this habitat. The selected sites each contain a number of dystrophic water bodies, and sites with relatively large examples have been favoured.</P>\r\n<P>Dystrophic waters are a common feature of <B>7130 Blanket bogs</B> in Scotland but are extremely rare in England and Wales, where the number of sites of SAC quality is correspondingly small. The preponderance of sites in Scotland reflects the uneven distribution of this habitat type in the UK. A small number of dystrophic pools occur in the lowlands of England; those associated with bogs in the West Midlands have been seen as having particular value for nature conservation because of the rarity of the habitat type in this part of the UK. </P></FONT>",
     "Priority": false,
     "Total": 23,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; UK Lakes Database (compiled by the Inter-agency Freshwater Specialist Working Group). Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "11470"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0016412",
@@ -7120,6 +7461,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The single UK site where fully characteristic examples of <B>Mediterranean temporary ponds</B> are known to occur has been selected. </P></FONT>",
     "Priority": true,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Extra dot for The Lizard SAC. 1995. Natural England; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "less than 100"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012799",
@@ -7148,6 +7500,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The two turloughs known to occur in the UK have both been selected as SACs.</P></FONT>",
     "Priority": true,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "7"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030070",
@@ -7188,6 +7551,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the geographical distribution of the habitat, the range of substrates on which it occurs, and its ecological variation. The presence of characteristic plant communities (for example, association with water-starworts <I>Callitriche</I>) is considered important, and the selected sites also include the biologically richest examples in the UK. Rivers that show a transition from one substrate to another, e.g. as geology changes from chalk to clay, have also been included. Chalk rivers (sub-type&nbsp;1) belonging to this habitat type have a very restricted distribution in the UK and Europe, and so have received particular attention; sites have been selected to represent the characteristic communities of both ephemeral (winterbourne) and perennial river sections. </P></FONT>",
     "Priority": false,
     "Total": 23,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Ranunculus distribution in Northern Ireland 1970-99. Centre for Environmental Data and Recording; Water courses of plain to montane levels data. 2000. Biological Records Centre; Water courses of plain to montane levels data.1999. Biological Records Centre",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030046",
@@ -7480,6 +7854,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the geographical and ecological range of <B>Northern Atlantic wet heaths</B>. The SAC series contains examples of the full spectrum of variation shown by the habitat in the UK, ranging from lowland wet heaths in southern England (including the distinctive Cornish heath <I>Erica vagans</I> heaths on the Lizard), to upland heaths in the Scottish Highlands. Extreme oceanic forms in the west of Scotland, and lichen-rich variants in the extreme north, are also represented. </P>\r\n<P>The sites selected are for the most part those with the largest expanses of the habitat type, the best-developed structure and function, and particularly well-developed transitions to other habitats. The number and extent of wet heath SACs reflects the UK’s special responsibilities for the conservation of the habitat. </P>\r\n<P>Wet heath is extensively developed in western Britain and there are large areas of poor-quality habitat which do not meet the criteria for SAC selection. Although the SAC series consequently contains a relatively low proportion of the total UK resource, it comprises a large number of sites which collectively contain a high proportion of high-quality examples and in particular remnant lowland wet heaths. Outside the SAC series many wet heaths are protected through </FONT><A href=&quot;http://www.defra.gov.uk/erdp/default.htm&quot;>agri-environment schemes</A><FONT size=2> or through measures adopted under the UK </FONT><A href=&quot;http://www.ukbap.org.uk/Plans/index.htm&quot;>Biodiversity Action Plan</A><FONT size=2>.</P></FONT>",
     "Priority": false,
     "Total": 72,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; JNCC International Designations Database. Joint Nature Conservation Committee; Lynne Farrell (pers. comm.) 2007. Scottish Natural Heritage; Northern Ireland Countryside Survey 1986-93. Environmental Heritage Service & University of Ulster; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "462000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030080",
@@ -8360,6 +8745,17 @@
     "Rationale": "<FONT size=2>\r\n<P>All sites that contain extensive examples of this priority habitat type with good conservation of structure and function have been selected. The SAC series contains a very high proportion of the total UK resource, and fully represents the geographical range and ecological variation of the habitat.</P>\r\n<P>The single known <I>Erica&nbsp;ciliaris </I>site in Devon, at an altitude of 400&nbsp;m on Dartmoor, has not been selected because it is atypical and it is suspected that <I>E.&nbsp;ciliaris</I> is an introduction there.</P></FONT>",
     "Priority": true,
     "Total": 4,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; New atlas of the British and Irish flora. Oxford University Press, Oxford.",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "400"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012795",
@@ -8424,6 +8820,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series accommodates the wide geographical range and ecological variation of<B> European dry heaths</B>, and takes account of the UK’s special responsibilities for the habitat type – this is reflected in the very large number of proposed sites. The sites selected are for the most part those with the largest extent of dry heath and those where habitat structure and function are best-conserved. Sites have been selected to include all the main sub-types of the habitat (represented by the range of NVC types) and important lines of variation within the main sub-types, taking into account gradients developed in relation to climate, altitude, soil conditions and other factors. Both upland and lowland heaths are well-represented in the SAC series, and there is a high proportion of the rarer and more species-rich lowland types, which are particularly threatened by human activities.</P>\r\n<P>The selected sites often hold examples of several different forms of dry heath, and also demonstrate a diverse range of associations with other habitat types, including wet heath, acidic and calcareous grassland, mire, scrub and woodland. Many sites support populations of rare fauna and flora.</P>\r\n<P>In upland areas, <B>dry heaths</B> are very extensive, and site selection has focused on identifying large, high-quality sites; many other examples are relatively small and/or of poor quality. As with wet heaths, </FONT><A href=&quot;http://www.defra.gov.uk/erdp/default.htm&quot;>agri-environment schemes</A><FONT size=2> and </FONT><A href=&quot;http://www.ukbap.org.uk/Plans/index.htm&quot;>Habitat Action Plans</A><FONT size=2> contribute to the conservation of the habitat across the wider countryside.</P></FONT>",
     "Priority": false,
     "Total": 117,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; JNCC International Designations Database. Joint Nature Conservation Committee; Lynne Farrell (pers. comm.) 2007. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "608022"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -9844,6 +10251,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The single site where <B>Dry Atlantic coastal heaths with <I>Erica vagans</B></I> occur in the UK has been selected.</P></FONT>",
     "Priority": true,
     "Total": 1,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "599"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012799",
@@ -9872,6 +10290,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the UK’s special responsibilities for conserving <B>Alpine and Boreal heaths</B>. The sites selected are for the most part those where the habitat is most extensive and where there is least impact from human activities so that structure and function are well-conserved. </P>\r\n<P>Sites have been selected to include all the main types of <B>Alpine and Boreal heaths</B> (represented by the range of NVC types) and the main lines of variation within these types. The SAC series encompasses both the more continental lichen-rich heaths and oceanic forms rich in bryophytes, as well as combinations of western and eastern heaths of less marked character. The largest stands have usually been selected, because these have the widest range of sub-types of the heaths with the fullest expression of characteristic species developed in relation to altitude, exposure and snow-lie. The selection of sites reflects the importance of the Scottish Highlands for this habitat type, but also includes the best outliers on the Northern Isles and in southern Britain. Some sites, especially those in the far north, have been selected because they have especially good development of geographically localised types. </P>\r\n<P>All sites selected show extensive transitions to a wide range of other habitats. Many sites hold important populations of uncommon plant or animal species.</P></FONT>",
     "Priority": false,
     "Total": 33,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "42100"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012957",
@@ -10284,6 +10713,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series reflects the UK’s special responsibilities for conserving montane willow scrub. The sites selected hold a high proportion of the largest known patches of scrub and include stands with the best-developed community structure and regeneration. They contain the largest known populations of the constituent willow species, in particular the sub-arctic species<I> Salix lapponum</I>, <I>S.&nbsp;myrsinites</I>, <I>S.&nbsp;arbuscula </I>and <I>S.&nbsp;lanata</I>. Site selection has also taken account of ecological and floristic variation over the geographical and altitudinal range of the habitat, and encompasses different rock types on which the habitat type occurs.</P>\r\n<P>The SAC series covers the main geographical range of the habitat in the Breadalbane Hills, eastern and central Highlands, together with outliers in the north-west Highlands. Most sites have representation of W20&nbsp;<I>Salix – Luzula </I>scrub, while Inchnadamph, Ben Alder and Ben Lawers (which has fragmentary <I>Salix – Luzula </I>scrub) support willow scrub types not fully described in the NVC. Fragmentary stands south of the Highlands were considered too small and lacking adequate habitat structure and function to be included as qualifying SAC features.</P></FONT>",
     "Priority": false,
     "Total": 15,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "23"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012897",
@@ -10480,6 +10920,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The only known site in the UK which conforms to the Annex&nbsp;I definition has been selected.</P></FONT>",
     "Priority": false,
     "Total": 1,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "20"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012804",
@@ -10508,6 +10959,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has taken account of the patchy geographical distribution of the habitat type and its wide range of ecological variation. Sites with the largest expanses of juniper have been favoured. Site selection has been strongly influenced by the variety of ecological situations in which juniper scrub is found, and the range of transitions to other habitat types. For example, the selected sites include examples on chalk in southern England, and both acidic and more base-rich variations of the northern scrub type; both long-established and more recent stand types have been selected. </P>\r\n<P>A significant part of the resource occurs in north-east Scotland, where a diverse range of stand types is found, and therefore six of the sites selected are from this area. </P></FONT>",
     "Priority": false,
     "Total": 17,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1300-7000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030082",
@@ -10728,6 +11190,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series includes examples of the three main situations where the habitat has developed, i.e. natural rock outcrops, river gravels, and mine spoil. Preference has been given to the selection of more natural types, particularly those which are important for the conservation of rare species, and all of the best examples of <B>Calaminarian grasslands</B> on near-natural substrates are included within the SAC series. </P>\r\n<P>A more selective approach has been taken for artificial stands of the habitat. Examples of mine workings and spoil heaps containing the best stands of OV37, and those with distinctive representation of specialist higher plant, bryophyte and/or lichen assemblages have been included. The selected sites represent the range of geographical and ecological conditions in which the habitat is found in the UK. </P></FONT>",
     "Priority": false,
     "Total": 20,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "less than 330"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012821",
@@ -10984,6 +11457,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the geographical and ecological range of all of the sub-types of this habitat. The sites selected hold the most extensive areas of this habitat and include the widest range of sub-types. They are generally those which have been least modified by human activities, and as a result they demonstrate the best structure and function of the vegetation communities. Many sites support diverse vegetation mosaics and transitions to other communities.</P>\r\n<P>Site selection has taken account of the UK’s responsibilities for conservation of this habitat type in the Atlantic Biogeographical Region. The sub-types dominated by woolly fringe-moss <I>Racomitrium lanuginosum</I>, which are the most widespread and abundant types in the UK, are particularly significant in international terms. The largest areas of <I>Carex – Racomitrium </I>moss-heath in the Scottish Highlands have therefore been included in the SAC series, together with important examples of southerly variants.</P></FONT>",
     "Priority": false,
     "Total": 29,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Paul Corbett (pers. comm.) 2000. Environmental Heritage Service; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "70000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012957",
@@ -11348,6 +11832,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has ensured that a high proportion of the <B>Alpine and subalpine calcareous grassland</B> resource is included in the SAC series. The sites selected are the largest and structurally and functionally most complete examples of the habitat type. Such sites have the greatest variety of sub-types, and the highest diversity of vegetation mosaics and transitions to other communities. The sites encompass the ecological variation and geographical range of the habitat type.</P>\r\n<P>Site selection has also aimed to represent all of the rarer species and the largest populations of the characteristic species associated with <B>Alpine and subalpine calcareous grassland</B>.</P></FONT>",
     "Priority": false,
     "Total": 15,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "680"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012897",
@@ -11544,6 +12039,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to ensure coverage of the wide ecological variation and geographical range of this habitat. For most of the main sub-types, the largest examples have been selected, although some smaller sites have been included where they represent certain additional variants of the habitat type or have the best conservation of structure and function. For several of the southern sub-types, e.g. CG4 <I>Brachypodium </I>grassland, important sites have been selected as examples of <B>important orchid sites</B>.</P>\r\n<P>A number of sites within the SAC series have well-developed transitions between grassland and heath or scrub (e.g. Craven Limestone Complex, Great Orme’s Head, Morecambe Bay Pavements, Peak District Dales).</P>\r\n<P>The selected sites support a large proportion of the total habitat resource remaining in the UK. They are among the best grasslands in the UK for functional integrity as ecological units (i.e. they are judged to be large enough and physically diverse enough to maintain their current biodiversity importance under favourable management). The selected sites are also among the richest grasslands for rare plant and animal species found in the UK, although this was not a primary consideration in site selection.</P></FONT>\n<FONT size=2>\n\n<P>Sites have been selected to represent calcareous grassland holding good populations one or more of the nationally rare or scarce orchid species listed above, and have taken into account the priority status of this habitat type. In most instances these sites also host a range of more widespread orchid species, such as fragrant orchid <I>Gymnadenia conopsea</I>, bee orchid <I>Ophrys apifera</I> and autumn lady’s-tresses <I>Spiranthes spiralis</I>. These orchid sites provide important additional representation within the SAC series of chalk grassland in southern England. In particular, the sites selected include high-quality examples of the following NVC types:</P>\n\n<UL>\n\n<LI>CG2&nbsp; <I>Festuca ovina – Avenula pratensis </I>grassland</LI>\n\n<LI>CG3&nbsp; <I>Bromus erectus</I> grassland</LI>\n\n<LI>CG4&nbsp; <I>Brachypodium pinnatum </I>grassland</LI>\n\n<LI>CG5&nbsp; <I>Bromus erectus – Brachypodium pinnatum </I>grassland.</LI></UL></FONT>",
     "Priority": false,
     "Total": 59,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "51300"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030078",
@@ -12268,6 +12774,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series takes account of the UK’s special responsibility for this priority habitat type. The sites selected contain the most extensive examples of the habitat and those with the best community structure and function. Selection has also encompassed the geographical range and ecological variation of this habitat type in the UK. The habitat type is best-developed in western Scotland, and the SAC series reflects this distribution.</P></FONT>",
     "Priority": true,
     "Total": 22,
+    "MapData": {
+      "MapSources": "Alistair Crowle (pers. comm.) 2007. Natural England; Barbara Jones (pers. comm.) 2007. Countryside Council for Wales; Dave Horsfield (pers. comm.) 2007. Scottish Natural Heritage; JNCC International Designations Database. Joint Nature Conservation Committee; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "4194"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012958",
@@ -12548,6 +13065,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the geographical range of <B><I>Molinia</I> meadows</B> in the UK, and also the main lines of ecological variation, for example, both northern and southern forms are represented. The SAC series includes the largest examples of the habitat type, in which structure and function are well-conserved. Many sites show transitions between <B><I>Molinia </I>meadows</B> and other Annex&nbsp;I habitats, and several sites also support the Annex&nbsp;II species <B>1065 marsh fritillary <I>Euphydryas aurinia</B></I>.</P></FONT>",
     "Priority": false,
     "Total": 33,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "3850"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030071",
@@ -12960,6 +13488,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The sites selected cover the geographical range and ecological variation of the habitat type and ensure protection of a high proportion of the total UK resource. The SAC series includes the most diverse examples and those with the best-developed vegetation structure and function, taking into account altitudinal range, floristic diversity and geographic variation. Larger sites with a range of rock types and a large number of ungrazed rock ledges have been favoured, as this ensures inclusion of the maximum extent of this very localised habitat type. Sites holding rich assemblages of rare species have also been selected preferentially. </P></FONT>",
     "Priority": false,
     "Total": 28,
+    "MapData": {
+      "MapSources": "Dave Horsfield (pers. comm) 2007. Scottish Natural Heritage; JNCC International Designations Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "350"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012958",
@@ -13312,6 +13851,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The sites selected are those that have the largest surviving areas of the habitat and show a high degree of conservation of structure and function associated with stable patterns of traditional low-intensity management. The SAC series encompasses the range of ecological variation shown by the habitat type, particularly those variations supporting important populations of rare and scarce meadow species, and also covers the geographical distribution of the habitat type in the UK.</P></FONT>",
     "Priority": false,
     "Total": 5,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012844",
@@ -13388,6 +13938,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Very few localities have been identified that support high-quality examples of this habitat type in terms of representativity, size, and structure and function. Clusters or more isolated representatives of the habitat type have been selected. No Scottish examples have been included, as they are all either very small units or do not fit well within the habitat definition.</P></FONT>",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "Data used to compile J.S. Rodwell, V. Morgan, R.G. Jefferson & D. Moss (2007) The European context of British Lowland Grasslands. JNCC Report No. 394. Joint Nature Conservation Committee; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1100"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014774",
@@ -13428,6 +13989,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Destruction of <B>Active raised bogs</B> in north-west Europe, combined with the relatively high proportion of the EU resource remaining in the UK, means that the UK has a special responsibility for the protection of sites supporting this priority habitat type. Consequently a high proportion of the total UK resource has been included in the SAC series.</P>\r\n<P>Representation of lowland raised bog within the UK SAC series is achieved by selecting <B>Active raised bogs</B> where examples exist, and supplementing them with <B>7120 Degraded raised bogs still capable of natural regeneration</B> where it is not possible to achieve sufficient representation by selecting <B>Active raised bogs</B> alone. Site selection has concentrated on the highest-quality examples of <B>Active raised bog</B> in terms of size and habitat structure and function, and has also sought to represent the geographical range of the habitat. </P>\r\n<P>Parts of many lowland raised bogs have been damaged through peat extraction, afforestation, drainage and other activities. Consequently most lowland raised bogs contain a mixture of <B>Active raised bog</B> and <B>Degraded raised bog</B>. Sites which have been affected by peat extraction and other land uses have been included in the <B>Active raised bog</B> SAC series where they:</P>\r\n<OL type=i>\r\n<LI>have retained a high or significant proportion of actively-growing primary bog surface, or</LI>\r\n<LI>have significant areas where the peatland is regenerating on secondary cut-over surfaces.</LI></OL>\r\n<P>The distribution of selected sites reflects the relative abundance of surviving raised bogs in certain parts of the UK, and in particular a concentration in the Central Belt of Scotland and either side of the Solway. In some cases changes in land use have resulted in fragmentation of formerly-continuous raised bog or wetland complexes. In these cases, and where sites are part of a geographical area united by its contemporary or former wetland characteristics, the fragments are cited as a single site.</P></FONT>",
     "Priority": true,
     "Total": 54,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "12941"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030075",
@@ -14092,6 +14664,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The importance of <B>Degraded raised bogs</B> in the SAC series is the habitat’s potential to be restored to <B>7110 Active raised bog</B>, and thus contribute to attaining favourable conservation status for raised bogs as a whole, and fulfil the UK’s responsibility in implementing the Habitats Directive. The series of <B>degraded raised bog</B> sites has therefore been selected to complement the list of <B>Active raised bogs</B>. Sites have been selected that are considered to be sufficiently large and valuable in terms of their potential for natural regeneration, and to improve geographical coverage of raised bog within the site series. They have also been chosen to augment <B>Active raised bog</B> examples in areas where lowland bog is or has been particularly frequent.</P>\r\n<P>The prospects of a site for restoration have been carefully assessed, as an important aspect of quality to be considered alongside the need to select an adequate proportion of the overall UK lowland raised bog resource and to achieve appropriate geographical representation. Prospects for site restoration have been assessed on a case by case basis, taking into account factors such as the current vegetation cover, disruption to the bog’s hydrological integrity, local climatic conditions, and the surrounding land use. Sites have not been selected if they are not judged capable of the required degree of restoration within 30 years, even where they would fill significant geographical gaps in the SAC series.</P>\r\n<P>The </FONT><A href=&quot;http://europa.eu.int/comm/environment/nature/hab-en.htm&quot;><I>Interpretation manual of European habitats</I></A><FONT size=2> (European Commission DG&nbsp;Environment 1999) notes that ‘sites unlikely to qualify as SACs are those that consist largely of bare peat, that are dominated by agricultural grasses or other crops, or where components of bog vegetation have been eradicated by closed canopy woodlands’. In considering such areas for SAC selection, judgements have been made about the ease of restorability if appropriate management was introduced now, or at a later date. As a result, some sites composed substantially of bare peat and some afforested sites have been selected. The large resource of former peatland now under agriculture (archaic sites) was not considered in site selection as such land is not likely to satisfy the restorability requirements.</P>\r\n<P>Representation of <B>Degraded raised bogs</B> within the UK SAC network is particularly high in England. This reflects the fact that a greater proportion of the English raised bog resource has been affected by human activities than in other parts of the UK.</P></FONT>",
     "Priority": false,
     "Total": 37,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "24200"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0019757",
@@ -14552,6 +15135,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The UK has a special responsibility for protection of this priority habitat type. Sites have been selected to ensure full coverage of geographic range and ecological variation. The largest sites with the most extensive areas of active <B>blanket bogs</B> have been favoured. The large number of sites selected (covering a total area of over 350,000&nbsp;ha) reflects the European importance of the UK blanket bog resource. Blanket bogs are extensively developed in northern and western Britain but large areas have been highly modified (e.g. by agriculture or afforestation) and are not considered to be of European importance. Beyond the site network the conservation of blanket bogs is being promoted through the UK </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=21&quot;>Biodiversity Action Plan</A><FONT size=2>, </FONT><A href=&quot;http://www.defra.gov.uk/erdp/default.htm&quot;>agri-environment schemes</A><FONT size=2>, and other wider countryside measures. </P>\r\n<P>All SACs on which <B>blanket bog</B> is a qualifying Annex&nbsp;I feature are considered to support areas of active bog (which is treated as a priority habitat type). Some sites may additionally contain areas of non-active <B>blanket bog</B> (which are not included in the priority type), but these are seen as functional components of the system as a whole.</P></FONT>",
     "Priority": true,
     "Total": 77,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; Peatland Survey. 1988. Environmental Heritage Service & Queens University Belfast; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "2195200"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030218",
@@ -15492,6 +16086,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has placed emphasis on covering the range and variability of physiography and mire chemistry, and the site series includes examples from a range of different hydrological and geomorphological situations. Extensive examples have been favoured as these generally have the best conservation of structure and function, particularly of hydrological features. The selected sites span the wide geographic range of the habitat and include both upland and lowland examples. Particular NVC categories are not strongly or exclusively associated with a given mire type, and most selected sites support a range of vegetation communities.</P></FONT>",
     "Priority": false,
     "Total": 41,
+    "MapData": {
+      "MapSources": "Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Peatland Survey. 1988. Environmental Heritage Service & Queens University Belfast; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">2907"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030077",
@@ -16000,6 +16605,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series includes the small number of sites supporting extensive vegetation mosaics in which this habitat type can be found. The sites selected reflect the discontinuous distribution of the habitat, and include examples from lowland valley mires and wet heath in the south and east, and from blanket bogs in the north and west. </P>\r\n<P>Small fragmentary stands occur in a range of disturbed contexts, often covering less than 10&nbsp;m<SUP>2</SUP>, and lacking the more notable species such as bog orchid <I>Hammarbya paludosa </I>and great sundew <I>Drosera anglica</I>; these have not been considered for site selection, on account of their poor quality. </P></FONT>",
     "Priority": false,
     "Total": 32,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">1374"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013602",
@@ -16400,6 +17016,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection for this priority habitat type takes account of the fact that <B>calcareous fens</B> are rare in the UK. The sites selected include a very high proportion of the total UK resource of the habitat type, including the largest surviving examples.</P>\r\n<P>Site selection has favoured those sites where <I>Cladium </I>stands are most extensive and which show the widest range of habitat conditions in which species-rich <I>Cladium </I>vegetation occurs (see above). Selection has also taken account of the variation in hydrological situations, from flood plain mires and isolated spring-fed systems through to valley fens, and the geographical range of the Annex&nbsp;I type in the UK. Small, isolated, species-poor habitat fragments where <I>Cladium </I>is found, for example drainage ditches in grassland sites and in heathlands (where stands are more extensive than at grassland sites, but are more species-poor) have not been selected.</P></FONT>",
     "Priority": true,
     "Total": 13,
+    "MapData": {
+      "MapSources": "FEN/Bog base 6 updated distribution data. Natural England; JNCC International Designations Database. Joint Nature Conservation Committee; Peter Jones (pers. comm.) 2007. Countryside Council for Wales",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -16572,6 +17199,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series reflects the distribution of <B>petrifying springs</B> in the UK, with a concentration of sites on the Carboniferous limestones of northern England and on base-rich rocks in Scotland, where a high proportion of the habitat is found. Site selection has taken account of the habitat’s priority status, and the site series encompasses a high proportion of the total UK resource.</P>\r\n<P>Sites have been selected to encompass the geographical distribution and ecological variation of the habitat type (including the range of ecological contexts in which it is found). Many of the sites selected contain a rich flora, and include a wide range of rare and local calciphile species. </P></FONT>",
     "Priority": true,
     "Total": 17,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">112"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -16792,6 +17430,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series reflects the UK’s special responsibility for protection of this habitat type, and the limited extent of surviving <B>Alkaline fens</B>. Site selection has taken account of geographical range and ecological, geomorphological and altitudinal variation. Site selection has favoured sites where the component NVC types are well represented. The SAC series encompasses the larger sites, where the hydrology tends to be least-modified by human activity and which show the most intact structure and function.</P></FONT>",
     "Priority": false,
     "Total": 49,
+    "MapData": {
+      "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee; Peatland Survey. 1988. Environmental Heritage Service & Queens University Belfast; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">1632"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -17396,6 +18045,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has covered the range of ecological and geographical variation of the habitat type. The largest and most diverse examples, and those with best-developed structure and function, have been selected. Large upland sites are most likely to contain a variety of different flush types and include the most extensive populations of the commoner species. Preference has also been given to localities holding strong populations of rare arctic-alpine species. Most sites are situated in the Scottish Highlands but two southern outliers have also been included. </P></FONT>",
     "Priority": true,
     "Total": 15,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "340"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012957",
@@ -17592,6 +18252,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the range of geographical, geological and ecological variation of <B>siliceous scree</B> in the UK. Generally the largest and most diverse examples with the best-developed structure have been selected. Low-altitude screes (including oceanic forms) and high-altitude, snow-influenced screes are represented. Forms of scree dominated by bryophytes and lichens have also been taken into account in site selection.</P></FONT>",
     "Priority": false,
     "Total": 29,
+    "MapData": {
+      "MapSources": "Dave Horsfield (pers. comm.) 2007. Scottish Natural Heritage; JNCC International Designations Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "66350"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012957",
@@ -17956,6 +18627,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the importance of the habitat type as a refugium for rare plant species, and to cover ecological, altitudinal and geological variation and geographical range. Sites with the largest and most diverse examples of scree vegetation have been selected. Large upland sites generally contain more varied and extensive examples of the habitat type, and this is reflected in the SAC series. Sites that host important populations of arctic-alpine species have been favoured in site selection.</P></FONT>",
     "Priority": false,
     "Total": 11,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "673"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012864",
@@ -18104,6 +18786,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The selected sites encompass the full range of geological and altitudinal variation of the habitat type, its geographical range, and its floristic diversity. Large upland sites which, in general, contain more varied and extensive examples of this habitat type, comprise the majority of the selected sites. Sites that host important populations of arctic-alpine species have been particularly favoured in site selection.</P></FONT>",
     "Priority": false,
     "Total": 35,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; New atlas of the British and Irish flora. Oxford University Press, Oxford.",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "620"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030030",
@@ -18540,6 +19233,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the range of floristic assemblages characteristic of acidic rock crevices in the UK. Preference has been given to the largest areas with the most diverse populations of characteristic montane plants. Sites that host important populations of arctic-alpine or western species have been favoured in site selection.</P></FONT>",
     "Priority": false,
     "Total": 33,
+    "MapData": {
+      "MapSources": "Dave Horsfield (pers. comm.) 2007. Scottish Natural Heritage; JNCC International Designations Database. Joint Nature Conservation Committee; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "39850"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030030",
@@ -18952,6 +19656,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to reflect the UK’s special responsibility for this priority habitat type. Larger sites have been favoured because they usually contain the widest range of plant communities. Selection takes account of the distribution of the habitat, and geographic variation. Altitudinal range is also significant, as there are significant differences between pavements close to sea level and those in montane areas. Another factor in ecological variation is the level of grazing, and the SAC series contains a range of land use types, from woodland to sheep pastures. All of the selected sites have a well-developed clint and grike structure, with associated vegetation patterning. Several sites provide representation of rare plants.</P></FONT>",
     "Priority": true,
     "Total": 11,
+    "MapData": {
+      "MapSources": "Dave Horsfield (pers. comm.) 2007. Scottish Natural Heritage; Gloucestershire Wildlife Trust Handbook. Gloucestershire Wildlife Trust ; Inter-agency Coastal Specialist Working Group. 1999; JNCC International Designations Database. Joint Nature Conservation Committee; Phase I Habitat Survey of Wales. 1979 - 1997. Countryside Council for Wales; SNH Uplands Database, (18-12-98) 10KMVEG.XLS. Scottish Natural Heritage; Ward, SD & Evans, DF. 1976. Conservation assessment of British limestone pavements based on floristic criteria. Biological conservation, 9, 217-233",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "2818"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -19100,6 +19815,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Because of the impoverished nature of the cavernicolous fauna in the UK, <B>Caves not open to the public</B> is not a primary reason for the selection of any SACs. However, the habitat occurs at a number of sites selected for other features, typically Annex&nbsp;II bat species, and where appropriate it has been treated as a qualifying interest feature.</P>\r\n<P>Only natural caves have been selected. Sites that are entirely artificial in origin, e.g. mines and tunnels, are excluded from the Annex&nbsp;I definition, even though in some cases the species present may be similar to those of more natural sites.</P></FONT>",
     "Priority": false,
     "Total": 6,
+    "MapData": {
+      "MapSources": "Caves data. 2007. Environmental Heritage Service; Geological Conservation Review Database. Joint Nature Conservation Committee; JNCC International Designations Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014787",
@@ -19188,6 +19914,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the range of structural, geological and ecological variation of <B>sea caves</B> and to cover their geographic range in the UK. Selection was confined to well-developed cave systems, with extensive areas of vertical and overhanging rock, and those that extend deeply into the rock, which are likely to support a wider range and higher diversity of plants and animals. Sites in which there are well-developed gradations in community composition from the cave entrance to the inner parts of a cave have been favoured. Because of the European importance of chalk caves, emphasis has been given to this sub-type within the SAC series.</P></FONT>",
     "Priority": false,
     "Total": 17,
+    "MapData": {
+      "MapSources": "Marine Recorder extract",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0017072",
@@ -19408,6 +20145,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to cover the native geographical range of the habitat type in the UK, within which preference has been given to large sites or those particularly rich in lichens or dead-wood invertebrates, which are indicators of the conservation of habitat structure and function. ‘Old growth’ characteristics (which often include epiphytic richness) have been stressed in site selection, because of the importance of dead-wood habitats in the overall structure and function of woodland systems and the scarcity of very old trees in Europe generally. </P></FONT>",
     "Priority": false,
     "Total": 7,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "7250"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030034",
@@ -19508,6 +20256,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to include extensive stands across the geographical range of the habitat. The SAC series encompasses the main lines of ecological variation within the habitat in the UK, including variations in the underlying geology (chalk and limestone) and in its occurrence with other woodland types. Sites where the stands of beech <I>Fagus sylvatica </I>occur in combination with other woodland types, grassland and scrub have been selected to increase the variety of structure and to allow for the dynamics of beech woodland. Because the dominance of beech at any one time may be greatly affected by disturbance and past management, regeneration is frequently dominated by ash <I>Fraxinus excelsior</I> or oak <I>Quercus</I> spp. rather than beech. Sites that have rare or specialised ground flora were also priorities for selection. </P></FONT>",
     "Priority": false,
     "Total": 11,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "12250"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030082",
@@ -19656,6 +20415,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The only two known sites in the UK that are considered to be good examples of this form of woodland, with close affinities to central European examples, have been selected.</P></FONT>",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013697",
@@ -19696,6 +20466,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The sites selected for <B><I>Tilio-Acerion</B></I> include the most extensive examples with good conservation of habitat structure and function, and cover the main elements of the geographical range and ecological variation of the habitat in the UK. The number of sites selected reflects the scarcity and priority status of the habitat type. Transitions to scrub and grassland, and the presence of a mosaic of other woodland habitats, are important features of several SACs, and many sites hold populations of scarce or declining species.</P>\r\n<P>This habitat occurs in small scattered stands in many other woods in the UK, and this is reflected in the number of sites where it is a qualifying feature, but not a primary reason for site selection.</P></FONT>",
     "Priority": true,
     "Total": 48,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "11800"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030078",
@@ -20288,6 +21069,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites selected encompass the limited range of geographical and ecological variation shown by this habitat type in the UK. Selection centred on large ancient woodlands, particularly those with veteran trees important for their lichen, fungi or invertebrate assemblages. Secondary woodlands were not selected, as the conservation priority is usually to restore former heathland where trees have encroached.</P>\r\n<P>Two sites, the New Forest and Windsor Forest and Great Park, were identified as of potential international importance for their saproxylic invertebrate fauna by the </FONT><A href=&quot;http://www.nature.coe.int/english/cadres/acc_en.htm&quot;>Council of Europe</A><FONT size=2> (Speight 1989).</P></FONT>",
     "Priority": false,
     "Total": 7,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "4500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012740",
@@ -20388,6 +21180,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to reflect the geographical range and ecological variation in the type, giving particular weight to the exceptional bryophyte communities that reach their finest development in western Scotland. Selection has also taken account of the fact that the UK has particular responsibilities for conserving this habitat type, as it holds a high proportion of the total EU resource. A large number of sites have therefore been proposed, and the SAC series contains a large proportion of the high-quality examples of the habitat. </P>\r\n<P>Much of the extant oakwood resource in the UK is fragmentary, and has been substantially modified by human activity. Therefore the largest remnant examples of qualifying habitat have been favoured when identifying SACs. Adjacent woodland blocks have often been grouped into clusters in the process of site selection to take account of the formerly more extensive and more continuous cover of this habitat type. Many of the unselected woodlands are small, fragmentary, or floristically impoverished, and are not considered to be of European importance. Outside the SAC series, protection of Atlantic oak woods is provided by the SSSI mechanism, the UK </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=1&quot;>Biodiversity Action Plan</A><FONT size=2> and other wider countryside measures.</P>\r\n<P>The fragmentary nature of the habitat is reflected in the relatively large number of sites where <B>old sessile oak woods</B> are a qualifying feature, but not a primary reason for site selection.</P></FONT>",
     "Priority": false,
     "Total": 71,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "91900"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030231",
@@ -21256,6 +22059,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has ensured that there is coverage of the full genetic and ecological variation of <B>Caledonian forest</B><I> </I>within its geographical range. The sites selected include the largest in the UK, and represent over 85% of the total area of ancient <B>Caledonian forest</B>. The overall resource of the habitat includes a substantial area of recent regeneration from native seed, but which in many cases does not yet represent established woodland and so has not been a priority for selection. </P>\r\n<P>Site selection has concentrated on the largest and most diverse examples of the remaining <B>Caledonian forest</B> resource that have good internal woodland structure and the capacity for regeneration. Where adjacent or neighbouring woodlands appear to be fragments of a formerly more extensive woodland, they have been linked together as complexes for the purposes of site selection. The essential feature of these complexes is that the individual woodlands, both large and small, form a coherent ecological unit by reducing isolation and providing the opportunity to restore the connections between wooded habitats. Selection has excluded very small, remnant woodlands with poor structure that are isolated from other woodlands and/or where there appear to be poor prospects for regeneration.</P></FONT>",
     "Priority": true,
     "Total": 12,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "25440"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012762",
@@ -21416,6 +22230,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Selection of SACs for <B>Bog woodland</B> in the UK has been constrained by difficulties in interpreting the habitat definition and lack of survey data. The selected sites include the largest known examples of the habitat, and those showing good structure and function. They represent the ecological variation and geographical range of the habitat in the UK, and include pine-dominated forms in Scotland and birch-dominated forms in southern Britain. The key elements in evaluating habitat function have been (a) the relative ecological stability of the open woodland-bog species combination, and (b) the characteristic patterns of growth and survival of the tree species on the bog surface. </P></FONT>",
     "Priority": true,
     "Total": 17,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1200"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030030",
@@ -21636,6 +22461,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to take account of the wide ecological variability of the habitat type, the different topographic situations in which it occurs, and differing substrates, ranging from organic to shingle-dominated. The SAC series includes the few remnant extensive stands of alluvial alder woodland in the UK. Smaller examples have been selected to ensure adequate geographical representation. </P>\r\n<P>The frequent occurrence of the habitat in association with other Annex&nbsp;I woodland types or with Annex&nbsp;I mire habitats is reflected in the number of sites where it is a qualifying feature, but not a primary reason for site selection. </P></FONT>",
     "Priority": true,
     "Total": 36,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee; Richard Weyl (pers. comm.) 1995. Environmental Heritage Service",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "6500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030074",
@@ -22084,6 +22920,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The largest yew woodlands in Britain have been included within the SAC series. Sites have also been selected to encompass the geographic range and ecological variation of the habitat type, e.g. to represent examples on both chalk and limestone substrates, and in both southern and northern England. The selected sites include extensive pure yew <I>Taxus baccata </I>stands and also yew<I> </I>groves occurring as distinct communities within larger woodland blocks, so that the range of structural and functional relationships between yew and other woodland types is represented.</P></FONT>",
     "Priority": true,
     "Total": 13,
+    "MapData": {
+      "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee; NVC Woodland Community Access Database. Joint Nature Conservation Committee",
+      "MapExplanation": null,
+      "Units": "hectares",
+      "England": "present",
+      "Scotland": "only present as an introduced habitat",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1325"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030103",

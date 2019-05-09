@@ -12,6 +12,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the range of ecological situations in which <B><I>V.&nbsp;geyeri</B></I> is found in the UK (including both upland flushes and lowland fens), and to take account of its geographical distribution. The selected sites have ecological conditions that are considered to be particularly favourable for the species’ survival. </P></FONT>",
     "Priority": false,
     "Total": 7,
+    "MapData": {
+      "MapSources": " (in press).  Whorl snails of genus Vertigo in Norfolk.  Transactions of the Norfolk and Norwich Naturalist’s Society. 40(1).; Conchological Society of Great Britain & Ireland Mollusc (non-marine) data for Great Britain and Ireland (1670-1999); Countryside Council for Wales A. Fowles (pers. comm.), CCW  ",
+      "MapExplanation": null,
+      "Units": "Occupied 1-km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "59"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -112,6 +123,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the diverse range of habitat types in which <B><I>V.&nbsp;angustior</B></I> is found (saltmarsh, base-rich fen, and limestone pavement), and to represent its geographical range. The selected sites all have strong populations of the species and ecological conditions considered to be particularly favourable for its survival. </P>\r\n<P>The known site in south-west Scotland was not selected as it is threatened by natural erosion; a second Scottish site on the north-east coast was discovered during 2000 (Kerney 2002).</P></FONT>",
     "Priority": false,
     "Total": 5,
+    "MapData": {
+      "MapSources": "Conchological Society of Great Britain & Ireland Mollusc (non-marine) data for Great Britain and Ireland (1670-1999); Countryside Council for Wales A. Fowles (pers. comm.), CCW  ; Natural England Invertebrate Site Register - England (1738-2005)",
+      "MapExplanation": null,
+      "Units": "Occupied 1-km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "54"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0020019",
@@ -188,6 +210,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The three sites selected for this species contain a high proportion of the total known UK population, and represent the two regions of Britain in which it is found (northern England and central Scotland).</P></FONT>",
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": " Y.N.U. Excursion Meeting Report. Conchology. Malham VC64, 22-24 August 2005 Naturalist  13:146.; Countryside Council for Wales A. Fowles (pers. comm.), CCW  ",
+      "MapExplanation": null,
+      "Units": "Occupied 1km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "23"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012957",
@@ -240,6 +273,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to represent the strongholds of <B><I>Vertigo&nbsp;moulinsiana</B></I> in southern England and East Anglia, with additional outliers in Kent and north Wales. The selected sites represent the largest populations and also a range of ecological conditions, incorporating variation in river catchment type as well as representation of the species’ occurrence in wetlands. It is abundant in some patches at certain localities, and clusters of these patches of greatest abundance have been included in site selection.</P></FONT>",
     "Priority": false,
     "Total": 9,
+    "MapData": {
+      "MapSources": "Conchological Society of Great Britain & Ireland Mollusc (non-marine) data for Great Britain and Ireland (1670-1999); Conchological Society of Great Britain Ireland Habitats of Vertigo moulinsiana (Gastropoda: Vertiginidae) in Cornwall. Journal of Conchology 38(1): 79-85; Conchological Society of Great Britain Ireland Vertigo moulinsiana in Kent. Journal of Conchology, 37, 81-82; Natural England Invertebrate Site Register - England (1738-2005)",
+      "MapExplanation": null,
+      "Units": "Occupied 10 km squares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "68"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030187",
@@ -364,6 +408,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The selection of sites for freshwater pearl mussel has been influenced by the importance of the UK for conserving this species in Europe. Site selection has been based on an analysis of past records and more recent survey of potentially important rivers. Most of the selected sites hold large populations which contain juvenile mussels (indicating the presence of functional populations). Consideration has been given to the geographical distribution of the species; the predominance of Scottish rivers reflects the presence of more large viable populations here than in other parts of the UK. </P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures, including implementation of the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=437&quot;>Species Action Plan</A><FONT size=2>, are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 26,
+    "MapData": {
+      "MapSources": "Not applicable",
+      "MapExplanation": "No map has been produced for this species because of the range is thought to have contracted considerably since the latest available data on distribution.",
+      "Units": "viable populations",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "66"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030081",
@@ -692,6 +747,17 @@
     "Rationale": "<P><EM><STRONG>Anisus vorticulus</STRONG></EM> was added to Annex II in 2003, and no sites in the UK have yet been selected for this species. </P>",
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": " A survey to determine the present status of Anisus vorticulus (Gastropoda: Planorbiidae) at sites in Suffolk and Norfolk.  Unpublished report for the Environment Agency.; Conchological Society of Great Britain & Ireland Mollusc (non-marine) data for Great Britain and Ireland (1670-1999); Natural England A. Watson (pers. comm.), NE; Natural England Invertebrate Site Register - England (1738-2005)",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "7"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030366",
@@ -744,6 +810,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites for <B><I>Coenagrion&nbsp;mercuriale</B></I> have been selected to include the largest known populations in the main part of the species’ range in south Wales and south-west England, where the prospects for long-term conservation of habitat structure and function are good. Smaller populations occur elsewhere, and the larger of these sites have been selected to provide fuller geographical coverage.</P>\r\n<P>Most of the selected sites support <I>Coenagrion</I> populations on wet heaths, and are also selected as SACs for <B>4010 Northern Atlantic wet heaths with <I>Erica tetralix</B></I>.<B> </B>Populations associated with chalk rivers are also included within the site series.</P></FONT>",
     "Priority": false,
     "Total": 10,
+    "MapData": {
+      "MapSources": "British Dragonfly Society C. Daguet (pers. comm), BDS ; British Dragonfly Society Dragonfly Recording Network; Liverpool John Moore University D. Thompson (pers. comm.); Natural England Invertebrate Site Register - England (1738-2005)",
+      "MapExplanation": null,
+      "Units": "Occupied 1km squares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "82"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012884",
@@ -880,6 +957,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has been influenced by the importance of UK marsh fritillary populations in a European context. Sites have been selected to take account of the diversity of ecological situations in which the species occurs, including wet and dry grassland, heathland, fens and sand dunes. The selected sites represent the broad geographical distribution of marsh fritillary in the UK, and include Scottish sites which hold distinctive forms of the species. The dependency of closely-related metapopulations has been taken into account, and so the SAC series includes the larger and more complex sites where the species occurs.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK, including implementation of the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=300&quot;>Species Action Plan</A><FONT size=2>.</P></FONT>",
     "Priority": false,
     "Total": 33,
+    "MapData": {
+      "MapSources": "Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; Butterfly Conservation Butterfly distributions for GB & Ireland: Butterfly Conservation and BRC (1690-1994); Butterfly Conservation (1995-1999); Butterfly Conservation and the Dublin Naturalists' Field Club (1995-1999); Countryside Council for Wales UK Biodiversity Action Plan: Invertebrate data for Ceredigion (1878-2001); Devon Biodiversity Records Centre Devon incidental species records 1950-2002; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Environmental Heritage Service  B. Hamill (pers. comm), EHS; Highland Biological Recording Group HBRG Lepidoptera dataset (1827-2006); National Trust  National Trust Selected BAP Species; Tullie House Museum, Carlisle Butterfly records held by Tullie House Museum, Carlisle (1800-2004); Wiltshire and Swindon Biological Records Centre Wiltshire BAP Priority Species Distribution Records",
+      "MapExplanation": null,
+      "Units": "Occupied 1-km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "315"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030071",
@@ -1292,6 +1380,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The three sites known to support this species in the UK have all been selected</P></FONT>",
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": "Natural England Invertebrate Site Register",
+      "MapExplanation": null,
+      "Units": "Populations",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "3"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012587",
@@ -1344,6 +1443,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to provide representation from the main population centres in southern England. The selected sites all support apparently viable populations and have features that make them particularly favourable for the long-term survival and reproduction of this species. The sites selected include the larger areas of semi-natural forested habitat known to hold viable populations of the species. In much of its range in southern England it is largely found in suburban domestic gardens rather than natural woodland, which does not make SAC designation practicable. Wider countryside measures, including </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=425&quot;>Biodiversity Action Plans</A><FONT size=2> and forestry practice guidance, and locally and nationally targeted publicity to enhance the species’ profile with gardeners additionally contribute to conservation of this species.</P></FONT>",
     "Priority": false,
     "Total": 5,
+    "MapData": {
+      "MapSources": "Independant M. Smith (pers. comm.), Independent Consultant; Natural England Invertebrate Site Register - England (1738-2005)",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "228"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012724",
@@ -1420,6 +1530,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to provide representation over a wide geographical area. The sites selected are within parts of the country where the keeping of live non-native crayfish has (since 1996) been prohibited except under licence, and where there are high-quality aquatic habitats and recent (post-1990) records of healthy, recruiting <B><I>Austropotamobius pallipes</B></I> populations free of crayfish plague. A number of these safe havens in the north of England have been selected, as they are away from the main outbreaks of crayfish plague. The sites selected cover a variety of habitats, including rivers, natural lakes, and some ‘refuges’ of artificial origin (but within the natural geographical range of the species) that contain large isolated populations with a good chance of remaining free of crayfish plague. The relatively low proportion of the total UK population contained within the SAC series reflects the fact that many recorded populations are in areas vulnerable to crayfish plague.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK. These include actions taken under the </FONT><A href=&quot;http://www.ukbap.org.uk/ukplans.aspx?ID=124&quot;>Species Action Plan</A><FONT size=2>.</P></FONT>",
     "Priority": false,
     "Total": 10,
+    "MapData": {
+      "MapSources": "Biological Records Centre Crayfish dataset (1650-2003); Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; Devon Biodiversity Records Centre Devon incidental species records 1950-2002; Environmental Heritage Service  EHS Species Datasets",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "only present as an introduced species",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "166"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014776",
@@ -1556,6 +1677,17 @@
     "Rationale": "<P><EM><STRONG>Gortyna borelii lunata</STRONG></EM> was added to Annex II in 2003. </P>",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "Joint Nature Conservation Committee Scarce Macro Moth Review Data (1700-2003)",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "6"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030377",
@@ -1596,6 +1728,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites with reliable records of <B>sea lamprey <I>Petromyzon marinus</B></I>, and which contain the necessary habitat requirements for spawning and survival of juveniles, have been selected. The SAC series encompasses the geographical range of the species and includes a range of high-quality river types in which it occurs. Rivers with significant barriers to migration have been excluded. Marine sites that are considered important migration routes or feeding grounds for this species have also been selected, usually where they are adjacent to a freshwater site. Identification of suitable sites in some parts of the UK has been hampered by the absence of comparative population data.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 23,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Centre for Environmental Data and Recording (Northern Ireland) JNCC Report 312",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012670",
@@ -1888,6 +2031,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites that hold healthy populations of <B>brook lamprey <I>Lampetra planeri</B></I>, with clean water and suitable areas of gravels, silt or sand required for spawning have been selected. The SAC series provides representation over the geographical range of the species and includes a range of high-quality river types in which it occurs. Sites selected are generally extensive river systems, including important tributaries, which provide conservation of the range of habitat features required by the species. Identification of suitable sites in some parts of the UK has been hampered by the absence of comparative population data, and by identification difficulties.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 18,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Centre for Environmental Data and Recording (Northern Ireland) JNCC Report 312",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012670",
@@ -2120,6 +2274,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites that hold healthy populations of <B>river lamprey <I>Lampetra&nbsp;fluviatilis</B></I>, with clear water and suitable areas of gravels, silt or sand for spawning, have been selected. The SAC series covers the geographical range of the species and includes a range of high-quality river types in which it occurs. The selected sites are generally extensive river systems, including important tributaries, which provide conservation of the range of habitat features required by the species. Marine sites that are considered important migration routes or feeding grounds for this species have also been selected, usually where they abut a freshwater site. Identification of suitable sites in some parts of the UK has been hampered by the absence of comparative population data, and by difficulties in identifying juvenile lampreys. </P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 21,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Centre for Environmental Data and Recording (Northern Ireland) JNCC Report 312; Joint Nature Conservation Committee Marine Nature Conservation Review (MNCR) and associated benthic marine data  (1954-2000)",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012670",
@@ -2388,6 +2553,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites in the UK have been selected where <B>allis shad <I>Alosa alosa</B></I> has been reliably recorded as present, where there is previous evidence of breeding, and where there still appear to be favourable conditions for breeding. However, because there is only one recently-confirmed spawning population in the UK, this species is not currently a primary reason for site selection at any UK SAC. </P>\r\n<P>Marine sites that are considered important migration routes or feeding grounds for this species have also been included within the SAC series, usually where they are adjacent to a freshwater site.</P></FONT>",
     "Priority": false,
     "Total": 6,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Marine Biological Association Marine Life Survey Data (collected by volunteers) collated by <i>MarLIN</i> (1970-2006)",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present?",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013010",
@@ -2476,6 +2652,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Three river systems have been selected in the Bristol Channel/ Severn Estuary area, where evidence indicates there are extensive areas suitable for spawning, with good prospects for conservation of habitat structure and function. Marine sites that are considered important migration routes or feeding grounds have also been selected. </P></FONT>",
     "Priority": false,
     "Total": 6,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Joint Nature Conservation Committee Marine Nature Conservation Review (MNCR) and associated benthic marine data  (1954-2000); Marine Biological Association Marine Life Survey Data (collected by volunteers) collated by <i>MarLIN</i> (1970-2006)",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present?",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "100000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013010",
@@ -2564,6 +2751,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The UK salmon population is important in a European context, and this has influenced the selection of SACs. Site selection has focused on the identification of rivers holding large salmon populations across the geographical range of the species in the UK. Site selection has also taken into account the considerable variation in the ecological and hydrological characteristics of salmon rivers in the UK, and in the life-cycle strategies adopted by the salmon within them. Spawning and nursery requirements are well-represented in all the selected sites, and the river systems selected include the main tributaries where significant redds occur.</P>\r\n<P>It should be noted that salmon is an Annex&nbsp;II species only in freshwaters throughout the EU, and therefore marine and estuarine sites are excluded from selection. </P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK. The UK has extensive legislation intended to protect the species</P></FONT>",
     "Priority": false,
     "Total": 35,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Centre for Environmental Data and Recording (Northern Ireland) JNCC Report 312; Countryside Council for Wales Pembrokeshire Marine Species Atlas 1899-1998; Highland Biological Recording Group HBRG Fish and Herptiles dataset (1850-2006); Joint Nature Conservation Committee Marine Nature Conservation Review (MNCR) and associated benthic marine data  (1954-2000)",
+      "MapExplanation": null,
+      "Units": "Spawning adults",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "556000-556500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030075",
@@ -3000,6 +3198,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Five sites within the core area of <B>spined loach <I>Cobitis taenia</B></I> distribution in the UK have been selected. These sites include examples of rivers and artificial drainage systems where good population densities have been recorded.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 5,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003)",
+      "MapExplanation": null,
+      "Units": null,
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030085",
@@ -3076,6 +3285,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to encompass the natural geographical range of the species and to represent the range of ecological situations in which it occurs, e.g. both upland and lowland rivers, and both acidic and base-rich situations. As with other fish species, site selection has been constrained by the lack of comparative population data from many localities. All available information has been scrutinised carefully to identify large populations occurring in suitable high-quality habitat.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 18,
+    "MapData": {
+      "MapSources": "Biological Records Centre Database for the Atlas of Freshwater Fishes (1637-2003); Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Scottish Environment Protection Agency River macroinvertebrate and diatom data (1990-2004) from sites classified in 2004",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "only present as an introduced species",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "997"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012670",
@@ -3308,6 +3528,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected where there is evidence of a relatively large and robust population of <B>great crested newts <I>Triturus&nbsp;cristatus</B></I> based on reliable recent survey data. Sites which either lack reliable population estimates or support small populations have not been selected. The SAC series represents the wide range of habitat types used by the species, and includes representative sites in semi-natural and more anthropogenic settings, as well as taking into account different vegetation and geology types. The selected sites include ponds in pastoral and arable farmland, woodland, grassland, coastal habitats, and disused mineral-extraction sites. Geographical representation of different areas within the species’ range has also been taken into account.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK, including those identified under the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=619&quot;>UK Biodiversity Action Plan</A><FONT size=2>, such as pond creation and management.</P></FONT>",
     "Priority": false,
     "Total": 32,
+    "MapData": {
+      "MapSources": "Biological Records Centre Reptiles and Amphibians Dataset (1650-2001); Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; Countryside Council for Wales L. Howe (pers. comm.) CCW ; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Herpertofauna Conservation Trust HCT Rare Species Database (1931-2006); Highland Biological Recording Group HBRG Fish and Herptiles dataset (1850-2006); Scottish Natural Heritage J. McKinnnell (pers. comm.) SNH ; Scottish Natural Heritage SNH Great Crested Newt Records (1996-2004); Wiltshire and Swindon Biological Records Centre Wiltshire BAP Priority Species Distribution Records",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "75000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030080",
@@ -3708,6 +3939,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to include large populations of <B>lesser horseshoe bat <I>Rhinolophus hipposideros</B></I>, covering the geographical range of the species. In order to maintain populations, both maternity and hibernation sites must be protected, and so sites have been selected, where possible, as composites of maternity and hibernation sites considered to belong to a single population or group of closely-associated populations.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures (e.g. those specified under the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=551&quot;>UK Biodiversity Action Plan</A><FONT size=2>) are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 13,
+    "MapData": {
+      "MapSources": "Bat Conservation Trust Bat colony survey data; Bat Conservation Trust Bat hibernation survey data; Bat Conservation Trust Distribution Atlas of Bats in Britain and Ireland (1980-1999): data spreadsheet; Biological Records Centre Mammals Database; Devon Biodiversity Records Centre Devon incidental species records 1950-2002; Natural England Batsites inventory for Britain",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "present?",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "18000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012584",
@@ -3880,6 +4122,17 @@
     "Rationale": "<FONT size=2>\r\n<P>SACs selected for <B>greater horseshoe bat <I>Rhinolophus ferrumequinum</B></I> include sites with the largest populations and the best representation of features required for survival (including overwintering) and reproduction. Sites have also been selected to cover the geographical range of the species. In order to maintain populations, both summer and winter roosts must be protected, so sites have been selected, where possible, as composites of maternity and hibernation sites belonging to a single population.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures (e.g. those specified under the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=550&quot;>UK Biodiversity Action Plan</A><FONT size=2>) are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 11,
+    "MapData": {
+      "MapSources": "Bat Conservation Trust Bat colony survey data; Bat Conservation Trust Bat hibernation survey data; Biological Records Centre Mammals Database; Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; Countryside Council for Wales J. Matthews (pers. comm.), CCW; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Natural England Batsites inventory for Britain; Wiltshire and Swindon Biological Records Centre Wiltshire BAP Priority Species Distribution Records",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">6600"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012584",
@@ -4028,6 +4281,17 @@
     "Rationale": "<FONT size=2>\r\n<P>There are few records to demonstrate the long-term viability of <B>barbastelle <I>Barbastella barbastellus</B></I> populations in the UK. In recent years a small number of maternity sites for the species have been discovered and these have all been selected. In addition, one hibernation site with a long history of records of small numbers of barbastelles has also been included as an example of this sort of habitat.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK. These include actions listed in the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=133&quot;>Species Action Plan</A><FONT size=2>.</P></FONT>",
     "Priority": false,
     "Total": 9,
+    "MapData": {
+      "MapSources": "Bat Conservation Trust Bat hibernation survey data; Bat Conservation Trust Distribution Atlas of Bats in Britain and Ireland (1980-1999): data spreadsheet; Biological Records Centre Mammals Database; Natural England Batsites inventory for Britain; Natural England T. Mitchell Jones, NE (pers. comm) ",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "5000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0016373",
@@ -4152,6 +4416,17 @@
     "Rationale": "<FONT size=2>\r\n<P>In recent years a small number of maternity sites for <B>Bechstein’s bats <I>Myotis bechsteinii</B></I> have been discovered, and these have all been selected. In addition, a hibernation site with a long history of records of small numbers of the species has also been included as an example of this sort of habitat.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK (see the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=465&quot;>Species Action Plan</A><FONT size=2>). </P></FONT>",
     "Priority": false,
     "Total": 9,
+    "MapData": {
+      "MapSources": "Bat Conservation Trust Bat hibernation survey data; Bat Conservation Trust Distribution Atlas of Bats in Britain and Ireland (1980-1999): data spreadsheet; Biological Records Centre Mammals Database; Natural England Batsites inventory for Britain; Natural England T. Mitchell Jones, NE  (pers. comm.) ",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1500"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012584",
@@ -4276,6 +4551,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The only two areas in UK waters that have been identified as having the physical and biological factors essential to the life and reproduction of a population of <B>bottlenose dolphins<I> Tursiops truncatus</B></I> are Cardigan Bay and the Moray Firth. Both have been selected as SACs. These sites hold the only two substantial semi-resident populations of the species in UK waters. While the individuals using the two sites may range further afield during certain times of the year, dolphins are present throughout the year and individuals have been seen over periods of several years. </P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK. Such measures are detailed in the </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=337&quot;>Species Action Plan</A><FONT size=2> for small dolphin species.</P></FONT>",
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": "REID, J.B., EVANS, P.G.H. & NORTHRIDGE, S.P. 2003. Atlas of cetacean distribution in\r\nnorth-west European waters. Joint Nature Conservation Committee, Peterborough.",
+      "MapExplanation": "The map is based on the longitude-latitude grid system used in the Cetacean Atlas. Note that some of these points have been distorted because the map presented here is projected using the British National Grid",
+      "Units": "individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "8000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012712",
@@ -4328,6 +4614,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Following discussions with experts, the European Commission DG Environment has outlined broad selection criteria for this species. JNCC and the country agencies are currently analysing distribution data for <B>harbour porpoise<I> Phocoena phocoena</B></I> in UK waters to determine whether any suitable sites for SAC designation can be found.</P></FONT>",
     "Priority": false,
     "Total": 7,
+    "MapData": {
+      "MapSources": "REID, J.B., EVANS, P.G.H. & NORTHRIDGE, S.P. 2003. Atlas of cetacean distribution in\r\nnorth-west European waters. Joint Nature Conservation Committee, Peterborough.",
+      "MapExplanation": "The map is based on the longitude-latitude grid system used in the Cetacean Atlas. Note that some of these points have been distorted because the map presented here is projected using the British National Grid",
+      "Units": "individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": "present",
+      "TotalUkPopulation": "328200"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030396",
@@ -4428,6 +4725,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The SAC series reflects the present discontinuous distribution of <B>otters <I>Lutra lutra</B></I> in the UK. Sites that are known to support high densities have been selected to represent the current strongholds of the population. The sites selected also cover the ecologically variable conditions in which the species is found across its range. As well as a known high density of otters, sites selected have good quality habitat features necessary for feeding and breeding. This is demonstrated by a known record of continuous occupation of the site, even, in England, during the period of population decline. Recent research has demonstrated that this approach has also ensured good coverage of the main lines of genetic variation in British otters.</P>\r\n<P>The otter population is widespread and individuals are wide-ranging, normally occurring at low densities, which is reflected in the relatively large number of sites where the species occurs as a qualifying feature, but is not a primary reason for site selection. The selected sites include some very extensive areas (totalling over 175,000&nbsp;ha). While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider countryside measures, in particular </FONT><A href=&quot;http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=428&quot;>Biodiversity Action Plan</A><FONT size=2> implementation, additionally contribute to conservation of this species in the UK.</P></FONT>",
     "Priority": false,
     "Total": 75,
+    "MapData": {
+      "MapSources": "Biological Records Centre Irish Otter Dataset; Biological Records Centre Mammals Database; Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; British Trust for Ornithology  Mammal count data from the Breeding Birds Survey; British Trust for Ornithology  Mammal count data from the Breeding Birds Survey: Update; British Trust for Ornithology  Mammal presence data from the Breeding Birds Survey: Update; Devon Biodiversity Records Centre Devon incidental species records 1950-2002; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Highland Biological Recording Group HBRG Mammals dataset; Joint Nature Conservation Committee England Otter Survey Database; Joint Nature Conservation Committee Otters: Northern Ireland Otter Survey Database; Joint Nature Conservation Committee Scotland Otter Survey Database; Joint Nature Conservation Committee Wales Otter Survey Database; National Trust  National Trust Selected BAP Species; Scottish Borders Biological Records Centre SWT Scottish Borders Local Wildlife Site Survey data 1996-2000; Wiltshire and Swindon Biological Records Centre Wiltshire BAP Priority Species Distribution Records",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "10395-Unknown"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030075",
@@ -5344,6 +5652,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection takes account of the UK’s special responsibility to protect this species. The largest breeding colonies, based on pup production, have been selected. Sites have been identified using the most up-to-date population data available, although populations at individual sites may fluctuate. Colonies have also been selected to ensure coverage of the geographical range of breeding in the UK. The sites recommended for selection contain a significant proportion of the UK breeding population of grey seals.</P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 13,
+    "MapData": {
+      "MapSources": "SMRU Sea Mammal Research Unit data",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "97000-159000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0017072",
@@ -5516,6 +5835,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Site selection has favoured sites that are important both as general haul-out sites and for moulting and pupping. The largest breeding colony has been selected, in the south of the species’ range in the UK. The geographic range of breeding has been covered by the selection of a representative sample of relatively large colonies in the north. Sites have been selected using the most up-to-date population data available, but populations at individual sites may fluctuate, with low numbers at many sites, meaning it can be difficult to define the boundaries of specific sites. </P>\r\n<P>Haul-out areas are thought to be very important for the conservation of the species, as are the most important breeding colonies. As well as their importance in maintaining overall population size, larger breeding sites are significant as sources of emigration to smaller or newly-established colonies. </P>\r\n<P>While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider measures are also necessary to support its conservation in the UK.</P></FONT>",
     "Priority": false,
     "Total": 12,
+    "MapData": {
+      "MapSources": "SMRU Sea Mammal Research Unit data",
+      "MapExplanation": null,
+      "Units": "Individuals",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">28300"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030230",
@@ -5676,6 +6006,17 @@
     "Rationale": "Three of the known sites are included within two SACs selected for this species in the UK. The two SACs are thought to hold a large proportion of the total UK population.",
     "Priority": false,
     "Total": 2,
+    "MapData": {
+      "MapSources": "Scottish Natural Heritage D. Genney, pers. comm. SNH  ",
+      "MapExplanation": null,
+      "Units": "Sporophytes",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">88"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0016412",
@@ -5716,6 +6057,17 @@
     "Rationale": "<B><FONT size=2>\r\n<P>Western rustwort <I>Marsupella profunda</B></I> is the only Annex&nbsp;II priority species which presently occurs in the UK. Site selection has taken into account the priority status of this species, and the importance of UK populations in a European context. The two sites where it is a primary reason for selection support the largest known populations in the UK, and the SAC series holds a very high proportion of the total UK resource. The protected sites should act as a source for colonisation of new localities which are constantly being created through china clay extraction in the surrounding areas.</P></FONT>",
     "Priority": true,
     "Total": 3,
+    "MapData": {
+      "MapSources": "Country Agencies Theatened Bryophyte Database",
+      "MapExplanation": null,
+      "Units": "Sites",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "7"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030064",
@@ -5768,6 +6120,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Information on the current UK distribution of <B><I>Drepanocladus vernicosus</B></I> is limited, but the selected sites include the largest and most robust populations known, and represent the species across its extant range. Ecological variation has also been taken into account, and the site series includes examples of both upland flushes and lowland fens.</P></FONT>",
     "Priority": false,
     "Total": 10,
+    "MapData": {
+      "MapSources": "Country Agencies Theatened Bryophyte Database",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "49"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014778",
@@ -5904,6 +6267,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The site series includes the largest known populations of petalwort, and overall a very high proportion of the total UK population has been selected. Most of the selected sites are within the species’ centre of UK distribution in Wales and south-west England. Outlying localities in Scotland, East Anglia and Northern Ireland have also been selected to ensure full geographical coverage.</P>\r\n<P>Most of the sites selected for <B><I>Petalophyllum ralfsii</B></I> have also been identified as SACs for a range of Annex&nbsp;I sand dune habitats.</P></FONT>",
     "Priority": false,
     "Total": 14,
+    "MapData": {
+      "MapSources": "Country Agencies Theatened Bryophyte Database; Environmental Heritage Service  M. Wright, (pers. comm) EHS ",
+      "MapExplanation": null,
+      "Units": "Thalli",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": ">666000"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030073",
@@ -6088,6 +6462,17 @@
     "Rationale": "<FONT size=2>\r\n<P>One site in northern England and three sites in Wales, all of which also support other Annex&nbsp;I or Annex&nbsp;II features, have been selected to represent this species, but because of the threat from collectors, details of the Welsh sites are withheld. The English site holds the largest known population of Killarney fern in the UK.</P>\r\n<P>Only sites supporting sporophyte plants have been considered for site selection. The gametophyte is considerably more widespread, and has been recorded from several sites selected as SACs for other habitat or species features.</P></FONT>",
     "Priority": false,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Botanical Society of the British Isles New Atlas of the British & Irish Flora 2002",
+      "MapExplanation": null,
+      "Units": "Occupied 10-km squares",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "162"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030142",
@@ -6116,6 +6501,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites with the largest extant populations have been selected to take account of the species’ rarity and the UK’s special responsibilities for its conservation. Sites have been selected from all parts of the geographical range (including outlying Welsh localities as well as sites from the species’ stronghold in south-west England). Special effort has been made to encompass the full range of habitats in which the species occurs, including sea cliffs, rocky shores, and sand dunes. In order to allow for future movement or expansion of populations, any sizeable adjoining areas of suitable habitat have been included in sites where possible.</P></FONT>",
     "Priority": false,
     "Total": 10,
+    "MapData": {
+      "MapSources": "Biological Records Centre BSBI vascular plants database; Natural England & Joint Nature Conservation Committee S. Leach (pers. comm.), NE ",
+      "MapExplanation": null,
+      "Units": "Plants",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "220-250"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030091",
@@ -6252,6 +6648,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The site series includes the largest extant populations of <B>marsh saxifrage <I>Saxifraga hirculus</B></I> in northern England. To ensure coverage of the geographical range, two localities in Scotland and one in Northern Ireland have also been selected.</P></FONT>",
     "Priority": false,
     "Total": 6,
+    "MapData": {
+      "MapSources": "Biological Records Centre BSBI vascular plants database; Plantlife D. Price (pers. comm.), Plantlife",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "16"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0013602",
@@ -6340,6 +6747,17 @@
     "Rationale": "<FONT size=2>\r\n<P>In the UK, creeping marshwort is known from only two localities in Oxfordshire. The larger population has been selected as a SAC.</P></FONT>",
     "Priority": false,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Natural England English Nature Walthemstow marshes SSSI citation.; Rare Plants Group of the Ashmolean Natural History Society of Oxfordshire C. Lamrick (pers. comm.), Rare Plants Group ",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "4"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012845",
@@ -6368,6 +6786,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The sites selected are mainly those supporting the largest naturally-occurring populations that are known to have persisted for many years. These sites are relatively large areas of calcareous grassland that are generally botanically diverse and of high conservation value. They provide representation over the range of <B><I>G.&nbsp;anglica</B></I> in southern England and Wales. The number of sites selected reflects the fact that <B><I>G.&nbsp;anglica</B></I> is endemic to the UK.</P></FONT>",
     "Priority": false,
     "Total": 13,
+    "MapData": {
+      "MapSources": "Biological Records Centre BSBI vascular plants database",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "154"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0012836",
@@ -6540,6 +6969,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The selected sites include localities that are known to hold consistently large, naturally-occurring populations in lakes, rivers and heathland pools, as well as extensive populations in canals. Sites where conditions are considered to be particularly favourable to the species’ survival have been selected. Overall the site series provides representation of the species across its natural range in the UK and in a variety of ecological conditions.</P></FONT>",
     "Priority": false,
     "Total": 14,
+    "MapData": {
+      "MapSources": "Biological Records Centre BSBI vascular plants database",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "only present as an introduced species",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "50"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0030075",
@@ -6724,6 +7164,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites selected for <B><I>Najas&nbsp;flexilis</B></I> are representative of its main geographic occurrence and take account of its clustered distribution, with the majority of sites being in the Outer and Inner Hebrides. Only lakes with good water quality and with large populations evident over many years have been considered. The sites selected contain between them over half of the British lakes with post-1980 records of this species, supporting at least 56% of the species’ total UK population.</P></FONT>",
     "Priority": false,
     "Total": 5,
+    "MapData": {
+      "MapSources": "Botanical Society of the British Isles New Atlas of the British & Irish Flora 2002; Scottish Natural heritage  L. Farrell (pers. comm), SNH ; Scottish Natural Heritage SNH Commisioned report No. 017, The Ecology of Najas flexilis ",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "not present",
+      "Scotland": "present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "39"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014728",
@@ -6800,6 +7251,17 @@
     "Rationale": "<FONT size=2>\r\n<P>The single remaining native site for this species has been selected</P></FONT>",
     "Priority": false,
     "Total": 1,
+    "MapData": {
+      "MapSources": "Botanical Society of the British Isles New Atlas of the British & Irish Flora 2002",
+      "MapExplanation": null,
+      "Units": "Individual",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "not present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "1"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0014776",
@@ -6828,6 +7290,17 @@
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to include the largest and most well-established populations of this species and to cover the variation in ecological and morphological types, as well as its geographical range. Two SACs have been selected to represent the dune slack populations in south Wales, and one to represent fen populations in East Anglia</P></FONT>",
     "Priority": false,
     "Total": 3,
+    "MapData": {
+      "MapSources": "Botanical Society of the British Isles New Atlas of the British & Irish Flora 2002",
+      "MapExplanation": null,
+      "Units": "Localities",
+      "England": "present",
+      "Scotland": "not present",
+      "Wales": "present",
+      "NorthernIreland": "not present",
+      "UKOffshoreWaters": null,
+      "TotalUkPopulation": "5"
+    },
     "Occurrences": [
       {
         "SiteCode": "UK0020019",
