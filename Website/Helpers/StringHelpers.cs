@@ -5,9 +5,9 @@ namespace JNCC.Microsite.SAC.Website.Helpers
 {
     public static class StringHelpers
     {
-        public static string RemoveHTMLTags(string input)
+        public static string RemoveHTMLTags(string input, string replaceWith = "")
         {
-            return Regex.Replace(input, "<[^>]*>", String.Empty);
-        }
+            return Regex.Replace(input, "<[^>]*>", replaceWith);
+        }     
     }
 }

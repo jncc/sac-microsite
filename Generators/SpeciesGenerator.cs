@@ -30,8 +30,9 @@ namespace JNCC.Microsite.SAC.Generators
 
                 foreach (var species in speciesList)
                 {
-                    var habitatPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/index.html", species.Code), habitatPageContent);
+                    var speciesPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    RenderHelper.WriteToFile(String.Format("output/html/species/{0}/index.html", species.Code), speciesPageContent);
+                    //RenderHelper.WriteToFile(String.Format("output/search/habitat/{0}.txt", species.Code), SearchHelper.GenerateSearchText(speciesPageContent));
 
                     var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, species).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/species/{0}/comparison.html", species.Code), speciesMapCompareContent);

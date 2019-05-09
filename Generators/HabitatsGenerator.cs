@@ -32,6 +32,7 @@ namespace JNCC.Microsite.SAC.Generators
                 {                    
                     var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/index.html", habitat.Code), habitatPageContent);
+                    //RenderHelper.WriteToFile(String.Format("output/search/habitat/{0}.txt", habitat.Code), SearchHelper.GenerateSearchText(habitatPageContent));
 
                     var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/comparison.html", habitat.Code), habitatMapCompareContent);

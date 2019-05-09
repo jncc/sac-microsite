@@ -35,6 +35,7 @@ namespace JNCC.Microsite.SAC.Generators
                 {
                     var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, site).Result;
                     RenderHelper.WriteToFile(String.Format("output/html/site/{0}.html", site.EUCode), sitePageContent);
+                    //RenderHelper.WriteToFile(String.Format("output/search/site/{0}.txt", site.EUCode), SearchHelper.GenerateSearchText(sitePageContent));
                 }
 
                 // Regional Site Lists
