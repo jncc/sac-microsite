@@ -1,7 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace JNCC.Microsite.SAC.Website.Helpers
+namespace JNCC.Microsite.SAC.Helpers.Website
 {
     public static class StringHelpers
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
-using JNCC.Microsite.SAC.Generators.Helpers;
+using JNCC.Microsite.SAC.Helpers.Generators;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -22,7 +22,7 @@ namespace JNCC.Microsite.SAC.Generators
     public static class Generator
     {
 
-        public static void MakeSite()
+        public static void MakeSite(string root = "")
         {
             var serviceScopeFactory = ServiceScopeFactory.GetServiceScopeFactory();
 

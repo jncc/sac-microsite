@@ -21,7 +21,6 @@ using JNCC.Microsite.SAC.Data;
 using JNCC.Microsite.SAC.Generators;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
-using JNCC.Microsite.SAC.Website;
 
 namespace JNCC.Microsite.SAC
 {
@@ -43,11 +42,13 @@ namespace JNCC.Microsite.SAC
             bool update = false;
             bool generate = false;
             bool view = false;
+            string root = "";
 
             var options = new OptionSet {
                 { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "v|view", "view the static web site", v => view = true},
+                { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
@@ -85,14 +86,14 @@ namespace JNCC.Microsite.SAC
 
             if (update || generate)
             {
-                Generator.MakeSite();
+                Generator.MakeSite(root);
             }
 
             if (view)
             {
                 CreateWebHostBuilder(args)
                     .UseStartup<Startup>()
-                    .UseWebRoot(Path.Combine(Directory.GetCurrentDirectory(), "output/html"))
+                    .UseWebRoot(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "output/html"))
                     .Build()
                     .Run();
             }

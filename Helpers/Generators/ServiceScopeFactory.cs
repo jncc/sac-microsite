@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 
-namespace JNCC.Microsite.SAC.Generators.Helpers
+namespace JNCC.Microsite.SAC.Helpers.Generators
 {
     /// Original code from https://github.com/aspnet/Entropy/tree/master/samples/Mvc.RenderViewToString
     public static class ServiceScopeFactory

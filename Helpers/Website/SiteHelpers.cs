@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using JNCC.Microsite.SAC.Models.Data;
 
-namespace JNCC.Microsite.SAC.Website.Helpers
+namespace JNCC.Microsite.SAC.Helpers.Website
 {
     public static class SiteHelpers
     {

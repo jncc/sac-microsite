@@ -2,7 +2,7 @@ using JNCC.Microsite.SAC.Generators.Renderers;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 
-namespace JNCC.Microsite.SAC.Generators.Helpers
+namespace JNCC.Microsite.SAC.Helpers.Generators
 {
     public static class RenderHelper
     {

@@ -1,9 +1,9 @@
 using System;
 using System.Text.RegularExpressions;
 using HtmlAgilityPack;
-using JNCC.Microsite.SAC.Website.Helpers;
+using JNCC.Microsite.SAC.Helpers.Website;
 
-namespace JNCC.Microsite.SAC.Generators.Helpers
+namespace JNCC.Microsite.SAC.Helpers.Generators
 {
     public static class SearchHelper
     {

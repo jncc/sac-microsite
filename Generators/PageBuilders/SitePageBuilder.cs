@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using JNCC.Microsite.SAC.Generators.Helpers;
+using JNCC.Microsite.SAC.Helpers.Generators;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
-using JNCC.Microsite.SAC.Website.Helpers;
+using JNCC.Microsite.SAC.Helpers.Website;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace JNCC.Microsite.SAC.Generators.PageBuilders

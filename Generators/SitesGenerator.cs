@@ -16,7 +16,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
-using JNCC.Microsite.SAC.Generators.Helpers;
+using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {

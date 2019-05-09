@@ -32,14 +32,16 @@ namespace JNCC.Microsite.SAC
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            var root = Configuration.GetValue<string>("r");
+
             app.UseDefaultFiles()
                 .UseStaticFiles()
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "docs/images")),
+                    FileProvider = new PhysicalFileProvider(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "docs/images")),
                     RequestPath = "/images"
                 })
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "docs/frontend")),
+                    FileProvider = new PhysicalFileProvider(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "docs/frontend")),
                     RequestPath = "/frontend"
                 })
                 .UseRequestInterceptorMiddleware();
