@@ -16,26 +16,27 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Helpers;
 using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {
     public static class SitesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
         {
-            using (StreamReader fileReader = new StreamReader("output/json/sites.json"))
+            using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/sites.json")))
             {
                 List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(fileReader.ReadToEnd());
 
                 var searchPageContent = SearchPageBuilder.RenderPage(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
-                RenderHelper.WriteToFile("output/html/index.html", searchPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/index.html"), searchPageContent);
 
                 foreach (var site in sites)
                 {
                     var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, site).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/site/{0}.html", site.EUCode), sitePageContent);
-                    //RenderHelper.WriteToFile(String.Format("output/search/site/{0}.txt", site.EUCode), SearchHelper.GenerateSearchText(sitePageContent));
+                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/site/{0}.html", site.EUCode)), sitePageContent);
+                    //FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/search/site/{0}.txt", site.EUCode)), SearchHelper.GenerateSearchText(sitePageContent));
                 }
 
                 // Regional Site Lists
@@ -66,7 +67,7 @@ namespace JNCC.Microsite.SAC.Generators
                         Sites = sites.Where(s => s.Country.Contains("O"))
                     },
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/index.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/index.html"), siteListPageContent);
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -81,7 +82,7 @@ namespace JNCC.Microsite.SAC.Generators
                             Sites = sites.Where(s => s.Country.Contains("E"))
                         }
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/england.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/england.html"), siteListPageContent);
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -96,7 +97,7 @@ namespace JNCC.Microsite.SAC.Generators
                             Sites = sites.Where(s => s.Country.Contains("NI"))
                         }
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/northern-ireland.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/northern-ireland.html"), siteListPageContent);
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -111,7 +112,7 @@ namespace JNCC.Microsite.SAC.Generators
                             Sites = sites.Where(s => s.Country.Contains("S"))
                         }
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/scotland.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/scotland.html"), siteListPageContent);
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -126,7 +127,7 @@ namespace JNCC.Microsite.SAC.Generators
                             Sites = sites.Where(s => s.Country.Contains("W"))
                         }
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/wales.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/wales.html"), siteListPageContent);
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -141,7 +142,7 @@ namespace JNCC.Microsite.SAC.Generators
                             Sites = sites.Where(s => s.Country.Contains("O"))
                         }
                     }).Result;
-                RenderHelper.WriteToFile("output/html/site/offshore.html", siteListPageContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/offshore.html"), siteListPageContent);
             }
         }
     }

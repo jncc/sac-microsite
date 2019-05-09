@@ -16,36 +16,37 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Helpers;
 using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {
     public static class HabitatsGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
         {
-            using (StreamReader fileReader = new StreamReader("output/json/habitats.json"))
+            using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/habitats.json")))
             {
                 List<InterestFeature> habitats = JsonConvert.DeserializeObject<List<InterestFeature>>(fileReader.ReadToEnd());
 
                 foreach (var habitat in habitats)
                 {                    
                     var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/index.html", habitat.Code), habitatPageContent);
-                    //RenderHelper.WriteToFile(String.Format("output/search/habitat/{0}.txt", habitat.Code), SearchHelper.GenerateSearchText(habitatPageContent));
+                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/index.html", habitat.Code)), habitatPageContent);
+                    //FileHelper.WriteToFile(String.Format("output/search/habitat/{0}.txt", habitat.Code), SearchHelper.GenerateSearchText(habitatPageContent));
 
                     var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/comparison.html", habitat.Code), habitatMapCompareContent);
+                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/comparison.html", habitat.Code)), habitatMapCompareContent);
 
                     var habitatMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/map.html", habitat.Code), habitatMapContent);
+                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/map.html", habitat.Code)), habitatMapContent);
 
                     var habitatDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
-                    RenderHelper.WriteToFile(String.Format("output/html/habitat/{0}/distribution.html", habitat.Code), habitatDistributionContent);
+                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/distribution.html", habitat.Code)), habitatDistributionContent);
                 }
 
                 var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, true, habitats).Result;
-                RenderHelper.WriteToFile("output/html/habitat/index.html", habitatListContent);
+                FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/habitat/index.html"), habitatListContent);
             }
 
         }

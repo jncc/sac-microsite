@@ -16,16 +16,17 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
+using JNCC.Microsite.SAC.Helpers;
 using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {
     public static class ErrorPageGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
         {
             var notFoundContent = ErrorPageBuilder.RenderPage(serviceScopeFactory, 404).Result;
-            RenderHelper.WriteToFile("output/html/404.html", notFoundContent);
+            FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/404.html"), notFoundContent);
         }
     }
 }

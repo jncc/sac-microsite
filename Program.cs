@@ -21,6 +21,7 @@ using JNCC.Microsite.SAC.Data;
 using JNCC.Microsite.SAC.Generators;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
+using JNCC.Microsite.SAC.Helpers;
 
 namespace JNCC.Microsite.SAC
 {
@@ -80,7 +81,7 @@ namespace JNCC.Microsite.SAC
                 }
                 else
                 {
-                    DatabaseExtractor.ExtractData(accessDbPath);
+                    DatabaseExtractor.ExtractData(accessDbPath, root);
                 }
             }
 
@@ -93,7 +94,7 @@ namespace JNCC.Microsite.SAC
             {
                 CreateWebHostBuilder(args)
                     .UseStartup<Startup>()
-                    .UseWebRoot(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "output/html"))
+                    .UseWebRoot(FileHelper.GetActualFilePath(root, "output/html"))
                     .Build()
                     .Run();
             }

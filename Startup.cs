@@ -10,6 +10,7 @@ using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
+using JNCC.Microsite.SAC.Helpers;
 
 namespace JNCC.Microsite.SAC
 {
@@ -37,11 +38,11 @@ namespace JNCC.Microsite.SAC
             app.UseDefaultFiles()
                 .UseStaticFiles()
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "docs/images")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "docs/images")),
                     RequestPath = "/images"
                 })
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(Path.Combine(String.IsNullOrWhiteSpace(root) ? Directory.GetCurrentDirectory() : root, "docs/frontend")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "docs/frontend")),
                     RequestPath = "/frontend"
                 })
                 .UseRequestInterceptorMiddleware();
