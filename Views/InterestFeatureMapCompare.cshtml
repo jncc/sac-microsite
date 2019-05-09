@@ -10,7 +10,7 @@
     <div class="column small-12 medium-6 large-6">
         <figure>
             <img src="/images/maps/features/uk/uk_@(Model.InterestFeature.Code).gif" alt="@(InterestFeatureHelpers.GetUKDistributionAltImageText(Model.InterestFeature.Code, Model.InterestFeature.LayTitle, Model.InterestFeature.Name))" class="small-12 center"/>
-            <figcaption class="text-center">View <a href="@(InterestFeatureHelpers.GetCompareDistributionURL(Model.InterestFeature.Code))">UK resource</a> for this @(InterestFeatureHelpers.IsHabitatCode(Model.InterestFeature.Code) ? "habitat" : "species")</figcaption>
+            <figcaption class="text-center">View <a href="@(InterestFeatureHelpers.GetDistributionURL(Model.InterestFeature.Code))">UK Distribution</a> for this @(InterestFeatureHelpers.IsHabitatCode(Model.InterestFeature.Code) ? "habitat" : "species")</figcaption>
         </figure>
     </div>
     <div class="column small-12 medium-6 large-6">

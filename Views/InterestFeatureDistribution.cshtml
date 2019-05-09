@@ -8,9 +8,9 @@
 <h1>@(Model.InterestFeature.SectionTitle)</h1>
 <h2>UK Distribution of @(InterestFeatureHelpers.GetAnnexString(Model.InterestFeature.Code)) @(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))</h2>
 <div class="row">
-    <div class="column small-12 medium-6 large-6">
+    <div class="column small-12 medium-6 medium-centered large-6 large-centered">
         <figure>
-            <img src="/images/maps/features/uk/uk_@(Model.InterestFeature.Code).gif" alt="@(InterestFeatureHelpers.GetUKDistributionAltImageText(Model.InterestFeature.Code, Model.InterestFeature.LayTitle, Model.InterestFeature.Name))" class="small-12 center"/>
+            <img src="/images/maps/features/uk/uk_@(Model.InterestFeature.Code).gif" alt="@(InterestFeatureHelpers.GetUKDistributionAltImageText(Model.InterestFeature.Code, Model.InterestFeature.LayTitle, Model.InterestFeature.Name))" />
             <figcaption class="text-center">
                 <a href="@(InterestFeatureHelpers.GetCompareDistributionURL(Model.InterestFeature.Code))">Compare with SAC distribution</a> for this @(InterestFeatureHelpers.IsHabitatCode(Model.InterestFeature.Code) ? "habitat" : "species")
                 <a href="@(InterestFeatureHelpers.GetFeatureUrl(Model.InterestFeature.Code))">View SAC Information</a> for this @(InterestFeatureHelpers.IsHabitatCode(Model.InterestFeature.Code) ? "habitat" : "species")
@@ -20,43 +20,48 @@
 </div>
 @if (InterestFeatureHelpers.IsSpeciesCode(Model.InterestFeature.Code))
 {
-    <div class="row">
-        <div class="column"></div>
-        <div class="column">Occupied 1-km squares</div>
-    </div>
-    <div class="row">
-        <div class="column">England</div>
-        <div class="column">@Model.InterestFeature.MapData.England</div>
-    </div>
-    <div class="row">
-        <div class="column">Scotland</div>
-        <div class="column">@Model.InterestFeature.MapData.Scotland</div>
-    </div>
-    <div class="row">
-        <div class="column">Wales</div>
-        <div class="column">@Model.InterestFeature.MapData.Wales</div>
-    </div>
-    <div class="row">
-        <div class="column">Northern Ireland</div>
-        <div class="column">@Model.InterestFeature.MapData.NorthernIreland</div>
-    </div>
-    @if (Model.InterestFeature.MapData.UKOffshoreWaters != null) 
-    {
-        <div class="row">
-            <div class="column">UK Offshore Waters</div>
-            <div class="column">@Model.InterestFeature.MapData.UKOffshoreWaters</div>
-        </div>
-    }
-    <div class="row">
-        <div class="column">Total UK Population</div>
-        <div class="column">@Model.InterestFeature.MapData.TotalUkPopulation</div>
-    </div>
-
+<div class="row">
+    <table>
+        <tr>
+            <td></td>
+            <th>Occupied 1-km squares</th>
+        </tr>
+        <tr>
+            <th>England</th>
+            <td class="text-center">@(Model.InterestFeature.MapData.England)</td>
+        </tr>
+        <tr>
+            <th>Scotland</th>
+            <td class="text-center">@(Model.InterestFeature.MapData.Scotland)</td>            
+        </tr>
+        <tr>
+            <th>Wales</th>
+            <td class="text-center">@(Model.InterestFeature.MapData.Wales)</td>            
+        </tr>
+        <tr>
+            <th>Northern Ireland</th>
+            <td class="text-center">@(Model.InterestFeature.MapData.NorthernIreland)</td>            
+        </tr>
+        @if (Model.InterestFeature.MapData.UKOffshoreWaters != null) 
+        {
+            <tr>
+                <th>UK Offshore Waters</th>
+                <td class="text-center">@(Model.InterestFeature.MapData.UKOffshoreWaters)</td>
+            </tr>    
+        }
+        <tr>
+            <th>Total UK Population</th>
+            <td class="text-center">@(Model.InterestFeature.MapData.TotalUkPopulation)</td>
+        </tr>  
+    </table>
+</div>
 }
 
 <h2>Data source</h2>
 <div class="row"> 
-    The sources of this data can be found in the<a href="@(InterestFeatureHelpers.GetInterestFeaturePDFResourceURL(Model.InterestFeature.Code))">&nbsp;supporting information for @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))&nbsp;</a>from the Article 17 Habitats Directive Report.
+    <p>
+        The sources of this data can be found in the <a href="@(InterestFeatureHelpers.GetInterestFeaturePDFResourceURL(Model.InterestFeature.Code))">supporting information for @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))</a> from the Article 17 Habitats Directive Report.
+    </p>
 </div>
 
 

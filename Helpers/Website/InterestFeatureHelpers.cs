@@ -100,6 +100,15 @@ namespace JNCC.Microsite.SAC.Helpers.Website
             return String.Format("/species/{0}/comparison", code);
         }
 
+        public static string GetDistributionURL(string code)
+        {
+            if (IsHabitatCode(code))
+            {
+                return String.Format("/habitat/{0}/distribution", code);
+            }
+            return String.Format("/species/{0}/distribution", code);
+        }
+
         public static string GetMapURL(string code)
         {
             if (IsHabitatCode(code))
