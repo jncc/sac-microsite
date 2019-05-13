@@ -76,7 +76,11 @@
             @Html.Raw(String.Format("{0} ({1}%) <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
         }
     </p>
+</div>
+<div class="row">
     <p><a href=@(SiteHelpers.GetSitePDFResourceURL(Model.Site.EUCode)) target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
+</div>
+<div class="row">
     <div class="callout secondary">
         <p><b>Note:</b></p>
         <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
