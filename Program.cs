@@ -22,6 +22,7 @@ using JNCC.Microsite.SAC.Generators;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Helpers;
+using JNCC.Microsite.SAC.Helpers.Runtime;
 
 namespace JNCC.Microsite.SAC
 {
@@ -38,6 +39,8 @@ namespace JNCC.Microsite.SAC
 
         public static void Main(string[] args)
         {
+            Console.WriteLine(args[0]);
+
             var showHelp = false;
             string accessDbPath = "";
             bool update = false;
@@ -49,7 +52,7 @@ namespace JNCC.Microsite.SAC
                 { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "v|view", "view the static web site", v => view = true},
-                { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
+                { "r|root=", "the root path on which to run the generate and view processes", r =>  root = r},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
@@ -65,6 +68,13 @@ namespace JNCC.Microsite.SAC
                 Console.Write(ex.Message);
                 Console.Write("Try `dotnet run -- -h` for more information");
             }
+
+            if (string.IsNullOrEmpty(root))
+            {
+                root = ConfigurationHelper.GetDefaultRoot(); 
+            }
+
+            Console.WriteLine("Root path set to {0}", root);
 
             if (showHelp)
             {
@@ -92,9 +102,13 @@ namespace JNCC.Microsite.SAC
 
             if (view)
             {
+                Console.WriteLine("Starting Webserver:");
+
+                Console.WriteLine("Web Root: {0}", root);
+
                 CreateWebHostBuilder(args)
                     .UseStartup<Startup>()
-                    .UseWebRoot(FileHelper.GetActualFilePath(root, "output/html"))
+                    .UseWebRoot(root)
                     .Build()
                     .Run();
             }

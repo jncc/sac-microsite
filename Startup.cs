@@ -11,6 +11,7 @@ using System.IO;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using JNCC.Microsite.SAC.Helpers;
+using JNCC.Microsite.SAC.Helpers.Runtime;
 
 namespace JNCC.Microsite.SAC
 {
@@ -19,7 +20,7 @@ namespace JNCC.Microsite.SAC
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
+                .SetBasePath(Environment.CurrentDirectory)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
@@ -33,16 +34,23 @@ namespace JNCC.Microsite.SAC
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            var root = Configuration.GetValue<string>("r");
+            string root = Configuration.GetValue<string>("r");
+
+            if (string.IsNullOrWhiteSpace(root))
+            {
+                root = ConfigurationHelper.GetDefaultRoot();
+            }
+
+            Console.WriteLine("Webserver root is {0}",root);
 
             app.UseDefaultFiles()
                 .UseStaticFiles()
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "docs/images")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "images")),
                     RequestPath = "/images"
                 })
                 .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "docs/frontend")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "frontend")),
                     RequestPath = "/frontend"
                 })
                 .UseRequestInterceptorMiddleware();
