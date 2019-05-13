@@ -23,17 +23,24 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class HabitatsGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/habitats.json")))
             {
                 List<InterestFeature> habitats = JsonConvert.DeserializeObject<List<InterestFeature>>(fileReader.ReadToEnd());
 
                 foreach (var habitat in habitats)
-                {                    
+                {
                     var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/index.html", habitat.Code)), habitatPageContent);
-                    //FileHelper.WriteToFile(String.Format("output/search/habitat/{0}.txt", habitat.Code), SearchHelper.GenerateSearchText(habitatPageContent));
+
+                    if (generateSearchDocuments)
+                    {
+                        FileHelper.WriteJSONToFile(
+                            String.Format("output/search/habitat/{0}.json", habitat.Code),
+                            SearchHelpers.GetHabitatPageSearchDocument(searchIndex, habitat.Code, habitat.Name, habitatPageContent)
+                        );
+                    }
 
                     var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/comparison.html", habitat.Code)), habitatMapCompareContent);

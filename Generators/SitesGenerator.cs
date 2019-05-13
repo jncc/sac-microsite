@@ -23,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class SitesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/sites.json")))
             {
@@ -36,7 +36,14 @@ namespace JNCC.Microsite.SAC.Generators
                 {
                     var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, site).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/site/{0}.html", site.EUCode)), sitePageContent);
-                    //FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/search/site/{0}.txt", site.EUCode)), SearchHelper.GenerateSearchText(sitePageContent));
+
+                    if (generateSearchDocuments)
+                    {
+                        FileHelper.WriteJSONToFile(
+                            String.Format("output/search/site/{0}.json", site.EUCode),
+                            SearchHelpers.GetSitePageSearchDocument(searchIndex, site.EUCode, site.Name, sitePageContent)
+                        );
+                    }
                 }
 
                 // Regional Site Lists
