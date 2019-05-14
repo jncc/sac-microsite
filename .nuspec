@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SAC.Micosite</id>
+    <title>SAC Microsite</title>
+  </metadata>
+  <files>
+    <file src="docs\**\*.*" target="docs" />
+  </files>
+</package>
