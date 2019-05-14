@@ -22,8 +22,9 @@ namespace JNCC.Microsite.SAC
             log.LogDebug("Started config build");
             
             Console.WriteLine("starting config build");
+
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Environment.CurrentDirectory)
+                .SetBasePath(env.WebRootPath)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
 

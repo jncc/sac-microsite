@@ -109,6 +109,7 @@ namespace JNCC.Microsite.SAC
 
                 CreateWebHostBuilder(args)
                     .UseWebRoot(webRoot)
+                    .UseContentRoot(webRoot)
                     .ConfigureLogging((hostingContext, logging) =>  
                     {  
                         logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));  
