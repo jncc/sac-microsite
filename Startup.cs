@@ -56,7 +56,7 @@ namespace JNCC.Microsite.SAC
             catch (DirectoryNotFoundException)
             {
                 
-                throw new DirectoryNotFoundException("Images folder not fouind in docs. The static images folder must be placed in the <output root>/docs folder before the site can be generated");
+                throw new DirectoryNotFoundException("Images folder not fouind in <root>/docs. The static images folder must be placed in the <output root>/docs folder before the site can be generated");
             }
 
             try
@@ -69,10 +69,8 @@ namespace JNCC.Microsite.SAC
             catch (DirectoryNotFoundException)
             {
                 
-                throw new DirectoryNotFoundException("Frontend folder not found docs. The static frontend folder must be placed in the <output root>/docs folder before the site can be generated");
+                throw new DirectoryNotFoundException("Frontend folder not found in <root>/docs. The static frontend folder must be placed in the <output root>/docs folder before the site can be generated");
             }
-
-                
         }
     }
 
