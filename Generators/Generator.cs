@@ -26,12 +26,16 @@ namespace JNCC.Microsite.SAC.Generators
         {
             var serviceScopeFactory = ServiceScopeFactory.GetServiceScopeFactory();
 
+            Console.WriteLine("Generating Error Pages");
             ErrorPageGenerator.Generate(serviceScopeFactory, basePath);
 
+            Console.WriteLine("Generating Site Pages");
             SitesGenerator.Generate(serviceScopeFactory, basePath);
 
+            Console.WriteLine("Generating Habitat Pages");
             HabitatsGenerator.Generate(serviceScopeFactory, basePath);
 
+            Console.WriteLine("Generating Species Pages");
             SpeciesGenerator.Generate(serviceScopeFactory, basePath);
         }
     }

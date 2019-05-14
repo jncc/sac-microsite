@@ -47,6 +47,8 @@ namespace JNCC.Microsite.SAC.Generators
 
                 var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, true, habitats).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/habitat/index.html"), habitatListContent);
+
+                Console.WriteLine("Generated pages for {0} habitats", habitats.Count);
             }
 
         }

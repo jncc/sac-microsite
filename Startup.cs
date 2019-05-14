@@ -17,12 +17,18 @@ namespace JNCC.Microsite.SAC
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        public Startup(IHostingEnvironment env, ILogger<Startup> log)
         {
+            log.LogDebug("Started config build");
+            
+            Console.WriteLine("starting config build");
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Environment.CurrentDirectory)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            Console.WriteLine("ending config build");
+            log.LogDebug("Finished config build");
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -34,26 +40,39 @@ namespace JNCC.Microsite.SAC
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            string root = Configuration.GetValue<string>("r");
-
-            if (string.IsNullOrWhiteSpace(root))
-            {
-                root = ConfigurationHelper.GetDefaultRoot();
-            }
-
-            Console.WriteLine("Webserver root is {0}",root);
+            Console.WriteLine("Webserver root is {0}", env.WebRootPath);
 
             app.UseDefaultFiles()
                 .UseStaticFiles()
-                .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "images")),
-                    RequestPath = "/images"
-                })
-                .UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(root, "frontend")),
-                    RequestPath = "/frontend"
-                })
                 .UseRequestInterceptorMiddleware();
+
+            try
+            {
+                app.UseStaticFiles(new StaticFileOptions{
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(env.WebRootPath, "images")),
+                    RequestPath = "/images"
+                });   
+            }
+            catch (DirectoryNotFoundException)
+            {
+                
+                throw new DirectoryNotFoundException("Images folder not fouind in docs. The static images folder must be placed in the <output root>/docs folder before the site can be generated");
+            }
+
+            try
+            {
+                app.UseStaticFiles(new StaticFileOptions{
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(env.WebRootPath, "frontend")),
+                    RequestPath = "/frontend"
+                });
+            }
+            catch (DirectoryNotFoundException)
+            {
+                
+                throw new DirectoryNotFoundException("Frontend folder not found docs. The static frontend folder must be placed in the <output root>/docs folder before the site can be generated");
+            }
+
+                
         }
     }
 

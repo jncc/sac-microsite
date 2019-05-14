@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.ObjectPool;
+using Microsoft.Extensions.Logging;
 
 using Mono.Options;
 using Newtonsoft.Json;
@@ -71,7 +72,7 @@ namespace JNCC.Microsite.SAC
 
             if (string.IsNullOrEmpty(root))
             {
-                root = ConfigurationHelper.GetDefaultRoot(); 
+                root = Environment.CurrentDirectory; 
             }
 
             Console.WriteLine("Root path set to {0}", root);
@@ -95,7 +96,7 @@ namespace JNCC.Microsite.SAC
                 }
             }
 
-            if (update || generate)
+            if (generate)
             {
                 Generator.MakeSite(root);
             }
@@ -104,11 +105,17 @@ namespace JNCC.Microsite.SAC
             {
                 Console.WriteLine("Starting Webserver:");
 
-                Console.WriteLine("Web Root: {0}", root);
+                string webRoot = Path.Combine(root, "docs");
 
                 CreateWebHostBuilder(args)
+                    .UseWebRoot(webRoot)
+                    .ConfigureLogging((hostingContext, logging) =>  
+                    {  
+                        logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));  
+                        logging.AddConsole();  
+                        logging.AddDebug();  
+                    })  
                     .UseStartup<Startup>()
-                    .UseWebRoot(root)
                     .Build()
                     .Run();
             }
