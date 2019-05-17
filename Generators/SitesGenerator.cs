@@ -150,6 +150,8 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/offshore.html"), siteListPageContent);
+
+                Console.WriteLine("Generated pages for {0} sites", sites.Count);
             }
         }
     }

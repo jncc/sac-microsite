@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Internal;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.ObjectPool;
+using Microsoft.Extensions.Logging;
 
 using Mono.Options;
 using Newtonsoft.Json;
@@ -22,6 +23,7 @@ using JNCC.Microsite.SAC.Generators;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Helpers;
+using JNCC.Microsite.SAC.Helpers.Runtime;
 
 namespace JNCC.Microsite.SAC
 {
@@ -38,6 +40,8 @@ namespace JNCC.Microsite.SAC
 
         public static void Main(string[] args)
         {
+            Console.WriteLine(args[0]);
+
             var showHelp = false;
             string accessDbPath = null;
             bool update = false;
@@ -69,6 +73,13 @@ namespace JNCC.Microsite.SAC
                 Console.Write("Try `dotnet run -- -h` for more information");
             }
 
+            if (string.IsNullOrEmpty(root))
+            {
+                root = Environment.CurrentDirectory; 
+            }
+
+            Console.WriteLine("Root path set to {0}", root);
+
             if (showHelp)
             {
                 ShowHelp(options);
@@ -95,9 +106,20 @@ namespace JNCC.Microsite.SAC
 
             if (view)
             {
+                Console.WriteLine("Starting Webserver:");
+
+                string webRoot = Path.Combine(root, "docs");
+
                 CreateWebHostBuilder(args)
+                    .UseWebRoot(webRoot)
+                    .UseContentRoot(webRoot)
+                    .ConfigureLogging((hostingContext, logging) =>  
+                    {  
+                        logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));  
+                        logging.AddConsole();  
+                        logging.AddDebug();  
+                    })  
                     .UseStartup<Startup>()
-                    .UseWebRoot(FileHelper.GetActualFilePath(root, "output/html"))
                     .Build()
                     .Run();
             }

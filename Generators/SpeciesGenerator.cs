@@ -54,6 +54,8 @@ namespace JNCC.Microsite.SAC.Generators
 
                 var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, false, speciesList).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/species/index.html"), speciesListContent);
+
+                Console.WriteLine("Generated pages for {0} species", speciesList.Count);
             }
         }
     }

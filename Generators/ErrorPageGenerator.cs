@@ -25,6 +25,7 @@ namespace JNCC.Microsite.SAC.Generators
     {
         public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
         {
+            Console.WriteLine("Generate 404 Page");
             var notFoundContent = ErrorPageBuilder.RenderPage(serviceScopeFactory, 404).Result;
             FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/404.html"), notFoundContent);
         }

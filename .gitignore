@@ -2,3 +2,5 @@ obj/
 bin/
 .vs/
 output/search
+output/html
+
