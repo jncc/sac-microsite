@@ -43,17 +43,20 @@ namespace JNCC.Microsite.SAC
             Console.WriteLine(args[0]);
 
             var showHelp = false;
-            string accessDbPath = "";
+            string accessDbPath = null;
             bool update = false;
             bool generate = false;
+            bool generateSearchDocuments = false;
+            string searchIndex = null;
             bool view = false;
-            string root = "";
+            string root = null;
 
             var options = new OptionSet {
                 { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "v|view", "view the static web site", v => view = true},
-                { "r|root=", "the root path on which to run the generate and view processes", r =>  root = r},
+                { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
+                { "s|search=", "the search index to generate index documents for", s => {generateSearchDocuments = true; searchIndex = s;}},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
@@ -96,9 +99,9 @@ namespace JNCC.Microsite.SAC
                 }
             }
 
-            if (generate)
+            if (generate || generateSearchDocuments)
             {
-                Generator.MakeSite(root);
+                Generator.MakeSite(root, generateSearchDocuments, searchIndex);
             }
 
             if (view)

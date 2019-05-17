@@ -1,4 +1,6 @@
 obj/
 bin/
-output/html
 .vs/
+output/search
+output/html
+

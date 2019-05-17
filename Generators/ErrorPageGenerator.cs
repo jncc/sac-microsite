@@ -23,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class ErrorPageGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             Console.WriteLine("Generate 404 Page");
             var notFoundContent = ErrorPageBuilder.RenderPage(serviceScopeFactory, 404).Result;

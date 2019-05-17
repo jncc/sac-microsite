@@ -23,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class SpeciesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/species.json")))
             {
@@ -33,7 +33,14 @@ namespace JNCC.Microsite.SAC.Generators
                 {
                     var speciesPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/index.html", species.Code)), speciesPageContent);
-                    //RenderHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/search/habitat/{0}.txt", species.Code)), SearchHelper.GenerateSearchText(speciesPageContent));
+
+                    if (generateSearchDocuments)
+                    {
+                        FileHelper.WriteJSONToFile(
+                            String.Format("output/search/species/{0}.json", species.Code),
+                            SearchHelpers.GetSpeciesPageSearchDocument(searchIndex, species.Code, species.Name, speciesPageContent)
+                        );
+                    }
 
                     var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/comparison.html", species.Code)), speciesMapCompareContent);
@@ -49,6 +56,11 @@ namespace JNCC.Microsite.SAC.Generators
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/species/index.html"), speciesListContent);
 
                 Console.WriteLine("Generated pages for {0} species", speciesList.Count);
+
+                if (generateSearchDocuments)
+                {
+                    Console.WriteLine("Generated search elements for {0} species", speciesList.Count);
+                }
             }
         }
     }
