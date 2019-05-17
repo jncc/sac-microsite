@@ -64,7 +64,7 @@ Notes for devs (Internal)
 --------------
 
 Deployment
-==============
+--------------
 
 The site is automatically redeployed to an internal beta site at http://beta-sac available internally on every commit, if you need to deploy the main site run the relevant Jenkins job on the internal development server. This will run the equivalent of the following;
 
