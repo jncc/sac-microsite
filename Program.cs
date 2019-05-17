@@ -88,7 +88,7 @@ namespace JNCC.Microsite.SAC
                 }
             }
 
-            if (update || generate)
+            if (generate || generateSearchDocuments)
             {
                 Generator.MakeSite(root, generateSearchDocuments, searchIndex);
             }
