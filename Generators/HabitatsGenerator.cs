@@ -56,6 +56,11 @@ namespace JNCC.Microsite.SAC.Generators
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/habitat/index.html"), habitatListContent);
 
                 Console.WriteLine("Generated pages for {0} habitats", habitats.Count);
+
+                if (generateSearchDocuments)
+                {
+                    Console.WriteLine("Generated search elements for {0} habitats", habitats.Count);
+                }
             }
 
         }
