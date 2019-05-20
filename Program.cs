@@ -40,8 +40,6 @@ namespace JNCC.Microsite.SAC
 
         public static void Main(string[] args)
         {
-            Console.WriteLine(args[0]);
-
             var showHelp = false;
             string accessDbPath = null;
             bool update = false;
@@ -108,7 +106,7 @@ namespace JNCC.Microsite.SAC
             {
                 Console.WriteLine("Starting Webserver:");
 
-                string webRoot = Path.Combine(root, "docs");
+                string webRoot = Path.Combine(root, "output/html");
 
                 CreateWebHostBuilder(args)
                     .UseWebRoot(webRoot)

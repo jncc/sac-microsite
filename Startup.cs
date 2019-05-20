@@ -19,17 +19,10 @@ namespace JNCC.Microsite.SAC
     {
         public Startup(IHostingEnvironment env, ILogger<Startup> log)
         {
-            log.LogDebug("Started config build");
-            
-            Console.WriteLine("starting config build");
-
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.WebRootPath)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
-
-            Console.WriteLine("ending config build");
-            log.LogDebug("Finished config build");
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -41,7 +34,11 @@ namespace JNCC.Microsite.SAC
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            // Webserver Root is at <root>/output/html
             Console.WriteLine("Webserver root is {0}", env.WebRootPath);
+            // Static files Root is at <root>/docs/[images|frontend]
+            string staticFilesRoot = FileHelper.GetActualFilePath(env.WebRootPath, "..\\..\\docs");
+            Console.WriteLine("Static files root is {0}", staticFilesRoot);
 
             app.UseDefaultFiles()
                 .UseStaticFiles()
@@ -50,7 +47,7 @@ namespace JNCC.Microsite.SAC
             try
             {
                 app.UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(env.WebRootPath, "images")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(staticFilesRoot, "images")),
                     RequestPath = "/images"
                 });   
             }
@@ -63,7 +60,7 @@ namespace JNCC.Microsite.SAC
             try
             {
                 app.UseStaticFiles(new StaticFileOptions{
-                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(env.WebRootPath, "frontend")),
+                    FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(staticFilesRoot, "frontend")),
                     RequestPath = "/frontend"
                 });
             }
