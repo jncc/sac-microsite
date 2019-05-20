@@ -96,7 +96,7 @@ namespace JNCC.Microsite.SAC.Helpers
         {
             return new SearchDocument
             {
-                id = String.Format("SAC-MICROSITE-{0}", code),
+                id = String.Format("SAC-MICROSITE-{0}", code).ToLower(),
                 title = StringHelpers.RemoveHTMLTags(name),
                 content = content,
                 data_type = "publication",
