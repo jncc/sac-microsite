@@ -4,6 +4,7 @@ import argparse
 import logging
 import os
 import boto3
+import socket
 
 def main(host, index, site):
     # Set up logging
@@ -27,6 +28,7 @@ def main(host, index, site):
 
     es.delete_by_query(index=index, body={"query": {"match": {"site": site}}})
 
+socket.getaddrinfo('localhost', 8080)
 
 if __name__ == '__main__':
     # Setup command line switches
