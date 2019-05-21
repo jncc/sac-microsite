@@ -11,6 +11,7 @@ def main(host, index, site):
     logging.basicConfig(level=logging.INFO,
                         format='%(levelname)s: %(asctime)s: %(message)s')
 
+    logging.info(f'HOST: {host} - INDEX: {index} - SITE: {site}')
     region = os.environ['AWS_DEFAULT_REGION']
     service = 'es'
 
