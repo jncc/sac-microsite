@@ -1,0 +1,52 @@
+pipeline {
+    agent { label ' dotnet-capable-node ' }
+    environment { 
+        AWS_DEFAULT_REGION = '${AWS_REGION}' 
+        AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
+        AWS_ELASTICSEARCH_HOST = '${AWS_ELASTICSEARCH_HOST}'
+        AWS_ELASTICSEARCH_INDEX = '${AWS_ELASTICSEARCH_INDEX}'
+    }
+    stages {
+        stage('Checkout current data and code bundle and build') {
+            steps {
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: '*/master']], 
+                    doGenerateSubmoduleConfigurations: false, 
+                    extensions: [[$class: 'RelativeTargetDirectory', 
+                                    relativeTargetDir: 'master']], 
+                    submoduleCfg: [], 
+                    userRemoteConfigs: [[url: 'https://github.com/jncc/sac-microsite.git']]])
+                dir('./master') {
+                    sh 'dotnet restore'
+                    sh 'dotnet build'
+                    sh 'dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX'
+                }
+            }
+        }
+        stage('Checkout deployment branch and push updates to it') {
+            steps {
+                dir('./gh-pages')  {
+                    deleteDir()
+                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '${GIT_CREDENTIALS}',
+                        usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
+                        sh 'git clone https://github.com/jncc/sac-microsite.git . --branch=gh-pages --depth 1'
+                        sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
+                        sh 'cp -r ../master/output/html/* .'
+                        sh 'git add --all'
+                        sh 'git commit -a -m "Jenkins Build ' + env.BUILD_NUMBER + '" || echo \'Commit failed. There is probably nothing to commit.\''
+                        sh 'git push --force || echo \'Push failed. There is probably nothing to commit.\''
+                    }
+                }
+            }
+        }
+        stage('Clear and reindex elasticsearch documents') {
+            steps {
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: '${AWS_CREDENTIALS}',
+                            accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                    sh 'chmod +x ./master/deployment/search-documents/venv-install-and-run.sh'
+                    sh './master/deployment/search-documents/venv-install-and-run.sh'
+                }
+            }
+        }
+    }
+}
