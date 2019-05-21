@@ -13,7 +13,7 @@ def main(host, index, site):
     region = os.environ['AWS_DEFAULT_REGION']
     service = 'es'
 
-    awsauth = AWS4Auth(os.environ['AWS_ACCESS_KEY'], os.environ['AWS_SECRET_ACCESS_KEY'], region, service)
+    awsauth = AWS4Auth(os.environ['AWS_ACCESS_KEY_ID'], os.environ['AWS_SECRET_ACCESS_KEY'], region, service)
 
     es = Elasticsearch(
         hosts = [{'host': host, 'port': 443}],
