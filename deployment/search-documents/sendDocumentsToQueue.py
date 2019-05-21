@@ -50,7 +50,7 @@ def getJSONStr(path):
 
 def main(path, excludeSubDirectories, queueUrl):
     # Set up logging
-    logging.basicConfig(level=logging.ERROR,
+    logging.basicConfig(level=logging.INFO,
                         format='%(levelname)s: %(asctime)s: %(message)s')
 
     # Send some SQS messages
@@ -59,10 +59,11 @@ def main(path, excludeSubDirectories, queueUrl):
         msg_body = f'{getJSONStr(document)}'
         msg = send_sqs_message(queueUrl, msg_body)
         if msg is not None:
-            logging.info(f'Sent SQS message ID: {msg["MessageId"]}')
+            logging.debug(f'Sent SQS message ID: {msg["MessageId"]}')
         else:
             logging.error(f'Could not send message')
             exit(1)
+    logging.info(f"Pushed {len(fileList)} Search Documents")
 
 
 if __name__ == '__main__':
