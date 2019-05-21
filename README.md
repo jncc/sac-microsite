@@ -72,3 +72,24 @@ The site is automatically redeployed to an internal beta site at http://beta-sac
 
 Where `search-index-name` is the name of the search index that this site will add into, this creates a set of json search documents in `output/search` that can be pushed onto the queue to ingest into the central search system, this will be hanlded by the central jenkins deploy to live job for this microsite. The job creates the output and joins it with the static content in /docs (css, js and images) and force pushes it on the `gh-pages` branch which is pointed to by the new SAC url.
 
+Search Index Update
+--------------
+
+To update the search index, a delete by query would need to be run on the `search-index` index (where that index is the elasticsearch index currently in use), this could be achieved in multiple ways, but the basic building block is to run an elasticsearch delete by query;
+
+```
+POST search-index/_delete_by_query
+{
+  "query": { 
+    "match": {
+      "site": "sac"
+    }
+  }
+}
+```
+
+Then assuming you have run the tool with the `-s search-index` switch you will have a folder at `/output/search` containing JSON documents to be submitted to the ingest queue. Running the index helper shell script at `/deployment/search-documents-to-queue.sh` as follows will push the documents to the appropriate queue assuming standard aws configuration has been done;
+
+    ./search-documents-to-queue.sh /path/to/output/search/**/*.json https://sqs.url
+
+The first argument being a glob pattern to the search folder as above and the second argument being the full URL to the AWS SQS Queue. This script basically iterates through all json files matching the glob pattern and pushes them into the queue to be picked up by handlers to import into the specified index, it requires the awscli tools to be install as it uses `aws sqs send-message` to send the messages.
