@@ -7,5 +7,5 @@ if [ ! -d "venv" ]; then
 fi
 . venv/bin/activate
 pip install -r $WORKSPACE/master/deployment/search-documents/requirements.txt
-python $WORKSPACE/master/deployment/search-documents/clearExistingIndexContents.py -s "sac" -i "$AWS_ELASTICSEARCH_INDEX" --host "$AWS_ELASTICSEARCH_URL"
-python $WORKSPACE/master/deployment/search-documents/sendDocumentsToQueue.py -p "$WORKSPACE/master/output/search" -q "$AWS_SQS_QUEUE_URL"
+python $WORKSPACE/master/deployment/search-documents/clearExistingIndexContents.py -s "sac" -i "$AWS_ELASTICSEARCH_INDEX" --host "$AWS_ELASTICSEARCH_HOST"
+python $WORKSPACE/master/deployment/search-documents/sendDocumentsToQueue.py -p "$WORKSPACE/master/output/search" -q "$AWS_SQS_QUEUE_HOST"
