@@ -33,7 +33,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Clear an existing elasticsearch index by its `site` value.')
     parser.add_argument('-s' , '--site', type=str, required=True, help='The site to clear from the given index')
     parser.add_argument('-i' , '--index', type=str, required=True, help='The index to clear from')
-    parser.add_argument('-h' , '--host', type=str, required=True, help='The url of the existing elasticsearch service')
+    parser.add_argument('--host', type=str, required=True, help='The url of the existing elasticsearch service')
     
     args = parser.parse_args()
 
