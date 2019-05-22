@@ -7,7 +7,9 @@
     var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, false);
 }
 
-<h2>Habitat account - @(Model.InterestFeature.SectionTitle)</h2>
+<div class="row">
+    <h1>Habitat account - @(Model.InterestFeature.SectionTitle)</h1>
+</div>
 <h4>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.Name))</h4>
 <div class="column large-4 small-12 float-right">
     <figure>

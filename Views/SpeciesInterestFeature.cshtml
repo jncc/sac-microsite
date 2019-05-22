@@ -7,7 +7,9 @@
     var secondaryOccurences = InterestFeatureHelpers.GetInterestFeatures(Model.InterestFeature.Occurrences, false);
 }
 
-<h2>@(Model.InterestFeature.SectionTitle)</h2>
+<div class="row">
+    <h1>@(Model.InterestFeature.SectionTitle)</h1>
+</div>
 <h4>@(Model.InterestFeature.Code.Substring(1)) @Html.Raw(Model.InterestFeature.LayTitle) [@(Html.Raw(Model.InterestFeature.Name))]</h4>
 <div class="cell large-4 small-12 float-right">
     <figure>

@@ -15,6 +15,14 @@ namespace JNCC.Microsite.SAC.Helpers
             var htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(siteHtml);
 
+            // Remove Breadcrumbs
+            var breadcrumb = htmlDoc.DocumentNode.SelectSingleNode("//html/body/div/main/div/div/nav");
+            breadcrumb.Remove();
+
+            // Remove initial title
+            var title = htmlDoc.DocumentNode.SelectSingleNode("//html/body/div/main/div/div/h1");
+            title.Remove();
+
             return Regex.Replace(
                 HtmlEntity.DeEntitize(
                     StringHelpers.RemoveHTMLTags(
@@ -24,7 +32,7 @@ namespace JNCC.Microsite.SAC.Helpers
                 ),
                 "\\s\\s+",
                 " "
-            );
+            ).Trim();
         }
 
         public static SearchDocumentWrapper GetHabitatPageSearchDocument(string index, string code, string name, string content)
