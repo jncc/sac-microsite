@@ -86,7 +86,7 @@ The Jenkins pipeline will run the following
 
     dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX
 
-This creates a set of json search documents in `output/search` that can be pushed onto the queue to ingest into the central search ingester lambda function, it will also create the static pages in `output/html` (in the .gitignore) which can be combined with the other static elements in the [doc](doc) folder which will then be pushed out onto the `gh-pages` branch (the live SAC microsite).
+This creates a set of json search documents in `output/search` that can be pushed onto the queue to ingest into the central search ingester lambda function, it will also create the static pages in `output/html` (in the .gitignore) which can be combined with the other static elements in the [docs](docs) folder which will then be pushed out onto the `gh-pages` branch (the live SAC microsite).
 
 ### Manual Deployment to live
 
@@ -128,9 +128,9 @@ POST search-index/_delete_by_query
 
 We have a basic helper scripts to carry out this function, located in [deployment/search-documents](deployment/search-documents). They require a python virtualenv and a set of requirements from `requirements.txt`. The two python commands should be run sequentially, the first `clearExistingIndexContents.py` deletes all contents of a given index / site combination and `sendDocumentsToQueue.py` which sends all JSON documents matching a given GLOB pattern to the given SQS endpoint;
 
-  cd ./deployment/search-documents
-  virtualenv venv
-  source ./venv/bin/activate
-  pip install -r requirements.txt
-  python clearExistingIndexContents.py -s sac -i $AWS_ELASTICSEARCH_INDEX --host  $AWS_ELASTICSEARCH_HOST
-  python sendDocumentsToQueue.py -p "../../output/search/**/*.json" -q $AWS_SQS_QUEUE_HOST
+    cd ./deployment/search-documents
+    virtualenv venv
+    source ./venv/bin/activate
+    pip install -r requirements.txt
+    python clearExistingIndexContents.py -s sac -i $AWS_ELASTICSEARCH_INDEX --host  $AWS_ELASTICSEARCH_HOST
+    python sendDocumentsToQueue.py -p "../../output/search/**/*.json" -q $AWS_SQS_QUEUE_HOST
