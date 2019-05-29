@@ -37,6 +37,7 @@ pipeline {
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: env.AWS_CREDENTIALS_ID,
                             accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+                    build job: 'elasticsearch-delete-by-site', parameters: [string(name: 'site', value: 'sac'), string(name: 'index', value: 'beta')]
                     sh 'chmod +x ./master/deployment/search-documents/venv-install-and-run.sh'
                     sh './master/deployment/search-documents/venv-install-and-run.sh'
                 }
