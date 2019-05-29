@@ -1,11 +1,5 @@
 pipeline {
-    agent { label ' dotnet-capable-node ' }
-    environment { 
-        AWS_DEFAULT_REGION = '${AWS_REGION}' 
-        AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
-        AWS_ELASTICSEARCH_HOST = '${AWS_ELASTICSEARCH_HOST}'
-        AWS_ELASTICSEARCH_INDEX = '${AWS_ELASTICSEARCH_INDEX}'
-    }
+    agent { label ' dotnet ' }
     stages {
         stage('Checkout current data and code bundle and build') {
             steps {
@@ -27,7 +21,7 @@ pipeline {
             steps {
                 dir('./gh-pages')  {
                     deleteDir()
-                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '${GIT_CREDENTIALS}',
+                    withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: env.GIT_CREDENTIALS_ID,
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
                         sh 'git clone https://github.com/jncc/sac-microsite.git . --branch=gh-pages --depth 1'
                         sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
@@ -41,7 +35,7 @@ pipeline {
         }
         stage('Clear and reindex elasticsearch documents') {
             steps {
-                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: '${AWS_CREDENTIALS}',
+                withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: env.AWS_CREDENTIALS_ID,
                             accessKeyVariable: 'AWS_ACCESS_KEY_ID', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
                     sh 'chmod +x ./master/deployment/search-documents/venv-install-and-run.sh'
                     sh './master/deployment/search-documents/venv-install-and-run.sh'
