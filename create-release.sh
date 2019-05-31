@@ -13,6 +13,7 @@ if [ "$1" = "-h" -o "$1" = "--help" ]; then
 Pass the following arguments:
 	* \`<repo>\`: ":user/:name" of the repository. For example, "foca/mpp".
 	* \`<tag>\`: Name of the tag for this release. For example, "v1.0.0".
+    * \`<auth>\`: github auth token.
 	* \`<release name>\`: Optional suffix for the release name.
 You can pass a list of files to upload as release assets by giving them after a
 \`--\` argument.
@@ -41,12 +42,15 @@ EOS
   exit 1;
 fi
 
-[ -n "$2" ] || (usage; exit 1);
+[ -n "$3" ] || (usage; exit 1);
 
 REPO="$1"
 shift
 
 TAG="$1"
+shift
+
+AUTH="$1"
 shift
 
 NAME="$(basename "$REPO") ${TAG}"
@@ -63,6 +67,9 @@ if [ "$1" = "--" -a "$#" -ge "2" ]; then
   ASSETS="$@"
 fi
 
+# Validate token.
+curl -o /dev/null -sH "Authorization: token $AUTH" https://api.github.com/repos/${REPO}/ || { echo "Error: Invalid repo, token or network issue!";  exit 1; }
+
 payload=$(
   jq --null-input \
      --arg tag "$TAG" \
@@ -76,6 +83,7 @@ response=$(
        --netrc \
        --silent \
        --location \
+       --header "Authorization: token $AUTH" \
        --data "$payload" \
        "https://api.github.com/repos/${REPO}/releases"
 )
@@ -84,6 +92,7 @@ upload_url="$(echo "$response" | jq -r .upload_url | sed -e "s/{?name,label}//")
 
 for file in $ASSETS; do
   curl --netrc \
+       --header "Authorization: token $AUTH" \
        --header "Content-Type:application/gzip" \
        --data-binary "@$file" \
        "$upload_url?name=$(basename "$file")"
