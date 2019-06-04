@@ -101,6 +101,11 @@ namespace JNCC.Microsite.SAC
 
             if (generate || generateSearchDocuments)
             {
+                if (generatorConfig.EnableAnalytics) 
+                {
+                    Console.WriteLine("Google analytics code will be addded to each page");
+                }
+
                 Generator.MakeSite(generatorConfig, root, generateSearchDocuments, searchIndex);
             }
 
