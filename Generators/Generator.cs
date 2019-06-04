@@ -22,21 +22,21 @@ namespace JNCC.Microsite.SAC.Generators
     public static class Generator
     {
 
-        public static void MakeSite(string basePath = "", bool generateSearchDocuments = false, string searchIndex = null)
+        public static void MakeSite(GeneratorConfig config, string basePath = "", bool generateSearchDocuments = false, string searchIndex = null)
         {
             var serviceScopeFactory = ServiceScopeFactory.GetServiceScopeFactory();
 
             Console.WriteLine("Generating Error Pages");
-            ErrorPageGenerator.Generate(serviceScopeFactory, basePath, generateSearchDocuments, searchIndex);
+            ErrorPageGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex);
 
             Console.WriteLine("Generating Site Pages");
-            SitesGenerator.Generate(serviceScopeFactory, basePath, generateSearchDocuments, searchIndex);
+            SitesGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex);
 
             Console.WriteLine("Generating Habitat Pages");
-            HabitatsGenerator.Generate(serviceScopeFactory, basePath, generateSearchDocuments, searchIndex);
+            HabitatsGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex);
 
             Console.WriteLine("Generating Species Pages");
-            SpeciesGenerator.Generate(serviceScopeFactory, basePath, generateSearchDocuments, searchIndex);
+            SpeciesGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex);
         }
     }
 }

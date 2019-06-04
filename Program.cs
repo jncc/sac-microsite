@@ -48,10 +48,12 @@ namespace JNCC.Microsite.SAC
             string searchIndex = null;
             bool view = false;
             string root = null;
+            GeneratorConfig generatorConfig = new GeneratorConfig();
 
             var options = new OptionSet {
                 { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
+                { "a|analytics", "enable google analytics code in pages", a => generatorConfig.EnableAnalytics = true},
                 { "v|view", "view the static web site", v => view = true},
                 { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
                 { "s|search=", "the search index to generate index documents for", s => {generateSearchDocuments = true; searchIndex = s;}},
@@ -99,7 +101,7 @@ namespace JNCC.Microsite.SAC
 
             if (generate || generateSearchDocuments)
             {
-                Generator.MakeSite(root, generateSearchDocuments, searchIndex);
+                Generator.MakeSite(generatorConfig, root, generateSearchDocuments, searchIndex);
             }
 
             if (view)

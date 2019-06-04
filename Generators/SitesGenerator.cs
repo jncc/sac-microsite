@@ -23,18 +23,18 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class SitesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/sites.json")))
             {
                 List<Site> sites = JsonConvert.DeserializeObject<List<Site>>(fileReader.ReadToEnd());
 
-                var searchPageContent = SearchPageBuilder.RenderPage(serviceScopeFactory, sites.Select(s => (s.EUCode, s.Name))).Result;
+                var searchPageContent = SearchPageBuilder.RenderPage(serviceScopeFactory, config, sites.Select(s => (s.EUCode, s.Name))).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/index.html"), searchPageContent);
 
                 foreach (var site in sites)
                 {
-                    var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, site).Result;
+                    var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, config, site).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/site/{0}.html", site.EUCode)), sitePageContent);
 
                     if (generateSearchDocuments)
@@ -49,6 +49,7 @@ namespace JNCC.Microsite.SAC.Generators
                 // Regional Site Lists
                 var siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in the United Kingdom",
                     String.Format("<p>There are {0} designated SACs, SCIs or cSACs in the <b>United Kingdom</b> including cross border sites (excluding <a href=\"#\">Gibraltar</a>). Cross border sites are listed under both countries. Sites are sorted alphabetically within country.</p>", sites.Count),
                     null,
@@ -78,6 +79,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in England",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>England</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("E")).Count()),
@@ -93,6 +95,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in Northern Ireland",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Northern Ireland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("NI")).Count()),
@@ -108,6 +111,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in Scotland",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Scotland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("S")).Count()),
@@ -123,6 +127,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in Wales",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Wales</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("S")).Count()),
@@ -138,6 +143,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
+                    config,
                     "SACs in UK offshore waters",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>UK offshore waters including those that cross the 12 mile limit</b>. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("O")).Count()),

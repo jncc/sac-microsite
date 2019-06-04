@@ -13,7 +13,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
     public static class InterestFeatureMapPageBuilder
     {
         
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, InterestFeature feature)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, InterestFeature feature)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {   
@@ -37,6 +37,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new InterestFeaturePage
                 {
+                    EnableAnalytics = config.EnableAnalytics,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature,

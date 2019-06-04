@@ -23,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class HabitatsGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/habitats.json")))
             {
@@ -31,7 +31,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 foreach (var habitat in habitats)
                 {
-                    var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    var habitatPageContent = HabitatPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/index.html", habitat.Code)), habitatPageContent);
 
                     if (generateSearchDocuments)
@@ -42,17 +42,17 @@ namespace JNCC.Microsite.SAC.Generators
                         );
                     }
 
-                    var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/comparison.html", habitat.Code)), habitatMapCompareContent);
 
-                    var habitatMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    var habitatMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/map.html", habitat.Code)), habitatMapContent);
 
-                    var habitatDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, habitat).Result;
+                    var habitatDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/distribution.html", habitat.Code)), habitatDistributionContent);
                 }
 
-                var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, true, habitats).Result;
+                var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, config, true, habitats).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/habitat/index.html"), habitatListContent);
 
                 Console.WriteLine("Generated pages for {0} habitats", habitats.Count);

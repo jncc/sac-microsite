@@ -11,7 +11,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class SearchPageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, IEnumerable<(string EUCode, string Name)> sites)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, IEnumerable<(string EUCode, string Name)> sites)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -22,7 +22,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
                     CurrentSection = "Search",
                     Sites = sites.ToList(),
-                    Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle)
+                    Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle), 
+                    EnableAnalytics = config.EnableAnalytics
                 };
 
                 return helper.RenderViewToStringAsync("Views/Search.cshtml", model);

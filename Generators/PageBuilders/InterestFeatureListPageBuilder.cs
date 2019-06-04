@@ -12,7 +12,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class InterestFeatureListPageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, bool habitat, List<InterestFeature> features)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, bool habitat, List<InterestFeature> features)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -22,6 +22,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
                 {
+                    EnableAnalytics = config.EnableAnalytics,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = habitat ? "Habitats" : "Species",
                     Type = habitat ? "Habitats" : "Species",
