@@ -11,7 +11,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class SitePageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, Site site)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, Site site)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -19,6 +19,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new SitePage
                 {
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
                     CurrentSection = "Site",
                     Site = site,

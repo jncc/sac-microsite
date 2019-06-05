@@ -11,7 +11,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class SpeciesPageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, InterestFeature feature)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, InterestFeature feature)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -19,6 +19,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new InterestFeaturePage
                 {
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/species", "Species", true), (string.Format("/species/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Species",
                     InterestFeature = feature,
