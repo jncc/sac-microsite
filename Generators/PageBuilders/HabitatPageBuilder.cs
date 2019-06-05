@@ -20,7 +20,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 var model = new InterestFeaturePage
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat", "Habitats", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Habitat",
                     InterestFeature = feature,

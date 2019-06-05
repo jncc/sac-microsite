@@ -19,11 +19,11 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new Search
                 {
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
                     CurrentSection = "Search",
                     Sites = sites.ToList(),
                     Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle), 
-                    EnableAnalytics = config.EnableAnalytics
                 };
 
                 return helper.RenderViewToStringAsync("Views/Search.cshtml", model);

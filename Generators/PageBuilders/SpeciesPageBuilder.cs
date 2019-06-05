@@ -19,7 +19,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new InterestFeaturePage
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/species", "Species", true), (string.Format("/species/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Species",
                     InterestFeature = feature,

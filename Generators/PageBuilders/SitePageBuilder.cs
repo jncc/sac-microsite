@@ -19,7 +19,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new SitePage
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
                     CurrentSection = "Site",
                     Site = site,

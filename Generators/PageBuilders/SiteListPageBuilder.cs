@@ -25,7 +25,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 return helper.RenderViewToStringAsync("Views/SiteList.cshtml", new SiteList
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = "Site",
                     HeaderText = header,

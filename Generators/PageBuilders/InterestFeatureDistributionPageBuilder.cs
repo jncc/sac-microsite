@@ -37,7 +37,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 var model = new InterestFeaturePage
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature

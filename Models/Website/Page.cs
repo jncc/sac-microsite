@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using JNCC.Microsite.SAC.Generators;
 
 namespace JNCC.Microsite.SAC.Models.Website
 {
@@ -11,6 +12,6 @@ namespace JNCC.Microsite.SAC.Models.Website
         public bool HeroImage { get; set; } = false;
         public string Title { get; set; }
         public static string DefaultTitle = "Special Areas of Conservation";
-        public bool EnableAnalytics { get; set; } = false;
+        public GeneratorConfig GeneratorConfig { get; set; }
     }
 }

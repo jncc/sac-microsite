@@ -22,7 +22,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
                 {
-                    EnableAnalytics = config.EnableAnalytics,
+                    GeneratorConfig = config,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = habitat ? "Habitats" : "Species",
                     Type = habitat ? "Habitats" : "Species",

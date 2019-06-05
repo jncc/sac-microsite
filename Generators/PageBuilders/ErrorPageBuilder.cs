@@ -12,7 +12,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class ErrorPageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, int error, bool enableAnalytics)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, int error, GeneratorConfig config)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -24,7 +24,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = null,
                     DisplayBreadcrumb = false,
                     Title = StringHelpers.RemoveHTMLTags(String.Format("Page not found - {0}", Page.DefaultTitle)),
-                    EnableAnalytics = enableAnalytics
+                    GeneratorConfig = config
                 });
             }
         }
