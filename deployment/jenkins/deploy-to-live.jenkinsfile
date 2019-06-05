@@ -13,7 +13,7 @@ pipeline {
                 dir('./master') {
                     sh 'dotnet restore'
                     sh 'dotnet build'
-                    sh 'dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX'
+                    sh 'dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX -a $GOOGLE_ANALYTICS_ID -t $GOOGLE_TAG_MANAGER_ID'
                 }
             }
         }
