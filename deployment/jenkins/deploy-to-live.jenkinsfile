@@ -27,7 +27,7 @@ pipeline {
                         sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
                         sh 'cp -r ../master/output/html/* .'
                         sh 'git add --all'
-                        sh 'git commit -a -m "Jenkins Build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>" || echo \'Commit failed. There is probably nothing to commit.\''
+                        sh 'git commit -a -m "Jenkins Build ' + env.BUILD_NUMBER + ' --author "Jenkins <jenkins@jncc.gov.uk>" || echo \'Commit failed. There is probably nothing to commit.\''
                         sh 'git push --force || echo \'Push failed. There is probably nothing to commit.\''
                     }
                 }
