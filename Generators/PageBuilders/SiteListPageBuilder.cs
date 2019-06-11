@@ -12,7 +12,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 {
     public static class SiteListPageBuilder
     {
-        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, string header, string subject, (string href, string text, bool display)? breadcrumb, List<RegionalSites> sites)
+        public static Task<string> RenderPage(IServiceScopeFactory scopeFactory, GeneratorConfig config, string header, string subject, (string href, string text, bool display)? breadcrumb, List<RegionalSites> sites)
         {
             using (var serviceScope = scopeFactory.CreateScope())
             {
@@ -25,6 +25,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
 
                 return helper.RenderViewToStringAsync("Views/SiteList.cshtml", new SiteList
                 {
+                    GeneratorConfig = config,
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = "Site",
                     HeaderText = header,

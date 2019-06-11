@@ -3,7 +3,7 @@ Special Areas of Conservation (SACs) are strictly protected sites designated und
 
 ## Readme
 
-Plan is to make a static site. Hosted on Github Pages (or similar).
+The sac microsite is hosted on github pages and is published from the gh-pages branch
 
 The data manager can `git clone` clone the site on their local PC, and use the readme.md file to follow the instructions.
 
@@ -18,6 +18,7 @@ If you already have a 32-bit install of Microsoft office you will need to run th
 ```
 AccessDatabaseEngine_X64.exe /quiet
 ```
+You will need to have an admin account if you do the updates or development on a windows machine and wish to use the dotnet sdk. Otherwise you will have to follow the instructions for [Updates with an unprivaliged login](#updates-with-an-unprivaliged-login)
 
 ## Local development
 
@@ -134,3 +135,48 @@ We have a basic helper scripts to carry out this function, located in [deploymen
     pip install -r requirements.txt
     python clearExistingIndexContents.py -s sac -i $AWS_ELASTICSEARCH_INDEX --host  $AWS_ELASTICSEARCH_HOST
     python sendDocumentsToQueue.py -p "../../output/search/**/*.json" -q $AWS_SQS_QUEUE_HOST
+
+## Updates with an unprivaliged network account
+
+You need to be an admin on your machine to use the dotnet tools to build the site. An executable is built and packeged by jenkins to get around this issue for unprivaliged users.
+
+Checkout the SAC project from git. The folder containing the project is your root folder.
+
+Download the latest JNCC.Microsite.SAC_{version}.zip
+file [from the releases section in git](https://github.com/jncc/sac-microsite/releases) and extract it to a suitable location outside of the sac project.
+
+### Update the data
+Get a copy of the Natura database and run the executable JNCC.Microsite.SAC.exe from the extracted release zip file.
+
+For example, given that: 
+
+* sac root path = c:\development\sac-microsite
+* ASP natura database path = c:\development\ASP NATURA DATABASE.mdb
+* JNCC.Microsite.SAC.exe is in the curent folder
+
+Run the following to update the data
+
+    JNCC.Microsite.SAC.exe -r c:\development\sac-microsite -u "c:\development\ASP NATURA DATABASE.mdb"
+
+This proces will update the json files in c:\development\sac-microsite\output\json
+
+### Update the website
+
+The following instruciotns will update the web pages using the data extracted in the previous step.
+
+    JNCC.Microsite.SAC.exe -r c:\development\sac-microsite -g -v
+
+The -v switch intitiates a web server once the pages have been generated.  You can browse the site at http://localhost:5000/
+
+### Updating page templates
+
+Updating pages and regenerating the site is more convoluted in an unprivaliged environment because the changes have to be incorporated into the executable.
+
+Check out the solution and make the changes to the page templates in Views.
+
+Commit the changes to the master branch. This will trigger jenkins to build a new executable and put it into the [github releases folder.](https://github.com/jncc/sac-microsite/releases)
+
+Any build failures will be visible in the build server logs.
+
+Download the new executable and follow the instructions for [updating the data](#update-the-data) and [updating the website](#update-the-website).
+

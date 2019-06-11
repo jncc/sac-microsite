@@ -23,7 +23,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class SpeciesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, string basePath, bool generateSearchDocuments, string searchIndex)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/species.json")))
             {
@@ -31,7 +31,7 @@ namespace JNCC.Microsite.SAC.Generators
 
                 foreach (var species in speciesList)
                 {
-                    var speciesPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    var speciesPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/index.html", species.Code)), speciesPageContent);
 
                     if (generateSearchDocuments)
@@ -42,17 +42,17 @@ namespace JNCC.Microsite.SAC.Generators
                         );
                     }
 
-                    var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/comparison.html", species.Code)), speciesMapCompareContent);
 
-                    var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/map.html", species.Code)), speciesMapContent);
 
-                    var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, species).Result;
+                    var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/distribution.html", species.Code)), speciesDistributionContent);
                 }
 
-                var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, false, speciesList).Result;
+                var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, config, false, speciesList).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/species/index.html"), speciesListContent);
 
                 Console.WriteLine("Generated pages for {0} species", speciesList.Count);
