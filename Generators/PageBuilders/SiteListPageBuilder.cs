@@ -18,7 +18,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 
-                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true)};
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Sites", true)};
                 if (breadcrumb != null) {
                     breadcrumbs.Add(breadcrumb.Value);
                 }

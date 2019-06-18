@@ -18,7 +18,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 
-                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), habitat ? ("/habitat", "Habitats", true) : ("/species", "Species", true)};
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), habitat ? ("/habitat/", "Habitats", true) : ("/species/", "Species", true)};
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
                 {
