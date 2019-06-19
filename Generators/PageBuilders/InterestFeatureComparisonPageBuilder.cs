@@ -25,13 +25,13 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 
                 if (isHabitat)
                 {
-                    breadcrumbs.Add(("/habitat", "Habitats", true));
+                    breadcrumbs.Add(("/habitat/", "Habitats", true));
                     breadcrumbs.Add((string.Format("/habitat/{0}", feature.Code), feature.Name, true));
                     breadcrumbs.Add((string.Format("/habitat/{0}/comparison", feature.Code), "Comparison", true));
                 }
                 else
                 {
-                    breadcrumbs.Add(("/species", "Species", true));
+                    breadcrumbs.Add(("/species/", "Species", true));
                     breadcrumbs.Add((string.Format("/species/{0}", feature.Code), feature.Name, true));
                     breadcrumbs.Add((string.Format("/species/{0}/comparison", feature.Code), "Comparison", true));
                 }
