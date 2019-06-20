@@ -25,7 +25,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = "Site",
                     Site = site,
                     Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - Special Areas of Conservation", site.Name)),
-                    MetaDescription = String.Format("SAC selection criteria for site %s, EU Code %s, Unitary Authority %s, %s", StringHelpers.RemoveHTMLTags(site.Name), site.EUCode, site.LocalAuthority, site.CountryFull),
+                    MetaDescription = String.Format("SAC selection criteria for site {0}, EU Code {1}, Unitary Authority {2}, {3}", StringHelpers.RemoveHTMLTags(site.Name), site.EUCode, site.LocalAuthority, site.CountryFull),
                     MetaKeywords = new List<string> {site.Name, site.EUCode, site.LocalAuthority}
                 };
 

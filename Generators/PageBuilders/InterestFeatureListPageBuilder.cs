@@ -31,7 +31,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                         InterestFeatures = s.ToList()
                     }).ToList(),
                     Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle)),
-                    MetaDescription = String.Format("List of %s. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", habitat ? "Habitat Interest Features" : "Species Interest Features"),
+                    MetaDescription = String.Format("List of {0}. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", habitat ? "Habitat Interest Features" : "Species Interest Features"),
                     MetaKeywords = new List<string> {habitat ? "Habitat Interest Features" : "Species Interest Features"}
                 });
             }

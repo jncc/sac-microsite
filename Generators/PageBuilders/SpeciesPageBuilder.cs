@@ -25,7 +25,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = "Species",
                     InterestFeature = feature,
                     Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)),
-                    MetaDescription = String.Format("Species account of Habitats Directive feature %s, %s, %s. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", feature.Code, feature.LayTitle, feature.Name),
+                    MetaDescription = String.Format("Species account of Habitats Directive feature {0}, {1}, {2}. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", feature.Code, feature.LayTitle, feature.Name),
                     MetaKeywords = new List<string> {feature.Code, feature.LayTitle, feature.Name}
                 };
 
