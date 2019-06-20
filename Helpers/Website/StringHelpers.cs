@@ -5,6 +5,12 @@ namespace JNCC.Microsite.SAC.Helpers.Website
 {
     public static class StringHelpers
     {
+        public static string FixHTMLStringForMetaKeywords(string input) {
+            // Remove HTML tags and , characters from the input string
+            input = RemoveHTMLTags(input.Replace(",", ""));
+            return input;
+        }
+
         public static string RemoveHTMLTags(string input, string replaceWith = "")
         {
             return Regex.Replace(input, "<[^>]*>", replaceWith);

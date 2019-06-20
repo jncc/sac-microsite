@@ -24,7 +24,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/habitat/", "Habitats", true), (string.Format("/habitat/{0}", feature.Code), feature.Name, true) },
                     CurrentSection = "Habitat",
                     InterestFeature = feature,
-                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle))
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)),
+                    MetaDescription = String.Format("Habitat account of Habitats Directive feature %s, %s. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", feature.Code, feature.Name),
+                    MetaKeywords = new List<string> {feature.Code, feature.Name}
                 };
 
                 return helper.RenderViewToStringAsync("Views/HabitatInterestFeature.cshtml", model);

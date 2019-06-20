@@ -41,7 +41,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature,
-                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) SAC/SCI/cSAC distribution map - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle))
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) SAC/SCI/cSAC distribution map - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)),
+                    MetaDescription = String.Format("{0} ({1}) SAC/SCI/cSAC distribution map. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", feature.LayTitle, feature.Name),
+                    MetaKeywords = new List<string> {feature.LayTitle, feature.Name}
                 };
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureMap.cshtml", model);

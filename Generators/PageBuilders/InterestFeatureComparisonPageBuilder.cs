@@ -42,7 +42,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Breadcrumbs = breadcrumbs,
                     CurrentSection = isHabitat ? "Habitat" : "Species",
                     InterestFeature = feature,
-                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) Distribution Comparison - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle))
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} ({1}) Distribution Comparison - {2}", feature.LayTitle, feature.Name, Page.DefaultTitle)),
+                    MetaDescription = String.Format("A distribution comparison of Habitats Directive feature %s, %s. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", feature.Code, feature.Name),
+                    MetaKeywords = new List<string> {feature.Code, feature.Name}
                 };
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureMapCompare.cshtml", model);

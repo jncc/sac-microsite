@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using JNCC.Microsite.SAC.Helpers.Generators;
-using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
 using JNCC.Microsite.SAC.Helpers.Website;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,7 +22,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = null,
                     DisplayBreadcrumb = false,
                     Title = StringHelpers.RemoveHTMLTags(String.Format("Page not found - {0}", Page.DefaultTitle)),
-                    GeneratorConfig = config
+                    GeneratorConfig = config,
+                    MetaDescription = "This is a generic 404 error page",
+                    MetaKeywords = new List<string>{"Error", "404"}
                 });
             }
         }
