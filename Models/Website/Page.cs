@@ -10,14 +10,25 @@ namespace JNCC.Microsite.SAC.Models.Website
         public static List<string> DEFAULT_METADATA_KEYWORDS = new List<string> {
             "Habitats Directive", "Natura 2000", "Protected Aeas", "Site Designation", "Site Selection", "Special Area of Conservation", "SAC", "United Kingdom", "UK"
         };
-        
+
+        private string _metadataDescription;
         private IEnumerable<string> _metadataKeywords;
 
         public List<(string href, string text, bool display)> Breadcrumbs { get; set; }
         public string CurrentSection { get; set; }
         public bool DisplayBreadcrumb { get; set; } = true;
         public bool HeroImage { get; set; } = false;
-        public string MetaDescription { get; set; }
+        public string MetaDescription
+        {
+            get
+            {
+                return this._metadataDescription;
+            }
+            set
+            {
+                this._metadataDescription = StringHelpers.RemoveHTMLTags(value);
+            }
+        }
         public IEnumerable<string> MetaKeywords
         {
             get
