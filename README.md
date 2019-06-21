@@ -80,6 +80,8 @@ We have created an Jenkins pipeline to deploy the site to live, that pipeline is
     AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
     AWS_ELASTICSEARCH_HOST = '${AWS_ELASTICSEARCH_HOST}'
     AWS_ELASTICSEARCH_INDEX = '${AWS_ELASTICSEARCH_INDEX}'
+    GOOGLE_ANALYTICS_ID = google analytics ID - ie UA-00000000-0
+    GOOGLE_TAG_MANAGER_ID = google tag manager ID - ie GTM-XXX00XX
 
 These variables determine the AWS region we are running in, the name of an AWS SQS queue endpoint to push the search documents into for ingestion, the AWS Elasticsearch endpoint and the index to post results into. More info about the elasticsearch ingestion process can be found at jncc/elasticsearch-lambda-ingester.
 
@@ -97,7 +99,7 @@ To manually deploy a new version we just need to run the following;
     cd sac-microsite
     dotnet restore
     dotnet build
-    dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX
+    dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX -a $GOOGLE_ANALYTICS_ID -t $GOOGLE_TAG_MANAGER_ID'
     cd ..
 
 This builds the new pages and the updated search documents as above, then we will need to run the following;
@@ -179,4 +181,3 @@ Commit the changes to the master branch. This will trigger jenkins to build a ne
 Any build failures will be visible in the build server logs.
 
 Download the new executable and follow the instructions for [updating the data](#update-the-data) and [updating the website](#update-the-website).
-
