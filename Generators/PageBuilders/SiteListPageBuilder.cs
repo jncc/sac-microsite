@@ -18,7 +18,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 
-                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site", "Sites", true)};
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Sites", true)};
                 if (breadcrumb != null) {
                     breadcrumbs.Add(breadcrumb.Value);
                 }
@@ -31,7 +31,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     HeaderText = header,
                     SubjectHTML = subject,
                     RegionalSites = sites,
-                    Title = StringHelpers.RemoveHTMLTags(String.Format("List of {0} - {1}", header, Page.DefaultTitle))
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("List of {0} - {1}", header, Page.DefaultTitle)), 
+                    MetaDescription = "Selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)",
+                    MetaKeywords = new List<string>{}
                 });
             }
 

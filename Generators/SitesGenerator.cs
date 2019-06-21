@@ -1,23 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
-using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
 using JNCC.Microsite.SAC.Helpers;
-using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {
@@ -83,7 +73,7 @@ namespace JNCC.Microsite.SAC.Generators
                     "SACs in England",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>England</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("E")).Count()),
-                    ("/england", "England", true),
+                    ("/site/england", "England", true),
                     new List<RegionalSites>
                     {
                         new RegionalSites {
@@ -99,7 +89,7 @@ namespace JNCC.Microsite.SAC.Generators
                     "SACs in Northern Ireland",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Northern Ireland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("NI")).Count()),
-                    ("/northern-ireland", "Northern Ireland", true),
+                    ("/site/northern-ireland", "Northern Ireland", true),
                     new List<RegionalSites>
                     {
                         new RegionalSites {
@@ -115,7 +105,7 @@ namespace JNCC.Microsite.SAC.Generators
                     "SACs in Scotland",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Scotland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("S")).Count()),
-                    ("/scotland", "Scotland", true),
+                    ("/site/scotland", "Scotland", true),
                     new List<RegionalSites>
                     {
                         new RegionalSites {
@@ -131,7 +121,7 @@ namespace JNCC.Microsite.SAC.Generators
                     "SACs in Wales",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>Wales</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("S")).Count()),
-                    ("/wales", "Wales", true),
+                    ("/site/wales", "Wales", true),
                     new List<RegionalSites>
                     {
                         new RegionalSites {
@@ -147,7 +137,7 @@ namespace JNCC.Microsite.SAC.Generators
                     "SACs in UK offshore waters",
                     String.Format("<p>There are {0} SACs, SCIs or cSACs in <b>UK offshore waters including those that cross the 12 mile limit</b>. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("O")).Count()),
-                    ("/offshore", "Offshore", true),
+                    ("/site/offshore", "Offshore", true),
                     new List<RegionalSites>
                     {
                         new RegionalSites {

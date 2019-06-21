@@ -24,6 +24,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     CurrentSection = "Search",
                     Sites = sites.ToList(),
                     Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle), 
+                    MetaDescription = "Selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)",
+                    MetaKeywords = new List<string>{}
                 };
 
                 return helper.RenderViewToStringAsync("Views/Search.cshtml", model);

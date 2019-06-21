@@ -50,11 +50,11 @@ namespace JNCC.Microsite.SAC.Helpers.Website
         {
             if (IsHabitatCode(code))
             {
-                return String.Format("/habitat/{0}", code);
+                return String.Format("/habitat/{0}/", code);
             }
             else
             {
-                return String.Format("/species/{0}", code);
+                return String.Format("/species/{0}/", code);
             }
         }
 

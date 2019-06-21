@@ -18,7 +18,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 
-                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), habitat ? ("/habitat", "Habitats", true) : ("/species", "Species", true)};
+                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), habitat ? ("/habitat/", "Habitats", true) : ("/species/", "Species", true)};
 
                 return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
                 {
@@ -30,7 +30,9 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                         SectionTitle = s.Key,
                         InterestFeatures = s.ToList()
                     }).ToList(),
-                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle))
+                    Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - {1}",  habitat ? "Habitat Interest Features" : "Species Interest Features", Page.DefaultTitle)),
+                    MetaDescription = String.Format("List of {0}. The Habitats Directive: selection of Special Areas of Conservation in the UK, second edition, JNCC (2002)", habitat ? "Habitat Interest Features" : "Species Interest Features"),
+                    MetaKeywords = new List<string> {habitat ? "Habitat Interest Features" : "Species Interest Features"}
                 });
             }
 
