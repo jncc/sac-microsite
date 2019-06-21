@@ -27,7 +27,7 @@ namespace JNCC.Microsite.SAC.Helpers.Website
 
         public static string GetSitePDFResourceURL(string code)
         {
-            return String.Format("https://jncc.gov.uk/assets/SAC-N2K/{0}.pdf", code);
+            return String.Format("https://jncc.gov.uk/jncc-assets/SAC-N2K/{0}.pdf", code);
         }        
 
         public static List<SiteFeature> GetAnnexInterestFeature(List<SiteFeature> features, bool species = true, bool primary = true)

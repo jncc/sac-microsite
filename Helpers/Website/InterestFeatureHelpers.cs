@@ -43,7 +43,7 @@ namespace JNCC.Microsite.SAC.Helpers.Website
 
         public static string GetInterestFeaturePDFResourceURL(string code)
         {
-            return String.Format("https://jncc.gov.uk/assets/REPORT-312/{0}.pdf", code);
+            return String.Format("https://jncc.gov.uk/jncc-assets/REPORT-312/{0}.pdf", code);
         }        
 
         public static string GetFeatureUrl(string code)
