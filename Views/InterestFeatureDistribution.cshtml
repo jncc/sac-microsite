@@ -59,9 +59,23 @@
 
 <h2>Data source</h2>
 <div class="row"> 
+    @{
+        var featureName = String.Empty;
+        var linkTitle = String.Empty;
+        if (InterestFeatureHelpers.IsSpeciesCode(Model.InterestFeature.Code))
+        {
+            featureName = String.Format("{0} {1}", Model.InterestFeature.LayTitle, Model.InterestFeature.Name);
+        }
+        else
+        {
+            featureName = Model.InterestFeature.Name;
+            linkTitle = String.Format(" for {0}", StringHelpers.RemoveHTMLTags(featureName));
+        }
     <p>
-        The sources of this data can be found in the <a href="@(InterestFeatureHelpers.GetInterestFeaturePDFResourceURL(Model.InterestFeature.Code))">supporting information for @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))</a> from the Article 17 Habitats Directive Report.
+        The sources of this data can be found in the <a href="@(InterestFeatureHelpers.GetInterestFeaturePDFResourceURL(Model.InterestFeature.Code))" title="Link: download supporting information (audit trail)@linkTitle (PDF)" target='_blank'>supporting information for @Html.Raw(featureName)</a> from the Article 17 Habitats Directive Report.
     </p>
+    }
+
 </div>
 
 
