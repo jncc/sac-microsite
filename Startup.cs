@@ -37,7 +37,7 @@ namespace JNCC.Microsite.SAC
             // Webserver Root is at <root>/output/html
             Console.WriteLine("Webserver root is {0}", env.WebRootPath);
             // Static files Root is at <root>/docs/[images|frontend]
-            string staticFilesRoot = FileHelper.GetActualFilePath(env.WebRootPath, "..\\..\\docs");
+            string staticFilesRoot = FileHelper.GetActualFilePath(env.WebRootPath, Path.Combine("..","..","docs"));
             Console.WriteLine("Static files root is {0}", staticFilesRoot);
 
             app.UseDefaultFiles()
