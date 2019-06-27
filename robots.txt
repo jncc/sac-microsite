@@ -1,0 +1,4 @@
+User-agent: *
+Dissallow: /frontend/
+Dissallow: /output/
+Dissallow: /images/
