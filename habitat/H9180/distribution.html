@@ -26,10 +26,12 @@
         <meta name="keywords" content="H9180,Tilio-Acerion forests of slopes screes and ravines,Habitats Directive,Natura 2000,Protected Aeas,Site Designation,Site Selection,Special Area of Conservation,SAC,United Kingdom,UK">
         <title>Mixed woodland on base-rich soils associated with rocky slopes (Tilio-Acerion forests of slopes, screes and ravines) Distribution - Special Areas of Conservation</title>
         <link rel="stylesheet" href="/frontend/css/app.css">
+        <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
+        <script src="/frontend/js/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
         <script src="/frontend/js/app.js"></script>
     </head>
     <body>
@@ -168,5 +170,36 @@
         </div>
     </div>
 </footer>        </div>
+
+        <!-- Cookie Consent Setup -->
+        <script>
+            window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "cookie": {
+                    "name": "cookiePolicyAcceptance",
+                    "domain": ".jncc.gov.uk"
+                },
+                "content": {
+                    "message":"The JNCC Special Areas of Conservation site uses cookies to make the site simpler.",
+                    "link": "Find out more about cookies.",
+                    "href": "https://jncc.gov.uk/about-jncc/corporate-information/cookie-policy/"
+                },            
+                "palette": {
+                    "popup": {
+                        "background": "#efefef",
+                        "text": "#404040"
+                    },
+                    "button": {
+                        "background": "#218838",
+                        "text": "#ffffff"
+                    }
+                },
+                "position": "top",
+                "static": true,
+                "dismissOnScroll": 1,
+                "dismissOnWindowClick": true,
+                "dismissOnTimeout": "10"
+            })});  
+        </script>        
     </body>
 </html>
