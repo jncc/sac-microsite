@@ -181,3 +181,23 @@ Commit the changes to the master branch. This will trigger jenkins to build a ne
 Any build failures will be visible in the build server logs.
 
 Download the new executable and follow the instructions for [updating the data](#update-the-data) and [updating the website](#update-the-website).
+
+## Updating Images in /doc/images
+
+If you need to update the images for the maps, make sure that you follow the existing naming convention exactly, if you need to regenerate thumbnails you can use the ImageMagick Mogrify tool to create them i.e.;
+
+    magick mogrify -resize 300x388 -quality 100 -path ./docs/mages/maps/features/uk/thumbnails ./docs/images/maps/features/uk/*.gif
+
+You can then bulk rename them in Windows;
+
+    ren *.gif ?????_thumb.*
+    i.e. S1365.gif > S1365_thumb.gif
+
+OR
+
+    ren *.gif ????????_thumb.*
+    i.e. uk_S1365.gif > uk_S1365_thumb.gif
+
+Or under linux using rename or something similar;
+
+    rename 's/\.gif$/_thumb\.gif/g' *.gif
