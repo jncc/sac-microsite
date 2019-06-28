@@ -5,7 +5,7 @@ namespace JNCC.Microsite.SAC.Models.Website
     public class SitemapEntry
     {
         public static string DEFAULT_BASE_URL_SCHEME = "https";
-        public static string DEFAULT_BASE_URL = "https://sac.jncc.gov.uk";
+        public static string DEFAULT_BASE_URL = "sac.jncc.gov.uk";
 
         private string _url;
 
