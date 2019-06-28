@@ -25,7 +25,7 @@ namespace JNCC.Microsite.SAC.Generators
             if (generateSearchDocuments)
             {
                 FileHelper.WriteJSONToFile(
-                    "output/search/site/gibraltar.json",
+                    FileHelper.GetActualFilePath(basePath, "output/search/site/gibraltar.json"),
                     SearchHelpers.GetMiscPageSearchDocument(searchIndex, "MISC-GIBRALTAR", "Natura 2000 in Gibraltar", gibraltarPageContent, "/site/gibraltar")
                 );
             }
