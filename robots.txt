@@ -2,3 +2,4 @@ User-agent: *
 Dissallow: /frontend/
 Dissallow: /output/
 Dissallow: /images/
+Sitemap: https://sac.jncc.gov.uk/sitemap.xml
