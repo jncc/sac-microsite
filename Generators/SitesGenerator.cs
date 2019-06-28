@@ -13,7 +13,7 @@ namespace JNCC.Microsite.SAC.Generators
 {
     public static class SitesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex, List<SitemapEntry> sitemapEntries)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/sites.json")))
             {
@@ -21,11 +21,19 @@ namespace JNCC.Microsite.SAC.Generators
 
                 var searchPageContent = SearchPageBuilder.RenderPage(serviceScopeFactory, config, sites.Select(s => (s.EUCode, s.Name))).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/index.html"), searchPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/"
+                });
 
                 foreach (var site in sites)
                 {
                     var sitePageContent = SitePageBuilder.RenderPage(serviceScopeFactory, config, site).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/site/{0}.html", site.EUCode)), sitePageContent);
+                    sitemapEntries.Add(new SitemapEntry
+                    {
+                        URL = String.Format("/site/{0}", site.EUCode)
+                    });
 
                     if (generateSearchDocuments)
                     {
@@ -66,6 +74,10 @@ namespace JNCC.Microsite.SAC.Generators
                     },
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/index.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/"
+                });
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -82,6 +94,10 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/england.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/england"
+                });
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -98,6 +114,10 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/northern-ireland.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/northern-ireland"
+                });
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -114,6 +134,10 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/scotland.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/scotland"
+                });
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -130,6 +154,10 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/wales.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/wales"
+                });
 
                 siteListPageContent = SiteListPageBuilder.RenderPage(
                     serviceScopeFactory,
@@ -146,6 +174,10 @@ namespace JNCC.Microsite.SAC.Generators
                         }
                     }).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/site/offshore.html"), siteListPageContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/site/offshore"
+                });
 
                 Console.WriteLine("Generated pages for {0} sites", sites.Count);
 

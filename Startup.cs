@@ -37,7 +37,7 @@ namespace JNCC.Microsite.SAC
             // Webserver Root is at <root>/output/html
             Console.WriteLine("Webserver root is {0}", env.WebRootPath);
             // Static files Root is at <root>/docs/[images|frontend]
-            string staticFilesRoot = FileHelper.GetActualFilePath(env.WebRootPath, Path.Combine("..","..","docs"));
+            string staticFilesRoot = FileHelper.GetActualFilePath(env.WebRootPath, Path.Combine("..", "..", "docs"));
             Console.WriteLine("Static files root is {0}", staticFilesRoot);
 
             app.UseDefaultFiles()
@@ -46,27 +46,29 @@ namespace JNCC.Microsite.SAC
 
             try
             {
-                app.UseStaticFiles(new StaticFileOptions{
+                app.UseStaticFiles(new StaticFileOptions
+                {
                     FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(staticFilesRoot, "images")),
                     RequestPath = "/images"
-                });   
+                });
             }
             catch (DirectoryNotFoundException)
             {
-                
+
                 throw new DirectoryNotFoundException("Images folder not fouind in <root>/docs. The static images folder must be placed in the <output root>/docs folder before the site can be generated");
             }
 
             try
             {
-                app.UseStaticFiles(new StaticFileOptions{
+                app.UseStaticFiles(new StaticFileOptions
+                {
                     FileProvider = new PhysicalFileProvider(FileHelper.GetActualFilePath(staticFilesRoot, "frontend")),
                     RequestPath = "/frontend"
                 });
             }
             catch (DirectoryNotFoundException)
             {
-                
+
                 throw new DirectoryNotFoundException("Frontend folder not found in <root>/docs. The static frontend folder must be placed in the <output root>/docs folder before the site can be generated");
             }
         }

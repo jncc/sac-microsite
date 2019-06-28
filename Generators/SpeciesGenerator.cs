@@ -1,29 +1,18 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 using JNCC.Microsite.SAC.Models.Data;
 using JNCC.Microsite.SAC.Models.Website;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
-using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
-using Microsoft.Extensions.ObjectPool;
 using Newtonsoft.Json;
 using JNCC.Microsite.SAC.Generators.PageBuilders;
 using JNCC.Microsite.SAC.Helpers;
-using JNCC.Microsite.SAC.Helpers.Generators;
 
 namespace JNCC.Microsite.SAC.Generators
 {
     public static class SpeciesGenerator
     {
-        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex)
+        public static void Generate(IServiceScopeFactory serviceScopeFactory, GeneratorConfig config, string basePath, bool generateSearchDocuments, string searchIndex, List<SitemapEntry> sitemapEntries)
         {
             using (StreamReader fileReader = new StreamReader(FileHelper.GetActualFilePath(basePath, "output/json/species.json")))
             {
@@ -33,6 +22,11 @@ namespace JNCC.Microsite.SAC.Generators
                 {
                     var speciesPageContent = SpeciesPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/index.html", species.Code)), speciesPageContent);
+
+                    sitemapEntries.Add(new SitemapEntry
+                    {
+                        URL = String.Format("/species/{0}/", species.Code)
+                    });
 
                     if (generateSearchDocuments)
                     {
@@ -44,16 +38,32 @@ namespace JNCC.Microsite.SAC.Generators
 
                     var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/comparison.html", species.Code)), speciesMapCompareContent);
+                    sitemapEntries.Add(new SitemapEntry
+                    {
+                        URL = String.Format("/species/{0}/comparison", species.Code)
+                    });
 
                     var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/map.html", species.Code)), speciesMapContent);
+                    sitemapEntries.Add(new SitemapEntry
+                    {
+                        URL = String.Format("/species/{0}/map", species.Code)
+                    });
 
                     var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/distribution.html", species.Code)), speciesDistributionContent);
+                    sitemapEntries.Add(new SitemapEntry
+                    {
+                        URL = String.Format("/species/{0}/distribution", species.Code)
+                    });
                 }
 
                 var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, config, false, speciesList).Result;
                 FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, "output/html/species/index.html"), speciesListContent);
+                sitemapEntries.Add(new SitemapEntry
+                {
+                    URL = "/species/"
+                });
 
                 Console.WriteLine("Generated pages for {0} species", speciesList.Count);
 
