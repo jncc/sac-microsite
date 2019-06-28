@@ -25,6 +25,11 @@ pipeline {
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
                         sh 'git clone https://github.com/jncc/sac-microsite.git . --branch=gh-pages --depth 1'
                         sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
+                        sh 'rm -r ./site/*'
+                        sh 'rm -r ./species/*'
+                        sh 'rm -r ./habitat/*'
+                        sh 'rm -r ./images/*'
+                        sh 'rm -r ./frontend/*'
                         sh 'cp -r ../master/output/html/* .'
                         sh 'cp -r ../master/docs/images/* ./images/'
                         sh 'cp -r ../master/docs/frontend/* ./frontend/'
