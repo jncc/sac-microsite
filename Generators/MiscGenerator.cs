@@ -26,7 +26,7 @@ namespace JNCC.Microsite.SAC.Generators
             {
                 FileHelper.WriteJSONToFile(
                     FileHelper.GetActualFilePath(basePath, "output/search/site/gibraltar.json"),
-                    SearchHelpers.GetMiscPageSearchDocument(searchIndex, "MISC-GIBRALTAR", "Natura 2000 in Gibraltar", gibraltarPageContent, "/site/gibraltar")
+                    SearchHelpers.GetMiscPageSearchDocument(searchIndex, "MISC-GIBRALTAR", "Natura 2000 in Gibraltar", gibraltarPageContent, "https://sac.jncc.gov.uk/site/gibraltar")
                 );
             }
         }
