@@ -1,13 +1,14 @@
-.topcallout {
+div.topcallout.row.callout {
     background-color: rgba(255, 255, 255, 0.7) !important;
     font-weight: bolder;
+    margin-bottom: 0.5rem !important;
 }
 
 .topcallout .button {
     margin: 0 0 0 0;
 }
 
-.topcallout select {
+select.topcallout {
     margin: 0 0 0 0;
     padding-left: 0.5rem;
     padding-right: 1.5rem;
