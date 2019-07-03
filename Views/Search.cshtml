@@ -3,39 +3,58 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<div class="two-columns">
-    <div id="content">
-        <h1>Special Areas of Conservation</h1>
-        <p>Special Areas of Conservation (SACs) are strictly protected sites designated under the EC Habitats Directive. Article 3 of the Habitats Directive requires the establishment of a European network of important high-quality conservation sites that will make a significant contribution to conserving the 189 habitat types and 788 species identified in Annexes I and II of the Directive (as amended). The listed habitat types and species are those considered to be most in need of conservation at a European level (excluding birds). Of the Annex I habitat types, 78 are believed to occur in the UK. Of the Annex II species, 43 are native to, and normally resident in, the UK.</p>
-        <p>Details of the <a href="https://webarchive.nationalarchives.gov.uk/20190405130629/http://jncc.defra.gov.uk/page-1460" title="External link: Background to SAC selection on the Government Web Archive">background to SAC selection</a> and designation are available on the National Archive.</p>
-
-        <div class="row callout secondary">
-            <p><b>List all SACs:</b> <a href="/site/england">England</a> | <a href="/site/northern-ireland">Northern Ireland</a> | <a href="/site/scotland">Scotland</a> | <a href="/site/wales">Wales</a> | <a href="/site/offshore">Offshore</a> | <a href="/site/">Full UK List</a></p>
-        </div>
-        <div class="callout secondary">
-            <p>List all <a href="/habitat/">Habitat</a> or  <a href="/species/">Species</a> interest features</p>
-        </div>
-        <script type="text/javascript">
-            function goToSite(selected) {
-                if (selected.value !== "") {
-                    window.location.assign("/site/" + selected.value);
-                }
-            }
-        </script>
-        <div class="callout secondary">
-            <p><b>Select a specific SAC by name</b></p>
-            <div class="row">
-                <form name="sites">
-                    <select name="EUCode" class="column small-12 large-8">
-                        <option selected="" value="">Choose an SAC from the drop down list</option>
-                        @foreach ((string EUCode, string Name) in Model.Sites)
-                        {               
-                            <option value=@(EUCode)>@(Name)</option>
+<div class="visual-section" style="background-image: url(/images/h1-greyseal-graemeduncan.jpg);">
+    <div class="container">
+        <h1 class="show-for-medium show-for-large">Special Areas of Conservation</h1>
+        <div class="two-columns">
+            <div id="content">
+                <div class="row callout secondary topcallout">
+                    <p><b>List all SACs:</b> <a href="/site/england">England</a> | <a href="/site/northern-ireland">Northern Ireland</a> | <a href="/site/scotland">Scotland</a> | <a href="/site/wales">Wales</a> | <a href="/site/offshore">Offshore</a> | <a href="/site/">Full UK List</a></p>
+                </div>
+                <div class="row callout secondary topcallout">
+                    <p>List all <a href="/habitat/">Habitat</a> or  <a href="/species/">Species</a> interest features</p>
+                </div>
+                <script type="text/javascript">
+                    function goToSite(selected) {
+                        if (selected.value !== "") {
+                            window.location.assign("/site/" + selected.value);
                         }
-                    </select>
-                    <a href="#" class="button primary column small-12 large-4 end" onclick="goToSite(document.sites.EUCode)">View Site</a>
-                </form>
+                    }
+                </script>
+                <div class="row callout secondary topcallout">
+                        <form name="sites" class="grid-x large-12">
+                            <select name="EUCode" class="column small-12 large-8">
+                                <option selected="" value="">Choose an SAC from the drop down list</option>
+                                @foreach ((string EUCode, string Name) in Model.Sites)
+                                {               
+                                    <option value=@(EUCode)>@(Name)</option>
+                                }
+                            </select>
+                            <a href="#" class="button primary column small-12 large-4 end" onclick="goToSite(document.sites.EUCode)">View Site</a>
+                        </form>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="two-columns">
+        <div>
+            <div>
+                <h1></h1>
+                <p>
+                    Special Areas of Conservation (SACs) are strictly protected sites designated under the EC Habitats Directive. 
+                    Article 3 of the Habitats Directive requires the establishment of a European network of important high-quality 
+                    conservation sites that will make a significant contribution to conserving the 189 habitat types and 788 species 
+                    identified in Annexes I and II of the Directive (as amended). The listed habitat types and species are those 
+                    considered to be most in need of conservation at a European level (excluding birds). Of the Annex I habitat types, 
+                    78 are believed to occur in the UK. Of the Annex II species, 43 are native to, and normally resident in, the UK.
+                </p>
+                <p>
+                    Details of the <a href="https://webarchive.nationalarchives.gov.uk/20190405130629/http://jncc.defra.gov.uk/page-1460" title="External link: Background to SAC selection on the Government Web Archive">background to SAC selection</a>
+                    and designation are available on the National Archive.
+                </p>
+            </div>        
         </div>
     </div>
 </div>

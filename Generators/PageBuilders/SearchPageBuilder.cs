@@ -21,6 +21,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 {
                     GeneratorConfig = config,
                     Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), },
+                    HeroImage = true,
+                    DisplayBreadcrumb = false,
                     CurrentSection = "Search",
                     Sites = sites.ToList(),
                     Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle), 
