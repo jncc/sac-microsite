@@ -32,7 +32,7 @@ namespace JNCC.Microsite.SAC.Generators
                     {
                         FileHelper.WriteJSONToFile(
                             String.Format("output/search/species/{0}.json", species.Code),
-                            SearchHelpers.GetSpeciesPageSearchDocument(searchIndex, species.Code, species.Name, speciesPageContent)
+                            SearchHelpers.GetSpeciesPageSearchDocument(searchIndex, species.Code, String.Format("{0} [{1}]", species.LayTitle, species.Name), speciesPageContent)
                         );
                     }
 
