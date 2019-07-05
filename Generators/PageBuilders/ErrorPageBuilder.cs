@@ -24,7 +24,8 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                     Title = StringHelpers.RemoveHTMLTags(String.Format("Page not found - {0}", Page.DefaultTitle)),
                     GeneratorConfig = config,
                     MetaDescription = "This is a generic 404 error page",
-                    MetaKeywords = new List<string>{"Error", "404"}
+                    MetaKeywords = new List<string>{"Error", "404"},
+                    ContactUsRef = "?ref=sac404"
                 });
             }
         }

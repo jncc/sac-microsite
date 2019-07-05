@@ -45,6 +45,7 @@ namespace JNCC.Microsite.SAC.Models.Website
         }
         public string Title { get; set; }
         public static string DefaultTitle = "Special Areas of Conservation";
+        public string ContactUsRef { get; set; } = "?ref=sac";
         public GeneratorConfig GeneratorConfig { get; set; }
     }
 }
