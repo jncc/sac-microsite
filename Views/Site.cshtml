@@ -9,13 +9,13 @@
     var AnnexIIPrimary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, true);
     var AnnexIISecondary = SiteHelpers.GetAnnexInterestFeature(Model.Site.Features, true, false);
 }
-<div class="row">
-    <h1 class="very-red">@(Model.Site.Name)</h1>
-</div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<h1 class="section">
+    @(Model.Site.Name)
+    <span class="thing-badge">Site</span>
+</h1>
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -53,7 +53,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -66,74 +66,99 @@
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
-</div>
-<div class="row">
-    <p>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
         @foreach (SiteCharacter item in Model.Site.Character) 
         {
-            @Html.Raw(String.Format("{0} ({1}%) <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)));
+            <li>
+                @Html.Raw(String.Format("{0} ({1}%) <br />", item.Character, SiteHelpers.GetCoverageString(item.Coverage)))
+            </li>
         }
+    </ul>
+</div>
+
+<div class="section">
+    <p>
+        Download the
+        <a href=@(SiteHelpers.GetSitePDFResourceURL(Model.Site.EUCode)) target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF, &lt; 100kb)
     </p>
 </div>
-<div class="row">
-    <p><a href=@(SiteHelpers.GetSitePDFResourceURL(Model.Site.EUCode)) target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-        @{
-            if (AnnexIPrimary.Count > 0) {
-                foreach (var feature in AnnexIPrimary) {
-                    feature.IsPrimary = true;
-                    await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
-                }
-            } else {
-                @Html.Raw("<p>Not Applicable</p>");
-            }
-        }
-        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-        @{
-            if (AnnexISecondary.Count > 0) {
-                foreach (var feature in AnnexISecondary) {
-                    feature.IsPrimary = false;
-                    await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
-                }
-            } else {
-                @Html.Raw("<p>Not Applicable</p>");
-            }
-        }
-        <h4>Annex II species that are a primary reason for selection of this site</h4>
-        @{
-            if (AnnexIIPrimary.Count > 0) {
-                foreach (var feature in AnnexIIPrimary) {
-                    feature.IsPrimary = true;
-                    await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
-                }
-            } else {
-                @Html.Raw("<p>Not Applicable</p>");
-            }
-        }
-        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-        @{
-            if (AnnexIISecondary.Count > 0) {
-                foreach (var feature in AnnexIISecondary) {
-                    feature.IsPrimary = false;
-                    await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
-                }
-            } else {
-                @Html.Raw("<p>Not Applicable</p>");
-            }
-        }        
 
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-    </div>
+<div class="callout secondary section">
+    <p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+    @{
+        if (AnnexIPrimary.Count > 0) {
+            foreach (var feature in AnnexIPrimary) {
+                feature.IsPrimary = true;
+                await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
+            }
+        } else {
+            @Html.Raw("<li>Not Applicable</li>");
+        }
+    }
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+    @{
+        if (AnnexISecondary.Count > 0) {
+            foreach (var feature in AnnexISecondary) {
+                feature.IsPrimary = false;
+                await Html.RenderPartialAsync("Partials/_SiteHabitat", feature);
+            }
+        } else {
+            @Html.Raw("<li>Not Applicable</li>");
+        }
+    }
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+    @{
+        if (AnnexIIPrimary.Count > 0) {
+            foreach (var feature in AnnexIIPrimary) {
+                feature.IsPrimary = true;
+                await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
+            }
+        } else {
+            @Html.Raw("<li>Not Applicable</li>");
+        }
+    }
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+    @{
+        if (AnnexIISecondary.Count > 0) {
+            foreach (var feature in AnnexIISecondary) {
+                feature.IsPrimary = false;
+                await Html.RenderPartialAsync("Partials/_SiteSpecies", feature);
+            }
+        } else {
+            @Html.Raw("<li>Not Applicable</li>");
+        }
+    }
+    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 

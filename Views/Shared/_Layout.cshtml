@@ -82,7 +82,7 @@
                     await Html.RenderPartialAsync("Shared/_Navbar", Model);
                 }
             </header>
-            <main id="main">
+            <main id="main" style="margin-bottom:5rem;">
                 @if (Model.HeroImage) {
                     @RenderBody()
                 } else {

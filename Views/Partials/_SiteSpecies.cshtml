@@ -1,8 +1,10 @@
 @model JNCC.Microsite.SAC.Models.Data.SiteFeature
 @using JNCC.Microsite.SAC.Helpers.Website
 
-<div>
-    <p><b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.LayTitle)</a> <b>@(Model.Name)</b></p>
+<li>
+    <div class="little-header">
+        <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.LayTitle)</a> <b>@(Model.Name)</b>
+    </div>
     @{
         if (Model.IsPrimary) {
             if (!String.IsNullOrWhiteSpace(Model.PrimaryText)) {
@@ -12,4 +14,4 @@
             }
         }
     }
-</div>
+</li>
