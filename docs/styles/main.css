@@ -11,6 +11,11 @@
 .little-header {
     font-weight: bold;
 }
+.extra-info {
+    font-size: 70%;
+    margin-left: 0.4rem;
+    color: #767676;
+}
 .thing-badge {
     background-color: rgb(33, 136, 56);
     color: #fefefe;
