@@ -2,8 +2,13 @@
 @using JNCC.Microsite.SAC.Helpers.Website
 
 <li>
-    <div class="little-header">
-        <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))</b> <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.LayTitle)</a> <b>@(Model.Name)</b>
+    <div>
+        <b>
+            @(InterestFeatureHelpers.GetPlainIntegerCode(Model.Code))
+            <a href=@(InterestFeatureHelpers.GetFeatureUrl(Model.Code))>@(Model.LayTitle)</a>
+        </b>
+        <i>@(Model.Name)</i>
+        
     </div>
     @{
         if (Model.IsPrimary) {

@@ -6,19 +6,18 @@
     margin-bottom: 1rem;
 }
 .space-right {
-    margin-bottom: 1rem;
+    margin-right: 0.3rem;
 }
 .little-header {
-    font-size: 120%;
+    font-weight: bold;
 }
-
 .thing-badge {
-    background-color: #666262;
+    background-color: rgb(33, 136, 56);
     color: #fefefe;
     font-size: 50%;
     font-weight: bold;
-    padding: 0.2rem 0.6rem;
-    margin-left: 0.5rem;
+    padding: 0.3rem 0.9rem;
+    margin-left: 0.4rem;
     vertical-align: middle;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
 }
