@@ -4,9 +4,8 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<h1>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @Html.Raw(Model.InterestFeature.Name)</h1>
-<h2>SAC/SCI/cSAC distribution</h2>
-<p>Distribution of SACs/SCIs/cSACs containing species <a href="@(InterestFeatureHelpers.GetFeatureUrl(Model.InterestFeature.Code))">@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.Name))</a>.</p>
+<h1>Distribution of SACs/SCIs/cSACs containing species <a href="@(InterestFeatureHelpers.GetFeatureUrl(Model.InterestFeature.Code))">@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.Name))</a>.</h1>
+
 <div class="column small-12 medium-6 medium-centered large-6 large-centered">
     <img src="/images/maps/features/@(Model.InterestFeature.Code).gif" alt="Distribution of SACs/SCIs/cSACs containing species @(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Model.InterestFeature.Name)." class="small-12 center"/>
 </div>

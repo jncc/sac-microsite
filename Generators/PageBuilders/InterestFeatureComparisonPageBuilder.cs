@@ -18,22 +18,20 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             using (var serviceScope = scopeFactory.CreateScope())
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
-
                 var isHabitat = InterestFeatureHelpers.IsHabitatCode(feature.Code);
+                string code = InterestFeatureHelpers.GetPlainIntegerCode(feature.Code);
 
                 var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true) };
                 
                 if (isHabitat)
                 {
                     breadcrumbs.Add(("/habitat/", "Habitats", true));
-                    breadcrumbs.Add((string.Format("/habitat/{0}", feature.Code), feature.Name, true));
-                    breadcrumbs.Add((string.Format("/habitat/{0}/comparison", feature.Code), "Comparison", true));
+                    breadcrumbs.Add((string.Format("/habitat/{0}", feature.Code), $"{code} {feature.Name}", true));
                 }
                 else
                 {
                     breadcrumbs.Add(("/species/", "Species", true));
-                    breadcrumbs.Add((string.Format("/species/{0}", feature.Code), feature.Name, true));
-                    breadcrumbs.Add((string.Format("/species/{0}/comparison", feature.Code), "Comparison", true));
+                    breadcrumbs.Add((string.Format("/species/{0}", feature.Code), $"{code} {feature.Name}", true));
                 }
 
                 var model = new InterestFeaturePage
