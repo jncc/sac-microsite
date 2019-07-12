@@ -9,9 +9,9 @@
 
 <div class="section">
     <h1>
+        <span class="entity-code">@(Model.InterestFeature.Code.Substring(1))</span>
         <span class="space-right">@(Html.Raw(Model.InterestFeature.LayTitle))</span>
         @(Html.Raw(Model.InterestFeature.Name))
-        <span class="extra-info">@(Model.InterestFeature.Code.Substring(1))</span>
     </h1>
     <div>
         <i class="fas fa-ellipsis-v space-right" style="font-size:125%; vertical-align:middle;"></i>
@@ -45,8 +45,6 @@
         </figure>
     </div>
 </div>
-
-<div class="clearfix"></div>
 
 <div class="section">
     <h2>European status and distribution</h2>

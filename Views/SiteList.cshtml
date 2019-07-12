@@ -3,14 +3,19 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<h1>@(Model.HeaderText)</h1>
+<h1 class="section">@(Model.HeaderText)</h1>
 
-@{
-    await Html.RenderPartialAsync("Shared/_CountryList.cshtml");
-}
+<div class="section">
+    @{
+        await Html.RenderPartialAsync("Shared/_CountryList.cshtml");
+    }
+</div>
 
-@Html.Raw(Model.SubjectHTML)
+<div class="section">
+    @Html.Raw(Model.SubjectHTML)
+<div>
 
+<div class="section">
 @foreach (var region in Model.RegionalSites)
 {   
     @(Html.Raw("<div class=\"row\"><table class=\"scroll\">"))
@@ -34,8 +39,9 @@
     }
     @(Html.Raw("</table></div>"))
 }
+</div>
 
-<h4>Key to site status abbreviations</h4>
+<h2>Key to site status abbreviations</h2>
 <ul>
     <li><b>SAC</b> = Special Area of Conservation</li>
     <li><b>SCI</b> = Site of Community Importance</li>

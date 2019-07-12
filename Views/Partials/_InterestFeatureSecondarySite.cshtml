@@ -2,6 +2,8 @@
 @using JNCC.Microsite.SAC.Helpers.Website
 
 <li>
-    <a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode)) class="space-right">@(Model.SiteName)</a>
-    <b>@(Model.LocalAuthority)</b>
+    <b>
+        <a href=@(SiteHelpers.GetSiteURLFromCode(Model.SiteCode)) class="space-right">@(Model.SiteName)</a>
+        @(Model.LocalAuthority)
+    </b>
 </li>
