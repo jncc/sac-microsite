@@ -6,15 +6,13 @@
     margin-bottom: 1rem;
 }
 .space-right {
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
 }
 .little-header {
     font-weight: bold;
 }
-.extra-info {
-    margin-left: 0.4rem;
-    color: #8a8a8a;
-    font-size: 90%;
+.site-subtitle {
+    font-weight: bold;
 }
 .entity-code {
     margin-right: 0.1rem;

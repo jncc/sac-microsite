@@ -13,12 +13,12 @@
 <div class="section">
     <h1>
         @(Model.Site.Name)
-        @*<span class="thing-badge">Site</span>*@
-        <span class="extra-info">@(Model.Site.StatusShort)</span>
     </h1>
-    
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        @(Model.Site.StatusLong) (@(Model.Site.StatusShort))
+    </div>    
 </div>
-
 
 <div class="row section section-small">
     <div class="cell small-12 large-8">
