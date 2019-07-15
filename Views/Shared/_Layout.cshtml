@@ -94,6 +94,10 @@
                             if (Model.DisplayBreadcrumb) {
                                 await Html.RenderPartialAsync("Shared/_Breadcrumb", Model.Breadcrumbs);
                             }
+                            else
+                            {
+                                <div class="section"></div>
+                            }
                         }
                         @RenderBody()
                     </div>

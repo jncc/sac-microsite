@@ -18,13 +18,11 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
             {
                 var helper = RenderHelper.GetRendererHelper(serviceScope);
                 
-                var breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), (null, habitat ? "Habitats" : "Species", true) };
-
                 return helper.RenderViewToStringAsync("Views/InterestFeatureList.cshtml", new InterestFeatureListPage
                 {
                     GeneratorConfig = config,
-                    Breadcrumbs = breadcrumbs,
-                    CurrentSection = habitat ? "Habitats" : "Species",
+                    DisplayBreadcrumb = false,
+                    CurrentSection = habitat ? "Habitat" : "Species",
                     Type = habitat ? "Habitats" : "Species",
                     InterestFeatureSections = features.GroupBy(s => s.SectionTitle).Select(s => new InterestFeatureSection {
                         SectionTitle = s.Key,
