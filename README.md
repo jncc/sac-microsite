@@ -60,7 +60,7 @@ To deploy the microsite,
 
 ## Updating the site
 
-The site is automatically redeployed to an internal beta site at http://beta-sac available internally on every commit. A data update just requires the json files in `output/data` to be updated using the following commands:
+The site is automatically redeployed to an internal beta site at http://beta-sac available internally on commits to the devleop branch, an update just requires the json files in [output/data](output/data) to be updated using the following commands;
 
     github clone https://github.com/jncc/sac-microsite.git
     cd sac-microsite
@@ -74,7 +74,7 @@ After which the updated files on the `master` branch which will be automatically
 
 ## Deploying the site to live
 
-We have created an Jenkins pipeline to deploy the site to live. That pipeline is commited alongside the code at [deployment/jenkins/deploy-to-live-pipeline](deployment/jenkins/deploy-to-live-pipeline) where it just needs to be fed the correct variables, i.e.;
+We have created an Jenkins pipeline to deploy the site to live which is triggered currently on commits to master, that pipeline is commited alongside the code at [deployment/jenkins/deploy-to-live-pipeline](deployment/jenkins/deploy-to-live-pipeline) where it just needs to be fed the correct variables, i.e.;
 
     AWS_DEFAULT_REGION = '${AWS_REGION}' 
     AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
