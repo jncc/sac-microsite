@@ -74,8 +74,8 @@ namespace JNCC.Microsite.SAC.Helpers
         {
             if (c == '`')
                 inner.Write('\'');
-
-            inner.Write(c);
+            else
+                inner.Write(c);
         }
     }
 }
