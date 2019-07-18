@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0030032">River Derwent and Bassenthwaite Lake</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>River Derwent and Bassenthwaite Lake</h1>
+
+<div class="section">
+    <h1>
+        River Derwent and Bassenthwaite Lake
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cumbria</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NY262207</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,63 +150,152 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0030032_thumb.gif" />
-            <figcaption style="font-size: small;">Location of River Derwent and Bassenthwaite Lake SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of River Derwent and Bassenthwaite Lake SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (96%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (3%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (1%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030032.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (96%) <br />Bogs, Marshes, Water fringed vegetation, Fens (3%) <br />Broad-leaved deciduous woodland (1%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030032.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Bassenthwaite Lake in the Lake District, north-west England, is an example of a mesotrophic waterbody (Type 5), an unusual type in mountain areas. It is a large lake with an extensive catchment area and consequently is subject to rapid through-flow of water and moderate nutrient status. A wide variety of pondweeds <i>Potamogeton</i> spp. are found, including perfoliate pondweed <i>Potamogeton perfoliatus</i>, small pondweed <i>P. berchtoldii</i> and curled pondweed <i>P. crispus</i>, which are widespread, whilst red pondweed <i>P. alpinus</i>, various-leaved pondweed <i>P. gramineus</i> and lesser pondweed <i>P. pusillus</i> are more locally distributed. Uncommon species present in the community are autumnal water-starwort <i>Callitriche hermaphroditica</i> and six-stamened waterwort <i>Elatine hexandra</i>. The shorelines are extensive and relatively undisturbed compared with other major Cumbrian lakes. Much of the shore is of shingle or gravel, but soft peat has accumulated around Bowness Bay. Several sedge species are found in such areas, including a local northern species, water sedge <i>Carex aquatilis</i>. On stony shores common spike-rush <i>Eleocharis palustris</i> is locally abundant amongst species such as globeflower <i>Trollius europaeus</i>, saw-wort <i>Serratula tinctoria</i> and the nationally rare thread rush <i>Juncus filiformis</i>. The lake also supports one of only two surviving UK populations of a rare fish, vendace <i>Coregonus albula</i>. Now extinct in Scotland, the only other known surviving population of vendace is found in Derwent Water, also in the Lake District.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3260</b> <a href=/habitat/H3260/>Water courses of plain to montane levels with the Ranunculion fluitantis and Callitricho-Batrachion vegetation</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a></p>
-<p>Bassenthwaite Lake in the Lake District, north-west England, is an example of a mesotrophic waterbody (Type 5), an unusual type in mountain areas. It is a large lake with an extensive catchment area and consequently is subject to rapid through-flow of water and moderate nutrient status. A wide variety of pondweeds <i>Potamogeton</i> spp. are found, including perfoliate pondweed <i>Potamogeton perfoliatus</i>, small pondweed <i>P. berchtoldii</i> and curled pondweed <i>P. crispus</i>, which are widespread, whilst red pondweed <i>P. alpinus</i>, various-leaved pondweed <i>P. gramineus</i> and lesser pondweed <i>P. pusillus</i> are more locally distributed. Uncommon species present in the community are autumnal water-starwort <i>Callitriche hermaphroditica</i> and six-stamened waterwort <i>Elatine hexandra</i>. The shorelines are extensive and relatively undisturbed compared with other major Cumbrian lakes. Much of the shore is of shingle or gravel, but soft peat has accumulated around Bowness Bay. Several sedge species are found in such areas, including a local northern species, water sedge <i>Carex aquatilis</i>. On stony shores common spike-rush <i>Eleocharis palustris</i> is locally abundant amongst species such as globeflower <i>Trollius europaeus</i>, saw-wort <i>Serratula tinctoria</i> and the nationally rare thread rush <i>Juncus filiformis</i>. The lake also supports one of only two surviving UK populations of a rare fish, vendace <i>Coregonus albula</i>. Now extinct in Scotland, the only other known surviving population of vendace is found in Derwent Water, also in the Lake District.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3260</b> <a href=/habitat/H3260/>Water courses of plain to montane levels with the Ranunculion fluitantis and Callitricho-Batrachion vegetation</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1065</b> <a href=/species/S1065/>Marsh fritillary butterfly</a> <b>Euphydryas (Eurodryas, Hypodryas) aurinia</b></p>
-<p>This site supports the largest area of appropriate habitat, M25 <i>Molinia caerulea</i> – <i>Potentilla erecta</i> mire, in Cumbria. The <b>marsh fritillary <i>Euphydryas aurinia</i></b> population is spread over four habitat patches where numbers fluctuate annually but collectively form a moderate-sized and stable population.</p></div>
-<div>
-    <p><b>1095</b> <a href=/species/S1095/>Sea lamprey</a> <b>Petromyzon marinus</b></p>
-<p>The Derwent represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality oligotrophic river in northern England. The extensive occurrence of gravels and silts in the middle to lower reaches of this river means that it is able to support a large population of sea lamprey. </p></div>
-<div>
-    <p><b>1096</b> <a href=/species/S1096/>Brook lamprey</a> <b>Lampetra planeri</b></p>
-<p>The Derwent represents <b>brook lamprey <i>Lampetra planeri</i></b> in a high-quality, oligotrophic river in northern England. Good populations of the species are known to occur, and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt. </p></div>
-<div>
-    <p><b>1099</b> <a href=/species/S1099/>River lamprey</a> <b>Lampetra fluviatilis</b></p>
-<p>The Derwent represents <b>river lamprey <i>Lampetra fluviatilis</i></b> in an oligotrophic river in northern England. Good numbers of this species are known to occur and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt. </p></div>
-<div>
-    <p><b>1106</b> <a href=/species/S1106/>Atlantic salmon</a> <b>Salmo salar</b></p>
-<p>The Derwent represents <b>Atlantic salmon <i>Salmo salar</i></b> populations in north-west England and is a particularly good example of a large oligotrophic river flowing over base-poor geology, providing a contrast to the more mesotrophic River Eden. Low intensity land-use in the catchment means there is good water quality throughout much of the system. This water quality, coupled with the presence of extensive gravel shoals, makes it a particularly suitable river for breeding and enables it to support a large population. </p></div>
-<div>
-    <p><b>1355</b> <a href=/species/S1355/>Otter</a> <b>Lutra lutra</b></p>
-<p>The River Derwent and Bassenthwaite Lake represent good quality <b>otter <i>Lutra lutra</i></b> habitat in north-west England. Together, the lake and river represent a wide range of suitable conditions for otters in a relatively upland environment.</p></div>
-<div>
-    <p><b>1831</b> <a href=/species/S1831/>Floating water-plantain</a> <b>Luronium natans</b></p>
-<p>This site represents the northern limit of <b>floating water-plantain <i>Luronium natans</i></b> in the UK, and its occurrence in relatively shallow, oligo-mesotrophic lakes. Within the site, the species is found in two lakes, Derwent Water and Bassenthwaite Lake. Both of these lakes have healthy populations of the species in extensive, species-rich beds of aquatic macrophytes. In Bassenthwaite Lake it also occurs on muddy lake-shores. These are the only two known sites for <i>Luronium</i> in the Lake District.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1065
+            <a href=/species/S1065/>Marsh fritillary butterfly</a>
+        </b>
+        <i>Euphydryas (Eurodryas, Hypodryas) aurinia</i>
+        
     </div>
+<p>This site supports the largest area of appropriate habitat, M25 <i>Molinia caerulea</i> – <i>Potentilla erecta</i> mire, in Cumbria. The <b>marsh fritillary <i>Euphydryas aurinia</i></b> population is spread over four habitat patches where numbers fluctuate annually but collectively form a moderate-sized and stable population.</p></li>
+<li>
+    <div>
+        <b>
+            1095
+            <a href=/species/S1095/>Sea lamprey</a>
+        </b>
+        <i>Petromyzon marinus</i>
+        
+    </div>
+<p>The Derwent represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality oligotrophic river in northern England. The extensive occurrence of gravels and silts in the middle to lower reaches of this river means that it is able to support a large population of sea lamprey. </p></li>
+<li>
+    <div>
+        <b>
+            1096
+            <a href=/species/S1096/>Brook lamprey</a>
+        </b>
+        <i>Lampetra planeri</i>
+        
+    </div>
+<p>The Derwent represents <b>brook lamprey <i>Lampetra planeri</i></b> in a high-quality, oligotrophic river in northern England. Good populations of the species are known to occur, and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt. </p></li>
+<li>
+    <div>
+        <b>
+            1099
+            <a href=/species/S1099/>River lamprey</a>
+        </b>
+        <i>Lampetra fluviatilis</i>
+        
+    </div>
+<p>The Derwent represents <b>river lamprey <i>Lampetra fluviatilis</i></b> in an oligotrophic river in northern England. Good numbers of this species are known to occur and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt. </p></li>
+<li>
+    <div>
+        <b>
+            1106
+            <a href=/species/S1106/>Atlantic salmon</a>
+        </b>
+        <i>Salmo salar</i>
+        
+    </div>
+<p>The Derwent represents <b>Atlantic salmon <i>Salmo salar</i></b> populations in north-west England and is a particularly good example of a large oligotrophic river flowing over base-poor geology, providing a contrast to the more mesotrophic River Eden. Low intensity land-use in the catchment means there is good water quality throughout much of the system. This water quality, coupled with the presence of extensive gravel shoals, makes it a particularly suitable river for breeding and enables it to support a large population. </p></li>
+<li>
+    <div>
+        <b>
+            1355
+            <a href=/species/S1355/>Otter</a>
+        </b>
+        <i>Lutra lutra</i>
+        
+    </div>
+<p>The River Derwent and Bassenthwaite Lake represent good quality <b>otter <i>Lutra lutra</i></b> habitat in north-west England. Together, the lake and river represent a wide range of suitable conditions for otters in a relatively upland environment.</p></li>
+<li>
+    <div>
+        <b>
+            1831
+            <a href=/species/S1831/>Floating water-plantain</a>
+        </b>
+        <i>Luronium natans</i>
+        
+    </div>
+<p>This site represents the northern limit of <b>floating water-plantain <i>Luronium natans</i></b> in the UK, and its occurrence in relatively shallow, oligo-mesotrophic lakes. Within the site, the species is found in two lakes, Derwent Water and Bassenthwaite Lake. Both of these lakes have healthy populations of the species in extensive, species-rich beds of aquatic macrophytes. In Bassenthwaite Lake it also occurs on muddy lake-shores. These are the only two known sites for <i>Luronium</i> in the Lake District.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -287,6 +384,6 @@ Inland water bodies (Standing water, Running water) (96%) <br />Bogs, Marshes, W
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

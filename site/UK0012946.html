@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012946">Eryri/ Snowdonia</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Eryri/ Snowdonia</h1>
+
+<div class="section">
+    <h1>
+        Eryri/ Snowdonia
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>West Wales and The Valleys</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SH695658</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,93 +150,207 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012946_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Eryri/ Snowdonia SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Eryri/ Snowdonia SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (2%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (15%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (19.7%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (34%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (1%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (0.3%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (27%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012946.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (2%) <br />Bogs, Marshes, Water fringed vegetation, Fens (15%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (19.7%) <br />Dry grassland, Steppes (34%) <br />Alpine and sub-Alpine grassland (1%) <br />Broad-leaved deciduous woodland (0.3%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (27%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012946.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Llyn Idwal, in the mountains of Snowdonia, represents oligotrophic waters (Type&nbsp;3) in north Wales. It is a relatively small, shallow, upland corrie, in contrast to Llyn Cwellyn, also in Snowdonia, and complete ice cover has been recorded in winter. No overall change in the lake’s water chemistry has been found since the mid-19<SUP>th</SUP> century, and the water quality is considered to be high. The site has a good representation of typical plant species, including quillwort <I>Isoetes lacustris</I>, water lobelia <I>Lobelia dortmanna</I>, shoreweed <I>Littorella uniflora</I>, bulbous rush <I>Juncus bulbosus</I>, alternate water-milfoil <I>Myriophyllum alterniflorum</I> and intermediate water-starwort <I>Callitriche hamulata</I>. Bog pondweed <I>Potamogeton polygonifolius</I> has been recorded from stream inlets, and pillwort <I>Pilularia globulifera</I> is reported from this site. Emergent and floating vegetation is mainly confined to the shallow sub-basin at the south end of the site, where floating bur-reed <I>Sparganium angustifolium</I> forms extensive mats, alongside stands of common reed <I>Phragmites australis</I>, water horsetail <I>Equisetum fluviatile</I> and bottle sedge <I>Carex rostrata</I>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a>
+    </div>
+<p>Snowdonia has the best-developed and most extensive areas of <b>Siliceous alpine and boreal grasslands</b> in Wales and is the largest example of the habitat type south of Scotland. The principal sub-type present is U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath, but there are also fragments of U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath. This site is representative of the more impoverished southern variants of the habitat type.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+<p>Snowdonia is the most southerly site selected and contains the most extensive and diverse examples of <b>hydrophilous tall herb fringe communities</b> in Wales. Fragmentary stands of the habitat type occur on pumice tuff and other base-enriched igneous rocks at a range of altitudes throughout the site. The vegetation is floristically somewhat impoverished compared with Scottish examples but includes many of the species found further north, such as globe-flower <i>Trollius europaeus</i>, wild angelica <i>Angelica sylvestris</i> and holly-fern <i>Polystichum lonchitis</i>. It is important as a southern outlier for arctic-alpines such as alpine saw-wort <i>Saussurea alpina</i> and black alpine-sedge <i>Carex atrata</i>. There are also some southern species, which are absent further north, for example Welsh poppy <i>Meconopsis cambrica</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+<p>Snowdonia is the largest site in Wales representative of <b>siliceous scree</b>. The site has extensive screes of igneous rocks with large stands of U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation; associated species include fir clubmoss <i>Huperzia selago</i>. Bryophyte and lichen-dominated screes are also well-represented and include important populations of rare and local montane and oceanic species, such as <i>Marsupella adusta</i>, <i>Marsupella stableri</i> and <i>Cornicularia narmoerica</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Snowdonia is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at one of its most southerly outposts in the UK, and contains the most extensive and diverse examples of these communities in Wales. Crevices in base-rich igneous rocks support a characteristic assemblage of plants, with a large number of arctic-alpine species. These include a number of nationally rare species, such as alpine saxifrage <i>Saxifraga nivalis</i>, tufted saxifrage <i>S. cespitosa</i>, alpine meadow-grass <i>Poa alpina</i> and alpine woodsia <i>Woodsia alpina</i>. A species of particular interest is the Snowdon lily <i>Lloydia serotina</i>, which in the UK occurs only in Snowdonia, in rock cracks and crevices on calcareous and more siliceous substrates, and is here at its northern limit in western Europe.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Snowdonia, north Wales, is representative of <b>Siliceous rocky slopes with chasmophytic vegetation</b> at the southern edge of the range of the habitat type. Acidic crevice communities occur throughout the site on igneous outcrops and include populations of stiff sedge <i>Carex bigelowii</i>, fir clubmoss <i>Huperzia selago</i> and forked spleenwort <i>Asplenium septentrionale</i>. Atlantic species, including Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i> and a wide range of bryophytes, are also well-represented.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6170</b> <a href=/habitat/H6170/>Alpine and subalpine calcareous grasslands</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a></p>
-<p>Llyn Idwal, in the mountains of Snowdonia, represents oligotrophic waters (Type&nbsp;3) in north Wales. It is a relatively small, shallow, upland corrie, in contrast to Llyn Cwellyn, also in Snowdonia, and complete ice cover has been recorded in winter. No overall change in the lake’s water chemistry has been found since the mid-19<SUP>th</SUP> century, and the water quality is considered to be high. The site has a good representation of typical plant species, including quillwort <I>Isoetes lacustris</I>, water lobelia <I>Lobelia dortmanna</I>, shoreweed <I>Littorella uniflora</I>, bulbous rush <I>Juncus bulbosus</I>, alternate water-milfoil <I>Myriophyllum alterniflorum</I> and intermediate water-starwort <I>Callitriche hamulata</I>. Bog pondweed <I>Potamogeton polygonifolius</I> has been recorded from stream inlets, and pillwort <I>Pilularia globulifera</I> is reported from this site. Emergent and floating vegetation is mainly confined to the shallow sub-basin at the south end of the site, where floating bur-reed <I>Sparganium angustifolium</I> forms extensive mats, alongside stands of common reed <I>Phragmites australis</I>, water horsetail <I>Equisetum fluviatile</I> and bottle sedge <I>Carex rostrata</I>.</p></div>
-<div>
-    <p><b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a></p>
-<p>Snowdonia has the best-developed and most extensive areas of <b>Siliceous alpine and boreal grasslands</b> in Wales and is the largest example of the habitat type south of Scotland. The principal sub-type present is U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath, but there are also fragments of U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath. This site is representative of the more impoverished southern variants of the habitat type.</p></div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-<p>Snowdonia is the most southerly site selected and contains the most extensive and diverse examples of <b>hydrophilous tall herb fringe communities</b> in Wales. Fragmentary stands of the habitat type occur on pumice tuff and other base-enriched igneous rocks at a range of altitudes throughout the site. The vegetation is floristically somewhat impoverished compared with Scottish examples but includes many of the species found further north, such as globe-flower <i>Trollius europaeus</i>, wild angelica <i>Angelica sylvestris</i> and holly-fern <i>Polystichum lonchitis</i>. It is important as a southern outlier for arctic-alpines such as alpine saw-wort <i>Saussurea alpina</i> and black alpine-sedge <i>Carex atrata</i>. There are also some southern species, which are absent further north, for example Welsh poppy <i>Meconopsis cambrica</i>.</p></div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-<p>Snowdonia is the largest site in Wales representative of <b>siliceous scree</b>. The site has extensive screes of igneous rocks with large stands of U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation; associated species include fir clubmoss <i>Huperzia selago</i>. Bryophyte and lichen-dominated screes are also well-represented and include important populations of rare and local montane and oceanic species, such as <i>Marsupella adusta</i>, <i>Marsupella stableri</i> and <i>Cornicularia narmoerica</i>.</p></div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-<p>Snowdonia is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at one of its most southerly outposts in the UK, and contains the most extensive and diverse examples of these communities in Wales. Crevices in base-rich igneous rocks support a characteristic assemblage of plants, with a large number of arctic-alpine species. These include a number of nationally rare species, such as alpine saxifrage <i>Saxifraga nivalis</i>, tufted saxifrage <i>S. cespitosa</i>, alpine meadow-grass <i>Poa alpina</i> and alpine woodsia <i>Woodsia alpina</i>. A species of particular interest is the Snowdon lily <i>Lloydia serotina</i>, which in the UK occurs only in Snowdonia, in rock cracks and crevices on calcareous and more siliceous substrates, and is here at its northern limit in western Europe.</p></div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-<p>Snowdonia, north Wales, is representative of <b>Siliceous rocky slopes with chasmophytic vegetation</b> at the southern edge of the range of the habitat type. Acidic crevice communities occur throughout the site on igneous outcrops and include populations of stiff sedge <i>Carex bigelowii</i>, fir clubmoss <i>Huperzia selago</i> and forked spleenwort <i>Asplenium septentrionale</i>. Atlantic species, including Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i> and a wide range of bryophytes, are also well-represented.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-</div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a></p>
-</div>
-<div>
-    <p><b>6170</b> <a href=/habitat/H6170/>Alpine and subalpine calcareous grasslands</a></p>
-</div>
-<div>
-    <p><b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a></p>
-</div>
-<div>
-    <p><b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>
-<div>
-    <p><b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1393</b> <a href=/species/S1393/>Slender green feather-moss</a> <b>Drepanocladus (Hamatocaulis) vernicosus</b></p>
-<p>This is an upland site in north Wales for <b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b>, which has been recorded in flushes up to an altitude of 450 m. </p></div>
-<div>
-    <p><b>1831</b> <a href=/species/S1831/>Floating water-plantain</a> <b>Luronium natans</b></p>
-<p>Snowdonia in north Wales is an example of a montane lake habitat supporting <B>floating water-plantain <I>Luronium natans</I></B>. Records date back to the 18<SUP>th</SUP> century, indicating that habitat conditions are particularly favourable for this species. </p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1393
+            <a href=/species/S1393/>Slender green feather-moss</a>
+        </b>
+        <i>Drepanocladus (Hamatocaulis) vernicosus</i>
+        
     </div>
+<p>This is an upland site in north Wales for <b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b>, which has been recorded in flushes up to an altitude of 450 m. </p></li>
+<li>
+    <div>
+        <b>
+            1831
+            <a href=/species/S1831/>Floating water-plantain</a>
+        </b>
+        <i>Luronium natans</i>
+        
+    </div>
+<p>Snowdonia in north Wales is an example of a montane lake habitat supporting <B>floating water-plantain <I>Luronium natans</I></B>. Records date back to the 18<SUP>th</SUP> century, indicating that habitat conditions are particularly favourable for this species. </p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -317,6 +439,6 @@ Inland water bodies (Standing water, Running water) (2%) <br />Bogs, Marshes, Wa
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

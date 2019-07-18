@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,75 +77,107 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H6520">Mountain hay meadows</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">6520</span>
+        Mountain hay meadows
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Natural and semi-natural grassland formations</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Natural and semi-natural grassland formations</h1>
-</div>
-<h4>6520 Mountain hay meadows</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H6520/map">
-            <img src="/images/maps/features/thumbnails/H6520_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>6520</b> Mountain hay meadows. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H6520/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H6520/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H6520/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H6520/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>This Annex&nbsp;I type comprises species-rich upland hay meadows on brown earth soils. It is a northern and sub-montane counterpart to <B>6510 Lowland hay meadows (<I>Alopecurus pratensis</I>, <I>Sanguisorba officinalis</I>)</B>.</P>
 <P>In the UK this vegetation corresponds to NVC type MG3&nbsp;<I>Anthoxanthum odoratum – Geranium sylvaticum </I>grassland. Various grasses, including common bent <I>Agrostis capillaris</I>, sweet vernal-grass <I>Anthoxanthum odoratum</I> and cock’s-foot <I>Dactylis glomerata</I>, are prominent in the sward, and are accompanied by a range of associated species, such as wood crane’s-bill <I>Geranium sylvaticum</I>, great burnet <I>Sanguisorba officinalis</I> and pignut <I>Conopodium majus</I>. Populations of rare lady’s-mantle <I>Alchemilla</I> species are found in some meadows.</P>
 <P>The floristic composition of mountain hay meadow vegetation in the UK is unlike that found in the rest of Europe.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H6520/map">
+                <img src="/images/maps/features/thumbnails/H6520_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>6520</b> Mountain hay meadows. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Mountain hay meadows</B> are recorded from scattered localities in several EU Member States.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H6520/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Mountain hay meadows</B> appear to have declined in extent due to agricultural intensification and now cover a very small area in the UK, considered to be less than 1,000&nbsp;ha. They occur as scattered fields or small isolated groups of fields in a series of valleys in northern England, with fragmentary outliers of the NVC type in Scotland.</P></p>
-
-
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014774>Moor House  - Upper Teesdale</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Tees Valley and Durham</b></div>
+    <p>Click <a href=/habitat/H6520/map>here</a> view UK distribution of this species</p>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Upper Teesdale contains actively-managed <b>Mountain hay meadows</b> at their highest altitude in the UK. Though representing a smaller proportion of the national resource than the North Pennine Dales Meadows, the meadows of this site have been managed at an extremely low level of agricultural intensification and show good conservation of habitat structure and function. There are important populations of an extensive suite of hay meadows species, including several rare species of lady’s-mantle (<i>Alchemilla acutiloba</i>, <i>A. monticola</i> and <i>A. subcrenata</i>) and abundant globeflower <i>Trollius europaeus</i></div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014775>North Pennine Dales Meadows</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Lancashire, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The North Pennine Dales contain a series of isolated fields within several north Pennine and Cumbrian valleys. The site encompasses the range of variation exhibited by <b>Mountain hay meadows</b> in the UK and contains the major part of the remaining UK resource of this habitat type. The grasslands included within the site exhibit very limited effects of agricultural improvement and show good conservation of structure and function. A wide range of rare and local meadow species are contained within the meadows, including globeflower <i>Trollius europaeus</i>, the lady’s-mantles <i>Alchemilla acutiloba</i>, <i>A. monticola</i> and <i>A. subcrenata</i>, and spignel <i>Meum athamanticum</i>.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
 </div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0014774 class="space-right">Moor House  - Upper Teesdale</a>
+        Cumbria, Tees Valley and Durham
+    </b>
+    <div>
+Upper Teesdale contains actively-managed <b>Mountain hay meadows</b> at their highest altitude in the UK. Though representing a smaller proportion of the national resource than the North Pennine Dales Meadows, the meadows of this site have been managed at an extremely low level of agricultural intensification and show good conservation of habitat structure and function. There are important populations of an extensive suite of hay meadows species, including several rare species of lady’s-mantle (<i>Alchemilla acutiloba</i>, <i>A. monticola</i> and <i>A. subcrenata</i>) and abundant globeflower <i>Trollius europaeus</i>    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014775 class="space-right">North Pennine Dales Meadows</a>
+        Cumbria, Lancashire, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham
+    </b>
+    <div>
+The North Pennine Dales contain a series of isolated fields within several north Pennine and Cumbrian valleys. The site encompasses the range of variation exhibited by <b>Mountain hay meadows</b> in the UK and contains the major part of the remaining UK resource of this habitat type. The grasslands included within the site exhibit very limited effects of agricultural improvement and show good conservation of structure and function. A wide range of rare and local meadow species are contained within the meadows, including globeflower <i>Trollius europaeus</i>, the lady’s-mantles <i>Alchemilla acutiloba</i>, <i>A. monticola</i> and <i>A. subcrenata</i>, and spignel <i>Meum athamanticum</i>.    </div>
+</li>    </ul>
+</div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -233,6 +264,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

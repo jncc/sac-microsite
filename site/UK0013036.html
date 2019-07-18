@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0013036">Flamborough Head</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Flamborough Head</h1>
+
+<div class="section">
+    <h1>
+        Flamborough Head
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>East Yorkshire and Northern Lincolnshire, North Yorkshire</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>TA257701</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,45 +150,88 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0013036_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Flamborough Head SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Flamborough Head SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
-</div>
-<div class="row">
-    <p>
-Marine areas, Sea inlets (97%) <br />Shingle, Sea cliffs, Islets (2%) <br />Improved grassland (1%) <br />    </p>
-</div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013036.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>Flamborough Head has been selected for the presence of species associated with the chalk and for the site’s location at the southern limit of distribution of several northern species. It lies close to the biogeographic boundary between two North Sea waterbodies and encompasses a large area of hard and soft chalk on the east coast of England. The site covers around 14% of UK and 9% of European coastal chalk exposure, represents the most northern outcrop of chalk in the UK, and includes bedrock and boulder <b>reefs</b> which extend further into deeper water than at other subtidal chalk sites in the UK, giving one of the most extensive areas of sublittoral chalk in Europe.The reefs and cliffs on the north side of the headland are very hard, resulting in, for example, the presence of many overhangs and vertical faces, a feature uncommon in sublittoral chalk. The clarity of the relatively unpolluted sea water and the hard nature of the chalk have enabled kelp <i>Laminaria hyperborea</i> forests to become established in the shallow sublittoral. The reefs to the north support a different range of species from those on the slightly softer and more sheltered south side of the headland. The site supports an unusual range of marine species and includes rich animal communities and some species that are at the southern limit of their North Sea distribution, e.g. the northern alga <i>Ptilota plumosa</i>. For these reasons, the sublittoral and littoral reef habitats at Flamborough are considered to be the most diverse in the UK.</p></div>
-<div>
-    <p><b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a></p>
-<p>Flamborough is an east coast representative of hard chalk cliffs, which occur more frequently on the south coast of England. The vegetation of east coast cliff sites is typically less influenced by salt deposition and there are few such areas with predominantly limestone vegetation. Flamborough Head is an exception and is therefore important for the conservation of calcareous cliff vegetation. Maritime vegetation is local and occurs where topography increases salt spray deposition. Elsewhere the chalk substrate supports calcareous grassland communities. Towards the eastern end of the site the chalk is masked by drift deposits, which support mesotrophic and acidic grassland communities.</p></div>
-<div>
-    <p><b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a></p>
-<p>There are larger numbers and a wider range of cave habitats at Flamborough than at any other chalk site in Britain. This site, on the east coast of England, represents caves of the North Sea coast cut into soft rock exposures and is important for its specialised cave algal communities, which contain abundant <i>Hildenbrandia rubra</i>, <i>Pseudendoclonium submarinum</i>, <i>Sphacelaria nana</i> and <i>Waerniella lucifuga</i>. There are more than 200 caves within the site, particularly around the headland and on the north-facing cliffs. Some of these caves are partially submerged at all stages of the tide, others dry out at low tide, and some lie above the high water mark but are heavily influenced by wave splash and salt spray from the sea. The largest caves are known to extend for more than 50 m from their entrance on the coast.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-    </div>
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (97%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (2%) <br />
+            </li>
+            <li>
+                Improved grassland (1%) <br />
+            </li>
+    </ul>
 </div>
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013036.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
+    <p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>Flamborough Head has been selected for the presence of species associated with the chalk and for the site’s location at the southern limit of distribution of several northern species. It lies close to the biogeographic boundary between two North Sea waterbodies and encompasses a large area of hard and soft chalk on the east coast of England. The site covers around 14% of UK and 9% of European coastal chalk exposure, represents the most northern outcrop of chalk in the UK, and includes bedrock and boulder <b>reefs</b> which extend further into deeper water than at other subtidal chalk sites in the UK, giving one of the most extensive areas of sublittoral chalk in Europe.The reefs and cliffs on the north side of the headland are very hard, resulting in, for example, the presence of many overhangs and vertical faces, a feature uncommon in sublittoral chalk. The clarity of the relatively unpolluted sea water and the hard nature of the chalk have enabled kelp <i>Laminaria hyperborea</i> forests to become established in the shallow sublittoral. The reefs to the north support a different range of species from those on the slightly softer and more sheltered south side of the headland. The site supports an unusual range of marine species and includes rich animal communities and some species that are at the southern limit of their North Sea distribution, e.g. the northern alga <i>Ptilota plumosa</i>. For these reasons, the sublittoral and littoral reef habitats at Flamborough are considered to be the most diverse in the UK.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a>
+    </div>
+<p>Flamborough is an east coast representative of hard chalk cliffs, which occur more frequently on the south coast of England. The vegetation of east coast cliff sites is typically less influenced by salt deposition and there are few such areas with predominantly limestone vegetation. Flamborough Head is an exception and is therefore important for the conservation of calcareous cliff vegetation. Maritime vegetation is local and occurs where topography increases salt spray deposition. Elsewhere the chalk substrate supports calcareous grassland communities. Towards the eastern end of the site the chalk is masked by drift deposits, which support mesotrophic and acidic grassland communities.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a>
+    </div>
+<p>There are larger numbers and a wider range of cave habitats at Flamborough than at any other chalk site in Britain. This site, on the east coast of England, represents caves of the North Sea coast cut into soft rock exposures and is important for its specialised cave algal communities, which contain abundant <i>Hildenbrandia rubra</i>, <i>Pseudendoclonium submarinum</i>, <i>Sphacelaria nana</i> and <i>Waerniella lucifuga</i>. There are more than 200 caves within the site, particularly around the headland and on the north-facing cliffs. Some of these caves are partially submerged at all stages of the tide, others dry out at low tide, and some lie above the high water mark but are heavily influenced by wave splash and salt spray from the sea. The largest caves are known to extend for more than 50 m from their entrance on the coast.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -269,6 +320,6 @@ Marine areas, Sea inlets (97%) <br />Shingle, Sea cliffs, Islets (2%) <br />Impr
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

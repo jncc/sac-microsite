@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,125 +77,187 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H1220">Perennial vegetation of stony banks</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">1220</span>
+        Perennial vegetation of stony banks
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Marine, coastal and halophytic habitats</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Marine, coastal and halophytic habitats</h1>
-</div>
-<h4>1220 Perennial vegetation of stony banks</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H1220/map">
-            <img src="/images/maps/features/thumbnails/H1220_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>1220</b> Perennial vegetation of stony banks. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1220/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1220/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H1220/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H1220/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>Shingle structures develop when a sequence of foreshore beaches is deposited at the limit of high tide. More permanent ridges are formed as storm waves throw pebbles high up on the beach, from where the backwash cannot remove them. Several beaches may be piled against each other and extensive structures can form. The ecological variation in this habitat type depends on stability, the amount of fine material accumulating between pebbles, climatic conditions, width of the foreshore, and past management of the site. The ridges and lows formed also influence the vegetation patterns, resulting in characteristic zonations of vegetated and bare shingle.</P>
 <P>Sneddon &amp; Randall (1993) provide a comprehensive classification system for shingle vegetation types, some of which have equivalents in the NVC. The NVC only describes part of the pioneer phase of perennial shingle vegetation, namely SD1&nbsp;<I>Rumex crispus – Glaucium flavum</I> shingle community. Narrow, less-stable structures (spits and bars or the fringing beach associated with older, fossil beaches) are more exposed to waves or salt spray. Where wave energy causes movement of the shingle, the plant communities have affinities with <B>1210 Annual vegetation of drift lines</B>. The presence of the yellow horned-poppy <I>Glaucium flavum</I> and the rare sea-kale <I>Crambe maritima</I> and sea pea <I>Lathyrus japonicus</I>, all species that can tolerate periodic movement, is significant. In more stable areas above this zone, where sea spray is blown over the shingle, plant communities with a high frequency of salt-tolerant species such as thrift <I>Armeria maritima</I> and sea campion <I>Silene uniflora </I>occur. These may exist in a matrix with abundant lichens.</P>
 <P>On the largest and most stable structures the sequence of vegetation includes scrub, notably broom <I>Cytisus scoparius</I> and blackthorn <I>Prunus spinosa</I>. Heath vegetation with heather <I>Calluna vulgaris</I> and/or crowberry <I>Empetrum nigrum</I> occurs on the more stable shingle structures, particularly in the north. This sequence of plant communities is also influenced by natural cycles of degeneration and regeneration of the shrub vegetation that occurs on some of the oldest ridges. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H1220/map">
+                <img src="/images/maps/features/thumbnails/H1220_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>1220</b> Perennial vegetation of stony banks. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>There are only a few extensive examples of <B>Perennial vegetation of stony banks</B> in Europe, and the UK hosts a significant part of the European resource of this habitat.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H1220/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>Although there are only some 4,000&nbsp;ha of stable or semi-stable vegetated shingle around the coast of the UK, the habitat is widely distributed and also exhibits a wide range of variation. The largest and most significant shingle structures are found in north-east Scotland and in south and south-east England. </P></p>
+    <p>Click <a href=/habitat/H1220/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0017076 class="space-right">Chesil and the Fleet</a>
+        Dorset and Somerset
+    </b>
+    <div>
+The 28 km-long shingle bar of Chesil Beach, with the contiguous Portland Harbour shore, is an extensive representative of <b>Perennial vegetation of stony banks</b> on the south coast of England, and most of it is relatively undisturbed by human activities. Much of the shingle bar is subject to wash-over and percolation in storm conditions and is therefore sparsely vegetated. It supports the most extensive occurrences of the rare sea-kale <i>Crambe maritima</i> and sea pea <i>Lathyrus japonicus</i> in the UK, together with other grassland and lichen-rich shingle plant communities typical of more stable conditions, especially towards the eastern end of the site.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019807 class="space-right">Culbin Bar</a>
+        Highlands and Islands
+    </b>
+    <div>
+Historically, Culbin Bar in north-east Scotland formed part of the same shingle aggregation as Lower River Spey – Spey Bay to the east. Although sea-level rise has separated the sites, they are still linked, being maintained by the same coastal processes. Culbin Bar and the Lower River Spey – Spey Bay are, individually, the two largest shingle sites in Scotland and together form a shingle complex unique in Scotland. They represent <b>Perennial vegetation of stony banks</b> in the northern part of its range in UK. Culbin Bar is 7 km long. It has a series of shingle ridges running parallel to the coast that support the best and richest examples of northern heath on shingle. Dominant species are heather <i>Calluna vulgaris</i>, crowberry <i>Empetrum nigrum</i> and juniper <i>Juniperus communis</i>. The natural westward movement of the bar deposits new ridges for colonisation. Being virtually unaffected by damaging human activities, Culbin Bar is an example of a system with natural structure and function.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013059 class="space-right">Dungeness</a>
+        Kent, Surrey, East and West Sussex
+    </b>
+    <div>
+Dungeness is the UK’s largest shingle structure and represents the habitat type on the south-east coast of England. The total area of exposed shingle covers some 1,600 ha, though the extent of the buried shingle ridges is much greater. Despite considerable disturbance and destruction of the surface shingle, the site retains very large areas of intact parallel ridges with characteristic zonation of vegetation. It still has the most diverse and most extensive examples of stable vegetated shingle in Europe, including the best representation of scrub on shingle, notably prostrate forms of broom <i>Cytisus scoparius</i> and blackthorn <i>Prunus spinosa</i>. A feature of the site, thought to be unique in the UK, is the small depressions formed within the shingle structure, which support fen and open-water communities.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019978 class="space-right">Lower River Spey - Spey Bay</a>
+        Highlands and Islands
+    </b>
+    <div>
+Historically, Lower River Spey – Spey Bay in north-east Scotland formed part of the same shingle aggregation as Culbin Bar to the west. Although sea-level rise has separated the sites, they are still linked, being maintained by the same coastal processes. Lower River Spey – Spey Bay and Culbin Bar are, individually, the two largest shingle sites in Scotland and together form a shingle complex unique in Scotland. They represent this habitat type in the northern part of its range in the UK. Lower River Spey – Spey Bay contains significant areas of both bare and naturally vegetated parallel shingle ridges, although some of these have been planted with trees. The most significant feature of the site is the complex of wet and dry vegetation types, depending on the physical relief of the shingle ridges and hollows. Species-rich dry heath and grassland occurs on the ridges, while in the wetter hollows there is species-rich wet heath and transitions to a vegetation type comparable to that of dune slacks. Large areas of scrub, mainly of gorse <i>Ulex europaeus</i>, also occur.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013027 class="space-right">Morecambe Bay</a>
+        Cumbria, Extra-Regio, Lancashire
+    </b>
+    <div>
+Morecambe Bay represents <b>Perennial vegetation of stony banks</b> in north-west England. Walney Island on the shores of Morecambe Bay is a barrier island fringed by shingle with a partial sand covering. Two areas of exposed vegetated shingle occur at the extremes of the barrier. The southern area has been highly modified by eutrophication from a large gull colony, resulting in communities that are unusually species-rich for pioneer shingle vegetation. Perennial rye-grass <i>Lolium perenne</i>, common chickweed <i>Stellaria media</i> and biting stonecrop <i>Sedum acre</i> are constant elements, with dove’s-foot crane’s-bill <i>Geranium molle</i> an unusual and important feature.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019838 class="space-right">North Norfolk Coast</a>
+        East Anglia
+    </b>
+    <div>
+<b>Perennial vegetation of stony banks</b> occurs at Blakeney Point, a shingle spit on the east coast of England with a series of recurves partly covered by sand dunes. This extensive site has a typical sequence of shingle vegetation, which includes open communities of pioneer species on the exposed ridge and more continuous grassland communities on the more sheltered shingle recurves. It also includes some of the best examples of transitions between shingle and saltmarsh, with characteristic but rare species more typical of the Mediterranean. These include one of the best examples of the transition from sand and shingle to vegetation dominated by shrubby sea-blite <i>Suaeda vera</i> (<b>1420 Mediterranean and thermo-Atlantic halophilous scrubs</b>). Blakeney Point is part of a multiple-interest site. The shingle structure forms a highly significant component of the geomorphological structure of the North Norfolk Coast and helps to maintain a series of interrelated habitats.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014780 class="space-right">Orfordness - Shingle Street</a>
+        East Anglia
+    </b>
+    <div>
+Orfordness is an extensive shingle structure on the east coast of England and consists of a foreland, a 15 km-long spit and a series of recurves running from north to south on the Suffolk coast. This spit has been selected as it supports some of the largest and most natural sequences in the UK of shingle vegetation affected by salt spray. The southern end of the spit has a particularly fine series of undisturbed ridges, with zonation of communities determined by the ridge pattern. Pioneer communities with sea pea <i>Lathyrus japonicus</i> and false oat-grass <i>Arrhenatherum elatius</i> grassland occur. Locally these are nutrient-enriched by the presence of a gull colony; elsewhere they support rich lichen communities. The northern part of Orfordness has suffered considerable damage from defence-related activities but a restoration programme for the shingle vegetation is underway.    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0017076>Chesil and the Fleet</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The 28 km-long shingle bar of Chesil Beach, with the contiguous Portland Harbour shore, is an extensive representative of <b>Perennial vegetation of stony banks</b> on the south coast of England, and most of it is relatively undisturbed by human activities. Much of the shingle bar is subject to wash-over and percolation in storm conditions and is therefore sparsely vegetated. It supports the most extensive occurrences of the rare sea-kale <i>Crambe maritima</i> and sea pea <i>Lathyrus japonicus</i> in the UK, together with other grassland and lichen-rich shingle plant communities typical of more stable conditions, especially towards the eastern end of the site. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019807>Culbin Bar</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Historically, Culbin Bar in north-east Scotland formed part of the same shingle aggregation as Lower River Spey – Spey Bay to the east. Although sea-level rise has separated the sites, they are still linked, being maintained by the same coastal processes. Culbin Bar and the Lower River Spey – Spey Bay are, individually, the two largest shingle sites in Scotland and together form a shingle complex unique in Scotland. They represent <b>Perennial vegetation of stony banks</b> in the northern part of its range in UK. Culbin Bar is 7 km long. It has a series of shingle ridges running parallel to the coast that support the best and richest examples of northern heath on shingle. Dominant species are heather <i>Calluna vulgaris</i>, crowberry <i>Empetrum nigrum</i> and juniper <i>Juniperus communis</i>. The natural westward movement of the bar deposits new ridges for colonisation. Being virtually unaffected by damaging human activities, Culbin Bar is an example of a system with natural structure and function.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013059>Dungeness</a></div>
-    <div class="cell large-6 small-12"><b>Kent, Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Dungeness is the UK’s largest shingle structure and represents the habitat type on the south-east coast of England. The total area of exposed shingle covers some 1,600 ha, though the extent of the buried shingle ridges is much greater. Despite considerable disturbance and destruction of the surface shingle, the site retains very large areas of intact parallel ridges with characteristic zonation of vegetation. It still has the most diverse and most extensive examples of stable vegetated shingle in Europe, including the best representation of scrub on shingle, notably prostrate forms of broom <i>Cytisus scoparius</i> and blackthorn <i>Prunus spinosa</i>. A feature of the site, thought to be unique in the UK, is the small depressions formed within the shingle structure, which support fen and open-water communities.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019978>Lower River Spey - Spey Bay</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Historically, Lower River Spey – Spey Bay in north-east Scotland formed part of the same shingle aggregation as Culbin Bar to the west. Although sea-level rise has separated the sites, they are still linked, being maintained by the same coastal processes. Lower River Spey – Spey Bay and Culbin Bar are, individually, the two largest shingle sites in Scotland and together form a shingle complex unique in Scotland. They represent this habitat type in the northern part of its range in the UK. Lower River Spey – Spey Bay contains significant areas of both bare and naturally vegetated parallel shingle ridges, although some of these have been planted with trees. The most significant feature of the site is the complex of wet and dry vegetation types, depending on the physical relief of the shingle ridges and hollows. Species-rich dry heath and grassland occurs on the ridges, while in the wetter hollows there is species-rich wet heath and transitions to a vegetation type comparable to that of dune slacks. Large areas of scrub, mainly of gorse <i>Ulex europaeus</i>, also occur.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013027>Morecambe Bay</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, Lancashire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Morecambe Bay represents <b>Perennial vegetation of stony banks</b> in north-west England. Walney Island on the shores of Morecambe Bay is a barrier island fringed by shingle with a partial sand covering. Two areas of exposed vegetated shingle occur at the extremes of the barrier. The southern area has been highly modified by eutrophication from a large gull colony, resulting in communities that are unusually species-rich for pioneer shingle vegetation. Perennial rye-grass <i>Lolium perenne</i>, common chickweed <i>Stellaria media</i> and biting stonecrop <i>Sedum acre</i> are constant elements, with dove’s-foot crane’s-bill <i>Geranium molle</i> an unusual and important feature.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019838>North Norfolk Coast</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><b>Perennial vegetation of stony banks</b> occurs at Blakeney Point, a shingle spit on the east coast of England with a series of recurves partly covered by sand dunes. This extensive site has a typical sequence of shingle vegetation, which includes open communities of pioneer species on the exposed ridge and more continuous grassland communities on the more sheltered shingle recurves. It also includes some of the best examples of transitions between shingle and saltmarsh, with characteristic but rare species more typical of the Mediterranean. These include one of the best examples of the transition from sand and shingle to vegetation dominated by shrubby sea-blite <i>Suaeda vera</i> (<b>1420 Mediterranean and thermo-Atlantic halophilous scrubs</b>). Blakeney Point is part of a multiple-interest site. The shingle structure forms a highly significant component of the geomorphological structure of the North Norfolk Coast and helps to maintain a series of interrelated habitats. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014780>Orfordness - Shingle Street</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Orfordness is an extensive shingle structure on the east coast of England and consists of a foreland, a 15 km-long spit and a series of recurves running from north to south on the Suffolk coast. This spit has been selected as it supports some of the largest and most natural sequences in the UK of shingle vegetation affected by salt spray. The southern end of the spit has a particularly fine series of undisturbed ridges, with zonation of communities determined by the ridge pattern. Pioneer communities with sea pea <i>Lathyrus japonicus</i> and false oat-grass <i>Arrhenatherum elatius</i> grassland occur. Locally these are nutrient-enriched by the presence of a gull colony; elsewhere they support rich lichen communities. The northern part of Orfordness has suffered considerable damage from defence-related activities but a restoration programme for the shingle vegetation is underway.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030114>Bae Cemlyn/ Cemlyn Bay</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012809>Minsmere to Walberswick Heaths and Marshes</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030059>Solent Maritime</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013025>Solway Firth</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016618>Strangford Lough</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0030114 class="space-right">Bae Cemlyn/ Cemlyn Bay</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012809 class="space-right">Minsmere to Walberswick Heaths and Marshes</a>
+        East Anglia
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030059 class="space-right">Solent Maritime</a>
+        Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013025 class="space-right">Solway Firth</a>
+        Cumbria, Extra-Regio, South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016618 class="space-right">Strangford Lough</a>
+        Northern Ireland
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -283,6 +344,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0030061">South Wight Maritime</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>South Wight Maritime</h1>
+
+<div class="section">
+    <h1>
+        South Wight Maritime
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Extra-Regio, Hampshire and Isle of Wight</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SZ462771</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,45 +150,97 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0030061_thumb.gif" />
-            <figcaption style="font-size: small;">Location of South Wight Maritime SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of South Wight Maritime SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
-</div>
-<div class="row">
-    <p>
-Marine areas, Sea inlets (96%) <br />Coastal sand dunes, Sand beaches, Machair (0.5%) <br />Shingle, Sea cliffs, Islets (1%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (1%) <br />Dry grassland, Steppes (1%) <br />Broad-leaved deciduous woodland (0.5%) <br />    </p>
-</div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030061.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>The southern shore of the Isle of Wight, off the coast of southern England, includes a number of subtidal <b>reefs</b> that extend into the intertidal zone. This site is selected on account of its variety of reef types and associated communities, including chalk, limestone and sandstone reefs. To the west and south-west some of the most important subtidal British chalk reefs occur, representing over 5% of Europe’s coastal chalk exposures, including the extensive tide-swept reef off the Needles and examples at Culver Cliff and Freshwater Bay. These support a diverse range of species in both the subtidal and intertidal. Other reef habitats within the site include areas of large boulders off the coast around Ventnor. There is a large reef of harder limestone off Bembridge and Whitecliff Bay, where the horizontal and vertical faces and crevices provide a range of habitats. The bedrock is extensively bored by bivalves. Their presence, together with the holes they create, give shelter to other species, which adds further to habitat diversity. Intertidal pools support a diverse marine life, including a number of rare or unusual seaweeds, such as the shepherd’s purse seaweed <i>Gracilaria bursa-pastoris</i>. A number of other species reach their eastern limit of distribution along the English Channel at the Isle of Wight.</p></div>
-<div>
-    <p><b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a></p>
-<p>South Wight Maritime on the south coast of England represents contrasting Cretaceous hard cliffs, semi-stable soft cliffs and mobile soft cliffs. The western and eastern extremities of the site consist of high chalk cliffs with species-rich calcareous grassland vegetation, the former exposed to maritime influence and the latter comparatively sheltered. At the western end, the site adjoins the Isle of Wight Downs, providing an unusual combination of maritime and chalk grassland. The most exposed chalk cliff tops support important assemblages of nationally rare lichens, including <i>Fulgensia fulgens</i>. The longest section is composed of slumping acidic sandstones and neutral clays with an exposed south-westerly aspect. The vegetation communities are a mixture of acidic and mesotrophic grasslands with some scrub and a greater element of maritime species, such as thrift <i>Armeria maritima</i>, than is usual on soft cliffs. This section supports the Glanville fritillary butterfly <i>Melitaea cinxia</i> in its main English stronghold. A small, separate section of the site on clays has a range of successional stages, including woodland, influenced by landslips. These cliffs are minimally affected by sea defence works, which elsewhere disrupt ecological processes linked to coastal erosion, and together they form one of the longest lengths of naturally-developing soft cliffs on the UK coastline.</p></div>
-<div>
-    <p><b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a></p>
-<p>The southern shore of the Isle of Wight, off the coast of southern England, includes a number of either <b>submerged or partially submerged sea caves</b>. The exposure of the south coast of the island to high wave energy has allowed the erosion of the Cretaceous calcareous hard cliffs to form sea caves. Examples of this habitat can be found from the Needles along the south-west coast of the Island to Watcombe Bay, and also in Culver Cliff on the south-east coast of the Island. This site also contains the only known location of subtidal chalk caves in the UK. The large littoral caves in the chalk cliffs are of ecological importance, with many hosting rare algal species, which are restricted to this type of habitat. The fauna of these sea caves includes a range of mollusc species such as limpets <i>Patella</i> spp. and the horseshoe worm <i>Phoronis hippocrepia</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-    </div>
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (96%) <br />
+            </li>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (0.5%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (1%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (1%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (1%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (0.5%) <br />
+            </li>
+    </ul>
 </div>
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030061.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
+    <p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>The southern shore of the Isle of Wight, off the coast of southern England, includes a number of subtidal <b>reefs</b> that extend into the intertidal zone. This site is selected on account of its variety of reef types and associated communities, including chalk, limestone and sandstone reefs. To the west and south-west some of the most important subtidal British chalk reefs occur, representing over 5% of Europe’s coastal chalk exposures, including the extensive tide-swept reef off the Needles and examples at Culver Cliff and Freshwater Bay. These support a diverse range of species in both the subtidal and intertidal. Other reef habitats within the site include areas of large boulders off the coast around Ventnor. There is a large reef of harder limestone off Bembridge and Whitecliff Bay, where the horizontal and vertical faces and crevices provide a range of habitats. The bedrock is extensively bored by bivalves. Their presence, together with the holes they create, give shelter to other species, which adds further to habitat diversity. Intertidal pools support a diverse marine life, including a number of rare or unusual seaweeds, such as the shepherd’s purse seaweed <i>Gracilaria bursa-pastoris</i>. A number of other species reach their eastern limit of distribution along the English Channel at the Isle of Wight.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a>
+    </div>
+<p>South Wight Maritime on the south coast of England represents contrasting Cretaceous hard cliffs, semi-stable soft cliffs and mobile soft cliffs. The western and eastern extremities of the site consist of high chalk cliffs with species-rich calcareous grassland vegetation, the former exposed to maritime influence and the latter comparatively sheltered. At the western end, the site adjoins the Isle of Wight Downs, providing an unusual combination of maritime and chalk grassland. The most exposed chalk cliff tops support important assemblages of nationally rare lichens, including <i>Fulgensia fulgens</i>. The longest section is composed of slumping acidic sandstones and neutral clays with an exposed south-westerly aspect. The vegetation communities are a mixture of acidic and mesotrophic grasslands with some scrub and a greater element of maritime species, such as thrift <i>Armeria maritima</i>, than is usual on soft cliffs. This section supports the Glanville fritillary butterfly <i>Melitaea cinxia</i> in its main English stronghold. A small, separate section of the site on clays has a range of successional stages, including woodland, influenced by landslips. These cliffs are minimally affected by sea defence works, which elsewhere disrupt ecological processes linked to coastal erosion, and together they form one of the longest lengths of naturally-developing soft cliffs on the UK coastline.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a>
+    </div>
+<p>The southern shore of the Isle of Wight, off the coast of southern England, includes a number of either <b>submerged or partially submerged sea caves</b>. The exposure of the south coast of the island to high wave energy has allowed the erosion of the Cretaceous calcareous hard cliffs to form sea caves. Examples of this habitat can be found from the Needles along the south-west coast of the Island to Watcombe Bay, and also in Culver Cliff on the south-east coast of the Island. This site also contains the only known location of subtidal chalk caves in the UK. The large littoral caves in the chalk cliffs are of ecological importance, with many hosting rare algal species, which are restricted to this type of habitat. The fauna of these sea caves includes a range of mollusc species such as limpets <i>Patella</i> spp. and the horseshoe worm <i>Phoronis hippocrepia</i>.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -269,6 +329,6 @@ Marine areas, Sea inlets (96%) <br />Coastal sand dunes, Sand beaches, Machair (
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,150 +77,227 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1096"><I>Lampetra planeri</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: fish</h1>
-</div>
-<h4>1096 Brook lamprey [<I>Lampetra planeri</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1096/map">
-            <img src="/images/maps/features/thumbnails/S1096_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1096</b> <I>Lampetra planeri</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1096/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1096/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1096</span>
+        <span class="space-right">Brook lamprey</span>
+        <I>Lampetra planeri</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: fish</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1096/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1096/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>brook lamprey <I>Lampetra planeri</B></I> is a primitive, jawless fish resembling an eel, and is the smallest of the lampreys found in the UK. It is a non-migratory freshwater species, occurring in streams and occasionally in lakes in north-west Europe. Like other lamprey species, the brook lamprey requires clean gravel beds for spawning and soft marginal silt or sand for the ammocoete larvae. It spawns mostly in parts of the river where the current is not too strong. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1096/map">
+                <img src="/images/maps/features/thumbnails/S1096_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1096</b> <I>Lampetra planeri</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>brook lamprey <I>Lampetra planeri</B></I> has declined in some parts of its European range.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1096/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>The <B>brook lamprey <I>Lampetra planeri</B></I> has declined in parts of the UK, although it is still widespread. This species is the most abundant and widespread of the British lampreys and is often found in the absence of the other two species, for example above a barrier that precludes the presence of the migratory species. It is common in many areas of England but is absent from much of Scotland north of the Great Glen, including Orkney and Shetland and all but a few of the Western Isles. </P></p>
+    <p>View <a href=/species/S1096/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites that hold healthy populations of brook lamprey Lampetra planeri, with clean water and suitable areas of gravels, silt or sand required for spawning have been selected. The SAC series provides representation over the geographical range of the species and includes a range of high-quality river types in which it occurs. Sites selected are generally extensive river systems, including important tributaries, which provide conservation of the range of habitat features required by the species. Identification of suitable sites in some parts of the UK has been hampered by the absence of comparative population data, and by identification difficulties.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures are also necessary to support its conservation in the UK.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012670>Afon Teifi/ River Teifi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
+<li>
+    <b>
+        <a href=/site/UK0012670 class="space-right">Afon Teifi/ River Teifi</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+The Teifi is a predominantly mesotrophic river in west Wales supporting a large population of <b>brook lamprey <i>Lampetra planeri</i></b>. A mixture of habitat and substrate types provides the combination of spawning gravels adjacent to silt beds that are favoured by this and other lamprey species. A large number of tributaries have been included in the SAC; these are thought to be important for lampreys in the Teifi because the main channel is prone to severe floods that may result in washout of smaller ammocoetes.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030074 class="space-right">Afonydd Cleddau/ Cleddau Rivers</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+The Cleddau rivers are a predominantly lowland catchment in the Pembrokeshire peninsula. The substrates consist mainly of sand, gravel and well-aerated silt, providing an excellent mosaic of lamprey spawning and nursery habitat. This is reflected in electrofishing surveys carried out by the Environment Agency, which indicate the presence of ammocoetes throughout the catchment.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019840 class="space-right">Endrick Water</a>
+        Eastern Scotland, South Western Scotland
+    </b>
+    <div>
+The Endrick <b>brook lamprey <i>Lampetra planeri</i></b> population is strong and healthy and represents the species in Scotland. The site also supports important populations of <b>1099 River lamprey <i>Lampetra fluviatilis</i></b>, for it is also selected.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013016 class="space-right">River Avon</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The Avon is a high-quality river that represents the southern part of the range of <b>brook lamprey <i>Lampetra planeri</i></b>. A healthy, stable population occurs in the main river and in a number of tributaries. The main river, and in particular its tributaries, provides clean beds of gravel for spawning and extensive areas of fine silt for juveniles to burrow into.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030032 class="space-right">River Derwent and Bassenthwaite Lake</a>
+        Cumbria
+    </b>
+    <div>
+The Derwent represents <b>brook lamprey <i>Lampetra planeri</i></b> in a high-quality, oligotrophic river in northern England. Good populations of the species are known to occur, and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012643 class="space-right">River Eden</a>
+        Cumbria, North Yorkshire, Northumberland and Tyne and Wear
+    </b>
+    <div>
+The Eden is an example of a <b>brook lamprey <i>Lampetra planeri</i></b> population associated with an extensive river system on a varied and base-rich geology in northern England. The highly erodible nature of the rock results in extensive areas of gravel and finer silt being deposited throughout the system, providing conditions for spawning and nursery areas. Brook lamprey is supported widely within the catchment.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030263 class="space-right">River Teith</a>
+        Eastern Scotland
+    </b>
+    <div>
+The River Teith rises and flows through upland areas before crossing the Highland Boundary Fault, a major geological feature in Scotland, at the Falls of Leny and meandering through the central lowlands to the east coast. The river system supports a strong <b>brook lamprey <i>Lampetra planeri</i></b> population. Brook lampreys have been recorded from the headwaters downstream to the lower reaches. The river provides excellent habitat with usually pristine water quality, well-vegetated banks and a substantially unaltered river channel. The River Teith supports high densities of brook/river lamprey ammocoetes and also supports a healthy population of sea lamprey.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013007 class="space-right">River Usk/ Afon Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+The Usk in south Wales supports a healthy population of <b>brook lamprey <i>Lampetra planeri</i></b> and is considered to provide exceptionally good quality habitat likely to ensure the continued survival of the species in this part of the UK.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012642 class="space-right">River Wye/ Afon Gwy</a>
+        East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys
+    </b>
+    <div>
+The Wye is an extensive river system spanning the border between England and Wales and the <b>brook lamprey <i>Lampetra planeri</i></b> population is widely distributed in its catchment. The river provides exceptionally good quality habitat for brook lamprey and supports a healthy population.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Teifi is a predominantly mesotrophic river in west Wales supporting a large population of <b>brook lamprey <i>Lampetra planeri</i></b>. A mixture of habitat and substrate types provides the combination of spawning gravels adjacent to silt beds that are favoured by this and other lamprey species. A large number of tributaries have been included in the SAC; these are thought to be important for lampreys in the Teifi because the main channel is prone to severe floods that may result in washout of smaller ammocoetes.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030074>Afonydd Cleddau/ Cleddau Rivers</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Cleddau rivers are a predominantly lowland catchment in the Pembrokeshire peninsula. The substrates consist mainly of sand, gravel and well-aerated silt, providing an excellent mosaic of lamprey spawning and nursery habitat. This is reflected in electrofishing surveys carried out by the Environment Agency, which indicate the presence of ammocoetes throughout the catchment.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019840>Endrick Water</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, South Western Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Endrick <b>brook lamprey <i>Lampetra planeri</i></b> population is strong and healthy and represents the species in Scotland. The site also supports important populations of <b>1099 River lamprey <i>Lampetra fluviatilis</i></b>, for it is also selected.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013016>River Avon</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Avon is a high-quality river that represents the southern part of the range of <b>brook lamprey <i>Lampetra planeri</i></b>. A healthy, stable population occurs in the main river and in a number of tributaries. The main river, and in particular its tributaries, provides clean beds of gravel for spawning and extensive areas of fine silt for juveniles to burrow into. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030032>River Derwent and Bassenthwaite Lake</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Derwent represents <b>brook lamprey <i>Lampetra planeri</i></b> in a high-quality, oligotrophic river in northern England. Good populations of the species are known to occur, and this river has features that provide the necessary conditions for both spawning and nursery areas – extensive gravel shoals, good water quality and areas of marginal silt. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012643>River Eden</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, North Yorkshire, Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Eden is an example of a <b>brook lamprey <i>Lampetra planeri</i></b> population associated with an extensive river system on a varied and base-rich geology in northern England. The highly erodible nature of the rock results in extensive areas of gravel and finer silt being deposited throughout the system, providing conditions for spawning and nursery areas. Brook lamprey is supported widely within the catchment. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030263>River Teith</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The River Teith rises and flows through upland areas before crossing the Highland Boundary Fault, a major geological feature in Scotland, at the Falls of Leny and meandering through the central lowlands to the east coast. The river system supports a strong <b>brook lamprey <i>Lampetra planeri</i></b> population. Brook lampreys have been recorded from the headwaters downstream to the lower reaches. The river provides excellent habitat with usually pristine water quality, well-vegetated banks and a substantially unaltered river channel. The River Teith supports high densities of brook/river lamprey ammocoetes and also supports a healthy population of sea lamprey.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013007>River Usk/ Afon Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Usk in south Wales supports a healthy population of <b>brook lamprey <i>Lampetra planeri</i></b> and is considered to provide exceptionally good quality habitat likely to ensure the continued survival of the species in this part of the UK. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012642>River Wye/ Afon Gwy</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Wye is an extensive river system spanning the border between England and Wales and the <b>brook lamprey <i>Lampetra planeri</i></b> population is widely distributed in its catchment. The river provides exceptionally good quality habitat for brook lamprey and supports a healthy population.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013010>Afon Tywi/ River Tywi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019859>Peak District Dales</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire, Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030248>River Axe</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030252>River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012599>River Itchen</a></div>
-    <div class="cell large-6 small-12"><b>Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030257>River Lambourn</a></div>
-    <div class="cell large-6 small-12"><b>Berkshire, Buckinghamshire and Oxfordshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030312>River Tay</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012691>River Tweed</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012647>River Wensum</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0013010 class="space-right">Afon Tywi/ River Tywi</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019859 class="space-right">Peak District Dales</a>
+        Derbyshire and Nottinghamshire, Shropshire and Staffordshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030248 class="space-right">River Axe</a>
+        Devon
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030252 class="space-right">River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a>
+        Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012599 class="space-right">River Itchen</a>
+        Hampshire and Isle of Wight
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030257 class="space-right">River Lambourn</a>
+        Berkshire, Buckinghamshire and Oxfordshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030312 class="space-right">River Tay</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012691 class="space-right">River Tweed</a>
+        Eastern Scotland, Northumberland and Tyne and Wear
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012647 class="space-right">River Wensum</a>
+        East Anglia
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -308,6 +384,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

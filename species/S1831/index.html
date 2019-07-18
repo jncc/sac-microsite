@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,143 +77,204 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1831"><I>Luronium natans</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Higher plant species</h1>
-</div>
-<h4>1831 Floating water-plantain [<I>Luronium natans</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1831/map">
-            <img src="/images/maps/features/thumbnails/S1831_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1831</b> <I>Luronium natans</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1831/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1831/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1831</span>
+        <span class="space-right">Floating water-plantain</span>
+        <I>Luronium natans</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Higher plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1831/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1831/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Floating water-plantain <I>Luronium natans</B></I> occurs in a range of freshwater situations, including nutrient-poor lakes in the uplands (mainly referable to <B>3130 Oligotrophic to mesotrophic standing waters with vegetation of the <I>Littorelletea uniflorae </I>and/or of the <I>Isoëto-Nanojuncetea</B></I>) and slowly-flowing lowland rivers, pools, ditches and canals that are moderately nutrient-rich.</P><B><I>
 <P>Luronium natans</B></I> occurs as two forms: in shallow water with floating oval leaves, and in deep water with submerged rosettes of narrow leaves. The plant thrives best in open situations with a moderate degree of disturbance, where the growth of emergent vegetation is held in check. Populations fluctuate greatly in size, often increasing when water levels drop to expose the bottom of the water body. Populations fluctuate from year to year, and at many sites records of <B><I>L.&nbsp;natans</B></I> have been infrequent, suggesting that only small populations occur, in some cases possibly as transitory colonists of the habitat. Populations tend to be more stable at natural sites than artificial ones, but approximately half of recent (post-1980) records are from canals and similar artificial habitats. Its habitat in rivers has been greatly reduced by channel-straightening, dredging and pollution, especially in lowland situations.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1831/map">
+                <img src="/images/maps/features/thumbnails/S1831_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1831</b> <I>Luronium natans</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Luronium natans</B></I> is endemic to Europe.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1831/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>The ‘core’ natural habitat is considered to be lakes in Snowdonia and in mid-Wales, where <B><I>Luronium natans</B></I> has a very long and consistent history of occurrence. It appears to have spread eastwards along the canal system during the 19<SUP>th</SUP>&nbsp;century. It is absent from Northern Ireland but has recently been discovered in Ireland. It is probably also native to Cumbria, where a population survives. Elsewhere it occurs only as an introduction to ditches in the Norfolk Broads and to a few localities in Scotland, although some native populations may have formerly existed in Scotland.<B><I> L.&nbsp;natans</B></I> has been recorded in 40 10x10&nbsp;km squares since 1980.</P></p>
+    <p>View <a href=/species/S1831/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>The selected sites include localities that are known to hold consistently large, naturally-occurring populations in lakes, rivers and heathland pools, as well as extensive populations in canals. Sites where conditions are considered to be particularly favourable to the species&#x2019; survival have been selected. Overall the site series provides representation of the species across its natural range in the UK and in a variety of ecological conditions.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030075>Afon Eden - Cors Goch Trawsfynydd</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
+<li>
+    <b>
+        <a href=/site/UK0030075 class="space-right">Afon Eden - Cors Goch Trawsfynydd</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+<b>Floating water-plantain <i>Luronium natans</i></b> is not especially abundant or strongly flowering in the Afon Eden but it does represent a rare and significant survival, and this population, scattered along ~100 m of meander pools, is an exceptional instance of the species’ growth in naturally slow-flowing waters.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030046 class="space-right">Afon Gwyrfai a Llyn Cwellyn</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Llyn Cwellyn and its outflow, the Afon Gwyrfai, support one of the largest and most diverse populations of <b>floating water-plantain <i>Luronium natans</i></b> anywhere in Britain. There are extensive submerged, vegetative beds of this species in the clear, oligotrophic waters of the lake and (generally) several small flowering colonies around its edge whilst, downstream from the lake, <i>L. natans</i> occupies a highly unusual – and vulnerable – habitat along several hundred metres of slow-moving river. The diversity of growth forms and their range across the Cwellyn-Gwyrfai makes this an internationally significant site for the species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012670 class="space-right">Afon Teifi/ River Teifi</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+The Teifi is a mixed habitat supporting <b>floating water-plantain <i>Luronium natans</i></b> at the western margins of its range in the UK. This species has been recorded in the nutrient-poor standing waters of the Teifi pools in the headwaters of the river. It has also been recorded in a moderately nutrient-rich stretch of the river immediately downstream of Cors Caron.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030100 class="space-right">Brown Moss</a>
+        Shropshire and Staffordshire
+    </b>
+    <div>
+Brown Moss is an area of former heathland, now largely colonised by woodland, with a series of shallow pools. <b>Floating water-plantain <i>Luronium natans</i></b> has been known to occur at Brown Moss for several years, and this site possibly represents a relict natural lowland population of the species. The population of <i>Luronium</i> at Brown Moss is relatively small, and appears to behave as a metapopulation, colonising the various pools according to their suitability.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012672 class="space-right">Cannock Extension Canal</a>
+        Shropshire and Staffordshire, West Midlands
+    </b>
+    <div>
+Cannock Extension Canal in central England is an example of anthropogenic, lowland habitat supporting <b>floating water-plantain <i>Luronium natans</i></b> at the eastern limit of the plant’s natural distribution in England. A very large population of the species occurs in the Canal, which has a diverse aquatic flora and rich dragonfly fauna, indicative of good water quality. The low volume of boat traffic on this terminal branch of the Wyrley and Essington Canal has allowed open-water plants, including floating water-plantain, to flourish, while depressing the growth of emergents.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012928 class="space-right">Elenydd</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+The remote Elenydd lakes are amongst the best upland oligotrophic lakes in Wales and have been relatively untouched by abstraction and water-level modification. Their populations of <b>floating water-plantain <i>Luronium natans</i></b> show a highly natural submerged distribution, in association with a wide range of associated species, and are an apparently ancient refuge site secure from the intensification which has afflicted lowland populations.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012946 class="space-right">Eryri/ Snowdonia</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Snowdonia in north Wales is an example of a montane lake habitat supporting <B>floating water-plantain <I>Luronium natans</I></B>. Records date back to the 18<SUP>th</SUP> century, indicating that habitat conditions are particularly favourable for this species.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030213 class="space-right">Montgomery Canal</a>
+        East Wales
+    </b>
+    <div>
+This is the largest and the most extensive population of <b>floating water-plantain <i>Luronium natans</i></b> in Britain and is a highly significant lowland population. In favourable management conditions the species can be dominant over kilometre lengths of canal, carpeting the shallow bed and flowering and setting seed in abundance. This is a semi-natural population, having colonised from drift material or seed but needing periodic human disturbance for continued growth; in this respect the canal is a substitute for the species’ former slow-moving, mesotrophic river niche, which has been largely destroyed in lowland Britain.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030229 class="space-right">North West Pembrokeshire Commons/ Comins Gogledd Orllewin Sir Benfro</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+<B>Floating water-plantain <I>Luronium natans</I></B> in Pembrokeshire is relatively isolated from its central and north Wales population centres and it occupies a distinctive – and now highly relict – habitat here, in heathland pools. The species was recorded at Dowrog in the early 19<SUP>th</SUP> century but it has only recently been rediscovered, following extensive remedial management. Here, in shallow rain-fed pools, it flowers and sets seed prolifically, almost certainly enabling colonisation of transient habitat elsewhere.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030252 class="space-right">River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a>
+        Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys
+    </b>
+    <div>
+Species occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030032 class="space-right">River Derwent and Bassenthwaite Lake</a>
+        Cumbria
+    </b>
+    <div>
+This site represents the northern limit of <b>floating water-plantain <i>Luronium natans</i></b> in the UK, and its occurrence in relatively shallow, oligo-mesotrophic lakes. Within the site, the species is found in two lakes, Derwent Water and Bassenthwaite Lake. Both of these lakes have healthy populations of the species in extensive, species-rich beds of aquatic macrophytes. In Bassenthwaite Lake it also occurs on muddy lake-shores. These are the only two known sites for <i>Luronium</i> in the Lake District.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030266 class="space-right">Rochdale Canal</a>
+        Greater Manchester
+    </b>
+    <div>
+Rochdale Canal supports a significant population of <b>floating water-plantain <i>Luronium natans</i></b> in a botanically diverse waterplant community which also holds a wide range of pondweeds <i>Potamogeton</i> spp. The canal has predominantly mesotrophic water. This population of <i>Luronium</i> is representative of the formerly more widespread canal populations of north-west England.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013045 class="space-right">St David&#x27;s / Ty Ddewi</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+The two larger pools – and one tiny satellite – on Ramsey Island are an internationally significant site for <b>floating water-plantain <i>Luronium natans</i></b>, providing ideal habitat for the species in its flowering, near-annual form. Rain-fed lowland pools, usually in heaths, are now an exceptionally rare habitat, and the population here is maintained by a combination of excellent management, favourable topography and clean rain.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><b>Floating water-plantain <i>Luronium natans</i></b> is not especially abundant or strongly flowering in the Afon Eden but it does represent a rare and significant survival, and this population, scattered along ~100 m of meander pools, is an exceptional instance of the species’ growth in naturally slow-flowing waters.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030046>Afon Gwyrfai a Llyn Cwellyn</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Llyn Cwellyn and its outflow, the Afon Gwyrfai, support one of the largest and most diverse populations of <b>floating water-plantain <i>Luronium natans</i></b> anywhere in Britain. There are extensive submerged, vegetative beds of this species in the clear, oligotrophic waters of the lake and (generally) several small flowering colonies around its edge whilst, downstream from the lake, <i>L. natans</i> occupies a highly unusual – and vulnerable – habitat along several hundred metres of slow-moving river. The diversity of growth forms and their range across the Cwellyn-Gwyrfai makes this an internationally significant site for the species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012670>Afon Teifi/ River Teifi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Teifi is a mixed habitat supporting <b>floating water-plantain <i>Luronium natans</i></b> at the western margins of its range in the UK. This species has been recorded in the nutrient-poor standing waters of the Teifi pools in the headwaters of the river. It has also been recorded in a moderately nutrient-rich stretch of the river immediately downstream of Cors Caron.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030100>Brown Moss</a></div>
-    <div class="cell large-6 small-12"><b>Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Brown Moss is an area of former heathland, now largely colonised by woodland, with a series of shallow pools. <b>Floating water-plantain <i>Luronium natans</i></b> has been known to occur at Brown Moss for several years, and this site possibly represents a relict natural lowland population of the species. The population of <i>Luronium</i> at Brown Moss is relatively small, and appears to behave as a metapopulation, colonising the various pools according to their suitability.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012672>Cannock Extension Canal</a></div>
-    <div class="cell large-6 small-12"><b>Shropshire and Staffordshire, West Midlands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Cannock Extension Canal in central England is an example of anthropogenic, lowland habitat supporting <b>floating water-plantain <i>Luronium natans</i></b> at the eastern limit of the plant’s natural distribution in England. A very large population of the species occurs in the Canal, which has a diverse aquatic flora and rich dragonfly fauna, indicative of good water quality. The low volume of boat traffic on this terminal branch of the Wyrley and Essington Canal has allowed open-water plants, including floating water-plantain, to flourish, while depressing the growth of emergents.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012928>Elenydd</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The remote Elenydd lakes are amongst the best upland oligotrophic lakes in Wales and have been relatively untouched by abstraction and water-level modification. Their populations of <b>floating water-plantain <i>Luronium natans</i></b> show a highly natural submerged distribution, in association with a wide range of associated species, and are an apparently ancient refuge site secure from the intensification which has afflicted lowland populations.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012946>Eryri/ Snowdonia</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Snowdonia in north Wales is an example of a montane lake habitat supporting <B>floating water-plantain <I>Luronium natans</I></B>. Records date back to the 18<SUP>th</SUP> century, indicating that habitat conditions are particularly favourable for this species. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030213>Montgomery Canal</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is the largest and the most extensive population of <b>floating water-plantain <i>Luronium natans</i></b> in Britain and is a highly significant lowland population. In favourable management conditions the species can be dominant over kilometre lengths of canal, carpeting the shallow bed and flowering and setting seed in abundance. This is a semi-natural population, having colonised from drift material or seed but needing periodic human disturbance for continued growth; in this respect the canal is a substitute for the species’ former slow-moving, mesotrophic river niche, which has been largely destroyed in lowland Britain.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030229>North West Pembrokeshire Commons/ Comins Gogledd Orllewin Sir Benfro</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><B>Floating water-plantain <I>Luronium natans</I></B> in Pembrokeshire is relatively isolated from its central and north Wales population centres and it occupies a distinctive – and now highly relict – habitat here, in heathland pools. The species was recorded at Dowrog in the early 19<SUP>th</SUP> century but it has only recently been rediscovered, following extensive remedial management. Here, in shallow rain-fed pools, it flowers and sets seed prolifically, almost certainly enabling colonisation of transient habitat elsewhere.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030252>River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<p>Species occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030032>River Derwent and Bassenthwaite Lake</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site represents the northern limit of <b>floating water-plantain <i>Luronium natans</i></b> in the UK, and its occurrence in relatively shallow, oligo-mesotrophic lakes. Within the site, the species is found in two lakes, Derwent Water and Bassenthwaite Lake. Both of these lakes have healthy populations of the species in extensive, species-rich beds of aquatic macrophytes. In Bassenthwaite Lake it also occurs on muddy lake-shores. These are the only two known sites for <i>Luronium</i> in the Lake District.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030266>Rochdale Canal</a></div>
-    <div class="cell large-6 small-12"><b>Greater Manchester</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Rochdale Canal supports a significant population of <b>floating water-plantain <i>Luronium natans</i></b> in a botanically diverse waterplant community which also holds a wide range of pondweeds <i>Potamogeton</i> spp. The canal has predominantly mesotrophic water. This population of <i>Luronium</i> is representative of the formerly more widespread canal populations of north-west England.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013045>St David`s / Ty Ddewi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The two larger pools – and one tiny satellite – on Ramsey Island are an internationally significant site for <b>floating water-plantain <i>Luronium natans</i></b>, providing ideal habitat for the species in its flowering, near-annual form. Rain-fed lowland pools, usually in heaths, are now an exceptionally rare habitat, and the population here is maintained by a combination of excellent management, favourable topography and clean rain.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012945>Rhinog</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012945 class="space-right">Rhinog</a>
+        West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -301,6 +361,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

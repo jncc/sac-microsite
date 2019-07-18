@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,76 +77,109 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S4056"><I>Anisus vorticulus</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: molluscs</h1>
-</div>
-<h4>4056 Ramshorn snail [<I>Anisus vorticulus</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S4056/map">
-            <img src="/images/maps/features/thumbnails/S4056_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>4056</b> <I>Anisus vorticulus</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S4056/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S4056/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">4056</span>
+        <span class="space-right">Ramshorn snail</span>
+        <I>Anisus vorticulus</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: molluscs</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><P>The <STRONG>Lesser whirlpool ram’s-horn snail <EM>Anisus vorticulus</EM></STRONG> is a small aquatic snail with a flattened spiral shell rarely more than 5 mm in diameter. It occurs in unpolluted, calcareous waters in marsh drains with a dense aquatic flora, and favours ditches with a diverse flora but little emergent vegetation. It often floats on the surface amongst duckweed <EM>Lemna</EM> spp. Ditches that are either completely cleared of vegetation or are choked with weed and silt are unsuitable. Winter flooding may be important in enabling young snails to colonise new ditches. The main threats to the species include land drainage, inappropriate habitat management and eutrophication, and studies of its requirements and conservation management have been undertaken (Willing &amp; Killeen 1999; Watson &amp; Ormerod 2004). </P></p>
-
-<h4>European status and distribution</h4>
-<p><P><EM><STRONG>Anisus vorticulus</STRONG></EM> is mainly a central and southern European species, with a range extending as far east as Siberia. Its status in north-west Europe is poorly-known in many areas, but it is local throughout its range (Willing &amp; Killeen 1999).</P></p>
-
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S4056/map>here</a> view UK distribution of this species</p>
-<p><P>The <STRONG>Lesser whirlpool ram’s-horn snail <EM>Anisus vorticulus</EM></STRONG> has always been a very local species in Britain. It formerly occurred at around 15 sites in south-east England, but has declined for reasons that are not fully understood, and is now restricted to a few locations in Norfolk, Suffolk and Sussex. </P></p>
-
-
-<h4>Site Accounts</h4>
-
 <div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030366>Arun Valley</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S4056/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S4056/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><P>The <STRONG>Lesser whirlpool ram’s-horn snail <EM>Anisus vorticulus</EM></STRONG> is a small aquatic snail with a flattened spiral shell rarely more than 5 mm in diameter. It occurs in unpolluted, calcareous waters in marsh drains with a dense aquatic flora, and favours ditches with a diverse flora but little emergent vegetation. It often floats on the surface amongst duckweed <EM>Lemna</EM> spp. Ditches that are either completely cleared of vegetation or are choked with weed and silt are unsuitable. Winter flooding may be important in enabling young snails to colonise new ditches. The main threats to the species include land drainage, inappropriate habitat management and eutrophication, and studies of its requirements and conservation management have been undertaken (Willing &amp; Killeen 1999; Watson &amp; Ormerod 2004). </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S4056/map">
+                <img src="/images/maps/features/thumbnails/S4056_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>4056</b> <I>Anisus vorticulus</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><I>Anisus vorticulus</I> occurs across a range of sites in southern and eastern England. The Arun valley is one of the three main population centres for this species in the UK. 
-This proposed site includes two of its core sites in the wash lands of the Arun floodplain (Pulborough Brooks and Amberley Wild Brooks SSSIs).</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030367>Pevensey Levels</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><I>Anisus vorticulus</I> occurs across a range of sites in southern and eastern England. Pevensey Levels is a large and expansive grazing marsh that supports <I>Anisus vorticulus</I> in both a wide spatial distribution and in good population density classes</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013577>The Broads</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><i>Anisus vorticulus</i> occurs across a range of sites in southern and eastern England. The Broads is one of the three main population centres for this species in the UK.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><P><EM><STRONG>Anisus vorticulus</STRONG></EM> is mainly a central and southern European species, with a range extending as far east as Siberia. Its status in north-west Europe is poorly-known in many areas, but it is local throughout its range (Willing &amp; Killeen 1999).</P></p>
 </div>
+
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><P>The <STRONG>Lesser whirlpool ram’s-horn snail <EM>Anisus vorticulus</EM></STRONG> has always been a very local species in Britain. It formerly occurred at around 15 sites in south-east England, but has declined for reasons that are not fully understood, and is now restricted to a few locations in Norfolk, Suffolk and Sussex. </P></p>
+    <p>View <a href=/species/S4056/map>UK distribution of this species</a>.</p>
+
+        <h2>Site selection rationale</h2>
+        <p>Anisus vorticulus was added to Annex II in 2003, and no sites in the UK have yet been selected for this species.</p>
+</div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0030366 class="space-right">Arun Valley</a>
+        Surrey, East and West Sussex
+    </b>
+    <div>
+<I>Anisus vorticulus</I> occurs across a range of sites in southern and eastern England. The Arun valley is one of the three main population centres for this species in the UK. 
+This proposed site includes two of its core sites in the wash lands of the Arun floodplain (Pulborough Brooks and Amberley Wild Brooks SSSIs).    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030367 class="space-right">Pevensey Levels</a>
+        Surrey, East and West Sussex
+    </b>
+    <div>
+<I>Anisus vorticulus</I> occurs across a range of sites in southern and eastern England. Pevensey Levels is a large and expansive grazing marsh that supports <I>Anisus vorticulus</I> in both a wide spatial distribution and in good population density classes    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013577 class="space-right">The Broads</a>
+        East Anglia
+    </b>
+    <div>
+<i>Anisus vorticulus</i> occurs across a range of sites in southern and eastern England. The Broads is one of the three main population centres for this species in the UK.    </div>
+</li>    </ul>
+</div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -234,6 +266,6 @@ This proposed site includes two of its core sites in the wash lands of the Arun 
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

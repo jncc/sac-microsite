@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H8310">Caves not open to the public</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">8310</span>
+        Caves not open to the public
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Rocky habitats and caves</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Rocky habitats and caves</h1>
-</div>
-<h4>8310 Caves not open to the public</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H8310/map">
-            <img src="/images/maps/features/thumbnails/H8310_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>8310</b> Caves not open to the public. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8310/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8310/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H8310/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H8310/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>Caves are formed by the erosion of soluble rocks, such as limestones. They typically form the subterranean components of a distinctive ‘karst’ landscape, and are associated with various topographic features, including gorges, dry valleys, <B>8240 Limestone pavements</B>, and dolines (surface depressions and hollows). <B>Caves not open to the public</B> is interpreted as referring to natural caves which are not routinely exploited for tourism, and which host specialist or endemic cave species or support important populations of Annex&nbsp;II species. </P>
 <P>Caves lack natural illumination, and therefore support species which are adapted to living in the dark. Microclimatic conditions vary widely within and between caves, and this determines the composition of the fauna and flora. Many species feed on detritus derived from the surface; others are carnivorous. Cave-dwelling species (cavernicoles) can be divided into three categories: </P>
 <OL type=a>
@@ -121,49 +128,92 @@
 <LI>Trogloxenes – species which are found in caves but only for part of their life cycle.</LI></OL>
 <P>The cavernicolous flora and fauna of the UK and other parts of northern Europe is highly impoverished compared to southern Europe. The reason for this is that most karst areas in the UK (except for parts of southern England) were glaciated during the Pleistocene, and many species are therefore recent colonists. Southern Europe escaped glaciation and consequently has a richer fauna of highly-specialised relict troglobites.</P>
 <P>Cavernicoles in the UK include bacteria, algae, fungi and various groups of invertebrates (e.g. insects, spiders and crustaceans). Characteristic troglobites and troglophiles include <I>Porrhoma rosenhaueri</I> (a blind cave spider), <I>Trechus micros</I> (a ground beetle), <I>Niphargus glennei</I> (an amphipod, only known from Devon in the UK), and <I>Arrhopalites pygmaeus</I> (a springtail). Some caves are important hibernation sites for bat species, including all four Annex&nbsp;II species found in the UK.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H8310/map">
+                <img src="/images/maps/features/thumbnails/H8310_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>8310</b> Caves not open to the public. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Caves not open to the public</B> are widely distributed in Europe but are most frequent in the extensive limestone regions of southern Europe. The cavernicolous fauna of southern European caves includes a large number of troglobites, many of which are endemics. Notable species include amphibians, such as the blind cave salamander <I>Proteus anguinus</I>. An assessment of the occurrence and protection of the habitat throughout Europe was provided by Juberthie (1995). </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H8310/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>In the UK, caves are particularly characteristic of the limestone areas of the North Pennines, the Peak District, the Mendips, south Wales, and County Fermanagh. Examples also occur in Devon, north Wales and Scotland.</P></p>
+    <p>Click <a href=/habitat/H8310/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+    </ul>
+</div>
 
-<h4>Site Accounts</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+<li>
+    <b>
+        <a href=/site/UK0014787 class="space-right">Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014787>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012658>Mells Valley</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030203>Mendip Limestone Grasslands</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030052>North Somerset and Mendip Bats</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012650>South Hams</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014784>Usk Bat Sites/ Safleoedd Ystlumod Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0012658 class="space-right">Mells Valley</a>
+        Dorset and Somerset
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030203 class="space-right">Mendip Limestone Grasslands</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030052 class="space-right">North Somerset and Mendip Bats</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012650 class="space-right">South Hams</a>
+        Devon
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014784 class="space-right">Usk Bat Sites/ Safleoedd Ystlumod Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -250,6 +300,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

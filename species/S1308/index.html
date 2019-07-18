@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,111 +77,163 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1308"><I>Barbastella barbastellus</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: mammals</h1>
-</div>
-<h4>1308 Barbastelle [<I>Barbastella barbastellus</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1308/map">
-            <img src="/images/maps/features/thumbnails/S1308_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1308</b> <I>Barbastella barbastellus</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1308/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1308/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1308</span>
+        <span class="space-right">Barbastelle</span>
+        <I>Barbastella barbastellus</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: mammals</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1308/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1308/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>barbastelle <I>Barbastella barbastellus</B> </I>is a medium-sized bat that is easily identified because it is a very distinctive species, unlike any other in Europe. The fur is almost black, usually with very pale or golden brown tips to the hairs. The ears are very broad with the inner edges joined together across the forehead.</P>
 <P>Barbastelle ecology is relatively poorly-known. In Europe it is believed to be mainly an upland and forest species; in the UK it seems to prefer wooded river valleys. The species forages in mixed habitats, usually over water. Barbastelles appear to select cracks and crevices in wood for breeding, mostly in old or damaged trees, but cracks and crevices in the timbers of old buildings may also be used. Maternity colonies may move between suitable crevices within a small area, such as a piece of woodland or a complex of buildings. Caves and underground structures may be used for hibernation. The species is very sensitive to disturbance, together with the loss of roost-sites and food resources. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1308/map">
+                <img src="/images/maps/features/thumbnails/S1308_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1308</b> <I>Barbastella barbastellus</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>barbastelle <I>Barbastella barbastellus</B></I> is distributed throughout Europe, except Iceland, Northern Ireland, Scotland, most of Scandinavia, Estonia and much of southern Europe. The highest population density is probably in central Europe. It is one of the rarest bats in western Europe, and is regarded as endangered in several countries. A population decrease has been reported over most of its European range. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1308/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>The <B>barbastelle <I>Barbastella barbastellus</B> </I>is one of the UK’s rarest mammals. Few maternity roost sites are known in the UK. The great majority of other records come from caves or abandoned mines, which are important hibernation sites for a range of bat species. The barbastelle is widely distributed across southern England and across Wales but is likely to have been significantly under-recorded within its range. Individual bats are sometimes discovered in buildings during summer.</P></p>
+    <p>View <a href=/species/S1308/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>There are few records to demonstrate the long-term viability of barbastelle Barbastella barbastellus populations in the UK. In recent years a small number of maternity sites for the species have been discovered and these have all been selected. In addition, one hibernation site with a long history of records of small numbers of barbastelles has also been included as an example of this sort of habitat.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures are also necessary to support its conservation in the UK. These include actions listed in the Species Action Plan.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016373>Chilmark Quarries</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
+<li>
+    <b>
+        <a href=/site/UK0016373 class="space-right">Chilmark Quarries</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+This complex of abandoned mines in central-southern England is regularly used by small numbers of <b>barbastelle <i>Barbastella barbastellus</i></b> as a hibernation site. The site also contains an important assemblage of other bat species, including <b>1323 Bechstein’s bat <i>Myotis bechsteinii</i></b>, for which this site has also been selected, indicating that conditions at this site are particularly favourable for the survival of these bat species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012715 class="space-right">Ebernoe Common</a>
+        Surrey, East and West Sussex
+    </b>
+    <div>
+A maternity colony of <b>barbastelles <i>Barbastella barbastellus</i></b> utilises a range of tree roosts in this area of <b>91A0 Old sessile oak woods with <i>Ilex</i> and <i>Blechnum</i> in the British Isles</b>, which has a dense understorey of holly <i>Ilex aquifolium</i> as well as open glades and open water. Maternity roost sites are usually in dead tee stumps, but the species appears to be present throughout the year, with individuals utilising a range of roost sites in tree holes and under bark.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030331 class="space-right">Eversden and Wimpole Woods</a>
+        East Anglia
+    </b>
+    <div>
+The site comprises a mixture of ancient coppice woodland (Eversden Wood) and high forest woods likely to be of more recent origin (Wimpole Woods). A colony of <B>barbastelle <I>Barbastella barbastellus</I></B> is associated with the trees in Wimpole Woods. These trees are used as a summer maternity roost where the female bats gather to give birth and rear their young. Most of the roost sites are within tree crevices. The bats also use the site as a foraging area. Some of the woodland is also used as a flight path when bats forage outside the site.&nbsp;    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030148 class="space-right">Exmoor and Quantock Oakwoods</a>
+        Devon, Dorset and Somerset
+    </b>
+    <div>
+A maternity colony of <b>barbastelles <i>Barbastella barbastellus</i></b> utilises a range of tree roosts in this area of predominantly oak <i>Quercus</i> spp. woodland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030334 class="space-right">Mottisfont Bats</a>
+        Hampshire and Isle of Wight
+    </b>
+    <div>
+The Mottisfont woodland supports an important population of the rare <B>barbastelle <I>Barbastella barbastellus</I></B><I>. </I>It is one of only six known maternity sites in the UK (2002 data) and the only one in Hampshire. Mottisfont contains a mix of woodland types including hazel coppice with standards, broadleaved plantation and coniferous plantation which the bats use for breeding, roosting, commuting and feeding.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030227 class="space-right">North Pembrokeshire Woodlands/ Coedydd Gogledd Sir Benfro</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Species occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030235 class="space-right">Paston Great Barn</a>
+        East Anglia
+    </b>
+    <div>
+Paston Great Barn is the only known example of a maternity roost of <B>barbastelles <I>Barbastella barbastellus</I></B> in a building. The Barn is a 16<SUP>th</SUP> century thatched barn with associated outbuildings. A maternity colony of barbastelles utilises a range of cracks and crevices in the roof timbers for roosting.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This complex of abandoned mines in central-southern England is regularly used by small numbers of <b>barbastelle <i>Barbastella barbastellus</i></b> as a hibernation site. The site also contains an important assemblage of other bat species, including <b>1323 Bechstein’s bat <i>Myotis bechsteinii</i></b>, for which this site has also been selected, indicating that conditions at this site are particularly favourable for the survival of these bat species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012715>Ebernoe Common</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A maternity colony of <b>barbastelles <i>Barbastella barbastellus</i></b> utilises a range of tree roosts in this area of <b>91A0 Old sessile oak woods with <i>Ilex</i> and <i>Blechnum</i> in the British Isles</b>, which has a dense understorey of holly <i>Ilex aquifolium</i> as well as open glades and open water. Maternity roost sites are usually in dead tee stumps, but the species appears to be present throughout the year, with individuals utilising a range of roost sites in tree holes and under bark.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030331>Eversden and Wimpole Woods</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The site comprises a mixture of ancient coppice woodland (Eversden Wood) and high forest woods likely to be of more recent origin (Wimpole Woods). A colony of <B>barbastelle <I>Barbastella barbastellus</I></B> is associated with the trees in Wimpole Woods. These trees are used as a summer maternity roost where the female bats gather to give birth and rear their young. Most of the roost sites are within tree crevices. The bats also use the site as a foraging area. Some of the woodland is also used as a flight path when bats forage outside the site.&nbsp;</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030148>Exmoor and Quantock Oakwoods</a></div>
-    <div class="cell large-6 small-12"><b>Devon, Dorset and Somerset</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A maternity colony of <b>barbastelles <i>Barbastella barbastellus</i></b> utilises a range of tree roosts in this area of predominantly oak <i>Quercus</i> spp. woodland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030334>Mottisfont Bats</a></div>
-    <div class="cell large-6 small-12"><b>Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Mottisfont woodland supports an important population of the rare <B>barbastelle <I>Barbastella barbastellus</I></B><I>. </I>It is one of only six known maternity sites in the UK (2002 data) and the only one in Hampshire. Mottisfont contains a mix of woodland types including hazel coppice with standards, broadleaved plantation and coniferous plantation which the bats use for breeding, roosting, commuting and feeding.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030227>North Pembrokeshire Woodlands/ Coedydd Gogledd Sir Benfro</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<p>Species occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030235>Paston Great Barn</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Paston Great Barn is the only known example of a maternity roost of <B>barbastelles <I>Barbastella barbastellus</I></B> in a building. The Barn is a 16<SUP>th</SUP> century thatched barn with associated outbuildings. A maternity colony of barbastelles utilises a range of cracks and crevices in the roof timbers for roosting.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030337>Singleton and Cocking Tunnels</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012716>The Mens</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0030337 class="space-right">Singleton and Cocking Tunnels</a>
+        Surrey, East and West Sussex
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012716 class="space-right">The Mens</a>
+        Surrey, East and West Sussex
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -269,6 +320,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H1330">Atlantic salt meadows (<I>Glauco-Puccinellietalia maritimae</I>)</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">1330</span>
+        Atlantic salt meadows (<I>Glauco-Puccinellietalia maritimae</I>)
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Marine, coastal and halophytic habitats</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Marine, coastal and halophytic habitats</h1>
-</div>
-<h4>1330 Atlantic salt meadows (<I>Glauco-Puccinellietalia maritimae</I>)</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H1330/map">
-            <img src="/images/maps/features/thumbnails/H1330_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>1330</b> Atlantic salt meadows (<I>Glauco-Puccinellietalia maritimae</I>). Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1330/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1330/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p><B>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H1330/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H1330/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Atlantic salt meadows</B> develop when halophytic vegetation colonises soft intertidal sediments of mud and sand in areas protected from strong wave action. This vegetation forms the middle and upper reaches of saltmarshes, where tidal inundation still occurs but with decreasing frequency and duration. A wide range of community types is represented and the saltmarshes can cover large areas, especially where there has been little or no enclosure on the landward side. The vegetation varies with climate and the frequency and duration of tidal inundation. Grazing by domestic livestock is particularly significant in determining the structure and species composition of the habitat type and in determining its relative value for plants, for invertebrates and for wintering or breeding waterfowl. In the UK this Annex&nbsp;I type corresponds to the following NVC types: </P>
 <UL>
 <LI>SM10&nbsp; Transitional low-marsh vegetation</LI>
@@ -130,155 +137,245 @@
 <P>At the lower reaches of the saltmarsh the vegetation is often naturally species-poor and may form an open sward of common saltmarsh-grass <I>Puccinellia maritima</I>. Further up the marsh, the vegetation becomes herb-dominated and red fescue <I>Festuca rubra</I> becomes more important. The upper saltmarsh shows considerable variation, particularly where there are transitions to other habitats. Communities present may include tussocks of sea rush <I>Juncus maritimus</I> dominating a herb-rich vegetation, and saltpans supporting patches of species-poor vegetation dominated by saltmarsh flat-sedge <I>Blysmus rufus</I> (in the north) or slender spike-rush <I>Eleocharis uniglumis</I>. Grazed saltmarsh in northern Scotland may contain frequent turf fucoid <I>Fucus cottonii</I>.</P>
 <P>There may be transitions from upper saltmarsh to a number of habitats, including sand dune, machair, coastal shingle, freshwater marshes and woodland. This part of the saltmarsh succession has been particularly vulnerable to destruction by enclosure, usually involving the erection of a sea bank to exclude sea water, and remaining areas are regarded as particularly important for biodiversity conservation. </P>
 <P>There are marked regional variations in the <B>Atlantic salt meadow</B> communities of the UK. In east and south-east England low to mid-marsh communities predominate, owing to extensive enclosure of the upper marsh. In contrast, the salt meadows of north-west England and south-west Scotland are dominated by extensive areas of grazed upper marsh communities characterised by <I>Puccinellia maritima</I> and saltmarsh rush <I>Juncus gerardii</I>. Swamp communities are particularly common in the upper marsh in south-west England, while <I>Juncus maritimus</I> communities are characteristic of Welsh saltmarshes, and transitional common reed <I>Phragmites australis </I>communities are common in south-east Scotland. Some characteristic plant species of southern saltmarshes are absent from Scotland, while others such as sea-purslane <I>Atriplex portulacoides</I> have a restricted distribution in northern Britain. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H1330/map">
+                <img src="/images/maps/features/thumbnails/H1330_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>1330</b> Atlantic salt meadows (<I>Glauco-Puccinellietalia maritimae</I>). Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>This Annex&nbsp;I type is predominantly found on Atlantic coasts in western Europe.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H1330/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Atlantic salt meadows</B> occur on North Sea, English Channel and Atlantic shores. There are more than 29,000&nbsp;ha of the habitat type in the UK, mostly in the large, sheltered estuaries of south-east, south-west and north-west England and in south Wales. Smaller areas of saltmarsh are found in Scotland. </P></p>
+    <p>Click <a href=/habitat/H1330/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0020020 class="space-right">Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+    <div>
+This extensive site in south Wales has a complete sequence of saltmarsh vegetation, from pioneer vegetation through to upper saltmarsh transitions. The grazed saltmarshes include upper margins with sea rush <i>Juncus maritimus</i> and marsh-mallow <i>Althaea officinalis</i>, which are a particularly distinctive ecological feature of this site. The area is also important for transitions from saltmarsh to sand dune and other habitats.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030131 class="space-right">Dee Estuary/ Aber Dyfrdwy</a>
+        Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys
+    </b>
+    <div>
+The Dee Estuary is representative of <B>H1330 Atlantic salt meadows</B> in the north-west of the UK. It forms the most extensive type of saltmarsh in the Dee, and since the 1980s it has probably displaced very large quantities of the non-native common cord-grass <I >Spartina anglica</I>. The high accretion rates found in the estuary are likely to favour further development of this type of vegetation. The saltmarsh is regularly inundated by the sea; characteristic salt-tolerant perennial flowering plant species include common saltmarsh-grass <I>Puccinellia maritima</I>, sea aster <I>Aster tripolium</I>, and sea arrowgrass <I>Triglochin maritima</I>. In a few areas there are unusual transitions to wet woodland habitats.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019806 class="space-right">Dornoch Firth and Morrich More</a>
+        Extra-Regio, Highlands and Islands
+    </b>
+    <div>
+Dornoch Firth and Morrich More is the most northerly site selected for <b>Atlantic salt meadows</b> and represents this habitat type in the northern part of its UK range. The site supports a wide variety of community types, with the characteristic zonation from pioneer to upper marsh vegetation. At Morrich More the saltmarshes lie adjacent to sand dunes and there are important transitions between these habitats.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013690 class="space-right">Essex Estuaries</a>
+        Essex, Extra-Regio
+    </b>
+    <div>
+Although the saltmarshes in this area are generally eroding, extensive salt meadows remain and Essex Estuaries represents <b>Atlantic salt meadows</b> in south-east England, with floristic features typical of this part of the UK. Golden samphire <i>Inula crithmoides</i> is a characteristic species of these marshes, occurring both on the lower marsh and on the drift-line. It represents a community of south-east England also found to the south in mainland Europe.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013112 class="space-right">Fal and Helford</a>
+        Cornwall and Isles of Scilly, Extra-Regio
+    </b>
+    <div>
+The Fal and Helford is an example of saltmarsh vegetation in a ria (drowned river valley), a physiographic type restricted to south-west England and west Wales. There is a narrow saltmarsh zonation typical of rias, from pioneer to upper marsh, and transitions to woodland where the fringing trees overhang the tidal river, an unusual juxtaposition of vegetation in the UK.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0020025 class="space-right">Glannau M&#xF4;n: Cors heli / Anglesey Coast: Saltmarsh</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+This site, which includes both the Braint and Cefni estuaries, forms a complex of saltmarsh and dune habitats lying either side of the dune systems at Newborough Warren. <b>Atlantic salt meadows</b> form the bulk of the saltmarsh vegetation, but much of it is far from typical. In the Braint estuary the vegetation is characterised by unusually large amounts of greater sea-spurrey <i>Spergularia media</i>, whilst in the Cefni estuary the more typical Atlantic salt meadow is subordinate to saltmarsh dominated by sea rush <i>Juncus maritimus</i>. In fact, this is one of the largest stands of <i>Juncus maritimus</i> saltmarsh in Britain, and has affinities with <b>1410 Mediterranean salt meadows</b> (<b><i>Juncetalia maritimi</i></b>), an Annex I vegetation type that is not now considered to occur in the UK.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013027 class="space-right">Morecambe Bay</a>
+        Cumbria, Extra-Regio, Lancashire
+    </b>
+    <div>
+Morecambe Bay is characteristic of saltmarshes in north-west England, with large areas of closely grazed upper marsh. The mid-upper marsh vegetation is strongly dominated by the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities, of which over 1,000 ha occur here, and by smaller areas of saltmarsh rush <i>Juncus gerardii</i> community. NVC type SM18 <i>Juncus maritimus</i> community is also more strongly represented here than elsewhere in England. The plant species include both southern elements, such as lesser centaury <i>Centaurium pulchellum</i>, and northern elements, such as saltmarsh flat-sedge <i>Blysmus rufus</i> and few-flowered spike-rush <i>Eleocharis quinqueflora</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019804 class="space-right">North Uist Machair</a>
+        Highlands and Islands
+    </b>
+    <div>
+The saltmarshes of north-west Scotland are usually small, and differ considerably from other saltmarshes in Europe, notably in their morphology, the scarcity or absence of a pioneer zone and the prevalence of the turf fucoid <i>Fucus cottonii</i> in closely-grazed turf. North Uist Machair is one of the larger composite examples. Many species dominant on southern British saltings are completely absent, and much of the expanse comprises common saltmarsh-grass <i>Puccinellia maritima</i>, sea-milkwort <i>Glaux maritima</i>, plantain <i>Plantago</i> spp. and thrift <i>Armeria maritima</i>, with red fescue <i>Festuca rubra</i> and saltmarsh rush <i>Juncus gerardii</i> at higher levels. Transitions to terrestrial habitats tend to be richer in species, featuring silverweed <i>Potentilla anserina</i> and smooth meadow-grass <i>Poa pratensis</i> while transitions to fens have saltmarsh flat-sedge <i>Blysmus rufus</i> and sea arrowgrass <i>Triglochin maritimum</i>. Locally there are also fine transitions to dune and machair, making this one of the most varied of north-western saltmarshes.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013111 class="space-right">Plymouth Sound and Estuaries</a>
+        Cornwall and Isles of Scilly, Devon, Extra-Regio
+    </b>
+    <div>
+This site is representative of a ria system in south-west England. The well-developed salinity gradient supports <b>Atlantic salt meadow</b> together with natural transitions to brackish and freshwater communities, including reedbeds supporting the only UK population of triangular club-rush <i>Schoenoplectus triqueter</i>. Some stands of saltmeadow are structurally and botanically diverse and include sea club-rush <i>Scirpus maritimus</i> and saltmarsh rush <i>Juncus gerardii</i>, with red fescue <i>Festuca rubra</i>, sea rush <i>J. maritimus</i> and thrift <i>Armeria maritima</i> at higher levels. The locally common parsley water-dropwort <i>Oenanthe lachenalii</i> is also found in some parts of the site, and there are stands of sea-purslane <i>Halimione portulacoides</i>, which is unusual in Cornwall. The <b>Atlantic salt meadows</b> make a vital contribution to the structure and function of the estuary and the other habitats within it.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013030 class="space-right">Severn Estuary/ M&#xF4;r Hafren</a>
+        Dorset and Somerset, East Wales, Extra-Regio, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+Habitat occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030059 class="space-right">Solent Maritime</a>
+        Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex
+    </b>
+    <div>
+The Solent contains the second-largest aggregation of <b>Atlantic salt meadows</b> in south and south-west England. Solent Maritime is a composite site composed of a large number of separate areas of saltmarsh. In contrast to the Severn estuary, the salt meadows at this site are notable as being representative of the ungrazed type and support a different range of communities dominated by sea-purslane <i>Atriplex portulacoides</i>, common sea-lavender <i>Limonium vulgare</i> and thrift <i>Armeria maritima</i>. As a whole the site is less truncated by man-made features than other parts of the south coast and shows rare and unusual transitions to freshwater reedswamp and alluvial woodland as well as coastal grassland. Typical <b>Atlantic salt meadow</b> is still widespread in this site, despite a long history of colonisation by cord-grass <i>Spartina</i> spp.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013025 class="space-right">Solway Firth</a>
+        Cumbria, Extra-Regio, South Western Scotland
+    </b>
+    <div>
+The Solway Firth, between north-west England and south-west Scotland, has been little affected by enclosure, with the result that it demonstrates unusually large areas of upper marsh and transitions to freshwater grassland communities. There is a greater proportion of sand in the substrate than is found in more southern saltmarshes. The mid-upper marsh is heavily dominated by saltmarsh rush <i>Juncus gerardii</i> community with smaller areas of the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities. The site has been selected because of its large size and uninterrupted transitions. Some of the species present, for example sea-purslane <i>Atriplex portulacoides</i>, common sea-lavender <i>Limonium vulgare</i> and lax-flowered sea-lavender <i>Limonium humile</i>, are at their northern limit in the UK.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0017075 class="space-right">The Wash and North Norfolk Coast</a>
+        East Anglia, Lincolnshire
+    </b>
+    <div>
+This site on the east coast of England is selected both for the extensive ungrazed saltmarshes of the North Norfolk Coast and for the contrasting, traditionally grazed saltmarshes around the Wash. The Wash saltmarshes represent the largest single area of the habitat type in the UK. The <b>Atlantic salt meadows</b> form part of a sequence of vegetation types that are unparalleled among coastal sites in the UK for their diversity and are amongst the most important in Europe. Saltmarsh swards dominated by sea-lavenders <i>Limonium</i> spp. are particularly well-represented on this site. In addition to typical lower and middle saltmarsh communities, in North Norfolk there are transitions from upper marsh to freshwater reedswamp, sand dunes, shingle beaches and mud/sandflats.    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020020>Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This extensive site in south Wales has a complete sequence of saltmarsh vegetation, from pioneer vegetation through to upper saltmarsh transitions. The grazed saltmarshes include upper margins with sea rush <i>Juncus maritimus</i> and marsh-mallow <i>Althaea officinalis</i>, which are a particularly distinctive ecological feature of this site. The area is also important for transitions from saltmarsh to sand dune and other habitats.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030131>Dee Estuary/ Aber Dyfrdwy</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Dee Estuary is representative of <B>H1330 Atlantic salt meadows</B> in the north-west of the UK. It forms the most extensive type of saltmarsh in the Dee, and since the 1980s it has probably displaced very large quantities of the non-native common cord-grass <I >Spartina anglica</I>. The high accretion rates found in the estuary are likely to favour further development of this type of vegetation. The saltmarsh is regularly inundated by the sea; characteristic salt-tolerant perennial flowering plant species include common saltmarsh-grass <I>Puccinellia maritima</I>, sea aster <I>Aster tripolium</I>, and sea arrowgrass <I>Triglochin maritima</I>. In a few areas there are unusual transitions to wet woodland habitats.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019806>Dornoch Firth and Morrich More</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Dornoch Firth and Morrich More is the most northerly site selected for <b>Atlantic salt meadows</b> and represents this habitat type in the northern part of its UK range. The site supports a wide variety of community types, with the characteristic zonation from pioneer to upper marsh vegetation. At Morrich More the saltmarshes lie adjacent to sand dunes and there are important transitions between these habitats. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013690>Essex Estuaries</a></div>
-    <div class="cell large-6 small-12"><b>Essex, Extra-Regio</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Although the saltmarshes in this area are generally eroding, extensive salt meadows remain and Essex Estuaries represents <b>Atlantic salt meadows</b> in south-east England, with floristic features typical of this part of the UK. Golden samphire <i>Inula crithmoides</i> is a characteristic species of these marshes, occurring both on the lower marsh and on the drift-line. It represents a community of south-east England also found to the south in mainland Europe.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013112>Fal and Helford</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly, Extra-Regio</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Fal and Helford is an example of saltmarsh vegetation in a ria (drowned river valley), a physiographic type restricted to south-west England and west Wales. There is a narrow saltmarsh zonation typical of rias, from pioneer to upper marsh, and transitions to woodland where the fringing trees overhang the tidal river, an unusual juxtaposition of vegetation in the UK.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020025>Glannau M&#xF4;n: Cors heli / Anglesey Coast: Saltmarsh</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site, which includes both the Braint and Cefni estuaries, forms a complex of saltmarsh and dune habitats lying either side of the dune systems at Newborough Warren. <b>Atlantic salt meadows</b> form the bulk of the saltmarsh vegetation, but much of it is far from typical. In the Braint estuary the vegetation is characterised by unusually large amounts of greater sea-spurrey <i>Spergularia media</i>, whilst in the Cefni estuary the more typical Atlantic salt meadow is subordinate to saltmarsh dominated by sea rush <i>Juncus maritimus</i>. In fact, this is one of the largest stands of <i>Juncus maritimus</i> saltmarsh in Britain, and has affinities with <b>1410 Mediterranean salt meadows</b> (<b><i>Juncetalia maritimi</i></b>), an Annex I vegetation type that is not now considered to occur in the UK.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013027>Morecambe Bay</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, Lancashire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Morecambe Bay is characteristic of saltmarshes in north-west England, with large areas of closely grazed upper marsh. The mid-upper marsh vegetation is strongly dominated by the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities, of which over 1,000 ha occur here, and by smaller areas of saltmarsh rush <i>Juncus gerardii</i> community. NVC type SM18 <i>Juncus maritimus</i> community is also more strongly represented here than elsewhere in England. The plant species include both southern elements, such as lesser centaury <i>Centaurium pulchellum</i>, and northern elements, such as saltmarsh flat-sedge <i>Blysmus rufus</i> and few-flowered spike-rush <i>Eleocharis quinqueflora</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019804>North Uist Machair</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The saltmarshes of north-west Scotland are usually small, and differ considerably from other saltmarshes in Europe, notably in their morphology, the scarcity or absence of a pioneer zone and the prevalence of the turf fucoid <i>Fucus cottonii</i> in closely-grazed turf. North Uist Machair is one of the larger composite examples. Many species dominant on southern British saltings are completely absent, and much of the expanse comprises common saltmarsh-grass <i>Puccinellia maritima</i>, sea-milkwort <i>Glaux maritima</i>, plantain <i>Plantago</i> spp. and thrift <i>Armeria maritima</i>, with red fescue <i>Festuca rubra</i> and saltmarsh rush <i>Juncus gerardii</i> at higher levels. Transitions to terrestrial habitats tend to be richer in species, featuring silverweed <i>Potentilla anserina</i> and smooth meadow-grass <i>Poa pratensis</i> while transitions to fens have saltmarsh flat-sedge <i>Blysmus rufus</i> and sea arrowgrass <i>Triglochin maritimum</i>. Locally there are also fine transitions to dune and machair, making this one of the most varied of north-western saltmarshes.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013111>Plymouth Sound and Estuaries</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly, Devon, Extra-Regio</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site is representative of a ria system in south-west England. The well-developed salinity gradient supports <b>Atlantic salt meadow</b> together with natural transitions to brackish and freshwater communities, including reedbeds supporting the only UK population of triangular club-rush <i>Schoenoplectus triqueter</i>. Some stands of saltmeadow are structurally and botanically diverse and include sea club-rush <i>Scirpus maritimus</i> and saltmarsh rush <i>Juncus gerardii</i>, with red fescue <i>Festuca rubra</i>, sea rush <i>J. maritimus</i> and thrift <i>Armeria maritima</i> at higher levels. The locally common parsley water-dropwort <i>Oenanthe lachenalii</i> is also found in some parts of the site, and there are stands of sea-purslane <i>Halimione portulacoides</i>, which is unusual in Cornwall. The <b>Atlantic salt meadows</b> make a vital contribution to the structure and function of the estuary and the other habitats within it.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013030>Severn Estuary/ M&#xF4;r Hafren</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, East Wales, Extra-Regio, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-<p>Habitat occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030059>Solent Maritime</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Solent contains the second-largest aggregation of <b>Atlantic salt meadows</b> in south and south-west England. Solent Maritime is a composite site composed of a large number of separate areas of saltmarsh. In contrast to the Severn estuary, the salt meadows at this site are notable as being representative of the ungrazed type and support a different range of communities dominated by sea-purslane <i>Atriplex portulacoides</i>, common sea-lavender <i>Limonium vulgare</i> and thrift <i>Armeria maritima</i>. As a whole the site is less truncated by man-made features than other parts of the south coast and shows rare and unusual transitions to freshwater reedswamp and alluvial woodland as well as coastal grassland. Typical <b>Atlantic salt meadow</b> is still widespread in this site, despite a long history of colonisation by cord-grass <i>Spartina</i> spp.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013025>Solway Firth</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, South Western Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Solway Firth, between north-west England and south-west Scotland, has been little affected by enclosure, with the result that it demonstrates unusually large areas of upper marsh and transitions to freshwater grassland communities. There is a greater proportion of sand in the substrate than is found in more southern saltmarshes. The mid-upper marsh is heavily dominated by saltmarsh rush <i>Juncus gerardii</i> community with smaller areas of the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities. The site has been selected because of its large size and uninterrupted transitions. Some of the species present, for example sea-purslane <i>Atriplex portulacoides</i>, common sea-lavender <i>Limonium vulgare</i> and lax-flowered sea-lavender <i>Limonium humile</i>, are at their northern limit in the UK.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0017075>The Wash and North Norfolk Coast</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia, Lincolnshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site on the east coast of England is selected both for the extensive ungrazed saltmarshes of the North Norfolk Coast and for the contrasting, traditionally grazed saltmarshes around the Wash. The Wash saltmarshes represent the largest single area of the habitat type in the UK. The <b>Atlantic salt meadows</b> form part of a sequence of vegetation types that are unparalleled among coastal sites in the UK for their diversity and are amongst the most important in Europe. Saltmarsh swards dominated by sea-lavenders <i>Limonium</i> spp. are particularly well-represented on this site. In addition to typical lower and middle saltmarsh communities, in North Norfolk there are transitions from upper marsh to freshwater reedswamp, sand dunes, shingle beaches and mud/sandflats.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030076>Alde, Ore and Butley Estuaries</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030084>Bann Estuary</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0017076>Chesil and the Fleet</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019807>Culbin Bar</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013031>Drigg Coast</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030170>Humber Estuary</a></div>
-    <div class="cell large-6 small-12"><b>East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012566>Kenfig/ Cynffig</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019839>Moine Mhor</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016612>Murlough</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030224>North Antrim Coast</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013116>Pembrokeshire Marine/ Sir Benfro Forol</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013117>Pen Ll&#x177;n a`r Sarnau/ Lleyn Peninsula and the Sarnau</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016618>Strangford Lough</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0030076 class="space-right">Alde, Ore and Butley Estuaries</a>
+        East Anglia
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030084 class="space-right">Bann Estuary</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0017076 class="space-right">Chesil and the Fleet</a>
+        Dorset and Somerset
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019807 class="space-right">Culbin Bar</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013031 class="space-right">Drigg Coast</a>
+        Cumbria
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030170 class="space-right">Humber Estuary</a>
+        East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012566 class="space-right">Kenfig/ Cynffig</a>
+        East Wales
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019839 class="space-right">Moine Mhor</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016612 class="space-right">Murlough</a>
+        Extra-Regio, Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030224 class="space-right">North Antrim Coast</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013116 class="space-right">Pembrokeshire Marine/ Sir Benfro Forol</a>
+        Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013117 class="space-right">Pen Ll&#x177;n a&#x27;r Sarnau/ Lleyn Peninsula and the Sarnau</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016618 class="space-right">Strangford Lough</a>
+        Northern Ireland
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -365,6 +462,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0013027">Morecambe Bay</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Morecambe Bay</h1>
+
+<div class="section">
+    <h1>
+        Morecambe Bay
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cumbria, Extra-Regio, Lancashire</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SD371697</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,84 +150,170 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0013027_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Morecambe Bay SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Morecambe Bay SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (99.1%) <br />
+            </li>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (0.8%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (0.1%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013027.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Marine areas, Sea inlets (99.1%) <br />Coastal sand dunes, Sand beaches, Machair (0.8%) <br />Shingle, Sea cliffs, Islets (0.1%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013027.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1130</b> <a href=/habitat/H1130/>Estuaries</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Morecambe Bay in north-west England is the confluence of four principal <b>estuaries</b>, the Leven, Kent, Lune and Wyre (the latter lies just outside the site boundary), together with other smaller examples such as the Keer. Collectively these form the largest single area of continuous intertidal mudflats and sandflats in the UK and the best example of muddy sandflats on the west coast. The estuaries are macro-tidal with a spring tidal range of 9 m. The significant tidal prisms of the estuaries result in the Bay being riven by large low-water channel systems. The Kent, Leven and Lune estuaries have been modified variously by railway embankments, flood embankments and training walls but support extensive intertidal areas. Although cobble ‘skears’ and shingle beaches occur at their mouths, the estuaries consist predominantly of fine sands and muddy sands. The estuaries support dense invertebrate communities, their composition reflecting the salinity and sediment regimes within each estuary. Extensive saltmarshes and glasswort <i>Salicornia</i> spp. beds are present in the Lune estuary, contrasting with the fringing saltmarshes and more open intertidal flats of the Leven and Kent estuaries. Most of the saltmarshes are grazed, a characteristic feature of north-west England. In the upper levels of the saltmarshes there are still important transitions from saltmarsh to freshwater and grassland vegetation. Water quality is generally good.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a>
+    </div>
+<p>Morecambe Bay in north-west England is the confluence of four principal estuaries, the Leven, Kent, Lune and Wyre (the latter lies just outside the site boundary), together with other smaller examples such as the Keer. Collectively these form the largest single area of continuous intertidal <b>mudflats and sandflats</b> in the UK and the best example of muddy sandflats on the west coast. At low water, large areas of sandflats are exposed, and these range from the mobile fine sands of the outer Bay to more sheltered sands in the inner areas. With increasing shelter in the Bay’s adjoining estuaries, finer sediments settle out and form extensive mudflats, supporting a particularly rich and diverse range of infaunal species. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a>
+    </div>
+<p>Morecambe Bay in north-west England is the second-largest embayment in the UK, after the Wash. It is a large, very shallow, predominantly sandy bay bordered on the south by the channel of the Lune estuary and on the north by Walney Channel. At low tide vast areas of intertidal sandflats are exposed, with small areas of mudflat, particularly in the upper reaches of the associated estuaries. The sediments of the bay are mobile and support a range of community types, from those typical of open coasts (mobile, well-sorted fine sands), grading through sheltered sandy sediments to low-salinity sands and muds in the upper reaches. Apart from the areas of intertidal flats and subtidal sandbanks, Morecambe Bay supports exceptionally large beds of mussels <i>Mytilus edulis</i> on exposed ‘scars’ of boulder and cobble, and small areas of <b>1170 Reefs</b> with fucoid algal communities. Of particular note is the rich community of sponges and other associated fauna on tide-swept pebbles and cobbles at the southern end of Walney Channel.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1220</b> <a href=/habitat/H1220/>Perennial vegetation of stony banks</a>
+    </div>
+<p>Morecambe Bay represents <b>Perennial vegetation of stony banks</b> in north-west England. Walney Island on the shores of Morecambe Bay is a barrier island fringed by shingle with a partial sand covering. Two areas of exposed vegetated shingle occur at the extremes of the barrier. The southern area has been highly modified by eutrophication from a large gull colony, resulting in communities that are unusually species-rich for pioneer shingle vegetation. Perennial rye-grass <i>Lolium perenne</i>, common chickweed <i>Stellaria media</i> and biting stonecrop <i>Sedum acre</i> are constant elements, with dove’s-foot crane’s-bill <i>Geranium molle</i> an unusual and important feature.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1310</b> <a href=/habitat/H1310/>Salicornia and other annuals colonizing mud and sand</a>
+    </div>
+<p>Two types of pioneer saltmarsh are represented at Morecambe Bay in north-west England. Pioneer glasswort <i>Salicornia</i> spp. saltmarsh occurs intermittently along the coastline of the bay, forming a transition from the extensive intertidal sand and mudflats to the distinctive saltmeadows at this site. The sea pearlwort <i>Sagina maritima</i> community occurs in open pans on the upper marsh.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a>
+    </div>
+<p>Morecambe Bay is characteristic of saltmarshes in north-west England, with large areas of closely grazed upper marsh. The mid-upper marsh vegetation is strongly dominated by the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities, of which over 1,000 ha occur here, and by smaller areas of saltmarsh rush <i>Juncus gerardii</i> community. NVC type SM18 <i>Juncus maritimus</i> community is also more strongly represented here than elsewhere in England. The plant species include both southern elements, such as lesser centaury <i>Centaurium pulchellum</i>, and northern elements, such as saltmarsh flat-sedge <i>Blysmus rufus</i> and few-flowered spike-rush <i>Eleocharis quinqueflora</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2120</b> <a href=/habitat/H2120/>&quot;Shifting dunes along the shoreline with Ammophila arenaria (&quot;&quot;white dunes&quot;&quot;)&quot;</a>
+    </div>
+<p><b>Shifting dune</b> vegetation forms a major component of the active sand dune systems at the entrance to Morecambe Bay on Walney Island and the Duddon Estuary at Sandscale Haws. A small area is also present at the entrance to the Wyre. Sandscale Haws supports a mosaic of shifting communities, which form a continuous block around the seaward edge of this site. There are transitions to <b>2110 Embryonic shifting dunes</b>. The prograding shingle spits at either end of Walney Island support dune systems at South End and North End Haws. Species associated with these shifting dunes include sea holly <i>Eryngium maritimum</i>, sea spurge <i>Euphorbia paralias</i>, Portland spurge <i>Euphorbia portlandica</i> and sea bindweed <i>Calystegia soldanella</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Sandscale Haws at the entrance to the Duddon Estuary supports the largest area of calcareous <b>fixed dunes</b> in Cumbria, which contrast with the acidic dunes at the adjacent North End Haws on Walney Island. South End Haws on Walney Island supports a smaller area of fixed dunes. North Walney and Sandscale in particular show well-conserved structure and function. The fixed dunes support a rich plant diversity including wild pansy <i>Viola tricolor</i>, lady’s bedstraw <i>Galium verum</i>, common restharrow <i>Ononis repens</i> and the uncommon dune fescue <i>Vulpia membranacea</i> and dune helleborine <i>Epipactis dunensis</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a>
+    </div>
+<p>Dune slacks are particularly well-represented at Sandscale Haws, the largest calcareous dune system in Cumbria. The slacks support a good range of vegetation communities and are very species-rich. Several uncommon species including marsh helleborine <i>Epipactis palustris</i>, dune helleborine <i>Epipactis dunensis</i> and coralroot orchid <i>Corallorhiza trifida</i> occur.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>2110</b> <a href=/habitat/H2110/>Embryonic shifting dunes</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>2150</b> <a href=/habitat/H2150/>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1130</b> <a href=/habitat/H1130/>Estuaries</a></p>
-<p>Morecambe Bay in north-west England is the confluence of four principal <b>estuaries</b>, the Leven, Kent, Lune and Wyre (the latter lies just outside the site boundary), together with other smaller examples such as the Keer. Collectively these form the largest single area of continuous intertidal mudflats and sandflats in the UK and the best example of muddy sandflats on the west coast. The estuaries are macro-tidal with a spring tidal range of 9 m. The significant tidal prisms of the estuaries result in the Bay being riven by large low-water channel systems. The Kent, Leven and Lune estuaries have been modified variously by railway embankments, flood embankments and training walls but support extensive intertidal areas. Although cobble ‘skears’ and shingle beaches occur at their mouths, the estuaries consist predominantly of fine sands and muddy sands. The estuaries support dense invertebrate communities, their composition reflecting the salinity and sediment regimes within each estuary. Extensive saltmarshes and glasswort <i>Salicornia</i> spp. beds are present in the Lune estuary, contrasting with the fringing saltmarshes and more open intertidal flats of the Leven and Kent estuaries. Most of the saltmarshes are grazed, a characteristic feature of north-west England. In the upper levels of the saltmarshes there are still important transitions from saltmarsh to freshwater and grassland vegetation. Water quality is generally good.</p></div>
-<div>
-    <p><b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a></p>
-<p>Morecambe Bay in north-west England is the confluence of four principal estuaries, the Leven, Kent, Lune and Wyre (the latter lies just outside the site boundary), together with other smaller examples such as the Keer. Collectively these form the largest single area of continuous intertidal <b>mudflats and sandflats</b> in the UK and the best example of muddy sandflats on the west coast. At low water, large areas of sandflats are exposed, and these range from the mobile fine sands of the outer Bay to more sheltered sands in the inner areas. With increasing shelter in the Bay’s adjoining estuaries, finer sediments settle out and form extensive mudflats, supporting a particularly rich and diverse range of infaunal species. </p></div>
-<div>
-    <p><b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a></p>
-<p>Morecambe Bay in north-west England is the second-largest embayment in the UK, after the Wash. It is a large, very shallow, predominantly sandy bay bordered on the south by the channel of the Lune estuary and on the north by Walney Channel. At low tide vast areas of intertidal sandflats are exposed, with small areas of mudflat, particularly in the upper reaches of the associated estuaries. The sediments of the bay are mobile and support a range of community types, from those typical of open coasts (mobile, well-sorted fine sands), grading through sheltered sandy sediments to low-salinity sands and muds in the upper reaches. Apart from the areas of intertidal flats and subtidal sandbanks, Morecambe Bay supports exceptionally large beds of mussels <i>Mytilus edulis</i> on exposed ‘scars’ of boulder and cobble, and small areas of <b>1170 Reefs</b> with fucoid algal communities. Of particular note is the rich community of sponges and other associated fauna on tide-swept pebbles and cobbles at the southern end of Walney Channel.</p></div>
-<div>
-    <p><b>1220</b> <a href=/habitat/H1220/>Perennial vegetation of stony banks</a></p>
-<p>Morecambe Bay represents <b>Perennial vegetation of stony banks</b> in north-west England. Walney Island on the shores of Morecambe Bay is a barrier island fringed by shingle with a partial sand covering. Two areas of exposed vegetated shingle occur at the extremes of the barrier. The southern area has been highly modified by eutrophication from a large gull colony, resulting in communities that are unusually species-rich for pioneer shingle vegetation. Perennial rye-grass <i>Lolium perenne</i>, common chickweed <i>Stellaria media</i> and biting stonecrop <i>Sedum acre</i> are constant elements, with dove’s-foot crane’s-bill <i>Geranium molle</i> an unusual and important feature.</p></div>
-<div>
-    <p><b>1310</b> <a href=/habitat/H1310/>Salicornia and other annuals colonizing mud and sand</a></p>
-<p>Two types of pioneer saltmarsh are represented at Morecambe Bay in north-west England. Pioneer glasswort <i>Salicornia</i> spp. saltmarsh occurs intermittently along the coastline of the bay, forming a transition from the extensive intertidal sand and mudflats to the distinctive saltmeadows at this site. The sea pearlwort <i>Sagina maritima</i> community occurs in open pans on the upper marsh.</p></div>
-<div>
-    <p><b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a></p>
-<p>Morecambe Bay is characteristic of saltmarshes in north-west England, with large areas of closely grazed upper marsh. The mid-upper marsh vegetation is strongly dominated by the saltmarsh-grass/fescue <i>Puccinellia</i>/<i>Festuca</i> communities, of which over 1,000 ha occur here, and by smaller areas of saltmarsh rush <i>Juncus gerardii</i> community. NVC type SM18 <i>Juncus maritimus</i> community is also more strongly represented here than elsewhere in England. The plant species include both southern elements, such as lesser centaury <i>Centaurium pulchellum</i>, and northern elements, such as saltmarsh flat-sedge <i>Blysmus rufus</i> and few-flowered spike-rush <i>Eleocharis quinqueflora</i>.</p></div>
-<div>
-    <p><b>2120</b> <a href=/habitat/H2120/>&quot;Shifting dunes along the shoreline with Ammophila arenaria (&quot;&quot;white dunes&quot;&quot;)&quot;</a></p>
-<p><b>Shifting dune</b> vegetation forms a major component of the active sand dune systems at the entrance to Morecambe Bay on Walney Island and the Duddon Estuary at Sandscale Haws. A small area is also present at the entrance to the Wyre. Sandscale Haws supports a mosaic of shifting communities, which form a continuous block around the seaward edge of this site. There are transitions to <b>2110 Embryonic shifting dunes</b>. The prograding shingle spits at either end of Walney Island support dune systems at South End and North End Haws. Species associated with these shifting dunes include sea holly <i>Eryngium maritimum</i>, sea spurge <i>Euphorbia paralias</i>, Portland spurge <i>Euphorbia portlandica</i> and sea bindweed <i>Calystegia soldanella</i>.</p></div>
-<div>
-    <p><b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Sandscale Haws at the entrance to the Duddon Estuary supports the largest area of calcareous <b>fixed dunes</b> in Cumbria, which contrast with the acidic dunes at the adjacent North End Haws on Walney Island. South End Haws on Walney Island supports a smaller area of fixed dunes. North Walney and Sandscale in particular show well-conserved structure and function. The fixed dunes support a rich plant diversity including wild pansy <i>Viola tricolor</i>, lady’s bedstraw <i>Galium verum</i>, common restharrow <i>Ononis repens</i> and the uncommon dune fescue <i>Vulpia membranacea</i> and dune helleborine <i>Epipactis dunensis</i>.</p></div>
-<div>
-    <p><b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a></p>
-<p>Dune slacks are particularly well-represented at Sandscale Haws, the largest calcareous dune system in Cumbria. The slacks support a good range of vegetation communities and are very species-rich. Several uncommon species including marsh helleborine <i>Epipactis palustris</i>, dune helleborine <i>Epipactis dunensis</i> and coralroot orchid <i>Corallorhiza trifida</i> occur.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a></p>
-</div>
-<div>
-    <p><b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-</div>
-<div>
-    <p><b>2110</b> <a href=/habitat/H2110/>Embryonic shifting dunes</a></p>
-</div>
-<div>
-    <p><b>2150</b> <a href=/habitat/H2150/>Atlantic decalcified fixed dunes (Calluno-Ulicetea)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1166</b> <a href=/species/S1166/>Great crested newt</a> <b>Triturus cristatus</b></p>
-<p>The site, located on the southern shore of the Duddon estuary in north-west England, consists of a large sand dune complex containing both permanent and ephemeral waterbodies and man-made scrapes. Breeding colonies of great-created newts are known in approximately 20 of these ponds, and are believed to utilise 200 ha of the 282 ha site, foraging widely over foreshore, yellow dunes, dune-heath and scrub.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1166
+            <a href=/species/S1166/>Great crested newt</a>
+        </b>
+        <i>Triturus cristatus</i>
+        
     </div>
+<p>The site, located on the southern shore of the Duddon estuary in north-west England, consists of a large sand dune complex containing both permanent and ephemeral waterbodies and man-made scrapes. Breeding colonies of great-created newts are known in approximately 20 of these ponds, and are believed to utilise 200 ha of the 282 ha site, foraging widely over foreshore, yellow dunes, dune-heath and scrub.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -308,6 +402,6 @@ Marine areas, Sea inlets (99.1%) <br />Coastal sand dunes, Sand beaches, Machair
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

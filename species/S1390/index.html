@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,77 +77,116 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1390"><I>Marsupella profunda</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Lower plant species</h1>
-</div>
-<h4>1390 Western rustwort [<I>Marsupella profunda</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1390/map">
-            <img src="/images/maps/features/thumbnails/S1390_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1390</b> <I>Marsupella profunda</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1390/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1390/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1390</span>
+        <span class="space-right">Western rustwort</span>
+        <I>Marsupella profunda</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Lower plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1390/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1390/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Western rustwort <I>Marsupella profunda</B></I> is a small reddish liverwort which colonises moist, crumbling mica-rich weathered granite and china clay waste. It nearly always occurs in small populations and is rare and threatened throughout its range. It was detected in Cornwall after examination of herbarium specimens and was rediscovered at a single small hill with old china-clay workings during a survey in 1993. More recent survey led to a better understanding of its distribution, and in 1996 it was found to be present on banks of china clay spoil at another location in quantity, with the more widespread <I>Marsupella sprucei</I> and the common liverwort <I>Nardia scalaris</I>. <B><I>M.&nbsp;profunda</B></I> was most abundant on acidic clay surfaces that had been exposed for little more than five years, where other vegetation was only just beginning to colonise. Since then it has been found at several additional localities.</P><B><I>
 <P>Marsupella profunda</B></I> is a pioneer species which is probably fairly mobile within its very restricted habitat, new plants growing rapidly from spores as older plants are eventually out-competed by surrounding vascular plant vegetation. It will not tolerate heavy shade, and some populations are threatened by scrub invasion. Active vegetation management of sites is required to prolong their suitability for this species. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1390/map">
+                <img src="/images/maps/features/thumbnails/S1390_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1390</b> <I>Marsupella profunda</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Marsupella profunda</B></I> is a very rare liverwort, endemic to Europe and known only from a small number of sites in Portugal, Madeira, the Canary Islands and south-west England. Its status in Europe is Vulnerable.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1390/map>here</a> view UK distribution of this species</p>
-<p><B><I>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><B><I>
 <P>Marsupella profunda</B></I> is known in the UK from ten sites in Cornwall. Its status in Britain is Vulnerable. Cornwall supports a large proportion of the known global population. <B><I>M.&nbsp;profunda</B></I> is very similar to the more widespread <I>M.&nbsp;sprucei</I>, and can easily be overlooked.</P></p>
+    <p>View <a href=/species/S1390/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Western rustwort Marsupella profunda is the only Annex&amp;nbsp;II priority species which presently occurs in the UK. Site selection has taken into account the priority status of this species, and the importance of UK populations in a European context. The two sites where it is a primary reason for selection support the largest known populations in the UK, and the SAC series holds a very high proportion of the total UK resource. The protected sites should act as a source for colonisation of new localities which are constantly being created through china clay extraction in the surrounding areas.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030064>Lower Bostraze and Leswidden</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly</b></div>
+<li>
+    <b>
+        <a href=/site/UK0030064 class="space-right">Lower Bostraze and Leswidden</a>
+        Cornwall and Isles of Scilly
+    </b>
+    <div>
+This site comprises two closely adjacent locations selected for <B>western rustwort <I>Marsupella profunda</I></B>. The colony at Lower Bostraze is in the southern half of a disused china-clay quarry where extraction ended around 1991. There are many exposed clay surfaces with little or no colonisation by bryophytes and vascular plants. Filamentous green algae are however widespread on the clay. Most vascular plants present are only immature individuals, with heather <I>Calluna vulgaris</I> and bell heather <I>Erica cinerea</I> the most common species. Lower Bostraze supports the largest population of western rustwort, with an estimated 4,000&nbsp;cm<SUP>2</SUP> cover, while Leswidden supports an estimated 200&nbsp;cm<SUP>2</SUP>. Leswidden is also a former china-clay quarry, where working ceased before 1965. Banks of clay spoil have been exposed more recently during work to clear and flatten the area to the south now used as a coal merchant’s yard. As at Lower Bostraze, the clay surfaces are colonised by filamentous green algae and, very sparsely, by calcifuge vascular plants such as heather <I>Calluna vulgaris</I> and bell heather <I>Erica cinerea</I>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030282 class="space-right">St Austell Clay Pits</a>
+        Cornwall and Isles of Scilly
+    </b>
+    <div>
+This is one of three sites selected for <b>western rustwort <i>Marsupella profunda</i></b>. St Austell Clay Pits is located in mid-Cornwall within china clay workings, and comprises three sub-sites.     </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site comprises two closely adjacent locations selected for <B>western rustwort <I>Marsupella profunda</I></B>. The colony at Lower Bostraze is in the southern half of a disused china-clay quarry where extraction ended around 1991. There are many exposed clay surfaces with little or no colonisation by bryophytes and vascular plants. Filamentous green algae are however widespread on the clay. Most vascular plants present are only immature individuals, with heather <I>Calluna vulgaris</I> and bell heather <I>Erica cinerea</I> the most common species. Lower Bostraze supports the largest population of western rustwort, with an estimated 4,000&nbsp;cm<SUP>2</SUP> cover, while Leswidden supports an estimated 200&nbsp;cm<SUP>2</SUP>. Leswidden is also a former china-clay quarry, where working ceased before 1965. Banks of clay spoil have been exposed more recently during work to clear and flatten the area to the south now used as a coal merchant’s yard. As at Lower Bostraze, the clay surfaces are colonised by filamentous green algae and, very sparsely, by calcifuge vascular plants such as heather <I>Calluna vulgaris</I> and bell heather <I>Erica cinerea</I>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030282>St Austell Clay Pits</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is one of three sites selected for <b>western rustwort <i>Marsupella profunda</i></b>. St Austell Clay Pits is located in mid-Cornwall within china clay workings, and comprises three sub-sites. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012604>Tregonning Hill</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012604 class="space-right">Tregonning Hill</a>
+        Cornwall and Isles of Scilly
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -235,6 +273,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,88 +77,131 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1833"><I>Najas flexilis</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Higher plant species</h1>
-</div>
-<h4>1833 Slender naiad [<I>Najas flexilis</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1833/map">
-            <img src="/images/maps/features/thumbnails/S1833_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1833</b> <I>Najas flexilis</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1833/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1833/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1833</span>
+        <span class="space-right">Slender naiad</span>
+        <I>Najas flexilis</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Higher plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1833/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1833/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The selected sites include localities that are known to hold consistently large, naturally-occurring populations in lakes, rivers and heathland pools, as well as extensive populations in canals. Sites where conditions are considered to be particularly favourable to the species’ survival have been selected. Overall the site series provides representation of the species across its natural range in the UK and in a variety of ecological conditions.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1833/map">
+                <img src="/images/maps/features/thumbnails/S1833_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1833</b> <I>Najas flexilis</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Najas flexilis</B></I> has a northern distribution in Europe, extending south to Switzerland. It is rare and threatened throughout its European range.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1833/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK, <B><I>Najas&nbsp;flexilis</B></I> is found almost exclusively in Scotland. Since 1980, the plant has been recorded from 36 Scottish lochs, with the majority of sites in the Outer and Inner Hebrides. On the Scottish mainland the species has been recorded on the west coast and is also present in a cluster of lochs in Perthshire. The only recorded sites elsewhere in the UK are in the Lake District, at Lake Windermere and Esthwaite Water, a mesotrophic lake where it is believed to have been lost as a result of nutrient enrichment. Although <B><I>N.&nbsp;flexilis</B></I> occurs in a number of sites in Ireland, it has not been recorded from Northern Ireland. </P></p>
+    <p>View <a href=/species/S1833/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites selected for Najas&amp;nbsp;flexilis are representative of its main geographic occurrence and take account of its clustered distribution, with the majority of sites being in the Outer and Inner Hebrides. Only lakes with good water quality and with large populations evident over many years have been considered. The sites selected contain between them over half of the British lakes with post-1980 records of this species, supporting at least 56% of the species&#x2019; total UK population.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014728>Coll Machair</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
+<li>
+    <b>
+        <a href=/site/UK0014728 class="space-right">Coll Machair</a>
+        Highlands and Islands
+    </b>
+    <div>
+Coll Machair represents <b>slender naiad <i>Najas flexilis</i></b> in the southern Inner Hebrides. Within the site Loch Ballyhaugh contains a large population of slender naiad, and there is a long history of its presence at this location. The very clear water quality is favourable for the species, and the loch also supports a diverse range of other aquatic and emergent vegetation.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012638 class="space-right">Dunkeld - Blairgowrie Lochs</a>
+        Eastern Scotland
+    </b>
+    <div>
+This site contains the most easterly occurrence of <B>slender naiad <I>Najas flexilis</I></B> on the Scottish mainland and is the second-largest known population. The site consists of a cluster of five lochs lying along a river valley – the Lochs of Butterstone, Craiglush and Lowes are about 5&nbsp;km upstream of Lochs Clunie and Marlee. They are all mesotrophic waterbodies with a diverse macrophyte flora. Slender naiad has been recorded since the 19<SUP>th</SUP> century in the lochs, and it was present in all of them in 1994.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030191 class="space-right">Loch Fada</a>
+        Highlands and Islands
+    </b>
+    <div>
+Records for <b>slender naiad <i>Najas flexilis</i></b> at Loch Fada date back to 1902, and its continued presence was confirmed as recently as 1999. The site comprises a string of three lochs, mesotrophic in character, with rich assemblages of aquatic and marginal flora. Slender naiad forms extensive beds on the bottom of one of these lochs. It is the single known Colonsay locality for the species and is representative of the south-western part of the species’ range in Scotland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012713 class="space-right">South Uist Machair</a>
+        Highlands and Islands
+    </b>
+    <div>
+The west coast machair plain of South Uist in the Outer Hebrides contains a cluster of eleven lochs supporting <b>slender naiad <i>Najas flexilis</i></b>, the largest cluster of lochs with the species in the UK. The site is considered to be the best in the UK for slender naiad, holding nearly one-third of UK lochs with recent (post-1980) records for this species. It has been recorded in South Uist since the 1930s. The freshwater lochs within the South Uist machair are of diverse types, with a transition from oligotrophic waters situated on the peatlands to more nutrient-rich, calcareous lochs on shell-sand near the coast. Lochs of an intermediate type occur at the junction of peat and sandy substrates. Slender naiad occurs in both the oligotrophic and intermediate loch types. Water quality is high and conditions are particularly favourable for the species.     </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Coll Machair represents <b>slender naiad <i>Najas flexilis</i></b> in the southern Inner Hebrides. Within the site Loch Ballyhaugh contains a large population of slender naiad, and there is a long history of its presence at this location. The very clear water quality is favourable for the species, and the loch also supports a diverse range of other aquatic and emergent vegetation.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012638>Dunkeld - Blairgowrie Lochs</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site contains the most easterly occurrence of <B>slender naiad <I>Najas flexilis</I></B> on the Scottish mainland and is the second-largest known population. The site consists of a cluster of five lochs lying along a river valley – the Lochs of Butterstone, Craiglush and Lowes are about 5&nbsp;km upstream of Lochs Clunie and Marlee. They are all mesotrophic waterbodies with a diverse macrophyte flora. Slender naiad has been recorded since the 19<SUP>th</SUP> century in the lochs, and it was present in all of them in 1994.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030191>Loch Fada</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Records for <b>slender naiad <i>Najas flexilis</i></b> at Loch Fada date back to 1902, and its continued presence was confirmed as recently as 1999. The site comprises a string of three lochs, mesotrophic in character, with rich assemblages of aquatic and marginal flora. Slender naiad forms extensive beds on the bottom of one of these lochs. It is the single known Colonsay locality for the species and is representative of the south-western part of the species’ range in Scotland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012713>South Uist Machair</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The west coast machair plain of South Uist in the Outer Hebrides contains a cluster of eleven lochs supporting <b>slender naiad <i>Najas flexilis</i></b>, the largest cluster of lochs with the species in the UK. The site is considered to be the best in the UK for slender naiad, holding nearly one-third of UK lochs with recent (post-1980) records for this species. It has been recorded in South Uist since the 1930s. The freshwater lochs within the South Uist machair are of diverse types, with a transition from oligotrophic waters situated on the peatlands to more nutrient-rich, calcareous lochs on shell-sand near the coast. Lochs of an intermediate type occur at the junction of peat and sandy substrates. Slender naiad occurs in both the oligotrophic and intermediate loch types. Water quality is high and conditions are particularly favourable for the species. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019804>North Uist Machair</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0019804 class="space-right">North Uist Machair</a>
+        Highlands and Islands
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -246,6 +288,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,90 +77,127 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1014"><I>Vertigo angustior</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: molluscs</h1>
-</div>
-<h4>1014 Narrow-mouthed whorl snail [<I>Vertigo angustior</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1014/map">
-            <img src="/images/maps/features/thumbnails/S1014_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1014</b> <I>Vertigo angustior</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1014/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1014/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1014</span>
+        <span class="space-right">Narrow-mouthed whorl snail</span>
+        <I>Vertigo angustior</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: molluscs</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1014/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1014/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The tiny <B>narrow-mouthed whorl snail <I>Vertigo angustior</B></I> is found primarily in marshy ground of high, even humidity, with flowing groundwater, but subject neither to deep or prolonged flooding nor to periodic desiccation. It requires unshaded conditions and lives amongst short vegetation, composed of grasses, mosses or low herbs, that is quickly warmed by the sun. The vegetation may be grazed. In the British Isles it has been found in wet base-rich meadows, in coastal marshes, dune slacks and maritime turf, and in depressions within limestone pavement; several of these habitats are listed on Annex&nbsp;I of the Habitats Directive. In the UK the largest known population is found where freshwater seeps onto the upper edges of a saltmarsh in south Wales. However, elsewhere in Europe calcareous fen is the species’ most typical habitat. Because of its specific microhabitat requirements, the species is often restricted to a narrow zone around wetlands, only a few metres wide. </P><B><I>
 <P>Vertigo angustior</B></I> flourished in post-glacial conditions, but climatic change led to a dramatic contraction of its range, and the species is vulnerable to drainage or afforestation of the sites where it survives. Like all Annex II <EM>Vertigo</EM> species, it is highly dependent on maintenance of existing local hydrological conditions. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1014/map">
+                <img src="/images/maps/features/thumbnails/S1014_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1014</b> <I>Vertigo angustior</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Vertigo angustior</B> </I>is widely but locally distributed in central Europe northwards to southern Norway and Sweden but is considered threatened in most countries. The fossil record shows that it was once much more widespread in Europe at the end of the last Ice Age.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1014/map>here</a> view UK distribution of this species</p>
-<p><P>In the UK, <B><I>Vertigo&nbsp;angustior</B> </I>is known from eight widely scattered localities in England, Wales and Scotland. </P></p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><P>In the UK, <B><I>Vertigo&nbsp;angustior</B> </I>is known from eight widely scattered localities in England, Wales and Scotland. </P></p>
+    <p>View <a href=/species/S1014/map>UK distribution of this species</a>.</p>
+
+        <h2>Site selection rationale</h2>
+        <p>Sites have been selected to encompass the diverse range of habitat types in which V.&amp;nbsp;angustior is found (saltmarsh, base-rich fen, and limestone pavement), and to represent its geographical range. The selected sites all have strong populations of the species and ecological conditions considered to be particularly favourable for its survival. &#xD;&#xA;The known site in south-west Scotland was not selected as it is threatened by natural erosion; a second Scottish site on the north-east coast was discovered during 2000 (Kerney 2002).</p>
+</div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0020019 class="space-right">Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+Carmarthen Bay Dunes represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in south Wales. Whiteford Burrows contains by far the largest known population of this snail in the UK. The snail occurs at this site in areas of freshwater seepage at the junction between sand dune and saltmarsh habitat, where horse grazing maintains the open conditions this species requires.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030356 class="space-right">Garron Point</a>
+        North Eastern Scotland
+    </b>
+    <div>
+Species occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014777 class="space-right">Morecambe Bay Pavements</a>
+        Cumbria, Lancashire
+    </b>
+    <div>
+Morecambe Bay Pavements represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in north-west England, near the northern limit of its range in the UK. Gait Barrows supports strong populations of the species in mossy clint tops of Annex I habitat <b>8240 Limestone pavements</b> at transitions to woodland, an unusual habitat for the species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012892 class="space-right">Norfolk Valley Fens</a>
+        East Anglia
+    </b>
+    <div>
+Norfolk Valley Fens represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in East Anglia. At Flordon Common a strong population occurs in flushed grassland with yellow iris <i>Iris pseudacorus</i> maintained by light grazing.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030224 class="space-right">North Antrim Coast</a>
+        Northern Ireland
+    </b>
+    <div>
+The North Antrim Coast supports the only known living population of narrow-mouthed whorl snail <I>Vertigo angustior</I> in Northern Ireland. The species was rediscovered in 2002 at two separate localities on the site. Both support strong populations of the species in areas of ideal habitat – i.e. tall, lightly-grazed, damp grassland – and it is likely that they have persisted for many decades.     </div>
+</li>    </ul>
+</div>
 
 
-<h4>Site Accounts</h4>
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020019>Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Carmarthen Bay Dunes represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in south Wales. Whiteford Burrows contains by far the largest known population of this snail in the UK. The snail occurs at this site in areas of freshwater seepage at the junction between sand dune and saltmarsh habitat, where horse grazing maintains the open conditions this species requires. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030356>Garron Point</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-<p>Species occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014777>Morecambe Bay Pavements</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Lancashire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Morecambe Bay Pavements represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in north-west England, near the northern limit of its range in the UK. Gait Barrows supports strong populations of the species in mossy clint tops of Annex I habitat <b>8240 Limestone pavements</b> at transitions to woodland, an unusual habitat for the species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012892>Norfolk Valley Fens</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Norfolk Valley Fens represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in East Anglia. At Flordon Common a strong population occurs in flushed grassland with yellow iris <i>Iris pseudacorus</i> maintained by light grazing.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030224>North Antrim Coast</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The North Antrim Coast supports the only known living population of narrow-mouthed whorl snail <I>Vertigo angustior</I> in Northern Ireland. The species was rediscovered in 2002 at two separate localities on the site. Both support strong populations of the species in areas of ideal habitat – i.e. tall, lightly-grazed, damp grassland – and it is likely that they have persisted for many decades. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
-
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -248,6 +284,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

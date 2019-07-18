@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0017075">The Wash and North Norfolk Coast</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>The Wash and North Norfolk Coast</h1>
+
+<div class="section">
+    <h1>
+        The Wash and North Norfolk Coast
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>East Anglia, Lincolnshire</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>TF558403</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,66 +150,138 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0017075_thumb.gif" />
-            <figcaption style="font-size: small;">Location of The Wash and North Norfolk Coast SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of The Wash and North Norfolk Coast SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (51%) <br />
+            </li>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (46%) <br />
+            </li>
+            <li>
+                Salt marshes, Salt pastures, Salt steppes (3%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0017075.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Marine areas, Sea inlets (51%) <br />Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (46%) <br />Salt marshes, Salt pastures, Salt steppes (3%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0017075.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a>
     </div>
-</div>   
-<div class="row"> 
+<p>On this site sandy sediments occupy most of the subtidal area, resulting in one of the largest expanses of sublittoral <b>sandbanks</b> in the UK. It provides a representative example of this habitat type on the more sheltered east coast of England. The subtidal sandbanks vary in composition and include coarse sand through to mixed sediment at the mouth of the embayment. Sublittoral communities present include large dense beds of brittlestars <i>Ophiothrix fragilis</i>. Species include the sand-mason worm <i>Lanice conchilega</i> and the tellin <i>Angulus tenuis</i>. Benthic communities on sandflats in the deeper, central part of the Wash are particularly diverse. The subtidal sandbanks provide important nursery grounds for young commercial fish species, including plaice <i>Pleuronectes platessa</i>, cod <i>Gadus morhua</i> and sole <i>Solea solea</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a>
+    </div>
+<p>The Wash, on the east coast of England, is the second-largest area of intertidal flats in the UK. The sandflats in the embayment of the Wash include extensive fine sands and drying banks of coarse sand, and this diversity of substrates, coupled with variety in degree of exposure, means that there is a high diversity relative to other east coast sites. Sandy intertidal flats predominate, with some soft mudflats in the areas sheltered by barrier beaches and islands along the north Norfolk coast. The biota includes large numbers of polychaetes, bivalves and crustaceans. Salinity ranges from that of the open coast in most of the area (supporting rich invertebrate communities) to estuarine close to the rivers. Smaller, sheltered and diverse areas of intertidal sediment, with a rich variety of communities, including some eelgrass <i>Zostera</i> spp. beds and large shallow pools, are protected by the north Norfolk barrier islands and sand spits.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a>
+    </div>
+<p>The Wash is the largest embayment in the UK, and represents <b>Large shallow inlets and bays</b> on the east coast of England. It is connected via sediment transfer systems to the north Norfolk coast. Together, the Wash and North Norfolk Coast form one of the most important marine areas in the UK and European North Sea coast, and include extensive areas of varying, but predominantly sandy, sediments subject to a range of conditions. Communities in the intertidal include those characterised by large numbers of polychaetes, bivalve and crustaceans. Sublittoral communities cover a diverse range from the shallow to the deeper parts of the embayments and include dense brittlestar beds and areas of an abundant reef-building worm (‘ross worm’) <i>Sabellaria spinulosa</i>. The embayment supports a variety of mobile species, including a range of fish and <b>1365 Common seal <i>Phoca vitulina</i></b>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>The Wash is the largest embayment in the UK with extensive areas of subtidal mixed sediment. In the tide-swept approaches to the Wash, with a high loading of suspended sand, the relatively common tube-dwelling polychaete worm <i>Sabellaria spinulosa</i> forms areas of biogenic <b>reef</b>. These structures are varied in nature, and include reefs which stand up to 30 cm proud of the seabed and which extend for hundreds of metres (Foster-Smith & Sotheran 1999). The reefs are thought to extend into The Wash where super-abundant <i>S. spinulosa</i> occurs and where reef-like structures such as concretions and crusts have been recorded. The site and its surrounding waters is considered particularly important as it is the only currently known location of well-developed stable <i>Sabellaria</i> reef in the UK. The reefs are particularly important components of the sublittoral as they are diverse and productive habitats which support many associated species (including epibenthos and crevice fauna) that would not otherwise be found in predominantly sedimentary areas. As such, the fauna is quite distinct from other biotopes found in the site. Associated motile species include large numbers of polychaetes, mysid shrimps, the pink shrimp <i>Pandalus montagui</i>, and crabs. <i>S. spinulosa</i> is considered to be an important food source for the commercially important pink shrimp <i>P. montagui</i> (see overview in Holt <i>et al</i>. 1998).</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1310</b> <a href=/habitat/H1310/>Salicornia and other annuals colonizing mud and sand</a>
+    </div>
+<p>The largest single area of this vegetation in the UK occurs at this site on the east coast of England, which is one of the few areas in the UK where saltmarshes are generally accreting. The proportion of the total saltmarsh vegetation represented by <b><i>Salicornia</i> and other annuals colonising mud and sand</b> is high because of the extensive enclosure of marsh in this site. The vegetation is also unusual in that it forms a pioneer community with common cord-grass <i>Spartina anglica</i> in which it is an equal component. The inter-relationship with other habitats is significant, forming a transition to important dune, saltmeadow and halophytic scrub communities. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a>
+    </div>
+<p>This site on the east coast of England is selected both for the extensive ungrazed saltmarshes of the North Norfolk Coast and for the contrasting, traditionally grazed saltmarshes around the Wash. The Wash saltmarshes represent the largest single area of the habitat type in the UK. The <b>Atlantic salt meadows</b> form part of a sequence of vegetation types that are unparalleled among coastal sites in the UK for their diversity and are amongst the most important in Europe. Saltmarsh swards dominated by sea-lavenders <i>Limonium</i> spp. are particularly well-represented on this site. In addition to typical lower and middle saltmarsh communities, in North Norfolk there are transitions from upper marsh to freshwater reedswamp, sand dunes, shingle beaches and mud/sandflats.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1420</b> <a href=/habitat/H1420/>Mediterranean and thermo-Atlantic halophilous scrubs (Sarcocornetea fruticosi)</a>
+    </div>
+<p>The Wash and North Norfolk Coast, together with the North Norfolk Coast, comprises the only area in the UK where all the more typically Mediterranean species that characterise <b>Mediterranean and thermo-Atlantic halophilous scrubs</b> occur together. The vegetation is dominated by a shrubby cover up to 40 cm high of scattered bushes of shrubby sea-blite <i>Suaeda vera</i> and sea-purslane <i>Atriplex portulacoides</i>, with a patchy cover of herbaceous plants and bryophytes. This scrub vegetation often forms an important feature of the upper saltmarshes, and extensive examples occur where the drift-line slopes gradually and provides a transition to dune, shingle or reclaimed sections of the coast. At a number of locations on this coast perennial glasswort <i>Sarcocornia perennis</i> forms an open mosaic with other species at the lower limit of the sea-purslane community.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a></p>
-<p>On this site sandy sediments occupy most of the subtidal area, resulting in one of the largest expanses of sublittoral <b>sandbanks</b> in the UK. It provides a representative example of this habitat type on the more sheltered east coast of England. The subtidal sandbanks vary in composition and include coarse sand through to mixed sediment at the mouth of the embayment. Sublittoral communities present include large dense beds of brittlestars <i>Ophiothrix fragilis</i>. Species include the sand-mason worm <i>Lanice conchilega</i> and the tellin <i>Angulus tenuis</i>. Benthic communities on sandflats in the deeper, central part of the Wash are particularly diverse. The subtidal sandbanks provide important nursery grounds for young commercial fish species, including plaice <i>Pleuronectes platessa</i>, cod <i>Gadus morhua</i> and sole <i>Solea solea</i>.</p></div>
-<div>
-    <p><b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a></p>
-<p>The Wash, on the east coast of England, is the second-largest area of intertidal flats in the UK. The sandflats in the embayment of the Wash include extensive fine sands and drying banks of coarse sand, and this diversity of substrates, coupled with variety in degree of exposure, means that there is a high diversity relative to other east coast sites. Sandy intertidal flats predominate, with some soft mudflats in the areas sheltered by barrier beaches and islands along the north Norfolk coast. The biota includes large numbers of polychaetes, bivalves and crustaceans. Salinity ranges from that of the open coast in most of the area (supporting rich invertebrate communities) to estuarine close to the rivers. Smaller, sheltered and diverse areas of intertidal sediment, with a rich variety of communities, including some eelgrass <i>Zostera</i> spp. beds and large shallow pools, are protected by the north Norfolk barrier islands and sand spits.</p></div>
-<div>
-    <p><b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a></p>
-<p>The Wash is the largest embayment in the UK, and represents <b>Large shallow inlets and bays</b> on the east coast of England. It is connected via sediment transfer systems to the north Norfolk coast. Together, the Wash and North Norfolk Coast form one of the most important marine areas in the UK and European North Sea coast, and include extensive areas of varying, but predominantly sandy, sediments subject to a range of conditions. Communities in the intertidal include those characterised by large numbers of polychaetes, bivalve and crustaceans. Sublittoral communities cover a diverse range from the shallow to the deeper parts of the embayments and include dense brittlestar beds and areas of an abundant reef-building worm (‘ross worm’) <i>Sabellaria spinulosa</i>. The embayment supports a variety of mobile species, including a range of fish and <b>1365 Common seal <i>Phoca vitulina</i></b>.</p></div>
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>The Wash is the largest embayment in the UK with extensive areas of subtidal mixed sediment. In the tide-swept approaches to the Wash, with a high loading of suspended sand, the relatively common tube-dwelling polychaete worm <i>Sabellaria spinulosa</i> forms areas of biogenic <b>reef</b>. These structures are varied in nature, and include reefs which stand up to 30 cm proud of the seabed and which extend for hundreds of metres (Foster-Smith & Sotheran 1999). The reefs are thought to extend into The Wash where super-abundant <i>S. spinulosa</i> occurs and where reef-like structures such as concretions and crusts have been recorded. The site and its surrounding waters is considered particularly important as it is the only currently known location of well-developed stable <i>Sabellaria</i> reef in the UK. The reefs are particularly important components of the sublittoral as they are diverse and productive habitats which support many associated species (including epibenthos and crevice fauna) that would not otherwise be found in predominantly sedimentary areas. As such, the fauna is quite distinct from other biotopes found in the site. Associated motile species include large numbers of polychaetes, mysid shrimps, the pink shrimp <i>Pandalus montagui</i>, and crabs. <i>S. spinulosa</i> is considered to be an important food source for the commercially important pink shrimp <i>P. montagui</i> (see overview in Holt <i>et al</i>. 1998).</p></div>
-<div>
-    <p><b>1310</b> <a href=/habitat/H1310/>Salicornia and other annuals colonizing mud and sand</a></p>
-<p>The largest single area of this vegetation in the UK occurs at this site on the east coast of England, which is one of the few areas in the UK where saltmarshes are generally accreting. The proportion of the total saltmarsh vegetation represented by <b><i>Salicornia</i> and other annuals colonising mud and sand</b> is high because of the extensive enclosure of marsh in this site. The vegetation is also unusual in that it forms a pioneer community with common cord-grass <i>Spartina anglica</i> in which it is an equal component. The inter-relationship with other habitats is significant, forming a transition to important dune, saltmeadow and halophytic scrub communities. </p></div>
-<div>
-    <p><b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a></p>
-<p>This site on the east coast of England is selected both for the extensive ungrazed saltmarshes of the North Norfolk Coast and for the contrasting, traditionally grazed saltmarshes around the Wash. The Wash saltmarshes represent the largest single area of the habitat type in the UK. The <b>Atlantic salt meadows</b> form part of a sequence of vegetation types that are unparalleled among coastal sites in the UK for their diversity and are amongst the most important in Europe. Saltmarsh swards dominated by sea-lavenders <i>Limonium</i> spp. are particularly well-represented on this site. In addition to typical lower and middle saltmarsh communities, in North Norfolk there are transitions from upper marsh to freshwater reedswamp, sand dunes, shingle beaches and mud/sandflats.</p></div>
-<div>
-    <p><b>1420</b> <a href=/habitat/H1420/>Mediterranean and thermo-Atlantic halophilous scrubs (Sarcocornetea fruticosi)</a></p>
-<p>The Wash and North Norfolk Coast, together with the North Norfolk Coast, comprises the only area in the UK where all the more typically Mediterranean species that characterise <b>Mediterranean and thermo-Atlantic halophilous scrubs</b> occur together. The vegetation is dominated by a shrubby cover up to 40 cm high of scattered bushes of shrubby sea-blite <i>Suaeda vera</i> and sea-purslane <i>Atriplex portulacoides</i>, with a patchy cover of herbaceous plants and bryophytes. This scrub vegetation often forms an important feature of the upper saltmarshes, and extensive examples occur where the drift-line slopes gradually and provides a transition to dune, shingle or reclaimed sections of the coast. At a number of locations on this coast perennial glasswort <i>Sarcocornia perennis</i> forms an open mosaic with other species at the lower limit of the sea-purslane community.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1365</b> <a href=/species/S1365/>Harbour seal</a> <b>Phoca vitulina</b></p>
-<p>The Wash, on the east coast of England, is the largest embayment in the UK. The extensive intertidal flats here and on the North Norfolk Coast provide ideal conditions for <b>Harbour seal <i>Phoca vitulina</i></b> breeding and hauling-out. This site is the largest colony of common seals in the UK, with some 7% of the total UK population.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1355</b> <a href=/species/S1355/>Otter</a> <b>Lutra lutra</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1365
+            <a href=/species/S1365/>Harbour seal</a>
+        </b>
+        <i>Phoca vitulina</i>
+        
     </div>
+<p>The Wash, on the east coast of England, is the largest embayment in the UK. The extensive intertidal flats here and on the North Norfolk Coast provide ideal conditions for <b>Harbour seal <i>Phoca vitulina</i></b> breeding and hauling-out. This site is the largest colony of common seals in the UK, with some 7% of the total UK population.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
+    <div>
+        <b>
+            1355
+            <a href=/species/S1355/>Otter</a>
+        </b>
+        <i>Lutra lutra</i>
+        
+    </div>
+</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -290,6 +370,6 @@ Marine areas, Sea inlets (51%) <br />Tidal rivers, Estuaries, Mud flats, Sand fl
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

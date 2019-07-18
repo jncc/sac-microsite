@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012821">Caenlochan</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Caenlochan</h1>
+
+<div class="section">
+    <h1>
+        Caenlochan
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Eastern Scotland, North Eastern Scotland</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NO213767</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,78 +150,169 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012821_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Caenlochan SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Caenlochan SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (0.1%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (29%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (30.2%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (9.2%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (2.4%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (23.7%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (0.2%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (5.2%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012821.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (0.1%) <br />Bogs, Marshes, Water fringed vegetation, Fens (29%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (30.2%) <br />Dry grassland, Steppes (9.2%) <br />Humid grassland, Mesophile grassland (2.4%) <br />Alpine and sub-Alpine grassland (23.7%) <br />Broad-leaved deciduous woodland (0.2%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (5.2%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012821.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a></p>
-<p>Caenlochan is the most continental hill in the SAC series for <b>Alpine and Boreal heaths</b>, and shows proportionately the most extensive development of lichen-rich heath and the least development of more oceanic kinds of heath. H19 <i>Vaccinium myrtillus</i> – <i>Cladonia arbuscula</i> heath is extensive and well-developed, with abundant lichen cover. Characteristic species such as the lichen <i>Cetraria nivalis</i> and trailing azalea <i>Loiseleuria procumbens</i> are widespread. Other communities represented are H13 <i>Calluna vulgaris</i> – <i>Cladonia arbuscula</i>, H20 <i>Vaccinium myrtillus</i> – <i>Racomitrium lanuginosum</i> and H22 <i>Vaccinium myrtillus</i> – <i>Rubus chamaemorus</i> heaths.</p></div>
-<div>
-    <p><b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a></p>
-<p><b>Sub-Arctic <i>Salix</i> spp. scrub</b> is relatively frequent at Caenlochan, growing to a high altitude on highly to moderately calcareous schist. Corrie Sharroch holds the largest single patch (around 0.5 ha) of W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub remaining in the UK. The scrub is also found spread across a larger area of crag and steep rocky slope than on any other site in the UK. The most abundant species, and generally the dominant one, is downy willow <i>Salix lapponum</i>, which probably occurs in larger numbers here than on any other site in the UK. There is a relatively large patch of scrub dominated by woolly willow <i>S. lanata</i>, and the site may hold the second-largest population of this species in the UK. Whortle-leaved willow <i>S. myrsinites</i> and net-leaved willow <i>S. reticulata</i> are also present. The associated habitat is mainly <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b>.</p></div>
-<div>
-    <p><b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a></p>
-<p>Caenlochan in north-east Scotland represents natural, open <B>Calaminarian grasslands</B> over serpentine debris, occurring at about 850<FONT size=2>–</FONT>870&nbsp;m altitude on Meikle Kilrannoch, the highest representation of the habitat in the UK. The site is notable for the large population of the rare alpine catchfly <I>Lychnis alpina</I>, which occurs at only one other locality in the UK (the other station being in the English Lake District). Other characteristic plants of the debris include thrift <I>Armeria maritima</I>, mossy cyphel <I>Minuartia sedoides</I> and scurvygrass <I>Cochlearia</I> sp. This is the only known site for the Scottish endemic subspecies of common mouse-ear <I>Cerastium fontanum</I> ssp. <I>scoticum</I>.</p></div>
-<div>
-    <p><b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a></p>
-<p>Caenlochan is representative of <b>Siliceous alpine and boreal grasslands</b> on high hills in the eastern Highlands. This is the most continental site in the series and is unique because it is the only site where the predominant community of the summit plateau is U8 <i>Carex bigelowii</i> – <i>Polytrichum alpinum</i> sedge-heath rather than the more widely predominant U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath. The extent of <i>Carex</i> – <i>Polytrichum</i> sedge-heath is the largest of any site in the UK. The more characteristically oceanic <i>Carex</i> – <i>Racomitrium</i> moss-heath is represented by some good stands but is not so extensive. U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath is also well-represented. There is a moderately large representation of late-lie snow-beds of U11 <i>Polytrichum sexangulare</i> – <i>Kiaeria starkei</i> snow-bed and U12 <i>Salix herbacea</i> – <i>Racomitrium heterostichum</i> snow-bed, while some small examples of U14 <i>Alchemilla alpina</i> – <i>Sibbaldia procumbens</i> dwarf-herb snow-bed are also present on shelves on high ground.</p></div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-<p>Caenlochan is the most easterly site selected and is representative of <B>hydrophilous tall herb fringe communities</B> in the eastern Highlands. The habitat type is widely-developed across the site and is found on ledges of calcareous and more acid schists with a wide altitudinal range, including very high altitudes (550<FONT size=2>–</FONT>870&nbsp;m). Caenlochan is considered to have the greatest extent of this habitat type in the UK. There is an extremely diverse and well-developed montane flora containing a range of characteristic species, such as roseroot <I>Sedum rosea</I>, red campion <I>Silene dioica</I>, water avens <I>Geum rivale</I>, globeflower <I>Trollius europaeus</I> and wood crane’s-bill <I>Geranium sylvaticum</I>. Rarer species include black alpine-sedge <I>Carex atrata</I>, alpine gentian <I>Gentiana nivalis</I>, alpine fleabane <I>Erigeron borealis</I>, alpine mouse-ear <I>Cerastium alpinum</I> and alpine cinquefoil <I>Potentilla crantzii</I>. A very rare species that occurs on more acid ledges and is not represented on any other site in the series is alpine blue-sow-thistle <I>Cicerbita alpina</I>. The ledges at lower altitude have woodland species, such as wood anemone <I>Anemone nemorosa</I> and dog’s mercury <I>Mercurialis perennis</I>, which are usually rare in the habitat type.</p></div>
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Caenlochan contains extensive areas of high altitude <b>Blanket bogs</b> representative of the eastern Highlands of Scotland. The blanket bog belongs to the M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire community and is extensive between 700 m and 900 m altitude. Above about 800 m, where the bogs occupy an extensive high plateau, heather <i>Calluna vulgaris</i> is replaced by cowberry <i>Vaccinium vitis-idaea</i> and the montane dwarf-shrubs crowberry <i>Empetrum nigrum</i> ssp. <i>hermaphroditum</i> and bog bilberry <i>Vaccinium uliginosum</i>. These montane blanket bogs show floristic affinities with mountain bogs in Scandinavia.</p></div>
-<div>
-    <p><b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Caenlochan is one of two sites in the eastern Highlands representing base-rich mires at moderately high to high altitude. These mires are frequent within the site and have high species diversity. There is a well-developed community structure and the rarer species occur frequently. Open flushes of M11 <i>Carex demissa</i> – <i>Saxifraga aizoides</i> mire and the closed M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire are both widely-developed. Characteristic species include three-flowered rush <i>Juncus triglumis</i>, chestnut rush <i>J. castaneus</i>, alpine rush <i>J. alpinoarticulatus</i>, Scottish asphodel <i>Tofieldia pusilla</i>, and sheathed sedge <i>Carex vaginata</i>. Hair sedge <i>C. capillaris</i>, alpine bistort <i>Persicaria vivipara</i> and alpine meadow-rue <i>Thalictrum alpinum</i> are also present. An additional interest is the presence of an eastern outlier of the mainly western M12 <i>Carex saxatilis</i> mire.</p></div>
-<div>
-    <p><b>8120</b> <a href=/habitat/H8120/>Calcareous and calcshist screes of the montane to alpine levels (Thlaspietea rotundifolii)</a></p>
-<p>Caenlochan is representative of communities on <b>calcareous and calcshist screes</b> at high altitude in the eastern Scottish Highlands. Although the habitat type is localised within the site, Caenlochan has a variety of different screes with an unusual flora. Fern-rich screes on calcareous-schist rocks support holly-fern <i>Polystichum lonchitis</i>, buckler-fern <i>Dryopteris</i> spp., roseroot <i>Sedum rosea</i> and mountain sorrel <i>Oxyria digyna</i>, while porphyritic screes have alpine penny-cress <i>Thlaspi caerulescens</i> and alpine speedwell <i>Veronica alpina</i>. </p></div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-<p>Caenlochan represents high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, on extensive outcrops of calcareous schists. The site has one of the most extensive and diverse high-altitude crevice habitats in the UK, with an abundance of characteristic high montane plant species. These include a number of rare species, such as mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i>, rock sedge <i>Carex rupestris</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba incana</i>. The montane calcicole bryophyte flora is also outstanding and includes a number of species not present on other selected sites.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
 
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-</div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<li>
+    <div class="little-header">
+        <b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a>
     </div>
+<p>Caenlochan is the most continental hill in the SAC series for <b>Alpine and Boreal heaths</b>, and shows proportionately the most extensive development of lichen-rich heath and the least development of more oceanic kinds of heath. H19 <i>Vaccinium myrtillus</i> – <i>Cladonia arbuscula</i> heath is extensive and well-developed, with abundant lichen cover. Characteristic species such as the lichen <i>Cetraria nivalis</i> and trailing azalea <i>Loiseleuria procumbens</i> are widespread. Other communities represented are H13 <i>Calluna vulgaris</i> – <i>Cladonia arbuscula</i>, H20 <i>Vaccinium myrtillus</i> – <i>Racomitrium lanuginosum</i> and H22 <i>Vaccinium myrtillus</i> – <i>Rubus chamaemorus</i> heaths.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a>
+    </div>
+<p><b>Sub-Arctic <i>Salix</i> spp. scrub</b> is relatively frequent at Caenlochan, growing to a high altitude on highly to moderately calcareous schist. Corrie Sharroch holds the largest single patch (around 0.5 ha) of W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub remaining in the UK. The scrub is also found spread across a larger area of crag and steep rocky slope than on any other site in the UK. The most abundant species, and generally the dominant one, is downy willow <i>Salix lapponum</i>, which probably occurs in larger numbers here than on any other site in the UK. There is a relatively large patch of scrub dominated by woolly willow <i>S. lanata</i>, and the site may hold the second-largest population of this species in the UK. Whortle-leaved willow <i>S. myrsinites</i> and net-leaved willow <i>S. reticulata</i> are also present. The associated habitat is mainly <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a>
+    </div>
+<p>Caenlochan in north-east Scotland represents natural, open <B>Calaminarian grasslands</B> over serpentine debris, occurring at about 850<FONT size=2>–</FONT>870&nbsp;m altitude on Meikle Kilrannoch, the highest representation of the habitat in the UK. The site is notable for the large population of the rare alpine catchfly <I>Lychnis alpina</I>, which occurs at only one other locality in the UK (the other station being in the English Lake District). Other characteristic plants of the debris include thrift <I>Armeria maritima</I>, mossy cyphel <I>Minuartia sedoides</I> and scurvygrass <I>Cochlearia</I> sp. This is the only known site for the Scottish endemic subspecies of common mouse-ear <I>Cerastium fontanum</I> ssp. <I>scoticum</I>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a>
+    </div>
+<p>Caenlochan is representative of <b>Siliceous alpine and boreal grasslands</b> on high hills in the eastern Highlands. This is the most continental site in the series and is unique because it is the only site where the predominant community of the summit plateau is U8 <i>Carex bigelowii</i> – <i>Polytrichum alpinum</i> sedge-heath rather than the more widely predominant U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath. The extent of <i>Carex</i> – <i>Polytrichum</i> sedge-heath is the largest of any site in the UK. The more characteristically oceanic <i>Carex</i> – <i>Racomitrium</i> moss-heath is represented by some good stands but is not so extensive. U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath is also well-represented. There is a moderately large representation of late-lie snow-beds of U11 <i>Polytrichum sexangulare</i> – <i>Kiaeria starkei</i> snow-bed and U12 <i>Salix herbacea</i> – <i>Racomitrium heterostichum</i> snow-bed, while some small examples of U14 <i>Alchemilla alpina</i> – <i>Sibbaldia procumbens</i> dwarf-herb snow-bed are also present on shelves on high ground.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+<p>Caenlochan is the most easterly site selected and is representative of <B>hydrophilous tall herb fringe communities</B> in the eastern Highlands. The habitat type is widely-developed across the site and is found on ledges of calcareous and more acid schists with a wide altitudinal range, including very high altitudes (550<FONT size=2>–</FONT>870&nbsp;m). Caenlochan is considered to have the greatest extent of this habitat type in the UK. There is an extremely diverse and well-developed montane flora containing a range of characteristic species, such as roseroot <I>Sedum rosea</I>, red campion <I>Silene dioica</I>, water avens <I>Geum rivale</I>, globeflower <I>Trollius europaeus</I> and wood crane’s-bill <I>Geranium sylvaticum</I>. Rarer species include black alpine-sedge <I>Carex atrata</I>, alpine gentian <I>Gentiana nivalis</I>, alpine fleabane <I>Erigeron borealis</I>, alpine mouse-ear <I>Cerastium alpinum</I> and alpine cinquefoil <I>Potentilla crantzii</I>. A very rare species that occurs on more acid ledges and is not represented on any other site in the series is alpine blue-sow-thistle <I>Cicerbita alpina</I>. The ledges at lower altitude have woodland species, such as wood anemone <I>Anemone nemorosa</I> and dog’s mercury <I>Mercurialis perennis</I>, which are usually rare in the habitat type.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Caenlochan contains extensive areas of high altitude <b>Blanket bogs</b> representative of the eastern Highlands of Scotland. The blanket bog belongs to the M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire community and is extensive between 700 m and 900 m altitude. Above about 800 m, where the bogs occupy an extensive high plateau, heather <i>Calluna vulgaris</i> is replaced by cowberry <i>Vaccinium vitis-idaea</i> and the montane dwarf-shrubs crowberry <i>Empetrum nigrum</i> ssp. <i>hermaphroditum</i> and bog bilberry <i>Vaccinium uliginosum</i>. These montane blanket bogs show floristic affinities with mountain bogs in Scandinavia.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Caenlochan is one of two sites in the eastern Highlands representing base-rich mires at moderately high to high altitude. These mires are frequent within the site and have high species diversity. There is a well-developed community structure and the rarer species occur frequently. Open flushes of M11 <i>Carex demissa</i> – <i>Saxifraga aizoides</i> mire and the closed M10 <i>Carex dioica</i> – <i>Pinguicula vulgaris</i> mire are both widely-developed. Characteristic species include three-flowered rush <i>Juncus triglumis</i>, chestnut rush <i>J. castaneus</i>, alpine rush <i>J. alpinoarticulatus</i>, Scottish asphodel <i>Tofieldia pusilla</i>, and sheathed sedge <i>Carex vaginata</i>. Hair sedge <i>C. capillaris</i>, alpine bistort <i>Persicaria vivipara</i> and alpine meadow-rue <i>Thalictrum alpinum</i> are also present. An additional interest is the presence of an eastern outlier of the mainly western M12 <i>Carex saxatilis</i> mire.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8120</b> <a href=/habitat/H8120/>Calcareous and calcshist screes of the montane to alpine levels (Thlaspietea rotundifolii)</a>
+    </div>
+<p>Caenlochan is representative of communities on <b>calcareous and calcshist screes</b> at high altitude in the eastern Scottish Highlands. Although the habitat type is localised within the site, Caenlochan has a variety of different screes with an unusual flora. Fern-rich screes on calcareous-schist rocks support holly-fern <i>Polystichum lonchitis</i>, buckler-fern <i>Dryopteris</i> spp., roseroot <i>Sedum rosea</i> and mountain sorrel <i>Oxyria digyna</i>, while porphyritic screes have alpine penny-cress <i>Thlaspi caerulescens</i> and alpine speedwell <i>Veronica alpina</i>. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Caenlochan represents high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, on extensive outcrops of calcareous schists. The site has one of the most extensive and diverse high-altitude crevice habitats in the UK, with an abundance of characteristic high montane plant species. These include a number of rare species, such as mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i>, rock sedge <i>Carex rupestris</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba incana</i>. The montane calcicole bryophyte flora is also outstanding and includes a number of species not present on other selected sites.</p></li>
+    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -302,6 +401,6 @@ Inland water bodies (Standing water, Running water) (0.1%) <br />Bogs, Marshes, 
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

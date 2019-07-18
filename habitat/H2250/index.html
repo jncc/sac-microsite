@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,73 +77,105 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H2250">Coastal dunes with <I>Juniperus</I> spp.</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">2250</span>
+        Coastal dunes with <I>Juniperus</I> spp.
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Coastal sand dunes and continental dunes</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Coastal sand dunes and continental dunes</h1>
-</div>
-<h4>2250 Coastal dunes with <I>Juniperus</I> spp.</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H2250/map">
-            <img src="/images/maps/features/thumbnails/H2250_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>2250</b> Coastal dunes with <I>Juniperus</I> spp.. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H2250/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H2250/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H2250/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H2250/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>This habitat type comprises common juniper <I>Juniperus communis</I> scrub on coastal sand dunes in a variety of situations. Both prostrate and erect forms of juniper can be found. Stands are usually very small and are intimately mixed with other Annex&nbsp;I habitat types, including dune grassland and heath. There is complete range from discrete stands to more scattered and occasional individuals, which occur within habitat types defined as fixed dunes. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H2250/map">
+                <img src="/images/maps/features/thumbnails/H2250_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>2250</b> Coastal dunes with <I>Juniperus</I> spp.. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Coastal dunes with juniper <I>Juniperus</I> spp.</B> are widespread but uncommon on the coasts of Europe. Northern variants of the community with common juniper <I>Juniperus communis</I> occur in Britain and Denmark, while different species of juniper occur on Iberian and Mediterranean coasts.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H2250/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Coastal dunes with juniper <I>Juniperus</I> spp.</B> are rare in the UK. Ten localities, all in Scotland, are known, of which three are noteworthy. </P></p>
-
-
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019806>Dornoch Firth and Morrich More</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Highlands and Islands</b></div>
+    <p>Click <a href=/habitat/H2250/map>here</a> view UK distribution of this species</p>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Morrich More is the most important site in the UK for juniper <i>Juniperus</i> spp. stands on dune. Stands of juniper cover approximately 10 ha, with scattered individuals over a larger area. The juniper is extremely well-developed on the dry ridges and transitions to dune slacks. The best stands occur in grasslands in the southern sector, but prostrate individuals also extend into wet heath and slack habitats within the site. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013041>Invernaver</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Invernaver contains a high density of dune habitats in a relatively small area, with an extensive transition zone to non-dune conditions. Dune juniper thickets occur in their more dispersed form, with scattered individuals occurring relatively widely. Of particular interest is the occurrence of the scattered form of <b>Coastal dunes with <i>Juniperus</i> spp</b>. on ‘climbing dunes’ found where sand has been blown onto cliff slopes, giving complex transitions from dune to cliff habitats and mountain avens <i>Dryas octopetala</i> heath. Juniper is also found as more discrete areas of low scrub in the dunes, extending as more scattered individuals into the non-dune habitats of this site. </div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
 </div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0019806 class="space-right">Dornoch Firth and Morrich More</a>
+        Extra-Regio, Highlands and Islands
+    </b>
+    <div>
+Morrich More is the most important site in the UK for juniper <i>Juniperus</i> spp. stands on dune. Stands of juniper cover approximately 10 ha, with scattered individuals over a larger area. The juniper is extremely well-developed on the dry ridges and transitions to dune slacks. The best stands occur in grasslands in the southern sector, but prostrate individuals also extend into wet heath and slack habitats within the site.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013041 class="space-right">Invernaver</a>
+        Highlands and Islands
+    </b>
+    <div>
+Invernaver contains a high density of dune habitats in a relatively small area, with an extensive transition zone to non-dune conditions. Dune juniper thickets occur in their more dispersed form, with scattered individuals occurring relatively widely. Of particular interest is the occurrence of the scattered form of <b>Coastal dunes with <i>Juniperus</i> spp</b>. on ‘climbing dunes’ found where sand has been blown onto cliff slopes, giving complex transitions from dune to cliff habitats and mountain avens <i>Dryas octopetala</i> heath. Juniper is also found as more discrete areas of low scrub in the dunes, extending as more scattered individuals into the non-dune habitats of this site.     </div>
+</li>    </ul>
+</div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -231,6 +262,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

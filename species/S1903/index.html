@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,82 +77,115 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1903"><I>Liparis loeselii</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Higher plant species</h1>
-</div>
-<h4>1903 Fen orchid [<I>Liparis loeselii</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1903/map">
-            <img src="/images/maps/features/thumbnails/S1903_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1903</b> <I>Liparis loeselii</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1903/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1903/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1903</span>
+        <span class="space-right">Fen orchid</span>
+        <I>Liparis loeselii</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Higher plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1903/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1903/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Fen orchid <I>Liparis loeselii</B></I> is a small green-flowered orchid of fens and dune systems. Two morphologically distinct forms occur: the type form of the East Anglian fens has acute oblong-elliptical leaves, while the form occurring in the dune slacks of south Wales and formerly north Devon (var. <I>ovata</I>) is shorter, generally fewer-flowered and bears blunt, broadly elliptical leaves. In the UK the two forms are mutually exclusive with respect to their distribution between habitats, but in mainland Europe the type (fenland) form var. <I>loeselii</I> also occurs in dune slacks.</P>
 <P>The major factors leading to its widespread decline have been habitat loss and deterioration. </P>
 <P>All fenland sites in the Norfolk Broads are subject to high water tables throughout the year and some experience winter flooding. The cessation of peat-cutting in the fens is probably the most important contributory factor leading to the decline of this species, as <B><I>L.&nbsp;loeselii</B></I> in this area is confined to tall-herb fens that have experienced disturbance through peat-cutting. </P>
 <P>In dune slacks <B><I>L.&nbsp;loeselii</B></I> occurs across quite a wide range of vegetation types, though principally in younger dune slack communities where some open soil remains. These dune slacks are all subject to winter flooding, with inundation often occurring for up to five months in a year. A high summer water table appears to be essential for the survival of this drought-sensitive species. In common with many other orchids, the fen orchid appears to rely on regular disturbance for its long-term survival at any one site, and dune system over-stabilisation has been a major causal element in its decline. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1903/map">
+                <img src="/images/maps/features/thumbnails/S1903_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1903</b> <I>Liparis loeselii</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>In Europe <B><I>Liparis&nbsp;loeselii</B></I> appears on the IUCN threatened list for every country in its range and has legal protection in Belgium, Finland, France, Germany, Liechtenstein, Switzerland and the UK. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1903/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK<I> <B>Liparis&nbsp;loeselii</B></I> has severely declined over its former range. The principal population centre for fen orchid in the UK is now the dune slacks of the south Wales coast. Since the 1920s it has been noted on at least one occasion from eight sand dune sites in south Wales, which collectively support more than 90% of the British population, although survey during the mid-1990s only resulted in records from four sites. It is thought to be extinct at its north Devon site, where it has not been recorded since 1987. </P>
 <P>Formerly known from at least 30 fenland sites in eastern England in the 1890s, only three native populations of <B><I>L.&nbsp;loeselii</B></I> are known to survive in the Norfolk Broads. Artificial propagation is now being used to increase the population in the wild.</P></p>
+    <p>View <a href=/species/S1903/map>UK distribution of this species</a>.</p>
+
+        <h2>Site selection rationale</h2>
+        <p>Sites have been selected to include the largest and most well-established populations of this species and to cover the variation in ecological and morphological types, as well as its geographical range. Two SACs have been selected to represent the dune slack populations in south Wales, and one to represent fen populations in East Anglia</p>
+</div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0020019 class="space-right">Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+Whiteford Burrows, on the Burry Inlet, south Wales, is one of the few sites in the west where <b>fen orchid <i>Liparis loeselii</i></b> is still known to occur. Populations are somewhat smaller in size than those at Kenfig but nevertheless the site supports over 10% of the UK resource. The variety that occurs here, as at Kenfig, is var. <i>ovata</i>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England. The fen orchid on this site is var. <i>ovata</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012566 class="space-right">Kenfig/ Cynffig</a>
+        East Wales
+    </b>
+    <div>
+Kenfig on the south Wales coast holds the largest populations of <B>fen orchid <I>Liparis loeselii</B></I> in the UK, comprising about 50% of the UK resource. Management of the site is directed towards the maintenance and enhancement of the populations of fen orchid. The variety that occurs here, as at Whiteford Burrows, is var. <I>ovata</I>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013577 class="space-right">The Broads</a>
+        East Anglia
+    </b>
+    <div>
+The Broads in eastern England provide representation of the Fenland form of <b>fen orchid <i>Liparis loeselii</i></b> in the eastern part of its UK range. Three small populations of var. <i>loeselii</i> are known to occur on this site, and 242 plants were found in 1996.     </div>
+</li>    </ul>
+</div>
 
 
-<h4>Site Accounts</h4>
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020019>Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Whiteford Burrows, on the Burry Inlet, south Wales, is one of the few sites in the west where <b>fen orchid <i>Liparis loeselii</i></b> is still known to occur. Populations are somewhat smaller in size than those at Kenfig but nevertheless the site supports over 10% of the UK resource. The variety that occurs here, as at Kenfig, is var. <i>ovata</i>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England. The fen orchid on this site is var. <i>ovata</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012566>Kenfig/ Cynffig</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Kenfig on the south Wales coast holds the largest populations of <B>fen orchid <I>Liparis loeselii</B></I> in the UK, comprising about 50% of the UK resource. Management of the site is directed towards the maintenance and enhancement of the populations of fen orchid. The variety that occurs here, as at Whiteford Burrows, is var. <I>ovata</I>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013577>The Broads</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Broads in eastern England provide representation of the Fenland form of <b>fen orchid <i>Liparis loeselii</i></b> in the eastern part of its UK range. Three small populations of var. <i>loeselii</i> are known to occur on this site, and 242 plants were found in 1996. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
-
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -240,6 +272,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

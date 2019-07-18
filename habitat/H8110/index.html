@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H8110">Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>)</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">8110</span>
+        Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>)
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Rocky habitats and caves</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Rocky habitats and caves</h1>
-</div>
-<h4>8110 Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>)</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H8110/map">
-            <img src="/images/maps/features/thumbnails/H8110_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>8110</b> Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>). Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8110/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8110/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H8110/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H8110/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>Scree habitats consist of rock fragments covering the frost-shattered summits of mountains or accumulating on slopes below cliffs. Siliceous screes are made up of siliceous rocks such as quartzite, granite and sandstone. They may occur at any altitude, but screes in the lowlands are excluded from the Annex&nbsp;I definition. The scree may be colonised by a range of pioneer species. It also provides shelter for many species sensitive to frost, such as parsley fern <I>Cryptogramma crispa</I>, species requiring a humid microclimate such as Wilson’s filmy-fern <I>Hymenophyllum wilsonii</I>, and species sensitive to grazing such as stone bramble <I>Rubus saxatilis</I>. </P>
 <P>Screes in the UK provide a habitat for plant communities with affinities to the <I>Thlaspietea rotundifolii</I>, as described from continental Europe. Both <B>siliceous scree</B> and <B>8120 Calcareous and calcshist screes of the montane to alpine levels (<I>Thlaspietea rotundifolii</I>)</B> are important for their rich fern flora and act as refugia for a number of rare species.</P>
 <P>Floristically the habitat type is principally characterised in the UK by two NVC types in which parsley fern <I>Cryptogramma crispa</I> and other ferns are prominent:</P>
@@ -122,164 +129,265 @@
 <P>U18 <I>Cryptogramma – Athyrium </I>snow-bed community occurs principally in the Scottish Highlands above 600&nbsp;m, where prolonged snow-cover provides suitable conditions for alpine lady-fern <I>Athyrium distentifolium</I>, the rare Newman’s lady-fern <I>Athyrium flexile</I>, and other montane vascular plants, bryophytes and lichens. U21 <I>Cryptogramma – Deschampsia </I>community extends to lower altitudes in mild oceanic climates in western Scotland, north-west England and north Wales, and has a less well-developed montane flora.</P>
 <P>Other forms of <B>siliceous scree</B> are dominated by bryophytes and lichens and are not described in the NVC. In the west and, more locally at high altitude in the eastern Scottish Highlands, such screes provide an important habitat for Atlantic bryophytes, such as <I>Anastrophyllum donnianum</I>, <I>Bazzania pearsonii</I>, <I>Herbertus aduncus</I>, <I>Scapania nimbosa </I>and <I>Scapania ornithopodioides</I>, many of which have a restricted world distribution. </P><B>
 <P>Siliceous scree of the montane to snow levels</B> can occur in close association with Annex&nbsp;I type <B>8220 Siliceous rocky slopes with chasmophytic vegetation</B>, while stabilised block screes may support a range of vegetation types including other Annex&nbsp;I types.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H8110/map">
+                <img src="/images/maps/features/thumbnails/H8110_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>8110</b> Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>). Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>This Annex&nbsp;I type has a fairly wide distribution in Europe. Vegetation resembling the <I>Cryptogramma – Athyrium </I>snow-bed community occurs in Scandinavia, although <I>Cryptogramma crispa </I>is largely confined there to western Norway. Vegetation related to the <I>Cryptogramma – Deschampsia </I>community occurs in the mountains of central Europe and in parts of western Norway. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H8110/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Siliceous scree of the montane to snow levels</B> is widely distributed in the UK. The <I>Cryptogramma – Athyrium </I>snow-bed community occurs throughout the Scottish Highlands, between Foinaven in the north and Ben Lui in the south. It is most common on the high Moine and Dalradian schist hills and on the hills that lie along the watershed of western Scotland. There are outliers in the Cairngorms and on Lochnagar. </P>
 <P>The <I>Cryptogramma – Deschampsia </I>community is most common in the warmer parts of the oceanic west of the country, notably north Wales and the Lake District. It is especially associated with the hard volcanic rocks in these regions. <I>Cryptogramma crispa </I>is very scarce in south-west England, perhaps because the summers are too warm or dry, and in the Scottish Highlands it is largely confined to the <I>Cryptogramma – Athyrium </I>community in the shelter of snow-beds, except in the extreme west.</P></p>
+    <p>Click <a href=/habitat/H8110/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0030343 class="space-right">Beinn Bhan</a>
+        Highlands and Islands
+    </b>
+    <div>
+The <B>siliceous scree</B> habitat at Beinn Bhan is relatively extensive and comprises areas of both scree and block scree, consisting of the highly siliceous Torridonian sandstone. The variation in the size of rock fragments tends to be reflected in the ecological diversity of the scree habitat. The block screes have an outstanding flora of Atlantic bryophytes, including examples of the Northern Atlantic hepatic mat. The screes are notable for the frequency of parsley fern <I>Cryptogramma crispa</I>, constituting a northerly outpost of the NVC type U21 <I>Cryptogramma crispa–Deschampsia flexuosa</I> community.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012951 class="space-right">Ben Alder and Aonach Beag</a>
+        Highlands and Islands
+    </b>
+    <div>
+This site is one of the best sites for <b>siliceous scree</b> in the central Highlands. The site has extensive base-poor schistose screes developed at moderate to high altitude. Where snow lies late there is an extensive development of U18 <i>Cryptogramma crispa</i> – <i>Athyrium distentifolium</i> snow-bed community. Within these snow-beds the endemic Newman’s lady fern <i>Athyrium flexile</i> occurs. The oceanic montane liverworts <i>Scapania nimbosa</i>, <i>Lophozia opacifolia</i>, <i>Mylia taylorii</i> and <i>Bazzania tricrenata</i> occur in one of their few eastern outliers in these rocky snow-beds. <b>Siliceous scree</b> also occurs extensively at lower levels.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012956 class="space-right">Ben Nevis</a>
+        Highlands and Islands
+    </b>
+    <div>
+Ben Nevis is representative of high altitude <b>siliceous scree</b> in the north-west Scottish Highlands. The site contains extensive screes of quartzite and granite, with the most extensive known development in the UK of snow-bed screes with parsley fern <i>Cryptogramma crispa</i>, alpine lady-fern <i>Athyrium distentifolium</i> and other ferns (U18). The screes found in the site are diverse, with a range of characteristic species. There is an abundance of acid rock-loving species in high-altitude glacial troughs, corries and on summit ridges. These include a number of montane bryophytes and arctic-alpine vascular plants, such as curved wood-rush <i>Luzula arcuata</i>, wavy meadow-grass <i>Poa flexuosa</i>, hare’s-foot sedge <i>Carex lachenalii</i>, alpine tufted hair-grass <i>Deschampsia alpina</i>, starwort mouse-ear <i>Cerastium cerastoides</i>, alpine speedwell <i>Veronica alpina</i> and Highland saxifrage <i>Saxifraga rivularis</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030104 class="space-right">Cadair Idris</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Cadair Idris is the most southerly site in the UK selected for high-altitude <b>siliceous scree</b> and as such is not as species-rich as more northerly examples. Much of the rock is dry and unstable, but on the extensive screes on steep slopes U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation is well-distributed, and on the boulder screes, lemon-scented fern <i>Oreopteris limbosperma</i> can be found together with a range of characteristic bryophytes and lichens.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0016412 class="space-right">Cairngorms</a>
+        Highlands and Islands, North Eastern Scotland
+    </b>
+    <div>
+The Cairngorms complex contains representative examples of high altitude <b>siliceous scree</b> communities characteristic of the eastern Scottish Highlands. Extensive areas of scree occur on granite at a range of altitudes in the Cairngorms. The scree communities in this site are very diverse. Of particular interest is the flora of high-altitude screes in the snowy corries, with parsley fern <i>Cryptogramma crispa</i>, alpine lady-fern <i>Athyrium distentifolium</i> and rare wavy meadow-grass <i>Poa flexuosa</i> (U18). The flora is rich in rare moss species, for example <i>Dicranum glaciale</i>, and rare liverworts, such as <i>Tetralophozia setiformis</i> and <i>Marsupella adusta</i>. These occur on rocks in and about the snow-beds. There are also several northern Atlantic bryophytes such as <i>Scapania nimbosa</i>, <i>Scapania ornithopodioides</i> and <i>Anastrophyllum donnianum</i>, which are restricted to areas of late snow-lie where they are protected from winter frosts.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012946 class="space-right">Eryri/ Snowdonia</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Snowdonia is the largest site in Wales representative of <b>siliceous scree</b>. The site has extensive screes of igneous rocks with large stands of U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation; associated species include fir clubmoss <i>Huperzia selago</i>. Bryophyte and lichen-dominated screes are also well-represented and include important populations of rare and local montane and oceanic species, such as <i>Marsupella adusta</i>, <i>Marsupella stableri</i> and <i>Cornicularia narmoerica</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013141 class="space-right">Foinaven</a>
+        Highlands and Islands
+    </b>
+    <div>
+Foinaven represents highly acid screes, made up mainly of quartzite, in the far north-west Highlands. The extensive quartzite screes are very species-poor. However, there is a flora of Atlantic bryophytes associated with block screes at high altitudes. There is an important crustose lichen assemblage on the rocks.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012959 class="space-right">Glen Coe</a>
+        Highlands and Islands
+    </b>
+    <div>
+Glen Coe is representative of communities on <b>siliceous scree</b> derived from igneous rocks at a range of altitudes in the western Scottish Highlands. The characteristic species parsley fern <i>Cryptogramma crispa</i> occurs throughout the site, and tends to be found with alpine lady-fern <i>Athyrium distentifolium</i> in snowy corries at high altitude (U18). There is an abundance of ferns on the boulder screes within the site. These include lemon-scented fern <i>Oreopteris limbosperma</i>, and a number of oceanic species such as Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. Atlantic mosses and liverworts such as <i>Anastrophyllum donianum</i> and <i>Scapania nimbosa</i> are also abundant in screes on steep, shady, humid slopes. The rare Highland saxifrage <i>Saxifraga rivularis</i> occurs in springs and flushes amongst high-altitude scree.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012960 class="space-right">Lake District High Fells</a>
+        Cumbria
+    </b>
+    <div>
+This complex is representative of <b>siliceous scree</b> communities found at high altitude in north-west England. The site has the most extensive development of screes with parsley fern <i>Cryptogramma crispa</i> in the UK. The main rock, the Borrowdale Volcanic Series (but more locally Skiddaw Slates), varies much in base-status, but the screes are chiefly base-poor. Siliceous screes are one of the most extensive habitats within the Lake District High Fells, covering large areas on moderately steep ground, always interspersed with other habitats. The screes vary from recently-formed loose scree in lower sections of gullies and below cliffs to stable areas colonised by grasses, bryophytes and ferns. The main scree NVC type present is U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> community. It is found throughout the complex, but major scree areas occur in Wasdale Screes, Helvellyn and Fairfield, Buttermere Fells, Scafell Pikes, Pillar and Ennerdale Fells and Skiddaw Group. The communities are well-developed and diverse with a wide range of characteristic species, including an abundance of parsley fern <i>Cryptogramma crispa</i> with associated species such as alpine lady’s mantle <i>Alchemilla alpina</i>, stone bramble <i>Rubus saxatilis</i>, heath bedstraw <i>Galium saxatile</i>, sheep’s fescue <i>Festuca ovina</i> and common bent <i>Agrostis capillaris</i>. Lemon-scented fern <i>Oreopteris limbosperma</i> is also found on the screes within Pillar and Ennerdale Fells. Bryophytes such as woolly hair-moss <i>Racomitrium lanuginosum</i>, <i>R. fasciculare</i>, <i>Rhytidiadelphus loreus</i> and <i>R. squarrosus</i> can be frequent. The screes provide a suitable microclimate for many oceanic moss and liverwort species such as <i>Scapania ornithopiodes</i> and <i>Kiaeria starkei</i>, found in Helvellyn and Fairfield.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013597 class="space-right">Loch Maree Complex</a>
+        Highlands and Islands
+    </b>
+    <div>
+Loch Maree Complex is representative of vegetation communities on <b>siliceous scree</b>, mainly of quartzite and sandstone, in north-west Scotland. Screes are extensive and the communities they support are well-developed and diverse, with a range of characteristic species. Parsley fern <i>Cryptogramma crispa</i> is locally abundant, northern rock-cress <i>Arabis petraea</i> is frequently found and alpine lady-fern <i>Athyrium distentifolium</i> occurs in high-altitude areas where snow lingers. Other ferns occur frequently in the screes, including mountain male-fern <i>Dryopteris oreades</i>, beech fern <i>Phegopteris connectilis</i>, lemon-scented fern <i>Oreopteris limbosperma</i> and the oceanic Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. The most outstanding feature of the vegetation on these sites is the abundance of northern Atlantic mosses and liverworts, which include <i>Plagiochila spinulosa</i>, <i>Anastrophyllum donnianum</i> and <i>Scapania nimbosa</i>, which are chiefly developed on steep, shady and humid slopes. The screes form a significant part of the habitat complex on this site, which is the most important single area in the UK for communities of these lower plants.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014774 class="space-right">Moor House  - Upper Teesdale</a>
+        Cumbria, Tees Valley and Durham
+    </b>
+    <div>
+Moor House – Upper Teesdale is representative of communities on both low and high altitude <b>siliceous scree</b> in northern England. Screes are extensive, with diverse plant communities. Cross Fell is a southern outlier of high-altitude gritstone scree, with a flora including rare lichens and some widespread montane vascular plants. Ferns including parsley fern <i>Cryptogramma crispa</i> and holly fern <i>Polystichum lonchitis</i> occur on extensive whin-sill screes at lower altitudes.    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030343>Beinn Bhan</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The <B>siliceous scree</B> habitat at Beinn Bhan is relatively extensive and comprises areas of both scree and block scree, consisting of the highly siliceous Torridonian sandstone. The variation in the size of rock fragments tends to be reflected in the ecological diversity of the scree habitat. The block screes have an outstanding flora of Atlantic bryophytes, including examples of the Northern Atlantic hepatic mat. The screes are notable for the frequency of parsley fern <I>Cryptogramma crispa</I>, constituting a northerly outpost of the NVC type U21 <I>Cryptogramma crispa–Deschampsia flexuosa</I> community. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012951>Ben Alder and Aonach Beag</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site is one of the best sites for <b>siliceous scree</b> in the central Highlands. The site has extensive base-poor schistose screes developed at moderate to high altitude. Where snow lies late there is an extensive development of U18 <i>Cryptogramma crispa</i> – <i>Athyrium distentifolium</i> snow-bed community. Within these snow-beds the endemic Newman’s lady fern <i>Athyrium flexile</i> occurs. The oceanic montane liverworts <i>Scapania nimbosa</i>, <i>Lophozia opacifolia</i>, <i>Mylia taylorii</i> and <i>Bazzania tricrenata</i> occur in one of their few eastern outliers in these rocky snow-beds. <b>Siliceous scree</b> also occurs extensively at lower levels.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012956>Ben Nevis</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ben Nevis is representative of high altitude <b>siliceous scree</b> in the north-west Scottish Highlands. The site contains extensive screes of quartzite and granite, with the most extensive known development in the UK of snow-bed screes with parsley fern <i>Cryptogramma crispa</i>, alpine lady-fern <i>Athyrium distentifolium</i> and other ferns (U18). The screes found in the site are diverse, with a range of characteristic species. There is an abundance of acid rock-loving species in high-altitude glacial troughs, corries and on summit ridges. These include a number of montane bryophytes and arctic-alpine vascular plants, such as curved wood-rush <i>Luzula arcuata</i>, wavy meadow-grass <i>Poa flexuosa</i>, hare’s-foot sedge <i>Carex lachenalii</i>, alpine tufted hair-grass <i>Deschampsia alpina</i>, starwort mouse-ear <i>Cerastium cerastoides</i>, alpine speedwell <i>Veronica alpina</i> and Highland saxifrage <i>Saxifraga rivularis</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030104>Cadair Idris</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Cadair Idris is the most southerly site in the UK selected for high-altitude <b>siliceous scree</b> and as such is not as species-rich as more northerly examples. Much of the rock is dry and unstable, but on the extensive screes on steep slopes U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation is well-distributed, and on the boulder screes, lemon-scented fern <i>Oreopteris limbosperma</i> can be found together with a range of characteristic bryophytes and lichens.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016412>Cairngorms</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands, North Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Cairngorms complex contains representative examples of high altitude <b>siliceous scree</b> communities characteristic of the eastern Scottish Highlands. Extensive areas of scree occur on granite at a range of altitudes in the Cairngorms. The scree communities in this site are very diverse. Of particular interest is the flora of high-altitude screes in the snowy corries, with parsley fern <i>Cryptogramma crispa</i>, alpine lady-fern <i>Athyrium distentifolium</i> and rare wavy meadow-grass <i>Poa flexuosa</i> (U18). The flora is rich in rare moss species, for example <i>Dicranum glaciale</i>, and rare liverworts, such as <i>Tetralophozia setiformis</i> and <i>Marsupella adusta</i>. These occur on rocks in and about the snow-beds. There are also several northern Atlantic bryophytes such as <i>Scapania nimbosa</i>, <i>Scapania ornithopodioides</i> and <i>Anastrophyllum donnianum</i>, which are restricted to areas of late snow-lie where they are protected from winter frosts.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012946>Eryri/ Snowdonia</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Snowdonia is the largest site in Wales representative of <b>siliceous scree</b>. The site has extensive screes of igneous rocks with large stands of U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> vegetation; associated species include fir clubmoss <i>Huperzia selago</i>. Bryophyte and lichen-dominated screes are also well-represented and include important populations of rare and local montane and oceanic species, such as <i>Marsupella adusta</i>, <i>Marsupella stableri</i> and <i>Cornicularia narmoerica</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013141>Foinaven</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Foinaven represents highly acid screes, made up mainly of quartzite, in the far north-west Highlands. The extensive quartzite screes are very species-poor. However, there is a flora of Atlantic bryophytes associated with block screes at high altitudes. There is an important crustose lichen assemblage on the rocks.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012959>Glen Coe</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Glen Coe is representative of communities on <b>siliceous scree</b> derived from igneous rocks at a range of altitudes in the western Scottish Highlands. The characteristic species parsley fern <i>Cryptogramma crispa</i> occurs throughout the site, and tends to be found with alpine lady-fern <i>Athyrium distentifolium</i> in snowy corries at high altitude (U18). There is an abundance of ferns on the boulder screes within the site. These include lemon-scented fern <i>Oreopteris limbosperma</i>, and a number of oceanic species such as Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. Atlantic mosses and liverworts such as <i>Anastrophyllum donianum</i> and <i>Scapania nimbosa</i> are also abundant in screes on steep, shady, humid slopes. The rare Highland saxifrage <i>Saxifraga rivularis</i> occurs in springs and flushes amongst high-altitude scree.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012960>Lake District High Fells</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This complex is representative of <b>siliceous scree</b> communities found at high altitude in north-west England. The site has the most extensive development of screes with parsley fern <i>Cryptogramma crispa</i> in the UK. The main rock, the Borrowdale Volcanic Series (but more locally Skiddaw Slates), varies much in base-status, but the screes are chiefly base-poor. Siliceous screes are one of the most extensive habitats within the Lake District High Fells, covering large areas on moderately steep ground, always interspersed with other habitats. The screes vary from recently-formed loose scree in lower sections of gullies and below cliffs to stable areas colonised by grasses, bryophytes and ferns. The main scree NVC type present is U21 <i>Cryptogramma crispa</i> – <i>Deschampsia flexuosa</i> community. It is found throughout the complex, but major scree areas occur in Wasdale Screes, Helvellyn and Fairfield, Buttermere Fells, Scafell Pikes, Pillar and Ennerdale Fells and Skiddaw Group. The communities are well-developed and diverse with a wide range of characteristic species, including an abundance of parsley fern <i>Cryptogramma crispa</i> with associated species such as alpine lady’s mantle <i>Alchemilla alpina</i>, stone bramble <i>Rubus saxatilis</i>, heath bedstraw <i>Galium saxatile</i>, sheep’s fescue <i>Festuca ovina</i> and common bent <i>Agrostis capillaris</i>. Lemon-scented fern <i>Oreopteris limbosperma</i> is also found on the screes within Pillar and Ennerdale Fells. Bryophytes such as woolly hair-moss <i>Racomitrium lanuginosum</i>, <i>R. fasciculare</i>, <i>Rhytidiadelphus loreus</i> and <i>R. squarrosus</i> can be frequent. The screes provide a suitable microclimate for many oceanic moss and liverwort species such as <i>Scapania ornithopiodes</i> and <i>Kiaeria starkei</i>, found in Helvellyn and Fairfield.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013597>Loch Maree Complex</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Loch Maree Complex is representative of vegetation communities on <b>siliceous scree</b>, mainly of quartzite and sandstone, in north-west Scotland. Screes are extensive and the communities they support are well-developed and diverse, with a range of characteristic species. Parsley fern <i>Cryptogramma crispa</i> is locally abundant, northern rock-cress <i>Arabis petraea</i> is frequently found and alpine lady-fern <i>Athyrium distentifolium</i> occurs in high-altitude areas where snow lingers. Other ferns occur frequently in the screes, including mountain male-fern <i>Dryopteris oreades</i>, beech fern <i>Phegopteris connectilis</i>, lemon-scented fern <i>Oreopteris limbosperma</i> and the oceanic Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. The most outstanding feature of the vegetation on these sites is the abundance of northern Atlantic mosses and liverworts, which include <i>Plagiochila spinulosa</i>, <i>Anastrophyllum donnianum</i> and <i>Scapania nimbosa</i>, which are chiefly developed on steep, shady and humid slopes. The screes form a significant part of the habitat complex on this site, which is the most important single area in the UK for communities of these lower plants.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014774>Moor House  - Upper Teesdale</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Tees Valley and Durham</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Moor House – Upper Teesdale is representative of communities on both low and high altitude <b>siliceous scree</b> in northern England. Screes are extensive, with diverse plant communities. Cross Fell is a southern outlier of high-altitude gritstone scree, with a flora including rare lichens and some widespread montane vascular plants. Ferns including parsley fern <i>Cryptogramma crispa</i> and holly fern <i>Polystichum lonchitis</i> occur on extensive whin-sill screes at lower altitudes.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012957>Beinn a&#x27; Ghlo</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012897>Beinn Dearg</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012900>Ben Lui</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012950>Ben Wyvis</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012821>Caenlochan</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012955>Creag Meagaidh</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016603>Cuilcagh Mountain</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012942>Drumochter Hills</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016615>Eastern Mournes</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030342>Fannich Hills</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030171>Inverpolly</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019841>Merrick Kells</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030208>Moffat Hills</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012935>North Harris</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030033>North Pennine Moors</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019797>Ronas Hill - North Roe</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012594>Rum</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014739>Strathglass Complex</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0012957 class="space-right">Beinn a&#x27; Ghlo</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012897 class="space-right">Beinn Dearg</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012900 class="space-right">Ben Lui</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012950 class="space-right">Ben Wyvis</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012821 class="space-right">Caenlochan</a>
+        Eastern Scotland, North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012955 class="space-right">Creag Meagaidh</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016603 class="space-right">Cuilcagh Mountain</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012942 class="space-right">Drumochter Hills</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016615 class="space-right">Eastern Mournes</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030342 class="space-right">Fannich Hills</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030171 class="space-right">Inverpolly</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019841 class="space-right">Merrick Kells</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030208 class="space-right">Moffat Hills</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012935 class="space-right">North Harris</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030033 class="space-right">North Pennine Moors</a>
+        Cumbria, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019797 class="space-right">Ronas Hill - North Roe</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012594 class="space-right">Rum</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014739 class="space-right">Strathglass Complex</a>
+        Highlands and Islands
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -366,6 +474,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

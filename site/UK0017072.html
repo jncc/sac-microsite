@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0017072">Berwickshire and North Northumberland Coast</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Berwickshire and North Northumberland Coast</h1>
+
+<div class="section">
+    <h1>
+        Berwickshire and North Northumberland Coast
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Eastern Scotland, Extra-Regio, Northumberland and Tyne and Wear</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NU206401</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,51 +150,116 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0017072_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Berwickshire and North Northumberland Coast SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Berwickshire and North Northumberland Coast SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (73.2%) <br />
+            </li>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (13.4%) <br />
+            </li>
+            <li>
+                Salt marshes, Salt pastures, Salt steppes (1.3%) <br />
+            </li>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (4.5%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (6.7%) <br />
+            </li>
+            <li>
+                Improved grassland (0.5%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (0.4%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0017072.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Marine areas, Sea inlets (73.2%) <br />Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (13.4%) <br />Salt marshes, Salt pastures, Salt steppes (1.3%) <br />Coastal sand dunes, Sand beaches, Machair (4.5%) <br />Shingle, Sea cliffs, Islets (6.7%) <br />Improved grassland (0.5%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (0.4%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0017072.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a>
     </div>
-</div>   
-<div class="row"> 
+<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. There is variation in the distribution of features of interest along the coast. Stretches of the coast in England support a very extensive range of intertidal <b>mudflats and sandflats</b>, ranging from wave-exposed beaches to sheltered muddy flats with rich infaunal communities. These have been selected as biologically diverse and extensive examples of clean sandflats on the east coast. Those in the Lindisfarne and Budle Bay area and on the adjacent open coast flats north of Holy Island are the most extensive in north-east England, with the largest intertidal beds of narrow-leaved eelgrass <i>Zostera angustifolia</i> and dwarf eelgrass <i>Z. noltei</i> on the east coast of England, a diverse infauna, and some large beds of mussels <i>Mytilus edulis</i>. Some of the bays along the open coast have mobile sediments, with populations of sand-eels <i>Ammodytes</i> sp., small crustaceans and polychaete worms. More sheltered sediments have very stable lower shore communities of burrowing heart-urchins <i>Echinocardium cordatum</i> and bivalve molluscs.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a>
+    </div>
+<p>Whilst predominantly rocky, this extensive and diverse stretch of coastline has several characteristic, sediment-dominated embayments in north-east England, including Budle Bay, Beadnell Bay and Embleton Bay. Each of these areas is relatively exposed and uniform in nature and is characterised by crustacean /polychaete- and bivalve/polychaete-biotopes. Budle Bay is adjacent and continuous with the bay to the north between the island of Lindisfarne and the mainland. This area forms one of the most extensive areas of sandflats between the Firth of Forth and the Wash, and these are some of the richest examples of these biotopes in north-east England. In the sublittoral, Beadnell and Embleton Bays form a sandy break in the otherwise continuous reef habitat in this site. These areas are characterised by extensive areas of clean sand with often dense populations of the heart urchin <i>Echinocardium cordatum</i>, and razor clams <i>Ensis siliqua</i> and <i>E. arcuatus</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>This site is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. Moderately wave-exposed reef habitats occur throughout the site. The subtidal rocky <b>reefs</b> and their rich marine communities, together with the wide variety of associated littoral reefs, are the most diverse known on the North Sea coast. Their remarkably varied nature is due to the wide range of physical conditions in the area, from wave-exposed locations on the open coast, through more sheltered reefs within bays, to those exposed to strong tidal streams in sounds and off headlands. There is also a diverse range of rock types, including soft limestones and hard volcanic rock. The Farne Islands are of special importance as they are among the very few rocky islands with extensive reefs in the enclosed North Sea. A large number of the species present are characteristic of cold water and several reach their southern or eastern limit of distribution within the area.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a>
+    </div>
+<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. Caves occur throughout the site in both the intertidal and the subtidal zones in a range of different hard rock exposures. There are examples of partially submerged caves in the cliffs north of Berwick and in the limestone at Howick (south of Craster), and there are submerged sea caves, tunnels and arches in the volcanic rock of the Farne Islands and around St Abb’s Head. Caves occur in association with <b>1170 Reefs</b>, in both the intertidal and the subtidal zones. Depending on the depth of the cave and its morphology, the site supports a range of distinct biological communities.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a></p>
-<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. There is variation in the distribution of features of interest along the coast. Stretches of the coast in England support a very extensive range of intertidal <b>mudflats and sandflats</b>, ranging from wave-exposed beaches to sheltered muddy flats with rich infaunal communities. These have been selected as biologically diverse and extensive examples of clean sandflats on the east coast. Those in the Lindisfarne and Budle Bay area and on the adjacent open coast flats north of Holy Island are the most extensive in north-east England, with the largest intertidal beds of narrow-leaved eelgrass <i>Zostera angustifolia</i> and dwarf eelgrass <i>Z. noltei</i> on the east coast of England, a diverse infauna, and some large beds of mussels <i>Mytilus edulis</i>. Some of the bays along the open coast have mobile sediments, with populations of sand-eels <i>Ammodytes</i> sp., small crustaceans and polychaete worms. More sheltered sediments have very stable lower shore communities of burrowing heart-urchins <i>Echinocardium cordatum</i> and bivalve molluscs.</p></div>
-<div>
-    <p><b>1160</b> <a href=/habitat/H1160/>Large shallow inlets and bays</a></p>
-<p>Whilst predominantly rocky, this extensive and diverse stretch of coastline has several characteristic, sediment-dominated embayments in north-east England, including Budle Bay, Beadnell Bay and Embleton Bay. Each of these areas is relatively exposed and uniform in nature and is characterised by crustacean /polychaete- and bivalve/polychaete-biotopes. Budle Bay is adjacent and continuous with the bay to the north between the island of Lindisfarne and the mainland. This area forms one of the most extensive areas of sandflats between the Firth of Forth and the Wash, and these are some of the richest examples of these biotopes in north-east England. In the sublittoral, Beadnell and Embleton Bays form a sandy break in the otherwise continuous reef habitat in this site. These areas are characterised by extensive areas of clean sand with often dense populations of the heart urchin <i>Echinocardium cordatum</i>, and razor clams <i>Ensis siliqua</i> and <i>E. arcuatus</i>.</p></div>
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>This site is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. Moderately wave-exposed reef habitats occur throughout the site. The subtidal rocky <b>reefs</b> and their rich marine communities, together with the wide variety of associated littoral reefs, are the most diverse known on the North Sea coast. Their remarkably varied nature is due to the wide range of physical conditions in the area, from wave-exposed locations on the open coast, through more sheltered reefs within bays, to those exposed to strong tidal streams in sounds and off headlands. There is also a diverse range of rock types, including soft limestones and hard volcanic rock. The Farne Islands are of special importance as they are among the very few rocky islands with extensive reefs in the enclosed North Sea. A large number of the species present are characteristic of cold water and several reach their southern or eastern limit of distribution within the area.</p></div>
-<div>
-    <p><b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a></p>
-<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. Caves occur throughout the site in both the intertidal and the subtidal zones in a range of different hard rock exposures. There are examples of partially submerged caves in the cliffs north of Berwick and in the limestone at Howick (south of Craster), and there are submerged sea caves, tunnels and arches in the volcanic rock of the Farne Islands and around St Abb’s Head. Caves occur in association with <b>1170 Reefs</b>, in both the intertidal and the subtidal zones. Depending on the depth of the cave and its morphology, the site supports a range of distinct biological communities.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1364</b> <a href=/species/S1364/>Grey seal</a> <b>Halichoerus grypus</b></p>
-<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. There is variation in the distribution of features of interest along the coast. The north-east England coastal section is representative of <b>grey seal <i>Halichoerus grypus</i></b> breeding colonies in the south-east of its breeding range in the UK. It is the most south-easterly site selected for this species, and supports around 2.5% of annual UK pup production.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1364
+            <a href=/species/S1364/>Grey seal</a>
+        </b>
+        <i>Halichoerus grypus</i>
+        
     </div>
+<p>This is an extensive and diverse stretch of coastline in north-east England and south-east Scotland. There is variation in the distribution of features of interest along the coast. The north-east England coastal section is representative of <b>grey seal <i>Halichoerus grypus</i></b> breeding colonies in the south-east of its breeding range in the UK. It is the most south-easterly site selected for this species, and supports around 2.5% of annual UK pup production.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -275,6 +348,6 @@ Marine areas, Sea inlets (73.2%) <br />Tidal rivers, Estuaries, Mud flats, Sand 
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

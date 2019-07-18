@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,115 +77,170 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1393"><I>Drepanocladus</I> (<I>Hamatocaulis</I>) <I>vernicosus</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Lower plant species</h1>
-</div>
-<h4>1393 Slender green feather-moss [<I>Drepanocladus</I> (<I>Hamatocaulis</I>) <I>vernicosus</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1393/map">
-            <img src="/images/maps/features/thumbnails/S1393_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1393</b> <I>Drepanocladus</I> (<I>Hamatocaulis</I>) <I>vernicosus</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1393/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1393/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1393</span>
+        <span class="space-right">Slender green feather-moss</span>
+        <I>Drepanocladus</I> (<I>Hamatocaulis</I>) <I>vernicosus</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Lower plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1393/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1393/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Slender green feather-moss <I>Drepanocladus vernicosus</B></I> is a medium-sized straggling moss of base-rich flushes and springs in the uplands and, more rarely, lowland sedge fens. It may grow with small sedges <I>Carex</I> spp., black bog-rush <I>Schoenus nigricans</I> and other characteristic mosses of base-rich flushes and fens, such as <I>Campylium stellatum</I> and <I>Scorpidium scorpioides</I>, and liverworts such as <I>Leiocolea bantriensis</I>. Although more frequent in the uplands, it does not reach very high altitudes, and the highest record is at 450&nbsp;m on Snowdon. It may be declining because of destruction of its habitat, lowering of the local water table at lowland sites, and through heavy grazing of flushes by sheep and deer at upland sites.</P><I>
 <P>Drepanocladus</I> and related genera are taxonomically difficult and the group has recently been revised. <B><I>Drepanocladus vernicosus</B></I> is referred to in most current literature as <I>Hamatocaulis vernicosus</I> (Mitt.) Hedenäs. It has been confused with the related <I>Scorpidium cossonii</I> [<I>Drepanocladus cossonii</I>], but its distribution has been clarified by examination of herbarium specimens and recent survey work.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1393/map">
+                <img src="/images/maps/features/thumbnails/S1393_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1393</b> <I>Drepanocladus</I> (<I>Hamatocaulis</I>) <I>vernicosus</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Drepanocladus vernicosus</B></I> is rare but widely distributed throughout Europe, although it is thought to be declining because of widespread destruction and damage of its habitat. It is listed as Data deficient in Europe. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1393/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK, <B><I>Drepanocladus&nbsp;vernicosus</B></I> is widespread in the upland areas of north Wales and north-west England but appears to be infrequent in Scotland. It has not been seen recently at several of its lowland localities in England. It is listed as Lower risk (Nationally scarce) in Britain. </P></p>
+    <p>View <a href=/species/S1393/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Information on the current UK distribution of Drepanocladus vernicosus is limited, but the selected sites include the largest and most robust populations known, and represent the species across its extant range. Ecological variation has also been taken into account, and the site series includes examples of both upland flushes and lowland fens.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014778>Asby Complex</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
+<li>
+    <b>
+        <a href=/site/UK0014778 class="space-right">Asby Complex</a>
+        Cumbria
+    </b>
+    <div>
+Sunbiggin Tarn is an upland locality in north-west England supporting <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b>. The site contains a large population of this species in extensive upland flush systems and wet calcareous sedge fen on Carboniferous limestone. <b><i>D. vernicosus</i></b> grows here with black bog-rush <i>Schoenus nigricans</i> and the liverwort <i>Leiocolea bantriensis</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030121 class="space-right">Corsydd Eifionydd</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+<b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b> occurs at two separate but nearby lowland localities at this fen complex. At Cors Gyfelog it is found near the flushed margins of the fen basin, while at Cors Llanllyfni it is associated with two hillside flushes within a stand of heath.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012946 class="space-right">Eryri/ Snowdonia</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+This is an upland site in north Wales for <b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b>, which has been recorded in flushes up to an altitude of 450 m.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030221 class="space-right">Mynydd Epynt</a>
+        East Wales
+    </b>
+    <div>
+<b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b> occurs in at least five flush complexes within this upland range in south central Wales. The flush habitats are generally situated within expanses of grass moorland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030239 class="space-right">Pitkeathly Mires</a>
+        Eastern Scotland
+    </b>
+    <div>
+Pitkeathly consists of a group of upland mires which form an undisturbed area of flushes, with poor- and intermediate fen. The site contains a small but healthy population of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> and is the most northerly Scottish representative.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012598 class="space-right">Preseli</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Preseli is representative of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> in south-west Wales. It grows here in upland flushes and seepages amidst wet heathland habitat.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013594 class="space-right">Whitlaw and Branxholme</a>
+        Eastern Scotland
+    </b>
+    <div>
+Whitlaw and Branxholme consists of a series of basic alkaline and neutral fens of considerable diversity. It holds a recently-confirmed strong population of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> providing a south-east Scotland representative site.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Sunbiggin Tarn is an upland locality in north-west England supporting <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b>. The site contains a large population of this species in extensive upland flush systems and wet calcareous sedge fen on Carboniferous limestone. <b><i>D. vernicosus</i></b> grows here with black bog-rush <i>Schoenus nigricans</i> and the liverwort <i>Leiocolea bantriensis</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030121>Corsydd Eifionydd</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b> occurs at two separate but nearby lowland localities at this fen complex. At Cors Gyfelog it is found near the flushed margins of the fen basin, while at Cors Llanllyfni it is associated with two hillside flushes within a stand of heath.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012946>Eryri/ Snowdonia</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is an upland site in north Wales for <b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b>, which has been recorded in flushes up to an altitude of 450 m. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030221>Mynydd Epynt</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><b>Slender green feather-moss <i>Drepanocladus vernicosus</i></b> occurs in at least five flush complexes within this upland range in south central Wales. The flush habitats are generally situated within expanses of grass moorland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030239>Pitkeathly Mires</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Pitkeathly consists of a group of upland mires which form an undisturbed area of flushes, with poor- and intermediate fen. The site contains a small but healthy population of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> and is the most northerly Scottish representative.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012598>Preseli</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Preseli is representative of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> in south-west Wales. It grows here in upland flushes and seepages amidst wet heathland habitat. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013594>Whitlaw and Branxholme</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Whitlaw and Branxholme consists of a series of basic alkaline and neutral fens of considerable diversity. It holds a recently-confirmed strong population of <b>slender green feather-moss <i>Drepanocladus vernicosus</i></b> providing a south-east Scotland representative site.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030104>Cadair Idris</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012960>Lake District High Fells</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012680>Rhos Llawr-cwrt</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0030104 class="space-right">Cadair Idris</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012960 class="space-right">Lake District High Fells</a>
+        Cumbria
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012680 class="space-right">Rhos Llawr-cwrt</a>
+        West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -273,6 +327,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H1310"><I>Salicornia</I> and other annuals colonising mud and sand</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">1310</span>
+        <I>Salicornia</I> and other annuals colonising mud and sand
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Marine, coastal and halophytic habitats</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Marine, coastal and halophytic habitats</h1>
-</div>
-<h4>1310 <I>Salicornia</I> and other annuals colonising mud and sand</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H1310/map">
-            <img src="/images/maps/features/thumbnails/H1310_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>1310</b> <I>Salicornia</I> and other annuals colonising mud and sand. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1310/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H1310/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H1310/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H1310/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>This pioneer saltmarsh vegetation colonises intertidal mud and sandflats in areas protected from strong wave action and is an important precursor to the development of more stable saltmarsh vegetation. It develops at the lower reaches of saltmarshes where the vegetation is frequently flooded by the tide, and can also colonise open creek sides, depressions or pans within saltmarshes, as well as disturbed areas of upper saltmarshes.</P>
 <P>There is little variation within this habitat type, which typically comprises a small number of species. The following NVC types are represented: </P>
 <UL>
@@ -121,93 +128,149 @@
 <LI>SM9&nbsp; <I>Suaeda maritima</I> salt-marsh community</LI>
 <LI>SM27&nbsp; Ephemeral salt-marsh vegetation with <I>Sagina maritima</LI></UL></I>
 <P>The first three communities include open stands of perennial glasswort <I>Sarcocornia perennis</I>,<I> </I>glasswort <I>Salicornia</I> spp., or annual seablite <I>Suaeda maritima</I>. The density of these plants can vary and may be lower on sites with sandier substrates. Other species that may be found include common saltmarsh-grass <I>Puccinellia maritima</I>, common cord-grass <I>Spartina anglica </I>and sea aster <I>Aster tripolium</I>. <I>Sarcocornia perennis</I> is absent from Scotland. A further form of the habitat (SM27) consists of ephemeral vegetation colonising open pans in upper saltmarshes. Characteristic plants of this vegetation type include sea pearlwort <I>Sagina maritima</I> and knotted pearlwort <I>S.&nbsp;nodosa</I>.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H1310/map">
+                <img src="/images/maps/features/thumbnails/H1310_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>1310</b> <I>Salicornia</I> and other annuals colonising mud and sand. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>This form of saltmarsh vegetation is widely distributed throughout coastal areas of the EU.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H1310/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>There are over 2,300&nbsp;ha of <B><I>Salicornia</I> and other annuals colonising mud and sand</B> in the UK, and it is widespread in the saltmarshes of England and Wales. However, the area of the habitat type is restricted in Scotland and Northern Ireland because of a lack of new sediment for saltmarsh development. </P></p>
+    <p>Click <a href=/habitat/H1310/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0020020 class="space-right">Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+    <div>
+Carmarthen Bay and Estuaries in south Wales is selected as representative of pioneer glasswort <i>Salicornia</i> spp. saltmarsh in the south-west of the UK. It forms an integral part of the estuarine system, supporting extensive pioneer communities and contributing to a complete sequence of saltmarsh vegetation, including transitions to upper saltmeadow and to important sand dune habitats.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030131 class="space-right">Dee Estuary/ Aber Dyfrdwy</a>
+        Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys
+    </b>
+    <div>
+<P>The Dee Estuary is representative of pioneer glasswort <EM>Salicornia</EM> spp. saltmarsh in the north-west of the UK. <EM>Salicornia</EM> spp. saltmarsh forms extensive stands in the Dee, especially on the more sandy muds where there is reduced tidal scour. It mainly occurs on the seaward fringes as a pioneer community, and moving landwards usually forms a transition to common saltmarsh-grass <EM>Puccinellia maritima</EM> saltmarsh (SM10). There is also a low frequency of <EM>Salicornia</EM> spp. extending well inland. Associated species often include annual sea-blite <EM>Suaeda maritima</EM> and hybrid scurvy grass <EM>Cochlearia x hollandica</EM>.</P>    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019806 class="space-right">Dornoch Firth and Morrich More</a>
+        Extra-Regio, Highlands and Islands
+    </b>
+    <div>
+Dornoch Firth and Morrich More has the most extensive area of pioneer glasswort <i>Salicornia</i> spp. saltmarsh in Scotland. It is the most northerly site selected for this Annex I type, and represents the habitat type in the northern part of its range in the UK. It forms part of a complete transition from pioneer to upper saltmeadow and important sand dune habitats.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013690 class="space-right">Essex Estuaries</a>
+        Essex, Extra-Regio
+    </b>
+    <div>
+Glasswort <i>Salicornia</i> spp. saltmarsh in the Essex estuaries on the east coast of England forms an integral part of the transition from the extensive and varied intertidal mud and sandflats through to upper saltmeadows. Although the saltmarshes in this area are generally eroding, secondary pioneer communities appear as a precursor to erosion on the seaward edge of degraded mid-marsh communities. The area of pioneer marsh includes gradation into extensive cord-grass <i>Spartina</i> spp. swards.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0020025 class="space-right">Glannau M&#xF4;n: Cors heli / Anglesey Coast: Saltmarsh</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+This is part of a complex of saltmarsh and dune habitats lying either side of the dune systems at Newborough Warren, north Wales. It is therefore important in terms of the structural integrity of the site, which has been selected primarily for a range of sand dune Annex I types. The most significant stands of <i>Salicornia</i> spp. saltmarsh occur on Malltraeth Sands in the Cefni estuary.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013027 class="space-right">Morecambe Bay</a>
+        Cumbria, Extra-Regio, Lancashire
+    </b>
+    <div>
+Two types of pioneer saltmarsh are represented at Morecambe Bay in north-west England. Pioneer glasswort <i>Salicornia</i> spp. saltmarsh occurs intermittently along the coastline of the bay, forming a transition from the extensive intertidal sand and mudflats to the distinctive saltmeadows at this site. The sea pearlwort <i>Sagina maritima</i> community occurs in open pans on the upper marsh.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013025 class="space-right">Solway Firth</a>
+        Cumbria, Extra-Regio, South Western Scotland
+    </b>
+    <div>
+The pioneer glasswort <i>Salicornia</i> spp. saltmarsh in the Solway is part of a complete sequence of saltmarsh types, from pioneer communities through extensive mid-to high saltmarsh and transitions to tidal grazing marsh. It represents <b><i>Salicornia</i> and other annuals colonising mud and sand</b> in north-west England and south-west Scotland. The pioneer marshes in this site develop in response to changing river channels and erosion of existing marsh and form part of a dynamic suite of maritime habitat types for which the site has been separately selected.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0017075 class="space-right">The Wash and North Norfolk Coast</a>
+        East Anglia, Lincolnshire
+    </b>
+    <div>
+The largest single area of this vegetation in the UK occurs at this site on the east coast of England, which is one of the few areas in the UK where saltmarshes are generally accreting. The proportion of the total saltmarsh vegetation represented by <b><i>Salicornia</i> and other annuals colonising mud and sand</b> is high because of the extensive enclosure of marsh in this site. The vegetation is also unusual in that it forms a pioneer community with common cord-grass <i>Spartina anglica</i> in which it is an equal component. The inter-relationship with other habitats is significant, forming a transition to important dune, saltmeadow and halophytic scrub communities.     </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020020>Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Carmarthen Bay and Estuaries in south Wales is selected as representative of pioneer glasswort <i>Salicornia</i> spp. saltmarsh in the south-west of the UK. It forms an integral part of the estuarine system, supporting extensive pioneer communities and contributing to a complete sequence of saltmarsh vegetation, including transitions to upper saltmeadow and to important sand dune habitats.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030131>Dee Estuary/ Aber Dyfrdwy</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><P>The Dee Estuary is representative of pioneer glasswort <EM>Salicornia</EM> spp. saltmarsh in the north-west of the UK. <EM>Salicornia</EM> spp. saltmarsh forms extensive stands in the Dee, especially on the more sandy muds where there is reduced tidal scour. It mainly occurs on the seaward fringes as a pioneer community, and moving landwards usually forms a transition to common saltmarsh-grass <EM>Puccinellia maritima</EM> saltmarsh (SM10). There is also a low frequency of <EM>Salicornia</EM> spp. extending well inland. Associated species often include annual sea-blite <EM>Suaeda maritima</EM> and hybrid scurvy grass <EM>Cochlearia x hollandica</EM>.</P></div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019806>Dornoch Firth and Morrich More</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Dornoch Firth and Morrich More has the most extensive area of pioneer glasswort <i>Salicornia</i> spp. saltmarsh in Scotland. It is the most northerly site selected for this Annex I type, and represents the habitat type in the northern part of its range in the UK. It forms part of a complete transition from pioneer to upper saltmeadow and important sand dune habitats.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013690>Essex Estuaries</a></div>
-    <div class="cell large-6 small-12"><b>Essex, Extra-Regio</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Glasswort <i>Salicornia</i> spp. saltmarsh in the Essex estuaries on the east coast of England forms an integral part of the transition from the extensive and varied intertidal mud and sandflats through to upper saltmeadows. Although the saltmarshes in this area are generally eroding, secondary pioneer communities appear as a precursor to erosion on the seaward edge of degraded mid-marsh communities. The area of pioneer marsh includes gradation into extensive cord-grass <i>Spartina</i> spp. swards.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020025>Glannau M&#xF4;n: Cors heli / Anglesey Coast: Saltmarsh</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is part of a complex of saltmarsh and dune habitats lying either side of the dune systems at Newborough Warren, north Wales. It is therefore important in terms of the structural integrity of the site, which has been selected primarily for a range of sand dune Annex I types. The most significant stands of <i>Salicornia</i> spp. saltmarsh occur on Malltraeth Sands in the Cefni estuary.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013027>Morecambe Bay</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, Lancashire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Two types of pioneer saltmarsh are represented at Morecambe Bay in north-west England. Pioneer glasswort <i>Salicornia</i> spp. saltmarsh occurs intermittently along the coastline of the bay, forming a transition from the extensive intertidal sand and mudflats to the distinctive saltmeadows at this site. The sea pearlwort <i>Sagina maritima</i> community occurs in open pans on the upper marsh.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013025>Solway Firth</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, South Western Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The pioneer glasswort <i>Salicornia</i> spp. saltmarsh in the Solway is part of a complete sequence of saltmarsh types, from pioneer communities through extensive mid-to high saltmarsh and transitions to tidal grazing marsh. It represents <b><i>Salicornia</i> and other annuals colonising mud and sand</b> in north-west England and south-west Scotland. The pioneer marshes in this site develop in response to changing river channels and erosion of existing marsh and form part of a dynamic suite of maritime habitat types for which the site has been separately selected.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0017075>The Wash and North Norfolk Coast</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia, Lincolnshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The largest single area of this vegetation in the UK occurs at this site on the east coast of England, which is one of the few areas in the UK where saltmarshes are generally accreting. The proportion of the total saltmarsh vegetation represented by <b><i>Salicornia</i> and other annuals colonising mud and sand</b> is high because of the extensive enclosure of marsh in this site. The vegetation is also unusual in that it forms a pioneer community with common cord-grass <i>Spartina anglica</i> in which it is an equal component. The inter-relationship with other habitats is significant, forming a transition to important dune, saltmeadow and halophytic scrub communities. </div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013031>Drigg Coast</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030170>Humber Estuary</a></div>
-    <div class="cell large-6 small-12"><b>East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013117>Pen Ll&#x177;n a`r Sarnau/ Lleyn Peninsula and the Sarnau</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030059>Solent Maritime</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016618>Strangford Lough</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0013031 class="space-right">Drigg Coast</a>
+        Cumbria
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030170 class="space-right">Humber Estuary</a>
+        East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013117 class="space-right">Pen Ll&#x177;n a&#x27;r Sarnau/ Lleyn Peninsula and the Sarnau</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030059 class="space-right">Solent Maritime</a>
+        Extra-Regio, Hampshire and Isle of Wight, Surrey, East and West Sussex
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016618 class="space-right">Strangford Lough</a>
+        Northern Ireland
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -294,6 +357,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

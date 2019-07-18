@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,89 +77,132 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1149"><I>Cobitis taenia</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: fish</h1>
-</div>
-<h4>1149 Spined loach [<I>Cobitis taenia</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1149/map">
-            <img src="/images/maps/features/thumbnails/S1149_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1149</b> <I>Cobitis taenia</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1149/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1149/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1149</span>
+        <span class="space-right">Spined loach</span>
+        <I>Cobitis taenia</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: fish</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1149/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1149/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>spined loach <I>Cobitis taenia</B></I> is a small bottom-living fish that has a restricted microhabitat associated with a specialised feeding mechanism. They use a complex branchial apparatus to filter-feed in fine but well-oxygenated sediments. Optimal habitat is patchy cover of submerged (and possibly emergent) macrophytes, which are important for spawning, and a sandy (also silty) substrate, into which juvenile fish tend to bury themselves. </P>
 <DIR></DIR></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1149/map">
+                <img src="/images/maps/features/thumbnails/S1149_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1149</b> <I>Cobitis taenia</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>spined loach <I>Cobitis taenia</B></I> has an extremely wide distribution across Europe and Asia. Even with such a broad range and ecological niche it is generally regarded as threatened, if not rare, in Europe.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1149/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK, <B>spined loach <I>Cobitis taenia</B></I> appears to be restricted to just five east-flowing river systems in eastern England – the Rivers Trent, Welland, Witham, Nene and Great Ouse, with their associated waterways (Perrow &amp; Jowitt 2000). Within these catchments it appears to occur patchily in a variety of waterbodies, including small streams, large rivers and both large and small drainage ditches. Little is known about its occurrence in open water, although it is known from a number of small lakes and gravel-pits. With limited means of dispersal, the UK populations are largely genetically isolated from each other. </P></p>
+    <p>View <a href=/species/S1149/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Five sites within the core area of spined loach Cobitis taenia distribution in the UK have been selected. These sites include examples of rivers and artificial drainage systems where good population densities have been recorded.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures are also necessary to support its conservation in the UK.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030085>Baston Fen</a></div>
-    <div class="cell large-6 small-12"><b>Lincolnshire</b></div>
+<li>
+    <b>
+        <a href=/site/UK0030085 class="space-right">Baston Fen</a>
+        Lincolnshire
+    </b>
+    <div>
+The Counterdrain, a large drainage channel running alongside Baston Fen, contains high densities of <b>spined loach <i>Cobitis taenia</i></b>. It is an example of spined loach populations in the Welland catchment. The patchy cover from submerged plants provides excellent habitat for the species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030222 class="space-right">Nene Washes</a>
+        East Anglia
+    </b>
+    <div>
+Moreton’s Leam, a large drainage channel running along the eastern flank of the Nene Washes, contains the highest recorded density of <b>spined loach <i>Cobitis taenia</i></b> in the UK. There may also be thriving populations in the smaller ditches of the Washes. The site represents spined loach populations in the Nene catchment.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013011 class="space-right">Ouse Washes</a>
+        East Anglia
+    </b>
+    <div>
+The Ouse Washes represent <b>spined loach <i>Cobitis taenia</i></b> populations within the River Ouse catchment. The Counter Drain, with its clear water and abundant macrophytes, is particularly important, and a healthy population of spined loach is known to occur.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030258 class="space-right">River Mease</a>
+        Derbyshire and Nottinghamshire, Leicestershire, Rutland and Northamptonshire, Shropshire and Staffordshire
+    </b>
+    <div>
+The River Mease is a good example of a riverine population of <b>spined loach <i>Cobitis taenia</i></b>. It is a small tributary of the River Trent and has retained a reasonable degree of channel diversity compared to other similar rivers containing spined loach populations. It has extensive beds of submerged plants along much of its length which, together with its relatively sandy sediments (as opposed to cohesive mud) provides good habitat opportunities for the species.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Counterdrain, a large drainage channel running alongside Baston Fen, contains high densities of <b>spined loach <i>Cobitis taenia</i></b>. It is an example of spined loach populations in the Welland catchment. The patchy cover from submerged plants provides excellent habitat for the species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030222>Nene Washes</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Moreton’s Leam, a large drainage channel running along the eastern flank of the Nene Washes, contains the highest recorded density of <b>spined loach <i>Cobitis taenia</i></b> in the UK. There may also be thriving populations in the smaller ditches of the Washes. The site represents spined loach populations in the Nene catchment.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013011>Ouse Washes</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Ouse Washes represent <b>spined loach <i>Cobitis taenia</i></b> populations within the River Ouse catchment. The Counter Drain, with its clear water and abundant macrophytes, is particularly important, and a healthy population of spined loach is known to occur.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030258>River Mease</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire, Leicestershire, Rutland and Northamptonshire, Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The River Mease is a good example of a riverine population of <b>spined loach <i>Cobitis taenia</i></b>. It is a small tributary of the River Trent and has retained a reasonable degree of channel diversity compared to other similar rivers containing spined loach populations. It has extensive beds of submerged plants along much of its length which, together with its relatively sandy sediments (as opposed to cohesive mud) provides good habitat opportunities for the species.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014782>Fenland</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0014782 class="space-right">Fenland</a>
+        East Anglia
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -247,6 +289,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

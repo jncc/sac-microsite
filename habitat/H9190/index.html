@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,99 +77,149 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H9190">Old acidophilous oak woods with <I>Quercus robur</I> on sandy plains</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">9190</span>
+        Old acidophilous oak woods with <I>Quercus robur</I> on sandy plains
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Forests</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Forests</h1>
-</div>
-<h4>9190 Old acidophilous oak woods with <I>Quercus robur</I> on sandy plains</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H9190/map">
-            <img src="/images/maps/features/thumbnails/H9190_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>9190</b> Old acidophilous oak woods with <I>Quercus robur</I> on sandy plains. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H9190/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H9190/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H9190/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H9190/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>This habitat type comprises ancient lowland oak woodland on acidic, sandy or gravelly substrates. Veteran trees are relatively abundant in UK stands compared to examples in continental Europe, and are often associated with assemblages of notable lichens, fungi and invertebrates. </P>
 <P>The ground flora is generally species-poor, and comprises calcifuge sub-shrubs such as bilberry <I>Vaccinium myrtillus</I> and heather <I>Calluna vulgaris</I>, grasses such as wavy hair-grass <I>Deschampsia flexuosa</I> and creeping soft-grass <I>Holcus mollis</I>, and herbs such as heath bedstraw <I>Galium</I> <I>saxatile</I> and common cow-wheat <I>Melampyrum pratense</I>, together with acidophilous bryophytes. Bracken <I>Pteridium aquilinum</I> can become dense where the sands are deep and loose. It is broadly equivalent to NVC type W16&nbsp;<I>Quercus</I> spp. – <I>Betula</I> spp. – <I>Deschampsia flexuosa</I> woodland and some stands of W10&nbsp;<I>Quercus robur – Pteridium aquilinum – Rubus fruticosus</I> woodland. </P>
 <P>The floristics of UK examples are typical for the type, apart from the absence of a few more continental species such as May lily <I>Maianthemum bifolium</I>. The type is limited to the south and east of Britain because to the west the oakwoods start to acquire a more oceanic character that places them within <B>91A0 Old sessile oak woods with <I>Ilex</I> and <I>Blechnum</I> in the British Isles</B>.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H9190/map">
+                <img src="/images/maps/features/thumbnails/H9190_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>9190</b> Old acidophilous oak woods with <I>Quercus robur</I> on sandy plains. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Old acidophilous oak woods</B> are found on highly acidic and impoverished soils derived from siliceous sedimentary rocks or very often from aeolian, fluvio-glacial or morainic deposits across the Baltic and North Sea plain. They occur from Poland through Germany and into the Netherlands, with more local areas in the Ardennes, middle Rhine, northern France and Paris Basin. Across their range, these woods are now extremely local.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H9190/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Old acidophilous oak woods</B> are limited to the south and east of England. Many examples are secondary, having developed on, for example, former heathland. </P></p>
+    <p>Click <a href=/habitat/H9190/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0012740 class="space-right">Birklands and Bilhaugh</a>
+        Derbyshire and Nottinghamshire
+    </b>
+    <div>
+Birklands and Bilhaugh is the most northerly site selected for <b>old acidophilous oak woods</b> and is notable for its rich invertebrate fauna, particularly spiders, and for a diverse fungal assemblage, including <i>Grifoa suphurea</i> and <i>Fistulina hepatica</i>. Both native oak species, <i>Quercus petraea</i> and <i>Quercus robur</i>, are present, with a mixture of age-classes, so there is good potential for maintaining the structure and function of the woodland system and a continuity of dead-wood habitats.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012741 class="space-right">Staverton Park and The Thicks, Wantisden</a>
+        East Anglia
+    </b>
+    <div>
+This site is representative of <b>old acidophilous oak woods</b> in the eastern part of its range, and its ancient oaks <i>Quercus</i> spp. have rich invertebrate and epiphytic lichen assemblages. Despite being in the most ‘continental’ part of southern Britain, the epiphytic lichen flora of this site includes rare and Atlantic species, such as <i>Haemotomma elatinum</i>, <i>Lecidea cinnabarina</i>, <i>Thelotrema lepadinum</i>, <i>Graphis elegans</i> and <i>Stenocybe septata</i>. Part of the site includes an area of old holly <i>Ilex aquifolium</i> trees that are probably the largest in Britain. The site has a very well-documented history and good conservation of woodland structure and function.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012557 class="space-right">The New Forest</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The New Forest is representative of <B>old acidophilous oak woods</B> in the southern part of its UK range. It is the most extensive area of active wood-pasture with old oak <I>Quercus</I> spp. and beech <I>Fagus sylvatica</I> in north-west Europe and has outstanding invertebrate and lichen populations. This site was preferred over other sites that lack a succession of age-classes because, although scattered over a wide area, the oak stands are found within a predominantly semi-natural landscape with a more balanced age-structure of trees. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system. The New Forest has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012586 class="space-right">Windsor Forest and Great Park</a>
+        Berkshire, Buckinghamshire and Oxfordshire, Surrey, East and West Sussex
+    </b>
+    <div>
+Windsor represents <B>old acidophilous oak woods</B> in the south-eastern part of its UK range. It has the largest number of veteran oaks <I>Quercus</I> spp. in Britain (and probably in Europe), a consequence of its management as wood-pasture. It is of importance for its range and diversity of saproxylic invertebrates, including many rare species (e.g. the beetle <I>Lacon querceus</I>), some known in the UK only from this site, and has recently been recognised as having rich fungal assemblages. Windsor Forest and Great Park has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012740>Birklands and Bilhaugh</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Birklands and Bilhaugh is the most northerly site selected for <b>old acidophilous oak woods</b> and is notable for its rich invertebrate fauna, particularly spiders, and for a diverse fungal assemblage, including <i>Grifoa suphurea</i> and <i>Fistulina hepatica</i>. Both native oak species, <i>Quercus petraea</i> and <i>Quercus robur</i>, are present, with a mixture of age-classes, so there is good potential for maintaining the structure and function of the woodland system and a continuity of dead-wood habitats.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012741>Staverton Park and The Thicks, Wantisden</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site is representative of <b>old acidophilous oak woods</b> in the eastern part of its range, and its ancient oaks <i>Quercus</i> spp. have rich invertebrate and epiphytic lichen assemblages. Despite being in the most ‘continental’ part of southern Britain, the epiphytic lichen flora of this site includes rare and Atlantic species, such as <i>Haemotomma elatinum</i>, <i>Lecidea cinnabarina</i>, <i>Thelotrema lepadinum</i>, <i>Graphis elegans</i> and <i>Stenocybe septata</i>. Part of the site includes an area of old holly <i>Ilex aquifolium</i> trees that are probably the largest in Britain. The site has a very well-documented history and good conservation of woodland structure and function.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012557>The New Forest</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The New Forest is representative of <B>old acidophilous oak woods</B> in the southern part of its UK range. It is the most extensive area of active wood-pasture with old oak <I>Quercus</I> spp. and beech <I>Fagus sylvatica</I> in north-west Europe and has outstanding invertebrate and lichen populations. This site was preferred over other sites that lack a succession of age-classes because, although scattered over a wide area, the oak stands are found within a predominantly semi-natural landscape with a more balanced age-structure of trees. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system. The New Forest has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012586>Windsor Forest and Great Park</a></div>
-    <div class="cell large-6 small-12"><b>Berkshire, Buckinghamshire and Oxfordshire, Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Windsor represents <B>old acidophilous oak woods</B> in the south-eastern part of its UK range. It has the largest number of veteran oaks <I>Quercus</I> spp. in Britain (and probably in Europe), a consequence of its management as wood-pasture. It is of importance for its range and diversity of saproxylic invertebrates, including many rare species (e.g. the beetle <I>Lacon querceus</I>), some known in the UK only from this site, and has recently been recognised as having rich fungal assemblages. Windsor Forest and Great Park has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019857>Dorset Heaths</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030038>Dorset Heaths (Purbeck and Wareham) and Studland Dunes</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030299>West Dorset Alder Woods</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0019857 class="space-right">Dorset Heaths</a>
+        Dorset and Somerset
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030038 class="space-right">Dorset Heaths (Purbeck and Wareham) and Studland Dunes</a>
+        Dorset and Somerset
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030299 class="space-right">West Dorset Alder Woods</a>
+        Dorset and Somerset
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -257,6 +306,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

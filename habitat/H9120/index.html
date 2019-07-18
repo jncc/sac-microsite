@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H9120">Atlantic acidophilous beech forests with <I>Ilex</I> and sometimes also <I>Taxus</I> in the shrublayer (<I>Quercion robori-petraeae</I> or <I>Ilici-Fagenion</I>)</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">9120</span>
+        Atlantic acidophilous beech forests with <I>Ilex</I> and sometimes also <I>Taxus</I> in the shrublayer (<I>Quercion robori-petraeae</I> or <I>Ilici-Fagenion</I>)
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Forests</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Forests</h1>
-</div>
-<h4>9120 Atlantic acidophilous beech forests with <I>Ilex</I> and sometimes also <I>Taxus</I> in the shrublayer (<I>Quercion robori-petraeae</I> or <I>Ilici-Fagenion</I>)</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H9120/map">
-            <img src="/images/maps/features/thumbnails/H9120_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>9120</b> Atlantic acidophilous beech forests with <I>Ilex</I> and sometimes also <I>Taxus</I> in the shrublayer (<I>Quercion robori-petraeae</I> or <I>Ilici-Fagenion</I>). Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H9120/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H9120/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H9120/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H9120/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>This Annex&nbsp;I type comprises beech <I>Fagus sylvatica </I>forests with holly <I>Ilex</I>, growing on acid soils, in a humid Atlantic climate. Sites of this habitat type often are, or were, managed as wood-pasture systems, in which pollarding of beech and oak <I>Quercus</I> spp. was common. This is known to prolong the life of these trees. </P>
 <P>This habitat occurs on acid soils and falls within two NVC types: </P>
 <UL>
@@ -120,63 +127,104 @@
 <LI>W15<I>&nbsp; Fagus sylvatica – Deschampsia flexuosa</I> woodland </LI></UL>
 <P>Typical species include holly <I>Ilex aquifolium</I>, bracken <I>Pteridium aquilinum</I> and bramble <I>Rubus fruticosus</I>, with wavy hair-grass <I>Deschampsia flexuosa</I> in the most acidic areas. Epiphyte richness is a key factor in defining hyper-Atlantic forms of this Annex&nbsp;I type, although the <a targe="_blank" href="http://europa.eu.int/comm/environment/nature/hab-en.htm"><I>Interpretation manual of European habitats</I></a> (European Commission DG&nbsp;Environment 1999) also accommodates stands less rich in epiphytes.</P>
 <P>British stands of this woodland type tend to contain a higher proportion of veteran trees than examples found in other parts of Europe. The biodiversity of many sites is enriched by the presence of assemblages of epiphytic lichens or saproxylic invertebrates. Notable species include lichens such as <I>Agonimia octospra</I> and invertebrates such as the beetle <I>Diplocoelus fagi</I>. The moss <I>Zygodon forsteri</I> is also strongly associated with this habitat in the UK.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H9120/map">
+                <img src="/images/maps/features/thumbnails/H9120_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>9120</b> Atlantic acidophilous beech forests with <I>Ilex</I> and sometimes also <I>Taxus</I> in the shrublayer (<I>Quercion robori-petraeae</I> or <I>Ilici-Fagenion</I>). Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>This Annex&nbsp;I type is largely restricted by climatic factors to the western seaboard of Europe. It is extensive in the Armorican massifs of France and in northern Spain. There are close associations between the British examples and those found in Brittany and western Normandy.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H9120/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>In the UK the native range of this Annex&nbsp;I type is restricted, and extensive stands on acid sites are rare outside south-east England. However, some notable outliers occur in south Wales.</P></p>
+    <p>Click <a href=/habitat/H9120/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0030034 class="space-right">Burnham Beeches</a>
+        Berkshire, Buckinghamshire and Oxfordshire
+    </b>
+    <div>
+Burnham Beeches is an example of <b>Atlantic acidophilous beech forests</b> in central southern England. It is an extensive area of former beech wood-pasture with many old pollards and associated beech <i>Fagus sylvatica</i> and oak <i>Quercus</i> spp. high forest. Surveys have shown that it is one of the richest sites for saproxylic invertebrates in the UK, including 14 Red Data Book species. It also retains nationally important epiphytic communities, including the moss <i>Zygodon forsteri</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012715 class="space-right">Ebernoe Common</a>
+        Surrey, East and West Sussex
+    </b>
+    <div>
+Ebernoe Common has an extensive block of beech <i>Fagus sylvatica</i> high forest and former wood-pasture over dense holly <i>Ilex aquifolium</i>, and has a very rich epiphytic lichen flora, including <i>Agonimia octospora</i> and <i>Catillaria atropurpurea</i>. It represents <b>Atlantic acidophilous beech forests</b> in the south-eastern part of the habitat’s UK range. The beech woodland is associated with other woodland types, open glades and pools, which contribute to a high overall diversity. The woods are important for a number of bat species, in particular <b>1323 Bechstein’s bat <i>Myotis bechsteinii</i></b> and <b>1308 barbastelle <i>Barbastella barbastellus</i></b>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012720 class="space-right">Epping Forest</a>
+        Essex, Outer London
+    </b>
+    <div>
+Epping Forest represents <b>Atlantic acidophilous beech forests</b> in the north-eastern part of the habitat’s UK range. Although the epiphytes at this site have declined, largely as a result of air pollution, it remains important for a range of rare species, including the moss <i>Zygodon forsteri</i>. The long history of pollarding, and resultant large number of veteran trees, ensures that the site is also rich in fungi and dead-wood invertebrates.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012716 class="space-right">The Mens</a>
+        Surrey, East and West Sussex
+    </b>
+    <div>
+The Mens is an extensive area of mature beech <I>Fagus sylvatica</I> woodland rich in lichens, bryophytes, fungi and saproxylic invertebrates, and is one of the largest tracts of <B>Atlantic acidophilous beech forests</B> in the south-eastern part of the habitat’s UK range. It is developing a near-natural high forest structure, in response to only limited silvicultural intervention over the 20<SUP>th</SUP> century, combined with the effects of natural events such as the 1987 great storm.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012557 class="space-right">The New Forest</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain and represents <b>Atlantic acidophilous beech forests</b> in the most southerly part of the habitat’s UK range. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodland is open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030034>Burnham Beeches</a></div>
-    <div class="cell large-6 small-12"><b>Berkshire, Buckinghamshire and Oxfordshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Burnham Beeches is an example of <b>Atlantic acidophilous beech forests</b> in central southern England. It is an extensive area of former beech wood-pasture with many old pollards and associated beech <i>Fagus sylvatica</i> and oak <i>Quercus</i> spp. high forest. Surveys have shown that it is one of the richest sites for saproxylic invertebrates in the UK, including 14 Red Data Book species. It also retains nationally important epiphytic communities, including the moss <i>Zygodon forsteri</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012715>Ebernoe Common</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ebernoe Common has an extensive block of beech <i>Fagus sylvatica</i> high forest and former wood-pasture over dense holly <i>Ilex aquifolium</i>, and has a very rich epiphytic lichen flora, including <i>Agonimia octospora</i> and <i>Catillaria atropurpurea</i>. It represents <b>Atlantic acidophilous beech forests</b> in the south-eastern part of the habitat’s UK range. The beech woodland is associated with other woodland types, open glades and pools, which contribute to a high overall diversity. The woods are important for a number of bat species, in particular <b>1323 Bechstein’s bat <i>Myotis bechsteinii</i></b> and <b>1308 barbastelle <i>Barbastella barbastellus</i></b>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012720>Epping Forest</a></div>
-    <div class="cell large-6 small-12"><b>Essex, Outer London</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Epping Forest represents <b>Atlantic acidophilous beech forests</b> in the north-eastern part of the habitat’s UK range. Although the epiphytes at this site have declined, largely as a result of air pollution, it remains important for a range of rare species, including the moss <i>Zygodon forsteri</i>. The long history of pollarding, and resultant large number of veteran trees, ensures that the site is also rich in fungi and dead-wood invertebrates.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012716>The Mens</a></div>
-    <div class="cell large-6 small-12"><b>Surrey, East and West Sussex</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Mens is an extensive area of mature beech <I>Fagus sylvatica</I> woodland rich in lichens, bryophytes, fungi and saproxylic invertebrates, and is one of the largest tracts of <B>Atlantic acidophilous beech forests</B> in the south-eastern part of the habitat’s UK range. It is developing a near-natural high forest structure, in response to only limited silvicultural intervention over the 20<SUP>th</SUP> century, combined with the effects of natural events such as the 1987 great storm.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012557>The New Forest</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain and represents <b>Atlantic acidophilous beech forests</b> in the most southerly part of the habitat’s UK range. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodland is open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030127>Cwm Clydach Woodlands / Coedydd Cwm Clydach</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012586>Windsor Forest and Great Park</a></div>
-    <div class="cell large-6 small-12"><b>Berkshire, Buckinghamshire and Oxfordshire, Surrey, East and West Sussex</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0030127 class="space-right">Cwm Clydach Woodlands / Coedydd Cwm Clydach</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012586 class="space-right">Windsor Forest and Great Park</a>
+        Berkshire, Buckinghamshire and Oxfordshire, Surrey, East and West Sussex
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -263,6 +311,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

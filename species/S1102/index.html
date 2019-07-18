@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,86 +77,136 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1102"><I>Alosa alosa</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: fish</h1>
-</div>
-<h4>1102 Allis shad [<I>Alosa alosa</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1102/map">
-            <img src="/images/maps/features/thumbnails/S1102_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1102</b> <I>Alosa alosa</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1102/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1102/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1102</span>
+        <span class="space-right">Allis shad</span>
+        <I>Alosa alosa</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: fish</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1102/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1102/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>allis shad <I>Alosa alosa</B> </I>is a member of the herring family. It is difficult to distinguish from its close relative <B>1103 Twaite shad <I>Alosa fallax</B></I>. Both fish have streamlined bodies covered with distinct, large, circular scales which form a toothed edge on the lower margin and an adipose membrane which partially covers each eye. Measuring 30-50&nbsp;cm, allis shad are usually larger than twaite shad, which rarely exceed 40&nbsp;cm. However, the only reliable way of separating the two species is to examine the gills – allis shad have 90-130 gill-rakers (comb-like structures that are used to filter zooplankton) on the first gill arch, whereas twaite shad have only 40-60. </P>
 <P>Relatively little information is available on the habitat requirements of allis shad in freshwater. It grows in coastal waters and estuaries but migrates into rivers to spawn, swimming up to 800&nbsp;km upstream in continental Europe. However, allis shad do not readily traverse obstacles to migration such as dams or weirs, and this has been a major cause of their decline. Adults spawn at night with a great deal of noisy splashing; the eggs are released into the current where they settle among gaps in gravelly substrates. Spawning sites tend to be used year after year, and relatively shallow gravelly areas adjacent to deep pools are thought to represent optimal spawning habitat. Almost all adults die after spawning.</P>
 <P>Population declines in many parts of Europe have been attributed to the effects of pollution, overfishing and river obstructions to migration.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1102/map">
+                <img src="/images/maps/features/thumbnails/S1102_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1102</b> <I>Alosa alosa</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>allis shad <I>Alosa alosa</B></I> is rare and declining throughout its range on the western coasts of Europe, from southern Norway to Spain, and in the Mediterranean eastwards to northern Italy. The most successful breeding populations are thought to be in a few rivers in western France and Portugal.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1102/map>here</a> view UK distribution of this species</p>
-<p><B>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><B>
 <P>Allis shad <I>Alosa alosa</B></I> are rare in the UK. Although formerly known to spawn in several British river systems, the only recently-confirmed spawning site is in the Tamar Estuary (Plymouth Sound and Estuaries cSAC). There is probably a spawning population in the Solway Firth area (Maitland &amp; Lyle 2001), but rivers in the Severn catchment may no longer support viable breeding populations (Carstairs 2000).</P></p>
+    <p>View <a href=/species/S1102/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites in the UK have been selected where allis shad Alosa alosa has been reliably recorded as present, where there is previous evidence of breeding, and where there still appear to be favourable conditions for breeding. However, because there is only one recently-confirmed spawning population in the UK, this species is not currently a primary reason for site selection at any UK SAC. &#xD;&#xA;Marine sites that are considered important migration routes or feeding grounds for this species have also been included within the SAC series, usually where they are adjacent to a freshwater site.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+    </ul>
+</div>
 
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013010>Afon Tywi/ River Tywi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020020>Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013116>Pembrokeshire Marine/ Sir Benfro Forol</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013111>Plymouth Sound and Estuaries</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly, Devon, Extra-Regio</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013007>River Usk/ Afon Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012642>River Wye/ Afon Gwy</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0013010 class="space-right">Afon Tywi/ River Tywi</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0020020 class="space-right">Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013116 class="space-right">Pembrokeshire Marine/ Sir Benfro Forol</a>
+        Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013111 class="space-right">Plymouth Sound and Estuaries</a>
+        Cornwall and Isles of Scilly, Devon, Extra-Regio
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013007 class="space-right">River Usk/ Afon Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012642 class="space-right">River Wye/ Afon Gwy</a>
+        East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -244,6 +293,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

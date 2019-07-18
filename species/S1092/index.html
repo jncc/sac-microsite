@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,117 +77,171 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1092"><I>Austropotamobius pallipes</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: arthropods</h1>
-</div>
-<h4>1092 White-clawed (or Atlantic stream) crayfish [<I>Austropotamobius pallipes</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1092/map">
-            <img src="/images/maps/features/thumbnails/S1092_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1092</b> <I>Austropotamobius pallipes</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1092/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1092/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1092</span>
+        <span class="space-right">White-clawed (or Atlantic stream) crayfish</span>
+        <I>Austropotamobius pallipes</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: arthropods</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1092/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1092/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>white-clawed crayfish <I>Austropotamobius pallipes</B></I> lives in a diverse variety of clean aquatic habitats but especially favours hard-water streams and rivers. A major threat to the native white-clawed crayfish is posed by the introduction of non-native species of crayfish, which have been farmed in Britain since the late 1970s. Soon after this, crayfish plague (a virulent disease caused by the fungus <I>Aphanomyces astaci</I>) broke out and spread rapidly, causing drastic losses of native crayfish in rivers in England. It is believed that this disease was introduced and is spread by the most frequently farmed species, the North American signal crayfish <a targe="_blank" href="http://www.searchnbn.net/searchengine/search.jsp?searchTerm=%22Pacifastacus+leniusculus%22"><I>Pacifastacus leniusculus</I></a>, a carrier of the disease. Crayfish plague can be introduced into a waterbody not only by entry of signal crayfish but also by water, fish or equipment that has been in contact with signals. This greatly increases the risk to remaining white-clawed crayfish populations.</P>
 <P>Signal and other non-native crayfish are larger and more aggressive than the native species and are able to produce more young. Consequently, the introduced species pose a threat not only because some are disease-carriers, but also through predation and competition with white-clawed crayfish. In Britain, signal crayfish are now well-established in the wild. In Northern Ireland no crayfish farms have been established and crayfish plague is unknown, although it occurs in the Republic of Ireland (Holdich &amp; Reeve 1991; Holdich &amp; Rogers 1997). It is only in areas free of disease that white-clawed crayfish are likely to survive in the future.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1092/map">
+                <img src="/images/maps/features/thumbnails/S1092_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1092</b> <I>Austropotamobius pallipes</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>A significant part of the EU resource is found in the UK and the Republic of Ireland, where is widespread. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1092/map>here</a> view UK distribution of this species</p>
-<p><B><I>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><B><I>
 <P>Austropotamobius pallipes</B></I> is widespread in most parts of England and is common in parts of eastern Wales. It is present in south-west Northern Ireland. A significant part of the EU resource is found in the UK, but the species is now seriously threatened over most of its range in Britain.</P></p>
+    <p>View <a href=/species/S1092/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites have been selected to provide representation over a wide geographical area. The sites selected are within parts of the country where the keeping of live non-native crayfish has (since 1996) been prohibited except under licence, and where there are high-quality aquatic habitats and recent (post-1990) records of healthy, recruiting Austropotamobius pallipes populations free of crayfish plague. A number of these safe havens in the north of England have been selected, as they are away from the main outbreaks of crayfish plague. The sites selected cover a variety of habitats, including rivers, natural lakes, and some &#x2018;refuges&#x2019; of artificial origin (but within the natural geographical range of the species) that contain large isolated populations with a good chance of remaining free of crayfish plague. The relatively low proportion of the total UK population contained within the SAC series reflects the fact that many recorded populations are in areas vulnerable to crayfish plague.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures are also necessary to support its conservation in the UK. These include actions taken under the Species Action Plan.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014776>Craven Limestone Complex</a></div>
-    <div class="cell large-6 small-12"><b>North Yorkshire</b></div>
+<li>
+    <b>
+        <a href=/site/UK0014776 class="space-right">Craven Limestone Complex</a>
+        North Yorkshire
+    </b>
+    <div>
+Craven in northern England supports strong populations of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in the limestone streams feeding Malham Tarn, and in Malham Tarn itself. This site is well-isolated and is therefore an important refuge, unlikely to be invaded by non-native crayfish species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012646 class="space-right">Ensor&#x27;s Pool</a>
+        Herefordshire, Worcestershire and Warwickshire
+    </b>
+    <div>
+This lowland site in central England represents <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in standing water. This 1 ha marl pit holds a very large population, estimated at 50,000. Although crayfish plague outbreaks have occurred in the Midlands, this waterbody is isolated from river systems and is a good example of a ‘refuge’ site in an important part of the species’ former range.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0016621 class="space-right">Magheraveely Marl Loughs</a>
+        Northern Ireland
+    </b>
+    <div>
+These four marl loughs in Northern Ireland have strong isolated populations of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b>. This site has been selected because of its hydrological isolation and the absence of crayfish plague from Northern Ireland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019859 class="space-right">Peak District Dales</a>
+        Derbyshire and Nottinghamshire, Shropshire and Staffordshire
+    </b>
+    <div>
+The River Dove represents <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in a high-quality, upland limestone river, in the north-east of the species’ UK range.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012643 class="space-right">River Eden</a>
+        Cumbria, North Yorkshire, Northumberland and Tyne and Wear
+    </b>
+    <div>
+The Eden is a river with high water quality that supports a large population of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in the northern part of its range in England. As with the River Wye, the tributaries of the Eden, especially those flowing off limestone, are of particular importance.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030256 class="space-right">River Kent</a>
+        Cumbria
+    </b>
+    <div>
+The Kent is a river of upland character in southern Cumbria. Densities of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> are very high throughout much of the Kent system (particularly in the tributaries), perhaps higher than anywhere else in England.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012647 class="space-right">River Wensum</a>
+        East Anglia
+    </b>
+    <div>
+The Wensum is a chalk-fed river in eastern England, and is an eastern example of riverine <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> populations. As with most of the remaining crayfish populations in the south and east of England, the threats from non-native crayfish species and crayfish plague are severe. Designation of the river as a SAC provides as much protection as can be afforded to such vulnerable populations.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012642 class="space-right">River Wye/ Afon Gwy</a>
+        East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys
+    </b>
+    <div>
+The Welsh River Wye system is the best site known in Wales for <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b>. The tributaries are the main haven for the species, particularly at the confluences of the main river and the Edw, Dulas Brook, Sgithwen and Clettwr Brook.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Craven in northern England supports strong populations of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in the limestone streams feeding Malham Tarn, and in Malham Tarn itself. This site is well-isolated and is therefore an important refuge, unlikely to be invaded by non-native crayfish species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012646>Ensor`s Pool</a></div>
-    <div class="cell large-6 small-12"><b>Herefordshire, Worcestershire and Warwickshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This lowland site in central England represents <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in standing water. This 1 ha marl pit holds a very large population, estimated at 50,000. Although crayfish plague outbreaks have occurred in the Midlands, this waterbody is isolated from river systems and is a good example of a ‘refuge’ site in an important part of the species’ former range.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016621>Magheraveely Marl Loughs</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">These four marl loughs in Northern Ireland have strong isolated populations of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b>. This site has been selected because of its hydrological isolation and the absence of crayfish plague from Northern Ireland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019859>Peak District Dales</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire, Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The River Dove represents <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in a high-quality, upland limestone river, in the north-east of the species’ UK range.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012643>River Eden</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, North Yorkshire, Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Eden is a river with high water quality that supports a large population of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> in the northern part of its range in England. As with the River Wye, the tributaries of the Eden, especially those flowing off limestone, are of particular importance. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030256>River Kent</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Kent is a river of upland character in southern Cumbria. Densities of <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> are very high throughout much of the Kent system (particularly in the tributaries), perhaps higher than anywhere else in England.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012647>River Wensum</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Wensum is a chalk-fed river in eastern England, and is an eastern example of riverine <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b> populations. As with most of the remaining crayfish populations in the south and east of England, the threats from non-native crayfish species and crayfish plague are severe. Designation of the river as a SAC provides as much protection as can be afforded to such vulnerable populations.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012642>River Wye/ Afon Gwy</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Welsh River Wye system is the best site known in Wales for <b>white-clawed crayfish <i>Austropotamobius pallipes</i></b>. The tributaries are the main haven for the species, particularly at the confluences of the main river and the Edw, Dulas Brook, Sgithwen and Clettwr Brook.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012599>River Itchen</a></div>
-    <div class="cell large-6 small-12"><b>Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030258>River Mease</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire, Leicestershire, Rutland and Northamptonshire, Shropshire and Staffordshire</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012599 class="space-right">River Itchen</a>
+        Hampshire and Isle of Wight
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030258 class="space-right">River Mease</a>
+        Derbyshire and Nottinghamshire, Leicestershire, Rutland and Northamptonshire, Shropshire and Staffordshire
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -275,6 +328,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

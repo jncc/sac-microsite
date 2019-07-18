@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,136 +77,200 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1395"><I>Petalophyllum ralfsii</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Lower plant species</h1>
-</div>
-<h4>1395 Petalwort [<I>Petalophyllum ralfsii</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1395/map">
-            <img src="/images/maps/features/thumbnails/S1395_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1395</b> <I>Petalophyllum ralfsii</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1395/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1395/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1395</span>
+        <span class="space-right">Petalwort</span>
+        <I>Petalophyllum ralfsii</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Lower plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1395/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1395/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Petalwort <I>Petalophyllum ralfsii</B></I> is a pale green thalloid liverwort with erect lamellae on its upper surface, that grows in open, damp, calcareous dune slacks, often on low hummocks rather than on the very wet ground, on compacted sandy/muddy bryophyte-rich turf. Most localities are referable to Annex&nbsp;I type <B>2190 Humid dune slacks</B>. It has occasionally been recorded in other coastal grassland where conditions are similar. Closely associated species may include the mosses <I>Barbula convoluta</I>, <I>Bryum</I> spp., <I>Didymodon tophaceus</I>, <I>Ditrichum flexicaule </I>(<I>sensu lato</I>), <I>Hypnum lacunosum</I>, glaucous sedge <I>Carex flacca</I>, the grasses common bent <I>Agrostis capillaris</I>, red fescue <I>Festuca rubra</I> and Yorkshire-fog <I>Holcus lanatus</I>, and buck’s-horn plantain<I> Plantago coronopus</I>. At some sites, it appears to be increasing as a result of trampling and soil compaction. At one site, the area where <B><I>P.&nbsp;ralfsii</B></I> grows is used by vehicles and it can be found on the sides of paths. It does not grow in water-filled slacks or in slacks where willow <I>Salix</I> spp. scrub predominates.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1395/map">
+                <img src="/images/maps/features/thumbnails/S1395_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1395</b> <I>Petalophyllum ralfsii</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>Although it occurs throughout western Europe,<I> <B>Petalophyllum ralfsii</B></I> has a predominantly Mediterranean distribution. It is infrequent and declining throughout its range, being rather closely confined to dune slacks of a certain kind, which are under threat in many areas, and the species is classed as Vulnerable. The UK and Ireland may now be its stronghold.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1395/map>here</a> view UK distribution of this species</p>
-<p><B><I>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><B><I>
 <P>Petalophyllum ralfsii</B></I> has always been widely but sparsely distributed in the UK. A high proportion of the known localities are in south-west England and Wales. Many of the sites support large populations but in some parts of the species’ range only small populations occur. All the sites are large dune systems with extensive dune slack habitat. Petalwort is classed as Lower risk (Nationally scarce) in Britain. </P></p>
+    <p>View <a href=/species/S1395/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>The site series includes the largest known populations of petalwort, and overall a very high proportion of the total UK population has been selected. Most of the selected sites are within the species&#x2019; centre of UK distribution in Wales and south-west England. Outlying localities in Scotland, East Anglia and Northern Ireland have also been selected to ensure full geographical coverage.&#xD;&#xA;Most of the sites selected for Petalophyllum ralfsii have also been identified as SACs for a range of Annex&amp;nbsp;I sand dune habitats.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030073>Achnahaird</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
+<li>
+    <b>
+        <a href=/site/UK0030073 class="space-right">Achnahaird</a>
+        Highlands and Islands
+    </b>
+    <div>
+This sand dune site in north-west Scotland hosts the largest population of <b>petalwort <i>Petalophyllum ralfsii</i></b> in Britain. It is the only known Scottish site and the most northerly location recorded for this species in the world. The characteristic habitat of <b><i>P. ralfsii</i></b> at Achnahaird is moist dune slacks and the banks of small burns and drainage lines which run through the site. It also occurs in areas of bare, stable sand. Some of the largest colonies occur on areas of open sand which are kept damp by diffuse flushing from above. A number of other notable bryophyte species have been recorded from the site, often growing in close proximity to <b><i>P. ralfsii</i></b>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012570 class="space-right">Braunton Burrows</a>
+        Devon
+    </b>
+    <div>
+A large population (around 3000 thalli) of <b>petalwort <i>Petalophyllum ralfsii</i></b> is recorded from Braunton Burrows, one of two sites selected for this species in south-west England. There are extensive open dune slack habitats of the types required by this species for survival.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0020019 class="space-right">Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+Carmarthen Bay Dunes is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales. Whiteford Burrows is included in this site and has a large population of the liverwort. Some of the largest and least-disturbed calcareous dune slack systems in the UK occur in this area, a high proportion of which are very open in character.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030130 class="space-right">Dawlish Warren</a>
+        Devon
+    </b>
+    <div>
+Large populations of <b>petalwort <i>Petalophyllum ralfsii</i></b> occur in two dune slacks at Dawlish Warren. One of the slacks is on a natural, sandy substrate, and here the population appears to be expanding. In the other slack, petalwort grows on sand overlying an artificial masonry/stone substrate, which receives run-off from an adjacent limestone gravel track. Elsewhere in this slack the sand is more acidic and supports populations of the liverwort <i>Fossombronia incurva</i>. Both slacks are closely grazed by rabbits <i>Oryctolagus cuniculus</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012566 class="space-right">Kenfig/ Cynffig</a>
+        East Wales
+    </b>
+    <div>
+Kenfig is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales and supports a large population of the species, numbering thousands of thalli. The calcareous dune system has many dune slacks that include the early successional, open slack vegetation this species requires.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030049 class="space-right">Morfa Harlech a Morfa Dyffryn</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+<b>Petalwort <i>Petalophyllum ralfsii</i></b> has been recorded in dune slacks in the two dune systems at this site; it is most frequent at Morfa Dyffryn.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0017097 class="space-right">North Northumberland Dunes</a>
+        Northumberland and Tyne and Wear
+    </b>
+    <div>
+This site represents <b>petalwort <i>Petalophyllum ralfsii</i></b> in north-east England. There are extensive dune systems with slacks here, both on the mainland and on Holy Island. Petalwort has been recorded from Holy Island and from two locations on the mainland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012559 class="space-right">Penhale Dunes</a>
+        Cornwall and Isles of Scilly
+    </b>
+    <div>
+Penhale’s extensive dune system supports a large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> and is one of three sites selected to represent the species in south-west England. Recorded here since 1919, it occurs in damp, calcareous dune slacks.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013076 class="space-right">Sefton Coast</a>
+        Merseyside
+    </b>
+    <div>
+A large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> occurs at Sefton Coast, the only site chosen for this species in north-west England. The plant was first recorded on the Sefton Coast at Ainsdale in 1861 and it is still found within the dune system between Southport and Ainsdale. It seems to prefer damp ground around the edges of dune slacks of fairly recent origin, with the largest populations found in slacks of less than 25 years old. The plant is often found in association with footpaths, where light trampling keeps the ground vegetation sparse; infrequently-used paths or less-trampled edges of pathways seem to be favoured. Although the preferred habitat is short damp turf with plenty of bare patches, populations have been found growing amongst dense marram <i>Ammophila arenaria</i> with few other associated species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0020021 class="space-right">Y Twyni o Abermenai i Aberffraw/ Abermenai to Aberffraw Dunes</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Abermenai to Aberffraw Dunes is an extensive complex of sand dunes, dune slacks, marsh, shingle and cliffs in south-west Anglesey, north Wales. There is a large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> here that was first recorded in 1828. This historical continuity indicates that the site is especially favourable for the survival of this species. Although partly afforested, the open dunes have a very rich bryophyte flora, including the mosses <i>Amblyodon dealbatus</i>, <i>Catoscopium nigritum</i> and the liverwort <i>Southbya tophacea</i>, particularly in damp, calcareous slacks and flats.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This sand dune site in north-west Scotland hosts the largest population of <b>petalwort <i>Petalophyllum ralfsii</i></b> in Britain. It is the only known Scottish site and the most northerly location recorded for this species in the world. The characteristic habitat of <b><i>P. ralfsii</i></b> at Achnahaird is moist dune slacks and the banks of small burns and drainage lines which run through the site. It also occurs in areas of bare, stable sand. Some of the largest colonies occur on areas of open sand which are kept damp by diffuse flushing from above. A number of other notable bryophyte species have been recorded from the site, often growing in close proximity to <b><i>P. ralfsii</i></b>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012570>Braunton Burrows</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A large population (around 3000 thalli) of <b>petalwort <i>Petalophyllum ralfsii</i></b> is recorded from Braunton Burrows, one of two sites selected for this species in south-west England. There are extensive open dune slack habitats of the types required by this species for survival.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020019>Carmarthen Bay Dunes/ Twyni Bae Caerfyrddin</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Carmarthen Bay Dunes is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales. Whiteford Burrows is included in this site and has a large population of the liverwort. Some of the largest and least-disturbed calcareous dune slack systems in the UK occur in this area, a high proportion of which are very open in character. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030130>Dawlish Warren</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Large populations of <b>petalwort <i>Petalophyllum ralfsii</i></b> occur in two dune slacks at Dawlish Warren. One of the slacks is on a natural, sandy substrate, and here the population appears to be expanding. In the other slack, petalwort grows on sand overlying an artificial masonry/stone substrate, which receives run-off from an adjacent limestone gravel track. Elsewhere in this slack the sand is more acidic and supports populations of the liverwort <i>Fossombronia incurva</i>. Both slacks are closely grazed by rabbits <i>Oryctolagus cuniculus</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012566>Kenfig/ Cynffig</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Kenfig is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales and supports a large population of the species, numbering thousands of thalli. The calcareous dune system has many dune slacks that include the early successional, open slack vegetation this species requires. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030049>Morfa Harlech a Morfa Dyffryn</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em"><b>Petalwort <i>Petalophyllum ralfsii</i></b> has been recorded in dune slacks in the two dune systems at this site; it is most frequent at Morfa Dyffryn.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0017097>North Northumberland Dunes</a></div>
-    <div class="cell large-6 small-12"><b>Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site represents <b>petalwort <i>Petalophyllum ralfsii</i></b> in north-east England. There are extensive dune systems with slacks here, both on the mainland and on Holy Island. Petalwort has been recorded from Holy Island and from two locations on the mainland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012559>Penhale Dunes</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Penhale’s extensive dune system supports a large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> and is one of three sites selected to represent the species in south-west England. Recorded here since 1919, it occurs in damp, calcareous dune slacks.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013076>Sefton Coast</a></div>
-    <div class="cell large-6 small-12"><b>Merseyside</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> occurs at Sefton Coast, the only site chosen for this species in north-west England. The plant was first recorded on the Sefton Coast at Ainsdale in 1861 and it is still found within the dune system between Southport and Ainsdale. It seems to prefer damp ground around the edges of dune slacks of fairly recent origin, with the largest populations found in slacks of less than 25 years old. The plant is often found in association with footpaths, where light trampling keeps the ground vegetation sparse; infrequently-used paths or less-trampled edges of pathways seem to be favoured. Although the preferred habitat is short damp turf with plenty of bare patches, populations have been found growing amongst dense marram <i>Ammophila arenaria</i> with few other associated species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020021>Y Twyni o Abermenai i Aberffraw/ Abermenai to Aberffraw Dunes</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Abermenai to Aberffraw Dunes is an extensive complex of sand dunes, dune slacks, marsh, shingle and cliffs in south-west Anglesey, north Wales. There is a large population of <b>petalwort <i>Petalophyllum ralfsii</i></b> here that was first recorded in 1828. This historical continuity indicates that the site is especially favourable for the survival of this species. Although partly afforested, the open dunes have a very rich bryophyte flora, including the mosses <i>Amblyodon dealbatus</i>, <i>Catoscopium nigritum</i> and the liverwort <i>Southbya tophacea</i>, particularly in damp, calcareous slacks and flats.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030131>Dee Estuary/ Aber Dyfrdwy</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014787>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016613>Magilligan</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019838>North Norfolk Coast</a></div>
-    <div class="cell large-6 small-12"><b>East Anglia</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0030131 class="space-right">Dee Estuary/ Aber Dyfrdwy</a>
+        Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014787 class="space-right">Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016613 class="space-right">Magilligan</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019838 class="space-right">North Norfolk Coast</a>
+        East Anglia
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -294,6 +357,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

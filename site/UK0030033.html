@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0030033">North Pennine Moors</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>North Pennine Moors</h1>
+
+<div class="section">
+    <h1>
+        North Pennine Moors
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cumbria, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SE137749</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,78 +150,161 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0030033_thumb.gif" />
-            <figcaption style="font-size: small;">Location of North Pennine Moors SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of North Pennine Moors SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (41%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (32%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (26.5%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (0.5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030033.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Bogs, Marshes, Water fringed vegetation, Fens (41%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (32%) <br />Dry grassland, Steppes (26.5%) <br />Broad-leaved deciduous woodland (0.5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030033.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The North Pennine Moors (along with the North York Moors) hold much of the upland heathland of northern England. At higher altitudes and to the wetter west and north of the site complex, the heaths grade into extensive areas of <b>7130 blanket bogs</b>. The most abundant heath communities are H9 <i>Calluna vulgaris</i> – <i>Deschampsia flexuosa</i> heath and H12 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> heath. There are also examples of H18 <i>Vaccinium myrtillus</i> – <i>Deschampsia flexuosa</i>, H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> and H21 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> – <i>Sphagnum capillifolium</i> heaths.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>5130</b> <a href=/habitat/H5130/>Juniperus communis formations on heaths or calcareous grasslands</a>
+    </div>
+<p>The North Pennine Moors includes one major stand of juniper scrub in Swaledale as well as a number of small and isolated localities. The Swaledale site grades into heathland and bracken <i>Pteridium aquilinum</i> but the core area of juniper is of W19 <i>Juniperus communis</i> – <i>Oxalis acetosella</i> woodland with scattered rowan <i>Sorbus aucuparia</i> and birch <i>Betula</i> spp.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The North Pennine Moors hold the major area of <b>blanket bog</b> in England. A significant proportion remains active with accumulating peat, although these areas are often bounded by sizeable zones of currently non-active bog, albeit on deep peat. The main NVC type is M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire, but there is also representation of M18 <i>Erica tetralix</i> – <i>Sphagnum papillosum</i> blanket mire and some western localities support M17 <i>Scirpus cespitosus</i> – <i>Eriophorum vaginatum</i> blanket mire. Forms of M20 <i>Eriophorum vaginatum</i> blanket mire predominate on many areas of non-active bog.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The <b>petrifying springs</b> habitat is very localised in occurrence within the North Pennine Moors, but where it does occur it is species-rich with abundant bryophytes, sedges and herbs including bird’s-eye primrose <i>Primula farinosa</i> and marsh valerian <i>Valeriana dioica</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Acidic rock outcrops and screes are well-scattered across the North Pennine Moors and support vegetation typical of <b>Siliceous rocky slopes with chasmophytic vegetation</b> in England, including a range of lichens and bryophytes, such as <i>Racomitrium lanuginosum</i>, and species like stiff sedge <i>Carex bigelowii</i> and fir clubmoss <i>Huperzia selago</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a>
+    </div>
+<p>Birk Gill Wood is an example of <b>old sessile oak woods</b> well to the east of the habitat’s main distribution in the UK. However, this sheltered river valley shows the characteristic rich bryophyte and lichen communities of the type under a canopy of oak, birch <i>Betula</i> sp. and rowan <i>Sorbus aucuparia</i>. The slopes are boulder-strewn, with mixtures of heather <i>Calluna vulgaris</i>, bilberry <i>Vaccinium myrtillus</i> and moss carpets in the ground flora.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-<p>The North Pennine Moors (along with the North York Moors) hold much of the upland heathland of northern England. At higher altitudes and to the wetter west and north of the site complex, the heaths grade into extensive areas of <b>7130 blanket bogs</b>. The most abundant heath communities are H9 <i>Calluna vulgaris</i> – <i>Deschampsia flexuosa</i> heath and H12 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> heath. There are also examples of H18 <i>Vaccinium myrtillus</i> – <i>Deschampsia flexuosa</i>, H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> and H21 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> – <i>Sphagnum capillifolium</i> heaths.</p></div>
-<div>
-    <p><b>5130</b> <a href=/habitat/H5130/>Juniperus communis formations on heaths or calcareous grasslands</a></p>
-<p>The North Pennine Moors includes one major stand of juniper scrub in Swaledale as well as a number of small and isolated localities. The Swaledale site grades into heathland and bracken <i>Pteridium aquilinum</i> but the core area of juniper is of W19 <i>Juniperus communis</i> – <i>Oxalis acetosella</i> woodland with scattered rowan <i>Sorbus aucuparia</i> and birch <i>Betula</i> spp.</p></div>
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The North Pennine Moors hold the major area of <b>blanket bog</b> in England. A significant proportion remains active with accumulating peat, although these areas are often bounded by sizeable zones of currently non-active bog, albeit on deep peat. The main NVC type is M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire, but there is also representation of M18 <i>Erica tetralix</i> – <i>Sphagnum papillosum</i> blanket mire and some western localities support M17 <i>Scirpus cespitosus</i> – <i>Eriophorum vaginatum</i> blanket mire. Forms of M20 <i>Eriophorum vaginatum</i> blanket mire predominate on many areas of non-active bog.</p></div>
-<div>
-    <p><b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The <b>petrifying springs</b> habitat is very localised in occurrence within the North Pennine Moors, but where it does occur it is species-rich with abundant bryophytes, sedges and herbs including bird’s-eye primrose <i>Primula farinosa</i> and marsh valerian <i>Valeriana dioica</i>.</p></div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-<p>Acidic rock outcrops and screes are well-scattered across the North Pennine Moors and support vegetation typical of <b>Siliceous rocky slopes with chasmophytic vegetation</b> in England, including a range of lichens and bryophytes, such as <i>Racomitrium lanuginosum</i>, and species like stiff sedge <i>Carex bigelowii</i> and fir clubmoss <i>Huperzia selago</i>.</p></div>
-<div>
-    <p><b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a></p>
-<p>Birk Gill Wood is an example of <b>old sessile oak woods</b> well to the east of the habitat’s main distribution in the UK. However, this sheltered river valley shows the characteristic rich bryophyte and lichen communities of the type under a canopy of oak, birch <i>Betula</i> sp. and rowan <i>Sorbus aucuparia</i>. The slopes are boulder-strewn, with mixtures of heather <i>Calluna vulgaris</i>, bilberry <i>Vaccinium myrtillus</i> and moss carpets in the ground flora.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-</div>
-<div>
-    <p><b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a></p>
-</div>
-<div>
-    <p><b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a></p>
-</div>
-<div>
-    <p><b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-</div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1528</b> <a href=/species/S1528/>Marsh saxifrage</a> <b>Saxifraga hirculus</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1528
+            <a href=/species/S1528/>Marsh saxifrage</a>
+        </b>
+        <i>Saxifraga hirculus</i>
+        
     </div>
+</li>    </ul>
 </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -302,6 +393,6 @@ Bogs, Marshes, Water fringed vegetation, Fens (41%) <br />Heath, Scrub, Maquis a
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

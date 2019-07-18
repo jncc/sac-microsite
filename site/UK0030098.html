@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0030098">Breney Common and Goss and Tregoss Moors</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Breney Common and Goss and Tregoss Moors</h1>
+
+<div class="section">
+    <h1>
+        Breney Common and Goss and Tregoss Moors
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cornwall and Isles of Scilly</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SW951598</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,49 +150,105 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0030098_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Breney Common and Goss and Tregoss Moors SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Breney Common and Goss and Tregoss Moors SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (5%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (30%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (20%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (15%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (30%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030098.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (5%) <br />Bogs, Marshes, Water fringed vegetation, Fens (30%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (20%) <br />Humid grassland, Mesophile grassland (15%) <br />Broad-leaved deciduous woodland (30%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0030098.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-<p>This lowland site exhibits mosaics of various habitats, including <b>4030 European dry heaths</b>, wet heaths, acid grassland, bog, swamp, fen and open water communities. The soil-structure of these sites reflects past mining operations, which caused poor drainage. The resulting extensive wet communities include the localised M14 <i>Schoenus nigricans</i> – <i>Narthecium ossifragum</i> mire, closely associated with M25 <i>Molinia caerulea</i> – <i>Potentilla erecta</i> mire. There are several species of bog-mosses <i>Sphagnum</i> spp., bog asphodel <i>Narthecium ossifragum</i>, orchids and some nationally scarce plants, such as yellow centaury <i>Cicendia filiformis</i>, marsh clubmoss <i>Lycopodiella inundata</i> and pillwort <i>Pilularia globulifera</i>. The habitat supports rich assemblages of butterflies (including the Annex II species <b>1065 marsh fritillary <i>Euphydryas aurinia</i></b>), moths, dragonflies and damselflies, and also a population of European nightjar <i>Caprimulgus europaeus</i>.</p></div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-<p><b>4010 Northern Atlantic wet heaths with <i>Erica tetralix</i></b>, and to a smaller extent, dry heath occur in this site. The dry heath is an example of H4 <i>Ulex gallii</i> – <i>Agrostis curtisii</i> heath, with a limited south-western distribution in Britain.</p></div>
-<div>
-    <p><b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a></p>
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+<p>This lowland site exhibits mosaics of various habitats, including <b>4030 European dry heaths</b>, wet heaths, acid grassland, bog, swamp, fen and open water communities. The soil-structure of these sites reflects past mining operations, which caused poor drainage. The resulting extensive wet communities include the localised M14 <i>Schoenus nigricans</i> – <i>Narthecium ossifragum</i> mire, closely associated with M25 <i>Molinia caerulea</i> – <i>Potentilla erecta</i> mire. There are several species of bog-mosses <i>Sphagnum</i> spp., bog asphodel <i>Narthecium ossifragum</i>, orchids and some nationally scarce plants, such as yellow centaury <i>Cicendia filiformis</i>, marsh clubmoss <i>Lycopodiella inundata</i> and pillwort <i>Pilularia globulifera</i>. The habitat supports rich assemblages of butterflies (including the Annex II species <b>1065 marsh fritillary <i>Euphydryas aurinia</i></b>), moths, dragonflies and damselflies, and also a population of European nightjar <i>Caprimulgus europaeus</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+<p><b>4010 Northern Atlantic wet heaths with <i>Erica tetralix</i></b>, and to a smaller extent, dry heath occur in this site. The dry heath is an example of H4 <i>Ulex gallii</i> – <i>Agrostis curtisii</i> heath, with a limited south-western distribution in Britain.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a>
+    </div>
 <p><P>Although possibly the site of a former raised bog, this site lying either side of the A30 trunk road and encompassing the River Fowey is now recovering from an intensive period of china clay and gravel extraction. <STRONG>H7140 Transition mire</STRONG> has developed in the hollows between ridges and mounds on which dry heathland forms a mosaic with acid grassland. Wet heath merges into <EM>Sphagnum</EM>-dominated fen vegetation with common cottongrass <EM>Eriophorum angustifolium</EM>, round-leaved sundew <EM>Drosera rotundifolia</EM>, bog-myrtle <EM>Myrica gale</EM>, bog asphodel <EM>Narthecium ossifragum</EM>, black bog-rush <EM>Schoenus nigricans</EM> and bog pimpernel <EM>Anagallis tenella</EM>. Of particular note are the nationally scarce plants yellow centaury <EM>Cicendia filiformis</EM>, marsh clubmoss <EM>Lycopodiella inundata</EM> and pillwort <EM>Pilularia globulifera</EM>.</P>
-<P>Emergent vegetation around the 15 ponds includes water horsetail <EM>Equisetum fluviatile</EM>, bogbean <EM>Menyanthes trifoliata</EM> and marsh cinquefoil <EM>Potentilla palustris</EM>. Many of the transitions include tall fen vegetation with bulrush <EM>Typha latifolia</EM>, common reed <EM>Phragmites australis</EM> and bottle sedge <EM>Carex rostrata</EM>. Other wetland plants found in the pond margins and across the more shallow ponds include marsh St John’s-wort <EM>Hypericum elodes</EM>, sharp-flowered rush <EM>Juncus acutiflorus</EM> and ivy-leaved bellflower <EM>Wahlenbergia hederacea</EM>. Of particular note are the nationally scarce Cornish moneywort <EM>Sibthorpia europaea</EM> and wavy St John’s-wort <EM>Hypericum undulatum</EM>. Extensive willow carr has developed over much of the central part of the Goss Moor. </P></p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1065</b> <a href=/species/S1065/>Marsh fritillary butterfly</a> <b>Euphydryas (Eurodryas, Hypodryas) aurinia</b></p>
-<p>This is a cluster of three <b>marsh fritillary <i>Euphydryas aurinia</i></b> sub-populations over a complex of wet heathland sites. This supports the largest metapopulation in Cornwall and probably the most westerly viable population in England.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-    </div>
+<P>Emergent vegetation around the 15 ponds includes water horsetail <EM>Equisetum fluviatile</EM>, bogbean <EM>Menyanthes trifoliata</EM> and marsh cinquefoil <EM>Potentilla palustris</EM>. Many of the transitions include tall fen vegetation with bulrush <EM>Typha latifolia</EM>, common reed <EM>Phragmites australis</EM> and bottle sedge <EM>Carex rostrata</EM>. Other wetland plants found in the pond margins and across the more shallow ponds include marsh St John’s-wort <EM>Hypericum elodes</EM>, sharp-flowered rush <EM>Juncus acutiflorus</EM> and ivy-leaved bellflower <EM>Wahlenbergia hederacea</EM>. Of particular note are the nationally scarce Cornish moneywort <EM>Sibthorpia europaea</EM> and wavy St John’s-wort <EM>Hypericum undulatum</EM>. Extensive willow carr has developed over much of the central part of the Goss Moor. </P></p></li>
+    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div>
+        <b>
+            1065
+            <a href=/species/S1065/>Marsh fritillary butterfly</a>
+        </b>
+        <i>Euphydryas (Eurodryas, Hypodryas) aurinia</i>
+        
+    </div>
+<p>This is a cluster of three <b>marsh fritillary <i>Euphydryas aurinia</i></b> sub-populations over a complex of wet heathland sites. This supports the largest metapopulation in Cornwall and probably the most westerly viable population in England.</p></li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -273,6 +337,6 @@ Inland water bodies (Standing water, Running water) (5%) <br />Bogs, Marshes, Wa
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,117 +77,171 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1044"><I>Coenagrion mercuriale</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: arthropods</h1>
-</div>
-<h4>1044 Southern damselfly [<I>Coenagrion mercuriale</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1044/map">
-            <img src="/images/maps/features/thumbnails/S1044_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1044</b> <I>Coenagrion mercuriale</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1044/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1044/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1044</span>
+        <span class="space-right">Southern damselfly</span>
+        <I>Coenagrion mercuriale</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: arthropods</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1044/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1044/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>southern damselfly <I>Coenagrion mercuriale</B></I> has very specialised habitat requirements, being confined to shallow, well-vegetated, base-rich runnels and flushes in open areas or small side-channels of chalk rivers. Most sites are on wet heath.</P>
 <P>The larvae live in flushes and shallow runnels, often less than 10&nbsp;cm deep, with slow-flowing water. Adults fly from June to August. Females lay eggs onto submerged plants, and the predatory aquatic larvae probably take two years to mature.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1044/map">
+                <img src="/images/maps/features/thumbnails/S1044_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1044</b> <I>Coenagrion mercuriale</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Coenagrion mercuriale</B></I> is widespread but rare in southern central and south-west Europe, and its range extends to northern Africa. The fairly stable centre of distribution in the south-west of the UK appears to constitute a major European stronghold of the species. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1044/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK <B><I>Coenagrion mercuriale</B></I> occurs mainly in south-west England and in south Wales. It has declined in many places and appears to be present only in low numbers at most of its localities. However, more recently the decline may have ceased, with some evidence of recovery in numbers. Strong populations, numbering hundreds to thousands, occur in Dorset, the New Forest and the Itchen Valley in Hampshire, and on the Pembrokeshire Commons. </P></p>
+    <p>View <a href=/species/S1044/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites for Coenagrion&amp;nbsp;mercuriale have been selected to include the largest known populations in the main part of the species&#x2019; range in south Wales and south-west England, where the prospects for long-term conservation of habitat structure and function are good. Smaller populations occur elsewhere, and the larger of these sites have been selected to provide fuller geographical coverage.&#xD;&#xA;Most of the selected sites support Coenagrion populations on wet heaths, and are also selected as SACs for 4010 Northern Atlantic wet heaths with Erica tetralix. Populations associated with chalk rivers are also included within the site series.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012929>Dartmoor</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
+<li>
+    <b>
+        <a href=/site/UK0012929 class="space-right">Dartmoor</a>
+        Devon
+    </b>
+    <div>
+A valley mire at 280&nbsp;m altitude supports a <B>southern damselfly <I>Coenagrion mercuriale</I></B> population of 20<FONT size=2>–</FONT>100 individuals, first discovered on the site in 1998. The stronger population occurs in the northern portion of the mire, where springs feed shallow soakways that flow through wet heath. The southern part of the mire has a higher water table with <I>Sphagnum</I> bog-mosses dominating.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019857 class="space-right">Dorset Heaths</a>
+        Dorset and Somerset
+    </b>
+    <div>
+This site in south-west England, along with Dorset Heaths (Purbeck and Wareham) and Studland Dunes, represents the Dorset stronghold of <b>southern damselfly <i>Coenagrion mercuriale</i></b>. The large size of the two cSACs, and a long history of records indicating well-established populations, should ensure the future viability of the small populations that occur here.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030038 class="space-right">Dorset Heaths (Purbeck and Wareham) and Studland Dunes</a>
+        Dorset and Somerset
+    </b>
+    <div>
+This site in south-west England, along with Dorset Heaths, represents the Dorset stronghold of <b>southern damselfly <i>Coenagrion mercuriale</i></b>. The large size of the two cSACs, and a long history of records indicating well-established populations, should ensure the future viability of the small populations that occur here.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012602 class="space-right">East Devon Pebblebed Heaths</a>
+        Devon
+    </b>
+    <div>
+This site holds two relatively small populations representing <b>southern damselfly <i>Coenagrion mercuriale</i></b> in the south-west of its range in England. These populations occur in wet flushes within the site.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012685 class="space-right">Gower Commons/ Tiroedd Comin G&#x175;yr</a>
+        East Wales
+    </b>
+    <div>
+Gower Commons, supporting small populations at two localities, represents <b>southern damselfly <i>Coenagrion mercuriale</i></b> in south Wales.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012598 class="space-right">Preseli</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Representing <b>southern damselfly <i>Coenagrion mercuriale</i></b> in west Wales, Preseli is one of the strongest populations in the UK, with numbers of adults estimated to be in the thousands and with a long history of records. Conditions on the site, created by its current management, appear to be optimal for this species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012599 class="space-right">River Itchen</a>
+        Hampshire and Isle of Wight
+    </b>
+    <div>
+Strong populations of <b>southern damselfly <i>Coenagrion mercuriale</i></b> occur here, estimated to be in the hundreds of individuals. The site in central southern England represents one of the major population centres in the UK. It also represents a population in a managed chalk-river flood plain, an unusual habitat for this species in the UK, rather than on heathland.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012557 class="space-right">The New Forest</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The New Forest in central southern England is an outstanding locality for <b>southern damselfly <i>Coenagrion mercuriale</i></b>, with several population centres and strong populations estimated to be in the hundreds or thousands of individuals and with a long history of records. With Preseli, Dorset Heaths and the River Itchen, it represents one of the four major population centres in the UK.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A valley mire at 280&nbsp;m altitude supports a <B>southern damselfly <I>Coenagrion mercuriale</I></B> population of 20<FONT size=2>–</FONT>100 individuals, first discovered on the site in 1998. The stronger population occurs in the northern portion of the mire, where springs feed shallow soakways that flow through wet heath. The southern part of the mire has a higher water table with <I>Sphagnum</I> bog-mosses dominating.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019857>Dorset Heaths</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in south-west England, along with Dorset Heaths (Purbeck and Wareham) and Studland Dunes, represents the Dorset stronghold of <b>southern damselfly <i>Coenagrion mercuriale</i></b>. The large size of the two cSACs, and a long history of records indicating well-established populations, should ensure the future viability of the small populations that occur here.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030038>Dorset Heaths (Purbeck and Wareham) and Studland Dunes</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in south-west England, along with Dorset Heaths, represents the Dorset stronghold of <b>southern damselfly <i>Coenagrion mercuriale</i></b>. The large size of the two cSACs, and a long history of records indicating well-established populations, should ensure the future viability of the small populations that occur here.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012602>East Devon Pebblebed Heaths</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site holds two relatively small populations representing <b>southern damselfly <i>Coenagrion mercuriale</i></b> in the south-west of its range in England. These populations occur in wet flushes within the site.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012685>Gower Commons/ Tiroedd Comin G&#x175;yr</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Gower Commons, supporting small populations at two localities, represents <b>southern damselfly <i>Coenagrion mercuriale</i></b> in south Wales. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012598>Preseli</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Representing <b>southern damselfly <i>Coenagrion mercuriale</i></b> in west Wales, Preseli is one of the strongest populations in the UK, with numbers of adults estimated to be in the thousands and with a long history of records. Conditions on the site, created by its current management, appear to be optimal for this species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012599>River Itchen</a></div>
-    <div class="cell large-6 small-12"><b>Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Strong populations of <b>southern damselfly <i>Coenagrion mercuriale</i></b> occur here, estimated to be in the hundreds of individuals. The site in central southern England represents one of the major population centres in the UK. It also represents a population in a managed chalk-river flood plain, an unusual habitat for this species in the UK, rather than on heathland.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012557>The New Forest</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The New Forest in central southern England is an outstanding locality for <b>southern damselfly <i>Coenagrion mercuriale</i></b>, with several population centres and strong populations estimated to be in the hundreds or thousands of individuals and with a long history of records. With Preseli, Dorset Heaths and the River Itchen, it represents one of the four major population centres in the UK.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012884>Corsydd M&#xF4;n/ Anglesey Fens</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030144>Gweunydd Blaencleddau</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012884 class="space-right">Corsydd M&#xF4;n/ Anglesey Fens</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030144 class="space-right">Gweunydd Blaencleddau</a>
+        West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -275,6 +328,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

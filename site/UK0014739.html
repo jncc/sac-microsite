@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0014739">Strathglass Complex</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Strathglass Complex</h1>
+
+<div class="section">
+    <h1>
+        Strathglass Complex
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Highlands and Islands</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NH185314</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,78 +150,179 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0014739_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Strathglass Complex SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Strathglass Complex SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (1%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (17%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (15%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (4%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (15%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (22%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (9.5%) <br />
+            </li>
+            <li>
+                Coniferous woodland (11%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (5%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (0.5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014739.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (1%) <br />Bogs, Marshes, Water fringed vegetation, Fens (17%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (15%) <br />Dry grassland, Steppes (4%) <br />Humid grassland, Mesophile grassland (15%) <br />Alpine and sub-Alpine grassland (22%) <br />Broad-leaved deciduous woodland (9.5%) <br />Coniferous woodland (11%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (5%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (0.5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014739.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Strathglass Complex has extensive <b>northern Atlantic wet heaths</b> of M15 <i>Scirpus cespitosus</i> – <i>Erica tetralix</i> wet heath with a wide range of sub-types representative of the western Scottish Highlands. The wet heaths are intermediate between examples on the hyper-oceanic western seaboard and Western Isles, those on the more continental Cairngorms, and those in the Northern Isles. Western <i>Molinia</i>-rich and flushed <i>Myrica-Molinia</i> sub-types are extensive and are associated with western <b>7130 Blanket bogs</b>, <b>4030 European dry heaths</b> and <b>91C0 Caledonian forest</b> on the lower slopes. The site is especially notable for the extensive development of a northern form of wet heath at high altitude. These have abundant <i>Cladonia</i> lichens, woolly fringe-moss <i>Racomitrium lanuginosum</i>, alpine bearberry <i>Arctostaphylos alpina</i>, dwarf birch <i>Betula nana</i> and crowberry <i>Empetrum nigrum</i>, and are comparable only with wet heaths on the Cairngorms, north Hoy and Foinaven.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a>
+    </div>
+<p>Strathglass is intermediate between heathland types of the east and the less extremely oceanic parts of the north-west. The Strathglass Complex has the second-largest area of <b>Alpine and Boreal heaths</b> in the SAC series, after the Cairngorms. The northern H17 <i>Calluna vulgaris</i> – <i>Arctostaphylos alpinus</i> community is well-represented, with the second most extensive development of this sub-type in the SAC series after Hoy. The site has one of the largest occurrences of the mainly north-western H20 <i>Vaccinium myrtillus</i> – <i>Racomitrium lanuginosum</i> heath, with a community structure similar in quality to that of Loch Maree Complex. Also present is the most extensive area of the characteristic eastern heathland type H13 <i>Calluna vulgaris</i> – <i>Cladonia arbuscula</i> heath to be found in the north-west, although lichen cover is not as high as on Ben Wyvis. In general, lichen cover is intermediate between the high cover of the east and generally low cover of the far west, while woolly fringe-moss <i>Racomitrium lanuginosum</i> is more abundant than in the east. These alpine heaths give way on the lower slopes to alpine forms of the oceanic H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> and H21 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> – <i>Sphagnum capillifolium</i> heaths, and the more eastern H12 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> heath. On the lower slopes these latter heaths <b>represent 4030 European dry heaths</b>. Overall, the site has the largest extent of the <b>Alpine and Boreal heaths</b> in the north-west Highlands.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a>
+    </div>
+<p>Strathglass is the best representative in the SAC series of W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub on generally base-poor schist up to high altitude in the north-west Highlands. The <b>Sub-Arctic <i>Salix</i> spp. scrub</b> occurs in a series of localities in two widely separated corries, and scattered plants also occur in a few other places. The main occurrences are on ungrazed rock ledges, on steep rocky ground (including boulder fields) and on open slopes, where the willows are heavily grazed. Associated habitats are <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b> and herb-rich grassland. While downy willow <i>Salix lapponum</i> is the most widespread willow species, whortle-leaved willow <i>S. myrsinites</i> is also present.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a>
+    </div>
+<p>The Affric-Cannich Hills within Strathglass Complex have the second-largest extent of <b>Siliceous alpine and boreal grasslands</b> in the UK, and are representative of the habitat type in the north-west Highlands. The rocks are generally acidic, with small areas of moderately base-rich rock. The dominant sub-types present are species-poor U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath and U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath. Small areas of U8 <i>Carex bigelowii</i> – <i>Polytrichum alpinum</i> sedge-heath and U9 <i>Juncus trifidus</i> – <i>Racomitrium lanuginosum</i> rush-heath are also represented. There are extensive areas of the rarer species-rich <i>Carex</i> – <i>Racomitrium</i> moss-heath chiefly associated with the disturbed ground of solifluction terracing. This is enriched with arctic-alpine vascular plants and rare montane calcicole mosses. Associated communities include the most extensive areas of U13 <i>Deschampsia cespitosa</i> – <i>Galium saxatile</i> grassland in Britain.The moss- and dwarf-herb-dominated late-lie snow-beds (U11 <i>Polytrichum sexangulare</i> – <i>Kiaeria starkei</i> snow-bed, U12 <i>Salix herbacea</i> – <i>Racomitrium heterostichum</i> snow-bed and U14 <i>Alchemilla alpina</i> – <i>Sibbaldia procumbens</i> dwarf-herb community) are well-represented.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Strathglass Complex encompasses much of the east–west gradient that occurs in <b>blanket bog</b> north of the Great Glen. Both wet, oceanic M17 <i>Scirpus cespitosus</i> – <i>Eriophorum vaginatum</i> blanket mire and the drier, more upland M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire occur extensively. Bog vegetation is at its most extensive on the lower slopes of these high hills, extending up glacial troughs and in to high corries and on to ridges. The blanket bog grades into a diversity of heathlands and grasslands on the better-drained upper slopes. The wetter M17 blanket mire forms part of typical west Highland complexes of bog, wet heath and dry heath but, unusually, also occurs within <b>91C0 Caledonian forest</b>. At high altitudes <i>Calluna vulgaris</i> in M19 is replaced by other dwarf-shrubs such as crowberry <i>Vaccinium vitis-idaea</i>, cowberry <i>Empetrum nigrum</i> ssp. <i>hermaphroditum</i> and bog bilberry <i>Vaccinium uliginosum</i>. Notably, these include the scarce dwarf birch <i>Betula nana</i> and alpine bearberry <i>Arctostaphylos alpinus</i> at one of their few known locations in blanket bog outside Ben Wyvis.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Strathglass Complex has some of the most extensive outcrops of siliceous rock in the UK. This is one of eight sites representing this habitat in the western Highlands between Glen Coe in the south and Foinaven in the far north. A characteristic flora occurs up to very high altitude including parsley fern <i>Cryptogramma crispa</i>, three-leaved rush <i>Juncus trifidus</i>, least willow <i>Salix herbacea</i>, starry saxifrage <i>Saxifraga stellaris</i>, beech fern <i>Phegopteris connectilis</i> and the nationally rare Highland cudweed <i>Gnaphalium norvegicum</i>. Crevices in the more shady rocks support a flora of Atlantic mosses and liverworts.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91C0</b> <a href=/habitat/H91C0/>Caledonian forest</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The <b>Caledonian forest</b> areas in Strathglass Complex are representative of the North Central biochemical region and are intermediate in type between the western and eastern geographic variants. The individual woodlands within the complex are some of the largest remaining intact stands of native pinewood in Scotland. Glens Strathfarrar and Affric are the most important pinewoods in the UK for the epiphytic lichen communities they support. A number of nationally rare lichen species occur in the woods, including <i>Bryoria furcellata</i> and <i>Pannaria ignobilis</i>. Birds typical of Caledonian forest, including capercaillie <i>Tetrao urogallus</i> and Scottish crossbill <i>Loxia scotica</i>, are represented. Interspersed amongst the forest habitat, areas of wetter peatland with scattered pine <b>91D0 Bog woodland</b> are found. </p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>91D0</b> <a href=/habitat/H91D0/>Bog woodland</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-<p>Strathglass Complex has extensive <b>northern Atlantic wet heaths</b> of M15 <i>Scirpus cespitosus</i> – <i>Erica tetralix</i> wet heath with a wide range of sub-types representative of the western Scottish Highlands. The wet heaths are intermediate between examples on the hyper-oceanic western seaboard and Western Isles, those on the more continental Cairngorms, and those in the Northern Isles. Western <i>Molinia</i>-rich and flushed <i>Myrica-Molinia</i> sub-types are extensive and are associated with western <b>7130 Blanket bogs</b>, <b>4030 European dry heaths</b> and <b>91C0 Caledonian forest</b> on the lower slopes. The site is especially notable for the extensive development of a northern form of wet heath at high altitude. These have abundant <i>Cladonia</i> lichens, woolly fringe-moss <i>Racomitrium lanuginosum</i>, alpine bearberry <i>Arctostaphylos alpina</i>, dwarf birch <i>Betula nana</i> and crowberry <i>Empetrum nigrum</i>, and are comparable only with wet heaths on the Cairngorms, north Hoy and Foinaven.</p></div>
-<div>
-    <p><b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a></p>
-<p>Strathglass is intermediate between heathland types of the east and the less extremely oceanic parts of the north-west. The Strathglass Complex has the second-largest area of <b>Alpine and Boreal heaths</b> in the SAC series, after the Cairngorms. The northern H17 <i>Calluna vulgaris</i> – <i>Arctostaphylos alpinus</i> community is well-represented, with the second most extensive development of this sub-type in the SAC series after Hoy. The site has one of the largest occurrences of the mainly north-western H20 <i>Vaccinium myrtillus</i> – <i>Racomitrium lanuginosum</i> heath, with a community structure similar in quality to that of Loch Maree Complex. Also present is the most extensive area of the characteristic eastern heathland type H13 <i>Calluna vulgaris</i> – <i>Cladonia arbuscula</i> heath to be found in the north-west, although lichen cover is not as high as on Ben Wyvis. In general, lichen cover is intermediate between the high cover of the east and generally low cover of the far west, while woolly fringe-moss <i>Racomitrium lanuginosum</i> is more abundant than in the east. These alpine heaths give way on the lower slopes to alpine forms of the oceanic H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> and H21 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> – <i>Sphagnum capillifolium</i> heaths, and the more eastern H12 <i>Calluna vulgaris</i> – <i>Vaccinium myrtillus</i> heath. On the lower slopes these latter heaths <b>represent 4030 European dry heaths</b>. Overall, the site has the largest extent of the <b>Alpine and Boreal heaths</b> in the north-west Highlands.</p></div>
-<div>
-    <p><b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a></p>
-<p>Strathglass is the best representative in the SAC series of W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub on generally base-poor schist up to high altitude in the north-west Highlands. The <b>Sub-Arctic <i>Salix</i> spp. scrub</b> occurs in a series of localities in two widely separated corries, and scattered plants also occur in a few other places. The main occurrences are on ungrazed rock ledges, on steep rocky ground (including boulder fields) and on open slopes, where the willows are heavily grazed. Associated habitats are <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b> and herb-rich grassland. While downy willow <i>Salix lapponum</i> is the most widespread willow species, whortle-leaved willow <i>S. myrsinites</i> is also present.</p></div>
-<div>
-    <p><b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a></p>
-<p>The Affric-Cannich Hills within Strathglass Complex have the second-largest extent of <b>Siliceous alpine and boreal grasslands</b> in the UK, and are representative of the habitat type in the north-west Highlands. The rocks are generally acidic, with small areas of moderately base-rich rock. The dominant sub-types present are species-poor U10 <i>Carex bigelowii</i> – <i>Racomitrium lanuginosum</i> moss-heath and U7 <i>Nardus stricta</i> – <i>Carex bigelowii</i> grass-heath. Small areas of U8 <i>Carex bigelowii</i> – <i>Polytrichum alpinum</i> sedge-heath and U9 <i>Juncus trifidus</i> – <i>Racomitrium lanuginosum</i> rush-heath are also represented. There are extensive areas of the rarer species-rich <i>Carex</i> – <i>Racomitrium</i> moss-heath chiefly associated with the disturbed ground of solifluction terracing. This is enriched with arctic-alpine vascular plants and rare montane calcicole mosses. Associated communities include the most extensive areas of U13 <i>Deschampsia cespitosa</i> – <i>Galium saxatile</i> grassland in Britain.The moss- and dwarf-herb-dominated late-lie snow-beds (U11 <i>Polytrichum sexangulare</i> – <i>Kiaeria starkei</i> snow-bed, U12 <i>Salix herbacea</i> – <i>Racomitrium heterostichum</i> snow-bed and U14 <i>Alchemilla alpina</i> – <i>Sibbaldia procumbens</i> dwarf-herb community) are well-represented.</p></div>
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Strathglass Complex encompasses much of the east–west gradient that occurs in <b>blanket bog</b> north of the Great Glen. Both wet, oceanic M17 <i>Scirpus cespitosus</i> – <i>Eriophorum vaginatum</i> blanket mire and the drier, more upland M19 <i>Calluna vulgaris</i> – <i>Eriophorum vaginatum</i> blanket mire occur extensively. Bog vegetation is at its most extensive on the lower slopes of these high hills, extending up glacial troughs and in to high corries and on to ridges. The blanket bog grades into a diversity of heathlands and grasslands on the better-drained upper slopes. The wetter M17 blanket mire forms part of typical west Highland complexes of bog, wet heath and dry heath but, unusually, also occurs within <b>91C0 Caledonian forest</b>. At high altitudes <i>Calluna vulgaris</i> in M19 is replaced by other dwarf-shrubs such as crowberry <i>Vaccinium vitis-idaea</i>, cowberry <i>Empetrum nigrum</i> ssp. <i>hermaphroditum</i> and bog bilberry <i>Vaccinium uliginosum</i>. Notably, these include the scarce dwarf birch <i>Betula nana</i> and alpine bearberry <i>Arctostaphylos alpinus</i> at one of their few known locations in blanket bog outside Ben Wyvis.</p></div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-<p>Strathglass Complex has some of the most extensive outcrops of siliceous rock in the UK. This is one of eight sites representing this habitat in the western Highlands between Glen Coe in the south and Foinaven in the far north. A characteristic flora occurs up to very high altitude including parsley fern <i>Cryptogramma crispa</i>, three-leaved rush <i>Juncus trifidus</i>, least willow <i>Salix herbacea</i>, starry saxifrage <i>Saxifraga stellaris</i>, beech fern <i>Phegopteris connectilis</i> and the nationally rare Highland cudweed <i>Gnaphalium norvegicum</i>. Crevices in the more shady rocks support a flora of Atlantic mosses and liverworts.</p></div>
-<div>
-    <p><b>91C0</b> <a href=/habitat/H91C0/>Caledonian forest</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The <b>Caledonian forest</b> areas in Strathglass Complex are representative of the North Central biochemical region and are intermediate in type between the western and eastern geographic variants. The individual woodlands within the complex are some of the largest remaining intact stands of native pinewood in Scotland. Glens Strathfarrar and Affric are the most important pinewoods in the UK for the epiphytic lichen communities they support. A number of nationally rare lichen species occur in the woods, including <i>Bryoria furcellata</i> and <i>Pannaria ignobilis</i>. Birds typical of Caledonian forest, including capercaillie <i>Tetrao urogallus</i> and Scottish crossbill <i>Loxia scotica</i>, are represented. Interspersed amongst the forest habitat, areas of wetter peatland with scattered pine <b>91D0 Bog woodland</b> are found. </p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a></p>
-</div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-</div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-</div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-</div>
-<div>
-    <p><b>91D0</b> <a href=/habitat/H91D0/>Bog woodland</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1355</b> <a href=/species/S1355/>Otter</a> <b>Lutra lutra</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1355
+            <a href=/species/S1355/>Otter</a>
+        </b>
+        <i>Lutra lutra</i>
+        
     </div>
+</li>    </ul>
 </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -302,6 +411,6 @@ Inland water bodies (Standing water, Running water) (1%) <br />Bogs, Marshes, Wa
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

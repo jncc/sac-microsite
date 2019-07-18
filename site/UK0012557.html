@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012557">The New Forest</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>The New Forest</h1>
+
+<div class="section">
+    <h1>
+        The New Forest
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SU225075</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,84 +150,187 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012557_thumb.gif" />
-            <figcaption style="font-size: small;">Location of The New Forest SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of The New Forest SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (7%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (34%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (10%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (3%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (29%) <br />
+            </li>
+            <li>
+                Coniferous woodland (17%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012557.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Bogs, Marshes, Water fringed vegetation, Fens (7%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (34%) <br />Dry grassland, Steppes (10%) <br />Humid grassland, Mesophile grassland (3%) <br />Broad-leaved deciduous woodland (29%) <br />Coniferous woodland (17%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012557.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3110</b> <a href=/habitat/H3110/>Oligotrophic waters containing very few minerals of sandy plains (Littorelletalia uniflorae)</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Hatchet Pond in the New Forest in the south of England is in fact three ponds, one of which is an example of an oligotrophic waterbody amidst wet and dry lowland heath developed over fluvial deposits. It contains shoreweed <i>Littorella uniflora</i> and isolated populations of northern species such as bog orchid <i>Hammarbya paludosa</i> and floating bur-reed <i>Sparganium angustifolium</i>, alongside rare southern species such as Hampshire-purslane <i>Ludwigia palustris</i>. Hatchet Pond is therefore important as a southern example of this lake type where northern species, more common in the uplands of the UK, co-exist with southern species.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a>
+    </div>
+<p>In the New Forest <B>vegetation of the <I>Littorelletea uniflorae</I> and</B>/<B>or of the <I>Isoëto-Nanojuncetea</I></B> occurs on the edge of large temporary ponds, shallow ephemeral pools and poached damp hollows in grassland, which support a number of specialist species in a zone with toad rush <I>Juncus bufonius</I>. These include the two nationally scarce species coral-necklace <I>Illecebrum verticillatum</I> and yellow centaury <I>Cicendia filiformis</I>, often in association with allseed <I>Radiola linoides</I> and chaffweed <I>Anagallis minima</I>. Heavy grazing pressure is of prime importance in the maintenance of the outstanding flora of these temporary pond communities. Livestock maintain an open habitat, controlling scrub ingress, and trampling the surface. Commoners’ animals also transport seed in their hooves widely from pond to pond where suitable habitat exists. Temporary ponds occur throughout the Forest in depressions capable of holding water for part of the year. Most ponds are small (between 5-10&nbsp;m across) and, although great in number, amount to less than 10&nbsp;ha in total area.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+<p>The New Forest contains the most extensive stands of lowland <b>northern Atlantic wet heaths</b> in southern England, mainly of the M16 <i>Erica tetralix</i> – <i>Sphagnum compactum</i> type. M14 <i>Schoenus nigricans</i> – <i>Narthecium ossifragum</i> mire is also found on this site. The wet heaths are important for rare plants, such as marsh gentian <i>Gentiana pneumonanthe</i> and marsh clubmoss <i>Lycopodiella inundata</i>, and a number of dragonfly species, including the scarce blue-tailed damselfly <i>Ischnura pumilio</i> and small red damselfly <i>Ceriagrion tenellum</i>. There is a wide range of transitions between wet heath and other habitats, including dry heath, various woodland types, <i>Molinia</i> grasslands, fen, and acid grassland. Wet heaths enriched by bog myrtle <i>Myrica gale</i> are a prominent feature of many areas of the Forest. Unlike much lowland heath, the New Forest heaths continue to be extensively grazed by cattle and horses, favouring species with low competitive ability.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+<p>The New Forest represents <b>European dry heaths</b> in southern England and is the largest area of lowland heathland in the UK. It is particularly important for the diversity of its habitats and the range of rare and scarce species which it supports. The New Forest is unusual because of its long history of grazing in a traditional fashion by ponies and cattle. The dry heaths of the New Forest are of the H2 <i>Calluna vulgaris</i> – <i>Ulex minor</i> heath type, and H3 <i>Ulex minor</i> – <i>Agrostis curtisii</i> heath is found on damper areas. There are a wide range of transitions between dry heath and wet heath, <i>Molinia</i> grassland, fen, acid grassland and various types of scrub and woodland.Both the New Forest and the two Dorset Heath SACs are in southern England. All three areas are selected because together they contain a high proportion of all the lowland <b>European dry heaths</b> in the UK. There are, however, significant differences in the ecology of the two areas, associated with more oceanic conditions in Dorset and the continuous history of grazing in the New Forest.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6410</b> <a href=/habitat/H6410/>Molinia meadows on calcareous, peaty or clayey-silt-laden soils (Molinion caeruleae)</a>
+    </div>
+<p>The New Forest represents <b><i>Molinia</i> meadows</b> in southern England. The site supports a large area of the heathy form of M24 <i>Molinia caerulea</i> – <i>Cirsium dissectum</i> fen-meadow. This vegetation occurs in situations of heavy grazing by ponies and cattle in areas known locally as ‘lawns’, often in a fine-scale mosaic with <b>4010 Northern Atlantic wet heaths</b> and other mire and grassland communities. These lawns occur on flushed soils on slopes and on level terrain on the floodplains of rivers and streams.The New Forest <b><i>Molinia</i> meadows</b> are unusual in the UK in terms of their species composition, management and landscape position. The grasslands are species-rich, and a particular feature is the abundance of small sedges such as carnation sedge <i>Carex panicea</i>, common sedge <i>C. nigra</i> and yellow-sedge <i>C. viridula</i> ssp. <i>oedocarpa</i>, and the more frequent occurrence of mat-grass <i>Nardus stricta</i> and petty whin <i>Genista anglica</i> compared to stands elsewhere in the UK.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a>
+    </div>
+<p>The New Forest, one of three sites selected in southern England, is considered to hold the largest area in England of <b>Depressions on peat substrates of the <i>Rhynchosporion</i></b>, in complex habitat mosaics associated primarily with the extensive valley bogs of this site. The habitat type is developed in three situations: in natural bog pools of patterned bog surfaces, in flushes on the margins of valley mires and in areas disturbed by peat-digging, footpaths, tracks, ditches etc. In places the habitat type is rich in brown mosses <i>Cratoneuron</i> spp. and <i>Scorpidium scorpioides</i>, suggesting flushing by mineral-rich waters. The mosaics in which this habitat type occurs are an important location for bog orchid <i>Hammarbya paludosa</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>9120</b> <a href=/habitat/H9120/>Atlantic acidophilous beech forests with Ilex and sometimes also Taxus in the shrublayer (Quercion robori-petraeae or Ilici-Fagenion)</a>
+    </div>
+<p>The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain and represents <b>Atlantic acidophilous beech forests</b> in the most southerly part of the habitat’s UK range. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodland is open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>9130</b> <a href=/habitat/H9130/>Asperulo-Fagetum beech forests</a>
+    </div>
+<p>The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain; much of it is a form of W14 <i>Fagus sylvatica</i> – <i>Rubus fruticosus</i> woodland that conforms to the Annex I type <b><i>Asperulo-Fagetum</i> beech forests</b>. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodlands are open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>9190</b> <a href=/habitat/H9190/>Old acidophilous oak woods with Quercus robur on sandy plains</a>
+    </div>
+<p>The New Forest is representative of <B>old acidophilous oak woods</B> in the southern part of its UK range. It is the most extensive area of active wood-pasture with old oak <I>Quercus</I> spp. and beech <I>Fagus sylvatica</I> in north-west Europe and has outstanding invertebrate and lichen populations. This site was preferred over other sites that lack a succession of age-classes because, although scattered over a wide area, the oak stands are found within a predominantly semi-natural landscape with a more balanced age-structure of trees. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system. The New Forest has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91D0</b> <a href=/habitat/H91D0/>Bog woodland</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Within the New Forest, in southern England, birch – willow <i>Betula</i> – <i>Salix</i> stands occur over valley bog vegetation, with fringing alder <i>Alnus</i> – <i>Sphagnum</i> stands where there is some water movement. These stands appear to have persisted for long periods in stable association with the underlying <i>Sphagnum</i> bog-moss communities. The rich epiphytic lichen communities and pollen record provide evidence for the persistence of this association. The <b>Bog woodland</b> occurs in association with a range of other habitats for which the site has also been selected.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91E0</b> <a href=/habitat/H91E0/>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The New Forest contains many streams and some small rivers that are less affected by drainage and canalisation than those in any other comparable area in the lowlands of England. Associated with many of the streams, particularly those with alkaline and neutral groundwater, are strips of alder <i>Alnus glutinosa</i> woodland which, collectively, form an extensive resource with a rich flora. In places there are examples of transitions from open water through reedswamp and fen to alder woodland. The small rivers show natural meanders and debris dams, features that are otherwise rare in the lowlands, with fragmentary ash <i>Fraxinus excelsior</i> stands as well as the alder strips. In other places there are transitions to <b>9190 Old acidophilous oak woods with <i>Quercus robur</i> on sandy plains</b> and <b>9120 Atlantic acidophilous beech forests with <i>Ilex</i> and sometimes also <i>Taxus</i> in the shrublayer</b> (<b><i>Quercion robori-petraeae</i> or <i>Ilici-Fagenion</i></b>), for which this site has also been selected.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3110</b> <a href=/habitat/H3110/>Oligotrophic waters containing very few minerals of sandy plains (Littorelletalia uniflorae)</a></p>
-<p>Hatchet Pond in the New Forest in the south of England is in fact three ponds, one of which is an example of an oligotrophic waterbody amidst wet and dry lowland heath developed over fluvial deposits. It contains shoreweed <i>Littorella uniflora</i> and isolated populations of northern species such as bog orchid <i>Hammarbya paludosa</i> and floating bur-reed <i>Sparganium angustifolium</i>, alongside rare southern species such as Hampshire-purslane <i>Ludwigia palustris</i>. Hatchet Pond is therefore important as a southern example of this lake type where northern species, more common in the uplands of the UK, co-exist with southern species.</p></div>
-<div>
-    <p><b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a></p>
-<p>In the New Forest <B>vegetation of the <I>Littorelletea uniflorae</I> and</B>/<B>or of the <I>Isoëto-Nanojuncetea</I></B> occurs on the edge of large temporary ponds, shallow ephemeral pools and poached damp hollows in grassland, which support a number of specialist species in a zone with toad rush <I>Juncus bufonius</I>. These include the two nationally scarce species coral-necklace <I>Illecebrum verticillatum</I> and yellow centaury <I>Cicendia filiformis</I>, often in association with allseed <I>Radiola linoides</I> and chaffweed <I>Anagallis minima</I>. Heavy grazing pressure is of prime importance in the maintenance of the outstanding flora of these temporary pond communities. Livestock maintain an open habitat, controlling scrub ingress, and trampling the surface. Commoners’ animals also transport seed in their hooves widely from pond to pond where suitable habitat exists. Temporary ponds occur throughout the Forest in depressions capable of holding water for part of the year. Most ponds are small (between 5-10&nbsp;m across) and, although great in number, amount to less than 10&nbsp;ha in total area.</p></div>
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-<p>The New Forest contains the most extensive stands of lowland <b>northern Atlantic wet heaths</b> in southern England, mainly of the M16 <i>Erica tetralix</i> – <i>Sphagnum compactum</i> type. M14 <i>Schoenus nigricans</i> – <i>Narthecium ossifragum</i> mire is also found on this site. The wet heaths are important for rare plants, such as marsh gentian <i>Gentiana pneumonanthe</i> and marsh clubmoss <i>Lycopodiella inundata</i>, and a number of dragonfly species, including the scarce blue-tailed damselfly <i>Ischnura pumilio</i> and small red damselfly <i>Ceriagrion tenellum</i>. There is a wide range of transitions between wet heath and other habitats, including dry heath, various woodland types, <i>Molinia</i> grasslands, fen, and acid grassland. Wet heaths enriched by bog myrtle <i>Myrica gale</i> are a prominent feature of many areas of the Forest. Unlike much lowland heath, the New Forest heaths continue to be extensively grazed by cattle and horses, favouring species with low competitive ability.</p></div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-<p>The New Forest represents <b>European dry heaths</b> in southern England and is the largest area of lowland heathland in the UK. It is particularly important for the diversity of its habitats and the range of rare and scarce species which it supports. The New Forest is unusual because of its long history of grazing in a traditional fashion by ponies and cattle. The dry heaths of the New Forest are of the H2 <i>Calluna vulgaris</i> – <i>Ulex minor</i> heath type, and H3 <i>Ulex minor</i> – <i>Agrostis curtisii</i> heath is found on damper areas. There are a wide range of transitions between dry heath and wet heath, <i>Molinia</i> grassland, fen, acid grassland and various types of scrub and woodland.Both the New Forest and the two Dorset Heath SACs are in southern England. All three areas are selected because together they contain a high proportion of all the lowland <b>European dry heaths</b> in the UK. There are, however, significant differences in the ecology of the two areas, associated with more oceanic conditions in Dorset and the continuous history of grazing in the New Forest.</p></div>
-<div>
-    <p><b>6410</b> <a href=/habitat/H6410/>Molinia meadows on calcareous, peaty or clayey-silt-laden soils (Molinion caeruleae)</a></p>
-<p>The New Forest represents <b><i>Molinia</i> meadows</b> in southern England. The site supports a large area of the heathy form of M24 <i>Molinia caerulea</i> – <i>Cirsium dissectum</i> fen-meadow. This vegetation occurs in situations of heavy grazing by ponies and cattle in areas known locally as ‘lawns’, often in a fine-scale mosaic with <b>4010 Northern Atlantic wet heaths</b> and other mire and grassland communities. These lawns occur on flushed soils on slopes and on level terrain on the floodplains of rivers and streams.The New Forest <b><i>Molinia</i> meadows</b> are unusual in the UK in terms of their species composition, management and landscape position. The grasslands are species-rich, and a particular feature is the abundance of small sedges such as carnation sedge <i>Carex panicea</i>, common sedge <i>C. nigra</i> and yellow-sedge <i>C. viridula</i> ssp. <i>oedocarpa</i>, and the more frequent occurrence of mat-grass <i>Nardus stricta</i> and petty whin <i>Genista anglica</i> compared to stands elsewhere in the UK.</p></div>
-<div>
-    <p><b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a></p>
-<p>The New Forest, one of three sites selected in southern England, is considered to hold the largest area in England of <b>Depressions on peat substrates of the <i>Rhynchosporion</i></b>, in complex habitat mosaics associated primarily with the extensive valley bogs of this site. The habitat type is developed in three situations: in natural bog pools of patterned bog surfaces, in flushes on the margins of valley mires and in areas disturbed by peat-digging, footpaths, tracks, ditches etc. In places the habitat type is rich in brown mosses <i>Cratoneuron</i> spp. and <i>Scorpidium scorpioides</i>, suggesting flushing by mineral-rich waters. The mosaics in which this habitat type occurs are an important location for bog orchid <i>Hammarbya paludosa</i>.</p></div>
-<div>
-    <p><b>9120</b> <a href=/habitat/H9120/>Atlantic acidophilous beech forests with Ilex and sometimes also Taxus in the shrublayer (Quercion robori-petraeae or Ilici-Fagenion)</a></p>
-<p>The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain and represents <b>Atlantic acidophilous beech forests</b> in the most southerly part of the habitat’s UK range. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodland is open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.</p></div>
-<div>
-    <p><b>9130</b> <a href=/habitat/H9130/>Asperulo-Fagetum beech forests</a></p>
-<p>The New Forest is the largest area of mature, semi-natural beech <i>Fagus sylvatica</i> woodland in Britain; much of it is a form of W14 <i>Fagus sylvatica</i> – <i>Rubus fruticosus</i> woodland that conforms to the Annex I type <b><i>Asperulo-Fagetum</i> beech forests</b>. The mosaic with other types of woodland and heath has allowed unique and varied assemblages of epiphytic lichens and saproxylic invertebrates to be sustained, particularly in situations where the woodlands are open and the tree trunks receive plenty of light. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system.</p></div>
-<div>
-    <p><b>9190</b> <a href=/habitat/H9190/>Old acidophilous oak woods with Quercus robur on sandy plains</a></p>
-<p>The New Forest is representative of <B>old acidophilous oak woods</B> in the southern part of its UK range. It is the most extensive area of active wood-pasture with old oak <I>Quercus</I> spp. and beech <I>Fagus sylvatica</I> in north-west Europe and has outstanding invertebrate and lichen populations. This site was preferred over other sites that lack a succession of age-classes because, although scattered over a wide area, the oak stands are found within a predominantly semi-natural landscape with a more balanced age-structure of trees. The traditional common grazing in the Forest by cattle and ponies provides opportunities to explore the impact of large herbivores on the woodland system. The New Forest has been identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</p></div>
-<div>
-    <p><b>91D0</b> <a href=/habitat/H91D0/>Bog woodland</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Within the New Forest, in southern England, birch – willow <i>Betula</i> – <i>Salix</i> stands occur over valley bog vegetation, with fringing alder <i>Alnus</i> – <i>Sphagnum</i> stands where there is some water movement. These stands appear to have persisted for long periods in stable association with the underlying <i>Sphagnum</i> bog-moss communities. The rich epiphytic lichen communities and pollen record provide evidence for the persistence of this association. The <b>Bog woodland</b> occurs in association with a range of other habitats for which the site has also been selected.</p></div>
-<div>
-    <p><b>91E0</b> <a href=/habitat/H91E0/>Alluvial forests with Alnus glutinosa and Fraxinus excelsior (Alno-Padion, Alnion incanae, Salicion albae)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The New Forest contains many streams and some small rivers that are less affected by drainage and canalisation than those in any other comparable area in the lowlands of England. Associated with many of the streams, particularly those with alkaline and neutral groundwater, are strips of alder <i>Alnus glutinosa</i> woodland which, collectively, form an extensive resource with a rich flora. In places there are examples of transitions from open water through reedswamp and fen to alder woodland. The small rivers show natural meanders and debris dams, features that are otherwise rare in the lowlands, with fragmentary ash <i>Fraxinus excelsior</i> stands as well as the alder strips. In other places there are transitions to <b>9190 Old acidophilous oak woods with <i>Quercus robur</i> on sandy plains</b> and <b>9120 Atlantic acidophilous beech forests with <i>Ilex</i> and sometimes also <i>Taxus</i> in the shrublayer</b> (<b><i>Quercion robori-petraeae</i> or <i>Ilici-Fagenion</i></b>), for which this site has also been selected.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1044</b> <a href=/species/S1044/>Southern damselfly</a> <b>Coenagrion mercuriale</b></p>
-<p>The New Forest in central southern England is an outstanding locality for <b>southern damselfly <i>Coenagrion mercuriale</i></b>, with several population centres and strong populations estimated to be in the hundreds or thousands of individuals and with a long history of records. With Preseli, Dorset Heaths and the River Itchen, it represents one of the four major population centres in the UK.</p></div>
-<div>
-    <p><b>1083</b> <a href=/species/S1083/>Stag beetle</a> <b>Lucanus cervus</b></p>
-<p>The New Forest represents <B>stag beetle <I>Lucanus cervus</I></B> in its Hampshire/Sussex population centre, and is a major stronghold for the species in the UK. The forest is one of the most important sites in the UK for fauna associated with rotting wood, and was identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1166</b> <a href=/species/S1166/>Great crested newt</a> <b>Triturus cristatus</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1044
+            <a href=/species/S1044/>Southern damselfly</a>
+        </b>
+        <i>Coenagrion mercuriale</i>
+        
     </div>
+<p>The New Forest in central southern England is an outstanding locality for <b>southern damselfly <i>Coenagrion mercuriale</i></b>, with several population centres and strong populations estimated to be in the hundreds or thousands of individuals and with a long history of records. With Preseli, Dorset Heaths and the River Itchen, it represents one of the four major population centres in the UK.</p></li>
+<li>
+    <div>
+        <b>
+            1083
+            <a href=/species/S1083/>Stag beetle</a>
+        </b>
+        <i>Lucanus cervus</i>
+        
+    </div>
+<p>The New Forest represents <B>stag beetle <I>Lucanus cervus</I></B> in its Hampshire/Sussex population centre, and is a major stronghold for the species in the UK. The forest is one of the most important sites in the UK for fauna associated with rotting wood, and was identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
+    <div>
+        <b>
+            1166
+            <a href=/species/S1166/>Great crested newt</a>
+        </b>
+        <i>Triturus cristatus</i>
+        
+    </div>
+</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -308,6 +419,6 @@ Bogs, Marshes, Water fringed vegetation, Fens (7%) <br />Heath, Scrub, Maquis an
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

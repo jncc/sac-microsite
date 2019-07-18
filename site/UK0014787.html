@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0014787">Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</h1>
+
+<div class="section">
+    <h1>
+        Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>East Wales, West Wales and The Valleys</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SR885969</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,63 +150,160 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0014787_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (15%) <br />
+            </li>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (27%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (22%) <br />
+            </li>
+            <li>
+                Inland water bodies (Standing water, Running water) (1%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (1%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (14%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (2%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (10%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (1%) <br />
+            </li>
+            <li>
+                Coniferous woodland (1%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (6%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014787.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (15%) <br />Coastal sand dunes, Sand beaches, Machair (27%) <br />Shingle, Sea cliffs, Islets (22%) <br />Inland water bodies (Standing water, Running water) (1%) <br />Bogs, Marshes, Water fringed vegetation, Fens (1%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (14%) <br />Dry grassland, Steppes (2%) <br />Humid grassland, Mesophile grassland (10%) <br />Broad-leaved deciduous woodland (1%) <br />Coniferous woodland (1%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (6%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014787.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The extensive cliffs of south-west Wales represent hard calcareous cliffs in the south-west of the UK. The nature of the rock and the warm south-facing slopes have resulted in the occurrence of a sequence of important species-rich plant communities. At the base of the cliff, on rock platforms, characteristic maritime communities with thrift <i>Armeria maritima</i>, rock samphire <i>Crithmum maritimum</i> and buck’s-horn plantain <i>Plantago coronopus</i> occur. These grade into calcareous grasslands and heathlands, which support a rich assortment of rare species. These include the yellow whitlowgrass <i>Draba aizoides</i>, a Mediterranean species restricted in the UK to south Wales, where it grows with more characteristic coastal species such as spring squill <i>Scilla verna</i>. Other rarities include small restharrow <i>Ononis reclinata</i>, <b>1654 Early gentian <i>Gentianella anglica</i></b>, goldilocks aster <i>Aster linosyris</i> and the endemic rock sea-lavenders <i>Limonium parvum</i>, <i>L. transwallianum</i> and <i>L. procerum</i> ssp. <i>cambrense</i>. Important lichen communities occur, with good populations of <i>Fulgensia fulgens</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The sand dunes within this site are confined to the Castlemartin Peninsula in Pembrokeshire and include Broomhill, Brownslade, Kilpaison, Linney and Stackpole Burrows. The area includes extensive stands of short, species-rich, fixed dune grassland, which is being maintained by populations of rabbits <i>Oryctolagus cuniculus</i>, aided by sheep and cattle. Deposited on limestone, these dunes are extremely base-rich, and the fixed dune grasslands have much in common with calcicolous grasslands. They therefore support a number of ‘lime-loving’ species including the rare lichen <i>Fulgensia fulgens</i>.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8310</b> <a href=/habitat/H8310/>Caves not open to the public</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a></p>
-<p>The extensive cliffs of south-west Wales represent hard calcareous cliffs in the south-west of the UK. The nature of the rock and the warm south-facing slopes have resulted in the occurrence of a sequence of important species-rich plant communities. At the base of the cliff, on rock platforms, characteristic maritime communities with thrift <i>Armeria maritima</i>, rock samphire <i>Crithmum maritimum</i> and buck’s-horn plantain <i>Plantago coronopus</i> occur. These grade into calcareous grasslands and heathlands, which support a rich assortment of rare species. These include the yellow whitlowgrass <i>Draba aizoides</i>, a Mediterranean species restricted in the UK to south Wales, where it grows with more characteristic coastal species such as spring squill <i>Scilla verna</i>. Other rarities include small restharrow <i>Ononis reclinata</i>, <b>1654 Early gentian <i>Gentianella anglica</i></b>, goldilocks aster <i>Aster linosyris</i> and the endemic rock sea-lavenders <i>Limonium parvum</i>, <i>L. transwallianum</i> and <i>L. procerum</i> ssp. <i>cambrense</i>. Important lichen communities occur, with good populations of <i>Fulgensia fulgens</i>.</p></div>
-<div>
-    <p><b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The sand dunes within this site are confined to the Castlemartin Peninsula in Pembrokeshire and include Broomhill, Brownslade, Kilpaison, Linney and Stackpole Burrows. The area includes extensive stands of short, species-rich, fixed dune grassland, which is being maintained by populations of rabbits <i>Oryctolagus cuniculus</i>, aided by sheep and cattle. Deposited on limestone, these dunes are extremely base-rich, and the fixed dune grasslands have much in common with calcicolous grasslands. They therefore support a number of ‘lime-loving’ species including the rare lichen <i>Fulgensia fulgens</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a></p>
-</div>
-<div>
-    <p><b>8310</b> <a href=/habitat/H8310/>Caves not open to the public</a></p>
-</div>
-<div>
-    <p><b>8330</b> <a href=/habitat/H8330/>Submerged or partially submerged sea caves</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1304</b> <a href=/species/S1304/>Greater horseshoe bat</a> <b>Rhinolophus ferrumequinum</b></p>
-<p>This site in south-west Wales contains the main hibernation site for the population associated with Pembrokeshire Bat Sites cSAC. It may thus be used by up to 5.5% of the UK population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b>.</p></div>
-<div>
-    <p><b>1654</b> <a href=/species/S1654/>Early gentian</a> <b>Gentianella anglica</b></p>
-<p>The dunes and coastal grassland at Stackpole support the only known population of <b>early gentian <i>Gentianella anglica</i></b> in Wales numbering, in good years, several hundred plants and many ‘hybrids’ with <i>G. amarella</i> (<i>G</i>. x <i>davidiana</i>). This is an exceptionally isolated range-outlier from the southern English centres of distribution and there are taxonomic questions over the identity of this species and other <i>Gentianella</i> segregates in the district.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1395</b> <a href=/species/S1395/>Petalwort</a> <b>Petalophyllum ralfsii</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1304
+            <a href=/species/S1304/>Greater horseshoe bat</a>
+        </b>
+        <i>Rhinolophus ferrumequinum</i>
+        
     </div>
+<p>This site in south-west Wales contains the main hibernation site for the population associated with Pembrokeshire Bat Sites cSAC. It may thus be used by up to 5.5% of the UK population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b>.</p></li>
+<li>
+    <div>
+        <b>
+            1654
+            <a href=/species/S1654/>Early gentian</a>
+        </b>
+        <i>Gentianella anglica</i>
+        
+    </div>
+<p>The dunes and coastal grassland at Stackpole support the only known population of <b>early gentian <i>Gentianella anglica</i></b> in Wales numbering, in good years, several hundred plants and many ‘hybrids’ with <i>G. amarella</i> (<i>G</i>. x <i>davidiana</i>). This is an exceptionally isolated range-outlier from the southern English centres of distribution and there are taxonomic questions over the identity of this species and other <i>Gentianella</i> segregates in the district.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
+    <div>
+        <b>
+            1395
+            <a href=/species/S1395/>Petalwort</a>
+        </b>
+        <i>Petalophyllum ralfsii</i>
+        
+    </div>
+</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -287,6 +392,6 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

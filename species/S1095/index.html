@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,170 +77,262 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1095"><I>Petromyzon marinus</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: fish</h1>
-</div>
-<h4>1095 Sea lamprey [<I>Petromyzon marinus</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1095/map">
-            <img src="/images/maps/features/thumbnails/S1095_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1095</b> <I>Petromyzon marinus</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1095/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1095/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1095</span>
+        <span class="space-right">Sea lamprey</span>
+        <I>Petromyzon marinus</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: fish</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1095/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1095/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>sea lamprey <I>Petromyzon marinus</B></I> is a primitive, jawless fish resembling an eel. It is the largest of the lampreys found in the UK. It occurs in estuaries and easily accessible rivers, and is an anadromous species (i.e. spawning in freshwater but completing its life cycle in the sea). Like the other species of lamprey, sea lampreys need clean gravel for spawning, and marginal silt or sand for the burrowing juvenile ammocoetes. Sea lampreys have a preference for warm waters in which to spawn. Features such as weirs and dams, as well as polluted sections of river, may impede migration to spawning grounds. In comparison to <B>1099 River lamprey <I>Lampetra fluviatilis</B></I>, sea lampreys seem to be relatively poor at ascending obstacles to migration, and are frequently restricted to the lower reaches of rivers. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1095/map">
+                <img src="/images/maps/features/thumbnails/S1095_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1095</b> <I>Petromyzon marinus</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>sea lamprey <I>Petromyzon marinus</B> </I>occurs in estuaries and easily accessible rivers over much of the Atlantic coastal area of western and northern Europe (from northern Norway to the western Mediterranean) and eastern North America. It has declined in some parts of its European range.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1095/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>The <B>sea lamprey <I>Petromyzon marinus</B></I> is reasonably widespread in UK rivers. In some places it is still common, but it has declined in parts of its range and has become extinct in a number of rivers. It appears to reach its northern limit of distribution in Scotland and does not occur north of the Great Glen.</P></p>
+    <p>View <a href=/species/S1095/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites with reliable records of sea lamprey Petromyzon marinus, and which contain the necessary habitat requirements for spawning and survival of juveniles, have been selected. The SAC series encompasses the geographical range of the species and includes a range of high-quality river types in which it occurs. Rivers with significant barriers to migration have been excluded. Marine sites that are considered important migration routes or feeding grounds for this species have also been selected, usually where they are adjacent to a freshwater site. Identification of suitable sites in some parts of the UK has been hampered by the absence of comparative population data.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures are also necessary to support its conservation in the UK.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013016>River Avon</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
+<li>
+    <b>
+        <a href=/site/UK0013016 class="space-right">River Avon</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The Avon represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality river in the southern part of its range. There are excellent examples of the features that the species needs for survival, including extensive areas of sand and gravel in the middle to lower reaches of the river where sea lampreys are known to spawn.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030032 class="space-right">River Derwent and Bassenthwaite Lake</a>
+        Cumbria
+    </b>
+    <div>
+The Derwent represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality oligotrophic river in northern England. The extensive occurrence of gravels and silts in the middle to lower reaches of this river means that it is able to support a large population of sea lamprey.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012643 class="space-right">River Eden</a>
+        Cumbria, North Yorkshire, Northumberland and Tyne and Wear
+    </b>
+    <div>
+The Eden represents a <b>sea lamprey <i>Petromyzon marinus</i></b> population associated with an extensive river system on a varied and base-rich geology in northern England. The highly erodible nature of the rock results in extensive areas of gravel and finer silts being deposited throughout the system, providing conditions for spawning and nursery areas. A large and healthy population of sea lamprey is supported in the middle to lower regions of the river.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019811 class="space-right">River Spey</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+    <div>
+The River Spey represents the <b>sea lamprey <i>Petromyzon marinus</i></b> in the northern part of its range in the UK. It is absent from rivers north of the Great Glen, and the River Spey is virtually at the northern limit for this species. Recent surveys show that sea lamprey larvae are widely distributed throughout the middle and lower reaches of the river, where the particularly fast-flowing waters of the River Spey provide ideal spawning conditions for this species. In addition, as an unpolluted and relatively little modified system, the River Spey matches the other key habitat requirements of the sea lamprey in terms of good water quality, clean gravels and marginal silts and an unhindered migration route to the sea.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030263 class="space-right">River Teith</a>
+        Eastern Scotland
+    </b>
+    <div>
+The River Teith in eastern Scotland represents part of the east coast range of the <b>sea lamprey <i>Petromyzon marinus</i></b> in the UK. The River Teith is the most significant tributary of the River Forth and young sea lampreys have been recorded throughout the lower reaches of the main river. The conservation importance of the River Teith is increased by the fact that, unlike many British rivers, it supports populations of all three lamprey species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013007 class="space-right">River Usk/ Afon Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+The Usk is a medium-sized catchment in south Wales, important for its population of <b>sea lamprey <i>Petromyzon marinus</i></b>. Survey of juveniles and observation of spawning adults indicates that this species is mainly restricted to the lower reaches of the catchment. The site supports a range of Annex II fish species.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012642 class="space-right">River Wye/ Afon Gwy</a>
+        East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys
+    </b>
+    <div>
+The Wye is an extensive river system crossing the border between England and Wales and the <b>sea lamprey <i>Petromyzon marinus</i></b> population is found in the main stem below Llyswen. The site provides exceptionally good quality habitat for sea lamprey and supports a healthy population.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013030 class="space-right">Severn Estuary/ M&#xF4;r Hafren</a>
+        Dorset and Somerset, East Wales, Extra-Regio, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+Species occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0013025 class="space-right">Solway Firth</a>
+        Cumbria, Extra-Regio, South Western Scotland
+    </b>
+    <div>
+The Solway Firth provides migratory passage for <b>sea lamprey <i>Petromyzon marinus</i></b> to and from spawning and nursery grounds in a number of rivers, including the Eden which is designated as a cSAC for the species.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Avon represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality river in the southern part of its range. There are excellent examples of the features that the species needs for survival, including extensive areas of sand and gravel in the middle to lower reaches of the river where sea lampreys are known to spawn. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030032>River Derwent and Bassenthwaite Lake</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Derwent represents <b>sea lamprey <i>Petromyzon marinus</i></b> in a high-quality oligotrophic river in northern England. The extensive occurrence of gravels and silts in the middle to lower reaches of this river means that it is able to support a large population of sea lamprey. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012643>River Eden</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, North Yorkshire, Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Eden represents a <b>sea lamprey <i>Petromyzon marinus</i></b> population associated with an extensive river system on a varied and base-rich geology in northern England. The highly erodible nature of the rock results in extensive areas of gravel and finer silts being deposited throughout the system, providing conditions for spawning and nursery areas. A large and healthy population of sea lamprey is supported in the middle to lower regions of the river. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019811>River Spey</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The River Spey represents the <b>sea lamprey <i>Petromyzon marinus</i></b> in the northern part of its range in the UK. It is absent from rivers north of the Great Glen, and the River Spey is virtually at the northern limit for this species. Recent surveys show that sea lamprey larvae are widely distributed throughout the middle and lower reaches of the river, where the particularly fast-flowing waters of the River Spey provide ideal spawning conditions for this species. In addition, as an unpolluted and relatively little modified system, the River Spey matches the other key habitat requirements of the sea lamprey in terms of good water quality, clean gravels and marginal silts and an unhindered migration route to the sea.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030263>River Teith</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The River Teith in eastern Scotland represents part of the east coast range of the <b>sea lamprey <i>Petromyzon marinus</i></b> in the UK. The River Teith is the most significant tributary of the River Forth and young sea lampreys have been recorded throughout the lower reaches of the main river. The conservation importance of the River Teith is increased by the fact that, unlike many British rivers, it supports populations of all three lamprey species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013007>River Usk/ Afon Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Usk is a medium-sized catchment in south Wales, important for its population of <b>sea lamprey <i>Petromyzon marinus</i></b>. Survey of juveniles and observation of spawning adults indicates that this species is mainly restricted to the lower reaches of the catchment. The site supports a range of Annex II fish species.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012642>River Wye/ Afon Gwy</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Wye is an extensive river system crossing the border between England and Wales and the <b>sea lamprey <i>Petromyzon marinus</i></b> population is found in the main stem below Llyswen. The site provides exceptionally good quality habitat for sea lamprey and supports a healthy population. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013030>Severn Estuary/ M&#xF4;r Hafren</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, East Wales, Extra-Regio, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-<p>Species occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013025>Solway Firth</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Extra-Regio, South Western Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Solway Firth provides migratory passage for <b>sea lamprey <i>Petromyzon marinus</i></b> to and from spawning and nursery grounds in a number of rivers, including the Eden which is designated as a cSAC for the species.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012670>Afon Teifi/ River Teifi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013010>Afon Tywi/ River Tywi</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030074>Afonydd Cleddau/ Cleddau Rivers</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012712>Cardigan Bay/ Bae Ceredigion</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0020020>Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030131>Dee Estuary/ Aber Dyfrdwy</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030170>Humber Estuary</a></div>
-    <div class="cell large-6 small-12"><b>East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013116>Pembrokeshire Marine/ Sir Benfro Forol</a></div>
-    <div class="cell large-6 small-12"><b>Extra-Regio, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030248>River Axe</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030252>River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030253>River Derwent</a></div>
-    <div class="cell large-6 small-12"><b>North Yorkshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030312>River Tay</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012691>River Tweed</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030292>Tweed Estuary</a></div>
-    <div class="cell large-6 small-12"><b>Northumberland and Tyne and Wear</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012670 class="space-right">Afon Teifi/ River Teifi</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013010 class="space-right">Afon Tywi/ River Tywi</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030074 class="space-right">Afonydd Cleddau/ Cleddau Rivers</a>
+        West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012712 class="space-right">Cardigan Bay/ Bae Ceredigion</a>
+        Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0020020 class="space-right">Carmarthen Bay and Estuaries/ Bae Caerfyrddin ac Aberoedd</a>
+        East Wales, Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030131 class="space-right">Dee Estuary/ Aber Dyfrdwy</a>
+        Cheshire, East Wales, Extra-Regio, Merseyside, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030170 class="space-right">Humber Estuary</a>
+        East Yorkshire and Northern Lincolnshire, Extra-Regio, Lincolnshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013116 class="space-right">Pembrokeshire Marine/ Sir Benfro Forol</a>
+        Extra-Regio, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030248 class="space-right">River Axe</a>
+        Devon
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030252 class="space-right">River Dee and Bala Lake/ Afon Dyfrdwy a Llyn Tegid</a>
+        Cheshire, East Wales, Shropshire and Staffordshire, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030253 class="space-right">River Derwent</a>
+        North Yorkshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030312 class="space-right">River Tay</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012691 class="space-right">River Tweed</a>
+        Eastern Scotland, Northumberland and Tyne and Wear
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030292 class="space-right">Tweed Estuary</a>
+        Northumberland and Tyne and Wear
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -328,6 +419,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,20 +77,24 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1065"><I>Euphydryas</I> (<I>Eurodryas</I>, <I>Hypodryas</I>) <I>aurinia</I></a></li>
-                <li><a class="" href="/species/S1065/comparison">Comparison</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
+                    <li><a class="" href="/species/S1065">1065 <I>Euphydryas</I> (<I>Eurodryas</I>, <I>Hypodryas</I>) <I>aurinia</I></a></li>
         </ul>
     </nav>
 </div>                        
-<h1>Invertebrate species: arthropods</h1>
-<h2>Comparison of UK resource and SAC distribution of Annex II species 1065 Marsh fritillary butterfly <I>Euphydryas</I> (<I>Eurodryas</I>, <I>Hypodryas</I>) <I>aurinia</I></h2>
+<h1>Comparison of UK resource and SAC distribution of Annex II species 1065 Marsh fritillary butterfly <I>Euphydryas</I> (<I>Eurodryas</I>, <I>Hypodryas</I>) <I>aurinia</I></h1>
+
 <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
         <div class="cell small-12 medium-6 large-6">
@@ -195,6 +198,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

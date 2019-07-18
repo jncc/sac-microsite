@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012923">Border Mires, Kielder - Butterburn</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Border Mires, Kielder - Butterburn</h1>
+
+<div class="section">
+    <h1>
+        Border Mires, Kielder - Butterburn
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cumbria, Northumberland and Tyne and Wear</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NT684013</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,51 +150,103 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012923_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Border Mires, Kielder - Butterburn SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Border Mires, Kielder - Butterburn SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (80%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (18%) <br />
+            </li>
+            <li>
+                Coniferous woodland (1%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012923.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Bogs, Marshes, Water fringed vegetation, Fens (80%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (18%) <br />Coniferous woodland (1%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012923.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>This complex is part of what was once the largest continuous tract of <b>Blanket bogs</b> across northern England and is particularly important for the quality of the transition it represents between blanket bog and raised mire. Although much of the land has been afforested, significant areas of the original bog remain throughout the forested expanse and these have been selected to represent this habitat type in northern England. The climate is wetter here than in some other parts of northern England, and this is reflected in the composition of the vegetation, which is dominated by species of cottongrass <i>Eriophorum</i> and a reduced cover of heather <i>Calluna vulgaris</i>. At Butterburn Flow the wetter climate is also emphasised by quite distinct surface patterning of <i>Sphagnum</i> hollows separated by <i>Sphagnum</i> ridges in the largest of the open areas. It is a very good example of the <i>Sphagnum</i>-rich cross-leaved heath <i>Erica tetralix</i> and <i>Sphagnum papillosum</i> vegetation type.</p></div>
-<div>
-    <p><b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a></p>
-<p>Border Mires, Kielder – Butterburn is made up of several individual sites running north-east from Carlisle. Collectively, these sites contain a wide range of bog-moss <i>Sphagnum</i> species, for example 11 on Caudbeck alone, along with an almost equally large number of <i>Carex</i> species. The <b>transition mire</b> element of these sites is relatively small, but is an important component of one of the least-damaged and more valuable species-rich mire complexes in England.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
 
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-</div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
     </div>
+<p>This complex is part of what was once the largest continuous tract of <b>Blanket bogs</b> across northern England and is particularly important for the quality of the transition it represents between blanket bog and raised mire. Although much of the land has been afforested, significant areas of the original bog remain throughout the forested expanse and these have been selected to represent this habitat type in northern England. The climate is wetter here than in some other parts of northern England, and this is reflected in the composition of the vegetation, which is dominated by species of cottongrass <i>Eriophorum</i> and a reduced cover of heather <i>Calluna vulgaris</i>. At Butterburn Flow the wetter climate is also emphasised by quite distinct surface patterning of <i>Sphagnum</i> hollows separated by <i>Sphagnum</i> ridges in the largest of the open areas. It is a very good example of the <i>Sphagnum</i>-rich cross-leaved heath <i>Erica tetralix</i> and <i>Sphagnum papillosum</i> vegetation type.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7140</b> <a href=/habitat/H7140/>Transition mires and quaking bogs</a>
+    </div>
+<p>Border Mires, Kielder – Butterburn is made up of several individual sites running north-east from Carlisle. Collectively, these sites contain a wide range of bog-moss <i>Sphagnum</i> species, for example 11 on Caudbeck alone, along with an almost equally large number of <i>Carex</i> species. The <b>transition mire</b> element of these sites is relatively small, but is an important component of one of the least-damaged and more valuable species-rich mire complexes in England.</p></li>
+    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7220</b> <a href=/habitat/H7220/>Petrifying springs with tufa formation (Cratoneurion)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -275,6 +335,6 @@ Bogs, Marshes, Water fringed vegetation, Fens (80%) <br />Heath, Scrub, Maquis a
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

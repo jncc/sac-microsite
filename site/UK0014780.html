@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0014780">Orfordness - Shingle Street</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Orfordness - Shingle Street</h1>
+
+<div class="section">
+    <h1>
+        Orfordness - Shingle Street
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>East Anglia</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>TM440486</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,46 +150,95 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0014780_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Orfordness - Shingle Street SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Orfordness - Shingle Street SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
-</div>
-<div class="row">
-    <p>
-Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (25%) <br />Salt marshes, Salt pastures, Salt steppes (15%) <br />Shingle, Sea cliffs, Islets (40%) <br />Improved grassland (18%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (2%) <br />    </p>
-</div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014780.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Note: not a marine feature as occur landward of Highest Astronomical Tide
-Orfordness – Shingle Street encompasses a series of percolation <b>lagoons</b> on the east coast of England, and, together with Benacre to Easton Bavents and The Wash and North Norfolk Coast, forms a significant part of the percolation lagoon resource concentrated in this part of the UK. The lagoons at this site have developed in the shingle bank adjacent to the shore at the mouth of the Ore estuary. The salinity of the lagoons is maintained by percolation through the shingle, although at high tides sea water can overtop the shingle bank. The fauna of these lagoons includes typical lagoon species, such as the cockle <i>Cerastoderma glaucum</i>, the ostracod <i>Cyprideis torosa</i> and the gastropods <i>Littorina saxatilis tenebrosa</i> and <i>Hydrobia ventrosa</i>. The nationally rare starlet sea anemone <i>Nematostella vectensis</i> is also found at the site.</p></div>
-<div>
-    <p><b>1210</b> <a href=/habitat/H1210/>Annual vegetation of drift lines</a></p>
-<p>Orfordness is an extensive shingle spit some 15&nbsp;km in length and is one of two sites representing <B>Annual vegetation of drift lines</B> on the east coast of England. In contrast to Minsmere to Walberswick Heaths and Marshes, drift-line vegetation occurs on the sheltered, western side of the spit, at the transition from shingle to saltmarsh, as well as on the exposed eastern coast. The drift-line community is widespread on the site and comprises sea beet <I>Beta vulgaris</I> ssp. <I>maritima</I> and orache <I>Atriplex</I> spp. in a strip 2-5&nbsp;m wide.</p></div>
-<div>
-    <p><b>1220</b> <a href=/habitat/H1220/>Perennial vegetation of stony banks</a></p>
-<p>Orfordness is an extensive shingle structure on the east coast of England and consists of a foreland, a 15 km-long spit and a series of recurves running from north to south on the Suffolk coast. This spit has been selected as it supports some of the largest and most natural sequences in the UK of shingle vegetation affected by salt spray. The southern end of the spit has a particularly fine series of undisturbed ridges, with zonation of communities determined by the ridge pattern. Pioneer communities with sea pea <i>Lathyrus japonicus</i> and false oat-grass <i>Arrhenatherum elatius</i> grassland occur. Locally these are nutrient-enriched by the presence of a gull colony; elsewhere they support rich lichen communities. The northern part of Orfordness has suffered considerable damage from defence-related activities but a restoration programme for the shingle vegetation is underway.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-    </div>
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (25%) <br />
+            </li>
+            <li>
+                Salt marshes, Salt pastures, Salt steppes (15%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (40%) <br />
+            </li>
+            <li>
+                Improved grassland (18%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (2%) <br />
+            </li>
+    </ul>
 </div>
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014780.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
+    <p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1150</b> <a href=/habitat/H1150/>Coastal lagoons</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Note: not a marine feature as occur landward of Highest Astronomical Tide
+Orfordness – Shingle Street encompasses a series of percolation <b>lagoons</b> on the east coast of England, and, together with Benacre to Easton Bavents and The Wash and North Norfolk Coast, forms a significant part of the percolation lagoon resource concentrated in this part of the UK. The lagoons at this site have developed in the shingle bank adjacent to the shore at the mouth of the Ore estuary. The salinity of the lagoons is maintained by percolation through the shingle, although at high tides sea water can overtop the shingle bank. The fauna of these lagoons includes typical lagoon species, such as the cockle <i>Cerastoderma glaucum</i>, the ostracod <i>Cyprideis torosa</i> and the gastropods <i>Littorina saxatilis tenebrosa</i> and <i>Hydrobia ventrosa</i>. The nationally rare starlet sea anemone <i>Nematostella vectensis</i> is also found at the site.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1210</b> <a href=/habitat/H1210/>Annual vegetation of drift lines</a>
+    </div>
+<p>Orfordness is an extensive shingle spit some 15&nbsp;km in length and is one of two sites representing <B>Annual vegetation of drift lines</B> on the east coast of England. In contrast to Minsmere to Walberswick Heaths and Marshes, drift-line vegetation occurs on the sheltered, western side of the spit, at the transition from shingle to saltmarsh, as well as on the exposed eastern coast. The drift-line community is widespread on the site and comprises sea beet <I>Beta vulgaris</I> ssp. <I>maritima</I> and orache <I>Atriplex</I> spp. in a strip 2-5&nbsp;m wide.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1220</b> <a href=/habitat/H1220/>Perennial vegetation of stony banks</a>
+    </div>
+<p>Orfordness is an extensive shingle structure on the east coast of England and consists of a foreland, a 15 km-long spit and a series of recurves running from north to south on the Suffolk coast. This spit has been selected as it supports some of the largest and most natural sequences in the UK of shingle vegetation affected by salt spray. The southern end of the spit has a particularly fine series of undisturbed ridges, with zonation of communities determined by the ridge pattern. Pioneer communities with sea pea <i>Lathyrus japonicus</i> and false oat-grass <i>Arrhenatherum elatius</i> grassland occur. Locally these are nutrient-enriched by the presence of a gull colony; elsewhere they support rich lichen communities. The northern part of Orfordness has suffered considerable damage from defence-related activities but a restoration programme for the shingle vegetation is underway.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -270,6 +327,6 @@ Orfordness – Shingle Street encompasses a series of percolation <b>lagoons</b>
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

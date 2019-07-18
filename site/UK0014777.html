@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0014777">Morecambe Bay Pavements</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Morecambe Bay Pavements</h1>
+
+<div class="section">
+    <h1>
+        Morecambe Bay Pavements
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cumbria, Lancashire</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SD440869</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,66 +150,146 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0014777_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Morecambe Bay Pavements SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Morecambe Bay Pavements SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (0.4%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (0.6%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (13.5%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (38.6%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (24.4%) <br />
+            </li>
+            <li>
+                Coniferous woodland (2.5%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (20%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014777.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (0.4%) <br />Bogs, Marshes, Water fringed vegetation, Fens (0.6%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (13.5%) <br />Dry grassland, Steppes (38.6%) <br />Broad-leaved deciduous woodland (24.4%) <br />Coniferous woodland (2.5%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (20%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0014777.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3140</b> <a href=/habitat/H3140/>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</a>
     </div>
-</div>   
-<div class="row"> 
+<p>Hawes Water is a lowland lake in northern England within Morecambe Bay Pavements. It is a lake on a predominantly Carboniferous limestone foundation and has a substrate of deep lacustrine shell-marl. The water is highly calcareous and the lake is fed by springs within it. This site is considered to be the best example of a lowland hard oligo-mesotrophic lake with <I>Chara</I> spp. in England, owing to the clarity, low nutrient status and high calcium content of its water. The rare rugged stonewort <I>Chara rudis </I>and scarce species <I>C.&nbsp;aspera</I>, <I>C.&nbsp;hispida </I>and<I> C.&nbsp;pedunculata</I> occur here.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>5130</b> <a href=/habitat/H5130/>Juniperus communis formations on heaths or calcareous grasslands</a>
+    </div>
+<p>Morecambe Bay Pavements represents <b><i>Juniperus communis</i> formations</b> on <b>8240 Limestone pavements</b> at low to intermediate altitude in north-west England. In contrast to most other areas in northern England, these are ungrazed or grazed at low intensity and have affinities to southern mixed scrub, owing to the presence of species such as wild privet <i>Ligustrum vulgare</i> and burnet rose <i>Rosa pimpinellifolia</i>. Other stands occur on <b>6210 semi-natural dry grassland</b> dominated by blue moor-grass <i>Sesleria caerulea</i>. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a>
+    </div>
+<p>Extensive CG9 <i>Sesleria albicans</i> – <i>Galium sterneri</i> grasslands occur at Morecambe Bay Pavements in north-west England. The grassland, which has an overall northern character, is also rich in southern lowland species, so providing important regional variation distinct from Craven Limestone Complex and Moor House – Upper Teesdale, also in northern England. There is a wide range of structural variation associated with intensity of grazing and the presence of cliffs, screes, and <b>8240 Limestone pavements</b> on the margins of the grassland stands. There are important transitions to calcareous scrub and <b>9180 <i>Tilio-Acerion</i> forests</b>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8240</b> <a href=/habitat/H8240/>Limestone pavements</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>This is one of four sites in northern England representing <b>Limestone pavements</b> on Carboniferous limestone. This site provides an example of lowland pavements that range from low to moderate altitudes (up to 274 m). Some of the pavements form woodland clearings that are sheltered and warm up quickly in spring. The pavement flora is here at its most diverse and, where grazing is absent, can be seen at its best because plant growth is not confined to the grikes. Trees and shrubs, including yew <i>Taxus baccata</i>, juniper <i>Juniperus communis</i>, buckthorn <i>Rhamnus cathartica</i>, hazel <i>Corylus avellana</i>, small-leaved lime <i>Tilia cordata</i> and ash <i>Fraxinus excelsior</i>, grow above the pavement surface. Some pavements lie within sheep pasture but are for the most part lightly grazed. Rustyback <i>Ceterach officinarum</i> is restricted to pavements that form sheltered woodland clearings. Other ferns occurring on the site include the nationally scarce rigid buckler-fern <i>Dryopteris submontana</i>, which is abundant on Hutton Roof Crags, and limestone fern <i>Gymnocarpium robertianum</i>. These pavements tend to be rich in herbs, with lily-of-the-valley <i>Convallaria majalis</i>, dark-red helleborine <i>Epipactis atrorubens</i>, pale St John’s-wort <i>Hypericum montanum</i>, ploughman’s-spikenard <i>Inula conyzae</i>, angular Solomon’s-seal <i>Polygonatum odoratum</i>, wood-sage <i>Teucrium scorodonia</i>, lesser meadow-rue <i>Thalictrum minus</i> and hairy violet <i>Viola hirta</i> achieving their best representation in limestone pavement here.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>9180</b> <a href=/habitat/H9180/>Tilio-Acerion forests of slopes, screes and ravines</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Woodland within Morecambe Bay Pavements, along with the nearby Roudsea Wood, represents <b><i>Tilio-Acerion</i> forests</b> on Carboniferous limestone in north-west England. Although close to the northern limit of lime distribution, the ash <i>Fraxinus excelsior</i>-dominated woodland around Morecambe Bay contains many patches of small-leaved lime <i>Tilia cordata</i>, which survive sometimes with elm <i>Ulmus</i> spp., often along outcrop edges. There is a rich assemblage of rare species, including fingered sedge <i>Carex digitata</i>, wood fescue <i>Festuca altissima</i> and mezereon <i>Daphne mezereum</i>. The habitat type occurs here both on <b>8240 Limestone pavements</b> and on loose scree and steep slopes.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91J0</b> <a href=/habitat/H91J0/>Taxus baccata woods of the British Isles</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Morecambe Bay Pavements is an example of yew <b><i>Taxus baccata</i> woods</b> in north-west England. The site is similar to the nearby Roudsea Wood and Mosses. These yew woods are on the northern Carboniferous limestone and, as in the Wye Valley, yew occurs both as dense groves and as scattered trees in the understorey of ash or ash-elm <i>Fraxinus-Ulmus</i> woodland. Yew woodland here represents the development of long-established stands on unstable scree and rocky slopes.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7210</b> <a href=/habitat/H7210/>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3140</b> <a href=/habitat/H3140/>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</a></p>
-<p>Hawes Water is a lowland lake in northern England within Morecambe Bay Pavements. It is a lake on a predominantly Carboniferous limestone foundation and has a substrate of deep lacustrine shell-marl. The water is highly calcareous and the lake is fed by springs within it. This site is considered to be the best example of a lowland hard oligo-mesotrophic lake with <I>Chara</I> spp. in England, owing to the clarity, low nutrient status and high calcium content of its water. The rare rugged stonewort <I>Chara rudis </I>and scarce species <I>C.&nbsp;aspera</I>, <I>C.&nbsp;hispida </I>and<I> C.&nbsp;pedunculata</I> occur here.</p></div>
-<div>
-    <p><b>5130</b> <a href=/habitat/H5130/>Juniperus communis formations on heaths or calcareous grasslands</a></p>
-<p>Morecambe Bay Pavements represents <b><i>Juniperus communis</i> formations</b> on <b>8240 Limestone pavements</b> at low to intermediate altitude in north-west England. In contrast to most other areas in northern England, these are ungrazed or grazed at low intensity and have affinities to southern mixed scrub, owing to the presence of species such as wild privet <i>Ligustrum vulgare</i> and burnet rose <i>Rosa pimpinellifolia</i>. Other stands occur on <b>6210 semi-natural dry grassland</b> dominated by blue moor-grass <i>Sesleria caerulea</i>. </p></div>
-<div>
-    <p><b>6210</b> <a href=/habitat/H6210/>Semi-natural dry grasslands and scrubland facies on calcareous substrates (Festuco-Brometalia) (* important orchid sites)</a></p>
-<p>Extensive CG9 <i>Sesleria albicans</i> – <i>Galium sterneri</i> grasslands occur at Morecambe Bay Pavements in north-west England. The grassland, which has an overall northern character, is also rich in southern lowland species, so providing important regional variation distinct from Craven Limestone Complex and Moor House – Upper Teesdale, also in northern England. There is a wide range of structural variation associated with intensity of grazing and the presence of cliffs, screes, and <b>8240 Limestone pavements</b> on the margins of the grassland stands. There are important transitions to calcareous scrub and <b>9180 <i>Tilio-Acerion</i> forests</b>.</p></div>
-<div>
-    <p><b>8240</b> <a href=/habitat/H8240/>Limestone pavements</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>This is one of four sites in northern England representing <b>Limestone pavements</b> on Carboniferous limestone. This site provides an example of lowland pavements that range from low to moderate altitudes (up to 274 m). Some of the pavements form woodland clearings that are sheltered and warm up quickly in spring. The pavement flora is here at its most diverse and, where grazing is absent, can be seen at its best because plant growth is not confined to the grikes. Trees and shrubs, including yew <i>Taxus baccata</i>, juniper <i>Juniperus communis</i>, buckthorn <i>Rhamnus cathartica</i>, hazel <i>Corylus avellana</i>, small-leaved lime <i>Tilia cordata</i> and ash <i>Fraxinus excelsior</i>, grow above the pavement surface. Some pavements lie within sheep pasture but are for the most part lightly grazed. Rustyback <i>Ceterach officinarum</i> is restricted to pavements that form sheltered woodland clearings. Other ferns occurring on the site include the nationally scarce rigid buckler-fern <i>Dryopteris submontana</i>, which is abundant on Hutton Roof Crags, and limestone fern <i>Gymnocarpium robertianum</i>. These pavements tend to be rich in herbs, with lily-of-the-valley <i>Convallaria majalis</i>, dark-red helleborine <i>Epipactis atrorubens</i>, pale St John’s-wort <i>Hypericum montanum</i>, ploughman’s-spikenard <i>Inula conyzae</i>, angular Solomon’s-seal <i>Polygonatum odoratum</i>, wood-sage <i>Teucrium scorodonia</i>, lesser meadow-rue <i>Thalictrum minus</i> and hairy violet <i>Viola hirta</i> achieving their best representation in limestone pavement here.</p></div>
-<div>
-    <p><b>9180</b> <a href=/habitat/H9180/>Tilio-Acerion forests of slopes, screes and ravines</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Woodland within Morecambe Bay Pavements, along with the nearby Roudsea Wood, represents <b><i>Tilio-Acerion</i> forests</b> on Carboniferous limestone in north-west England. Although close to the northern limit of lime distribution, the ash <i>Fraxinus excelsior</i>-dominated woodland around Morecambe Bay contains many patches of small-leaved lime <i>Tilia cordata</i>, which survive sometimes with elm <i>Ulmus</i> spp., often along outcrop edges. There is a rich assemblage of rare species, including fingered sedge <i>Carex digitata</i>, wood fescue <i>Festuca altissima</i> and mezereon <i>Daphne mezereum</i>. The habitat type occurs here both on <b>8240 Limestone pavements</b> and on loose scree and steep slopes.</p></div>
-<div>
-    <p><b>91J0</b> <a href=/habitat/H91J0/>Taxus baccata woods of the British Isles</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Morecambe Bay Pavements is an example of yew <b><i>Taxus baccata</i> woods</b> in north-west England. The site is similar to the nearby Roudsea Wood and Mosses. These yew woods are on the northern Carboniferous limestone and, as in the Wye Valley, yew occurs both as dense groves and as scattered trees in the understorey of ash or ash-elm <i>Fraxinus-Ulmus</i> woodland. Yew woodland here represents the development of long-established stands on unstable scree and rocky slopes.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-</div>
-<div>
-    <p><b>7210</b> <a href=/habitat/H7210/>Calcareous fens with Cladium mariscus and species of the Caricion davallianae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>91A0</b> <a href=/habitat/H91A0/>Old sessile oak woods with Ilex and Blechnum in the British Isles</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1014</b> <a href=/species/S1014/>Narrow-mouthed whorl snail</a> <b>Vertigo angustior</b></p>
-<p>Morecambe Bay Pavements represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in north-west England, near the northern limit of its range in the UK. Gait Barrows supports strong populations of the species in mossy clint tops of Annex I habitat <b>8240 Limestone pavements</b> at transitions to woodland, an unusual habitat for the species.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1014
+            <a href=/species/S1014/>Narrow-mouthed whorl snail</a>
+        </b>
+        <i>Vertigo angustior</i>
+        
     </div>
+<p>Morecambe Bay Pavements represents <b>narrow-mouthed whorl snail <i>Vertigo angustior</i></b> in north-west England, near the northern limit of its range in the UK. Gait Barrows supports strong populations of the species in mossy clint tops of Annex I habitat <b>8240 Limestone pavements</b> at transitions to woodland, an unusual habitat for the species.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -290,6 +378,6 @@ Inland water bodies (Standing water, Running water) (0.4%) <br />Bogs, Marshes, 
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

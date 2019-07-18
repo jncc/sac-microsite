@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,120 +77,177 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1304"><I>Rhinolophus ferrumequinum</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Vertebrate species: mammals</h1>
-</div>
-<h4>1304 Greater horseshoe bat [<I>Rhinolophus ferrumequinum</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1304/map">
-            <img src="/images/maps/features/thumbnails/S1304_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1304</b> <I>Rhinolophus ferrumequinum</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1304/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1304/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1304</span>
+        <span class="space-right">Greater horseshoe bat</span>
+        <I>Rhinolophus ferrumequinum</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Vertebrate species: mammals</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1304/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1304/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>greater horseshoe bat <I>Rhinolophus ferrumequinum</B></I> is one of the largest bats in the UK. During the summer, they form maternity colonies, generally in large old buildings, and forage in pasture, edges of mixed deciduous woodland and hedgerows. Such mixed land-use, especially on south-facing slopes, favours the beetles, moths and other insects on which the bats feed. In winter they depend on caves, abandoned mines and other underground sites for undisturbed hibernation. A system or series of sites is required, offering a range of temperatures and air-flow patterns. Summer and winter roosts are usually less than 20-30&nbsp;km apart. The bats are vulnerable to the loss of insect food supplies due to insecticide use, changing farming practices and the loss of broad-leaved tree-cover, and to the loss or disturbance of underground roost sites. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1304/map">
+                <img src="/images/maps/features/thumbnails/S1304_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1304</b> <I>Rhinolophus ferrumequinum</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 <P>The <B>greater horseshoe bat <I>Rhinolophus ferrumequinum</B></I> occurs throughout central and southern Europe and extends eastwards across Asia as far as Japan. However, it is a rare species in Europe, and has suffered a considerable decline in central Europe.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1304/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>The <B>greater horseshoe bat <I>Rhinolophus ferrumequinum</B></I> has suffered a loss of over half its range in the UK. In the UK populations are close to the climatic limits for this species. The total UK population of approximately 4,000 individuals can be divided into about twelve discrete populations, based on maternity (summer) roosts and their associated hibernation sites (hibernacula) (Mitchell-Jones 1995). Populations range in size from about 80 to 600 breeding females and there is relatively little interchange between populations. Until the early 20<SUP>th</SUP> century, the species occurred as far east as Kent, and the bats benefited from abandoned mine workings, but the sealing of old mines is likely to have seriously reduced its population.</P></p>
+    <p>View <a href=/species/S1304/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>SACs selected for greater horseshoe bat Rhinolophus ferrumequinum include sites with the largest populations and the best representation of features required for survival (including overwintering) and reproduction. Sites have also been selected to cover the geographical range of the species. In order to maintain populations, both summer and winter roosts must be protected, so sites have been selected, where possible, as composites of maternity and hibernation sites belonging to a single population.&#xD;&#xA;While the SAC series makes a contribution to securing favourable conservation status for this Annex&amp;nbsp;II species, wider measures (e.g. those specified under the UK Biodiversity Action Plan) are also necessary to support its conservation in the UK.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012584>Bath and Bradford-on-Avon Bats</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
+<li>
+    <b>
+        <a href=/site/UK0012584 class="space-right">Bath and Bradford-on-Avon Bats</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+This site in southern England includes the hibernation sites associated with 15% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population and is selected on the basis of the importance of this exceptionally large overwintering population.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0016373 class="space-right">Chilmark Quarries</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+This complex of abandoned stone mines provides suitable hibernation conditions for a range of bat species and has a long history of usage by <b>greater horseshoe bats <i>Rhinolophus ferrumequinum</i></b>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014787 class="space-right">Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a>
+        East Wales, West Wales and The Valleys
+    </b>
+    <div>
+This site in south-west Wales contains the main hibernation site for the population associated with Pembrokeshire Bat Sites cSAC. It may thus be used by up to 5.5% of the UK population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012658 class="space-right">Mells Valley</a>
+        Dorset and Somerset
+    </b>
+    <div>
+Mells Valley in southern England is selected on the basis of the size of its exceptional breeding population. It contains the maternity site associated with a population comprising about 12% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population. A proportion of the population also hibernates at the site, though other hibernation sites remain unknown.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030052 class="space-right">North Somerset and Mendip Bats</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+    <div>
+This site in south-west England is selected on the basis of the size of population represented (3% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population) and its good conservation of structure and function, having both maternity and hibernation sites. This site contains an exceptionally good range of the sites used by the population, comprising two maternity sites in lowland north Somerset and a variety of cave and mine hibernation sites in the Mendip Hills.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014793 class="space-right">Pembrokeshire Bat Sites and Bosherston Lakes/ Safleoedd Ystlum Sir Benfro a Llynnoedd Bosherston</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+This site in south-west Wales supports approximately 9.5% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population. It represents the species at the north-western extremity of its range. The site contains a mixture of maternity, transitory and hibernation sites and so demonstrates good conservation of features required for survival.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012650 class="space-right">South Hams</a>
+        Devon
+    </b>
+    <div>
+South Hams in south-west England is thought to hold the largest population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> in the UK, and is the only one containing more than 1,000 adult bats (31% of the UK species population). It contains the largest known maternity roost in the UK and possibly in Europe. As the site contains both maternity and hibernation sites it demonstrates good conservation of the features required for survival.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014794 class="space-right">Wye Valley and Forest of Dean Bat Sites/ Safleoedd Ystlumod Dyffryn Gwy a Fforest y Ddena</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area, West Wales and The Valleys
+    </b>
+    <div>
+This complex of sites on the border between England and Wales represents <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> in the northern part of its range, with about 6% of the UK population. The site contains the main maternity roost for bats in this area, which are believed to hibernate in the many disused mines in the Forest.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in southern England includes the hibernation sites associated with 15% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population and is selected on the basis of the importance of this exceptionally large overwintering population.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016373>Chilmark Quarries</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This complex of abandoned stone mines provides suitable hibernation conditions for a range of bat species and has a long history of usage by <b>greater horseshoe bats <i>Rhinolophus ferrumequinum</i></b>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014787>Limestone Coast of South West Wales/ Arfordir Calchfaen de Orllewin Cymru</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in south-west Wales contains the main hibernation site for the population associated with Pembrokeshire Bat Sites cSAC. It may thus be used by up to 5.5% of the UK population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012658>Mells Valley</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Mells Valley in southern England is selected on the basis of the size of its exceptional breeding population. It contains the maternity site associated with a population comprising about 12% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population. A proportion of the population also hibernates at the site, though other hibernation sites remain unknown.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030052>North Somerset and Mendip Bats</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in south-west England is selected on the basis of the size of population represented (3% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population) and its good conservation of structure and function, having both maternity and hibernation sites. This site contains an exceptionally good range of the sites used by the population, comprising two maternity sites in lowland north Somerset and a variety of cave and mine hibernation sites in the Mendip Hills.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014793>Pembrokeshire Bat Sites and Bosherston Lakes/ Safleoedd Ystlum Sir Benfro a Llynnoedd Bosherston</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This site in south-west Wales supports approximately 9.5% of the UK <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> population. It represents the species at the north-western extremity of its range. The site contains a mixture of maternity, transitory and hibernation sites and so demonstrates good conservation of features required for survival.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012650>South Hams</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">South Hams in south-west England is thought to hold the largest population of <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> in the UK, and is the only one containing more than 1,000 adult bats (31% of the UK species population). It contains the largest known maternity roost in the UK and possibly in Europe. As the site contains both maternity and hibernation sites it demonstrates good conservation of the features required for survival.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014794>Wye Valley and Forest of Dean Bat Sites/ Safleoedd Ystlumod Dyffryn Gwy a Fforest y Ddena</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This complex of sites on the border between England and Wales represents <b>greater horseshoe bat <i>Rhinolophus ferrumequinum</i></b> in the northern part of its range, with about 6% of the UK population. The site contains the main maternity roost for bats in this area, which are believed to hibernate in the many disused mines in the Forest.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012585>Beer Quarry and Caves</a></div>
-    <div class="cell large-6 small-12"><b>Devon</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030203>Mendip Limestone Grasslands</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019863>St Albans Head to Durlston Head</a></div>
-    <div class="cell large-6 small-12"><b>Dorset and Somerset</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012585 class="space-right">Beer Quarry and Caves</a>
+        Devon
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030203 class="space-right">Mendip Limestone Grasslands</a>
+        Dorset and Somerset, Gloucestershire, Wiltshire and Bristol/Bath area
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019863 class="space-right">St Albans Head to Durlston Head</a>
+        Dorset and Somerset
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -278,6 +334,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

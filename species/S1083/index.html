@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,88 +77,131 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1083"><I>Lucanus cervus</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: arthropods</h1>
-</div>
-<h4>1083 Stag beetle [<I>Lucanus cervus</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1083/map">
-            <img src="/images/maps/features/thumbnails/S1083_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1083</b> <I>Lucanus cervus</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1083/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1083/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1083</span>
+        <span class="space-right">Stag beetle</span>
+        <I>Lucanus cervus</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: arthropods</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1083/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1083/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>stag beetle <I>Lucanus cervus</B> </I>is the UK’s largest terrestrial beetle, and amongst the most spectacular, reaching 7&nbsp;cm in length. Larvae develop in decaying tree stumps and fallen timber of broad-leaved trees in contact with the ground, especially of apple <I>Malus</I> spp., elm <I>Ulmus</I> spp., lime <I>Tilia</I> spp., beech <I>Fagus sylvatica</I> and oak <I>Quercus</I> spp. Such timber is an essential feature for conservation of structure and function of the habitat for this species. Development takes around 3-4 years. Adults are active on warm evenings, but probably only the males fly regularly and come readily to lights. Adults have been recorded from May to September or even October, though they are most abundant in early summer. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1083/map">
+                <img src="/images/maps/features/thumbnails/S1083_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1083</b> <I>Lucanus cervus</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Lucanus cervus</B> </I>is included in the Red Data lists of a number of countries, although it is said to be widespread and locally abundant in southern France and the Iberian peninsula. </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1083/map>here</a> view UK distribution of this species</p>
-<p>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p>
 <P>In the UK<B><I> Lucanus cervus</B> </I>is largely restricted to south and south-east England, occurring in a broad area south-east of a line extending from southern Suffolk, through Hertfordshire, Buckinghamshire, Oxfordshire and Hampshire to Dorset, with a particular concentration around the London Basin, and with outlying populations in the West Country, south Wales, and Worcestershire/Gloucestershire border area. Although it is relatively common in some of the areas, it is listed as Nationally Scarce Category&nbsp;B (Hyman &amp; Parsons 1992), which means that it is likely to occur in 100 or fewer 10x10&nbsp;km national grid squares. In midland and northern England and Wales the stag beetle is rare or extinct.</P></p>
+    <p>View <a href=/species/S1083/map>UK distribution of this species</a>.</p>
 
+        <h2>Site selection rationale</h2>
+        <p>Sites have been selected to provide representation from the main population centres in southern England. The selected sites all support apparently viable populations and have features that make them particularly favourable for the long-term survival and reproduction of this species. The sites selected include the larger areas of semi-natural forested habitat known to hold viable populations of the species. In much of its range in southern England it is largely found in suburban domestic gardens rather than natural woodland, which does not make SAC designation practicable. Wider countryside measures, including Biodiversity Action Plans and forestry practice guidance, and locally and nationally targeted publicity to enhance the species&#x2019; profile with gardeners additionally contribute to conservation of this species.</p>
+</div>
 
-<h4>Site Accounts</h4>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012720>Epping Forest</a></div>
-    <div class="cell large-6 small-12"><b>Essex, Outer London</b></div>
+<li>
+    <b>
+        <a href=/site/UK0012720 class="space-right">Epping Forest</a>
+        Essex, Outer London
+    </b>
+    <div>
+Epping Forest is a large woodland area in which records of <b>stag beetle <i>Lucanus cervus</i></b> are widespread and frequent; the site straddles the Essex and east London population centres. Epping Forest is a very important site for fauna associated with decaying timber, and supports many Red Data Book and Nationally Scarce invertebrate species.     </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030246 class="space-right">Richmond Park</a>
+        Outer London
+    </b>
+    <div>
+Richmond Park has a large number of ancient trees with decaying timber. It is at the heart of the south London centre of distribution for <b>stag beetle <i>Lucanus cervus</i></b>, and is a site of national importance for the conservation of the fauna of invertebrates associated with the decaying timber of ancient trees.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012557 class="space-right">The New Forest</a>
+        Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight
+    </b>
+    <div>
+The New Forest represents <B>stag beetle <I>Lucanus cervus</I></B> in its Hampshire/Sussex population centre, and is a major stronghold for the species in the UK. The forest is one of the most important sites in the UK for fauna associated with rotting wood, and was identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030301 class="space-right">Wimbledon Common</a>
+        Outer London
+    </b>
+    <div>
+Wimbledon Common has a large number of old trees and much fallen decaying timber. It is at the heart of the south London centre of distribution for <b>stag beetle <i>Lucanus cervus</i></b>, and a relatively large number of records were received from this site during a recent nationwide survey for the species (Percy <i>et al</i>. 2000). The site supports a number of other scarce invertebrate species associated with decaying timber.    </div>
+</li>    </ul>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Epping Forest is a large woodland area in which records of <b>stag beetle <i>Lucanus cervus</i></b> are widespread and frequent; the site straddles the Essex and east London population centres. Epping Forest is a very important site for fauna associated with decaying timber, and supports many Red Data Book and Nationally Scarce invertebrate species. </div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030246>Richmond Park</a></div>
-    <div class="cell large-6 small-12"><b>Outer London</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Richmond Park has a large number of ancient trees with decaying timber. It is at the heart of the south London centre of distribution for <b>stag beetle <i>Lucanus cervus</i></b>, and is a site of national importance for the conservation of the fauna of invertebrates associated with the decaying timber of ancient trees.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012557>The New Forest</a></div>
-    <div class="cell large-6 small-12"><b>Gloucestershire, Wiltshire and Bristol/Bath area, Hampshire and Isle of Wight</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The New Forest represents <B>stag beetle <I>Lucanus cervus</I></B> in its Hampshire/Sussex population centre, and is a major stronghold for the species in the UK. The forest is one of the most important sites in the UK for fauna associated with rotting wood, and was identified as of potential international importance for its saproxylic invertebrate fauna by the <a targe="_blank" href="http://www.nature.coe.int/english/cadres/acc_en.htm">Council of Europe</a> (Speight 1989).</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030301>Wimbledon Common</a></div>
-    <div class="cell large-6 small-12"><b>Outer London</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Wimbledon Common has a large number of old trees and much fallen decaying timber. It is at the heart of the south London centre of distribution for <b>stag beetle <i>Lucanus cervus</i></b>, and a relatively large number of records were received from this site during a recent nationwide survey for the species (Percy <i>et al</i>. 2000). The site supports a number of other scarce invertebrate species associated with decaying timber.</div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012724>Chilterns Beechwoods</a></div>
-    <div class="cell large-6 small-12"><b>Bedfordshire and Hertfordshire, Berkshire, Buckinghamshire and Oxfordshire</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012724 class="space-right">Chilterns Beechwoods</a>
+        Bedfordshire and Hertfordshire, Berkshire, Buckinghamshire and Oxfordshire
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -246,6 +288,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

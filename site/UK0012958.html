@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012958">Ardmeanach</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Ardmeanach</h1>
+
+<div class="section">
+    <h1>
+        Ardmeanach
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Highlands and Islands</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NM433312</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,45 +150,91 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012958_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Ardmeanach SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Ardmeanach SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Shingle, Sea cliffs, Islets (3%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (15%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (80%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (2%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012958.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Shingle, Sea cliffs, Islets (3%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (15%) <br />Alpine and sub-Alpine grassland (80%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (2%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012958.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Ardmeanach is one of five sites representing the range of low-altitude sub-types of <b>species-rich <i>Nardus</i> grasslands</b> on the oceanic west coast of Scotland. Ardmeanach is one of the most westerly and maritime of the sites selected. The <b>species-rich <i>Nardus</i> grasslands</b> occur extensively as short swards on a large basalt escarpment. The most extensive community represented is CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland, but on more northerly-facing slopes this is replaced by CG11 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Alchemilla alpina</i> grassland. A range of sub-types of these two communities is represented. Sub-maritime variants of the habitat are developed on the lower parts of the escarpment, with the maritime species sea plantain <i>Plantago maritima</i>, buck’s-horn plantain <i>Plantago coronopus</i> and wild carrot <i>Daucus carota</i>. Dry and wetter sub-types are both represented. There is a high plant diversity, including lowland species, such as common centaury <i>Centaurium erythraea</i>, fragrant agrimony <i>Agrimonia procera</i>, red clover <i>Trifolium pratense</i> and false-brome <i>Brachypodium sylvaticum</i>, as well as upland, northern species, such as globeflower <i>Trollius europaeus</i>, the lady’s-mantle <i>Alchemilla glabra</i> and northern bedstraw <i>Galium boreale</i>. There are transitions to maritime grassland and species-rich dry <i>Calluna</i> heath.</p></div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-<p>The upper base-rich basalt cliffs of Ardmeanach support well-developed examples of <b>hydrophilous tall herb fringe communities</b> in the relatively mild south-west of Scotland. The stands represent some of the best examples known on basalt crags and in south-west Scotland generally. The flora is unusual in the association of contrasting geographical elements, such as the southern Atlantic liverwort <i>Marchesinia mackaii</i> together with northern and arctic-alpine species such as northern bedstraw <i>Galium boreale</i>, moss campion <i>Silene</i> acaulis and alpine lady’s-mantle <i>Alchemilla alpina</i>. Characteristic species include globe-flower <i>Trollius europaeus</i>, wild angelica <i>Angelica sylvestris</i> and lady’s-mantle <i>Alchemilla glabra</i>. Unusually, woodland species such as dog’s mercury <i>Mercurialis perennis</i> and false brome <i>Brachypodium sylvaticum</i> occur, perhaps because of the low altitude of the cliffs.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
 
-<div>
-    <p><b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<li>
+    <div class="little-header">
+        <b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
     </div>
+<p>Ardmeanach is one of five sites representing the range of low-altitude sub-types of <b>species-rich <i>Nardus</i> grasslands</b> on the oceanic west coast of Scotland. Ardmeanach is one of the most westerly and maritime of the sites selected. The <b>species-rich <i>Nardus</i> grasslands</b> occur extensively as short swards on a large basalt escarpment. The most extensive community represented is CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland, but on more northerly-facing slopes this is replaced by CG11 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Alchemilla alpina</i> grassland. A range of sub-types of these two communities is represented. Sub-maritime variants of the habitat are developed on the lower parts of the escarpment, with the maritime species sea plantain <i>Plantago maritima</i>, buck’s-horn plantain <i>Plantago coronopus</i> and wild carrot <i>Daucus carota</i>. Dry and wetter sub-types are both represented. There is a high plant diversity, including lowland species, such as common centaury <i>Centaurium erythraea</i>, fragrant agrimony <i>Agrimonia procera</i>, red clover <i>Trifolium pratense</i> and false-brome <i>Brachypodium sylvaticum</i>, as well as upland, northern species, such as globeflower <i>Trollius europaeus</i>, the lady’s-mantle <i>Alchemilla glabra</i> and northern bedstraw <i>Galium boreale</i>. There are transitions to maritime grassland and species-rich dry <i>Calluna</i> heath.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+<p>The upper base-rich basalt cliffs of Ardmeanach support well-developed examples of <b>hydrophilous tall herb fringe communities</b> in the relatively mild south-west of Scotland. The stands represent some of the best examples known on basalt crags and in south-west Scotland generally. The flora is unusual in the association of contrasting geographical elements, such as the southern Atlantic liverwort <i>Marchesinia mackaii</i> together with northern and arctic-alpine species such as northern bedstraw <i>Galium boreale</i>, moss campion <i>Silene</i> acaulis and alpine lady’s-mantle <i>Alchemilla alpina</i>. Characteristic species include globe-flower <i>Trollius europaeus</i>, wild angelica <i>Angelica sylvestris</i> and lady’s-mantle <i>Alchemilla glabra</i>. Unusually, woodland species such as dog’s mercury <i>Mercurialis perennis</i> and false brome <i>Brachypodium sylvaticum</i> occur, perhaps because of the low altitude of the cliffs.</p></li>
+    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -269,6 +323,6 @@ Shingle, Sea cliffs, Islets (3%) <br />Heath, Scrub, Maquis and Garrigue, Phygra
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0013694">Isles of Scilly Complex</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Isles of Scilly Complex</h1>
+
+<div class="section">
+    <h1>
+        Isles of Scilly Complex
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Cornwall and Isles of Scilly</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SV883111</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,51 +150,108 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0013694_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Isles of Scilly Complex SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Isles of Scilly Complex SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (75%) <br />
+            </li>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (20%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013694.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Marine areas, Sea inlets (75%) <br />Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (20%) <br />Shingle, Sea cliffs, Islets (5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0013694.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The Scilly archipelago, off the south-west tip of England, encompasses extensive sublittoral sandy sediments, which, between the islands, are contiguous with the intertidal sandflats. They are important in the UK for the extent and diversity of their associated communities. In particular, their isolation and the presence of oceanic water contribute to the special nature of the site, which is characterised by shallow sandy sediments with low silt content and by the fully marine salinity. There are rich communities present on the tide-swept sandbanks in the narrow channels between the islands and in the deeper, more stable, wave-sheltered sediments. The fauna of these sediments includes tanaid crustaceans, a diversity of polychaete worms, and various echinoderms. The shallow sublittoral sediments are colonised by the most extensive and best-developed eelgrass <i>Zostera marina</i> beds in southern England (Hocking & Tompsett 2001). These beds have a rich associated flora and fauna of algae, hydroids, sea anemones, molluscs and fish. Fauna with warm-water affinities include the trumpet anemone <i>Anthopleura ballii</i>. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a>
+    </div>
+<p>The Isles of Scilly archipelago supports extensive areas of undisturbed intertidal sandflats in the extreme south-west of the UK. The islands are particularly important for exceptionally rich communities occurring in coarse sediments, including clean sand, a substrate that is usually poor in species. Although sheltered, the sediments include little mud because the surrounding seas have a low suspended sediment concentration, resulting from the islands’ isolation and the presence of oceanic water. The sandflats exposed at low tide between the northern islands are of international marine nature conservation importance, owing to their extent and diversity and the presence of species rarely found elsewhere in the intertidal. The lower shore sandflats are particularly notable, for they include the fringes of the most extensive and diverse beds of eelgrass <i>Zostera marina</i> known in southern England (Hocking & Tompsett 2001), with an unusually species-rich associated biota, including various seaweeds and fish and rich sediment communities of anemones, polychaete worms, bivalve molluscs and burrowing echinoderms. These include many species restricted to the sublittoral elsewhere in the UK. Many southern species are present, often in large numbers, including some, such as the hermit crab <i>Cestopagurus timidus</i> and the spiny cockle <i>Acanthocardia aculeata</i>, that are recorded only rarely in the UK.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>The Isles of Scilly are surrounded by <b>reefs</b> and rocky islets, some only extending into the shallow sublittoral, others extending well beyond 50 m depth. The location of the islands, exposed to the full force of the Atlantic, leads to the development of extremely exposed communities on west-facing reefs, whilst on the east-facing coast, more sheltered and silted reefs occur. The south-westerly position of the islands leads to a range of warm-water species being present, including sunset cup-coral <i>Leptopsammia pruvoti</i>, pink sea-fans <i>Eunicella verrucosa</i>, and Weymouth carpet-coral <i>Hoplangia durotrix</i>.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a></p>
-<p>The Scilly archipelago, off the south-west tip of England, encompasses extensive sublittoral sandy sediments, which, between the islands, are contiguous with the intertidal sandflats. They are important in the UK for the extent and diversity of their associated communities. In particular, their isolation and the presence of oceanic water contribute to the special nature of the site, which is characterised by shallow sandy sediments with low silt content and by the fully marine salinity. There are rich communities present on the tide-swept sandbanks in the narrow channels between the islands and in the deeper, more stable, wave-sheltered sediments. The fauna of these sediments includes tanaid crustaceans, a diversity of polychaete worms, and various echinoderms. The shallow sublittoral sediments are colonised by the most extensive and best-developed eelgrass <i>Zostera marina</i> beds in southern England (Hocking & Tompsett 2001). These beds have a rich associated flora and fauna of algae, hydroids, sea anemones, molluscs and fish. Fauna with warm-water affinities include the trumpet anemone <i>Anthopleura ballii</i>. </p></div>
-<div>
-    <p><b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a></p>
-<p>The Isles of Scilly archipelago supports extensive areas of undisturbed intertidal sandflats in the extreme south-west of the UK. The islands are particularly important for exceptionally rich communities occurring in coarse sediments, including clean sand, a substrate that is usually poor in species. Although sheltered, the sediments include little mud because the surrounding seas have a low suspended sediment concentration, resulting from the islands’ isolation and the presence of oceanic water. The sandflats exposed at low tide between the northern islands are of international marine nature conservation importance, owing to their extent and diversity and the presence of species rarely found elsewhere in the intertidal. The lower shore sandflats are particularly notable, for they include the fringes of the most extensive and diverse beds of eelgrass <i>Zostera marina</i> known in southern England (Hocking & Tompsett 2001), with an unusually species-rich associated biota, including various seaweeds and fish and rich sediment communities of anemones, polychaete worms, bivalve molluscs and burrowing echinoderms. These include many species restricted to the sublittoral elsewhere in the UK. Many southern species are present, often in large numbers, including some, such as the hermit crab <i>Cestopagurus timidus</i> and the spiny cockle <i>Acanthocardia aculeata</i>, that are recorded only rarely in the UK.</p></div>
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>The Isles of Scilly are surrounded by <b>reefs</b> and rocky islets, some only extending into the shallow sublittoral, others extending well beyond 50 m depth. The location of the islands, exposed to the full force of the Atlantic, leads to the development of extremely exposed communities on west-facing reefs, whilst on the east-facing coast, more sheltered and silted reefs occur. The south-westerly position of the islands leads to a range of warm-water species being present, including sunset cup-coral <i>Leptopsammia pruvoti</i>, pink sea-fans <i>Eunicella verrucosa</i>, and Weymouth carpet-coral <i>Hoplangia durotrix</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1441</b> <a href=/species/S1441/>Shore dock</a> <b>Rumex rupestris</b></p>
-<p>There are historical records of <b>shore dock <i>Rumex rupestris</i></b> from seven of the larger islands, as well as from several small rocky outcrops and the eastern isles. Recent surveys suggest that it may now be restricted to just four islands (Tresco, Annet, Samson, Tean). Despite recent losses (and possibly earlier over-estimates of its abundance), the Isles of Scilly remain an important stronghold of the species at the south-western limit of its UK range. It is thought likely that the species is in long-term decline here, probably due to sea-level rise, increased storminess and ‘coastal squeeze’. Recent population data are lacking for some colonies, but it is thought that the total population, estimated in 1994 to be 165 plants, may now be rather less than this, perhaps fewer than 100 plants.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1364</b> <a href=/species/S1364/>Grey seal</a> <b>Halichoerus grypus</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1441
+            <a href=/species/S1441/>Shore dock</a>
+        </b>
+        <i>Rumex rupestris</i>
+        
     </div>
+<p>There are historical records of <b>shore dock <i>Rumex rupestris</i></b> from seven of the larger islands, as well as from several small rocky outcrops and the eastern isles. Recent surveys suggest that it may now be restricted to just four islands (Tresco, Annet, Samson, Tean). Despite recent losses (and possibly earlier over-estimates of its abundance), the Isles of Scilly remain an important stronghold of the species at the south-western limit of its UK range. It is thought likely that the species is in long-term decline here, probably due to sea-level rise, increased storminess and ‘coastal squeeze’. Recent population data are lacking for some colonies, but it is thought that the total population, estimated in 1994 to be 165 plants, may now be rather less than this, perhaps fewer than 100 plants.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
+    <div>
+        <b>
+            1364
+            <a href=/species/S1364/>Grey seal</a>
+        </b>
+        <i>Halichoerus grypus</i>
+        
+    </div>
+</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -275,6 +340,6 @@ Marine areas, Sea inlets (75%) <br />Tidal rivers, Estuaries, Mud flats, Sand fl
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

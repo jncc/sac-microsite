@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012594">Rum</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Rum</h1>
+
+<div class="section">
+    <h1>
+        Rum
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Highlands and Islands</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NM369982</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,87 +150,197 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012594_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Rum SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Rum SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Shingle, Sea cliffs, Islets (2%) <br />
+            </li>
+            <li>
+                Inland water bodies (Standing water, Running water) (1.5%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (15%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (47%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (6%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (7.5%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (2%) <br />
+            </li>
+            <li>
+                Mixed woodland (2%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (12%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012594.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Shingle, Sea cliffs, Islets (2%) <br />Inland water bodies (Standing water, Running water) (1.5%) <br />Bogs, Marshes, Water fringed vegetation, Fens (15%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (47%) <br />Dry grassland, Steppes (6%) <br />Humid grassland, Mesophile grassland (7.5%) <br />Alpine and sub-Alpine grassland (2%) <br />Mixed woodland (2%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (12%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012594.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The mountainous terrain of the island of Rum off the west coast of Scotland supports waterbodies typical of <b>oligotrophic to mesotrophic standing waters</b>. The lochs in this site are classified as Type 2 or 3 and can be extremely oligotrophic with a low species diversity. However, some coastal lochs exhibit a strong maritime influence and, as a consequence, support a greater diversity and abundance of macrophytes. The three major rock types on the island, Torridonian sandstone and ultrabasic and granitic igneous rocks, influence the trophic status of the lochs. The site contains several species of note including awlwort <i>Subularia aquatica</i>, floating bur-reed <i>Sparganium angustifolium</i> and common reed <i>Phragmites australis</i>. The remote location of the island and its National Nature Reserve status means that the lochs have not been subject to significant unnatural change.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>3160</b> <a href=/habitat/H3160/>Natural dystrophic lakes and ponds</a>
+    </div>
+<p>Rum, on the west coast of Scotland, contains dystrophic lochans formed mainly at mid-altitude in areas of upland <B>7130 Blanket bogs</B> and <B>4010 Northern Atlantic wet heaths with <I>Erica tetralix</I></B> over Torridonian sandstone. The impoverished aquatic flora is typical of this habitat type and includes bulbous rush <I>Juncus bulbosus</I> and bogbean <I>Menyanthes trifoliata</I>. The dystrophic lochans vary in size but are typically relatively small unnamed waters that are highly acidic and have a range of substrates, from boulders to organic mud or peat. Their small size and remote location has helped to protect the lochans from any significant unnatural change.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+<p>Rum, in the Inner Hebrides, has an extensive development of the black bog-rush <I>Schoenus nigricans</I>-rich form of <B>northern Atlantic wet heaths</B> that is restricted to western Scotland. It is extensive on slopes which are underlain by ultra-basic rocks, and shows the development of <I>Schoenus</I> in response to mild base-rich flushing. The <I>Schoenus</I>-rich form has affinities to the strongly-flushed <I>Carex panicea</I> sub-community of M15&nbsp;<I>Scirpus cespitosus</I> – <I>Erica tetralix</I> wet heath, and shows some similarities to the <I>Schoenus</I>-rich heaths of the Lizard district, which are also on ultra-basic rocks. Other more typical western forms of wet heath with abundant deergrass <I>Trichophorum cespitosum</I> and purple moor-grass <I>Molinia caerulea</I> are also represented.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>4030</b> <a href=/habitat/H4030/>European dry heaths</a>
+    </div>
+<p>Rum has examples of <b>European dry heaths</b> typical of the Inner Hebrides but is particularly noted for the presence of species-rich heath on base-rich soils. A large extent of the local, species-rich form of H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> heath, <i>Thymus praecox</i> – <i>Carex pulicaris</i> sub-community (H10d), occurs on steep, southerly-facing slopes on ultra-basic rocks. The associated flora includes a number of northern and arctic-alpine species, such as mountain everlasting <i>Antennaria dioica</i>, viviparous sheep’s-fescue <i>Festuca vivipara</i>, alpine meadow-rue <i>Thalictrum alpinum</i>, alpine bistort <i>Persicaria vivipara</i> and alpine saw-wort <i>Saussurea alpina</i>. The associated invertebrate fauna contains large populations of rare and local burnet moths. This northern form of species-rich heath complements that on Great Orme’s Head in Wales, which has a species-rich heath of a much more southern floristic character, overlying limestone. Other kinds of dry heath on Rum are typical of north-west Scotland. They include species-poor H10 <i>Calluna</i> – <i>Erica</i> heath and H21 <i>Calluna</i> – <i>Vaccinium</i> – <i>Sphagnum</i> heath, including some of the Atlantic bryophyte-rich forms of the latter.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a>
+    </div>
+<p>Rum is one of the best sites in the UK for open rocky Calaminarian vegetation characterised by the presence of arctic sandwort <i>Arenaria norvegica</i> ssp. <i>norvegica</i> and northern rock-cress <i>Arabis petraea</i>, similar to that on Keen of Hamar. The habitat, which represents <b>Calaminarian grasslands of the <i>Violetalia calaminariae</i></b>, is developed on rocky areas of debris and erosion terraces on the peridotite of Ruinsival eastwards towards Sgurr nan Gillean. <i>A. norvegica</i> is the rare ultramafic species represented, while other uncommon basiphiles include purple saxifrage <i>Saxifraga oppositifolia</i>, mossy cyphel <i>Minuartia sedoides</i> and moss campion <i>Silene acaulis</i>. This is one of the most maritime-influenced sites of the series and the maritime species sea campion <i>Silene uniflora</i>, sea plantain <i>Plantago maritima</i> and thrift <i>Armeria maritima</i> are especially frequent.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Rum is one of five sites on the oceanic west coast of Scotland representing low- to moderately high-altitude oceanic sub-types of <b>species-rich <i>Nardus</i> grasslands</b>. This site is characteristic of the communities found to the north and west of the range. Extensive herb-rich grasslands have developed below cliffs of ultra-basic rocks along the coast. The grasslands occur from near sea level to about 750 m. Both CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland and CG11 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Alchemilla alpina</i> grassland are well-represented. The stands are more scattered and more varied ecologically than on the basalt sites elsewhere in Scotland, but overall the flora is similar. Many uncommon but characteristic species are present, including mountain everlasting <i>Antennaria dioica</i>, bitter-vetch <i>Lathyrus linifolius</i>, milkwort <i>Polygala vulgaris</i>, field gentian <i>Gentianella campestris</i>, small-white orchid <i>Pseudorchis albida</i>, pale sedge <i>Carex pallescens</i> and lousewort <i>Pedicularis sylvatica</i>. Arctic-alpine and northern species include alpine bistort <i>Persicaria vivipara</i>, alpine meadow-rue <i>Thalictrum alpinum</i>, alpine lady’s mantle <i>Alchemilla alpina</i> and viviparous sheep’s-fescue <i>Festuca vivipara</i>. There is a range of transitions to maritime grassland, calcareous grasslands, herb-rich <b>4030 European dry heaths</b> and open communities on ultra-basic rocks.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8120</b> <a href=/habitat/H8120/>Calcareous and calcshist screes of the montane to alpine levels (Thlaspietea rotundifolii)</a>
+    </div>
+<p>Rum is representative of mildly <b>calcareous and calcshist screes</b> up to moderately high altitude in oceanic western Scotland. Rum has screes of various types, some of which are relatively small areas composed of ultra-basic rocks. Gravelly screes are widespread and unusual in supporting Scottish asphodel <i>Tofieldia pusilla</i>, which is usually associated with fens. Associated species include mountain everlasting <i>Antennaria dioica</i>, moss campion <i>Silene acaulis</i>, mossy cyphel <i>Minuartia sedoides</i>, thrift <i>Armeria maritima</i>, sea plantain <i>Plantago maritima</i> and purple saxifrage <i>Saxifraga oppositifolia</i>. Other species found in scree of larger rock fragments include northern rock-cress <i>Arabis petraea</i>, alpine penny-cress <i>Thlaspi caerulescens</i>, mountain sorrel <i>Oxyria digyna</i> and stone bramble <i>Rubus saxatilis</i>. Many ferns such as hay-scented buckler-fern <i>Dryopteris aemula</i>, northern buckler-fern <i>D. expansa</i> and male-fern <i>D. filix-mas</i> find a refuge from grazing animals in scree. Also there is a rich community of lower plants.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>3130</b> <a href=/habitat/H3130/>Oligotrophic to mesotrophic standing waters with vegetation of the Littorelletea uniflorae and/or of the Iso&#xEB;to-Nanojuncetea</a></p>
-<p>The mountainous terrain of the island of Rum off the west coast of Scotland supports waterbodies typical of <b>oligotrophic to mesotrophic standing waters</b>. The lochs in this site are classified as Type 2 or 3 and can be extremely oligotrophic with a low species diversity. However, some coastal lochs exhibit a strong maritime influence and, as a consequence, support a greater diversity and abundance of macrophytes. The three major rock types on the island, Torridonian sandstone and ultrabasic and granitic igneous rocks, influence the trophic status of the lochs. The site contains several species of note including awlwort <i>Subularia aquatica</i>, floating bur-reed <i>Sparganium angustifolium</i> and common reed <i>Phragmites australis</i>. The remote location of the island and its National Nature Reserve status means that the lochs have not been subject to significant unnatural change.</p></div>
-<div>
-    <p><b>3160</b> <a href=/habitat/H3160/>Natural dystrophic lakes and ponds</a></p>
-<p>Rum, on the west coast of Scotland, contains dystrophic lochans formed mainly at mid-altitude in areas of upland <B>7130 Blanket bogs</B> and <B>4010 Northern Atlantic wet heaths with <I>Erica tetralix</I></B> over Torridonian sandstone. The impoverished aquatic flora is typical of this habitat type and includes bulbous rush <I>Juncus bulbosus</I> and bogbean <I>Menyanthes trifoliata</I>. The dystrophic lochans vary in size but are typically relatively small unnamed waters that are highly acidic and have a range of substrates, from boulders to organic mud or peat. Their small size and remote location has helped to protect the lochans from any significant unnatural change.</p></div>
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-<p>Rum, in the Inner Hebrides, has an extensive development of the black bog-rush <I>Schoenus nigricans</I>-rich form of <B>northern Atlantic wet heaths</B> that is restricted to western Scotland. It is extensive on slopes which are underlain by ultra-basic rocks, and shows the development of <I>Schoenus</I> in response to mild base-rich flushing. The <I>Schoenus</I>-rich form has affinities to the strongly-flushed <I>Carex panicea</I> sub-community of M15&nbsp;<I>Scirpus cespitosus</I> – <I>Erica tetralix</I> wet heath, and shows some similarities to the <I>Schoenus</I>-rich heaths of the Lizard district, which are also on ultra-basic rocks. Other more typical western forms of wet heath with abundant deergrass <I>Trichophorum cespitosum</I> and purple moor-grass <I>Molinia caerulea</I> are also represented.</p></div>
-<div>
-    <p><b>4030</b> <a href=/habitat/H4030/>European dry heaths</a></p>
-<p>Rum has examples of <b>European dry heaths</b> typical of the Inner Hebrides but is particularly noted for the presence of species-rich heath on base-rich soils. A large extent of the local, species-rich form of H10 <i>Calluna vulgaris</i> – <i>Erica cinerea</i> heath, <i>Thymus praecox</i> – <i>Carex pulicaris</i> sub-community (H10d), occurs on steep, southerly-facing slopes on ultra-basic rocks. The associated flora includes a number of northern and arctic-alpine species, such as mountain everlasting <i>Antennaria dioica</i>, viviparous sheep’s-fescue <i>Festuca vivipara</i>, alpine meadow-rue <i>Thalictrum alpinum</i>, alpine bistort <i>Persicaria vivipara</i> and alpine saw-wort <i>Saussurea alpina</i>. The associated invertebrate fauna contains large populations of rare and local burnet moths. This northern form of species-rich heath complements that on Great Orme’s Head in Wales, which has a species-rich heath of a much more southern floristic character, overlying limestone. Other kinds of dry heath on Rum are typical of north-west Scotland. They include species-poor H10 <i>Calluna</i> – <i>Erica</i> heath and H21 <i>Calluna</i> – <i>Vaccinium</i> – <i>Sphagnum</i> heath, including some of the Atlantic bryophyte-rich forms of the latter.</p></div>
-<div>
-    <p><b>6130</b> <a href=/habitat/H6130/>Calaminarian grasslands of the Violetalia calaminariae</a></p>
-<p>Rum is one of the best sites in the UK for open rocky Calaminarian vegetation characterised by the presence of arctic sandwort <i>Arenaria norvegica</i> ssp. <i>norvegica</i> and northern rock-cress <i>Arabis petraea</i>, similar to that on Keen of Hamar. The habitat, which represents <b>Calaminarian grasslands of the <i>Violetalia calaminariae</i></b>, is developed on rocky areas of debris and erosion terraces on the peridotite of Ruinsival eastwards towards Sgurr nan Gillean. <i>A. norvegica</i> is the rare ultramafic species represented, while other uncommon basiphiles include purple saxifrage <i>Saxifraga oppositifolia</i>, mossy cyphel <i>Minuartia sedoides</i> and moss campion <i>Silene acaulis</i>. This is one of the most maritime-influenced sites of the series and the maritime species sea campion <i>Silene uniflora</i>, sea plantain <i>Plantago maritima</i> and thrift <i>Armeria maritima</i> are especially frequent.</p></div>
-<div>
-    <p><b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Rum is one of five sites on the oceanic west coast of Scotland representing low- to moderately high-altitude oceanic sub-types of <b>species-rich <i>Nardus</i> grasslands</b>. This site is characteristic of the communities found to the north and west of the range. Extensive herb-rich grasslands have developed below cliffs of ultra-basic rocks along the coast. The grasslands occur from near sea level to about 750 m. Both CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland and CG11 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Alchemilla alpina</i> grassland are well-represented. The stands are more scattered and more varied ecologically than on the basalt sites elsewhere in Scotland, but overall the flora is similar. Many uncommon but characteristic species are present, including mountain everlasting <i>Antennaria dioica</i>, bitter-vetch <i>Lathyrus linifolius</i>, milkwort <i>Polygala vulgaris</i>, field gentian <i>Gentianella campestris</i>, small-white orchid <i>Pseudorchis albida</i>, pale sedge <i>Carex pallescens</i> and lousewort <i>Pedicularis sylvatica</i>. Arctic-alpine and northern species include alpine bistort <i>Persicaria vivipara</i>, alpine meadow-rue <i>Thalictrum alpinum</i>, alpine lady’s mantle <i>Alchemilla alpina</i> and viviparous sheep’s-fescue <i>Festuca vivipara</i>. There is a range of transitions to maritime grassland, calcareous grasslands, herb-rich <b>4030 European dry heaths</b> and open communities on ultra-basic rocks.</p></div>
-<div>
-    <p><b>8120</b> <a href=/habitat/H8120/>Calcareous and calcshist screes of the montane to alpine levels (Thlaspietea rotundifolii)</a></p>
-<p>Rum is representative of mildly <b>calcareous and calcshist screes</b> up to moderately high altitude in oceanic western Scotland. Rum has screes of various types, some of which are relatively small areas composed of ultra-basic rocks. Gravelly screes are widespread and unusual in supporting Scottish asphodel <i>Tofieldia pusilla</i>, which is usually associated with fens. Associated species include mountain everlasting <i>Antennaria dioica</i>, moss campion <i>Silene acaulis</i>, mossy cyphel <i>Minuartia sedoides</i>, thrift <i>Armeria maritima</i>, sea plantain <i>Plantago maritima</i> and purple saxifrage <i>Saxifraga oppositifolia</i>. Other species found in scree of larger rock fragments include northern rock-cress <i>Arabis petraea</i>, alpine penny-cress <i>Thlaspi caerulescens</i>, mountain sorrel <i>Oxyria digyna</i> and stone bramble <i>Rubus saxatilis</i>. Many ferns such as hay-scented buckler-fern <i>Dryopteris aemula</i>, northern buckler-fern <i>D. expansa</i> and male-fern <i>D. filix-mas</i> find a refuge from grazing animals in scree. Also there is a rich community of lower plants.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1230</b> <a href=/habitat/H1230/>Vegetated sea cliffs of the Atlantic and Baltic Coasts</a></p>
-</div>
-<div>
-    <p><b>4060</b> <a href=/habitat/H4060/>Alpine and Boreal heaths</a></p>
-</div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-</div>
-<div>
-    <p><b>7130</b> <a href=/habitat/H7130/>Blanket bogs (* if active bog)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7150</b> <a href=/habitat/H7150/>Depressions on peat substrates of the Rhynchosporion</a></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-</div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-</div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1355</b> <a href=/species/S1355/>Otter</a> <b>Lutra lutra</b></p>
-<p>This island contains numerous freshwater lochs and lochans at a range of altitudes from near sea level to over 400 m, a wide range of small rivers and streams, and an extensive area of coastline. The site provides the full range of marine and freshwater requirements necessary for <b>otter <i>Lutra lutra</i></b> including breeding, feeding and resting sites. Rum’s otter population is representative of otter populations throughout the Small Isles and Inner Hebrides.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1355
+            <a href=/species/S1355/>Otter</a>
+        </b>
+        <i>Lutra lutra</i>
+        
     </div>
+<p>This island contains numerous freshwater lochs and lochans at a range of altitudes from near sea level to over 400 m, a wide range of small rivers and streams, and an extensive area of coastline. The site provides the full range of marine and freshwater requirements necessary for <b>otter <i>Lutra lutra</i></b> including breeding, feeding and resting sites. Rum’s otter population is representative of otter populations throughout the Small Isles and Inner Hebrides.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -311,6 +429,6 @@ Shingle, Sea cliffs, Islets (2%) <br />Inland water bodies (Standing water, Runn
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

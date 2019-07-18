@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,66 +77,95 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1614"><I>Apium repens</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Higher plant species</h1>
-</div>
-<h4>1614 Creeping marshwort [<I>Apium repens</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1614/map">
-            <img src="/images/maps/features/thumbnails/S1614_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1614</b> <I>Apium repens</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1614/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1614/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1614</span>
+        <span class="space-right">Creeping marshwort</span>
+        <I>Apium repens</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Higher plant species</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p><B>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1614/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1614/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Creeping marshwort <I>Apium repens</B></I> is a creeping perennial, forming rosettes of simply-pinnate leaves from which runners or stolons extend and root at nodes. It grows in wet grassland subject to winter flooding, typically by rivers. </P><B><I>
 <P>Apium repens</B></I> closely resembles certain varieties of the related fool’s water-cress <I>Apium nodiflorum</I>, leading to confusion over the true status of <B><I>A.&nbsp;repens</B></I>. However, DNA analysis of <I>Apium </I>populations carried out at the main UK site in 1994 confirmed that both species were present, with no evidence for hybridisation between the two species (Grassly <EM>et al</EM>. 1996). </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1614/map">
+                <img src="/images/maps/features/thumbnails/S1614_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1614</b> <I>Apium repens</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p></p>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1614/map>here</a> view UK distribution of this species</p>
-<p><B>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><B>
 <P>Creeping marshwort <I>Apium repens</B></I> was formerly recorded in scattered localities from East Anglia and Oxfordshire north to Fife and Kintyre. The plant is now confined to Oxfordshire, where it occurs on a grazed flood-meadow near Oxford, and at a second, smaller site. The number of individuals in the larger population has been monitored over several years and fluctuates annually, with wet springs and summers apparently favouring the plant. It is listed as Critically endangered in Britain. </P></p>
+    <p>View <a href=/species/S1614/map>UK distribution of this species</a>.</p>
 
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012845>Oxford Meadows</a></div>
-    <div class="cell large-6 small-12"><b>Berkshire, Buckinghamshire and Oxfordshire</b></div>
+        <h2>Site selection rationale</h2>
+        <p>In the UK, creeping marshwort is known from only two localities in Oxfordshire. The larger population has been selected as a SAC.</p>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Oxford Meadows is selected because Port Meadow is the larger of only two known sites in the UK for <b>creeping marshwort <i>Apium repens</i></b>. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012845 class="space-right">Oxford Meadows</a>
+        Berkshire, Buckinghamshire and Oxfordshire
+    </b>
+    <div>
+Oxford Meadows is selected because Port Meadow is the larger of only two known sites in the UK for <b>creeping marshwort <i>Apium repens</i></b>.     </div>
+</li>    </ul>
 </div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -224,6 +252,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,75 +77,107 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H3180">Turloughs</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">3180</span>
+        Turloughs
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Freshwater habitats</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Freshwater habitats</h1>
-</div>
-<h4>3180 Turloughs</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H3180/map">
-            <img src="/images/maps/features/thumbnails/H3180_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>3180</b> Turloughs. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H3180/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H3180/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p><B>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H3180/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H3180/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Turloughs</B> are seasonally-flooded lakes in karstic limestone areas, that are principally filled by subterranean waters via ephemeral springs or estavelles, and drain back into the groundwater table via swallets or estavelles – they have no natural surface outlet. Most examples flood in autumn and then drain between April and July leaving a dry floor (apart from residual pools). However, some may flood at any time of year after rainfall and drain again in a few days. Their maximum water depth is at least 0.5&nbsp;m, up to several metres depth. The water is calcium-rich, and the nutrient status ranges from ultra-oligotrophic to eutrophic. Turloughs are typically larger than most seasonal ponds, ranging in size from &lt;1&nbsp;ha to over 650&nbsp;ha, and because they receive no surface water inputs, they are less prone to siltation than other standing waters and can therefore be very ancient. </P>
 <P>The vegetation of turloughs usually has a distinct zonation determined by water depth and frequency and duration of filling. In Ireland, the vegetation mainly belongs to the alliance<I> Lolio – Potentillion anserinae</I>, but also includes <I>Caricion davallianae </I>mires. Turlough organisms are well-adapted to environmental variation. Their survival strategies include aerial adult forms, production of resting stages, resistance to desiccation, or an amphibious lifestyle. Some turloughs are important feeding-grounds for wintering waterfowl. </P>
 <P>Turloughs are vulnerable to drainage or changes to groundwater hydrology, resulting, for example from quarrying or excessive groundwater abstraction, while the groundwater itself is vulnerable to pollution from agriculture, urban areas or roads, and the vegetation is sensitive to overgrazing during dry periods. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H3180/map">
+                <img src="/images/maps/features/thumbnails/H3180_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>3180</b> Turloughs. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Turloughs</B> are restricted to karstic limestone areas in Ireland and the UK. However, UK examples are rare, and the habitat is much more extensively-developed in the Republic of Ireland, where 90 examples larger than 10&nbsp;ha in extent have been recorded, mainly in the western lowlands. However, a survey of all 90 larger Irish turloughs in the early 1980s found only 60 to be still hydrologically active (Coxon 1987). </P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H3180/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Turloughs</B> are known to occur at only two sites in the UK: a single example in south Wales, and a group of three in the south-west of Northern Ireland. Temporary pools in other limestone areas, and some Breckland meres over the East Anglian chalk, have certain characteristics in common with turloughs, but lack an annual fill/drain cycle and therefore cannot be regarded as true turloughs. </P></p>
-
-
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030070>Cernydd Carmel</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
+    <p>Click <a href=/habitat/H3180/map>here</a> view UK distribution of this species</p>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Pant-y-Llyn turlough occupies a small depression on the northern perimeter of the South Wales Coalfield at Cernydd Carmel. This depression represents a glacial channel formed along the Betws Fault where displacement has brought Carboniferous limestone into contact with older Devonian rock. The hydrological regime of the waterbody is linked to local groundwater behaviour within the limestone. The basin fills to a depth of about 3 m during late autumn and remains full until the following summer when it empties completely, thus reflecting the characteristic behaviour of turloughs. There are no surface drainage channels and a swallow hole is located at the northern end of the basin. The basin floor is covered by bryophytes (mainly <i>Fontinalis antipyretica</i> and <i>Drepanocladus aduncus</i>) and herbaceous swamp (water horsetail <i>Equisetum fluviatile</i> and bladder-sedge <i>Carex vesicaria</i>) communities and is surrounded by W3 <i>Salix cinerea</i> – <i>Galium palustre</i> woodland. Within the willow <i>Salix</i> carr, there is a further zonation among the epiphytic bryophytes, with a well-defined <i>Fontinalis</i> community on the lower parts of the trees, which are subject to immersion. The invertebrate fauna is characteristic of seasonal standing waters with aquatic beetles Coleoptera acting as the most diverse group of predators on a microinvertebrate community dominated by relatively large Cladocera and Copepoda.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030068>Fardrum and Roosky Turloughs</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">There are three <b>Turloughs</b> in this group, west of Lower Lough Erne: Fardrum Lough, Roosky Lough, and Green Lough, all within a basin formed in the Carboniferous Ballyshannon limestone. They are the only turloughs in Northern Ireland, and represent the most northerly occurrence of this habitat in Ireland and the UK. All three contain distinctive vegetation communities associated with their inundation zone, including the bryophytes <i>Cinclidotus fontinaloides</i> and <i>Fontinalis antipyretica</i>. In addition, Green Lough supports the nationally rare fen violet <i>Viola persicifolia</i> and a very rich ground-beetle fauna including the carabids <i>Blethisa multipunctata</i> and <i>Pelophila borealis</i>. </div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
 </div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0030070 class="space-right">Cernydd Carmel</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Pant-y-Llyn turlough occupies a small depression on the northern perimeter of the South Wales Coalfield at Cernydd Carmel. This depression represents a glacial channel formed along the Betws Fault where displacement has brought Carboniferous limestone into contact with older Devonian rock. The hydrological regime of the waterbody is linked to local groundwater behaviour within the limestone. The basin fills to a depth of about 3 m during late autumn and remains full until the following summer when it empties completely, thus reflecting the characteristic behaviour of turloughs. There are no surface drainage channels and a swallow hole is located at the northern end of the basin. The basin floor is covered by bryophytes (mainly <i>Fontinalis antipyretica</i> and <i>Drepanocladus aduncus</i>) and herbaceous swamp (water horsetail <i>Equisetum fluviatile</i> and bladder-sedge <i>Carex vesicaria</i>) communities and is surrounded by W3 <i>Salix cinerea</i> – <i>Galium palustre</i> woodland. Within the willow <i>Salix</i> carr, there is a further zonation among the epiphytic bryophytes, with a well-defined <i>Fontinalis</i> community on the lower parts of the trees, which are subject to immersion. The invertebrate fauna is characteristic of seasonal standing waters with aquatic beetles Coleoptera acting as the most diverse group of predators on a microinvertebrate community dominated by relatively large Cladocera and Copepoda.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030068 class="space-right">Fardrum and Roosky Turloughs</a>
+        Northern Ireland
+    </b>
+    <div>
+There are three <b>Turloughs</b> in this group, west of Lower Lough Erne: Fardrum Lough, Roosky Lough, and Green Lough, all within a basin formed in the Carboniferous Ballyshannon limestone. They are the only turloughs in Northern Ireland, and represent the most northerly occurrence of this habitat in Ireland and the UK. All three contain distinctive vegetation communities associated with their inundation zone, including the bryophytes <i>Cinclidotus fontinaloides</i> and <i>Fontinalis antipyretica</i>. In addition, Green Lough supports the nationally rare fen violet <i>Viola persicifolia</i> and a very rich ground-beetle fauna including the carabids <i>Blethisa multipunctata</i> and <i>Pelophila borealis</i>.     </div>
+</li>    </ul>
+</div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -233,6 +264,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

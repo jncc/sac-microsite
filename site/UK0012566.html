@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012566">Kenfig/ Cynffig</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Kenfig/ Cynffig</h1>
+
+<div class="section">
+    <h1>
+        Kenfig/ Cynffig
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>East Wales</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SS790813</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,57 +150,135 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012566_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Kenfig/ Cynffig SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Kenfig/ Cynffig SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (19%) <br />
+            </li>
+            <li>
+                Salt marshes, Salt pastures, Salt steppes (1%) <br />
+            </li>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (63%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (4%) <br />
+            </li>
+            <li>
+                Inland water bodies (Standing water, Running water) (2.5%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (0.5%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (7.5%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (2.5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012566.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (19%) <br />Salt marshes, Salt pastures, Salt steppes (1%) <br />Coastal sand dunes, Sand beaches, Machair (63%) <br />Shingle, Sea cliffs, Islets (4%) <br />Inland water bodies (Standing water, Running water) (2.5%) <br />Bogs, Marshes, Water fringed vegetation, Fens (0.5%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (7.5%) <br />Broad-leaved deciduous woodland (2.5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012566.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
     </div>
-</div>   
-<div class="row"> 
+<p>Kenfig is a largely intact dune system in south Wales with extensive areas of <b>fixed dune</b> vegetation with red fescue <i>Festuca rubra</i> and lady’s bedstraw <i>Galium verum</i> and semi-fixed dune grassland with marram <i>Ammophila arenaria</i> and red fescue. There is also a relatively large area of more acidic vegetation dominated by sand sedge Carex <i>arenaria</i>, sheep’s-fescue <i>Festuca ovina</i> and common bent <i>Agrostis capillaris</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a>
+    </div>
+<p>Kenfig contains one of the largest series of dune slacks in Wales. The dune slacks are species-rich and there are extensive areas of <b>dunes with <i>Salix repens</i> ssp. <i>argentea</i></b>, which represent a mature phase in dune slack development. This site is in the central part of the range of this community on the west coast and is a highly representative example of this habitat type. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a>
+    </div>
+<p>Kenfig in south Wales contains the most important example of <b>Humid dune slacks</b> in the UK, owing to the extent of the habitat type and the conservation of its structure and function. These calcareous dune slacks are also amongst the most species-rich in the UK, supporting communities dominated by a variety of mosses and a number of rare plants, notably <b>1903 Fen orchid <i>Liparis loeselii</i></b>, for which the site is also selected. Some of the dune slacks on the site are still in the early successional stage of development.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>3140</b> <a href=/habitat/H3140/>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</a>
+    </div>
+<p>Kenfig Pool is a shallow lake system within the extensive sand dune system of Kenfig, alongside Swansea Bay in south Wales. The water chemistry is indicative of a coastal, alkaline lake with a moderate nutrient status. High alkalinity, conductivity, sodium and chloride values reflect this marine influence. Elevated calcium values are probably derived from marine shell remains in the sandy substrate. Large stands of common reed <i>Phragmites australis</i> are found on the pool’s seaward side. Grey club-rush <i>Scirpus lacustris</i> ssp. <i>tabernaemontani</i>, sea club-rush <i>Scirpus maritimus</i>, branched bur-reed <i>Sparganium erectum</i> and yellow iris <i>Iris pseudacorus</i> are also present. A sheltered bay supports a plant association dominated by shining pondweed <i>Potamogeton lucens</i> and curled pondweed <i>P. crispus</i>. Hairlike pondweed <i>P. trichoides</i> is locally dominant in the north end and the south end has abundant rigid hornwort <i>Ceratophyllum demersum</i>, Canadian waterweed <i>Elodea canadensis</i>, fan-leaved water-crowfoot <i>Ranunculus circinatus</i>, spiked water-milfoil <i>Myriophyllum spicatum</i> and the charophytes <i>Chara aspera</i> var. <i>aspera</i> and <i>Nitella flexilis</i> var. <i>flexilis</i>. Shoreweed <i>Littorella uniflora</i> can be found growing in association with <i>C. aspera</i> and the aquatic moss <i>Fontinalis antipyretica</i> along the sandy shore section. <i>C. aspera</i> also dominates the substrate off the grazed landward shoreline, to a depth of approximately 1.5 m.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Kenfig is a largely intact dune system in south Wales with extensive areas of <b>fixed dune</b> vegetation with red fescue <i>Festuca rubra</i> and lady’s bedstraw <i>Galium verum</i> and semi-fixed dune grassland with marram <i>Ammophila arenaria</i> and red fescue. There is also a relatively large area of more acidic vegetation dominated by sand sedge Carex <i>arenaria</i>, sheep’s-fescue <i>Festuca ovina</i> and common bent <i>Agrostis capillaris</i>.</p></div>
-<div>
-    <p><b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a></p>
-<p>Kenfig contains one of the largest series of dune slacks in Wales. The dune slacks are species-rich and there are extensive areas of <b>dunes with <i>Salix repens</i> ssp. <i>argentea</i></b>, which represent a mature phase in dune slack development. This site is in the central part of the range of this community on the west coast and is a highly representative example of this habitat type. </p></div>
-<div>
-    <p><b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a></p>
-<p>Kenfig in south Wales contains the most important example of <b>Humid dune slacks</b> in the UK, owing to the extent of the habitat type and the conservation of its structure and function. These calcareous dune slacks are also amongst the most species-rich in the UK, supporting communities dominated by a variety of mosses and a number of rare plants, notably <b>1903 Fen orchid <i>Liparis loeselii</i></b>, for which the site is also selected. Some of the dune slacks on the site are still in the early successional stage of development.</p></div>
-<div>
-    <p><b>3140</b> <a href=/habitat/H3140/>Hard oligo-mesotrophic waters with benthic vegetation of Chara spp.</a></p>
-<p>Kenfig Pool is a shallow lake system within the extensive sand dune system of Kenfig, alongside Swansea Bay in south Wales. The water chemistry is indicative of a coastal, alkaline lake with a moderate nutrient status. High alkalinity, conductivity, sodium and chloride values reflect this marine influence. Elevated calcium values are probably derived from marine shell remains in the sandy substrate. Large stands of common reed <i>Phragmites australis</i> are found on the pool’s seaward side. Grey club-rush <i>Scirpus lacustris</i> ssp. <i>tabernaemontani</i>, sea club-rush <i>Scirpus maritimus</i>, branched bur-reed <i>Sparganium erectum</i> and yellow iris <i>Iris pseudacorus</i> are also present. A sheltered bay supports a plant association dominated by shining pondweed <i>Potamogeton lucens</i> and curled pondweed <i>P. crispus</i>. Hairlike pondweed <i>P. trichoides</i> is locally dominant in the north end and the south end has abundant rigid hornwort <i>Ceratophyllum demersum</i>, Canadian waterweed <i>Elodea canadensis</i>, fan-leaved water-crowfoot <i>Ranunculus circinatus</i>, spiked water-milfoil <i>Myriophyllum spicatum</i> and the charophytes <i>Chara aspera</i> var. <i>aspera</i> and <i>Nitella flexilis</i> var. <i>flexilis</i>. Shoreweed <i>Littorella uniflora</i> can be found growing in association with <i>C. aspera</i> and the aquatic moss <i>Fontinalis antipyretica</i> along the sandy shore section. <i>C. aspera</i> also dominates the substrate off the grazed landward shoreline, to a depth of approximately 1.5 m.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1330</b> <a href=/habitat/H1330/>Atlantic salt meadows (Glauco-Puccinellietalia maritimae)</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1395</b> <a href=/species/S1395/>Petalwort</a> <b>Petalophyllum ralfsii</b></p>
-<p>Kenfig is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales and supports a large population of the species, numbering thousands of thalli. The calcareous dune system has many dune slacks that include the early successional, open slack vegetation this species requires. </p></div>
-<div>
-    <p><b>1903</b> <a href=/species/S1903/>Fen orchid</a> <b>Liparis loeselii</b></p>
-<p>Kenfig on the south Wales coast holds the largest populations of <B>fen orchid <I>Liparis loeselii</B></I> in the UK, comprising about 50% of the UK resource. Management of the site is directed towards the maintenance and enhancement of the populations of fen orchid. The variety that occurs here, as at Whiteford Burrows, is var. <I>ovata</I>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1395
+            <a href=/species/S1395/>Petalwort</a>
+        </b>
+        <i>Petalophyllum ralfsii</i>
+        
     </div>
+<p>Kenfig is one of two sites selected for <b>petalwort <i>Petalophyllum ralfsii</i></b> in south Wales and supports a large population of the species, numbering thousands of thalli. The calcareous dune system has many dune slacks that include the early successional, open slack vegetation this species requires. </p></li>
+<li>
+    <div>
+        <b>
+            1903
+            <a href=/species/S1903/>Fen orchid</a>
+        </b>
+        <i>Liparis loeselii</i>
+        
+    </div>
+<p>Kenfig on the south Wales coast holds the largest populations of <B>fen orchid <I>Liparis loeselii</B></I> in the UK, comprising about 50% of the UK resource. Management of the site is directed towards the maintenance and enhancement of the populations of fen orchid. The variety that occurs here, as at Whiteford Burrows, is var. <I>ovata</I>, which is currently known to occur only in Wales and on the coast of Brittany, as well as in the past at Braunton Burrows, Devon, England.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -281,6 +367,6 @@ Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basi
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

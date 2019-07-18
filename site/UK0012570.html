@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012570">Braunton Burrows</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Braunton Burrows</h1>
+
+<div class="section">
+    <h1>
+        Braunton Burrows
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Devon</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>SS451348</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,54 +150,119 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012570_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Braunton Burrows SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Braunton Burrows SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Coastal sand dunes, Sand beaches, Machair (85%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (1%) <br />
+            </li>
+            <li>
+                Inland water bodies (Standing water, Running water) (1%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (3%) <br />
+            </li>
+            <li>
+                Improved grassland (5%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012570.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Coastal sand dunes, Sand beaches, Machair (85%) <br />Shingle, Sea cliffs, Islets (1%) <br />Inland water bodies (Standing water, Running water) (1%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (3%) <br />Improved grassland (5%) <br />Broad-leaved deciduous woodland (5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012570.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>2120</b> <a href=/habitat/H2120/>&quot;Shifting dunes along the shoreline with Ammophila arenaria (&quot;&quot;white dunes&quot;&quot;)&quot;</a>
     </div>
-</div>   
-<div class="row"> 
+<p>This large site in south-west England contains a substantial area of mobile dune vegetation, including representative examples of most of the main variants found in the south-west of the UK. There are good numbers of characteristic specialist plants typical of this region, such as Portland spurge <i>Euphorbia portlandica</i>, sea spurge <i>Euphorbia paralias</i> and sea-holly <i>Eryngium maritimum</i>. Transitions to dune slack and fixed dune are a prominent feature of this site. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Braunton Burrows, in south-west England, is one of the largest dune sites in the UK and is of particular importance because it is virtually intact and still active. There are very extensive areas of species-rich calcareous dune grassland with good examples of a variety of important communities. The short turf areas are extremely rich in herbs and lichens, including a number of nationally rare species. Flowering herbs such as large thyme <i>Thymus pulegioides</i>, common restharrow <i>Ononis repens</i> and common bird’s-foot-trefoil <i>Lotus corniculatus</i> are locally dominant.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a>
+    </div>
+<p>Braunton Burrows is one of the largest virtually intact dune sites in the UK and is representative of <b>dunes with <i>Salix repens</i> ssp. <i>argentea</i></b> in south-west England. The habitat is scattered across the site and form part of a complex mosaic of vegetation containing creeping willow, including early and mature successional stages of dune slack vegetation. There are transitional stages between this type and more mature scrub vegetation. </p></li>
+
+<li>
+    <div class="little-header">
+        <b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a>
+    </div>
+<p>Braunton Burrows is one of the largest virtually intact dune sites in the UK, with an exceptionally large area of <b>Humid dune slack</b> vegetation, representing a significant proportion of the national resource. The slacks have formed in base-rich sand and are rich in species such as marsh pennywort <i>Hydrocotyle vulgaris</i>, marsh helleborine <i>Epipactis palustris</i> and round-leaved wintergreen <i>Pyrola rotundifolia</i>. Vegetation types range from those with almost permanent water to those dominated by scrub. The site contains representative examples of most of the communities of base-rich humid slacks in south-west England, namely those characterised by creeping willow <i>Salix repens</i> ssp. <i>argentea</i>, those with bryophytes or those with Yorkshire-fog <i>Holcus lanatus</i>.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>2120</b> <a href=/habitat/H2120/>&quot;Shifting dunes along the shoreline with Ammophila arenaria (&quot;&quot;white dunes&quot;&quot;)&quot;</a></p>
-<p>This large site in south-west England contains a substantial area of mobile dune vegetation, including representative examples of most of the main variants found in the south-west of the UK. There are good numbers of characteristic specialist plants typical of this region, such as Portland spurge <i>Euphorbia portlandica</i>, sea spurge <i>Euphorbia paralias</i> and sea-holly <i>Eryngium maritimum</i>. Transitions to dune slack and fixed dune are a prominent feature of this site. </p></div>
-<div>
-    <p><b>2130</b> <a href=/habitat/H2130/>&quot;Fixed coastal dunes with herbaceous vegetation (&quot;&quot;grey dunes&quot;&quot;)&quot;</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Braunton Burrows, in south-west England, is one of the largest dune sites in the UK and is of particular importance because it is virtually intact and still active. There are very extensive areas of species-rich calcareous dune grassland with good examples of a variety of important communities. The short turf areas are extremely rich in herbs and lichens, including a number of nationally rare species. Flowering herbs such as large thyme <i>Thymus pulegioides</i>, common restharrow <i>Ononis repens</i> and common bird’s-foot-trefoil <i>Lotus corniculatus</i> are locally dominant.</p></div>
-<div>
-    <p><b>2170</b> <a href=/habitat/H2170/>Dunes with Salix repens ssp. argentea (Salicion arenariae)</a></p>
-<p>Braunton Burrows is one of the largest virtually intact dune sites in the UK and is representative of <b>dunes with <i>Salix repens</i> ssp. <i>argentea</i></b> in south-west England. The habitat is scattered across the site and form part of a complex mosaic of vegetation containing creeping willow, including early and mature successional stages of dune slack vegetation. There are transitional stages between this type and more mature scrub vegetation. </p></div>
-<div>
-    <p><b>2190</b> <a href=/habitat/H2190/>Humid dune slacks</a></p>
-<p>Braunton Burrows is one of the largest virtually intact dune sites in the UK, with an exceptionally large area of <b>Humid dune slack</b> vegetation, representing a significant proportion of the national resource. The slacks have formed in base-rich sand and are rich in species such as marsh pennywort <i>Hydrocotyle vulgaris</i>, marsh helleborine <i>Epipactis palustris</i> and round-leaved wintergreen <i>Pyrola rotundifolia</i>. Vegetation types range from those with almost permanent water to those dominated by scrub. The site contains representative examples of most of the communities of base-rich humid slacks in south-west England, namely those characterised by creeping willow <i>Salix repens</i> ssp. <i>argentea</i>, those with bryophytes or those with Yorkshire-fog <i>Holcus lanatus</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1140</b> <a href=/habitat/H1140/>Mudflats and sandflats not covered by seawater at low tide</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1395</b> <a href=/species/S1395/>Petalwort</a> <b>Petalophyllum ralfsii</b></p>
-<p>A large population (around 3000 thalli) of <b>petalwort <i>Petalophyllum ralfsii</i></b> is recorded from Braunton Burrows, one of two sites selected for this species in south-west England. There are extensive open dune slack habitats of the types required by this species for survival.</p></div>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1395
+            <a href=/species/S1395/>Petalwort</a>
+        </b>
+        <i>Petalophyllum ralfsii</i>
+        
     </div>
+<p>A large population (around 3000 thalli) of <b>petalwort <i>Petalophyllum ralfsii</i></b> is recorded from Braunton Burrows, one of two sites selected for this species in south-west England. There are extensive open dune slack habitats of the types required by this species for survival.</p></li>    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -278,6 +351,6 @@ Coastal sand dunes, Sand beaches, Machair (85%) <br />Shingle, Sea cliffs, Islet
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012900">Ben Lui</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Ben Lui</h1>
+
+<div class="section">
+    <h1>
+        Ben Lui
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Eastern Scotland, Highlands and Islands</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NN265260</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,69 +150,151 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012900_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Ben Lui SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Ben Lui SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Inland water bodies (Standing water, Running water) (0.1%) <br />
+            </li>
+            <li>
+                Bogs, Marshes, Water fringed vegetation, Fens (17%) <br />
+            </li>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (25%) <br />
+            </li>
+            <li>
+                Humid grassland, Mesophile grassland (25%) <br />
+            </li>
+            <li>
+                Alpine and sub-Alpine grassland (20.7%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (0.1%) <br />
+            </li>
+            <li>
+                Coniferous woodland (0.1%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (12%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012900.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Inland water bodies (Standing water, Running water) (0.1%) <br />Bogs, Marshes, Water fringed vegetation, Fens (17%) <br />Heath, Scrub, Maquis and Garrigue, Phygrana (25%) <br />Humid grassland, Mesophile grassland (25%) <br />Alpine and sub-Alpine grassland (20.7%) <br />Broad-leaved deciduous woodland (0.1%) <br />Coniferous woodland (0.1%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (12%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012900.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
-    </div>
-</div>   
-<div class="row"> 
-    <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
 
-<div>
-    <p><b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a></p>
-<p>Ben Lui supports W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub, occurring on highly calcareous schist at moderate altitude. The scrub is well-developed on an extensive series of schistose crags and rock ledges. Unlike at most other sites, the dominant species is whortle-leaved willow <i>Salix myrsinites</i>. This variant also occurs at Inchnadamph (where by contrast the scrub occurs at low altitude on limestone). Net-leaved willow <i>S. reticulata</i> is frequent, mainly associated with areas of calcareous grassland. Mountain willow <i>S. arbuscula</i>, tea-leaved willow <i>S. phylicifolia</i> and downy willow <i>S. lapponum</i> are also represented. The scrub has a rich flora and is associated with <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b> and <b>6170 Alpine and subalpine calcareous grasslands</b>.</p></div>
-<div>
-    <p><b>6170</b> <a href=/habitat/H6170/>Alpine and subalpine calcareous grasslands</a></p>
-<p>Ben Lui is one of four sites selected in the Breadalbane Hills of the southern Highlands to represent high-altitude <b>Alpine and subalpine calcareous grasslands</b>. Ben Lui has extensive areas of the open hill sub-type CG12 <i>Festuca ovina</i> – <i>Alchemilla alpina</i> – <i>Silene acaulis</i> dwarf-herb community. CG14 <i>Dryas octopetala</i> – <i>Silene acaulis</i> ledge community also occurs in profusion on steep, rocky ground. This supports an outstanding arctic-alpine flora, including alpine bartsia <i>Bartsia alpina</i>, mossy saxifrage <i>Saxifraga hypnoides</i>, cyphel <i>Minuartia sedoides</i>, rock sedge <i>Carex rupestris</i>, and hair sedge <i>C. capillaris</i>. The quality and diversity of this community and the range of transitions to other habitat types are similar to those on Ben Lawers, but less extensive.</p></div>
-<div>
-    <p><b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a></p>
-<p>Ben Lui in the Breadalbane range in the southern Scottish Highlands is representative of <b>hydrophilous tall herb fringe communities</b> occurring on calcareous schist up to high altitude. Ben Lui has a large number of examples of this habitat type, distributed widely across the site. Structure and function are well-developed and the communities are diverse. Characteristic species include roseroot <i>Sedum rosea</i>, wild angelica <i>Angelica sylvestris</i>, melancholy thistle <i>Cirsium heterophyllum</i> and globeflower <i>Trollius europaeus</i>, and a number of rare arctic-alpines, including alpine bartsia <i>Bartsia alpina</i>, alpine saw-wort <i>Saussurea alpina</i>, the lady’s-mantle <i>Alchemilla wichurae</i>, black alpine-sedge <i>Carex atrata</i> and rock sedge <i>C. rupestris</i>. Together with Glen Coe, Ben Lui represents the habitat type in the wetter and more oceanic west, where there is a greater frequency of species associated with wetter silts and dripping ledges, such as marsh hawk’s-beard <i>Crepis paludosa</i>, grass-of-Parnassus <i>Parnassia palustris</i> and bog orchid <i>Hammarbya palustris</i>. There is also a great luxuriance of ferns, including oak fern <i>Gymnocarpium dryopteris</i>, lemon-scented fern <i>Oreopteris limbosperma</i>, beech fern <i>Phegopteris connectilis</i>, holly-fern <i>Polystichum lonchitis</i> and hard shield-fern <i>Polystichum aculeatum</i>. In places <b>hydrophilous tall herb fringe communities</b> occur in an intimate mosaic with <b>4080 Sub-Arctic <i>Salix</i> spp. scrub</b>, and there are well-developed transitions between them. Most of the species of Ben Lawers are present, except for some of the rarer montane species. The extent of the habitat type is at Ben Lui is similar to that on Ben Lawers.</p></div>
-<div>
-    <p><b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Ben Lui is one of three sites in the Breadalbane range in the southern Scottish Highlands representing the range of variation of <b>alpine pioneer formations</b> up to high altitude. High-altitude mires are frequent on the site and include both open types with M11 <i>Carex demissa</i>– <i>Saxifraga aizoides</i> mire and more closed types with M12 <i>Carex saxatilis</i> mire. The rare false sedge <i>Kobresia simpliciuscula</i>, Scottish asphodel <i>Tofieldia pusilla</i>, chestnut rush <i>Juncus castaneus</i> and two-flowered rush <i>Juncus biglumis</i> are present. The rare flush bryophytes <i>Catoscopium nigritum</i>, <i>Meesia uliginosa</i>, <i>Timmia norvegica</i>, <i>Harpanthus flotovianus</i> and <i>Tritomaria polita</i> are well-represented.</p></div>
-<div>
-    <p><b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a></p>
-<p>Ben Lui represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in an oceanic climate at the western end of the Breadalbane range. There is a wide band of calcareous schist forming crags at altitudes of 460-760 m on northerly slopes. The flora includes a number of rare montane calcicoles including mountain avens <i>Dryas octopetala</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i> and net-leaved willow <i>Salix reticulata</i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
 
-<div>
-    <p><b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a></p>
-</div>
-<div>
-    <p><b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a></p>
-</div>
-<div>
-    <p><b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-</div>
-<div>
-    <p><b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a></p>
-</div>
-<div>
-    <p><b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a></p>
-</div>
-<div>
-    <p><b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a></p>
-</div>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-<p>Not Applicable</p>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<li>
+    <div class="little-header">
+        <b>4080</b> <a href=/habitat/H4080/>Sub-Arctic Salix spp. scrub</a>
     </div>
+<p>Ben Lui supports W20 <i>Salix lapponum</i> – <i>Luzula sylvatica</i> scrub, occurring on highly calcareous schist at moderate altitude. The scrub is well-developed on an extensive series of schistose crags and rock ledges. Unlike at most other sites, the dominant species is whortle-leaved willow <i>Salix myrsinites</i>. This variant also occurs at Inchnadamph (where by contrast the scrub occurs at low altitude on limestone). Net-leaved willow <i>S. reticulata</i> is frequent, mainly associated with areas of calcareous grassland. Mountain willow <i>S. arbuscula</i>, tea-leaved willow <i>S. phylicifolia</i> and downy willow <i>S. lapponum</i> are also represented. The scrub has a rich flora and is associated with <b>6430 Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</b> and <b>6170 Alpine and subalpine calcareous grasslands</b>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6170</b> <a href=/habitat/H6170/>Alpine and subalpine calcareous grasslands</a>
+    </div>
+<p>Ben Lui is one of four sites selected in the Breadalbane Hills of the southern Highlands to represent high-altitude <b>Alpine and subalpine calcareous grasslands</b>. Ben Lui has extensive areas of the open hill sub-type CG12 <i>Festuca ovina</i> – <i>Alchemilla alpina</i> – <i>Silene acaulis</i> dwarf-herb community. CG14 <i>Dryas octopetala</i> – <i>Silene acaulis</i> ledge community also occurs in profusion on steep, rocky ground. This supports an outstanding arctic-alpine flora, including alpine bartsia <i>Bartsia alpina</i>, mossy saxifrage <i>Saxifraga hypnoides</i>, cyphel <i>Minuartia sedoides</i>, rock sedge <i>Carex rupestris</i>, and hair sedge <i>C. capillaris</i>. The quality and diversity of this community and the range of transitions to other habitat types are similar to those on Ben Lawers, but less extensive.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>6430</b> <a href=/habitat/H6430/>Hydrophilous tall herb fringe communities of plains and of the montane to alpine levels</a>
+    </div>
+<p>Ben Lui in the Breadalbane range in the southern Scottish Highlands is representative of <b>hydrophilous tall herb fringe communities</b> occurring on calcareous schist up to high altitude. Ben Lui has a large number of examples of this habitat type, distributed widely across the site. Structure and function are well-developed and the communities are diverse. Characteristic species include roseroot <i>Sedum rosea</i>, wild angelica <i>Angelica sylvestris</i>, melancholy thistle <i>Cirsium heterophyllum</i> and globeflower <i>Trollius europaeus</i>, and a number of rare arctic-alpines, including alpine bartsia <i>Bartsia alpina</i>, alpine saw-wort <i>Saussurea alpina</i>, the lady’s-mantle <i>Alchemilla wichurae</i>, black alpine-sedge <i>Carex atrata</i> and rock sedge <i>C. rupestris</i>. Together with Glen Coe, Ben Lui represents the habitat type in the wetter and more oceanic west, where there is a greater frequency of species associated with wetter silts and dripping ledges, such as marsh hawk’s-beard <i>Crepis paludosa</i>, grass-of-Parnassus <i>Parnassia palustris</i> and bog orchid <i>Hammarbya palustris</i>. There is also a great luxuriance of ferns, including oak fern <i>Gymnocarpium dryopteris</i>, lemon-scented fern <i>Oreopteris limbosperma</i>, beech fern <i>Phegopteris connectilis</i>, holly-fern <i>Polystichum lonchitis</i> and hard shield-fern <i>Polystichum aculeatum</i>. In places <b>hydrophilous tall herb fringe communities</b> occur in an intimate mosaic with <b>4080 Sub-Arctic <i>Salix</i> spp. scrub</b>, and there are well-developed transitions between them. Most of the species of Ben Lawers are present, except for some of the rarer montane species. The extent of the habitat type is at Ben Lui is similar to that on Ben Lawers.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>7240</b> <a href=/habitat/H7240/>Alpine pioneer formations of the Caricion bicoloris-atrofuscae</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Ben Lui is one of three sites in the Breadalbane range in the southern Scottish Highlands representing the range of variation of <b>alpine pioneer formations</b> up to high altitude. High-altitude mires are frequent on the site and include both open types with M11 <i>Carex demissa</i>– <i>Saxifraga aizoides</i> mire and more closed types with M12 <i>Carex saxatilis</i> mire. The rare false sedge <i>Kobresia simpliciuscula</i>, Scottish asphodel <i>Tofieldia pusilla</i>, chestnut rush <i>Juncus castaneus</i> and two-flowered rush <i>Juncus biglumis</i> are present. The rare flush bryophytes <i>Catoscopium nigritum</i>, <i>Meesia uliginosa</i>, <i>Timmia norvegica</i>, <i>Harpanthus flotovianus</i> and <i>Tritomaria polita</i> are well-represented.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>8210</b> <a href=/habitat/H8210/>Calcareous rocky slopes with chasmophytic vegetation</a>
+    </div>
+<p>Ben Lui represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in an oceanic climate at the western end of the Breadalbane range. There is a wide band of calcareous schist forming crags at altitudes of 460-760 m on northerly slopes. The flora includes a number of rare montane calcicoles including mountain avens <i>Dryas octopetala</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i> and net-leaved willow <i>Salix reticulata</i>.</p></li>
+    </ul>
 </div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>4010</b> <a href=/habitat/H4010/>Northern Atlantic wet heaths with Erica tetralix</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6150</b> <a href=/habitat/H6150/>Siliceous alpine and boreal grasslands</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>6230</b> <a href=/habitat/H6230/>Species-rich Nardus grasslands, on silicious substrates in mountain areas (and submountain areas in Continental Europe)</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>7230</b> <a href=/habitat/H7230/>Alkaline fens</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8110</b> <a href=/habitat/H8110/>Siliceous scree of the montane to snow levels (Androsacetalia alpinae and Galeopsietalia ladani)</a>
+    </div>
+</li>
+
+<li>
+    <div class="little-header">
+        <b>8220</b> <a href=/habitat/H8220/>Siliceous rocky slopes with chasmophytic vegetation</a>
+    </div>
+</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -293,6 +383,6 @@ Inland water bodies (Standing water, Running water) (0.1%) <br />Bogs, Marshes, 
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

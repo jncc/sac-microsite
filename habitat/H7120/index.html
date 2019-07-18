@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,41 +77,49 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H7120">Degraded raised bogs still capable of natural regeneration</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">7120</span>
+        Degraded raised bogs still capable of natural regeneration
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Raised bogs and mires and fens</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Raised bogs and mires and fens</h1>
-</div>
-<h4>7120 Degraded raised bogs still capable of natural regeneration</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H7120/map">
-            <img src="/images/maps/features/thumbnails/H7120_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>7120</b> Degraded raised bogs still capable of natural regeneration. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H7120/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H7120/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p><B>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H7120/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H7120/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
 <P>Degraded raised bogs</B> occur where there has been widespread disruption, usually by man, to the structure and function of the peat body. This can involve changes to the hydrology, vegetation, and physical structure of the bog, leading to desiccation, oxidation and loss of species or changes in the balance of the species composition. In contrast to <B>7110 Active raised bogs</B>, peat is not currently forming in <B>degraded bog</B>. The vegetation of degraded bog contains several, but not all, of the species typical of <B>Active raised bogs</B>, but the relative abundance and distribution of individual species differs.</P>
 <P>The <a targe="_blank" href="http://europa.eu.int/comm/environment/nature/hab-en.htm"><I>Interpretation manual of European habitats</I></a> (European Commission DG&nbsp;Environment 1999) stresses that <B>Degraded raised bogs</B> only includes examples which are ‘capable of natural regeneration’, i.e. &quot;where the hydrology can be repaired and where, with appropriate rehabilitation management, there is a reasonable expectation of re-establishing vegetation with peat-forming capability within 30 years&quot;. This has been assessed on a case-by-case basis. Provided they are capable of natural regeneration, the following land-cover types are considered to fall within the definition of <B>Degraded raised bogs</B>:</P>
 <OL type=i>
@@ -121,203 +128,325 @@
 <LI>Scrub woodland (usually birch <I>Betula</I> spp.);</LI>
 <LI>Bare peat;</LI>
 <LI>Impoverished vegetation dominated by species including purple moor grass <I>Molinia caerulea</I>, hare’s-tail cottongrass <I>Eriophorum vaginatum</I> and heather <I>Calluna vulgaris</I>, and lacking significant cover of bog-mosses <I>Sphagnum</I> species</LI></OL></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H7120/map">
+                <img src="/images/maps/features/thumbnails/H7120_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>7120</b> Degraded raised bogs still capable of natural regeneration. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Degraded raised bogs</B> are widely distributed in Europe, and are found in most EU Member States.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H7120/map>here</a> view UK distribution of this species</p>
-<p><B>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p><B>
 <P>Degraded raised bogs</B> occur throughout the range of raised bogs in the UK. Obtaining an estimate of the national extent of this type is constrained by the lack of correspondence between Annex&nbsp;I habitat types and the condition categories used in the Lowland Raised Bog Inventory (LRBI) (Lindsay &amp; Immirzi 1996), which does not include Northern Ireland. However, <B>degraded raised bogs</B> are certainly more extensive than <B>7110 Active raised bogs</B>. Peatland in Northern Ireland has been classified and mapped using air photographs (Cruickshank &amp; Tomlinson 1988). This identified 2,270&nbsp;ha of intact lowland peatland and 20,042&nbsp;ha of ‘cut-over’ peatland, but it is not possible to report separately on the area of ‘active’ or ‘degraded’ raised bog using this information source.</P></p>
+    <p>Click <a href=/habitat/H7120/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0030362 class="space-right">Bolton Fell Moss</a>
+        Cumbria
+    </b>
+    <div>
+Habitat occurrence description not yet available.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014790 class="space-right">Cors Caron</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Areas of <b>degraded raised bog</b> occur peripheral to <b>7110 active raised bog</b> at this extensive inland composite raised mire site. The vegetation cover is predominantly composed of species-poor rank swards of purple moor-grass <i>Molinia caerulea</i> developed over surfaces grossly modified by drainage and peat-cutting. Many of the most modified sections are subject to an extensive programme of hydrological rehabilitation aimed at elevating and stabilising water levels adjacent to the core surviving raised bog interest.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014791 class="space-right">Cors Fochno</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Substantial areas of <b>degraded raised bog</b> occur peripheral to <b>7110 active raised bog</b> at this extensive estuarine raised mire site. Included here are a range of vegetation types in which peat formation has been arrested as a consequence of intensive drainage followed in places by peat removal and/or agricultural management. The vegetation cover of these areas is varied and includes grazed and ungrazed <i>Molinia</i> – <i>Myrica</i> swards, reed <i>Phragmites</i> stands, rush <i>Juncus</i> pasture, wet woodland and scrub, drier areas of acid grassland and bracken <i>Pteridium aquilinum</i>, and improved grassland over archaic deep peat.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019833 class="space-right">Duddon Mosses</a>
+        Cumbria
+    </b>
+    <div>
+This bog complex is within the tributary plains of the Duddon estuary in south Cumbria. The contiguity of the original peat domes has been severed by road construction and agricultural conversion. On some of the component bogs peat-cutting has left a drained surface which is now only partially <b>7110 active raised bog</b>. The <b>degraded raised bog</b> is mostly dominated by purple moor grass <i>Molinia caerulea</i>, although pockets of raised bog plants including bog-mosses <i>Sphagnum</i> spp. offer good prospects for regeneration provided the hydrology is repaired. Degraded bog also occurs around the edges of discrete domes of active bog due to deep regional drainage and agricultural use of the surrounding land. There is no present-day peat-extraction on this site.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012902 class="space-right">Flanders Mosses</a>
+        Eastern Scotland
+    </b>
+    <div>
+Flanders consists of a cluster of separate bogs in the central belt of Scotland that are the remnants of one of the largest <b>7110 Active raised bog</b> complexes in Britain. A variety of mire conditions, including small areas of <b>degraded raised bog</b>, are present within the site boundary, which collectively form the functional peatland-hydrological unit. East Flanders Moss is the largest raised bog in the UK that is still in a predominantly near-natural state. Areas previously managed for commercial peat extraction and forestry are currently being restored, agricultural drains blocked and invasive scrub removed. Collymoon Moss previously formed part of a peatland continuum with East Flanders. Killorn Moss and Shirgarton Moss form small satellites to East Flanders Moss, having once almost certainly been connected to it by fen peat which has disappeared through agricultural use. These sites have a narrow fringe of woodland giving way to open mire communities, which, in both cases, support vigorous bog-moss <i>Sphagnum</i> spp. vegetation and typical features of raised bog; they are therefore seen as an integral part of the site.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030166 class="space-right">Hatfield Moor</a>
+        South Yorkshire
+    </b>
+    <div>
+Like Thorne Moors, Hatfield Moors is a remnant of the once-extensive bog and fen peatlands within the Humberhead Levels, and is still the second-largest area of extant lowland raised bog peat in England. Moraines of sand occur beneath the peat, the largest of which forms Lindholme Island, in the centre of the bog. Little, if any, original bog surface has survived the massive extraction of peat over the last few decades. Peat-cutting has now ceased, and the bog is being restored over its remaining minimum average depth of 0.5 m of peat. </P>
+<P>Refugia of vegetation have survived as rather dry heathland and as birch <EM>Betula</EM> woodland. Plants include the dwarf shrubs <EM>Calluna vulgaris</EM>, <EM>Erica tetralix</EM>, <EM>Eriophorum angustifolium</EM>, <EM>E. vaginatum</EM>, <EM>Vaccinium oxycoccos</EM>, bog-rosemary <EM>Andromeda polifolia</EM>, bog-myrtle <EM>Myrica gale</EM>, and the bog-mosses <EM>Sphagnum cuspidatum</EM>, <EM>S. recurvum</EM>, <EM>S. papillosum</EM>, <EM>S. subnitens</EM> and <EM>S. tenellum</EM>. The bog is also notable for its invertebrate fauna, which includes the mire pill beetle <EM>Curimopsis nigrita</EM>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030200 class="space-right">Manchester Mosses</a>
+        Cheshire, Greater Manchester
+    </b>
+    <div>
+Mossland formerly covered a very large part of low-lying Greater Manchester, Merseyside and southern Lancashire, and provided a severe obstacle to industrial and agricultural expansion. While most has been converted to agriculture or lost to development, several examples have survived as <b>degraded raised bog</b>, such as Risley Moss, Astley & Bedford Mosses and Holcroft Moss on the Mersey floodplain. Their surfaces are now elevated above surrounding land due to shrinkage of the surrounding tilled land, and all except Holcroft Moss have been cut for peat at some time in the past. While past drainage has produced dominant purple moor grass <i>Molinia caerulea</i>, bracken <i>Pteridium aquilinum</i> and birch <i>Betula</i> spp. scrub or woodland, wetter pockets have enabled the peat-forming species to survive. Recent rehabilitation management on all three sites has caused these to spread.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019839 class="space-right">Moine Mhor</a>
+        Highlands and Islands
+    </b>
+    <div>
+Most peat on the west coast of Scotland is classified as <b>7130 Blanket bogs</b>. The small amount of raised bog present in this area has suffered significant human impact. Mòine Mhór is the largest area of raised bog in this part of Scotland and represents the hyper-oceanic zone within the raised bog SAC series. It has been subjected to a number of damaging management activities in the past, including extensive drainage, commercial and domestic peat extraction and some afforestation, but now shows strong evidence of regeneration. A transition to saltmarsh is an unusual ecological feature of this site.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030236 class="space-right">Peatlands Park</a>
+        Northern Ireland
+    </b>
+    <div>
+Peatlands Park is a large lowland raised bog that has been extensively cut for turf in the past. It represents one of the largest areas of <b>degraded raised bog</b> in Northern Ireland. Regeneration is taking place over a large part of the site, with heather <i>Calluna vulgaris</i> and cross-leaved heath <i>Erica tetralix</i> together with a mixture of sedges including hare’s-tail cottongrass <i>E. vaginatum</i>, common cottongrass <i>Eriophorum angustifolium</i> and <i>Sphagnum</i> bog-mosses. The peatland flora includes bog-rosemary <i>Andromeda polifolia</i> at one of its few Northern Ireland sites. The peatland interest also incorporates an area of intact lowland raised bog at Mullenakill. Associated woodland interest includes <b>91A0 old sessile oak woods with <i>Ilex</i> and <i>Blechnum</i></b> and <b>91D0 Bog woodland</b>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0019834 class="space-right">Roudsea Wood and Mosses</a>
+        Cumbria
+    </b>
+    <div>
+This is a complex of raised bogs on the northern shore of Morecambe Bay in north-west England. Although the majority of the complex has undergone extensive drainage in the past, with domestic peat-cutting around the margins, drainage was abandoned many years ago and peat-formation has resumed over much of its area. Less than 20% of the site is classified as <b>degraded raised bog</b>. Within the site there are transitions between acid bog and limestone woodland, with a number of scarce plant species including the rare yellow sedge <i>Carex flava</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012907 class="space-right">Solway Mosses North</a>
+        South Western Scotland
+    </b>
+    <div>
+Solway Mosses North has two main components, Longbridge Muir and Kirkconnel Flow. Longbridge Muir is an extensive raised bog and one of the few remaining unplanted examples in this area. The site contains a large area of active mire with good quality peat-forming vegetation. Extensive surface patterning is present. While the bulk of the site is <b>7110 Active raised bog</b>, Longbridge Muir includes areas which have been drained and planted but which form an integral part of the overall peat mass. Work is in progress to restore this area, supported by an EC LIFE project.Kirkconnel Flow is low-altitude estuarine moss, around one-third of which consists of <b>7110 Active raised bog</b>, but the majority of the site has been invaded by tree and scrub cover. Nevertheless, extensive areas of good quality active bog remain, and this will be enhanced by work currently in progress to restore the degraded component, also supported by EC LIFE funds.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012915 class="space-right">Thorne Moor</a>
+        East Yorkshire and Northern Lincolnshire, South Yorkshire
+    </b>
+    <div>
+Thorne Moor is England’s largest area of raised bog, lying a few kilometres from the smaller Hatfield Moors, both within the former floodplain of the rivers feeding the Humber estuary (Humberhead Levels), and includes the sub-components Goole Moors and Crowle Moors. Although recent management has increased the proportion of <b>7110 active raised bog</b> at Thorne Moors, the inclusion of Goole Moors, where peat-extraction has now ceased, means that the site is still predominantly <b>degraded raised bog</b>. The restored secondary surface is rich in species of <b>7110 Active raised bogs</b> with bog-mosses <i>Sphagnum</i> spp., cottongrasses <i>Eriophorum angustifolium</i> and <i>E. vaginatum</i>, heather <i>Calluna vulgaris</i>, cross-leaved heath <i>Erica tetralix</i>, round-leaved sundew <i>Drosera rotundifolia</i>, cranberry <i>Vaccinium oxycoccos</i> and bog-rosemary <i>Andromeda polifolia</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030093 class="space-right">Walton Moss</a>
+        Cumbria
+    </b>
+    <div>
+A largely intact raised bog of roughly rectangular shape, with an arm of mossland protruding westwards from the south-west corner. The peat spills over from the main basin forming blanket mire, and as such it is classified as an intermediate bog. Some peat-cutting has taken place in the south-east and south-west of the moss, lowering the surface by about 1.5 m, and it is here that the bog is degraded. This predominantly active bog is surrounded by rough pasture, and there may be up to 149 ha of archaic peatland surrounding the site on thin blanket peat.</P>
+<P>The degraded areas tend to be dominated by purple moor-grass <EM>Molinia caerulea</EM> with common cottongrass <EM>Eriophorum angustifolium</EM> and the bog-moss <EM>Sphagnum cuspidatum</EM> colonising pools. In drier areas a bog heath community is present with moribund heather <EM>Calluna vulgaris</EM> dominating. Small areas of birch-dominated woodland or scrub are present around the margins of the site. Rush pasture is also present on the margins, with species such as the rushes <EM>Juncus effusus</EM>, <EM>J. conglomeratus</EM>, <EM>J. acutiflorus</EM>, <EM>J. squarrosus</EM> and <EM>M. caerulea</EM>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030302 class="space-right">Witherslack Mosses</a>
+        Cumbria
+    </b>
+    <div>
+Meathop Moss, Nichols Moss and Foulshaw Moss are remnants of a formerly interconnected peat body on the west side of the Kent estuary, on its coastal plain. All retain some of the original dome structure, though each has been at least in part degraded by peat-cutting around the edges and by commercial forestry on Foulshaw Moss. <b>Degraded raised bog</b> predominates on Foulshaw Moss and is present around the edges on the other two, but each site contains good examples of <b>7110 Active raised bogs</b> as NVC type M18a <i>Erica tetralix</i> – <i>Sphagnum papillosum</i> raised and blanket mire, <i>Sphagnum magellanicum</i> – <i>Andromeda polifolia</i> sub-community. The forestry plantations are now being removed from Foulshaw Moss.     </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030362>Bolton Fell Moss</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<p>Habitat occurrence description not yet available.</p></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014790>Cors Caron</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Areas of <b>degraded raised bog</b> occur peripheral to <b>7110 active raised bog</b> at this extensive inland composite raised mire site. The vegetation cover is predominantly composed of species-poor rank swards of purple moor-grass <i>Molinia caerulea</i> developed over surfaces grossly modified by drainage and peat-cutting. Many of the most modified sections are subject to an extensive programme of hydrological rehabilitation aimed at elevating and stabilising water levels adjacent to the core surviving raised bog interest.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014791>Cors Fochno</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Substantial areas of <b>degraded raised bog</b> occur peripheral to <b>7110 active raised bog</b> at this extensive estuarine raised mire site. Included here are a range of vegetation types in which peat formation has been arrested as a consequence of intensive drainage followed in places by peat removal and/or agricultural management. The vegetation cover of these areas is varied and includes grazed and ungrazed <i>Molinia</i> – <i>Myrica</i> swards, reed <i>Phragmites</i> stands, rush <i>Juncus</i> pasture, wet woodland and scrub, drier areas of acid grassland and bracken <i>Pteridium aquilinum</i>, and improved grassland over archaic deep peat.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019833>Duddon Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This bog complex is within the tributary plains of the Duddon estuary in south Cumbria. The contiguity of the original peat domes has been severed by road construction and agricultural conversion. On some of the component bogs peat-cutting has left a drained surface which is now only partially <b>7110 active raised bog</b>. The <b>degraded raised bog</b> is mostly dominated by purple moor grass <i>Molinia caerulea</i>, although pockets of raised bog plants including bog-mosses <i>Sphagnum</i> spp. offer good prospects for regeneration provided the hydrology is repaired. Degraded bog also occurs around the edges of discrete domes of active bog due to deep regional drainage and agricultural use of the surrounding land. There is no present-day peat-extraction on this site.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012902>Flanders Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Flanders consists of a cluster of separate bogs in the central belt of Scotland that are the remnants of one of the largest <b>7110 Active raised bog</b> complexes in Britain. A variety of mire conditions, including small areas of <b>degraded raised bog</b>, are present within the site boundary, which collectively form the functional peatland-hydrological unit. East Flanders Moss is the largest raised bog in the UK that is still in a predominantly near-natural state. Areas previously managed for commercial peat extraction and forestry are currently being restored, agricultural drains blocked and invasive scrub removed. Collymoon Moss previously formed part of a peatland continuum with East Flanders. Killorn Moss and Shirgarton Moss form small satellites to East Flanders Moss, having once almost certainly been connected to it by fen peat which has disappeared through agricultural use. These sites have a narrow fringe of woodland giving way to open mire communities, which, in both cases, support vigorous bog-moss <i>Sphagnum</i> spp. vegetation and typical features of raised bog; they are therefore seen as an integral part of the site.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030166>Hatfield Moor</a></div>
-    <div class="cell large-6 small-12"><b>South Yorkshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Like Thorne Moors, Hatfield Moors is a remnant of the once-extensive bog and fen peatlands within the Humberhead Levels, and is still the second-largest area of extant lowland raised bog peat in England. Moraines of sand occur beneath the peat, the largest of which forms Lindholme Island, in the centre of the bog. Little, if any, original bog surface has survived the massive extraction of peat over the last few decades. Peat-cutting has now ceased, and the bog is being restored over its remaining minimum average depth of 0.5 m of peat. </P>
-<P>Refugia of vegetation have survived as rather dry heathland and as birch <EM>Betula</EM> woodland. Plants include the dwarf shrubs <EM>Calluna vulgaris</EM>, <EM>Erica tetralix</EM>, <EM>Eriophorum angustifolium</EM>, <EM>E. vaginatum</EM>, <EM>Vaccinium oxycoccos</EM>, bog-rosemary <EM>Andromeda polifolia</EM>, bog-myrtle <EM>Myrica gale</EM>, and the bog-mosses <EM>Sphagnum cuspidatum</EM>, <EM>S. recurvum</EM>, <EM>S. papillosum</EM>, <EM>S. subnitens</EM> and <EM>S. tenellum</EM>. The bog is also notable for its invertebrate fauna, which includes the mire pill beetle <EM>Curimopsis nigrita</EM>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030200>Manchester Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Cheshire, Greater Manchester</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Mossland formerly covered a very large part of low-lying Greater Manchester, Merseyside and southern Lancashire, and provided a severe obstacle to industrial and agricultural expansion. While most has been converted to agriculture or lost to development, several examples have survived as <b>degraded raised bog</b>, such as Risley Moss, Astley & Bedford Mosses and Holcroft Moss on the Mersey floodplain. Their surfaces are now elevated above surrounding land due to shrinkage of the surrounding tilled land, and all except Holcroft Moss have been cut for peat at some time in the past. While past drainage has produced dominant purple moor grass <i>Molinia caerulea</i>, bracken <i>Pteridium aquilinum</i> and birch <i>Betula</i> spp. scrub or woodland, wetter pockets have enabled the peat-forming species to survive. Recent rehabilitation management on all three sites has caused these to spread.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019839>Moine Mhor</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Most peat on the west coast of Scotland is classified as <b>7130 Blanket bogs</b>. The small amount of raised bog present in this area has suffered significant human impact. Mòine Mhór is the largest area of raised bog in this part of Scotland and represents the hyper-oceanic zone within the raised bog SAC series. It has been subjected to a number of damaging management activities in the past, including extensive drainage, commercial and domestic peat extraction and some afforestation, but now shows strong evidence of regeneration. A transition to saltmarsh is an unusual ecological feature of this site.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030236>Peatlands Park</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Peatlands Park is a large lowland raised bog that has been extensively cut for turf in the past. It represents one of the largest areas of <b>degraded raised bog</b> in Northern Ireland. Regeneration is taking place over a large part of the site, with heather <i>Calluna vulgaris</i> and cross-leaved heath <i>Erica tetralix</i> together with a mixture of sedges including hare’s-tail cottongrass <i>E. vaginatum</i>, common cottongrass <i>Eriophorum angustifolium</i> and <i>Sphagnum</i> bog-mosses. The peatland flora includes bog-rosemary <i>Andromeda polifolia</i> at one of its few Northern Ireland sites. The peatland interest also incorporates an area of intact lowland raised bog at Mullenakill. Associated woodland interest includes <b>91A0 old sessile oak woods with <i>Ilex</i> and <i>Blechnum</i></b> and <b>91D0 Bog woodland</b>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019834>Roudsea Wood and Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is a complex of raised bogs on the northern shore of Morecambe Bay in north-west England. Although the majority of the complex has undergone extensive drainage in the past, with domestic peat-cutting around the margins, drainage was abandoned many years ago and peat-formation has resumed over much of its area. Less than 20% of the site is classified as <b>degraded raised bog</b>. Within the site there are transitions between acid bog and limestone woodland, with a number of scarce plant species including the rare yellow sedge <i>Carex flava</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012907>Solway Mosses North</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Solway Mosses North has two main components, Longbridge Muir and Kirkconnel Flow. Longbridge Muir is an extensive raised bog and one of the few remaining unplanted examples in this area. The site contains a large area of active mire with good quality peat-forming vegetation. Extensive surface patterning is present. While the bulk of the site is <b>7110 Active raised bog</b>, Longbridge Muir includes areas which have been drained and planted but which form an integral part of the overall peat mass. Work is in progress to restore this area, supported by an EC LIFE project.Kirkconnel Flow is low-altitude estuarine moss, around one-third of which consists of <b>7110 Active raised bog</b>, but the majority of the site has been invaded by tree and scrub cover. Nevertheless, extensive areas of good quality active bog remain, and this will be enhanced by work currently in progress to restore the degraded component, also supported by EC LIFE funds.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012915>Thorne Moor</a></div>
-    <div class="cell large-6 small-12"><b>East Yorkshire and Northern Lincolnshire, South Yorkshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Thorne Moor is England’s largest area of raised bog, lying a few kilometres from the smaller Hatfield Moors, both within the former floodplain of the rivers feeding the Humber estuary (Humberhead Levels), and includes the sub-components Goole Moors and Crowle Moors. Although recent management has increased the proportion of <b>7110 active raised bog</b> at Thorne Moors, the inclusion of Goole Moors, where peat-extraction has now ceased, means that the site is still predominantly <b>degraded raised bog</b>. The restored secondary surface is rich in species of <b>7110 Active raised bogs</b> with bog-mosses <i>Sphagnum</i> spp., cottongrasses <i>Eriophorum angustifolium</i> and <i>E. vaginatum</i>, heather <i>Calluna vulgaris</i>, cross-leaved heath <i>Erica tetralix</i>, round-leaved sundew <i>Drosera rotundifolia</i>, cranberry <i>Vaccinium oxycoccos</i> and bog-rosemary <i>Andromeda polifolia</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030093>Walton Moss</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">A largely intact raised bog of roughly rectangular shape, with an arm of mossland protruding westwards from the south-west corner. The peat spills over from the main basin forming blanket mire, and as such it is classified as an intermediate bog. Some peat-cutting has taken place in the south-east and south-west of the moss, lowering the surface by about 1.5 m, and it is here that the bog is degraded. This predominantly active bog is surrounded by rough pasture, and there may be up to 149 ha of archaic peatland surrounding the site on thin blanket peat.</P>
-<P>The degraded areas tend to be dominated by purple moor-grass <EM>Molinia caerulea</EM> with common cottongrass <EM>Eriophorum angustifolium</EM> and the bog-moss <EM>Sphagnum cuspidatum</EM> colonising pools. In drier areas a bog heath community is present with moribund heather <EM>Calluna vulgaris</EM> dominating. Small areas of birch-dominated woodland or scrub are present around the margins of the site. Rush pasture is also present on the margins, with species such as the rushes <EM>Juncus effusus</EM>, <EM>J. conglomeratus</EM>, <EM>J. acutiflorus</EM>, <EM>J. squarrosus</EM> and <EM>M. caerulea</EM>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030302>Witherslack Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Meathop Moss, Nichols Moss and Foulshaw Moss are remnants of a formerly interconnected peat body on the west side of the Kent estuary, on its coastal plain. All retain some of the original dome structure, though each has been at least in part degraded by peat-cutting around the edges and by commercial forestry on Foulshaw Moss. <b>Degraded raised bog</b> predominates on Foulshaw Moss and is present around the edges on the other two, but each site contains good examples of <b>7110 Active raised bogs</b> as NVC type M18a <i>Erica tetralix</i> – <i>Sphagnum papillosum</i> raised and blanket mire, <i>Sphagnum magellanicum</i> – <i>Andromeda polifolia</i> sub-community. The forestry plantations are now being removed from Foulshaw Moss. </div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019757>Black Loch Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019758>Blawhorn Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019759>Braehead Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030111>Carsegowan Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019760>Coalburn Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019761>Cockinhead Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019762>Cranley Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030322>Curran Bog</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019763>Dykeneuk Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012912>Fenn`s, Whixall, Bettisfield, Wem and Cadney Mosses</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030204>Methven Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019959>Muir of Dinnet</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019768>North Shotts Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030313>Peeswit Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030314>Raeburn Flow</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030315>Red Moss of Netherley</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019767>Reidside Moss</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030272>Shelforkie Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030310>South Solway Mosses</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030288>Threepwood Moss</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019800>Turclossie Moss</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014784>Usk Bat Sites/ Safleoedd Ystlumod Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019765>Waukenwae Moss</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0019757 class="space-right">Black Loch Moss</a>
+        Eastern Scotland, South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019758 class="space-right">Blawhorn Moss</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019759 class="space-right">Braehead Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030111 class="space-right">Carsegowan Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019760 class="space-right">Coalburn Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019761 class="space-right">Cockinhead Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019762 class="space-right">Cranley Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030322 class="space-right">Curran Bog</a>
+        Northern Ireland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019763 class="space-right">Dykeneuk Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012912 class="space-right">Fenn&#x27;s, Whixall, Bettisfield, Wem and Cadney Mosses</a>
+        East Wales, Shropshire and Staffordshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030204 class="space-right">Methven Moss</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019959 class="space-right">Muir of Dinnet</a>
+        North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019768 class="space-right">North Shotts Moss</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030313 class="space-right">Peeswit Moss</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030314 class="space-right">Raeburn Flow</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030315 class="space-right">Red Moss of Netherley</a>
+        North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019767 class="space-right">Reidside Moss</a>
+        North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030272 class="space-right">Shelforkie Moss</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030310 class="space-right">South Solway Mosses</a>
+        Cumbria
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030288 class="space-right">Threepwood Moss</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019800 class="space-right">Turclossie Moss</a>
+        North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014784 class="space-right">Usk Bat Sites/ Safleoedd Ystlumod Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019765 class="space-right">Waukenwae Moss</a>
+        South Western Scotland
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -404,6 +533,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

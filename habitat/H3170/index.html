@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,68 +77,98 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H3170">Mediterranean temporary ponds</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Habitat account - Freshwater habitats</h1>
-</div>
-<h4>3170 Mediterranean temporary ponds</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H3170/map">
-            <img src="/images/maps/features/thumbnails/H3170_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>3170</b> Mediterranean temporary ponds. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H3170/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H3170/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">3170</span>
+        Mediterranean temporary ponds
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Freshwater habitats</b>
     </div>
 </div>
-	
-<h4>Description and ecological characteristics</h4>
-<p><B>
-<P>Mediterranean temporary ponds</B> consist of winter-flooded areas, which dry out to give vegetation rich in annuals; many of these are nationally rare species of southern European distribution, which are principally confined to this habitat type, for example pygmy rush <I>Juncus pygmaeus</I>, pennyroyal <I>Mentha pulegium</I> and yellow centaury <I>Cicendia filiformis</I>. There are two main pool types: a more acid pool community of trampled and grazed areas, often found on flooded trackways, and a basic pool type on serpentine rock found only at The Lizard, Cornwall. </P></p>
 
-<h4>European status and distribution</h4>
-<p>
+
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H3170/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H3170/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p><B>
+<P>Mediterranean temporary ponds</B> consist of winter-flooded areas, which dry out to give vegetation rich in annuals; many of these are nationally rare species of southern European distribution, which are principally confined to this habitat type, for example pygmy rush <I>Juncus pygmaeus</I>, pennyroyal <I>Mentha pulegium</I> and yellow centaury <I>Cicendia filiformis</I>. There are two main pool types: a more acid pool community of trampled and grazed areas, often found on flooded trackways, and a basic pool type on serpentine rock found only at The Lizard, Cornwall. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H3170/map">
+                <img src="/images/maps/features/thumbnails/H3170_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>3170</b> Mediterranean temporary ponds. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
+
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p>
 
 <P>This habitat mainly occurs within the Mediterranean countries.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H3170/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>Only one site in the UK, The Lizard, is known to contain significant areas of this habitat type with the rich assemblages of the rare and local species for which the habitat type is noted; temporary pools in the New Forest support elements of this assemblage, but are not considered to be fully characteristic of the Annex&nbsp;I type. </P></p>
-
-
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012799>The Lizard</a></div>
-    <div class="cell large-6 small-12"><b>Cornwall and Isles of Scilly</b></div>
+    <p>Click <a href=/habitat/H3170/map>here</a> view UK distribution of this species</p>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">There are widespread examples of the serpentine variant of <b>Mediterranean temporary ponds</b> on the Lizard heaths. A number of rare species, including chives <i>Allium schoenoprasum</i>, dwarf rush <i>Juncus capitatus</i> and land quillwort <i>Isoetes histrix</i>, occur in this habitat type. The acid pool type is the main locality on the Lizard for an important assemblage of rare species, including pigmy rush <i>Juncus pygmaeus</i>, three-lobed crowfoot <i>Ranunculus tripartitus</i> and yellow centaury <i>Cicendia filiformis</i>. A number of these pools support important invertebrate populations, including the water beetles <i>Graptodytes flavipes</i> and <i>Dryops striatellus</i>. However, in many areas the habitat type is much reduced, as trackways that once ensured the creation of the pools have fallen into disuse.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+<div class="section">
 </div>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012799 class="space-right">The Lizard</a>
+        Cornwall and Isles of Scilly
+    </b>
+    <div>
+There are widespread examples of the serpentine variant of <b>Mediterranean temporary ponds</b> on the Lizard heaths. A number of rare species, including chives <i>Allium schoenoprasum</i>, dwarf rush <i>Juncus capitatus</i> and land quillwort <i>Isoetes histrix</i>, occur in this habitat type. The acid pool type is the main locality on the Lizard for an important assemblage of rare species, including pigmy rush <i>Juncus pygmaeus</i>, three-lobed crowfoot <i>Ranunculus tripartitus</i> and yellow centaury <i>Cicendia filiformis</i>. A number of these pools support important invertebrate populations, including the water beetles <i>Graptodytes flavipes</i> and <i>Dryops striatellus</i>. However, in many areas the habitat type is much reduced, as trackways that once ensured the creation of the pools have fallen into disuse.    </div>
+</li>    </ul>
+</div>
+
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -226,6 +255,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

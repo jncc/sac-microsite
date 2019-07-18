@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,75 +77,114 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/species/">Species</a></li>
-                <li><a class="" href="/species/S1015"><I>Vertigo genesii</I></a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/species/">Species</a></li>
         </ul>
     </nav>
 </div>                        
 
-<div class="row">
-    <h1>Invertebrate species: molluscs</h1>
-</div>
-<h4>1015 Round-mouthed whorl snail [<I>Vertigo genesii</I>]</h4>
-<div class="cell large-4 small-12 float-right">
-    <figure>
-        <a href="/species/S1015/map">
-            <img src="/images/maps/features/thumbnails/S1015_thumb.gif" />
-        </a>
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with speices <b>1015</b> <I>Vertigo genesii</I>. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1015/distribution">UK distribution for this species</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/species/S1015/comparison">Compare with UK distribution</a>
+<div class="section">
+    <h1>
+        <span class="entity-code">1015</span>
+        <span class="space-right">Round-mouthed whorl snail</span>
+        <I>Vertigo genesii</I>
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Invertebrate species: molluscs</b>
     </div>
 </div>
 
-<h4>Description and ecological characteristics</h4>
-<p>
+<div class="row">
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/species/S1015/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this species
+            </a>
+            <a class="button" href="/species/S1015/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>The <B>round-mouthed whorl snail <I>Vertigo genesii</B> </I>is a tiny boreal and alpine species. In the UK, it is found in calcareous flushes (e.g. <B>7230 Alkaline fens</B>) including rich assemblages of local plants, often with an arctic-alpine element, confirming the status of the species as a relict of the fauna and flora of the late glacial period. Post-glacial climatic change and forest growth led to a dramatic contraction of its range, and the small, isolated nature of the sites where it survives makes the populations vulnerable to accidental damage or natural events such as prolonged drought. In general, sites supporting <EM>Vertigo genesii</EM> are subject to light grazing, but heavy grazing is detrimental to the species. Like all Annex II <EM>Vertigo</EM> species, it is highly dependent on maintenance of existing local hydrological conditions. </P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="/species/S1015/map">
+                <img src="/images/maps/features/thumbnails/S1015_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>1015</b> <I>Vertigo genesii</I>. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B><I>
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B><I>
 <P>Vertigo genesii</B> </I>is a boreal and alpine species that is virtually restricted to the Alps and the mountains of central Scandinavia. It is very local throughout its range, and the UK populations are probably at the climatic edge of the species&#39; range.</P></p>
-
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/species/S1015/map>here</a> view UK distribution of this species</p>
-<p><P>Seven populations of <B><I>Vertigo genesii</B></I> are known in the UK. Most of the known populations have been found in two upland regions: Upper Teesdale, in Durham, and the Blair Atholl area in Perthshire. It has also been recorded farther north in Scotland on the Black Isle at the lower altitude of 90&nbsp;m. </P></p>
-
-
-<h4>Site Accounts</h4>
-
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014774>Moor House  - Upper Teesdale</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Tees Valley and Durham</b></div>
 </div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">In Upper Teesdale <b>round-mouthed whorl snail <i>Vertigo genesii</i></b> lives amongst moss, low-growing sedges and a rich assemblage of rare and local arctic-alpine plants such as bird’s-eye primrose <i>Primula farinosa</i> and Scottish asphodel <i>Tofieldia pusilla</i>. <b><i>V. genesii</i></b> is found at a number of base-rich flushes around the slopes of Widdybank Fell and at isolated flushes further east on Cronkley Fell and Holwick Fell, at altitudes between 400 m and 525 m. The snail is locally abundant at some flushes and dominates the molluscan fauna at many of them.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012891>Tulach Hill and Glen Fender Meadows</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The round-<B>mouthed whorl snail <I>Vertigo genesii</I></B> occurs at an altitude of 315–430&nbsp;m in several base-rich flushes at this central Scottish site. In some of these flushes it has been recorded with another Annex&nbsp;II species, <B>1013 Geyer’s whorl snail <I>Vertigo geyeri</I></B>. The flushes contains a rich assemblage of arctic-alpine plants, including false sedge <I>Kobresia simpliciuscula</I> and Scottish asphodel <I>Tofieldia pusilla</I>. </div></div>
-<h4>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h4>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012957>Beinn a&#x27; Ghlo</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
+<div class="section">
+    <h2>UK status and distribution</h2> 
+    <p><P>Seven populations of <B><I>Vertigo genesii</B></I> are known in the UK. Most of the known populations have been found in two upland regions: Upper Teesdale, in Durham, and the Blair Atholl area in Perthshire. It has also been recorded farther north in Scotland on the Black Isle at the lower altitude of 90&nbsp;m. </P></p>
+    <p>View <a href=/species/S1015/map>UK distribution of this species</a>.</p>
+
+        <h2>Site selection rationale</h2>
+        <p>The three sites selected for this species contain a high proportion of the total known UK population, and represent the two regions of Britain in which it is found (northern England and central Scotland).</p>
 </div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0014774 class="space-right">Moor House  - Upper Teesdale</a>
+        Cumbria, Tees Valley and Durham
+    </b>
+    <div>
+In Upper Teesdale <b>round-mouthed whorl snail <i>Vertigo genesii</i></b> lives amongst moss, low-growing sedges and a rich assemblage of rare and local arctic-alpine plants such as bird’s-eye primrose <i>Primula farinosa</i> and Scottish asphodel <i>Tofieldia pusilla</i>. <b><i>V. genesii</i></b> is found at a number of base-rich flushes around the slopes of Widdybank Fell and at isolated flushes further east on Cronkley Fell and Holwick Fell, at altitudes between 400 m and 525 m. The snail is locally abundant at some flushes and dominates the molluscan fauna at many of them.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012891 class="space-right">Tulach Hill and Glen Fender Meadows</a>
+        Eastern Scotland
+    </b>
+    <div>
+The round-<B>mouthed whorl snail <I>Vertigo genesii</I></B> occurs at an altitude of 315–430&nbsp;m in several base-rich flushes at this central Scottish site. In some of these flushes it has been recorded with another Annex&nbsp;II species, <B>1013 Geyer’s whorl snail <I>Vertigo geyeri</I></B>. The flushes contains a rich assemblage of arctic-alpine plants, including false sedge <I>Kobresia simpliciuscula</I> and Scottish asphodel <I>Tofieldia pusilla</I>.     </div>
+</li>    </ul>
 </div>
+
+    <div class="section">
+        <h2>SACs where this Annex II species is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
+
+<li>
+    <b>
+        <a href=/site/UK0012957 class="space-right">Beinn a&#x27; Ghlo</a>
+        Eastern Scotland
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -233,6 +271,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012705">Sound of Barra</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Sound of Barra</h1>
+
+<div class="section">
+    <h1>
+        Sound of Barra
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Site of Community Importance (SCI)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Extra-Regio, Highlands and Islands</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>NF756086</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Site of Community Importance</td>
+                    <td>Site of Community Importance (SCI)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,45 +150,92 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012705_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Sound of Barra SCI</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Sound of Barra SCI</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Marine areas, Sea inlets (98.91%) <br />
+            </li>
+            <li>
+                Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (1.07%) <br />
+            </li>
+            <li>
+                Shingle, Sea cliffs, Islets (0.02%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012705.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Marine areas, Sea inlets (98.91%) <br />Tidal rivers, Estuaries, Mud flats, Sand flats, Lagoons (including saltwork basins) (1.07%) <br />Shingle, Sea cliffs, Islets (0.02%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012705.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The Sound of Barra comprises a mixture of islands, extensive rocky reefs, sandbanks and shallow channels in a broad stretch between the southern end of South Uist and the north eastern shore of the island of Barra in the Outer Hebrides, off the west coast of Scotland. The range of subtidal sandbank habitat biotopes reflects the environmental conditions within the Sound. The area is highly exposed in the west (with highly mobile, impoverished sands), tide swept but reduced exposure in the mid-channel (increased diversity of fauna with some maerl) with deeper more sheltered areas to the east (stable fine sand with a diverse infaunal community).  Moving further eastwards the sediment is gravelly with large pronounced ripples and small amounts of maerl.  The southern part of the Sound is more sheltered and sediments are composed of fine sand with small amounts of silt.  Sediment communities are variable in composition but are often dominated by algal mats in this southern part.  The sea grass beds in the Sound generally occur on the sandy substrates in moderately exposed or sheltered environments and cover a large area although the density of the Zostera is often low.  Maerl is also present over a wide area, located within deeper more, exposed environments of the Sound.  Although the abundance of live maerl is often low, this habitat still provides a complex niche for a diverse group of species.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>1170</b> <a href=/habitat/H1170/>Reefs</a>
+    </div>
+<p>The Sound of Barra comprises a mixture of islands, extensive rocky reefs, sandbanks and shallow channels in a broad stretch between the southern end of South Uist and the north eastern shore of the island of Barra in the Outer Hebrides, off the west coast of Scotland.  The reefs are most extensive in the western areas and, to a lesser extent, in the eastern parts of the Sound.  The western part of the Sound is highly exposed with infralittoral rocky substrates dominated by tide-swept kelp forests <i> Laminaria hyperborean </i> communities, with a diverse associated fauna characteristic of accelerated tidal currents.   There are also mixed kelp communities including <i> Saccorhiza polyschides and Saccharina latissima </i> in sand scoured areas. The depth in the site increases to the east, where shallower rock substrates also support kelp forests.  Deeper rock surfaces are dominated by a turf of foliose red algae mixed with scour tolerant epifauna and with increasing depth there is an increased dominance of invertebrates similar to those of the shallower reefs. The intertidal rocky reefs support communities characteristic of a wide spectrum of exposure conditions.  Exposed shores are dominated by the barnacle <i> Chthamalus </i> sp. with patches of small mussels, <i> Corallina officinalis </i> in the lower shore and a sublittoral fringe dominated by Dabberlocks algae <i> Alaria </i> sp..  Moderately exposed shores are characterised by a mosaic of the barnacle <i>Semibalanus and Fucus vesiculosus </i>  and in the most sheltered shores are dominated by knotted wrack algae <i> Ascophyllum nodosum </i>.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>1110</b> <a href=/habitat/H1110/>Sandbanks which are slightly covered by sea water all the time</a></p>
-<p>The Sound of Barra comprises a mixture of islands, extensive rocky reefs, sandbanks and shallow channels in a broad stretch between the southern end of South Uist and the north eastern shore of the island of Barra in the Outer Hebrides, off the west coast of Scotland. The range of subtidal sandbank habitat biotopes reflects the environmental conditions within the Sound. The area is highly exposed in the west (with highly mobile, impoverished sands), tide swept but reduced exposure in the mid-channel (increased diversity of fauna with some maerl) with deeper more sheltered areas to the east (stable fine sand with a diverse infaunal community).  Moving further eastwards the sediment is gravelly with large pronounced ripples and small amounts of maerl.  The southern part of the Sound is more sheltered and sediments are composed of fine sand with small amounts of silt.  Sediment communities are variable in composition but are often dominated by algal mats in this southern part.  The sea grass beds in the Sound generally occur on the sandy substrates in moderately exposed or sheltered environments and cover a large area although the density of the Zostera is often low.  Maerl is also present over a wide area, located within deeper more, exposed environments of the Sound.  Although the abundance of live maerl is often low, this habitat still provides a complex niche for a diverse group of species.</p></div>
-<div>
-    <p><b>1170</b> <a href=/habitat/H1170/>Reefs</a></p>
-<p>The Sound of Barra comprises a mixture of islands, extensive rocky reefs, sandbanks and shallow channels in a broad stretch between the southern end of South Uist and the north eastern shore of the island of Barra in the Outer Hebrides, off the west coast of Scotland.  The reefs are most extensive in the western areas and, to a lesser extent, in the eastern parts of the Sound.  The western part of the Sound is highly exposed with infralittoral rocky substrates dominated by tide-swept kelp forests <i> Laminaria hyperborean </i> communities, with a diverse associated fauna characteristic of accelerated tidal currents.   There are also mixed kelp communities including <i> Saccorhiza polyschides and Saccharina latissima </i> in sand scoured areas. The depth in the site increases to the east, where shallower rock substrates also support kelp forests.  Deeper rock surfaces are dominated by a turf of foliose red algae mixed with scour tolerant epifauna and with increasing depth there is an increased dominance of invertebrates similar to those of the shallower reefs. The intertidal rocky reefs support communities characteristic of a wide spectrum of exposure conditions.  Exposed shores are dominated by the barnacle <i> Chthamalus </i> sp. with patches of small mussels, <i> Corallina officinalis </i> in the lower shore and a sublittoral fringe dominated by Dabberlocks algae <i> Alaria </i> sp..  Moderately exposed shores are characterised by a mosaic of the barnacle <i>Semibalanus and Fucus vesiculosus </i>  and in the most sheltered shores are dominated by knotted wrack algae <i> Ascophyllum nodosum </i>.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1365</b> <a href=/species/S1365/>Harbour seal</a> <b>Phoca vitulina</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1365
+            <a href=/species/S1365/>Harbour seal</a>
+        </b>
+        <i>Phoca vitulina</i>
+        
     </div>
+</li>    </ul>
 </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -269,6 +324,6 @@ Marine areas, Sea inlets (98.91%) <br />Tidal rivers, Estuaries, Mud flats, Sand
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

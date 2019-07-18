@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,243 +77,361 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/habitat/">Habitats</a></li>
-                <li><a class="" href="/habitat/H8210">Calcareous rocky slopes with chasmophytic vegetation</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/habitat/">Habitats</a></li>
         </ul>
     </nav>
 </div>                        
 
+<div class="section">
+    <h1>
+        <span class="entity-code">8210</span>
+        Calcareous rocky slopes with chasmophytic vegetation
+    </h1>
+    <div>
+        <i class="fas fa-ellipsis-v space-right"></i>
+        <b>Rocky habitats and caves</b>
+    </div>
+</div>
+
+
 <div class="row">
-    <h1>Habitat account - Rocky habitats and caves</h1>
-</div>
-<h4>8210 Calcareous rocky slopes with chasmophytic vegetation</h4>
-<div class="column large-4 small-12 float-right">
-    <figure>
-        <a class="small-centered" href="/habitat/H8210/map">
-            <img src="/images/maps/features/thumbnails/H8210_thumb.gif" />
-        </a>            
-        <figcaption style="font-size: small;">Distribution of SACs/SCIs/cSACs with habitat <b>8210</b> Calcareous rocky slopes with chasmophytic vegetation. Click image for enlarged map.</figcaption>
-    </figure>
-</div>
-<div class="cell small-12 medium-8 large-8">
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8210/distribution">UK distribution for this habitat</a>
-    </div>
-    <div class="small-12 medium-6 large-6 text-center float-left">
-        <a href="/habitat/H8210/comparison">Compare with UK distribution</a>
-    </div>
-</div>
-	
-<h4>Description and ecological characteristics</h4>
-<p>
+    <div class="cell medium-6 large-8">
+        <div class="section-small">
+            <a class="button" href="/habitat/H8210/distribution">
+                <i class="fas fa-map-marker"></i>
+                UK distribution for this habitat
+            </a>
+            <a class="button" href="/habitat/H8210/comparison">
+                <i class="fas fa-map-marker-alt"></i>
+                Compare with UK distribution
+            </a>
+        </div>
+        <div class="section">        
+            <h2>Description and ecological characteristics</h2>
+            <p>
 <P>Chasmophytic vegetation consists of plant communities that colonise the cracks and fissures of rock faces. The type of plant community that develops is largely determined by the base-status of the rock face. Calcareous sub-types develop on lime-rich rocks such as limestone and calcareous schists, whereas siliceous communities develop on acid rocks. The presence of calcareous bands within otherwise mainly siliceous rocks often brings the two types together on the same rock outcrop. As a result, <B>Calcareous rocky slopes with chasmophytic vegetation</B> may occur in close association with Annex&nbsp;I type <B>8220 Siliceous rocky slopes with chasmophytic vegetation</B>, and some sites are listed for both types. Calcareous rocky slopes may also be closely associated with <B>8110 Siliceous scree of the montane to snow levels (<I>Androsacetalia alpinae</I> and <I>Galeopsietalia ladani</I>)</B> or <B>8240 Limestone pavements</B>. Lowland examples are included in the Annex&nbsp;I definition only where they include cliffs supporting distinctive crevice communities; coastal examples are referable to Annex&nbsp;I type <B>1230 Vegetated sea cliffs of the Atlantic and Baltic coasts</B>. </P>
 <P>Both forms of chasmophytic vegetation in the UK correspond to the rock fissure communities described from continental Europe (<I>Asplenietea trichomanis</I>). Some forms of the calcareous type correspond to NVC types OV39&nbsp;<I>Asplenium trichomanes – Asplenium ruta-muraria</I> community and OV40&nbsp;<I>Asplenium viride – Cystopteris fragilis</I> community, but other forms are not described by the NVC. The vegetation is characterised by bryophytes such as <I>Tortella tortuosa</I>, <I>Anoectangium aestivum </I>and <I>Ctenidium molluscum</I>. Associated vascular plants include brittle bladder-fern <I>Cystopteris fragilis</I>, green spleenwort <I>Asplenium viride</I> and glaucous meadow-grass <I>Poa glauca</I>. </P>
 <P>Floristic variation within the habitat type is influenced by geographical location, altitude and rock type. High-altitude examples on mica schist in the Scottish Highlands have a particularly rich montane flora, including alpine woodsia <I>Woodsia alpina</I>, tufted saxifrage <I>Saxifraga cespitosa </I>and many rare bryophytes and lichens. In contrast, base-rich crevice vegetation on limestone in northern England includes some species with a predominantly southern distribution, such as bird’s-foot sedge <I>Carex ornithopoda</I>.</P></p>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a class="small-centered" href="/habitat/H8210/map">
+                <img src="/images/maps/features/thumbnails/H8210_thumb.gif" />
+            </a>            
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with habitat <b>8210</b> Calcareous rocky slopes with chasmophytic vegetation. Click image for enlarged map.</figcaption>
+        </figure>
+    </div>
+</div>
 
-<h4>European status and distribution</h4>
-<p><B>
+
+<div class="section">
+    <h2>European status and distribution</h2>
+    <p><B>
 <P>Calcareous rocky slopes with chasmophytic vegetation</B> appear to be widely but locally distributed in the EU.</P></p>
+</div>
 
-<h4>UK status and distribution</h4> 
-<p>Click <a href=/habitat/H8210/map>here</a> view UK distribution of this species</p>
-<p>
+
+<div class="section">
+    <h2>UK status and distribution</h2>
+    <p>
 <P>This habitat type is widespread in upland areas of the UK but is localised in its occurrence. Depending on the nature of the rock face, individual stands are usually fragmentary. Although both calcareous and siliceous types are widely distributed in the uplands of the UK, siliceous rocks predominate and calcareous chasmophytic vegetation is of more limited overall extent.</P></p>
+    <p>Click <a href=/habitat/H8210/map>here</a> view UK distribution of this species</p>
+</div>
 
+<div class="section">
+</div>
 
+<div class="section">
+    <h2>Site accounts</h2>
+    <ul>
 
-<h4>Site Accounts</h4>
+<li>
+    <b>
+        <a href=/site/UK0030030 class="space-right">Ballochbuie</a>
+        North Eastern Scotland
+    </b>
+    <div>
+Situated on the north slopes of the Dee valley below the foothills of the Lochnagar massif, the geology at Ballochbuie is mostly dominated by granites of various degrees of acidity. In the west of the site it is more complex with various outcrops of metamorphic rocks, the most prominent of which is the vertical outcrop of calcareous rock known as the Lion’s Face. On the hillside above the face, further outcrops of calcareous rock give rise to small areas of CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland and open birch woodland, contrasting with the Scots pine <i>Pinus sylvestris</i> woodland over most of the rest of the site. Alpine cinquefoil <i>Potentilla crantzii</i> is present on these outcrops. Closer to the cliffs of the Lion’s Face, small areas of scrub and more extensive plantations provide additional shade. Here, rock faces, crevices and boulders support communities of ferns, and, in particular, lichens and bryophytes. Ferns include green spleenwort <i>Asplenium viride</i> and Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. A large number of rare lichens are present including a species normally associated with elm, <i>Gyalecta ulmi</i>, and <i>Chaenotheca gracilenta</i> (both Endangered). The moss <i>Pseudoleskeella rupestris</i> (Nationally rare) also occurs.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012957 class="space-right">Beinn a&#x27; Ghlo</a>
+        Eastern Scotland
+    </b>
+    <div>
+Beinn a’Ghlo represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, with additional rare species. There are extensive outcrops of limestone in Glen Tilt, up to about 700 m altitude. The flora includes a large colony of the rare yellow oxytropis <i>Oxytropis campestris</i>, while other montane species include mountain avens <i>Dryas octopetala</i>, rock speedwell <i>Veronica fruticans</i>, rock sedge <i>Carex rupestris</i>, hoary whitlowgrass <i>Draba incana</i>, holly fern <i>Polystichum lonchitis</i> and green spleenwort <i>Asplenium viride</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012897 class="space-right">Beinn Dearg</a>
+        Highlands and Islands
+    </b>
+    <div>
+Beinn Dearg holds the best example of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north-west Highlands. Many of the high altitude cliffs are strongly calcareous and have a rich arctic-alpine flora including mountain avens <i>Dryas octopetala</i>, net-leaved willow <i>Salix reticulata</i>, alpine saxifrage <i>Saxifraga nivalis</i>, hoary whitlowgrass <i>Draba norvegica</i>, alpine cinquefoil <i>Potentilla crantzii</i>, glaucous meadow-grass <i>Poa glauca</i> and black alpine-sedge <i>Carex atrata</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012864 class="space-right">Beinn Iadain and Beinn na h&#x27; Uamha</a>
+        Highlands and Islands
+    </b>
+    <div>
+Beinn Iadain and Beinn na h’Uamha is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at moderately high altitudes in the oceanic north-west Scottish Highlands. The communities develop on extensive crags of calcareous basalt, which provides a refugium for a rich calcicolous flora. Characteristic chasmophytic vascular plants include alpine saxifrage <i>Saxifraga nivalis</i>, northern rock-cress <i>Arabis petraea</i>, glaucous meadow-grass <i>Poa glauca</i> and holly-fern <i>Polystichum lonchitis</i>. There is a rich associated flora of calcicolous bryophytes, such as <i>Orthothecium</i> rufescens and <i>Rhytidium rugosum</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012951 class="space-right">Ben Alder and Aonach Beag</a>
+        Highlands and Islands
+    </b>
+    <div>
+Ben Alder and Aonach Beag has an outstanding flora of rare arctic-alpine calcicoles mostly associated with a high-altitude band of limestone at 900-1000 m. The flora includes tufted saxifrage <i>Saxifraga cespitosa</i>, alpine saxifrage <i>S. nivalis</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain avens <i>Dryas octopetala</i>, black alpine-sedge <i>Carex atrata</i> and alpine meadow-grass <i>Poa alpina</i>. Various rare montane calcicolous mosses and lichens also occur on the rock faces.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012901 class="space-right">Ben Heasgarnich</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+    <div>
+Ben Heasgarnich in the central Breadalbane Hills in the southern Highlands is representative of high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b>. There are extensive calcareous schist outcrops with a wide range of characteristic chasmophytic plant species. Of particular interest is the very rare high-altitude crevice flora, which includes species such as mountain bladder-fern <i>Cystopteris montana</i>, oblong woodsia <i>Woodsia ilvensis</i> and rock whitlowgrass <i>Draba norvegica</i>. This is one of the most important sites in the UK for arctic-alpine flora because of the number of rare species present.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012895 class="space-right">Ben Lawers</a>
+        Eastern Scotland
+    </b>
+    <div>
+Ben Lawers is representative of high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the central Scottish Highlands. The rock faces are formed on calcareous schists and limestones outcropping extensively at very high altitude. The site supports extensive areas of chasmophytic vegetation with some of the most diverse examples of these communities in the UK. They contain a large number of nationally rare species, such as drooping saxifrage <i>Saxifraga cernua</i>, rock whitlowgrass <i>Draba norvegica</i>, alpine fleabane <i>Erigeron borealis</i>, alpine forget-me-not <i>Myosotis alpestris</i>, rock sedge <i>Carex rupestris</i>, alpine gentian <i>Gentiana nivalis</i>, mountain bladder-fern <i>Cystopteris montana</i> and alpine woodsia <i>Woodsia alpina</i>. The montane calcicole bryophyte and lichen flora of this site is outstanding.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012900 class="space-right">Ben Lui</a>
+        Eastern Scotland, Highlands and Islands
+    </b>
+    <div>
+Ben Lui represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in an oceanic climate at the western end of the Breadalbane range. There is a wide band of calcareous schist forming crags at altitudes of 460-760 m on northerly slopes. The flora includes a number of rare montane calcicoles including mountain avens <i>Dryas octopetala</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i> and net-leaved willow <i>Salix reticulata</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012956 class="space-right">Ben Nevis</a>
+        Highlands and Islands
+    </b>
+    <div>
+Within the Ben Nevis site limestone occurs up to high altitude, notably on Aonach Beag, and this is one of the richest areas outside of the Breadalbane range and Caenlochan for arctic-alpines of calcareous rocks. <b>Calcareous rocky slopes with chasmophytic vegetation</b> are well-represented and Ben Nevis is notable for populations of a number of very rare species which are associated with calcareous outcrops of rock faces in high gullies. These include tufted saxifrage <i>Saxifraga cespitosa</i>, drooping saxifrage <i>S. cernua</i> and Highland saxifrage <i>S. rivularis</i>. Other national rarities of rock outcrops include glaucous meadow-grass <i>Poa glauca</i>, alpine meadow-grass <i>Poa alpina</i>, arctic mouse-ear <i>Cerastium arcticum</i> and alpine saxifrage <i>Saxifraga nivalis</i>. Other arctic-alpines represented include rose-root <i>Sedum rosea</i>, alpine scurvygrass <i>Cochlearia pyrenaica</i> ssp. <i>alpina</i>, mountain sorrel <i>Oxyria digyna</i>, holly fern <i>Polystichum lonchitis</i>, mossy saxifrage <i>Saxifraga hypnoides</i> and purple saxifrage <i>S. oppositifolia</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030089 class="space-right">Binevenagh</a>
+        Northern Ireland
+    </b>
+    <div>
+Binevenagh is the only site representing <b>Calcareous rocky slopes with chasmophytic vegetation</b> in Northern Ireland. The site comprises steeply-rising basalt cliffs with a range of chasmophytic species. Of particular interest is the remnant arctic-alpine flora, in addition to plants that are more usually associated with coastal locations. Species include mountain avens <i>Dryas octopetala</i>, moss campion <i>Silene acaulis</i>, purple saxifrage <i>Saxifraga oppositifolia</i>, thrift <i>Armeria maritima</i> and sea campion <i>Silene uniflora</i>. Notable bryophytes such as <i>Tortula princeps</i> also occur.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030096 class="space-right">Brecon Beacons/ Bannau Brycheiniog</a>
+        East Wales
+    </b>
+    <div>
+The Old Red Sandstone cliffs of the Brecon Beacons support the most southerly representation of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the UK. The relatively high base-status of the actively eroding rocks has resulted in a chasmophytic flora which is comparatively rich for this southerly site. Species include purple saxifrage <i>Saxifraga oppositifolia</i> at its most southerly British location, green spleenwort <i>Asplenium viride</i>, brittle bladder-fern <i>Cystopteris fragilis</i> and several rare <i>Hieracium</i> spp. Nationally scarce bryophyte species include <i>Plagiopus oederianus</i> and <i>Scapania aequiloba</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0030104 class="space-right">Cadair Idris</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Cadair Idris is one of three Welsh sites representing <b>Calcareous rocky slopes with chasmophytic vegetation</b>. It is the highest mountain in the south of the Snowdonia National Park and has a number of cliffs and rock outcrops with base-rich exposures, with the moist, north-facing cliffs supporting a number of notable bryophytes. Many of the higher plants are clustered below the tall-herb ledge vegetation where water streams down from above and include species such as green spleenwort <i>Asplenium viride</i> and purple saxifrage <i>Saxifraga oppositifolia</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012821 class="space-right">Caenlochan</a>
+        Eastern Scotland, North Eastern Scotland
+    </b>
+    <div>
+Caenlochan represents high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, on extensive outcrops of calcareous schists. The site has one of the most extensive and diverse high-altitude crevice habitats in the UK, with an abundance of characteristic high montane plant species. These include a number of rare species, such as mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i>, rock sedge <i>Carex rupestris</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba incana</i>. The montane calcicole bryophyte flora is also outstanding and includes a number of species not present on other selected sites.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012946 class="space-right">Eryri/ Snowdonia</a>
+        West Wales and The Valleys
+    </b>
+    <div>
+Snowdonia is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at one of its most southerly outposts in the UK, and contains the most extensive and diverse examples of these communities in Wales. Crevices in base-rich igneous rocks support a characteristic assemblage of plants, with a large number of arctic-alpine species. These include a number of nationally rare species, such as alpine saxifrage <i>Saxifraga nivalis</i>, tufted saxifrage <i>S. cespitosa</i>, alpine meadow-grass <i>Poa alpina</i> and alpine woodsia <i>Woodsia alpina</i>. A species of particular interest is the Snowdon lily <i>Lloydia serotina</i>, which in the UK occurs only in Snowdonia, in rock cracks and crevices on calcareous and more siliceous substrates, and is here at its northern limit in western Europe.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012959 class="space-right">Glen Coe</a>
+        Highlands and Islands
+    </b>
+    <div>
+Glen Coe represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> through its base-rich outcrops from moderate to high altitude including limestone and calcareous schists on Meall Mór and lime-rich bands in igneous rocks on Bidean nam Bian. The flora includes the rare saxifrages drooping saxifrage <i>Saxifraga cernua</i> and alpine saxifrage <i>S. nivalis</i> and other rare montane species include mountain bladder-fern <i>Cystopteris montana</i>, green spleenwort <i>Asplenium viride</i>, holly fern <i>Polystichum lonchitis</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba norvegica</i>. Other calcicoles occurring on rock include lesser meadow-rue <i>Thalictrum minus</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012787 class="space-right">Inchnadamph</a>
+        Highlands and Islands
+    </b>
+    <div>
+Inchnadamph is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north of Scotland. This habitat type occurs extensively on northerly crags of Durness dolomitic limestone at low altitude. It has a diverse flora, rich in characteristic northern species including abundant holly-fern <i>Polystichum lonchitis</i>, dark-red helleborine <i>Epipactis atrorubens</i>, bearded couch <i>Elymus caninus</i> and rock sedge <i>Carex rupestris</i>. There are rare sub-montane calcicole bryophytes associated with the crevice flora, such as <i>Tortula princeps</i>, <i>Amblystegium compactum</i> and <i>Seligeria trifaria</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012782 class="space-right">Ingleborough Complex</a>
+        North Yorkshire
+    </b>
+    <div>
+Ingleborough is one of three sites representing the <b>Calcareous rocky slopes with chasmophytic vegetation</b> found in northern England. Crevice communities occur on extensive limestone scars and are characteristic of the area. The flora has a mix of northern and southern species, including purple saxifrage <i>Saxifraga oppositifolia</i>, yellow saxifrage <i>S. aizoides</i>, alpine meadow-grass <i>Poa alpina</i>, hoary whitlowgrass <i>Draba incana</i>, lesser meadow-rue <i>Thalictrum minus</i>, wall lettuce <i>Mycelis muralis</i> and baneberry <i>Actaea spicata</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0014774 class="space-right">Moor House  - Upper Teesdale</a>
+        Cumbria, Tees Valley and Durham
+    </b>
+    <div>
+This is one of three sites representing <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north of England. Crevice communities occur on extensive limestone scars, especially along the Pennine escarpment and around the summits of hills. Cliff crevice vegetation occurs extensively and to an altitude of 760 m. The most extensive community present is characterised by green spleenwort <i>Asplenium viride</i> and brittle bladder-fern <i>Cystopteris fragilis</i>. Less common species found in this community include hoary whitlowgrass <i>Draba incana</i>, alpine cinquefoil <i>Potentilla crantzii</i> and holly-fern <i>Polystichum lonchitis</i>. The site is also of interest for its combination of southern and northern flora. Rarer southern species include bird’s-foot sedge <i>Carex ornithopoda</i> and horseshoe vetch <i>Hippocrepis comosa</i>. The whitebeam <i>Sorbus rupicola</i>, which is widely distributed but found at only a few sites, is also present.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012785 class="space-right">Strath</a>
+        Highlands and Islands
+    </b>
+    <div>
+Strath represents low-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in northern Scotland. This is one of the few sites in this area with a markedly calcareous chasmophytic flora, associated with outcrops of Dalradian Durness limestone. The crevice flora is moderately well-developed but is less extensive and diverse than those at higher altitudes. There are only a few rare arctic-alpine species, including rock sedge <i>Carex rupestris</i> and alpine cinquefoil <i>Potentilla crantzii</i>. However, the communities contain an unusual assemblage of species characteristic of both a northern and a more southerly distribution. Northern species include dark-red helleborine <i>Epipactis atrorubens</i>, green spleenwort <i>Asplenium viride</i> and holly-fern <i>Polystichum lonchitis</i>, while southern species include hart’s-tongue <i>Phyllitis scolopendrium</i>.    </div>
+</li>
+<li>
+    <b>
+        <a href=/site/UK0012863 class="space-right">Trotternish Ridge</a>
+        Highlands and Islands
+    </b>
+    <div>
+Trotternish is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in north-west Scotland. There are extensive basalt cliffs, on which calcareous outcrops occur locally at moderately high altitude, higher than on the comparable site, Strath. These outcrops support characteristic crevice-dwelling plants. Of particular interest are the ferns green spleenwort <i>Asplenium viride</i>, brittle bladder-fern <i>Cystopteris fragilis</i> and holly-fern <i>Polystichum lonchitis</i>, and various calcicolous mosses. There is a moderately rich flora of arctic-alpine calcicoles, including glaucous meadow-grass <i>Poa glauca</i>, alpine meadow-grass <i>Poa alpina</i>, hoary whitlowgrass <i>Draba incana</i> and alpine saxifrage <i>Saxifraga nivalis</i>. The oceanic bryophyte flora associated with this habitat type is thought to be among the richest in the SAC series and includes the liverworts <i>Colura calyptrifolia</i>, <i>Harpalejeunea ovata</i>, <i>Herbertus stramineus</i> and <i>Plagiochila spinulosa</i>.    </div>
+</li>    </ul>
+</div>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030030>Ballochbuie</a></div>
-    <div class="cell large-6 small-12"><b>North Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Situated on the north slopes of the Dee valley below the foothills of the Lochnagar massif, the geology at Ballochbuie is mostly dominated by granites of various degrees of acidity. In the west of the site it is more complex with various outcrops of metamorphic rocks, the most prominent of which is the vertical outcrop of calcareous rock known as the Lion’s Face. On the hillside above the face, further outcrops of calcareous rock give rise to small areas of CG10 <i>Festuca ovina</i> – <i>Agrostis capillaris</i> – <i>Thymus praecox</i> grassland and open birch woodland, contrasting with the Scots pine <i>Pinus sylvestris</i> woodland over most of the rest of the site. Alpine cinquefoil <i>Potentilla crantzii</i> is present on these outcrops. Closer to the cliffs of the Lion’s Face, small areas of scrub and more extensive plantations provide additional shade. Here, rock faces, crevices and boulders support communities of ferns, and, in particular, lichens and bryophytes. Ferns include green spleenwort <i>Asplenium viride</i> and Wilson’s filmy-fern <i>Hymenophyllum wilsonii</i>. A large number of rare lichens are present including a species normally associated with elm, <i>Gyalecta ulmi</i>, and <i>Chaenotheca gracilenta</i> (both Endangered). The moss <i>Pseudoleskeella rupestris</i> (Nationally rare) also occurs.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012957>Beinn a&#x27; Ghlo</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Beinn a’Ghlo represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, with additional rare species. There are extensive outcrops of limestone in Glen Tilt, up to about 700 m altitude. The flora includes a large colony of the rare yellow oxytropis <i>Oxytropis campestris</i>, while other montane species include mountain avens <i>Dryas octopetala</i>, rock speedwell <i>Veronica fruticans</i>, rock sedge <i>Carex rupestris</i>, hoary whitlowgrass <i>Draba incana</i>, holly fern <i>Polystichum lonchitis</i> and green spleenwort <i>Asplenium viride</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012897>Beinn Dearg</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Beinn Dearg holds the best example of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north-west Highlands. Many of the high altitude cliffs are strongly calcareous and have a rich arctic-alpine flora including mountain avens <i>Dryas octopetala</i>, net-leaved willow <i>Salix reticulata</i>, alpine saxifrage <i>Saxifraga nivalis</i>, hoary whitlowgrass <i>Draba norvegica</i>, alpine cinquefoil <i>Potentilla crantzii</i>, glaucous meadow-grass <i>Poa glauca</i> and black alpine-sedge <i>Carex atrata</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012864>Beinn Iadain and Beinn na h&#x27; Uamha</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Beinn Iadain and Beinn na h’Uamha is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at moderately high altitudes in the oceanic north-west Scottish Highlands. The communities develop on extensive crags of calcareous basalt, which provides a refugium for a rich calcicolous flora. Characteristic chasmophytic vascular plants include alpine saxifrage <i>Saxifraga nivalis</i>, northern rock-cress <i>Arabis petraea</i>, glaucous meadow-grass <i>Poa glauca</i> and holly-fern <i>Polystichum lonchitis</i>. There is a rich associated flora of calcicolous bryophytes, such as <i>Orthothecium</i> rufescens and <i>Rhytidium rugosum</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012951>Ben Alder and Aonach Beag</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ben Alder and Aonach Beag has an outstanding flora of rare arctic-alpine calcicoles mostly associated with a high-altitude band of limestone at 900-1000 m. The flora includes tufted saxifrage <i>Saxifraga cespitosa</i>, alpine saxifrage <i>S. nivalis</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain avens <i>Dryas octopetala</i>, black alpine-sedge <i>Carex atrata</i> and alpine meadow-grass <i>Poa alpina</i>. Various rare montane calcicolous mosses and lichens also occur on the rock faces.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012901>Ben Heasgarnich</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ben Heasgarnich in the central Breadalbane Hills in the southern Highlands is representative of high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b>. There are extensive calcareous schist outcrops with a wide range of characteristic chasmophytic plant species. Of particular interest is the very rare high-altitude crevice flora, which includes species such as mountain bladder-fern <i>Cystopteris montana</i>, oblong woodsia <i>Woodsia ilvensis</i> and rock whitlowgrass <i>Draba norvegica</i>. This is one of the most important sites in the UK for arctic-alpine flora because of the number of rare species present.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012895>Ben Lawers</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ben Lawers is representative of high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the central Scottish Highlands. The rock faces are formed on calcareous schists and limestones outcropping extensively at very high altitude. The site supports extensive areas of chasmophytic vegetation with some of the most diverse examples of these communities in the UK. They contain a large number of nationally rare species, such as drooping saxifrage <i>Saxifraga cernua</i>, rock whitlowgrass <i>Draba norvegica</i>, alpine fleabane <i>Erigeron borealis</i>, alpine forget-me-not <i>Myosotis alpestris</i>, rock sedge <i>Carex rupestris</i>, alpine gentian <i>Gentiana nivalis</i>, mountain bladder-fern <i>Cystopteris montana</i> and alpine woodsia <i>Woodsia alpina</i>. The montane calcicole bryophyte and lichen flora of this site is outstanding.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012900>Ben Lui</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ben Lui represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> in an oceanic climate at the western end of the Breadalbane range. There is a wide band of calcareous schist forming crags at altitudes of 460-760 m on northerly slopes. The flora includes a number of rare montane calcicoles including mountain avens <i>Dryas octopetala</i>, hoary whitlowgrass <i>Draba norvegica</i>, mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i> and net-leaved willow <i>Salix reticulata</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012956>Ben Nevis</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Within the Ben Nevis site limestone occurs up to high altitude, notably on Aonach Beag, and this is one of the richest areas outside of the Breadalbane range and Caenlochan for arctic-alpines of calcareous rocks. <b>Calcareous rocky slopes with chasmophytic vegetation</b> are well-represented and Ben Nevis is notable for populations of a number of very rare species which are associated with calcareous outcrops of rock faces in high gullies. These include tufted saxifrage <i>Saxifraga cespitosa</i>, drooping saxifrage <i>S. cernua</i> and Highland saxifrage <i>S. rivularis</i>. Other national rarities of rock outcrops include glaucous meadow-grass <i>Poa glauca</i>, alpine meadow-grass <i>Poa alpina</i>, arctic mouse-ear <i>Cerastium arcticum</i> and alpine saxifrage <i>Saxifraga nivalis</i>. Other arctic-alpines represented include rose-root <i>Sedum rosea</i>, alpine scurvygrass <i>Cochlearia pyrenaica</i> ssp. <i>alpina</i>, mountain sorrel <i>Oxyria digyna</i>, holly fern <i>Polystichum lonchitis</i>, mossy saxifrage <i>Saxifraga hypnoides</i> and purple saxifrage <i>S. oppositifolia</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030089>Binevenagh</a></div>
-    <div class="cell large-6 small-12"><b>Northern Ireland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Binevenagh is the only site representing <b>Calcareous rocky slopes with chasmophytic vegetation</b> in Northern Ireland. The site comprises steeply-rising basalt cliffs with a range of chasmophytic species. Of particular interest is the remnant arctic-alpine flora, in addition to plants that are more usually associated with coastal locations. Species include mountain avens <i>Dryas octopetala</i>, moss campion <i>Silene acaulis</i>, purple saxifrage <i>Saxifraga oppositifolia</i>, thrift <i>Armeria maritima</i> and sea campion <i>Silene uniflora</i>. Notable bryophytes such as <i>Tortula princeps</i> also occur.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030096>Brecon Beacons/ Bannau Brycheiniog</a></div>
-    <div class="cell large-6 small-12"><b>East Wales</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">The Old Red Sandstone cliffs of the Brecon Beacons support the most southerly representation of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the UK. The relatively high base-status of the actively eroding rocks has resulted in a chasmophytic flora which is comparatively rich for this southerly site. Species include purple saxifrage <i>Saxifraga oppositifolia</i> at its most southerly British location, green spleenwort <i>Asplenium viride</i>, brittle bladder-fern <i>Cystopteris fragilis</i> and several rare <i>Hieracium</i> spp. Nationally scarce bryophyte species include <i>Plagiopus oederianus</i> and <i>Scapania aequiloba</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030104>Cadair Idris</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Cadair Idris is one of three Welsh sites representing <b>Calcareous rocky slopes with chasmophytic vegetation</b>. It is the highest mountain in the south of the Snowdonia National Park and has a number of cliffs and rock outcrops with base-rich exposures, with the moist, north-facing cliffs supporting a number of notable bryophytes. Many of the higher plants are clustered below the tall-herb ledge vegetation where water streams down from above and include species such as green spleenwort <i>Asplenium viride</i> and purple saxifrage <i>Saxifraga oppositifolia</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012821>Caenlochan</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland, North Eastern Scotland</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Caenlochan represents high-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the eastern Highlands, on extensive outcrops of calcareous schists. The site has one of the most extensive and diverse high-altitude crevice habitats in the UK, with an abundance of characteristic high montane plant species. These include a number of rare species, such as mountain bladder-fern <i>Cystopteris montana</i>, alpine woodsia <i>Woodsia alpina</i>, rock sedge <i>Carex rupestris</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba incana</i>. The montane calcicole bryophyte flora is also outstanding and includes a number of species not present on other selected sites.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012946>Eryri/ Snowdonia</a></div>
-    <div class="cell large-6 small-12"><b>West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Snowdonia is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> at one of its most southerly outposts in the UK, and contains the most extensive and diverse examples of these communities in Wales. Crevices in base-rich igneous rocks support a characteristic assemblage of plants, with a large number of arctic-alpine species. These include a number of nationally rare species, such as alpine saxifrage <i>Saxifraga nivalis</i>, tufted saxifrage <i>S. cespitosa</i>, alpine meadow-grass <i>Poa alpina</i> and alpine woodsia <i>Woodsia alpina</i>. A species of particular interest is the Snowdon lily <i>Lloydia serotina</i>, which in the UK occurs only in Snowdonia, in rock cracks and crevices on calcareous and more siliceous substrates, and is here at its northern limit in western Europe.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012959>Glen Coe</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Glen Coe represents <b>Calcareous rocky slopes with chasmophytic vegetation</b> through its base-rich outcrops from moderate to high altitude including limestone and calcareous schists on Meall Mór and lime-rich bands in igneous rocks on Bidean nam Bian. The flora includes the rare saxifrages drooping saxifrage <i>Saxifraga cernua</i> and alpine saxifrage <i>S. nivalis</i> and other rare montane species include mountain bladder-fern <i>Cystopteris montana</i>, green spleenwort <i>Asplenium viride</i>, holly fern <i>Polystichum lonchitis</i>, glaucous meadow-grass <i>Poa glauca</i> and hoary whitlowgrass <i>Draba norvegica</i>. Other calcicoles occurring on rock include lesser meadow-rue <i>Thalictrum minus</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012787>Inchnadamph</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Inchnadamph is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north of Scotland. This habitat type occurs extensively on northerly crags of Durness dolomitic limestone at low altitude. It has a diverse flora, rich in characteristic northern species including abundant holly-fern <i>Polystichum lonchitis</i>, dark-red helleborine <i>Epipactis atrorubens</i>, bearded couch <i>Elymus caninus</i> and rock sedge <i>Carex rupestris</i>. There are rare sub-montane calcicole bryophytes associated with the crevice flora, such as <i>Tortula princeps</i>, <i>Amblystegium compactum</i> and <i>Seligeria trifaria</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012782>Ingleborough Complex</a></div>
-    <div class="cell large-6 small-12"><b>North Yorkshire</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Ingleborough is one of three sites representing the <b>Calcareous rocky slopes with chasmophytic vegetation</b> found in northern England. Crevice communities occur on extensive limestone scars and are characteristic of the area. The flora has a mix of northern and southern species, including purple saxifrage <i>Saxifraga oppositifolia</i>, yellow saxifrage <i>S. aizoides</i>, alpine meadow-grass <i>Poa alpina</i>, hoary whitlowgrass <i>Draba incana</i>, lesser meadow-rue <i>Thalictrum minus</i>, wall lettuce <i>Mycelis muralis</i> and baneberry <i>Actaea spicata</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014774>Moor House  - Upper Teesdale</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, Tees Valley and Durham</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">This is one of three sites representing <b>Calcareous rocky slopes with chasmophytic vegetation</b> in the north of England. Crevice communities occur on extensive limestone scars, especially along the Pennine escarpment and around the summits of hills. Cliff crevice vegetation occurs extensively and to an altitude of 760 m. The most extensive community present is characterised by green spleenwort <i>Asplenium viride</i> and brittle bladder-fern <i>Cystopteris fragilis</i>. Less common species found in this community include hoary whitlowgrass <i>Draba incana</i>, alpine cinquefoil <i>Potentilla crantzii</i> and holly-fern <i>Polystichum lonchitis</i>. The site is also of interest for its combination of southern and northern flora. Rarer southern species include bird’s-foot sedge <i>Carex ornithopoda</i> and horseshoe vetch <i>Hippocrepis comosa</i>. The whitebeam <i>Sorbus rupicola</i>, which is widely distributed but found at only a few sites, is also present.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012785>Strath</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Strath represents low-altitude <b>Calcareous rocky slopes with chasmophytic vegetation</b> in northern Scotland. This is one of the few sites in this area with a markedly calcareous chasmophytic flora, associated with outcrops of Dalradian Durness limestone. The crevice flora is moderately well-developed but is less extensive and diverse than those at higher altitudes. There are only a few rare arctic-alpine species, including rock sedge <i>Carex rupestris</i> and alpine cinquefoil <i>Potentilla crantzii</i>. However, the communities contain an unusual assemblage of species characteristic of both a northern and a more southerly distribution. Northern species include dark-red helleborine <i>Epipactis atrorubens</i>, green spleenwort <i>Asplenium viride</i> and holly-fern <i>Polystichum lonchitis</i>, while southern species include hart’s-tongue <i>Phyllitis scolopendrium</i>.</div></div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012863>Trotternish Ridge</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-<div class="cell large-12 small-12" style="padding-bottom: 1.5em">Trotternish is representative of <b>Calcareous rocky slopes with chasmophytic vegetation</b> in north-west Scotland. There are extensive basalt cliffs, on which calcareous outcrops occur locally at moderately high altitude, higher than on the comparable site, Strath. These outcrops support characteristic crevice-dwelling plants. Of particular interest are the ferns green spleenwort <i>Asplenium viride</i>, brittle bladder-fern <i>Cystopteris fragilis</i> and holly-fern <i>Polystichum lonchitis</i>, and various calcicolous mosses. There is a moderately rich flora of arctic-alpine calcicoles, including glaucous meadow-grass <i>Poa glauca</i>, alpine meadow-grass <i>Poa alpina</i>, hoary whitlowgrass <i>Draba incana</i> and alpine saxifrage <i>Saxifraga nivalis</i>. The oceanic bryophyte flora associated with this habitat type is thought to be among the richest in the SAC series and includes the liverworts <i>Colura calyptrifolia</i>, <i>Harpalejeunea ovata</i>, <i>Herbertus stramineus</i> and <i>Plagiochila spinulosa</i>.</div></div>
-<h4>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h4>
+    <div class="section">
+        <h2>SACs where this Annex I habitat is a qualifying feature, but not a primary reason for site selection</h2>
+        <ul>
 
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012926>Berwyn a Mynyddoedd de Clwyd/ Berwyn and South Clwyd Mountains</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0016412>Cairngorms</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands, North Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012955>Creag Meagaidh</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013141>Foinaven</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012791>Hoy</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012960>Lake District High Fells</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0013597>Loch Maree Complex</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012952>Meall na Samhna</a></div>
-    <div class="cell large-6 small-12"><b>Eastern Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030208>Moffat Hills</a></div>
-    <div class="cell large-6 small-12"><b>South Western Scotland</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030033>North Pennine Moors</a></div>
-    <div class="cell large-6 small-12"><b>Cumbria, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0019859>Peak District Dales</a></div>
-    <div class="cell large-6 small-12"><b>Derbyshire and Nottinghamshire, Shropshire and Staffordshire</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0030243>Rassal</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0012594>Rum</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014739>Strathglass Complex</a></div>
-    <div class="cell large-6 small-12"><b>Highlands and Islands</b></div>
-</div>
-<div class="row">
-    <div class="cell large-6 small-12"><a href=/site/UK0014784>Usk Bat Sites/ Safleoedd Ystlumod Wysg</a></div>
-    <div class="cell large-6 small-12"><b>East Wales, West Wales and The Valleys</b></div>
-</div>
-<div class="container" style="padding-left: 0; padding-right: 0">
-    <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-</div>
+<li>
+    <b>
+        <a href=/site/UK0012926 class="space-right">Berwyn a Mynyddoedd de Clwyd/ Berwyn and South Clwyd Mountains</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0016412 class="space-right">Cairngorms</a>
+        Highlands and Islands, North Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012955 class="space-right">Creag Meagaidh</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013141 class="space-right">Foinaven</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012791 class="space-right">Hoy</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012960 class="space-right">Lake District High Fells</a>
+        Cumbria
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0013597 class="space-right">Loch Maree Complex</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012952 class="space-right">Meall na Samhna</a>
+        Eastern Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030208 class="space-right">Moffat Hills</a>
+        South Western Scotland
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030033 class="space-right">North Pennine Moors</a>
+        Cumbria, North Yorkshire, Northumberland and Tyne and Wear, Tees Valley and Durham
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0019859 class="space-right">Peak District Dales</a>
+        Derbyshire and Nottinghamshire, Shropshire and Staffordshire
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0030243 class="space-right">Rassal</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0012594 class="space-right">Rum</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014739 class="space-right">Strathglass Complex</a>
+        Highlands and Islands
+    </b>
+</li>
+
+<li>
+    <b>
+        <a href=/site/UK0014784 class="space-right">Usk Bat Sites/ Safleoedd Ystlumod Wysg</a>
+        East Wales, West Wales and The Valleys
+    </b>
+</li>
+        </ul>
+    </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+
                     </div>
             </main>
 <footer id="footer" class="text-center medium-text-left">
@@ -401,6 +518,6 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>

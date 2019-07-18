@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="/frontend/css/app.css">
         <link rel="stylesheet" href="/frontend/css/site.css">
         <link rel="stylesheet" type="text/css" href="/frontend/css/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <link rel="stylesheet" href="/styles/main.css">
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,8 +52,6 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <h3 class="show-for-medium show-for-large" style="float:right">Special Areas of Conservation</h3>
-                    <h3 class="show-for-small-only" style="padding-top: 1rem; float:right">SACs</h3>                    
                     <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
@@ -78,24 +77,33 @@
         </ul>
     </div>
 </nav>            </header>
-            <main id="main">
+
+            <p class="container show-for-small-only" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-database fa-fw"></i> Special Areas of Conservation
+            </p>
+
+            <main id="main" style="margin-bottom:5rem;">
                     <div class="container">
 <div class="row">
     <nav aria-label="breadcrumbs">
         <ul class="breadcrumbs">
-                <li><a class="" href="/">Home</a></li>
-                <li><a class="" href="/site/">Sites</a></li>
-                <li><a class="" href="/site/UK0012727">Wye Valley Woodlands/ Coetiroedd Dyffryn Gwy</a></li>
+                    <li><a class="" href="/">Home</a></li>
+                    <li><a class="" href="/site/">Sites</a></li>
         </ul>
     </nav>
 </div>                        
-<div class="row">
-    <h1>Wye Valley Woodlands/ Coetiroedd Dyffryn Gwy</h1>
+
+<div class="section">
+    <h1>
+        Wye Valley Woodlands/ Coetiroedd Dyffryn Gwy
+    </h1>
+    <div class="site-subtitle">
+        <i class="fas fa-dot-circle space-right"></i>
+        Designated Special Area of Conservation (SAC)
+    </div>    
 </div>
-<div class="row">
-    <h4>Site Details</h4>
-</div>
-<div class="row">
+
+<div class="row section section-small">
     <div class="cell small-12 large-8">
         <table>
             <tbody>
@@ -108,7 +116,7 @@
                     <td>Gloucestershire, Wiltshire and Bristol/Bath area, Herefordshire, Worcestershire and Warwickshire, West Wales and The Valleys</td>
                 </tr>
                 <tr>
-                    <td>Centroid*</td>
+                    <td>Centroid<sup>*</sup></td>
                     <td>ST530957</td>
                 </tr>
                 <tr>
@@ -125,7 +133,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td>Designated Special Area of Conservation</td>
+                    <td>Designated Special Area of Conservation (SAC)</td>
                 </tr>
                 <tr>
                     <td>Area (ha)</td>
@@ -133,7 +141,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="font-size:small;">
-                        <p><b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.</p>
+                        <b>*</b> This is the approximate central point of the SAC. In the case of large, linear or composite sites, this may not represent the location where a feature occurs within the SAC.
                     </td>
                 </tr>
             </tbody>
@@ -142,48 +150,107 @@
     <div class="cell small-12 large-4"  style="text-align: center;">
         <figure>
             <img src="/images/maps/sites/thumbnails/UK0012727_thumb.gif" />
-            <figcaption style="font-size: small;">Location of Wye Valley Woodlands/ Coetiroedd Dyffryn Gwy SAC</figcaption>
+            <figcaption style="font-size: small; padding: 0 2rem;">Location of Wye Valley Woodlands/ Coetiroedd Dyffryn Gwy SAC</figcaption>
         </figure>
     </div>
 </div>
-<div class="row">
-    <h4>General Site Character</h4>
+
+<div class="section">
+    <h2>General site character</h2>
+    <ul>
+            <li>
+                Heath, Scrub, Maquis and Garrigue, Phygrana (10%) <br />
+            </li>
+            <li>
+                Dry grassland, Steppes (0.2%) <br />
+            </li>
+            <li>
+                Broad-leaved deciduous woodland (87%) <br />
+            </li>
+            <li>
+                Coniferous woodland (0.7%) <br />
+            </li>
+            <li>
+                Inland rocks, Screes, Sands, Permanent Snow and ice (0.6%) <br />
+            </li>
+            <li>
+                Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1.5%) <br />
+            </li>
+    </ul>
 </div>
-<div class="row">
+
+<div class="callout section">
+    <p >
+        <i class="fas fa-file-pdf space-right" style="font-size: 200%; vertical-align: middle;"></i>
+        <span>
+        Download the
+        <a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012727.pdf target="N2K">
+            Natura 2000 standard data form
+        </a>
+        for this site as submitted to Europe (PDF &lt;100kb)
+    </p>
+</div>
+
+<div class="callout secondary section">
     <p>
-Heath, Scrub, Maquis and Garrigue, Phygrana (10%) <br />Dry grassland, Steppes (0.2%) <br />Broad-leaved deciduous woodland (87%) <br />Coniferous woodland (0.7%) <br />Inland rocks, Screes, Sands, Permanent Snow and ice (0.6%) <br />Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites) (1.5%) <br />    </p>
+        <b class="space-right">Note</b>
+        When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.
+    </p>
 </div>
-<div class="row">
-    <p><a href=https://jncc.gov.uk/jncc-assets/SAC-N2K/UK0012727.pdf target="N2K">Natura 2000 standard data form</a> for this site as submitted to Europe (PDF, &lt; 100kb)</p>
-</div>
-<div class="row">
-    <div class="callout secondary">
-        <p><b>Note:</b></p>
-        <p>When undertaking an appropriate assessment of impacts at a site, all features of European importance (both primary and non-primary) need to be considered.</p>
+
+<div class="section">
+    <h2>Annex I habitats that are a primary reason for selection of this site</h2>
+    <ul>
+
+<li>
+    <div class="little-header">
+        <b>9130</b> <a href=/habitat/H9130/>Asperulo-Fagetum beech forests</a>
     </div>
-</div>   
-<div class="row"> 
+<p>The Wye Valley contains abundant and near-continuous semi-natural woodland along the gorge. Beech stands occur as part of a mosaic with a wide range of other woodland types, and represent the western range of <b><i>Asperulo-Fagetum</i> beech forests</b>. Such a variety of woodland types is rare within the UK. In places lime <i>Tilia</i> sp., elm <i>Ulmus</i> sp. and oak <i>Quercus</i> sp. share dominance with the beech. Structurally the woods include old coppice, pollards and high forest types. Lady Park Wood, one of the component sites, is an outstanding example of near-natural old-growth structure in mixed broad-leaved woodland, and has been the subject of detailed long-term monitoring studies.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>9180</b> <a href=/habitat/H9180/>Tilio-Acerion forests of slopes, screes and ravines</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>The woods of the lower Wye Valley on the border of south Wales and England form one of the most important areas for woodland conservation in the UK and provide the most extensive examples of <b><i>Tilio-Acerion</i> forest</b> in the west of its range. A wide range of ecological variation is associated with slope, aspect and landform. The woodland occurs here as a mosaic with other types, including beech <i>Fagus sylvatica</i> and pedunculate oak <i>Quercus robur</i> stands. Uncommon trees, including large-leaved lime <i>Tilia platyphyllos</i> and rare whitebeams such as <i>Sorbus porrigentiformis</i> and <i>S. rupicola</i> are found here, as well as locally uncommon herbs, including wood barley <i>Hordelymus europaeus</i>, stinking hellebore <i>Helleborus foetidus</i>, narrow-leaved bitter-cress <i>Cardamine impatiens</i> and wood fescue <i>Festuca altissima</i>.</p></li>
+
+<li>
+    <div class="little-header">
+        <b>91J0</b> <a href=/habitat/H91J0/>Taxus baccata woods of the British Isles</a>&nbsp;<span style="font-size:small;"> * Priority feature</span>
+    </div>
+<p>Wye Valley is representative of yew <b><i>Taxus baccata</i> woods</b> in the south-west of the habitat’s range. It lies on the southern Carboniferous limestone, and yew occurs both as an understorey to other woodland trees and as major yew-dominated groves, particularly on the more stony slopes and crags.</p></li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species that are a primary reason for selection of this site</h2>
+    <ul>
+<li>Not Applicable</li>    </ul>
+</div>
+
+<div class="section">
+    <h2>Annex II species present as a qualifying feature, but not a primary reason for site selection</h2>
+    <ul>
+
+<li>
     <div>
-        <h4>Annex I habitats that are a primary reason for selection of this site</h4>
-
-<div>
-    <p><b>9130</b> <a href=/habitat/H9130/>Asperulo-Fagetum beech forests</a></p>
-<p>The Wye Valley contains abundant and near-continuous semi-natural woodland along the gorge. Beech stands occur as part of a mosaic with a wide range of other woodland types, and represent the western range of <b><i>Asperulo-Fagetum</i> beech forests</b>. Such a variety of woodland types is rare within the UK. In places lime <i>Tilia</i> sp., elm <i>Ulmus</i> sp. and oak <i>Quercus</i> sp. share dominance with the beech. Structurally the woods include old coppice, pollards and high forest types. Lady Park Wood, one of the component sites, is an outstanding example of near-natural old-growth structure in mixed broad-leaved woodland, and has been the subject of detailed long-term monitoring studies.</p></div>
-<div>
-    <p><b>9180</b> <a href=/habitat/H9180/>Tilio-Acerion forests of slopes, screes and ravines</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>The woods of the lower Wye Valley on the border of south Wales and England form one of the most important areas for woodland conservation in the UK and provide the most extensive examples of <b><i>Tilio-Acerion</i> forest</b> in the west of its range. A wide range of ecological variation is associated with slope, aspect and landform. The woodland occurs here as a mosaic with other types, including beech <i>Fagus sylvatica</i> and pedunculate oak <i>Quercus robur</i> stands. Uncommon trees, including large-leaved lime <i>Tilia platyphyllos</i> and rare whitebeams such as <i>Sorbus porrigentiformis</i> and <i>S. rupicola</i> are found here, as well as locally uncommon herbs, including wood barley <i>Hordelymus europaeus</i>, stinking hellebore <i>Helleborus foetidus</i>, narrow-leaved bitter-cress <i>Cardamine impatiens</i> and wood fescue <i>Festuca altissima</i>.</p></div>
-<div>
-    <p><b>91J0</b> <a href=/habitat/H91J0/>Taxus baccata woods of the British Isles</a>&nbsp;<span style="font-size:small;"> * Priority feature</span></p>
-<p>Wye Valley is representative of yew <b><i>Taxus baccata</i> woods</b> in the south-west of the habitat’s range. It lies on the southern Carboniferous limestone, and yew occurs both as an understorey to other woodland trees and as major yew-dominated groves, particularly on the more stony slopes and crags.</p></div>        <h4>Annex I habitats present as a qualifying feature, but not a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species that are a primary reason for selection of this site</h4>
-<p>Not Applicable</p>        <h4>Annex II species present as a qualifying feature, but not a primary reason for site selection</h4>
-
-<div>
-    <p><b>1303</b> <a href=/species/S1303/>Lesser horseshoe bat</a> <b>Rhinolophus hipposideros</b></p>
-</div>
-        <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
+        <b>
+            1303
+            <a href=/species/S1303/>Lesser horseshoe bat</a>
+        </b>
+        <i>Rhinolophus hipposideros</i>
+        
     </div>
+</li>    </ul>
 </div>
+
+<p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
 
 
                     </div>
@@ -272,6 +339,6 @@ Heath, Scrub, Maquis and Garrigue, Phygrana (10%) <br />Dry grassland, Steppes (
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
     </body>
 </html>
