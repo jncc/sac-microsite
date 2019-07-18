@@ -108,6 +108,8 @@
             }
         </div>
 
+        @if (!String.IsNullOrEmpty(Model.GeneratorConfig.GoogleAnalyticsId) || !String.IsNullOrEmpty(Model.GeneratorConfig.GoogleTagMangerId)) 
+        {
         <!-- Cookie Consent Setup -->
         <script>
             window.addEventListener("load", function(){
@@ -137,6 +139,7 @@
                 "dismissOnWindowClick": true,
                 "dismissOnTimeout": "10"
             })});  
-        </script>        
+        </script>
+        }
     </body>
 </html>
