@@ -19,7 +19,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 var model = new Page
                 {
                     GeneratorConfig = config,
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Site", true), ("/site/gibraltar", "Natura 2000 in Gibraltar", true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Site", true) },
                     CurrentSection = "Site",
                     Title = StringHelpers.RemoveHTMLTags(Page.DefaultTitle),
                     MetaDescription = "European Directives, including the Habitats and Birds Directives, apply to the the UK overseas territory of Gibraltar. Although cSACs in Gibraltar are submitted to the European Commission via Defra in the same way as sites in the metropolitan UK, the Government of Gibraltar is responsible for overseeing the selection and management of sites within its territory. Copies of the Natura data forms, as submitted to the European Commission, can be downloaded from here.\n Los directorios europeos, incluyendo los habitat y los directorios de los pájaros, se aplican al territorio de ultramar UK de Gibraltar. Aunque los SACOS en Gibraltar se someten a la Comisión de las Comunidades Europeas vía Defra de la misma manera que sitios en el Reino Unido metropolitana, el gobierno de Gibraltar es responsable de supervisar la selección y la gerencia de sitios dentro de su territorio. La información adicional está disponible del gobierno de Gibraltar.",
