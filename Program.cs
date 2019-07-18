@@ -1,29 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 
 using Microsoft.AspNetCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.FileProviders;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.Internal;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.Extensions.ObjectPool;
 using Microsoft.Extensions.Logging;
 
 using Mono.Options;
-using Newtonsoft.Json;
 
 using JNCC.Microsite.SAC.Data;
 using JNCC.Microsite.SAC.Generators;
-using JNCC.Microsite.SAC.Models.Data;
-using JNCC.Microsite.SAC.Models.Website;
-using JNCC.Microsite.SAC.Helpers;
-using JNCC.Microsite.SAC.Helpers.Runtime;
 
 namespace JNCC.Microsite.SAC
 {
@@ -61,11 +47,9 @@ namespace JNCC.Microsite.SAC
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 
-            List<string> arguments;
-
             try
             {
-                arguments = options.Parse(args);
+                options.Parse(args);
             }
             catch (OptionException ex)
             {
@@ -99,8 +83,6 @@ namespace JNCC.Microsite.SAC
                     DatabaseExtractor.ExtractData(accessDbPath, root);
                 }
             }
-
-
 
             if (generate || generateSearchDocuments)
             {

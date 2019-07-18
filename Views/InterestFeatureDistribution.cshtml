@@ -5,8 +5,8 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<h1>@(Model.InterestFeature.SectionTitle)</h1>
-<h2>UK Distribution of @(InterestFeatureHelpers.GetAnnexString(Model.InterestFeature.Code)) @(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))</h2>
+<h1>UK Distribution of @(InterestFeatureHelpers.GetAnnexString(Model.InterestFeature.Code)) @(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code)) @(Html.Raw(Model.InterestFeature.LayTitle)) @(Html.Raw(Model.InterestFeature.Name))</h1>
+
 <div class="row">
     <div class="column small-12 medium-6 medium-centered large-6 large-centered">
         <figure>

@@ -4,7 +4,14 @@
         <ul class="breadcrumbs">
             @foreach ((string href, string text, bool display) in Model)
             {
-                <li><a class="@(display ? "" : "show-for-sr")" href="@(href)">@Html.Raw(text)</a></li>
+                if (href != null)
+                {
+                    <li><a class="@(display ? "" : "show-for-sr")" href="@(href)">@Html.Raw(text)</a></li>
+                }
+                else
+                {
+                    <li style="color:#666262;"><span class="@(display ? "" : "show-for-sr")" >@Html.Raw(text)</span></li>
+                }
             }
         </ul>
     </nav>

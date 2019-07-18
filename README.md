@@ -1,39 +1,39 @@
-# sac-microsite
+# SAC Microsite
+
 Special Areas of Conservation (SACs) are strictly protected sites designated under the EC Habitats Directive.
 
-## Readme
-
-The sac microsite is hosted on github pages and is published from the gh-pages branch
+The SAC Microsite is hosted by Github Pages and is published from the `gh-pages` branch.
 
 The data manager can `git clone` clone the site on their local PC, and use the readme.md file to follow the instructions.
 
-The PC will only need Dotnet SDK/Runtime, Access x64 drivers and Git installed; both are available as Windows MSI installers. A text editor such as VS Code is recommended. Github Desktop is very helpful too. 
+The PC will only need Dotnet SDK/Runtime, Access x64 drivers and Git installed; both are available as Windows MSI installers. A text editor such as VS Code is recommended. Github Desktop is very helpful too.
 
-## Requirements
+## Data updates
 
-The data extractor part of this project requires the x64 Microsoft Access drivers to be installed for this to work, the drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This however means updating the data files will **ONLY** work on Windows.
+The data update step requires the x64 Microsoft Access drivers to be installed. The drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This means updating the data from the Access Database will currently **ONLY work on Windows**.
 
-If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run;
+If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run:
 
-```
-AccessDatabaseEngine_X64.exe /quiet
-```
-You will need to have an admin account if you do the updates or development on a windows machine and wish to use the dotnet sdk. Otherwise you will have to follow the instructions for [Updates with an unprivaliged login](#updates-with-an-unprivaliged-login)
+    AccessDatabaseEngine_X64.exe /quiet
+
+You will need to have an admin account if you do the updates or development on a windows machine and wish to use the dotnet sdk.
 
 ## Local development
 
-Open a command terminal in the `sac-microsite` folder. 
+You need .NET Core SDK 2.2. https://dotnet.microsoft.com/download/dotnet-core/2.2
+
+Open a command terminal in the `sac-microsite` folder.
 
 Ensure you have the lastest commit of code from Github by using Github Desktop or `git pull` if you are comfortable with the Git command line. Then run
 
     dotnet restore
     dotnet build
-    
-to ensure you have the latest libraries installed. Then open your text editor in the current directory. To open in VS Code, run
+
+Then open your text editor in the current directory. To open in VS Code, run
 
     code .    <-- (note the full stop!)
 
-To get the latest data dump from the database, run 
+To update the data with the latest in the database, run
 
     dotnet run -- -u path/to/access.mdb
 
@@ -43,15 +43,15 @@ The next command, builds the static site from the JSON data files.
 
     dotnet run -- -g
   
-To start a local web server with the built static microsite run;
+To start a local web server with the built static microsite, run
 
     dotnet run -- -v
 
 You can combine these runs into a single command;
 
     dotnet run -- -u path/to/access.mdb -g -v
-    
-You can edit the templates as required in the `views/` folder, but most of the editable data is directly extracted from the source Access MDB, you can try minor edits through the fields in the `output/json` files. 
+
+You can edit the templates as required in the `views/` folder, but most of the editable data is directly extracted from the source Access MDB, you can try minor edits through the fields in the `output/json` files.
 
 To deploy the microsite,
 
@@ -70,7 +70,7 @@ The site is automatically redeployed to an internal beta site at http://beta-sac
     git commit -a -m "Updated data files YYYY-MM-DD"
     git push
 
-After which the newly committed json files on the master branch which will be automatically redeployed to an internal beta site at http://beta-sac.
+After which the updated files on the `master` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
 
 ## Deploying the site to live
 
@@ -138,9 +138,9 @@ We have a basic helper scripts to carry out this function, located in [deploymen
     python clearExistingIndexContents.py -s sac -i $AWS_ELASTICSEARCH_INDEX --host  $AWS_ELASTICSEARCH_HOST
     python sendDocumentsToQueue.py -p "../../output/search/**/*.json" -q $AWS_SQS_QUEUE_HOST
 
-## Updates with an unprivaliged network account
+## Updates with an unpriviledged network account
 
-You need to be an admin on your machine to use the dotnet tools to build the site. An executable is built and packeged by jenkins to get around this issue for unprivaliged users.
+You need to be an admin on your machine to use the dotnet tools to build the site. An executable is built and packaged by jenkins to get around this issue for unpriviledged users.
 
 Checkout the SAC project from git. The folder containing the project is your root folder.
 
@@ -148,19 +148,20 @@ Download the latest JNCC.Microsite.SAC_{version}.zip
 file [from the releases section in git](https://github.com/jncc/sac-microsite/releases) and extract it to a suitable location outside of the sac project.
 
 ### Update the data
+
 Get a copy of the Natura database and run the executable JNCC.Microsite.SAC.exe from the extracted release zip file.
 
-For example, given that: 
+For example, given that:
 
-* sac root path = c:\development\sac-microsite
-* ASP natura database path = c:\development\ASP NATURA DATABASE.mdb
-* JNCC.Microsite.SAC.exe is in the curent folder
+- sac root path = c:\development\sac-microsite
+- ASP natura database path = c:\development\ASP NATURA DATABASE.mdb
+- JNCC.Microsite.SAC.exe is in the curent folder
 
 Run the following to update the data
 
     JNCC.Microsite.SAC.exe -r c:\development\sac-microsite -u "c:\development\ASP NATURA DATABASE.mdb"
 
-This proces will update the json files in c:\development\sac-microsite\output\json
+This process will update the json files in c:\development\sac-microsite\output\json
 
 ### Update the website
 

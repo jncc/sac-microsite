@@ -4,12 +4,13 @@
     Layout = "Shared/_Layout.cshtml";
 }
 
-<h1>@(Model.Type)</h1>
+<h1 class="section-small">@(Model.Type) list</h1>
 
 
 @foreach (var section in Model.InterestFeatureSections)
 {
     @(Html.Raw(String.Format("<table><tr><th class=\"cell small-9\">{0}</th><th class=\"cell small-3\">No. of SACs</p></th></tr>", section.SectionTitle)));
+    
     foreach (var feature in section.InterestFeatures) {
         @(Html.Raw(
             String.Format(

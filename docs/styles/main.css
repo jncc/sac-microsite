@@ -1,0 +1,20 @@
+
+.section {
+    margin-bottom: 2rem;
+}
+.section-small {
+    margin-bottom: 1rem;
+}
+.space-right {
+    margin-right: 0.2rem;
+}
+.little-header {
+    font-weight: bold;
+}
+.site-subtitle {
+    font-weight: bold;
+}
+.entity-code {
+    margin-right: 0.1rem;
+    color: #8a8a8a;
+}

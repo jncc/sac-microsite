@@ -21,7 +21,7 @@ namespace JNCC.Microsite.SAC.Generators.PageBuilders
                 var model = new SitePage
                 {
                     GeneratorConfig = config,
-                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Sites", true), (String.Format("/site/{0}", site.EUCode), site.Name, true) },
+                    Breadcrumbs = new List<(string href, string text, bool current)> { ("/", "Home", true), ("/site/", "Sites", true) },
                     CurrentSection = "Site",
                     Site = site,
                     Title = StringHelpers.RemoveHTMLTags(String.Format("{0} - Special Areas of Conservation", site.Name)),

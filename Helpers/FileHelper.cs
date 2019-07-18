@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using Newtonsoft.Json;
 
 namespace JNCC.Microsite.SAC.Helpers
@@ -50,10 +51,31 @@ namespace JNCC.Microsite.SAC.Helpers
             serializer.Formatting = Formatting.Indented;
 
             using (StreamWriter sw = new StreamWriter(path))
-            using (JsonWriter writer = new JsonTextWriter(sw))
+            using (CharacterCorrectingWriter ccw = new CharacterCorrectingWriter(sw))
+            using (JsonWriter writer = new JsonTextWriter(ccw))
             {
                 serializer.Serialize(writer, content);
             }
+        }
+    }
+
+    public class CharacterCorrectingWriter : TextWriter
+    {
+        readonly TextWriter inner;
+
+        public CharacterCorrectingWriter(TextWriter inner)
+        {
+            this.inner = inner;
+        }
+
+        public override Encoding Encoding => inner.Encoding;
+
+        public override void Write(char c)
+        {
+            if (c == '`')
+                inner.Write('\'');
+            else
+                inner.Write(c);
         }
     }
 }
