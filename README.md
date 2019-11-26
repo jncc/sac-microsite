@@ -62,7 +62,7 @@ To deploy the microsite,
 
 The site is automatically redeployed to an internal beta site at http://beta-sac available internally on commits to the devleop branch, an update just requires the json files in [output/data](output/data) to be updated using the following commands;
 
-    github clone https://github.com/jncc/sac-microsite.git
+    git clone https://github.com/jncc/sac-microsite.git
     cd sac-microsite
     dotnet restore
     dotnet build
