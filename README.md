@@ -75,11 +75,13 @@ After which the updated files on the `develop` branch which will be automaticall
 
 #### Updating the live site
 
-Updateing the live site is done by simply merging the changes from the develop branch onto master.
+Updating the live site is done by merging the changes from the develop branch onto master and then running the sac-microsite-deploy-to-live job
 
     git checkout master
     git merge develop
     git push
+    
+Next run the sac-microsite-deploy-to-live job.
 
 ## Live site deployment
 
