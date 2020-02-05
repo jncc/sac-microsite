@@ -62,17 +62,28 @@ To deploy the microsite,
 
 The site is automatically redeployed to an internal beta site at http://beta-sac available internally on commits to the devleop branch, an update just requires the json files in [output/data](output/data) to be updated using the following commands;
 
-    github clone https://github.com/jncc/sac-microsite.git
+    git clone https://github.com/jncc/sac-microsite.git
     cd sac-microsite
+    git checkout develop
     dotnet restore
     dotnet build
     dotnet run -- -u "path/to/new/natura2000.mdb"
     git commit -a -m "Updated data files YYYY-MM-DD"
     git push
 
-After which the updated files on the `master` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
+After which the updated files on the `develop` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
 
-## Deploying the site to live
+#### Updating the live site
+
+Updating the live site is done by merging the changes from the develop branch onto master and then running the sac-microsite-deploy-to-live job
+
+    git checkout master
+    git merge develop
+    git push
+    
+Next run the sac-microsite-deploy-to-live job.
+
+## Live site deployment
 
 We have created an Jenkins pipeline to deploy the site to live which is triggered currently on commits to master, that pipeline is commited alongside the code at [deployment/jenkins/deploy-to-live-pipeline](deployment/jenkins/deploy-to-live-pipeline) where it just needs to be fed the correct variables, i.e.;
 
