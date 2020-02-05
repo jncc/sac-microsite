@@ -144,7 +144,7 @@ namespace JNCC.Microsite.SAC.Generators
                     config,
                     "SACs in Wales",
                     String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>Wales</b> including cross border sites. Sites are sorted alphabetically.</p>",
-                        sites.Where(s => s.Country.Contains("S")).Count()),
+                        sites.Where(s => s.Country.Contains("W")).Count()),
                     null,
                     new List<RegionalSites>
                     {
