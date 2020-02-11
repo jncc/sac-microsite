@@ -12685,9 +12685,9 @@
     "YCoord": 402217,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "H1180",
