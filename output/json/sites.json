@@ -6922,7 +6922,7 @@
     "EUCode": "UK0030396",
     "Name": "Bristol Channel Approaches / Dynesfeydd Môr Hafren",
     "Country": "EWO",
-    "CountryFull": "England/Wales",
+    "CountryFull": "England/Wales/Offshore UK",
     "Area": 584994.0,
     "GridReference": "SR000500",
     "Latitude": 51.0291,
@@ -6931,9 +6931,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
@@ -16813,9 +16813,9 @@
     "YCoord": 779396,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "H1170",
@@ -23935,7 +23935,7 @@
     "Name": "Inner Hebrides and the Minches",
     "Country": "S",
     "CountryFull": "Scotland",
-    "Area": 1380199.0,
+    "Area": 1381391.37,
     "GridReference": "NG350650",
     "Latitude": 57.8292,
     "Longitude": -6.1179,
@@ -23943,9 +23943,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
@@ -34166,9 +34166,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
@@ -34340,9 +34340,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
@@ -46164,7 +46164,7 @@
     "Name": "Skerries and Causeway",
     "Country": "NI",
     "CountryFull": "Northern Ireland",
-    "Area": 10857.43,
+    "Area": 10867.43,
     "GridReference": null,
     "Latitude": 55.243,
     "Longitude": -6.597,
@@ -47968,9 +47968,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
@@ -53825,9 +53825,9 @@
     "YCoord": null,
     "LocalAuthority": "Extra-Regio",
     "LinkText": null,
-    "StatusCode": 44,
-    "StatusShort": "SCI",
-    "StatusLong": "Site of Community Importance",
+    "StatusCode": 46,
+    "StatusShort": "SAC",
+    "StatusLong": "Designated Special Area of Conservation",
     "Features": [
       {
         "Code": "S1351",
