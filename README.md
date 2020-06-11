@@ -68,7 +68,7 @@ The site is automatically redeployed to an internal beta site at http://beta-sac
     dotnet restore
     dotnet build
     dotnet run -- -u "path/to/new/natura2000.mdb"
-    git commit -a -m "Updated data files YYYY-MM-DD"
+    git commit -a -m "Updated data files"
     git push
 
 After which the updated files on the `develop` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
