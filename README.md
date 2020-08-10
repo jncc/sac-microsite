@@ -2,27 +2,18 @@
 
 Special Areas of Conservation (SACs) are strictly protected sites designated under the EC Habitats Directive.
 
-The SAC Microsite is hosted by Github Pages and is published from the `gh-pages` branch.
+The SAC microsite https://sac.jncc.gov.uk is hosted on Github Pages. The website is a "static site" built from data held in the master Access database.
 
-The data manager can `git clone` clone the site on their local PC, and use the readme.md file to follow the instructions.
-
-The PC will only need Dotnet SDK/Runtime, Access x64 drivers and Git installed; both are available as Windows MSI installers. A text editor such as VS Code is recommended. Github Desktop is very helpful too.
-
-## Data updates
-
-The data update step requires the x64 Microsoft Access drivers to be installed. The drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This means updating the data from the Access Database will currently **ONLY work on Windows**.
-
-If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run:
-
-    AccessDatabaseEngine_X64.exe /quiet
-
-You will need to have an admin account if you do the updates or development on a windows machine and wish to use the dotnet sdk.
+A data manager can clone the site on their local PC, and follow the instructions in this readme file to update the site.
 
 ## Local development
 
+A text editor such as VS Code is recommended. Github Desktop is very helpful too.
+
 You need .NET Core SDK 2.2. https://dotnet.microsoft.com/download/dotnet-core/2.2
 
-Open a command terminal in the `sac-microsite` folder.
+
+Open a command terminal in the `sac-microsite` local respository folder.
 
 Ensure you have the lastest commit of code from Github by using Github Desktop or `git pull` if you are comfortable with the Git command line. Then run
 
@@ -33,34 +24,37 @@ Then open your text editor in the current directory. To open in VS Code, run
 
     code .    <-- (note the full stop!)
 
+To build the site from the JSON data files, run
+
+    dotnet run -- -g
+  
+To start a local web server, run
+
+    dotnet run -- -v
+
+You can edit the templates as required in the `views/` folder.
+
+## Data updates
+
+If the underlying data in the master Access database has changed, you need to requery the database.
+
+The PC will need Dotnet SDK/Runtime and Git installed; both are available as Windows MSI installers.
+
+The data update step requires the x64 Microsoft Access drivers to be installed. The drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This means updating the data from the Access Database will currently **ONLY work on Windows**.
+
+If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run:
+
+    AccessDatabaseEngine_X64.exe /quiet
+
+You will need to have an **admin account** if you do the updates or development on a windows machine and wish to use the dotnet sdk.
+
 To update the data with the latest in the database, run
 
     dotnet run -- -u path/to/access.mdb
 
-This reads the master Access database and saves a JSON representation of the tables as .json files in the `output/data/` folder. (This is a cache so that your local dev experience is good.) If the data has changed since this was last done, you can see the changes in Github Desktop, or with `git status` and `git diff`.
+This reads the master Access database and saves a JSON representation of the tables as .json files in the `output/data/` folder. This is a cache, so that you rarely need to connect to the database. If the data has changed since this was last done, you can see the changes in Github Desktop, or with `git status` and `git diff`.
 
-The next command, builds the static site from the JSON data files.
-
-    dotnet run -- -g
-  
-To start a local web server with the built static microsite, run
-
-    dotnet run -- -v
-
-You can combine these runs into a single command;
-
-    dotnet run -- -u path/to/access.mdb -g -v
-
-You can edit the templates as required in the `views/` folder, but most of the editable data is directly extracted from the source Access MDB, you can try minor edits through the fields in the `output/json` files.
-
-To deploy the microsite,
-
-- Push to Github
-- Press a button on Jenkins to deploy the latest version.
-
-## Updating the site
-
-The site is automatically redeployed to an internal beta site at http://beta-sac available internally on commits to the devleop branch, an update just requires the json files in [output/data](output/data) to be updated using the following commands;
+The full list of steps to update the data:
 
     git clone https://github.com/jncc/sac-microsite.git
     cd sac-microsite
@@ -73,19 +67,19 @@ The site is automatically redeployed to an internal beta site at http://beta-sac
 
 After which the updated files on the `develop` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
 
-#### Updating the live site
+## Publishing to the live site
 
-Updating the live site is done by merging the changes from the develop branch onto master and then running the sac-microsite-deploy-to-live job
+Merge the changes from the develop branch onto master:
 
-    git checkout master
-    git merge develop
-    git push
-    
-Next run the sac-microsite-deploy-to-live job.
+        git checkout master
+        git merge develop
+        git push
 
-## Live site deployment
+Run  the `sac-microsite-deploy-to-live` Jenkins job.
 
-We have created an Jenkins pipeline to deploy the site to live which is triggered currently on commits to master, that pipeline is commited alongside the code at [deployment/jenkins/deploy-to-live-pipeline](deployment/jenkins/deploy-to-live-pipeline) where it just needs to be fed the correct variables, i.e.;
+## Jenkins pipeline
+
+We have created an Jenkins pipeline [deployment/jenkins/deploy-to-live-pipeline](deployment/jenkins/deploy-to-live-pipeline) that just needs to be fed the correct variables, i.e.;
 
     AWS_DEFAULT_REGION = '${AWS_REGION}' 
     AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
@@ -94,7 +88,7 @@ We have created an Jenkins pipeline to deploy the site to live which is triggere
     GOOGLE_ANALYTICS_ID = google analytics ID - ie UA-00000000-0
     GOOGLE_TAG_MANAGER_ID = google tag manager ID - ie GTM-XXX00XX
 
-These variables determine the AWS region we are running in, the name of an AWS SQS queue endpoint to push the search documents into for ingestion, the AWS Elasticsearch endpoint and the index to post results into. More info about the elasticsearch ingestion process can be found at jncc/elasticsearch-lambda-ingester.
+More info about the elasticsearch ingestion process can be found at jncc/elasticsearch-lambda-ingester.
 
 The Jenkins pipeline will run the following
 
