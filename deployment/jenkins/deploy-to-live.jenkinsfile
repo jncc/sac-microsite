@@ -25,19 +25,18 @@ pipeline {
                         usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD']]) {
                         sh 'git clone https://github.com/jncc/sac-microsite.git . --branch=gh-pages --depth 1'
                         sh 'git config --local credential.helper "!p() { echo username=\\$GIT_USERNAME; echo password=\\$GIT_PASSWORD; }; p"'
-                        sh 'rm -r ./site/*'
-                        sh 'rm -r ./species/*'
-                        sh 'rm -r ./habitat/*'
-                        sh 'rm -r ./images/*'
-                        sh 'rm -r ./styles/*'
-                        sh 'rm -r ./frontend/*'
+                        sh 'git rm -rf .'
+                        sh 'git clean -fxd'
                         sh 'cp -r ../master/output/html/* .'
-                        sh 'cp -r ../master/docs/images/* ./images/'
-                        sh 'cp -r ../master/docs/styles/* ./styles/'
-                        sh 'cp -r ../master/docs/frontend/* ./frontend/'
+                        sh 'cp -r ../master/docs/* .'
+                        // Github Pages custom domain configured with a file called 'CNAME'
+                        sh 'echo "sac.jncc.gov.uk" > CNAME'
+                        // add the version stamp (replace the string 'x-version-stamp' in all .html files)
+                        sh 'sed -i "s/x-version-stamp/' + env.BUILD_NUMBER + '.' + env.GIT_COMMIT + '/g" *.html'
+                        sh 'ls -a'
                         sh 'git add --all'
-                        sh 'git commit -a -m "Jenkins Build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>" || echo \'Commit failed. There is probably nothing to commit.\''
-                        sh 'git push --force || echo \'Push failed. There is probably nothing to commit.\''
+                        sh 'git commit -a -m "Jenkins Build ' + env.BUILD_NUMBER + '" --author "Jenkins <jenkins@jncc.gov.uk>"'
+                        sh 'git push --force'
                     }
                 }
             }
