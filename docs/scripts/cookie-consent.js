@@ -11,13 +11,13 @@ var civicCookieControlConfig = {
   text: {
     notifyTitle: '<span class="civic-cookie-banner-title">We use cookies</span>',
     notifyDescription: 'Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used.'
-      + ' For more detailed information, please read our <a href="/cookies" class="civic-cookie-control-link">cookie notice</a>.',
+      + ' For more detailed information, please read our <a href="https://jncc.gov.uk/about-jncc/corporate-information/cookie-policy/" class="civic-cookie-control-link">cookie notice</a>.',
     accept: 'Accept all cookies',
     reject: 'Customise settings',
     title: 'We use cookies',
     settings: 'Customise settings',
     intro: '<p>Some of these cookies are essential, while others help us to improve your experience by providing insights into how the site is being used.</p>'
-      + '<p>For more detailed information, please read our <a href="../about-jncc/corporate-information/cookie-policy/" class="civic-cookie-control-link">cookie notice</a>.</p>',
+      + '<p>For more detailed information, please read our <a href="https://jncc.gov.uk/about-jncc/corporate-information/cookie-policy/" class="civic-cookie-control-link">cookie notice</a>.</p>',
     necessaryTitle: 'Essential cookies',
     necessaryDescription: 'Essential cookies enable core functionality. The site cannot function without these cookies and can only be disabled by changing your browser preferences.',
     closeLabel: 'Save settings'  // closing doesn't actually *set* anything - settings already saved on toggle!
