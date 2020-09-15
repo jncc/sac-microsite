@@ -39,7 +39,7 @@ namespace JNCC.Microsite.SAC
             var options = new OptionSet {
                 { "u|update=", "run data update from Database and generate outputs", u => {update = true; accessDbPath = u;}},
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
-                { "a|analytics=", "google analytics id", a => generatorConfig.GoogleAnalyticsId = a},
+                { "c|cookiecontrol", "cookie consent control", c => generatorConfig.CookieConsentControl = true},
                 { "t|tag=", "google tag manager id", t => generatorConfig.GoogleTagMangerId = t},
                 { "v|view", "view the static web site", v => view = true},
                 { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
@@ -86,14 +86,14 @@ namespace JNCC.Microsite.SAC
 
             if (generate || generateSearchDocuments)
             {
-                if (! String.IsNullOrEmpty(generatorConfig.GoogleAnalyticsId))
-                {
-                    Console.WriteLine("Enabling google analytics with ID {0}", generatorConfig.GoogleAnalyticsId);
-                }
-
                 if (! String.IsNullOrEmpty(generatorConfig.GoogleTagMangerId))
                 {
                     Console.WriteLine("Enabling google tag manager with ID {0}", generatorConfig.GoogleTagMangerId);
+                }
+
+                if (generatorConfig.CookieConsentControl)
+                {
+                    Console.WriteLine("Enabling Cookie consent control");
                 }
 
                 Generator.MakeSite(generatorConfig, root, generateSearchDocuments, searchIndex);
