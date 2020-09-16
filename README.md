@@ -85,7 +85,6 @@ We have created an Jenkins pipeline [deployment/jenkins/deploy-to-live-pipeline]
     AWS_SQS_QUEUE_HOST = '${AWS_SQS_QUEUE_HOST}'
     AWS_ELASTICSEARCH_HOST = '${AWS_ELASTICSEARCH_HOST}'
     AWS_ELASTICSEARCH_INDEX = '${AWS_ELASTICSEARCH_INDEX}'
-    GOOGLE_ANALYTICS_ID = google analytics ID - ie UA-00000000-0
     GOOGLE_TAG_MANAGER_ID = google tag manager ID - ie GTM-XXX00XX
 
 More info about the elasticsearch ingestion process can be found at jncc/elasticsearch-lambda-ingester.
@@ -104,7 +103,7 @@ To manually deploy a new version we just need to run the following;
     cd sac-microsite
     dotnet restore
     dotnet build
-    dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX -a $GOOGLE_ANALYTICS_ID -t $GOOGLE_TAG_MANAGER_ID'
+    dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX -cookiecontrol -t $GOOGLE_TAG_MANAGER_ID'
     cd ..
 
 This builds the new pages and the updated search documents as above, then we will need to run the following;
