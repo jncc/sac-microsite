@@ -18,3 +18,29 @@
     margin-right: 0.1rem;
     color: #8a8a8a;
 }
+
+/* // CIVIC COOKIE CONTROL CUSTOMISATIONS
+//
+// make hyperlinks look different to normal text */
+.civic-cookie-control-link { text-decoration: underline; }
+.civic-cookie-control-link:visited { text-decoration: underline; }
+.civic-cookie-control-link:hover { text-decoration: underline; }
+.civic-cookie-control-link:active { text-decoration: underline; }
+.civic-cookie-banner-title {
+  font-size: 2em;
+  margin: 3em 0;
+}
+.ccc-notify-text {
+  margin-top: 7em;
+  margin-bottom: 7em;
+  padding-right: 2em;
+}
+.cc-panel {
+  padding: 1em;
+}
+/* // hack to hide the "Accept" button - the cookie control UI is otherwise very misleading */
+#ccc-button-holder {
+  display: none;
+}
+/* //
+// END CIVIC COOKIE CONTROL CUSTOMISATIONS */

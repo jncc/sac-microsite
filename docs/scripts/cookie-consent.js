@@ -25,8 +25,8 @@ var civicCookieControlConfig = {
   branding: {
     removeAbout: true,
     backgroundColor: '#222',
-    toggleColor: '#0065bd',
-    fontFamily: 'Hind Madurai, "Helvetica Neue", Helvetica, Arial, sans-serif',
+    toggleColor: '#3f9c35',
+    fontFamily: '"Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif',
     fontSize: '1em',
     fontSizeTitle: '2em'
   },
