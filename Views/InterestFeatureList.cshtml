@@ -7,6 +7,29 @@
 <h1 class="section-small">@(Model.Type) list</h1>
 
 
+@if (@Model.Type == "Species" ) {
+    <p>
+        This table provides a list of Annex II species types which occur in the UK 
+        and for which one or more SAC is designated. 
+    </p>
+}
+
+@if (@Model.Type == "Habitats" ) {
+    <p>
+        This table provides a list of Annex I habitat types which occur in the UK 
+        and for which one or more SAC is designated.
+    </p>
+}
+
+<p>
+    A list of habitats and species 
+        which have priority status (a priority habitat or species is one in danger of 
+        disappearance and for which there is a particular responsibility to conserve) 
+        is available via 
+            <a href ="https://webarchive.nationalarchives.gov.uk/20190301132352/http://jncc.defra.gov.uk/page-1523-theme=default">
+        The National Archives</a>.
+</p>
+
 @foreach (var section in Model.InterestFeatureSections)
 {
     @(Html.Raw(String.Format("<table><tr><th class=\"cell small-9\">{0}</th><th class=\"cell small-3\">No. of SACs</p></th></tr>", section.SectionTitle)));
