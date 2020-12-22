@@ -36,25 +36,20 @@ You can edit the templates as required in the `views/` folder.
 
 ## Data updates
 
-If the underlying data in the master Access database has changed, you need to requery the database.
+If the data in the master Access database has changed, you need to requery the database.
 
-The PC will need Dotnet SDK/Runtime and Git installed; both are available as Windows MSI installers.
+This reads the master Access database and saves a JSON representation of the tables as .json files in the `output/data/` folder. This is a cache, so that you rarely need to connect to the database. When the data changes, you can see the changes in Git.
 
-The data update step requires the x64 Microsoft Access drivers to be installed. The drivers can be found [here](https://www.microsoft.com/en-gb/download/details.aspx?id=13255). Choosing `AccessDatabaseEngine_X64.exe` when promted. This means updating the data from the Access Database will currently **ONLY work on Windows**.
+- Updating the data from the Access database will currently **ONLY work on Windows**.
+- You will also need to have an **admin account**, because unfortunately `dotnet build` requires admin.
 
-If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run:
+The Windows PC will obviously need Dotnet SDK/Runtime and Git installed; both are available as Windows MSI installers.
 
-    AccessDatabaseEngine_X64.exe /quiet
+You will need the x64 Microsoft Access drivers from https://www.microsoft.com/en-gb/download/details.aspx?id=13255. Choose `AccessDatabaseEngine_X64.exe`.
 
-You will need to have an **admin account** if you do the updates or development on a windows machine and wish to use the dotnet sdk.
+(If you already have a 32-bit install of Microsoft office you will need to run the install in passive mode, open an admin console (powershell or command prompt), navigate to the folder and run `AccessDatabaseEngine_X64.exe /quiet`)
 
-To update the data with the latest in the database, run
-
-    dotnet run -- -u path/to/access.mdb
-
-This reads the master Access database and saves a JSON representation of the tables as .json files in the `output/data/` folder. This is a cache, so that you rarely need to connect to the database. If the data has changed since this was last done, you can see the changes in Github Desktop, or with `git status` and `git diff`.
-
-The full list of steps to update the data:
+Full list of steps to update the data:
 
     git clone https://github.com/jncc/sac-microsite.git
     cd sac-microsite
@@ -62,6 +57,7 @@ The full list of steps to update the data:
     dotnet restore
     dotnet build
     dotnet run -- -u "path/to/new/natura2000.mdb"
+    dotnet run -- -g -v     # rebuild the pages and run locally to check.
     git commit -a -m "Updated data files"
     git push
 
