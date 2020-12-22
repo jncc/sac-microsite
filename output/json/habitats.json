@@ -1737,7 +1737,7 @@
         "InterestStatus": "CA",
         "InterestStatusLong": "Confirmed addition",
         "GlobalGrade": "A",
-        "PrimaryText": "Abundant Sabellaria spinulosa agglomerations have consistently been recorded within the boundary of the SAC (Foster-Smith & Hendrick, 2003).  Survey data indicate that reef structures are concentrated in certain areas of the site, with a patchy distribution of crust-forming aggregations across the site.  The main areas of S. spinulosa reef are found along the Lincolnshire coast south of Skegness at Lynn Knock and Skegness Middle Ground (south-east part of the site); just north of Docking Shoal bank; and associated with the southern edge of Silver Pit (in the northern area of the site) (Woo, 2008; Foster-Smith & Hendrick, 2003; Brutto, 2009; Limpenny et al, 2010).",
+        "PrimaryText": "Abundant Sabellaria spinulosa agglomerations have consistently been recorded within the boundary of the cSAC (Foster-Smith & Hendrick, 2003).  Survey data indicate that reef structures are concentrated in certain areas of the site, with a patchy distribution of crust-forming aggregations across the site.  The main areas of S. spinulosa reef are found along the Lincolnshire coast south of Skegness at Lynn Knock and Skegness Middle Ground (south-east part of the site); just north of Docking Shoal bank; and associated with the southern edge of Silver Pit (in the northern area of the site) (Woo, 2008; Foster-Smith & Hendrick, 2003; Brutto, 2009; Limpenny et al, 2010).",
         "SecondaryText": "",
         "LocalAuthority": "Extra-Regio",
         "IsHabitat": false,
@@ -14663,7 +14663,7 @@
     "UKStatus": "<B>\r\n<P>Degraded raised bogs</B> occur throughout the range of raised bogs in the UK. Obtaining an estimate of the national extent of this type is constrained by the lack of correspondence between Annex&nbsp;I habitat types and the condition categories used in the Lowland Raised Bog Inventory (LRBI) (Lindsay &amp; Immirzi 1996), which does not include Northern Ireland. However, <B>degraded raised bogs</B> are certainly more extensive than <B>7110 Active raised bogs</B>. Peatland in Northern Ireland has been classified and mapped using air photographs (Cruickshank &amp; Tomlinson 1988). This identified 2,270&nbsp;ha of intact lowland peatland and 20,042&nbsp;ha of ‘cut-over’ peatland, but it is not possible to report separately on the area of ‘active’ or ‘degraded’ raised bog using this information source.</P>",
     "Rationale": "<FONT size=2>\r\n<P>The importance of <B>Degraded raised bogs</B> in the SAC series is the habitat’s potential to be restored to <B>7110 Active raised bog</B>, and thus contribute to attaining favourable conservation status for raised bogs as a whole, and fulfil the UK’s responsibility in implementing the Habitats Directive. The series of <B>degraded raised bog</B> sites has therefore been selected to complement the list of <B>Active raised bogs</B>. Sites have been selected that are considered to be sufficiently large and valuable in terms of their potential for natural regeneration, and to improve geographical coverage of raised bog within the site series. They have also been chosen to augment <B>Active raised bog</B> examples in areas where lowland bog is or has been particularly frequent.</P>\r\n<P>The prospects of a site for restoration have been carefully assessed, as an important aspect of quality to be considered alongside the need to select an adequate proportion of the overall UK lowland raised bog resource and to achieve appropriate geographical representation. Prospects for site restoration have been assessed on a case by case basis, taking into account factors such as the current vegetation cover, disruption to the bog’s hydrological integrity, local climatic conditions, and the surrounding land use. Sites have not been selected if they are not judged capable of the required degree of restoration within 30 years, even where they would fill significant geographical gaps in the SAC series.</P>\r\n<P>The </FONT><a targe=\"_blank\" href=\"http://europa.eu.int/comm/environment/nature/hab-en.htm\"><I>Interpretation manual of European habitats</I></a><FONT size=2> (European Commission DG&nbsp;Environment 1999) notes that ‘sites unlikely to qualify as SACs are those that consist largely of bare peat, that are dominated by agricultural grasses or other crops, or where components of bog vegetation have been eradicated by closed canopy woodlands’. In considering such areas for SAC selection, judgements have been made about the ease of restorability if appropriate management was introduced now, or at a later date. As a result, some sites composed substantially of bare peat and some afforested sites have been selected. The large resource of former peatland now under agriculture (archaic sites) was not considered in site selection as such land is not likely to satisfy the restorability requirements.</P>\r\n<P>Representation of <B>Degraded raised bogs</B> within the UK SAC network is particularly high in England. This reflects the fact that a greater proportion of the English raised bog resource has been affected by human activities than in other parts of the UK.</P></FONT>",
     "Priority": false,
-    "Total": 37,
+    "Total": 33,
     "MapData": {
       "MapSources": "JNCC International Designations Database. Joint Nature Conservation Committee",
       "MapExplanation": null,
@@ -14676,18 +14676,6 @@
       "TotalUkPopulation": "24200"
     },
     "Occurrences": [
-      {
-        "SiteCode": "UK0019757",
-        "SiteName": "Black Loch Moss",
-        "InterestStatus": "CA",
-        "InterestStatusLong": "Confirmed addition",
-        "GlobalGrade": "C",
-        "PrimaryText": null,
-        "SecondaryText": "",
-        "LocalAuthority": "Eastern Scotland, South Western Scotland",
-        "IsHabitat": false,
-        "IsSpecies": false
-      },
       {
         "SiteCode": "UK0019758",
         "SiteName": "Blawhorn Moss",
@@ -14709,18 +14697,6 @@
         "PrimaryText": null,
         "SecondaryText": "",
         "LocalAuthority": "Cumbria",
-        "IsHabitat": false,
-        "IsSpecies": false
-      },
-      {
-        "SiteCode": "UK0019759",
-        "SiteName": "Braehead Moss",
-        "InterestStatus": "CA",
-        "InterestStatusLong": "Confirmed addition",
-        "GlobalGrade": "C",
-        "PrimaryText": null,
-        "SecondaryText": "",
-        "LocalAuthority": "South Western Scotland",
         "IsHabitat": false,
         "IsSpecies": false
       },
@@ -14817,18 +14793,6 @@
         "PrimaryText": "This bog complex is within the tributary plains of the Duddon estuary in south Cumbria. The contiguity of the original peat domes has been severed by road construction and agricultural conversion. On some of the component bogs peat-cutting has left a drained surface which is now only partially <b>7110 active raised bog</b>. The <b>degraded raised bog</b> is mostly dominated by purple moor grass <i>Molinia caerulea</i>, although pockets of raised bog plants including bog-mosses <i>Sphagnum</i> spp. offer good prospects for regeneration provided the hydrology is repaired. Degraded bog also occurs around the edges of discrete domes of active bog due to deep regional drainage and agricultural use of the surrounding land. There is no present-day peat-extraction on this site.",
         "SecondaryText": "",
         "LocalAuthority": "Cumbria",
-        "IsHabitat": false,
-        "IsSpecies": false
-      },
-      {
-        "SiteCode": "UK0019763",
-        "SiteName": "Dykeneuk Moss",
-        "InterestStatus": "CA",
-        "InterestStatusLong": "Confirmed addition",
-        "GlobalGrade": "C",
-        "PrimaryText": null,
-        "SecondaryText": "",
-        "LocalAuthority": "South Western Scotland",
         "IsHabitat": false,
         "IsSpecies": false
       },
@@ -15093,18 +15057,6 @@
         "PrimaryText": "A largely intact raised bog of roughly rectangular shape, with an arm of mossland protruding westwards from the south-west corner. The peat spills over from the main basin forming blanket mire, and as such it is classified as an intermediate bog. Some peat-cutting has taken place in the south-east and south-west of the moss, lowering the surface by about 1.5 m, and it is here that the bog is degraded. This predominantly active bog is surrounded by rough pasture, and there may be up to 149 ha of archaic peatland surrounding the site on thin blanket peat.</P>\r\n<P>The degraded areas tend to be dominated by purple moor-grass <EM>Molinia caerulea</EM> with common cottongrass <EM>Eriophorum angustifolium</EM> and the bog-moss <EM>Sphagnum cuspidatum</EM> colonising pools. In drier areas a bog heath community is present with moribund heather <EM>Calluna vulgaris</EM> dominating. Small areas of birch-dominated woodland or scrub are present around the margins of the site. Rush pasture is also present on the margins, with species such as the rushes <EM>Juncus effusus</EM>, <EM>J. conglomeratus</EM>, <EM>J. acutiflorus</EM>, <EM>J. squarrosus</EM> and <EM>M. caerulea</EM>.",
         "SecondaryText": "",
         "LocalAuthority": "Cumbria",
-        "IsHabitat": false,
-        "IsSpecies": false
-      },
-      {
-        "SiteCode": "UK0019765",
-        "SiteName": "Waukenwae Moss",
-        "InterestStatus": "CA",
-        "InterestStatusLong": "Confirmed addition",
-        "GlobalGrade": "C",
-        "PrimaryText": null,
-        "SecondaryText": "",
-        "LocalAuthority": "South Western Scotland",
         "IsHabitat": false,
         "IsSpecies": false
       },
