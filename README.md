@@ -12,6 +12,7 @@ A text editor such as VS Code is recommended. Github Desktop is very helpful too
 
 You need .NET Core SDK 2.2. https://dotnet.microsoft.com/download/dotnet-core/2.2
 
+> This is a problem as it's now unsupported.
 
 Open a command terminal in the `sac-microsite` local respository folder.
 
@@ -32,7 +33,9 @@ To start a local web server, run
 
     dotnet run -- -v
 
-You can edit the templates as required in the `views/` folder.
+You can edit the templates as required in the `views/` folder and re-run with
+
+    dotnet run -- -g -v
 
 ## Data updates
 
