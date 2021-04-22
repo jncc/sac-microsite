@@ -46,7 +46,7 @@ This reads the master Access database and saves a JSON representation of the tab
 - Updating the data from the Access database will currently **ONLY work on Windows**.
 - You will also need to have an **admin account**, because unfortunately `dotnet build` requires admin.
 
-The Windows PC will obviously need Dotnet SDK/Runtime and Git installed; both are available as Windows MSI installers.
+The Windows PC will need Dotnet SDK/Runtime and Git installed; both are available as Windows MSI installers.
 
 You will need the x64 Microsoft Access drivers from https://www.microsoft.com/en-gb/download/details.aspx?id=13255. Choose `AccessDatabaseEngine_X64.exe`.
 
