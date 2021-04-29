@@ -35,13 +35,15 @@ namespace JNCC.Microsite.SAC.Generators
                             SearchHelpers.GetSpeciesPageSearchDocument(searchIndex, species.Code, String.Format("{0} [{1}]", species.LayTitle, species.Name), speciesPageContent)
                         );
                     }
+                    
+                    // don't generate comparrison pages
 
-                    var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
-                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/comparison.html", species.Code)), speciesMapCompareContent);
-                    sitemapEntries.Add(new SitemapEntry
-                    {
-                        URL = String.Format("/species/{0}/comparison", species.Code)
-                    });
+                    // var speciesMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
+                    // FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/comparison.html", species.Code)), speciesMapCompareContent);
+                    // sitemapEntries.Add(new SitemapEntry
+                    // {
+                    //     URL = String.Format("/species/{0}/comparison", species.Code)
+                    // });
 
                     var speciesMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/map.html", species.Code)), speciesMapContent);
@@ -50,12 +52,14 @@ namespace JNCC.Microsite.SAC.Generators
                         URL = String.Format("/species/{0}/map", species.Code)
                     });
 
-                    var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
-                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/distribution.html", species.Code)), speciesDistributionContent);
-                    sitemapEntries.Add(new SitemapEntry
-                    {
-                        URL = String.Format("/species/{0}/distribution", species.Code)
-                    });
+                    // don't generate distribution pages
+
+                    // var speciesDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, species).Result;
+                    // FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/species/{0}/distribution.html", species.Code)), speciesDistributionContent);
+                    // sitemapEntries.Add(new SitemapEntry
+                    // {
+                    //     URL = String.Format("/species/{0}/distribution", species.Code)
+                    // });
                 }
 
                 var speciesListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, config, false, speciesList).Result;

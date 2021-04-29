@@ -21,7 +21,7 @@
 
 <div class="row">
     <div class="cell medium-6 large-8">
-        <div class="section-small">
+        @* <div class="section-small">
             <a class="button" href="@(InterestFeatureHelpers.GetDistributionURL(Model.InterestFeature.Code))">
                 <i class="fas fa-map-marker"></i>
                 UK distribution for this species
@@ -30,7 +30,7 @@
                 <i class="fas fa-map-marker-alt"></i>
                 Compare with UK distribution
             </a>
-        </div>
+        </div> *@
         <div class="section">        
             <h2>Description and ecological characteristics</h2>
             <p>@(Html.Raw(Model.InterestFeature.FeatureDescription))</p>
