@@ -35,12 +35,14 @@ namespace JNCC.Microsite.SAC.Generators
                         );
                     }
 
-                    var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
-                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/comparison.html", habitat.Code)), habitatMapCompareContent);
-                    sitemapEntries.Add(new SitemapEntry
-                    {
-                        URL = String.Format("/habitat/{0}/comparison", habitat.Code)
-                    });
+                    // don't generate comparrison pages
+
+                    // var habitatMapCompareContent = InterestFeatureComparisonPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
+                    // FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/comparison.html", habitat.Code)), habitatMapCompareContent);
+                    // sitemapEntries.Add(new SitemapEntry
+                    // {
+                    //     URL = String.Format("/habitat/{0}/comparison", habitat.Code)
+                    // });
 
                     var habitatMapContent = InterestFeatureMapPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
                     FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/map.html", habitat.Code)), habitatMapContent);
@@ -49,12 +51,14 @@ namespace JNCC.Microsite.SAC.Generators
                         URL = String.Format("/habitat/{0}/map", habitat.Code)
                     });
 
-                    var habitatDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
-                    FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/distribution.html", habitat.Code)), habitatDistributionContent);
-                    sitemapEntries.Add(new SitemapEntry
-                    {
-                        URL = String.Format("/habitat/{0}/distribution", habitat.Code)
-                    });
+                    // don't generate distribution pages
+
+                    // var habitatDistributionContent = InterestFeatureDistributionPageBuilder.RenderPage(serviceScopeFactory, config, habitat).Result;
+                    // FileHelper.WriteToFile(FileHelper.GetActualFilePath(basePath, String.Format("output/html/habitat/{0}/distribution.html", habitat.Code)), habitatDistributionContent);
+                    // sitemapEntries.Add(new SitemapEntry
+                    // {
+                    //     URL = String.Format("/habitat/{0}/distribution", habitat.Code)
+                    // });
                 }
 
                 var habitatListContent = InterestFeatureListPageBuilder.RenderPage(serviceScopeFactory, config, true, habitats).Result;
