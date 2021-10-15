@@ -205,3 +205,10 @@ OR
 Or under linux using rename or something similar;
 
     rename 's/\.gif$/_thumb\.gif/g' *.gif
+
+# Notification Panel
+
+The site has a simple notification panel that is displayed above the menu. The contents of the panel is in Views/Shared/_Navbar.cshtml
+
+The bar itself can be enabled by commenting it out in line 71 of Views/Shared/_Layout.cshtml 
+
