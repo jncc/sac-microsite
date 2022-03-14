@@ -13,7 +13,7 @@ pipeline {
                 dir('./master') {
                     sh 'dotnet restore'
                     sh 'dotnet build'
-                    sh 'dotnet run -- -g -s $AWS_ELASTICSEARCH_INDEX -t $GOOGLE_TAG_MANAGER_ID -cookiecontrol'
+                    sh 'dotnet run -- -g -i $AWS_ELASTICSEARCH_INDEX -s $JNCC_SEARCH_PAGE_URL -t $GOOGLE_TAG_MANAGER_ID -cookiecontrol'
                 }
             }
         }
