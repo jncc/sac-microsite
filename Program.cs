@@ -41,9 +41,10 @@ namespace JNCC.Microsite.SAC
                 { "g|generate", "generate web pages from extracted data", g => generate = true},
                 { "c|cookiecontrol", "cookie consent control", c => generatorConfig.CookieConsentControl = true},
                 { "t|tag=", "google tag manager id", t => generatorConfig.GoogleTagMangerId = t},
+                { "s|search=", "the JNCC search page url", s => generatorConfig.JnccSearchUrl = s},
                 { "v|view", "view the static web site", v => view = true},
                 { "r|root=", "the root path on which to run the generate and view processes", r => root = r},
-                { "s|search=", "the search index to generate index documents for", s => {generateSearchDocuments = true; searchIndex = s;}},
+                { "i|index=", "the search index to generate index documents for", i => {generateSearchDocuments = true; searchIndex = i;}},
                 { "h|help", "show this message and exit", h => showHelp = h != null }
             };
 

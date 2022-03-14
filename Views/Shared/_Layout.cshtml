@@ -31,7 +31,8 @@
         @if (Model.GeneratorConfig.CookieConsentControl)
         {
         <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js" type="text/javascript"></script>
-        <script src="/scripts/cookie-consent.js"></script>
+        <script src="https://jncc.gov.uk/Cookie/Config/cookie-consent.js"></script>
+        <link rel="stylesheet" href="/styles/cookie-consent.css">
         }
         <script src="/frontend/js/app.js"></script>
     </head>
@@ -53,7 +54,7 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
+                    <form action="@Model.GeneratorConfig.JnccSearchUrl" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
                         <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
