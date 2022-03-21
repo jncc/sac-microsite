@@ -35,6 +35,18 @@
         <link rel="stylesheet" href="/styles/cookie-consent.css">
         }
         <script src="/frontend/js/app.js"></script>
+
+        <style id="antiClickjack">
+            body{display:none !important;}
+        </style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
     </head>
     <body>
         @if (! String.IsNullOrEmpty(Model.GeneratorConfig.GoogleTagMangerId)) 
