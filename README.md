@@ -64,7 +64,7 @@ Full list of steps to update the data:
     git commit -a -m "Updated data files"
     git push
 
-After which the updated files on the `develop` branch which will be automatically redeployed to the internal beta site at http://beta-sac.
+After which the updated files on the `develop` branch which will be automatically redeployed to the internal beta site at http://internal-beta/
 
 ## Publishing to the live site
 
