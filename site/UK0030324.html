@@ -2,13 +2,6 @@
 <html lang="en">
     <head>
         <meta name="x-version" content="x-version-stamp">
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5BJN48K');</script>
-        <!-- End Google Tag Manager -->
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,14 +16,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
         <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js" type="text/javascript"></script>
-        <script src="/scripts/cookie-consent.js"></script>
+        <script src="https://jncc.gov.uk/Cookie/Config/cookie-consent.js"></script>
+        <link rel="stylesheet" href="/styles/cookie-consent.css">
         <script src="/frontend/js/app.js"></script>
+
+        <style id="antiClickjack">
+            body{display:none !important;}
+        </style>
+        <script type="text/javascript">
+            if (self === top) {
+                var antiClickjack = document.getElementById("antiClickjack");
+                antiClickjack.parentNode.removeChild(antiClickjack);
+            } else {
+                top.location = self.location;
+            }
+        </script>
     </head>
     <body>
-            <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BJN48K"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
         <div id="wrapper">
             <a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
             <header id="header">
@@ -38,7 +40,7 @@
                     <strong class="logo">
                         <a href="https://jncc.gov.uk" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
                     </strong>
-                    <form action="https://jncc.gov.uk/search" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
+                    <form action="-t" role="search" class="top-bar search-form input-group" id="search-form" novalidate="novalidate" data-animate="hinge-in-from-top spin-out">
                         <label for="search-field" class="show-for-sr" accesskey="4">Search:</label>
                         <input type="search" name="q" placeholder="Search jncc.gov.uk" class="input-group-field" id="search-field">
                         <button class="input-group-button" aria-label="search-button"><i class="icon-search"></i></button>
@@ -107,11 +109,11 @@
                 </tr>
                 <tr>
                     <td>Latitude</td>
-                    <td>54.58805556</td>
+                    <td>54.5881</td>
                 </tr>
                 <tr>
                     <td>Longitude</td>
-                    <td>-7.187777778</td>
+                    <td>-7.1878</td>
                 </tr>
                 <tr>
                     <td>SAC EU Code</td>
