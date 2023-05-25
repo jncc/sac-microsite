@@ -4724,7 +4724,7 @@
     "UKStatus": "\r\n<P>Historically, <B>otters <I>Lutra lutra</B></I> occurred over most of the UK. However, persecution, habitat loss and, more recently, the impact of toxic organochlorine insecticides caused a marked reduction in the range of the species. At present, the majority of the otter population in Great Britain occurs in Scotland, with a significant proportion of this number being found in the north and west of the country. Other strong populations survive in Wales and Ireland. The otter is still scarce over much of England, where the highest concentrations are in the south-west. However, recent surveys suggest that the otter population is recovering well and recolonising parts of its former range.</P>",
     "Rationale": "<FONT size=2>\r\n<P>The SAC series reflects the present discontinuous distribution of <B>otters <I>Lutra lutra</B></I> in the UK. Sites that are known to support high densities have been selected to represent the current strongholds of the population. The sites selected also cover the ecologically variable conditions in which the species is found across its range. As well as a known high density of otters, sites selected have good quality habitat features necessary for feeding and breeding. This is demonstrated by a known record of continuous occupation of the site, even, in England, during the period of population decline. Recent research has demonstrated that this approach has also ensured good coverage of the main lines of genetic variation in British otters.</P>\r\n<P>The otter population is widespread and individuals are wide-ranging, normally occurring at low densities, which is reflected in the relatively large number of sites where the species occurs as a qualifying feature, but is not a primary reason for site selection. The selected sites include some very extensive areas (totalling over 175,000&nbsp;ha). While the SAC series makes a contribution to securing favourable conservation status for this Annex&nbsp;II species, wider countryside measures, in particular </FONT><a targe=\"_blank\" href=\"http://www.ukbap.org.uk/asp/UKPlans.asp?UKListID=428\">Biodiversity Action Plan</a><FONT size=2> implementation, additionally contribute to conservation of this species in the UK.</P></FONT>",
     "Priority": false,
-    "Total": 75,
+    "Total": 74,
     "MapData": {
       "MapSources": "Biological Records Centre Irish Otter Dataset; Biological Records Centre Mammals Database; Bristol Regional Environmental Records Centre SW Pilot Project BAP Species Inventory 2002; British Trust for Ornithology  Mammal count data from the Breeding Birds Survey; British Trust for Ornithology  Mammal count data from the Breeding Birds Survey: Update; British Trust for Ornithology  Mammal presence data from the Breeding Birds Survey: Update; Devon Biodiversity Records Centre Devon incidental species records 1950-2002; Dorset Environmental Records Centre Dorset SW Pilot species dataset; Highland Biological Recording Group HBRG Mammals dataset; Joint Nature Conservation Committee England Otter Survey Database; Joint Nature Conservation Committee Otters: Northern Ireland Otter Survey Database; Joint Nature Conservation Committee Scotland Otter Survey Database; Joint Nature Conservation Committee Wales Otter Survey Database; National Trust  National Trust Selected BAP Species; Scottish Borders Biological Records Centre SWT Scottish Borders Local Wildlife Site Survey data 1996-2000; Wiltshire and Swindon Biological Records Centre Wiltshire BAP Priority Species Distribution Records",
       "MapExplanation": null,
@@ -4984,18 +4984,6 @@
         "InterestStatusLong": "Confirmed addition",
         "GlobalGrade": "C",
         "PrimaryText": null,
-        "SecondaryText": "",
-        "LocalAuthority": "Highlands and Islands",
-        "IsHabitat": false,
-        "IsSpecies": false
-      },
-      {
-        "SiteCode": "UK0019812",
-        "SiteName": "Insh Marshes",
-        "InterestStatus": "CA",
-        "InterestStatusLong": "Confirmed addition",
-        "GlobalGrade": "A",
-        "PrimaryText": "The Insh Marshes are a component part of the River Spey. These extensive marshes together with their lochs, small lochans and ditches provide ideal feeding, resting and shelter areas for <b>otter <i>Lutra lutra</i></b> and support a good population which is linked to that of the important River Spey population.",
         "SecondaryText": "",
         "LocalAuthority": "Highlands and Islands",
         "IsHabitat": false,
