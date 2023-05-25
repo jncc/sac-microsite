@@ -4,3 +4,5 @@ bin/
 output/search
 output/html
 venv
+.Rproj.user
+sac-microsite.Rproj
