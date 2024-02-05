@@ -1,0 +1,19 @@
+FROM ubuntu:16.04
+
+# Install packages
+RUN apt update && apt install -y software-properties-common \
+    lsb-release \
+    ca-certificates \
+    libssl-dev \
+    wget
+    
+# Install .net
+RUN wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4fd5-8d1c-86056df76e89/477f1ebb70f314054129a9f51e9ec8ec/dotnet-sdk-2.2.207-linux-x64.tar.gz && \
+    mkdir -p $HOME/dotnet && \
+    tar zxf dotnet-sdk-2.2.207-linux-x64.tar.gz -C $HOME/dotnet
+
+# configure bashrc
+RUN echo $'\n\n # dotnet runtime \n \
+    export DOTNET_ROOT=$HOME/dotnet \n \
+    export PATH=$PATH:$HOME/dotnet \n \
+    export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1 \n' >> $HOME/.bashrc
