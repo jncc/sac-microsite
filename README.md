@@ -23,7 +23,7 @@ To run the container manually:
 docker run -u vscode -it -p 5000:5000 --rm -v <host path to /sac-microsite>:/sac-microsite jncc/sac_build_env
 ```
 
-Ensure the dev container plugin is installed 
+Ensure the dev container plugin is installed.
 
 By default the container will be pulled from the AWS ECR container repo in the jncc-cicd account. Image details can be found in .devcontainer/devcontainer.json
 
@@ -31,6 +31,8 @@ By default the container will be pulled from the AWS ECR container repo in the j
 
 * comment out the line starting *image*
 * uncomment the codeblock for *build* that gives the relative path to the dockerfile
+
+This workspace should be mounted in /workspaces/sac-microsite by dev-container
 
 Open a command terminal in the `sac-microsite` local respository folder.
 
