@@ -39,6 +39,12 @@ RUN apt update && apt install -y software-properties-common \
     #cpp-10 gcc-10 g++-10 \
     git build-essential pkg-config autoconf automake libtool bison flex sed perl parallel libunwind-dev curl
 
+# Install oh my zsh for vscode user
+ADD install-oh-my-zsh.sh /tmp
+RUN chmod +x /tmp/install-oh-my-zsh.sh  && \
+     sudo -u vscode sh -c /tmp/install-oh-my-zsh.sh && \
+     rm /tmp/install-oh-my-zsh.sh
+
 # Install .net
 RUN wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4fd5-8d1c-86056df76e89/477f1ebb70f314054129a9f51e9ec8ec/dotnet-sdk-2.2.207-linux-x64.tar.gz && \
     mkdir -p /dotnet && \
@@ -52,3 +58,4 @@ ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
 ENV ASPNETCORE_URLS=http://+:5000
 # ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
+ENTRYPOINT [ "/bin/zsh" ]

@@ -16,8 +16,7 @@
 		// and USER_GID in /deployment/docker-build-env/dockerfile to match your user if not 1000.
 		"-u", "vscode",
 		// expose ports for kestral web server
-		"-p", "5000-5300:5000-5300",
-		"-p", "7000-7300:7000-7300"
+		"-p", "5000:5000"
 	]
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
