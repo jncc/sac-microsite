@@ -55,6 +55,9 @@ RUN wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4
 ENV DOTNET_ROOT=/dotnet 
 ENV PATH=$PATH:/dotnet
 ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+
+# kestral web server binding override, can't use localhost in docker
+# site will be available at http://localhost:5000 on the docker host machine.
 ENV ASPNETCORE_URLS=http://+:5000
 # ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
