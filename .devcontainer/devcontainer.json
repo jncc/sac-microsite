@@ -35,7 +35,7 @@
                 "terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/zsh" } }
             }
         }
-    },
+    }
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
