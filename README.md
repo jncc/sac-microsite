@@ -8,11 +8,29 @@ A data manager can clone the site on their local PC, and follow the instructions
 
 ## Local development
 
-A text editor such as VS Code is recommended. Github Desktop is very helpful too.
+This project is designed to be used with vscode devcontainers.
 
-You need .NET Core SDK 2.2. https://dotnet.microsoft.com/download/dotnet-core/2.2
+The continer can be built manually:
 
-> This is a problem as it's now unsupported.
+```
+cd /deployment/docker-build-env
+docker build -t jncc/sac_build_env .
+```
+
+To run the container manually:
+
+```
+docker run -u vscode -it -p 5000:5000 --rm -v <host path to /sac-microsite>:/sac-microsite jncc/sac_build_env
+```
+
+Ensure the dev container plugin is installed 
+
+By default the container will be pulled from the AWS ECR container repo in the jncc-cicd account. Image details can be found in .devcontainer/devcontainer.json
+
+*To run the dev env in an environment built locally from the docker file:*
+
+* comment out the line starting *image*
+* uncomment the codeblock for *build* that gives the relative path to the dockerfile
 
 Open a command terminal in the `sac-microsite` local respository folder.
 
