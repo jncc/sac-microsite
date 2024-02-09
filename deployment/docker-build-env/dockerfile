@@ -1,4 +1,5 @@
 FROM ubuntu:20.04 as buildenv
+# Minimal environment to build and run the sac site
 
 # vscode dev containers support stuff sourced from here:
 # https://github.com/stellar/stellar-core/blob/master/.devcontainer/Dockerfile
@@ -8,16 +9,18 @@ FROM ubuntu:20.04 as buildenv
 # setup apt / certificates
 RUN apt-get update && apt-get -y install --no-install-recommends apt-utils dialog ca-certificates 
 
+# set timezone for package installs
+ENV TZ=Europe/London
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Install packages
-RUN apt update && apt install -y software-properties-common \
-    lsb-release \
-    libssl-dev \
-    wget 
+RUN apt update && apt install -y libssl-dev wget software-properties-common
 
 # Install .NET core 2.2
 RUN wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4fd5-8d1c-86056df76e89/477f1ebb70f314054129a9f51e9ec8ec/dotnet-sdk-2.2.207-linux-x64.tar.gz && \
     mkdir -p /dotnet && \
     tar zxf dotnet-sdk-2.2.207-linux-x64.tar.gz -C /dotnet && \
+    rm dotnet-sdk-2.2.207-linux-x64.tar.gz && \
     chmod -R 755 /dotnet
 
 # configure dotnet environment
@@ -29,12 +32,10 @@ ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
 ENV ASPNETCORE_URLS=http://+:5000
 
 FROM buildenv AS devenv
+# Complete development environment.
 
-# set timezone for package installs
-ENV TZ=Europe/London
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-RUN apt update && apt install -y git build-essential pkg-config autoconf automake \
+RUN apt update && apt install -y git \
+    lsb-release build-essential pkg-config autoconf automake \
     libtool bison flex sed perl parallel libunwind-dev curl dialog
 
 # This Dockerfile adds a non-root 'vscode' user with sudo access. However, for Linux,
