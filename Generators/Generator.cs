@@ -26,9 +26,6 @@ namespace JNCC.Microsite.SAC.Generators
             Console.WriteLine("Generating Species Pages");
             SpeciesGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex, sitemapEntires);
 
-            Console.WriteLine("Generating Misc Pages");
-            MiscGenerator.Generate(serviceScopeFactory, config, basePath, generateSearchDocuments, searchIndex, sitemapEntires);
-
             Console.WriteLine("Generating sitemap.xml and robots.txt");
             SitemapGenerator.Generate(basePath, sitemapEntires);
             RobotsGenerator.Generate(basePath);

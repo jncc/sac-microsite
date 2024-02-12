@@ -1,0 +1,65 @@
+FROM ubuntu:20.04
+
+# vscode dev containers support stuff sourced from here:
+# https://github.com/stellar/stellar-core/blob/master/.devcontainer/Dockerfile
+
+# Scroll down for user ID settings 
+
+# setup apt / certificates
+RUN apt-get update \
+    && apt-get -y install --no-install-recommends apt-utils dialog ca-certificates
+
+# set timezone for package installs
+ENV TZ=Europe/London
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Install packages
+RUN apt update && apt install -y software-properties-common \
+    lsb-release \
+    libssl-dev \
+    wget \
+    git build-essential pkg-config autoconf automake libtool bison flex sed perl parallel libunwind-dev curl
+
+# Install .NET core 2.2
+RUN wget https://download.visualstudio.microsoft.com/download/pr/022d9abf-35f0-4fd5-8d1c-86056df76e89/477f1ebb70f314054129a9f51e9ec8ec/dotnet-sdk-2.2.207-linux-x64.tar.gz && \
+    mkdir -p /dotnet && \
+    tar zxf dotnet-sdk-2.2.207-linux-x64.tar.gz -C /dotnet && \
+    chmod -R 755 /dotnet
+
+# configure dotnet environment
+ENV DOTNET_ROOT=/dotnet 
+ENV PATH=$PATH:/dotnet
+ENV DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+# kestral web server binding override, can't use localhost in docker
+# site will be available at http://localhost:5000 on the docker host machine.
+ENV ASPNETCORE_URLS=http://+:5000
+
+
+# This Dockerfile adds a non-root 'vscode' user with sudo access. However, for Linux,
+# this user's GID/UID must match your local user UID/GID to avoid permission issues
+# with bind mounts. Update USER_UID / USER_GID if yours is not 1000. See
+# https://aka.ms/vscode-remote/containers/non-root-user for details.
+ARG USERNAME=vscode
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+    
+# install base container packages and prep for VSCode
+RUN apt-get update \
+    # Verify process tools, lsb-release (common in install instructions for CLIs) installed
+    && apt-get -y install iproute2 procps lsb-release \
+    #
+    # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
+    && groupadd --gid $USER_GID $USERNAME \
+    && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    # [Optional] Add sudo support for the non-root user
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+# Install oh my zsh for vscode user
+ADD install-oh-my-zsh.sh /tmp
+RUN chmod +x /tmp/install-oh-my-zsh.sh  && \
+     sudo -u vscode sh -c /tmp/install-oh-my-zsh.sh && \
+     rm /tmp/install-oh-my-zsh.sh
+
+ENTRYPOINT [ "/bin/zsh" ]
