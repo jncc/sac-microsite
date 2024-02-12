@@ -64,7 +64,4 @@ RUN chmod +x /tmp/install-oh-my-zsh.sh  && \
      sudo -u vscode sh -c /tmp/install-oh-my-zsh.sh && \
      rm /tmp/install-oh-my-zsh.sh
 
-# Configure git to use vim in the console
-RUN sudo -u vscode git config --global core.editor vim
-
 ENTRYPOINT [ "/bin/zsh" ]
