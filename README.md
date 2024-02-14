@@ -6,9 +6,25 @@ The SAC microsite https://sac.jncc.gov.uk is hosted on Github Pages. The website
 
 A data manager can clone the site on their local PC, and follow the instructions in this readme file to update the site.
 
-## Local development
+# Dev and build container
 
-This project is designed to be used with vscode devcontainers.
+The development environment for this solution is containerised. The current image can be pulled from AWS.
+
+*BEFORE* you start visual studio code you need to log docker into aws in order to enable it to pull the image for the first time.
+
+Run the following commands from within the SAC solution folder
+```
+# log docker into to the aws cicd account
+aws ecr --profile <cicd admin profile> get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 137043356624.dkr.ecr.eu-west-2.amazonaws.com
+
+# start vs code
+code .
+```
+
+*To run the dev env in an environment built locally from the docker file:*
+
+* comment out the line starting *image*
+* uncomment the codeblock for *build* that gives the relative path to the dockerfile
 
 The continer can be built manually:
 
@@ -25,14 +41,72 @@ docker run -u vscode -it -p 5000:5000 --rm -v <host path to /sac-microsite>:/sac
 
 Ensure the dev container plugin is installed.
 
-By default the container will be pulled from the AWS ECR container repo in the jncc-cicd account. Image details can be found in .devcontainer/devcontainer.json
-
-*To run the dev env in an environment built locally from the docker file:*
-
-* comment out the line starting *image*
-* uncomment the codeblock for *build* that gives the relative path to the dockerfile
+The container will be pulled from the AWS ECR container repo in the jncc-cicd account. Image details can be found in .devcontainer/devcontainer.json
 
 This workspace should be mounted in /workspaces/sac-microsite by dev-container
+
+## Updating the build container
+This should be performed with sac in a buildable state so the container can be tested.
+
+From within /deployment/docker-build-env:
+
+Buid the docker file to the *buildenv* target:
+
+```
+docker build --target buildenv -t jncc/sac_build_env .
+```
+
+Check it's functionality by building the sac env.
+
+```
+docker run -it -p 5000:5000 --rm -v <local sac microsite folder>:/sac-microsite jncc/sac_build_env
+cd /sac-microsite/
+dotnet build
+# wait for successful build
+exit
+```
+
+Push the build image to the AWS repo
+
+```
+# log docker into to the aws cicd account
+aws ecr --profile <cicd admin profile> get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 137043356624.dkr.ecr.eu-west-2.amazonaws.com
+
+# tag the image built in the previous step for a push, iterate the version.
+docker tag jncc/sac_build_env 137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-build-container:1.0.0
+
+# push the image to the repo
+docker push 137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-build-container:1.0.0
+```
+
+## Updating the dev container
+
+Follow the steps above to build and deploy the build container first.
+
+From within /deployment/docker-build-env:
+
+Buid the docker file:
+
+```
+docker build -t jncc/sac_dev_env .
+
+# tag the image built in the previous step for a push, iterate the version.
+docker tag jncc/sac_dev_env 137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-dev-container:1.0.0
+
+# push the image to the repo
+docker push 137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-dev-container:1.0.0
+
+```
+
+Edit .devcontainer/devcontainer.json in the solution
+
+Locate the line beginning with "image" and change the tag on the end of the line to match the new version number.
+
+# Working with dev containers
+
+
+
+## Local development
 
 Open a command terminal in the `sac-microsite` local respository folder.
 
