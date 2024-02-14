@@ -12,9 +12,14 @@ The development environment for this solution is containerised. The current imag
 
 *BEFORE* you start visual studio code you need to log docker into aws in order to enable it to pull the image for the first time.
 
+You only need to log in if:
+* its the first time starting this solution
+* if you want to use a newer image
+* if you are changing the dev or build container - see instructions further down
+
 Run the following commands from within the SAC solution folder
 ```
-# log docker into to the aws cicd account
+# log docker into to the aws cicd account (set the cicd admin profile name below)
 aws ecr --profile <cicd admin profile> get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 137043356624.dkr.ecr.eu-west-2.amazonaws.com
 
 # start vs code
