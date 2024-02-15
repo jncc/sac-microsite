@@ -8,7 +8,13 @@ A data manager can clone the site on their local PC, and follow the instructions
 
 # Dev and build container
 
-The development environment for this solution is containerised. The current image can be pulled from AWS.
+The development environment for this solution is containerised. The current image can be pulled from AWS or built locally.
+
+## Pre-requisites
+* Docker
+* VS code Dev Containers plugin
+
+## Initialising the containerised dev environment
 
 *BEFORE* you start visual studio code you need to log docker into aws in order to enable it to pull the image for the first time.
 
@@ -17,7 +23,7 @@ You only need to log in if:
 * if you want to use a newer image
 * if you are changing the dev or build container - see instructions further down
 
-Run the following commands from within the SAC solution folder
+Run the following commands from a terminal within the SAC solution folder
 ```
 # log docker into to the aws cicd account (set the cicd admin profile name below)
 aws ecr --profile <cicd admin profile> get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 137043356624.dkr.ecr.eu-west-2.amazonaws.com
@@ -106,9 +112,6 @@ docker push 137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-dev-container:1.0.0
 Edit .devcontainer/devcontainer.json in the solution
 
 Locate the line beginning with "image" and change the tag on the end of the line to match the new version number.
-
-# Working with dev containers
-
 
 
 ## Local development
