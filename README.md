@@ -8,10 +8,6 @@ A data manager can clone the site on their local PC, and follow the instructions
 
 ## Local development
 
-### Prerequisites
-* VS code dev container plugin
-* Docker
-
 This project is designed to be used with vscode devcontainers.
 
 The continer can be built manually:
