@@ -6,7 +6,7 @@ output/html
 venv
 .Rproj.user
 sac-microsite.Rproj
-
+Properties/launchSettings.json
 
 *.swp
 *.*~
