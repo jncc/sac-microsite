@@ -3,11 +3,14 @@
 {
 	"name": "sac-microsite-dev",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	// "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye"
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye
 	
-	"build": {
-		"dockerfile": "../deployment/docker-build-env/dockerfile"
-	},
+	"image": "137043356624.dkr.ecr.eu-west-2.amazonaws.com/sac-dev-container:1.0.0",
+
+	// Uncomment to use local build of container, eg if modifying the build / dev environment.
+	// "build": {
+	// 	"dockerfile": "../deployment/docker-build-env/dockerfile"
+	// },
 
 	"runArgs": [
 
