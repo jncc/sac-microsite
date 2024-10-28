@@ -8155,10 +8155,10 @@
     "Name": "Caithness and Sutherland Peatlands",
     "Country": "S",
     "CountryFull": "Scotland",
-    "Area": 143561.47,
+    "Area": 145960.53,
     "GridReference": "NC866402",
-    "Latitude": 58.33611111,
-    "Longitude": -3.9375,
+    "Latitude": 58.285,
+    "Longitude": -3.642,
     "XCoord": 284019,
     "YCoord": 940393,
     "LocalAuthority": "Highlands and Islands",
@@ -8274,20 +8274,52 @@
     ],
     "Character": [
       {
+        "Character": "Coastal sand dunes, Sand beaches, Machair",
+        "Coverage": 0.01
+      },
+      {
         "Character": "Inland water bodies (Standing water, Running water)",
-        "Coverage": 3.0
+        "Coverage": 4.17
       },
       {
         "Character": "Bogs, Marshes, Water fringed vegetation, Fens",
-        "Coverage": 78.5
+        "Coverage": 71.75
       },
       {
         "Character": "Heath, Scrub, Maquis and Garrigue, Phygrana",
-        "Coverage": 18.0
+        "Coverage": 21.54
       },
       {
-        "Character": "Dry grassland, Steppes",
-        "Coverage": 0.5
+        "Character": "Humid grassland, Mesophile grassland",
+        "Coverage": 0.04
+      },
+      {
+        "Character": "Alpine and sub-Alpine grassland",
+        "Coverage": 0.16
+      },
+      {
+        "Character": "Broad-leaved deciduous woodland",
+        "Coverage": 0.04
+      },
+      {
+        "Character": "Coniferous woodland",
+        "Coverage": 0.32
+      },
+      {
+        "Character": "Artificial forest monoculture (e.g. Plantations of poplar or Exotic trees)",
+        "Coverage": 1.25
+      },
+      {
+        "Character": "Inland rocks, Screes, Sands, Permanent Snow and ice",
+        "Coverage": 0.02
+      },
+      {
+        "Character": "Other land (including Towns, Villages, Roads, Waste places, Mines, Industrial sites)",
+        "Coverage": 0.11
+      },
+      {
+        "Character": "Grassland and scrub habitats (general)",
+        "Coverage": 0.59
       }
     ]
   },
@@ -32498,6 +32530,19 @@
         "LocalAuthority": "West Wales and The Valleys",
         "LayTitle": "Shifting dunes with marram",
         "Priority": false,
+        "IsPrimary": false
+      },
+      {
+        "Code": "H2130",
+        "Name": "\"Fixed coastal dunes with herbaceous vegetation (\"\"grey dunes\"\")\"",
+        "InterestStatus": "CA",
+        "InterestStatusLong": "Confirmed addition",
+        "GlobalGrade": "A",
+        "PrimaryText": "Morfa Harlech a Morfa Dyffryn (Morfa Harlech and Morfa Dyffryn) is considered to be one of the best areas in the United Kingdom for fixed coastal dunes with herbaceous vegetation (\"grey dunes\").",
+        "SecondaryText": "",
+        "LocalAuthority": "West Wales and The Valleys",
+        "LayTitle": "Dune grassland",
+        "Priority": true,
         "IsPrimary": false
       },
       {

@@ -4658,7 +4658,7 @@
     "UKStatus": "<B>\r\n<P>Fixed dunes with herbaceous vegetation</B> occur widely around the coasts of the UK and are a major component of many sand dune systems. </P>",
     "Rationale": "<FONT size=2>\r\n<P>Sites have been selected to ensure adequate coverage of the geographical range and wide ecological variation of this habitat type. The sites selected are for the most part the largest examples in the UK and have the best conserved structure and function. Transitions to landward vegetation were also important deciding factors in site selection. A substantial proportion of the national resource occurs on a relatively small number of sites, and these have been selected. The UK is particularly important for Atlantic dune (<I>Mesobromion</I>) grasslands, and the SAC series reflects this.</P></FONT>",
     "Priority": true,
-    "Total": 32,
+    "Total": 33,
     "MapData": {
       "MapSources": "British Plant Communities.1995. Volumes 1-5. Cambridge University Press, Cambridge; Coastal vegetation survey of Northern Ireland. 1992. University of Lancaster, Unit of Vegetation Science; JNCC International Designations Database. Joint Nature Conservation Committee; Sand Dune Database. 1995. Joint Nature Conservation Committee; Sand dune vegetation survey of Scotland. Scottish Natural Heritage",
       "MapExplanation": null,
@@ -4884,6 +4884,18 @@
         "PrimaryText": "Sandscale Haws at the entrance to the Duddon Estuary supports the largest area of calcareous <b>fixed dunes</b> in Cumbria, which contrast with the acidic dunes at the adjacent North End Haws on Walney Island. South End Haws on Walney Island supports a smaller area of fixed dunes. North Walney and Sandscale in particular show well-conserved structure and function. The fixed dunes support a rich plant diversity including wild pansy <i>Viola tricolor</i>, lady’s bedstraw <i>Galium verum</i>, common restharrow <i>Ononis repens</i> and the uncommon dune fescue <i>Vulpia membranacea</i> and dune helleborine <i>Epipactis dunensis</i>.",
         "SecondaryText": "",
         "LocalAuthority": "Cumbria, Extra-Regio, Lancashire",
+        "IsHabitat": false,
+        "IsSpecies": false
+      },
+      {
+        "SiteCode": "UK0030049",
+        "SiteName": "Morfa Harlech a Morfa Dyffryn",
+        "InterestStatus": "CA",
+        "InterestStatusLong": "Confirmed addition",
+        "GlobalGrade": "A",
+        "PrimaryText": "Morfa Harlech a Morfa Dyffryn (Morfa Harlech and Morfa Dyffryn) is considered to be one of the best areas in the United Kingdom for fixed coastal dunes with herbaceous vegetation (\"grey dunes\").",
+        "SecondaryText": "",
+        "LocalAuthority": "West Wales and The Valleys",
         "IsHabitat": false,
         "IsSpecies": false
       },
