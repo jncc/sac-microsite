@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 as buildenv
+FROM ubuntu:20.04 AS buildenv
 # Minimal environment to build and run the sac site
 
 # vscode dev containers support stuff sourced from here:
