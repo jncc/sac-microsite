@@ -49,7 +49,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in the United Kingdom",
-                    String.Format("<p>There are {0} designated SACs, SCIs or cSACs in the <b>United Kingdom</b> including cross border sites (excluding <a href=\"https://jncc.gov.uk/our-work/protected-areas-in-gibraltar/\" target=\"_blank\">Gibraltar</a>). Cross border sites are listed under both countries. Sites are sorted alphabetically within country.</p>", sites.Count),
+                    String.Format("<p>There are {0} designated SACs in the <b>United Kingdom</b> including cross border sites (excluding <a href=\"https://jncc.gov.uk/our-work/protected-areas-in-gibraltar/\" target=\"_blank\">Gibraltar</a>). Cross border sites are listed under both countries. Sites are sorted alphabetically within country.</p>", sites.Count),
                     null,
                     new List<RegionalSites>{
                     new RegionalSites {
@@ -83,7 +83,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in England",
-                    String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>England</b> including cross border sites. Sites are sorted alphabetically.</p>",
+                    String.Format("<p>There are <b>{0}</b> SACs in <b>England</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("E")).Count()),
                     null,
                     new List<RegionalSites>
@@ -103,7 +103,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in Northern Ireland",
-                    String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>Northern Ireland</b> including cross border sites. Sites are sorted alphabetically.</p>",
+                    String.Format("<p>There are <b>{0}</b> SACs in <b>Northern Ireland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("NI")).Count()),
                     null,
                     new List<RegionalSites>
@@ -123,7 +123,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in Scotland",
-                    String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>Scotland</b> including cross border sites. Sites are sorted alphabetically.</p>",
+                    String.Format("<p>There are <b>{0}</b> SACs in <b>Scotland</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("S")).Count()),
                     null,
                     new List<RegionalSites>
@@ -143,7 +143,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in Wales",
-                    String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>Wales</b> including cross border sites. Sites are sorted alphabetically.</p>",
+                    String.Format("<p>There are <b>{0}</b> SACs in <b>Wales</b> including cross border sites. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("W")).Count()),
                     null,
                     new List<RegionalSites>
@@ -163,7 +163,7 @@ namespace JNCC.Microsite.SAC.Generators
                     serviceScopeFactory,
                     config,
                     "SACs in UK offshore waters",
-                    String.Format("<p>There are <b>{0}</b> SACs, SCIs or cSACs in <b>UK offshore waters including those that cross the 12 mile limit</b>. Sites are sorted alphabetically.</p>",
+                    String.Format("<p>There are <b>{0}</b> SACs in <b>UK offshore waters including those that cross the 12 mile limit</b>. Sites are sorted alphabetically.</p>",
                         sites.Where(s => s.Country.Contains("O")).Count()),
                     null,
                     new List<RegionalSites>
