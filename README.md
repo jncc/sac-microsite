@@ -54,7 +54,7 @@ Ensure the dev container plugin is installed.
 
 The container will be pulled from the AWS ECR container repo in the jncc-cicd account. Image details can be found in .devcontainer/devcontainer.json
 
-This workspace should be mounted in /workspaces/sac-microsite by dev-container
+This workspace should be mounted in /sac-microsite by dev-container
 
 ## Updating the build container
 This should be performed with sac in a buildable state so the container can be tested.

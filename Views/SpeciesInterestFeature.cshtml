@@ -19,31 +19,9 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="cell medium-6 large-8">
-        @* <div class="section-small">
-            <a class="button" href="@(InterestFeatureHelpers.GetDistributionURL(Model.InterestFeature.Code))">
-                <i class="fas fa-map-marker"></i>
-                UK distribution for this species
-            </a>
-            <a class="button" href="@(InterestFeatureHelpers.GetCompareDistributionURL(Model.InterestFeature.Code))">
-                <i class="fas fa-map-marker-alt"></i>
-                Compare with UK distribution
-            </a>
-        </div> *@
-        <div class="section">        
-            <h2>Description and ecological characteristics</h2>
-            <p>@(Html.Raw(Model.InterestFeature.FeatureDescription))</p>
-        </div>
-    </div>
-    <div class="cell medium-6 large-4">
-        <figure>
-            <a href="@(InterestFeatureHelpers.GetMapURL(Model.InterestFeature.Code))">
-                <img src="/images/maps/features/thumbnails/@(Model.InterestFeature.Code)_thumb.gif" />
-            </a>
-            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">Distribution of SACs/SCIs/cSACs with species <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code))</b> @(Html.Raw(Model.InterestFeature.Name)). Click image for enlarged map.</figcaption>
-        </figure>
-    </div>
+<div class="section">        
+    <h2>Description and ecological characteristics</h2>
+    <p>@(Html.Raw(Model.InterestFeature.FeatureDescription))</p>
 </div>
 
 <div class="section">
@@ -54,7 +32,6 @@
 <div class="section">
     <h2>UK status and distribution</h2> 
     <p>@(Html.Raw(Model.InterestFeature.UKStatus))</p>
-    <p>View <a href=@(InterestFeatureHelpers.GetMapURL(Model.InterestFeature.Code))>UK distribution of this species</a>.</p>
 
     @if (!String.IsNullOrWhiteSpace(Model.InterestFeature.Rationale))
     {
@@ -63,14 +40,30 @@
     }
 </div>
 
-<div class="section">
-    <h2>Site accounts</h2>
-    <ul>
-    @foreach (var site in primaryOccurences) {
-        site.IsSpecies = true;
-        await Html.RenderPartialAsync("Partials/_InterestFeaturePrimarySite", site);
-    }
-    </ul>
+<div class="row">
+    <h2>SACs where this Annex II species is a primary reason for selection of site</h2>
+    <div class="cell medium-6 large-8">
+        <div class="section">
+            <h2>Site accounts</h2>
+            <ul>
+            @foreach (var site in primaryOccurences) {
+                site.IsSpecies = true;
+                await Html.RenderPartialAsync("Partials/_InterestFeaturePrimarySite", site);
+            }
+            </ul>
+        </div>
+    </div>
+    <div class="cell medium-6 large-4">
+        <figure>
+            <a href="@(InterestFeatureHelpers.GetMapURL(Model.InterestFeature.Code))">
+                <img src="/images/maps/features/thumbnails/@(Model.InterestFeature.Code)_thumb.gif" />
+            </a>
+            <figcaption style="font-size:small; padding:0 2rem; max-width:30rem;">
+                <p>Distribution of SACs/SCIs/cSACs with species <b>@(InterestFeatureHelpers.GetPlainIntegerCode(Model.InterestFeature.Code))</b> @(Html.Raw(Model.InterestFeature.Name)). Click image for enlarged map.</p>
+                <p>Note that whilst the map shows the location of Grade D features, these are non-qualifying features that do not form part of the reason for the selection of SACs</p>
+            </figcaption>
+        </figure>
+    </div>
 </div>
 
 @if (secondaryOccurences.Any())
@@ -86,4 +79,3 @@
 }
 
 <p><i>Many designated sites are on private land: the listing of a site in these pages does not imply any right of public access.</i></p>
-<p><i>Please note that the map shows sites where the presence of a feature is classed as ‘grade d’, but these sites are not listed. This is because ‘grade d’ indicates a non-significant presence.</i></p>
